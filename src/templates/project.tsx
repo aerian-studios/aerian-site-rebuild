@@ -5,68 +5,133 @@ import { HeroBlock } from "../components/HeroBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 
 import { ImageSharpSizes } from "../types/data";
+import { SectionNav } from "../components/Sectionnav";
+
+interface block {
+    description: string;
+    hurdles: {
+        title: string;
+        image: string | ImageSharpSizes;
+        text: string;
+    };
+}
 
 interface Props {
-    title: string;
-    content: React.ReactChildren;
-    contentComponent?: React.SFC;
+    pageTitle1: string;
+    pageTitle2: string;
     heroImage: ImageSharpSizes | string;
+    heroVideo?: string;
+    caseStudy: {
+        title: string;
+        text: string;
+    };
+    challenge?: block;
+    solution?: block;
+    results?: block;
+    performance?: {
+        title: string;
+        text: string;
+    };
+    testimonial?: {
+        quote: string;
+        person: string;
+        title: string;
+        avatar: string | ImageSharpSizes;
+    };
+    id: string;
 }
-export const ProjectPageTemplate: React.SFC<Props> = ({
-    title,
-    content,
-    contentComponent,
-    heroImage
-}) => {
+
+const keys = {
+    caseStudy: "Introduction",
+    gallery: "Gallery",
+    challenge: "The Challenge",
+    solution: "The Solution",
+    results: "The Result"
+};
+
+const onNavigation = id => {
+    alert(id);
+};
+
+export const ProjectPageTemplate: React.SFC<Props> = props => {
+    const {
+        pageTitle1,
+        pageTitle2,
+        heroImage,
+        heroVideo,
+        caseStudy,
+        challenge,
+        solution,
+        results,
+        performance,
+        testimonial,
+        id
+    } = props;
+
     return (
         <section className="section section--about">
             <HeroBlock>
-                {/* {typeof heroImage === "string" ? (
+                {typeof heroImage === "string" ? (
                     // Cover the situation where there is no imageSharp (e.g. in the cms)
-                    <img
-                        className="full-screen"
-                        src={heroImage}
-                        alt=""
-                        aria-hidden="true"
-                    />
+                    !heroVideo ? (
+                        <img
+                            className="full-screen"
+                            src={heroImage}
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    ) : (
+                        <FullScreenMedia image={heroImage} video={heroVideo} />
+                    )
                 ) : (
                     <FullScreenMedia
                         image={heroImage}
-                        altText={title}
+                        aria-labelled-by="page-title"
                         video=""
                     />
-                )} */}
+                )}
                 <div className="block--hero__content-wrap">
-                    <h1 className="block--hero__title">{title}</h1>
+                    <h1 id="page-title" className="block--hero__title">
+                        {pageTitle1}
+                        <br />
+                        {pageTitle2}
+                    </h1>
                 </div>
             </HeroBlock>
-            <div className="block--full block layout-grid">
-                
-            </div>
+            <SectionNav
+                keyConsts={keys}
+                sections={props}
+                onNavigation={onNavigation}
+            />
+            <div className="block--full block layout-grid" />
         </section>
     );
 };
 
-const createCorrectMediumComponent = (video, image) => {
-    return (video || typeof image === "string")
-    ? image
-    : image.childImageSharp.sizes
-}
+const createCorrectMediumComponent = image => {
+    return typeof image === "string" ? image : image.childImageSharp.sizes;
+};
 
 // Make type interface
 const ProjectPage: React.SFC = ({ data }) => {
-    console.log(data);
     const project = data.projectsJson;
 
     return (
         <ProjectPageTemplate
-            title={project.titleLineOne}
-            heroImage={
-                createCorrectMediumComponent(project.heroVideo, project.heroImage);
-            }
-            heroVideo={
-                project.heroVideo
-            }
+            pageTitle1={project.titleLineOne}
+            pageTitle2={project.titleLineTwo}
+            heroImage={createCorrectMediumComponent(project.heroImage)}
+            heroVideo={project.heroVideo}
+            caseStudy={{
+                title: project.caseStudyTitle,
+                text: project.caseStudyText
+            }}
+            challenge={project.challenge}
+            solution={project.solution}
+            results={project.results}
+            performance={project.performance}
+            testimonial={project.testimonial}
+            id={project.id}
         />
     );
 };
@@ -82,9 +147,6 @@ export const projectPageQuery = graphql`
             caseStudyTitle
             caseStudyText
             externalUrl
-            homepage
-            featured
-            rolloverDetails
             heroImage
             heroVideo
             challenge {

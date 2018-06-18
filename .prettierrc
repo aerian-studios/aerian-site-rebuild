@@ -1,4 +1,6 @@
 {
-  "tabWidth": 4,
-  "proseWrap": "always"
+    "tabWidth": 4,
+    "proseWrap": "always",
+
+    "exclude": ["_templates"]
 }

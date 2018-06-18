@@ -9,9 +9,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     const { createPage } = boundActionCreators;
 
     const generatePage = (id, template, slug) => {
-        console.log("id", id);
-        console.log("slug", slug);
-        console.log("template", template);
         createPage({
             path: slug,
             component: path.resolve(`src/templates/${String(template)}.tsx`),

@@ -6,10 +6,10 @@ import { ImageSharpSizes } from "../types/data";
 import "./fullScreenMedia.scss";
 
 interface Props {
-    image?: ImageSharpSizes;
-    altText?: string | null;
-    video?: string | null;
-    wrapperClassName?: string | null;
+    image?: ImageSharpSizes | string;
+    altText?: string;
+    video?: string;
+    wrapperClassName?: string;
 }
 
 export const FullScreenMedia: React.SFC<Props> = ({
@@ -27,11 +27,12 @@ export const FullScreenMedia: React.SFC<Props> = ({
                 loop={true}
                 muted={true}
                 playsInline={true}
+                poster={image}
             >
                 <source src={video} type="video/mp4" />
             </video>
         ) : (
-            <Img sizes={image} />
+            <Img sizes={image} alt={altText} />
         )}
     </figure>
 );

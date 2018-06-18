@@ -1,0 +1,96 @@
+{
+  "name": "BBC",
+  "slug": "bbc-iwonder-scrubbable",
+  "titleLineOne": "Is rocket science easier",
+  "titleLineTwo": "than you think?",
+  "goLiveDate": "2015-11-04T00:00:00.000Z",
+  "caseStudyTitle": "Scrubbable: Creating interactive video",
+  "caseStudyText":
+    "Scrubbable is a novel way of allowing a user to control the flow of a short, high frame rate video clip.",
+  "externalUrl": "http://www.bbc.co.uk/taster/projects/scrubbables",
+  "heroImage": "/resources/263/bbc-iwonder-scrubbable-hero-image.png",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "We needed to turn large, high quality videos into single images, super-quickly, and in a super performent fashion",
+    "hurdles": [
+      {
+        "title": "Turning an idea into reality",
+        "text":
+          "Expanding on an original concept, we needed to create a production ready Scrubbable tool to be used across the BBC real estate in any number of ways, under extreme usage stress.",
+        "image": "/resources/632/bbc-scrubbable-01.png"
+      },
+      {
+        "title": "Tiny payload capacity",
+        "text":
+          "We needed to reduce the file size down massively, to allow our entire application and video to be under a 500mb library download.",
+        "image": "/resources/631/bbc-scrubbable-02.png"
+      },
+      {
+        "title": "Making it smooth, and obvious",
+        "text":
+          "We worked hard to make sure the interactions were obvious, intuitive and fun - meaning anyone can Scrub quickly and easily.",
+        "image": "/resources/633/bbc-scrubbable-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "We used image processing to present single frames each side of the users current time frame, all controlled by touch - or scrubbing",
+    "hurdles": [
+      {
+        "title": "Continual optimisation of libraries and code",
+        "text":
+          "We needed to continually re-imagine our technical approaches to create a highly optimised and performant experience for usage and CMS upload. We removed all large libraries (Angular, jQuery), replacing with either vanilla JS or micro libraries, greatly reducing the download needed.",
+        "image": "/resources/634/bbc-scrubbable-04.png"
+      },
+      {
+        "title": "Responsive image resolution / download",
+        "text":
+          "We worked hard to deliver a responsive solution to handling and presenting imagery, enabling device specific presentation of images for performance.",
+        "image": "/resources/635/bbc-scrubbable-05.png"
+      },
+      {
+        "title": "CMS controlled Scrubs",
+        "text":
+          "We created a simple, bespoke CMS to allow editorial to control video frame-rates and thus total image downloads.",
+        "image": "/resources/636/bbc-scrubbable-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "One of the most successful BBC iWonder tools ever, Scrubbable has been used extensively for the 2014 World Cup, Bitesize, Comedy and loads more.",
+    "hurdles": [
+      {
+        "title": "Continual optimisation of libraries and code",
+        "text":
+          "We needed to continually re-imagine our technical approaches to create a highly optimised and performant experience for usage and CMS upload. We removed all large libraries (Angular, jQuery), replacing with either vanilla JS or micro libraries, greatly reducing the download needed.",
+        "image": "/resources/634/bbc-scrubbable-04.png"
+      },
+      {
+        "title": "Responsive image resolution / download",
+        "text":
+          "We worked hard to deliver a responsive solution to handling and presenting imagery, enabling device specific presentation of images for performance.",
+        "image": "/resources/635/bbc-scrubbable-05.png"
+      },
+      {
+        "title": "CMS controlled Scrubs",
+        "text":
+          "We created a simple, bespoke CMS to allow editorial to control video frame-rates and thus total image downloads.",
+        "image": "/resources/636/bbc-scrubbable-06.png"
+      }
+    ]
+  },
+  "performance": [
+    { "title": 150, "text": "Payload optimised to be a meagre 150kb" },
+    { "title": 2, "text": "mb download size " }
+  ],
+  "testimonial": {
+    "quote":
+      "The most fun I've had with a video in a long time! Launching the rocket was awesome!",
+    "person": "A user",
+    "title": "BBC iWonder user",
+    "avatar": "/resources/270/bbc-scrubbable-grid-quote-image.jpg"
+  }
+}

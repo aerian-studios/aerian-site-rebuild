@@ -1,0 +1,93 @@
+{
+  "name": "Into Film Clubs",
+  "slug": "into-film-clubs",
+  "titleLineOne": "Into Film Clubs help transform the lives",
+  "titleLineTwo": "of young people through film",
+  "goLiveDate": "2017-02-28T00:00:00.000Z",
+  "caseStudyTitle": "2017's most captivating reboot: Film Clubs",
+  "caseStudyText":
+    "Into Film Clubs give children and young people the opportunity to watch, discuss, review and make their own films online. Film Clubs is a fantastic launch pad for introducing young people to film, and boosting literacy, critical thinking and filmmaking",
+  "externalUrl": null,
+  "heroImage": "/resources/696/film-clubs-header-image.png",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "The sheer scale and functionality included in the existing Film Club website brought the biggest challenge. We needed to apply careful consideration to the existing, quite diverse, functionality from the original sites; audit it and create wonderful new engaging experiences that would delight our audiences. \r\n\r\nWe worked closely with Into Film to make a web product that sits perfectly within the brand family while building and extending the visual language with stunning photography and interactions. ",
+    "hurdles": [
+      {
+        "title": "Made for young film lovers",
+        "text":
+          "The existing Into Film brand and website was created for educators, press and parents. We needed to empathise with the existing audience, whilst empowering Film Clubs to carve out their own space within the wider family.",
+        "image": "/resources/704/challenge-image-1.png"
+      },
+      {
+        "title": "Two birds, one cliche",
+        "text":
+          "Because the principle purpose of Into Film Clubs is to create and manage physical film clubs, we had to make a twofur (two sites in one). Site number one was designed for the attendees (those lovely young film lovers), and site number two was made for the organisers where the focus was in creating a zippy system to manage locations and screening in a super quick way.",
+        "image": "/resources/703/challenge-image-2.png"
+      },
+      {
+        "title": "People love it!",
+        "text":
+          "Into Film Clubs has over 700 clubs registered and over 200,000 young people participating every week. We needed to ensure that the move of the website would only improve the active involvement of both leaders and members on the website. We want to encourage reviews, screening attendance and most importantly ensure that all clubs continue to grow and prosper.",
+        "image": "/resources/705/challenge-image-3.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "In order to meet the expectations of the team we would need to work closely with them to capture all existing functionality and transfer it to the new website. \r\n\r\nAs with all truly user-centred projects, user testing was at the heart of our design process; and we ensured that real-world data and user feedback informed every step of the journey, no matter how small. ",
+    "hurdles": [
+      {
+        "title": "Make it fun!",
+        "text":
+          "Throughout this design project we had to embrace the young person inside and remember to constantly think, how can we make it more fun. The key to this was to include the user as much as possible, running all key design considerations through user testing and gauging its success by the response. A key finding was the introduction of iconography to signpost key areas and to ensure that all interactive elements gave some form of visual feedback. Combined, these two simple solutions would ensure maximum engagement from the younger members but remain appealing to the more mature young person.",
+        "image": "/resources/707/solution-image-1.png"
+      },
+      {
+        "title": "Keep it simple Sally",
+        "text":
+          "As if often the way, our core thinking was to work damn hard to keep things simple for the user. This was particularly important in designing interactive journeys such as bookings where any distraction or confusion can lead to people dropping out (a major no no).\n\nA sub tier of club management navigation was chosen to separate key features into individual areas. This in turn allowed for complex areas such as \"manage film club\" to again be separated into an easy to digest list of options.",
+        "image": "/resources/708/solution-image-2.png"
+      },
+      {
+        "title": "Improving core UX",
+        "text":
+          "We wanted to do something special for our audience. So we revisited all the user journeys from the ground up. \n\nWe improved the rating system, and linked it through to competitions such as review of the week. With this the process of writing a review super-charged, making it much more intuitive and enjoyable.\n\nNot happy with just that, we also improved messaging. Members now benefit from a funky little notification system, and likewise, leaders also get their own administrative notifications panel added to their dashboard, and can easily create screenings and bulk notify members, all from the one screen.",
+        "image": "/resources/709/solution-image-3.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "Our team helped breathe new life in the Into Film Clubs brand, incorporating bright, colourful and delightful visuals with a much greater level of interactivity and engagement. \r\n\r\nWhat's more, we didn't only consider the audience, but we applied the same passion for the editorial staff, making the management of Into Film Clubs a breeze!",
+    "hurdles": [
+      {
+        "title": "Make it fun!",
+        "text":
+          "Throughout this design project we had to embrace the young person inside and remember to constantly think, how can we make it more fun. The key to this was to include the user as much as possible, running all key design considerations through user testing and gauging its success by the response. A key finding was the introduction of iconography to signpost key areas and to ensure that all interactive elements gave some form of visual feedback. Combined, these two simple solutions would ensure maximum engagement from the younger members but remain appealing to the more mature young person.",
+        "image": "/resources/707/solution-image-1.png"
+      },
+      {
+        "title": "Keep it simple Sally",
+        "text":
+          "As if often the way, our core thinking was to work damn hard to keep things simple for the user. This was particularly important in designing interactive journeys such as bookings where any distraction or confusion can lead to people dropping out (a major no no).\n\nA sub tier of club management navigation was chosen to separate key features into individual areas. This in turn allowed for complex areas such as \"manage film club\" to again be separated into an easy to digest list of options.",
+        "image": "/resources/708/solution-image-2.png"
+      },
+      {
+        "title": "Improving core UX",
+        "text":
+          "We wanted to do something special for our audience. So we revisited all the user journeys from the ground up. \n\nWe improved the rating system, and linked it through to competitions such as review of the week. With this the process of writing a review super-charged, making it much more intuitive and enjoyable.\n\nNot happy with just that, we also improved messaging. Members now benefit from a funky little notification system, and likewise, leaders also get their own administrative notifications panel added to their dashboard, and can easily create screenings and bulk notify members, all from the one screen.",
+        "image": "/resources/709/solution-image-3.png"
+      }
+    ]
+  },
+  "performance": [],
+  "testimonial": {
+    "quote":
+      "Aerian delivered the design to brief and beyond. They are a great bunch to work with - really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. I loved working on this project with them and am chuffed to bits with the result.",
+    "person": "Louise Goodspeed",
+    "title": "UX Lead",
+    "avatar": "/resources/712/intofilm-clubs-quote-image.png"
+  }
+}

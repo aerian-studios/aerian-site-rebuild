@@ -1,0 +1,93 @@
+{
+  "name": "BBC",
+  "slug": "bbc-companion-app",
+  "titleLineOne": "Bringing the BBC's best shows to life",
+  "titleLineTwo": "on your second screen",
+  "goLiveDate": "2015-11-04T00:00:00.000Z",
+  "caseStudyTitle": "A scalable, interactive solution",
+  "caseStudyText":
+    "We created a scalable, production ready companion app that pulled interactive TV companion content (quizzes, videos, information) from a myriad of BBC services and seamlessly wove it together in a cool, fun app",
+  "externalUrl": null,
+  "heroImage": "/resources/300/bbc-compainion-app-hero-image.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "The BBC needed cool, fun and engaging content for users to enjoy, before and during their live programmes. ",
+    "hurdles": [
+      {
+        "title": "A new user experience ",
+        "text":
+          "The programmes feed didn't currently allow for much interactivity or cross pollination of content and journeys, so a new user experience and flow through content needed to be created, with an arm-chair ‘lazy engagement' view in mind.",
+        "image": "/resources/614/bbc-companion-01.png"
+      },
+      {
+        "title": "Content from a range of sources ",
+        "text":
+          "The key challenge for Companion was to deliver content from a diverse range of information sources across the BBC, at a time when the BBC infrastructure was migrating to new systems.",
+        "image": "/resources/613/bbc-companion-02.png"
+      },
+      {
+        "title": "Creating a responsive app",
+        "text":
+          "The BBC needed to create a scalable, interactive solution . In order to do this, it needed to deal with a vast array of diverse devices with any number of different content challenges surrounding some of BBC's best loved brands.",
+        "image": "/resources/615/bbc-companion-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "Delivering interactive content on technology that was in flux, on a massive range of devices, was incredibly tough - but we did it. ",
+    "hurdles": [
+      {
+        "title": "Structured agile PM ",
+        "text":
+          "We were swimming in uncharted territories, with technology changing around us everyday. So we absolutely needed a well structured Agile PM approach to ensure the myriad of BBC services & requirements were prioritised against business needs.",
+        "image": "/resources/616/bbc-companion-04.png"
+      },
+      {
+        "title": "Rigorous QA testing ",
+        "text":
+          "We worked night and day to identified device failings and incompatibilities across the diverse and complex landscape of Android devices. We even created a solution that allowed Samsung devices to manage their own graphical output (don't ask!)",
+        "image": "/resources/617/bbc-companion-05.png"
+      },
+      {
+        "title": "Putting the client in control",
+        "text":
+          "We used Jira extensively to give complete transparency to the BBC in terms of how we spent our time, enabling them to respond quickly and efficiently when issues arose.",
+        "image": "/resources/618/bbc-companion-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "The application was launched successfully on time, in a performant and engaging manner to great acclaim both within the BBC and without. ",
+    "hurdles": [
+      {
+        "title": "Structured agile PM ",
+        "text":
+          "We were swimming in uncharted territories, with technology changing around us everyday. So we absolutely needed a well structured Agile PM approach to ensure the myriad of BBC services & requirements were prioritised against business needs.",
+        "image": "/resources/616/bbc-companion-04.png"
+      },
+      {
+        "title": "Rigorous QA testing ",
+        "text":
+          "We worked night and day to identified device failings and incompatibilities across the diverse and complex landscape of Android devices. We even created a solution that allowed Samsung devices to manage their own graphical output (don't ask!)",
+        "image": "/resources/617/bbc-companion-05.png"
+      },
+      {
+        "title": "Putting the client in control",
+        "text":
+          "We used Jira extensively to give complete transparency to the BBC in terms of how we spent our time, enabling them to respond quickly and efficiently when issues arose.",
+        "image": "/resources/618/bbc-companion-06.png"
+      }
+    ]
+  },
+  "performance": [],
+  "testimonial": {
+    "quote":
+      "Users told us that they enjoyed our 'upcoming programme' content so much they watched programmes they then went on to watch the upcoming show, which they wouldn't have otherwise. ",
+    "person": "BBC audience testing results",
+    "title": "Project Owner | Editorial lead",
+    "avatar": "/resources/301/bbc-compainion-quote-image.jpg"
+  }
+}

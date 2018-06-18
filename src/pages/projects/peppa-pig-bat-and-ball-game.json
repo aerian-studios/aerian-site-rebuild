@@ -1,0 +1,88 @@
+{
+  "name": "Peppa Pig Bat and Ball Game",
+  "slug": "peppa-pig-bat-and-ball-game",
+  "titleLineOne": "Danny Dog, Peppa Pig, Suzy Sheep...",
+  "titleLineTwo": "whoever you love, you'll love Bat and Ball",
+  "goLiveDate": "2015-11-04T00:00:00.000Z",
+  "caseStudyTitle": "HTML5 Nickelodeon Peppa Pig game.",
+  "caseStudyText":
+    "Nickelodeon had been looking to do more HTML5 games, but didn’t have a supplier base that enabled them to deliver against the demand from the public.",
+  "externalUrl":
+    "http://www.nickjr.co.uk/play/peppa-pig/peppa-pig-bat-and-ball ",
+  "heroImage": "/resources/400/peppa-pig-hero-image.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "In order to create a seamless experience, we needed to combine TV episode footage with animation and scripting that we created - all in browser, all working on older devices. ",
+    "hurdles": [
+      {
+        "title": "Kids don't generally have up to date devices",
+        "text":
+          "They needed to set out their stall as a forward looking, innovative,  entertainment company who brought the best brands and the best experiences to their audience, no matter what device they were using. Since Peppa Pig is one of their most treasured brands, particular attention fell on our project to reach new, mobile audiences.",
+        "image": "/resources/477/george-crying.png"
+      },
+      {
+        "title": "The game needed seamless video, on apple devices (uh, oh)",
+        "text":
+          "Video on Apple devices is particularly hard as it takes over the browser, we had to be sneaky and devious to integrate real video with the animations we created.",
+        "image": "/resources/601/nick-02.png"
+      },
+      {
+        "title": "Re-usable and extensible. ",
+        "text":
+          "We're always keen to create an extensible system that's larger than just a single game, we worked with Nickelodeon, E-One and ABD to create a system that could then create game after game, quickly and easily.",
+        "image": "/resources/602/nick-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "We broke new ground, and created HTML5 character rigs whereby we could swap elements and make characters on the fly",
+    "hurdles": [
+      {
+        "title": "Careful, fun script and storyboard",
+        "text":
+          "We used every step of the process to squeeze every inch of possibility out of the project. Right from the scripting process, we were looking for ways to deliver a game that would work on slower and older devices, without compromising quality and fun.",
+        "image": "/resources/603/nick-04.png"
+      },
+      {
+        "title": "HTML5, on-the-fly character rigs",
+        "text":
+          "To give us the most amount of flexibility and performance across all screens, we recreated all the character designs using vectors, and then attached this to a dynamic HTML5 rig. This allowed us to basically ‘drop' any character we wished into any scene, and have them controlled by the user.",
+        "image": "/resources/415/peppa-pig-solution-icon-2.png"
+      },
+      {
+        "title": "Come on, it's Peppa - it's got to be fun!",
+        "text":
+          "Furthermore, we added experience led game mechanics including levels, humourous ‘fail' clips and interactions and a number of silly and fun interactions to keep the little ones entertained.",
+        "image": "/resources/416/peppa-pig-solution-icon-3.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "The technical achievement cannot be underestimated, and the script, animation and gameplay were well loved by kids across the country. ",
+    "hurdles": [
+      {
+        "title": "Careful, fun script and storyboard",
+        "text":
+          "We used every step of the process to squeeze every inch of possibility out of the project. Right from the scripting process, we were looking for ways to deliver a game that would work on slower and older devices, without compromising quality and fun.",
+        "image": "/resources/603/nick-04.png"
+      },
+      {
+        "title": "HTML5, on-the-fly character rigs",
+        "text":
+          "To give us the most amount of flexibility and performance across all screens, we recreated all the character designs using vectors, and then attached this to a dynamic HTML5 rig. This allowed us to basically ‘drop' any character we wished into any scene, and have them controlled by the user.",
+        "image": "/resources/415/peppa-pig-solution-icon-2.png"
+      },
+      {
+        "title": "Come on, it's Peppa - it's got to be fun!",
+        "text":
+          "Furthermore, we added experience led game mechanics including levels, humourous ‘fail' clips and interactions and a number of silly and fun interactions to keep the little ones entertained.",
+        "image": "/resources/416/peppa-pig-solution-icon-3.png"
+      }
+    ]
+  },
+  "performance": [],
+  "testimonial": null
+}

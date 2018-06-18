@@ -1,0 +1,94 @@
+{
+  "name": "Breast Cancer Now Launch",
+  "slug": "breast-cancer-now",
+  "titleLineOne": "It's our aim, that by 2050",
+  "titleLineTwo": "no women will die from breast cancer",
+  "goLiveDate": "2015-06-01T23:00:00.000Z",
+  "caseStudyTitle":
+    "We helped create an industry leading, user centred charity",
+  "caseStudyText":
+    "Breast Cancer Campaign and Breakthrough Breast Cancer needed to merge to form a new £50m+ charity, and as such they needed a digital footprint and launch to match the ambition of the new charity.",
+  "externalUrl": "http://breastcancernow.org/?gclid=CJvE_YmHwMsCFfQW0wod_xkIDA",
+  "heroImage": "/resources/102/bcn-hero-image.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "As a team, we needed to combine two diverse teams, and two digital real estates and brands under a single, coherent and compelling banner. ",
+    "hurdles": [
+      {
+        "title": "Fast turnaroud",
+        "text":
+          "We were, and continue to be the lead agency responsible for digital output. Due to the press launch and necessary velocity of the project, we had a mere 3 month turnaround to find the audience, know them, rebrand and relaunch their digital real-estate: quicker, better and more exciting than ever before.",
+        "image": "/resources/650/bcn-01.png"
+      },
+      {
+        "title": "Unmovable launch and enormous amounts to do",
+        "text":
+          "As you can imagine, when you're in the spotlight, with booked TV slots and a slew of industry and public PR waiting in the wings. We simply could not be late. It was an enormous task needed to combine two teams, thousands of pieces of content, several systems, applications etc.",
+        "image": "/resources/649/bcn-02.png"
+      },
+      {
+        "title": "Complex auditing ",
+        "text":
+          "We needed to complete a series of complex and thorough auditing and consolidation rounds, covering two highly complex websites and all their microsites, interactives, apps and donation platforms.",
+        "image": "/resources/651/bcn-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "At all times, we worked up from the users. They were our inspiration, our decision makers and drove our innovation. ",
+    "hurdles": [
+      {
+        "title": "Creating user personas ",
+        "text":
+          "We knew nothing could be decided quickly and easily unless we absolutely knew what our audience wanted. So we harnessed user research analytics from both charities to create a consolidated set of 6 personas which we used to user test against and validate our potential solutions.",
+        "image": "/resources/652/bcn-04.png"
+      },
+      {
+        "title": "Key characteristics ",
+        "text":
+          "We further extrapolated on this and identified key characteristics (temperament/behaviors), their specific content requirements and the success criteria needed to meet their wants and needs. Basically, we made the site work for THEM, and not US.",
+        "image": "/resources/653/bcn-05.png"
+      },
+      {
+        "title": "Elegant messaging  ",
+        "text":
+          "We knew the charity needed a new voice in a crowded space, and by working closely with the brand team we created a website targeted at the simple, yet elegant, message to end breast cancer by 2050.",
+        "image": "/resources/654/bcn-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "Football teams, broadcasters, celebrities and volunteers across the country have embraced our project like never before. It's been featured, shared, award nominated and loved like no other. ",
+    "hurdles": [
+      {
+        "title": "Creating user personas ",
+        "text":
+          "We knew nothing could be decided quickly and easily unless we absolutely knew what our audience wanted. So we harnessed user research analytics from both charities to create a consolidated set of 6 personas which we used to user test against and validate our potential solutions.",
+        "image": "/resources/652/bcn-04.png"
+      },
+      {
+        "title": "Key characteristics ",
+        "text":
+          "We further extrapolated on this and identified key characteristics (temperament/behaviors), their specific content requirements and the success criteria needed to meet their wants and needs. Basically, we made the site work for THEM, and not US.",
+        "image": "/resources/653/bcn-05.png"
+      },
+      {
+        "title": "Elegant messaging  ",
+        "text":
+          "We knew the charity needed a new voice in a crowded space, and by working closely with the brand team we created a website targeted at the simple, yet elegant, message to end breast cancer by 2050.",
+        "image": "/resources/654/bcn-06.png"
+      }
+    ]
+  },
+  "performance": [],
+  "testimonial": {
+    "quote":
+      "Thanks so much to all of you for the speed and quality of your work across the board - design, communication build and overall passion for the project that’s made it as amazing as it is. It’s been awesome working with you on this and we’re looking forward to all the next steps that can now be taken without such a massive immovable deadline propelling us along!",
+    "person": "James Elliot ",
+    "title": "Assistant Director of Digital Engagement",
+    "avatar": "/resources/105/bcn-quote-image.jpg"
+  }
+}

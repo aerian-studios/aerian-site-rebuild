@@ -1,0 +1,101 @@
+{
+  "name": "BBC",
+  "slug": "bbc-whispering-stars",
+  "titleLineOne": "There’s a message waiting for you",
+  "titleLineTwo": "on a star in the night sky",
+  "goLiveDate": "2015-08-31T23:00:00.000Z",
+  "caseStudyTitle": "Whispering Stars: Augmented Reality messaging app",
+  "caseStudyText":
+    "Whispering Stars is a BBC Taster project which enables people to message each other via the stars. Users are able to explore the night sky with an accurate live 3D star map, find an interesting star and write a message on it to share via social media.",
+  "externalUrl": "http://www.bbc.co.uk/taster/projects/whispering-stars",
+  "heroImage": "/resources/211/bbc-whispering-stars-hero-image.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "We needed to build the world's first in-browser star field (and it needed to perform on old and low powered devices)",
+    "hurdles": [
+      {
+        "title": "Familiar gestures",
+        "text":
+          "We needed to use existing paradigms and familiar gestures to help ease people into a tool they never would have seen before. This would then encouraged people to use the product creatively, rather than just trying to 'use it'. We also needed to add facts about the night sky to make their messages more inspiring.",
+        "image": "/resources/640/bbc-whispering-01.png"
+      },
+      {
+        "title": "Real world scenarios ",
+        "text":
+          "Other than the technical challenges, we also had to consider real world scenarios such as aching arms. We recognised that people won't want to hold their arms in the air for a long time. This needed to be quick, and fun!",
+        "image": "/resources/641/bbc-whispering-02.png"
+      },
+      {
+        "title": "Thinking about the user",
+        "text":
+          "We also needed to test how long people would use the app before they tire. If a users default action remains to always start with the sky, they still needed an alternative that didn't require that level of mobility when required.",
+        "image": "/resources/642/bbc-whispering-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "We created a highly performant, portable 3D JS library that allowed on-the-fly data updates of stars and messaging ",
+    "hurdles": [
+      {
+        "title": "Making the stars cool again! (Weren't they always?)",
+        "text":
+          "By using a personal, social media message as a users first step, we subtly introduced users to the stars through a familiar voice - that of a friend or a loved one. And once they're 'in', they can explore other stars to their heart's content, and leave a message for their friends and loved ones - passing on the experience.",
+        "image": "/resources/643/bbc-whispering-04.png"
+      },
+      {
+        "title": "Social networking ",
+        "text":
+          "By using the public's social networks to reach new audiences, we hope to make facts about the night sky more accessible, and fun, to a wider audience.",
+        "image": "/resources/644/bbc-whispering-05.png"
+      },
+      {
+        "title": "Discover amazing facts ",
+        "text":
+          "Both sender and recipient can discover amazing facts about the stars and visible planets that inspire them to write a message and share with their community.",
+        "image": "/resources/645/bbc-whispering-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "We successfully created another world first piece of tech that people loved, including multiple awards",
+    "hurdles": [
+      {
+        "title": "Making the stars cool again! (Weren't they always?)",
+        "text":
+          "By using a personal, social media message as a users first step, we subtly introduced users to the stars through a familiar voice - that of a friend or a loved one. And once they're 'in', they can explore other stars to their heart's content, and leave a message for their friends and loved ones - passing on the experience.",
+        "image": "/resources/643/bbc-whispering-04.png"
+      },
+      {
+        "title": "Social networking ",
+        "text":
+          "By using the public's social networks to reach new audiences, we hope to make facts about the night sky more accessible, and fun, to a wider audience.",
+        "image": "/resources/644/bbc-whispering-05.png"
+      },
+      {
+        "title": "Discover amazing facts ",
+        "text":
+          "Both sender and recipient can discover amazing facts about the stars and visible planets that inspire them to write a message and share with their community.",
+        "image": "/resources/645/bbc-whispering-06.png"
+      }
+    ]
+  },
+  "performance": [
+    { "title": 9802, "text": "9,802 successful users tested our tool" },
+    {
+      "title": 1006,
+      "text":
+        "Over a thousand people rated it (and rated it very well thank you)"
+    },
+    { "title": 243, "text": "243 people recommended it from inside the app" }
+  ],
+  "testimonial": {
+    "quote":
+      "Aerian are a fantastic team! Not only did they understand the brief immediately, and create a clean and elegant interface, but they somehow managed to build a live 3D star map that works in a web browser. Even better, users can write messages in it. That’s quite a thing!",
+    "person": "Simon Mackie",
+    "title": "Digital Producer | BBC Science",
+    "avatar": "/resources/213/bbc-whispering-stars-quote-image.jpg"
+  }
+}

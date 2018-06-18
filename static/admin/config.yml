@@ -9,7 +9,7 @@ collections:
   - name: "clients" 
     label: "Clients"
     label_singular: "Client"
-    folder: "src/clients"
+    folder: "src/pages/clients"
     create: true
     extension: json
     slug: "{{slug}}"
@@ -28,7 +28,7 @@ collections:
   - name: "projects"
     label: "Projects"
     label_singular: "Project"
-    folder: "src/projects"
+    folder: "src/pages/projects"
     create: true
     extension: json
     slug: "{{slug}}"

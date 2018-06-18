@@ -1,0 +1,93 @@
+{
+  "name": "Into Film",
+  "slug": "into-film-educator",
+  "titleLineOne": "Putting film at the heart",
+  "titleLineTwo": "of young people’s learning",
+  "goLiveDate": "2015-02-01T00:00:00.000Z",
+  "caseStudyTitle": "A complete digital redesign of Into Film.",
+  "caseStudyText":
+    "Aerian have worked hand in hand with Into Film to deliver their £30m+ four year campaign to bring film into the hearts of the nation’s youth.",
+  "externalUrl": "https://www.intofilm.org/",
+  "heroImage": "/resources/119/into-film-hero-image.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "Into Film needed an industry leading digital learning platform, strategised and delivered within three months",
+    "hurdles": [
+      {
+        "title": "Original and beautiful",
+        "text":
+          "Although we knew the product needed to be usable first, we needed it to feel cinematic and a thing of aspirational beauty. We needed to harness the power of film throughout all levels of the product.",
+        "image": "/resources/580/into-film-01.png"
+      },
+      {
+        "title": "The challenges  ",
+        "text":
+          "*   Complex and disperse users journeys to consolidate \n*   A wide variety of audiences needed catering for (teachers, press, student, film etc)\n*   Users need to be able to \"dip in\", create and consolidate content \n*   The system would need to work seamlessly with multiple existing systems, and eventually replace many",
+        "image": "/resources/579/into-film-02.png"
+      },
+      {
+        "title": "The Into Film real-estate",
+        "text":
+          "*   We needed to ensure that our design paradigms could encompass multiple sub brands, campaigns, teams and the potential for change and extension\n*   Our design paradigms and global experience language needed to let the content sing, without background noise\n*   Those design paradigms needed to be styled and extended through sub brands and third party partners\n*   Tight deadline with a 1 year project being delivered in 3 months.",
+        "image": "/resources/581/into-film-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "We worked incredibly closely with the Into Film team, creating one team with the top talent from both side. We all worked hard, fast and efficiently. ",
+    "hurdles": [
+      {
+        "title": "Bold new look & feel",
+        "text":
+          "Adhering to and validating our designs against these epics ensured that not only would we create a bold new look and feel for Into Film but that all tasks could be completed with a consistent set of tools and components. Basically, through careful and close partnerships with Into Film and their audiences, we delivered a set of designs that were as confident and aspirational as they were easy to use.",
+        "image": "/resources/582/into-film-04.png"
+      },
+      {
+        "title": "We made tools and services, not sites and applications",
+        "text":
+          "We created consistent, considered tools and components that allows users to perform tasks quickly, intuitively and easily, regardless of their digital literacy and skill level. We carefully thought through the context and situations of our users, and this enables us to design solutions perfect for them.",
+        "image": "/resources/583/into-film-05.png"
+      },
+      {
+        "title": "Film at it's heart",
+        "text":
+          "Use of photography was key to this subtle branding task, and we employed full screen imagery and sympathetic colour palettes extensively. This helped the product pop off the page, giving it the same love and excitement as the silver screen - a large part of our remit was to excite the audience.",
+        "image": "/resources/584/into-film-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "The relaunch has been incredibly successful, and finalised as one of the greatest website design of the year.  ",
+    "hurdles": [
+      {
+        "title": "Bold new look & feel",
+        "text":
+          "Adhering to and validating our designs against these epics ensured that not only would we create a bold new look and feel for Into Film but that all tasks could be completed with a consistent set of tools and components. Basically, through careful and close partnerships with Into Film and their audiences, we delivered a set of designs that were as confident and aspirational as they were easy to use.",
+        "image": "/resources/582/into-film-04.png"
+      },
+      {
+        "title": "We made tools and services, not sites and applications",
+        "text":
+          "We created consistent, considered tools and components that allows users to perform tasks quickly, intuitively and easily, regardless of their digital literacy and skill level. We carefully thought through the context and situations of our users, and this enables us to design solutions perfect for them.",
+        "image": "/resources/583/into-film-05.png"
+      },
+      {
+        "title": "Film at it's heart",
+        "text":
+          "Use of photography was key to this subtle branding task, and we employed full screen imagery and sympathetic colour palettes extensively. This helped the product pop off the page, giving it the same love and excitement as the silver screen - a large part of our remit was to excite the audience.",
+        "image": "/resources/584/into-film-06.png"
+      }
+    ]
+  },
+  "performance": [],
+  "testimonial": {
+    "quote":
+      "Aerian delivered the design to brief and beyond. They are a great bunch to work with, really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. I loved working on this project with them and am chuffed to bits with the result.",
+    "person": "Louise Goodspeed",
+    "title": "UX Lead",
+    "avatar": "/resources/122/into-film-quote-image.png"
+  }
+}

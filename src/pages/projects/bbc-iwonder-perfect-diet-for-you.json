@@ -1,0 +1,97 @@
+{
+  "name": "BBC",
+  "slug": "bbc-iwonder-perfect-diet-for-you",
+  "titleLineOne": "What sort of 'eater' are you?",
+  "titleLineTwo": "I mean... really?!",
+  "goLiveDate": "2015-11-04T00:00:00.000Z",
+  "caseStudyTitle": "Two interactive 'foodie' quizzes for BBC iWonder",
+  "caseStudyText":
+    "With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.",
+  "externalUrl": "http://www.bbc.co.uk/guides/z2csfg8",
+  "heroImage": "/resources/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "Whatever we built needed to be awesome, no matter how non-awesome someone's device might be",
+    "hurdles": [
+      {
+        "title": "Responsive guidelines ",
+        "text":
+          "*   Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.\n*   Work with iWonder responsive guidelines.",
+        "image": "/resources/622/bbc-iwonder-01.png"
+      },
+      {
+        "title": "Audience sharing ",
+        "text":
+          "*   Work with iWonder games guidelines.\n*   Creating an app framework that will work with a variety of question types.\n*   High audience and sharing figures were a requirement.",
+        "image": "/resources/623/bbc-iwonder-02.png"
+      },
+      {
+        "title": "Tight turn around",
+        "text":
+          "*   As always, a tight turn around time.\n*   The total download size of the initial activity load MUST be less than 250kb.\n*   Any individual asset within an activity SHOULD NOT exceed 100KB.",
+        "image": "/resources/624/bbc-iwonder-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "We used highly flexible design solutions that utilised device interactions such as advanced swipe motions and parallax via CCS3, JavaScript and HTML5, thus reaching the largest device demographic possible. ",
+    "hurdles": [
+      {
+        "title": "Maximising sharing ",
+        "text":
+          "To increase the appeal of the app, animated features and interactions were added. Share buttons situated at key stages of the journey maximised exposure of sharing.",
+        "image": "/resources/625/bbc-iwonder-04.png"
+      },
+      {
+        "title": "Agile approach",
+        "text":
+          "*   Agile project approach to ensure all progress and blockers are expedited.\n*   Close working relationship with BBC to ensure guidelines were adhered.",
+        "image": "/resources/626/bbc-iwonder-05.png"
+      },
+      {
+        "title": "CMS implementation",
+        "text":
+          "Content management was implemented so that content and javascript elements were editable.",
+        "image": "/resources/627/bbc-iwonder-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "With over 1.5 million unique users in 48 hours, it quickly became the number one iWonder guide of all time, beating even the 2014 World Cup! ",
+    "hurdles": [
+      {
+        "title": "Maximising sharing ",
+        "text":
+          "To increase the appeal of the app, animated features and interactions were added. Share buttons situated at key stages of the journey maximised exposure of sharing.",
+        "image": "/resources/625/bbc-iwonder-04.png"
+      },
+      {
+        "title": "Agile approach",
+        "text":
+          "*   Agile project approach to ensure all progress and blockers are expedited.\n*   Close working relationship with BBC to ensure guidelines were adhered.",
+        "image": "/resources/626/bbc-iwonder-05.png"
+      },
+      {
+        "title": "CMS implementation",
+        "text":
+          "Content management was implemented so that content and javascript elements were editable.",
+        "image": "/resources/627/bbc-iwonder-06.png"
+      }
+    ]
+  },
+  "performance": [
+    { "title": 558000, "text": "558,000 additional visits" },
+    { "title": 240000, "text": "240,000 visits" },
+    { "title": 1500000, "text": "1,500,000+ visits" }
+  ],
+  "testimonial": {
+    "quote":
+      "It was seen by 1.5m unique browsers and was really well received by audience members. Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn’t have done it without Aerian.",
+    "person": " Anna-Louise Taylor",
+    "title": "Senior Content Producer",
+    "avatar": "/resources/281/bbc-perfect-diet-for-you-qoute-image.jpg.jpg"
+  }
+}

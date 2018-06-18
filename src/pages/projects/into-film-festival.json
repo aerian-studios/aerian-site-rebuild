@@ -1,0 +1,97 @@
+{
+  "name": "Into Film Festival",
+  "slug": "into-film-festival",
+  "titleLineOne": "A national celebration of",
+  "titleLineTwo": "film for 5-19 year olds",
+  "goLiveDate": "2016-09-14T23:00:00.000Z",
+  "caseStudyTitle": "Into Film Festival creative design and development",
+  "caseStudyText":
+    "The Into Film Festival is the world's largest free film and education event for young people. The Festival offers more than 3,000 cinema screenings of 165+ films, all selected with educators in mind.",
+  "externalUrl": "https://www.intofilm.org/events/festival",
+  "heroImage": "/resources/693/into-film-festival-header.png",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "When designing Into Film Festival we needed to capture the spirit of the festival - creating a fun, aspirational look-and-feel, while delivering a highly performant and super-quick booking and support system. ",
+    "hurdles": [
+      {
+        "title": "Reach for the stars",
+        "text":
+          "The Into Film Festival website needed to appeal to a diverse range of users across all age groups, as well as meet stakeholder aspirations. Whatever design we proposed needed to be visually stunning and aspirational, whilst remaining easy-to-use for super fast bookings (zoooom!!!).",
+        "image": "/resources/680/into-film-festival-01.png"
+      },
+      {
+        "title": "Multiple user permissions",
+        "text":
+          "The website needed to be scalable and robust to ensure a smooth and seamless user experience during periods of incredibly high booking demand. Cinema owners (Exhibitors) and event organisers needed access to booking details so they could see how popular events were and make the appropriate arrangements.",
+        "image": "/resources/679/into-film-festival-02.png"
+      },
+      {
+        "title": "Multiple user types",
+        "text":
+          "Into Film Festival caters for a wide range of user types, varying in both age and digital literacy. With this in mind we needed to ensure the look and feel delivered the right message and is easy to use while at the same time offering more advanced features for the more capable and experienced user.",
+        "image": "/resources/681/into-film-festival-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "To ensure the approach fulfilled user outcomes and requirements we worked closely with the Into Film team through a number of workshops and internal brainstorming sessions.",
+    "hurdles": [
+      {
+        "title": "Utilising the magic of the cinema",
+        "text":
+          "We peppered dynamic and aspirational imagery to celebrate the wonder of cinematography, and grab users. We complimented this imagery with alluring promo blocks and call-to-actions for the primary navigation paths, leading to an delightful browsing (and more importantly, booking) experience.",
+        "image": "/resources/682/into-film-festival-04.png"
+      },
+      {
+        "title": "Flexible solutions for maximum results",
+        "text":
+          "We worked tirelessly to understand and plan meticulously for the various third party systems our application would need to integrate with. Communication between our teams was critical to the success, and the creation of a final product that not only performed flawlessly under immense traffic pressures; but also delivered an delightful user experience that exceeded Into Film's booking targets.",
+        "image": "/resources/683/into-film-festival-05.png"
+      },
+      {
+        "title": "Lets make booking a pleasure",
+        "text":
+          "To ensure maximum bookings during the festival we implemented a swathe of features and created a highly targetted and optimised booking journey. Geo-location technology was utilised to pre-define user locations and recommend events near them, complemented by an extensive filter system that allowed highly tailored filtering.",
+        "image": "/resources/684/into-film-festival-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "The Into Film Festival launched with an amazing reception from users. We achieved record breaking figures for bookings in the first week, ith a peak of over 1 million website hits in a day.",
+    "hurdles": [
+      {
+        "title": "Utilising the magic of the cinema",
+        "text":
+          "We peppered dynamic and aspirational imagery to celebrate the wonder of cinematography, and grab users. We complimented this imagery with alluring promo blocks and call-to-actions for the primary navigation paths, leading to an delightful browsing (and more importantly, booking) experience.",
+        "image": "/resources/682/into-film-festival-04.png"
+      },
+      {
+        "title": "Flexible solutions for maximum results",
+        "text":
+          "We worked tirelessly to understand and plan meticulously for the various third party systems our application would need to integrate with. Communication between our teams was critical to the success, and the creation of a final product that not only performed flawlessly under immense traffic pressures; but also delivered an delightful user experience that exceeded Into Film's booking targets.",
+        "image": "/resources/683/into-film-festival-05.png"
+      },
+      {
+        "title": "Lets make booking a pleasure",
+        "text":
+          "To ensure maximum bookings during the festival we implemented a swathe of features and created a highly targetted and optimised booking journey. Geo-location technology was utilised to pre-define user locations and recommend events near them, complemented by an extensive filter system that allowed highly tailored filtering.",
+        "image": "/resources/684/into-film-festival-06.png"
+      }
+    ]
+  },
+  "performance": [
+    { "title": 2969, "text": null },
+    { "title": 477455, "text": null },
+    { "title": 7724, "text": null }
+  ],
+  "testimonial": {
+    "quote":
+      "Aerian delivered the design to brief and beyond. They are a great bunch to work with - really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. I loved working on this project with them and am chuffed to bits with the result.",
+    "person": "Louise Goodspeed",
+    "title": "Lead UX",
+    "avatar": "/resources/688/intofilm-festival-quote-image.png"
+  }
+}

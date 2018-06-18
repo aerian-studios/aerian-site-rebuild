@@ -1,0 +1,49 @@
+{
+  "name": "Mixital",
+  "slug": "mixital",
+  "titleLineOne": "EastEnders, Doctor Who, Strictly…",
+  "titleLineTwo": "amazing brands and wonderful experiences",
+  "goLiveDate": "2016-01-01T00:00:00.000Z",
+  "caseStudyTitle":
+    "Creation of a digital platform for the next generation of makers",
+  "caseStudyText":
+    "Mixital is an award nominated platform giving young creators and makers the tools they need to make stories, videos, music and more. We couldn’t be prouder of our involvement in helping shape and deliver this rewarding project.",
+  "externalUrl": "www.mixital.co.uk",
+  "heroImage": "/resources/551/eastenders-story-maker-mac.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "Mixital forms part of the BBC’s core Make It Digital campaign to empower the next generation of digital creators, and therefore was mission critical to the BBC.",
+    "hurdles": [
+      {
+        "title": "Plays well with others",
+        "text":
+          "The BBC not only needed a strong tech platform that would enable young people to build and upload their creations, but they also needed an extensible library framework that would allow third parties to create ‘kits' for the young people to use. To that end we would need to create a plug and play dev system that would allow third party content providers such as Aardman to be unrestricted by our system.",
+        "image": "/resources/549/make-it-digital.jpg"
+      },
+      {
+        "title": "Keeping young people safe, but not restricted",
+        "text":
+          "UGC within the BBC is one of the toughest asks. Due to the way that the BBC is held accountable, we need to create any number of bespoke uploader, moderation and user management systems to fulfil the needs of the BBC security teams, while not restricting any creativity in our users.",
+        "image": "/resources/599/mixital-02.png"
+      },
+      {
+        "title": "Rock solid performance, rock hard security",
+        "text":
+          "Due to the nature of the project, both BBC and Aerian decided to create the project off the BBC's normal internal infrastructure. We worked closely with BBC technical teams to scope, strategise and deliver an off-site AWS hosting solution that would allow easy integration to any number of industry leading technical solution providers.",
+        "image": "/resources/600/mixital-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "We created DMK (Digital Maker Kits) as a framework allowing third parties to do what they do best, creating amazing interactive experiences. ",
+    "hurdles": []
+  },
+  "results": {
+    "description": "Award winning, but most importantly, great fun!",
+    "hurdles": []
+  },
+  "performance": [],
+  "testimonial": null
+}

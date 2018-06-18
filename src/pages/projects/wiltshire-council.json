@@ -1,0 +1,88 @@
+{
+  "name": "Wiltshire Council Relaunch",
+  "slug": "wiltshire-council",
+  "titleLineOne": "All of Wiltshire's services and events ",
+  "titleLineTwo": "in one helpful and beautiful place",
+  "goLiveDate": "2015-11-01T00:00:00.000Z",
+  "caseStudyTitle":
+    "We redesigned a myriad of pages and services to work seamlessly",
+  "caseStudyText":
+    "The Council’s website had become dated and bloated with thousands of pages of content, much of which needed to be updated and consolidated.",
+  "externalUrl": "http://www.wiltshire.gov.uk/",
+  "heroImage": "/resources/437/wc-hero-image.jpg",
+  "heroVideo": null,
+  "challenge": {
+    "description":
+      "Primarily, we needed to get the site to become responsive and we needed to create a CMS capable of being used by a diverse team with complex and ever-changing needs. ",
+    "hurdles": [
+      {
+        "title": "Responsiveness from day one",
+        "text":
+          "The site previously didn't work across mobile devices, which was an increasing problem in tackling rising visitors and user expectations. Load times were slow and rounded off a generally poor user experience.",
+        "image": "/resources/605/wiltshire-01.png"
+      },
+      {
+        "title": "Making CMS useable  ",
+        "text":
+          "The CMS was not flexible enough to adapt and scale to future business needs. Load times were slow and rounded off a generally poor user experience.",
+        "image": "/resources/606/wiltshire-02.png"
+      },
+      {
+        "title": "Gradual takeover ",
+        "text":
+          "To complicate things, the site would be replaced piecemeal. Some sections would be served on the old site and some on the new site with the new one ramping up and taking over gradually.",
+        "image": "/resources/607/wiltshire-03.png"
+      }
+    ]
+  },
+  "solution": {
+    "description":
+      "We established a global look and feel and tech architecture that improved readability, ease-of-use, appreciation and supported stringent accessibility requirements. ",
+    "hurdles": [
+      {
+        "title": "Our responsive and customisable CMS - Tapestry  ",
+        "text":
+          "Our proprietary CMS ‘Tapestry' was customised with bespoke content blocks and data entry views based on editorial team workflows and content requirements.",
+        "image": "/resources/608/wiltshire-04.png"
+      },
+      {
+        "title": "Handling traffic management ",
+        "text":
+          "We proposed and executed creative use of Varnish which acted as a cache layer for the new and old sites. As a ‘Traffic Manager' this also managed the routing of requests to either the old or new site without needing multiple domain names.",
+        "image": "/resources/609/wiltshire-05.png"
+      },
+      {
+        "title": "Lightning quick search functionality ",
+        "text":
+          "In the 11th hour, we were asked to include search functionality across legacy pages as well as the new site. We used Apache Nutch with Solr with some custom boost settings to index pages across the new site.",
+        "image": "/resources/610/wiltshire-06.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "So successful was the relaunch that Wiltshire Council have now created a digital strategy team to continue finding new ways to harness digital to deliver better service and value for money.",
+    "hurdles": [
+      {
+        "title": "Our responsive and customisable CMS - Tapestry  ",
+        "text":
+          "Our proprietary CMS ‘Tapestry' was customised with bespoke content blocks and data entry views based on editorial team workflows and content requirements.",
+        "image": "/resources/608/wiltshire-04.png"
+      },
+      {
+        "title": "Handling traffic management ",
+        "text":
+          "We proposed and executed creative use of Varnish which acted as a cache layer for the new and old sites. As a ‘Traffic Manager' this also managed the routing of requests to either the old or new site without needing multiple domain names.",
+        "image": "/resources/609/wiltshire-05.png"
+      },
+      {
+        "title": "Lightning quick search functionality ",
+        "text":
+          "In the 11th hour, we were asked to include search functionality across legacy pages as well as the new site. We used Apache Nutch with Solr with some custom boost settings to index pages across the new site.",
+        "image": "/resources/610/wiltshire-06.png"
+      }
+    ]
+  },
+  "performance": [{ "title": 2000, "text": "Percent reduction in load time" }],
+  "testimonial": null
+}

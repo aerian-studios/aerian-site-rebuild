@@ -33,7 +33,6 @@ collections:
     extension: json
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Hero Image", name: "heroImage", widget: "image"}
       - {label: "Hero Video", name: "heroVideo", widget: "file", required: false}
@@ -116,7 +115,6 @@ collections:
         label: "Meet the team"
         name: "meet-the-team"
         fields: 
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "team-page"}
           - label: "Staff"
             name: "staff"
             widget: list
@@ -135,14 +133,14 @@ collections:
         label: "What we do"
         name: "what-we-do"
         fields: 
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "what-we-do-page"}
           - label: "Sections"
             name: "sections"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Image", name: "image", widget: image}
-              - {label: "Subitle", name: "subtitle", widget: "string"}
+              - {label: "Small Image", name: "image", widget: image}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
               - {label: "Blurb", name: "blurb", widget: "text"}
               - label: "Activities"
                 name: "activities"

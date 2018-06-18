@@ -18,12 +18,10 @@ export const ProjectPageTemplate: React.SFC<Props> = ({
     contentComponent,
     heroImage
 }) => {
-    const PageContent = contentComponent || Content;
-
     return (
         <section className="section section--about">
             <HeroBlock>
-                {typeof heroImage === "string" ? (
+                {/* {typeof heroImage === "string" ? (
                     // Cover the situation where there is no imageSharp (e.g. in the cms)
                     <img
                         className="full-screen"
@@ -37,30 +35,37 @@ export const ProjectPageTemplate: React.SFC<Props> = ({
                         altText={title}
                         video=""
                     />
-                )}
+                )} */}
                 <div className="block--hero__content-wrap">
                     <h1 className="block--hero__title">{title}</h1>
                 </div>
             </HeroBlock>
             <div className="block--full block layout-grid">
-                <PageContent content={content} />
+                
             </div>
         </section>
     );
 };
 
+const createCorrectMediumComponent = (video, image) => {
+    return (video || typeof image === "string")
+    ? image
+    : image.childImageSharp.sizes
+}
+
 // Make type interface
-const ProjectPage: React.SFC<any> = ({ data }) => {
-    const { markdownRemark: post } = data;
+const ProjectPage: React.SFC = ({ data }) => {
+    console.log(data);
+    const project = data.projectsJson;
 
     return (
         <ProjectPageTemplate
-            title={post.frontmatter.title}
-            content={post.html}
+            title={project.titleLineOne}
             heroImage={
-                typeof post.frontmatter.heroimage === "string"
-                    ? post.frontmatter.heroimage
-                    : post.frontmatter.heroimage.childImageSharp.sizes
+                createCorrectMediumComponent(project.heroVideo, project.heroImage);
+            }
+            heroVideo={
+                project.heroVideo
             }
         />
     );

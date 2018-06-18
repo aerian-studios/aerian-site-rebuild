@@ -120,6 +120,7 @@ collections:
             name: "staff"
             widget: list
             fields:
+              - {label: "Path", name: "path", widget: "hidden", default: "/meet-the-team"}
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Live", name: live, widget: boolean}
               - {label: "Normal image", name: "imageNormal", widget: "image"}
@@ -135,6 +136,7 @@ collections:
         label: "What we do"
         name: "what-we-do"
         fields: 
+          - {label: "Path", name: "path", widget: "hidden", default: "/what-we-do"}
           - label: "Sections"
             name: "sections"
             widget: "list"

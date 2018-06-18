@@ -1,8 +1,8 @@
 {
-    "name": "gatsby-starter-default",
-    "description": "Gatsby default starter",
-    "version": "1.0.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+    "name": "aerian-site-rebuild",
+    "description": "Aerian Studios LLC.",
+    "version": "0.0.1",
+    "author": "sunya.dickman@aerian.com",
     "dependencies": {
         "gatsby": "^1.9.272",
         "gatsby-image": "^1.0.54",
@@ -20,9 +20,7 @@
         "netlify-cms": "^1.9.2",
         "react-helmet": "^5.2.0"
     },
-    "keywords": [
-        "gatsby"
-    ],
+    "keywords": ["gatsby"],
     "license": "MIT",
     "scripts": {
         "build": "gatsby build",
@@ -40,10 +38,7 @@
         "typings-for-css-modules-loader": "^1.7.0"
     },
     "lint-staged": {
-        "*.{js,jsx,css,md,scss}": [
-            "prettier --write",
-            "git add"
-        ],
+        "*.{js,jsx,css,md,scss}": ["prettier --write", "git add"],
         "*.{ts,tsx}": [
             "tslint --project . --fix",
             "prettier --write",
@@ -52,6 +47,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+        "url": "git+https://github.com:aerian-studios/aerian-site-rebuild.git"
     }
 }

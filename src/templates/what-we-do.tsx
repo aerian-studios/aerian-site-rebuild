@@ -70,18 +70,8 @@ export default AboutPage;
 
 export const aboutPageQuery: graphData = graphql`
     query AboutPage($id: String!) {
-        markdownRemark(id: { eq: $id }) {
-            html
-            frontmatter {
-                title
-                heroimage {
-                    childImageSharp {
-                        sizes(maxWidth: 1168) {
-                            ...GatsbyImageSharpSizes_withWebp
-                        }
-                    }
-                }
-            }
+        pagesJson(id: { eq: $id }) {
+            id
         }
     }
 `;

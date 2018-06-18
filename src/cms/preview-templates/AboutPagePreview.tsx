@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AboutPageTemplate } from "../../templates/AboutPage";
+import { AboutPageTemplate } from "../../templates/what-we-do";
 
 interface Props {
     entry: any;

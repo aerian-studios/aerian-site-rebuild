@@ -16,15 +16,18 @@
         "gatsby-plugin-sharp": "^1.6.48",
         "gatsby-plugin-typescript": "^1.4.20",
         "gatsby-source-filesystem": "^1.5.39",
+        "gatsby-transformer-json": "^1.0.20",
         "gatsby-transformer-sharp": "^1.6.27",
         "netlify-cms": "^1.9.2",
         "react-helmet": "^5.2.0"
     },
-    "keywords": ["gatsby"],
+    "keywords": [
+        "gatsby"
+    ],
     "license": "MIT",
     "scripts": {
         "build": "gatsby build",
-        "develop": "gatsby develop",
+        "start": "gatsby develop",
         "format": "prettier --write 'src/**/*.js'",
         "test": "test"
     },
@@ -38,7 +41,10 @@
         "typings-for-css-modules-loader": "^1.7.0"
     },
     "lint-staged": {
-        "*.{js,jsx,css,md,scss}": ["prettier --write", "git add"],
+        "*.{js,jsx,css,md,scss}": [
+            "prettier --write",
+            "git add"
+        ],
         "*.{ts,tsx}": [
             "tslint --project . --fix",
             "prettier --write",

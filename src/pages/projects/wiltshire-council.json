@@ -88,5 +88,11 @@
     ]
   },
   "performance": [{ "title": 2000, "text": "Percent reduction in load time" }],
-  "testimonial": null
+  "testimonial": null,
+  "gallery": [
+    { "image": "/resources/369/wc-grid-image-1.jpg", "alt": "WC grid image 1" },
+    { "image": "/resources/370/wc-grid-image-2.jpg", "alt": "WC grid image 2" },
+    { "image": "/resources/371/wc-grid-image-3.jpg", "alt": "WC grid image 3" },
+    { "image": "/resources/372/wc-grid-image-4.jpg", "alt": "WC grid image 4" }
+  ]
 }

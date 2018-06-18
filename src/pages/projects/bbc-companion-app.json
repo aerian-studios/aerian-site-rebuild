@@ -93,5 +93,23 @@
     "person": "BBC audience testing results",
     "title": "Project Owner | Editorial lead",
     "avatar": "/resources/301/bbc-compainion-quote-image.jpg"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/347/bbc-compainion-app-grid-image-1.jpg",
+      "alt": "BBC compainion app grid image 1"
+    },
+    {
+      "image": "/resources/346/bbc-compainion-app-grid-image-2.jpg",
+      "alt": "BBC compainion app grid image 2"
+    },
+    {
+      "image": "/resources/553/bbc-companion-app.jpg",
+      "alt": "bbc companion app"
+    },
+    {
+      "image": "/resources/349/bbc-compainion-app-grid-image-4.jpg",
+      "alt": "BBC compainion app grid image 4"
+    }
+  ]
 }

@@ -88,5 +88,23 @@
     ]
   },
   "performance": [],
-  "testimonial": null
+  "testimonial": null,
+  "gallery": [
+    {
+      "image": "/resources/401/peppapig-grid-image-1.jpg",
+      "alt": "PeppaPig grid image 1"
+    },
+    {
+      "image": "/resources/402/peppapig-grid-image-2.jpg",
+      "alt": "PeppaPig grid image 2"
+    },
+    {
+      "image": "/resources/534/peppapig-gid-image-3.jpg",
+      "alt": "peppapig gid image 3"
+    },
+    {
+      "image": "/resources/405/peppapig-grid-image-4.jpg",
+      "alt": "PeppaPig grid image 4"
+    }
+  ]
 }

@@ -93,5 +93,23 @@
     "person": "Tom Shreeve",
     "title": "Senior Digital Content Producer at Beano Studios",
     "avatar": "/resources/733/beano-testimonial-image-large.png"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/748/bannanamanv2-animation.png",
+      "alt": "Bananaman - gallery - animation"
+    },
+    {
+      "image": "/resources/747/bannanamanv2-game-play-1.png",
+      "alt": "Bananman - Gallery - Start screen"
+    },
+    {
+      "image": "/resources/749/bannanamanv2-game-play-2.png",
+      "alt": "Bananaman - Gallery - game screen"
+    },
+    {
+      "image": "/resources/750/bannanamanv2-asset-creation.png",
+      "alt": "Image for gallery of bananaman"
+    }
+  ]
 }

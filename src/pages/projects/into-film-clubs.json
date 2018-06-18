@@ -92,5 +92,31 @@
     "person": "Louise Goodspeed",
     "title": "UX Lead",
     "avatar": "/resources/712/intofilm-clubs-quote-image.png"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/700/clubs-gallery-image-4.png",
+      "alt": "clubs gallery image 4"
+    },
+    {
+      "image": "/resources/697/clubs-gallery-image-2.png",
+      "alt": "clubs gallery image 2"
+    },
+    {
+      "image": "/resources/701/clubs-gallery-image-5.png",
+      "alt": "clubs gallery image 5"
+    },
+    {
+      "image": "/resources/698/clubs-gallery-image-1.png",
+      "alt": "clubs gallery image 1"
+    },
+    {
+      "image": "/resources/702/clubs-gallery-image-6.png",
+      "alt": "Clubs gallery image 6"
+    },
+    {
+      "image": "/resources/699/clubs-gallery-image-3.png",
+      "alt": "clubs gallery image 3"
+    }
+  ]
 }

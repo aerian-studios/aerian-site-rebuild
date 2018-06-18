@@ -96,5 +96,23 @@
     "person": "A user",
     "title": "BBC iWonder user",
     "avatar": "/resources/270/bbc-scrubbable-grid-quote-image.jpg"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/332/bbc-scrubbable-grid-image-1.jpg",
+      "alt": "BBC scrubbable grid image 1"
+    },
+    {
+      "image": "/resources/331/bbc-scrubbable-grid-image-2.jpg",
+      "alt": "BBC scrubbable grid image 2"
+    },
+    {
+      "image": "/resources/469/bbc-scrubbable-grid-image-3.jpg",
+      "alt": "bbc-scrubbable-grid-image-3"
+    },
+    {
+      "image": "/resources/334/bbc-scrubbable-grid-image-4.jpg",
+      "alt": "BBC scrubbable grid image 4"
+    }
+  ]
 }

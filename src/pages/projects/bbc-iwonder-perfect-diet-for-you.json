@@ -97,5 +97,23 @@
     "person": " Anna-Louise Taylor",
     "title": "Senior Content Producer",
     "avatar": "/resources/281/bbc-perfect-diet-for-you-qoute-image.jpg.jpg"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/383/bbc-perfect-diet-for-you-grid-image-1.jpg.jpg",
+      "alt": "BBC perfect diet for you grid image 1.jpg"
+    },
+    {
+      "image": "/resources/384/bbc-perfect-diet-for-you-grid-image-2.jpg.jpg",
+      "alt": "BBC perfect diet for you grid image 2.jpg"
+    },
+    {
+      "image": "/resources/385/bbc-perfect-diet-for-you-grid-image-3.jpg.jpg",
+      "alt": "BBC perfect diet for you grid image 3.jpg"
+    },
+    {
+      "image": "/resources/467/bbc-perfect-diet-for-you-grid-image-4.jpg",
+      "alt": "bbc-perfect-diet-for-you-grid-image-4"
+    }
+  ]
 }

@@ -93,5 +93,23 @@
     "person": "Manish Shah",
     "title": "Project manager | Tesco Mobile",
     "avatar": "/resources/148/tesco-quote-image.jpg"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/154/tesco-grid-image-1.jpg",
+      "alt": "Tesco grid image 1"
+    },
+    {
+      "image": "/resources/155/tesco-grid-image-2.jpg",
+      "alt": "Tesco grid image 2"
+    },
+    {
+      "image": "/resources/156/tesco-grid-image-3.jpg",
+      "alt": "Tesco grid image 3"
+    },
+    {
+      "image": "/resources/158/tesco-grid-image-4.jpg",
+      "alt": "Tesco grid image 4"
+    }
+  ]
 }

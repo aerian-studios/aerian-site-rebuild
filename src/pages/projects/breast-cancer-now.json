@@ -94,5 +94,23 @@
     "person": "James Elliot ",
     "title": "Assistant Director of Digital Engagement",
     "avatar": "/resources/105/bcn-quote-image.jpg"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/111/bcn-grid-image-1.jpg",
+      "alt": "BCN grid image 1"
+    },
+    {
+      "image": "/resources/110/bcn-grid-image-2.jpg",
+      "alt": "BCN grid image 2"
+    },
+    {
+      "image": "/resources/101/bcn-grid-image-3.jpg",
+      "alt": "BCN grid image 3"
+    },
+    {
+      "image": "/resources/100/bcn-grid-image-4.jpg",
+      "alt": "BCN grid image 4"
+    }
+  ]
 }

@@ -96,5 +96,23 @@
     "person": "Louise Goodspeed",
     "title": "Lead UX",
     "avatar": "/resources/688/intofilm-festival-quote-image.png"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/691/festival-gallery-image-3.png",
+      "alt": "festival gallery image 3"
+    },
+    {
+      "image": "/resources/689/festival-gallery-image-2.png",
+      "alt": "festival gallery image 2"
+    },
+    {
+      "image": "/resources/690/festival-gallery-image-1.png",
+      "alt": "festival gallery image 1"
+    },
+    {
+      "image": "/resources/692/festival-gallery-image-4.png",
+      "alt": "festival gallery image 4"
+    }
+  ]
 }

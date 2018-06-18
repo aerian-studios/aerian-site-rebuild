@@ -86,5 +86,15 @@
     ]
   },
   "performance": [],
-  "testimonial": null
+  "testimonial": null,
+  "gallery": [
+    {
+      "image": "/resources/731/beano-gallery-image1.png",
+      "alt": "Beano - gallery image1"
+    },
+    {
+      "image": "/resources/730/beano-gallery-image2.png",
+      "alt": "Beano - gallery image2"
+    }
+  ]
 }

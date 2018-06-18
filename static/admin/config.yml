@@ -16,7 +16,8 @@ collections:
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Logo", name: "logo", widget: "image"}
-      - {label: "Featured image", name: "featuredImage", widget: "image"}
+      - {label: "Promo logo (a white logo works best)", name: "promoLogo", widget: "image"}
+      - {label: "Featured", name: "featured", widget: boolean, default: true}
       - label: "Featured project"
         name: "featuredProject"
         widget: "relation"

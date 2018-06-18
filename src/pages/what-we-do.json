@@ -1,0 +1,165 @@
+{
+  "sections": [
+    {
+      "title": "We plan",
+      "image": "/resources/425/we-plan-image.jpg",
+      "smallImage": "/resources/535/we-plan-image-small.jpg",
+      "subtitle": "Changing the face of digital.",
+      "blurb":
+        "Our strategy team have worked at the highest levels of industry. Working with our partners to change the behaviours, content disseminations, buying patterns and perception of billions of users. We work with you to really break down the barriers that are stopping you being the digital powerhouse you could be.",
+      "activities": [
+        {
+          "title": "Strategising",
+          "text": "Global, blue chip and enterprise level strategising team."
+        },
+        {
+          "title": "Innovating",
+          "text": "Highlighted as a top ten UK innovation team."
+        },
+        {
+          "title": "Simplifying",
+          "text":
+            "If it's hard, or inconceivable, give us a call. We love that stuff."
+        }
+      ],
+      "successStory": null,
+      "testimonial": {
+        "quote":
+          "Aerian delivered the design to brief and beyond. They are a great bunch to work with, really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. ",
+        "person": "Louise Goodspeed",
+        "title": "UX Lead | Into Film",
+        "avatar": "/resources/124/louise-goodspeed.png"
+      }
+    },
+    {
+      "title": "We design",
+      "image": "/resources/423/we-design-image.jpg",
+      "smallImage": "/resources/536/we-design-image-small.jpg",
+      "subtitle": "Designed to be loved.",
+      "blurb":
+        "We create things that people love to use. Our job as creatives is to continually question ourselves and the work we do. It's a mixture of gut instinct, artistic integrity and an obsession with creating the easiest possible experience. We blend scientific process with artistic vision.",
+      "activities": [
+        {
+          "title": "Award winning ",
+          "text":
+            "Full time, multi award winning,  in-house design and artworking department."
+        },
+        {
+          "title": "User-centred",
+          "text":
+            "User-centred methodology bled into all our process, at all levels."
+        },
+        {
+          "title": "Prototyping ",
+          "text":
+            "Multi-tiered rapid prototyping for user and stakeholder tests."
+        }
+      ],
+      "successStory": {
+        "title": "BBC iWonder The Perfect Diet for you guide",
+        "stats": [
+          { "title": "90,000 ", "text": "Users in the first 2 hours " },
+          { "title": "Top guide ", "text": "On iwonder" },
+          { "title": "1.5m", "text": "unique users after the first show" },
+          { "title": "22,000", "text": "Concurrent users" }
+        ]
+      },
+      "testimonial": null
+    },
+    {
+      "title": "We develop",
+      "image": "/resources/424/we-develop.jpg",
+      "smallImage": "/resources/537/we-develop-image-small.jpg",
+      "subtitle": "Rock solid, high performance development.",
+      "blurb":
+        "Our dev house is the cornerstone of our success. Our team of expert developers, technical architects, software engineers, security and DevOps experts work incredibly hard to create the perfect piece of engineering excellence.",
+      "activities": [
+        {
+          "title": "First class",
+          "text":
+            "Full in-house dev team highlighted as \"first class\" by our clients."
+        },
+        {
+          "title": "Digital Engineering Excellence",
+          "text":
+            "Continuous Integration and Deployment practices, aligned to Digital Engineering Excellence."
+        },
+        {
+          "title": "Bespoke applications",
+          "text":
+            "Complex, high availability bespoke application build is our speciality."
+        }
+      ],
+      "successStory": {
+        "title":
+          "From front-end to back-end and Dev Ops, our team excels in building systems that scale ",
+        "stats": [
+          { "title": "7 Accredited ", "text": "Scrum Masters" },
+          { "title": "Managing", "text": "Over 100 Client Servers" },
+          { "title": "99.95%", "text": "Monthly Uptime" },
+          { "title": "Experts", "text": "In over 20 development languages" }
+        ]
+      },
+      "testimonial": null
+    },
+    {
+      "title": "We deliver",
+      "image": "/resources/422/we-deliver.jpg",
+      "smallImage": "/resources/422/we-deliver.jpg",
+      "subtitle": "If you rely on the web, you can rely on us.",
+      "blurb":
+        "You need someone you can trust. That's us. We work incredibly hard (because we want to) to ensure that we don't let people down. That's not just about long, hard hours. That's about planning, consideration, communication and being honest. We don't want to work for you, we want to work with you.",
+      "activities": [
+        {
+          "title": "Cradle to grave",
+          "text":
+            "All projects designed \"cradle to grave\" with extensibility \"baked in\"."
+        },
+        {
+          "title": "24/7 support ",
+          "text": "Full 24/7 operational and maintenance support options."
+        },
+        {
+          "title": "Working with you",
+          "text":
+            "We work with your teams to train, document and create failovers, and ensure it's not 'our' project, it's yours."
+        }
+      ],
+      "successStory": null,
+      "testimonial": {
+        "quote":
+          "Thanks so much to all of you for the speed and quality of your work across the board - design, communication, build and overall passion for the project that’s made it as amazing as it is. ",
+        "person": "James Elliot",
+        "title": "Assistant Director of Digital Engagement",
+        "avatar": "/resources/109/james-elliot.jpg"
+      }
+    },
+    {
+      "title": "We celebrate",
+      "image": "/resources/480/we-celebrate.jpg",
+      "smallImage": "/resources/538/we-celebrate-image-small.jpg",
+      "subtitle":
+        "Industry leading results, delivered by us and you, together.",
+      "blurb":
+        "We dedicate significant blood, sweat and tears to understanding the complex and often labyrinthine requirements and desires for you and your various audiences. We don't offer 'out of the box' solutions, we create solutions for your users, that deliver results. That's why our products are used by over 2% of internet traffic.",
+      "activities": [
+        {
+          "title": "Project completion ",
+          "text": "100% successful project completion (20 years worth)."
+        },
+        {
+          "title": "On hand",
+          "text":
+            "We're always on hand for our clients, whether or not we're actively working on a project."
+        },
+        {
+          "title": "Hard-working",
+          "text":
+            "We're a team, internally, and with clients. We work hard together, we celebrate together."
+        }
+      ],
+      "successStory": null,
+      "testimonial": null
+    }
+  ]
+}

@@ -139,7 +139,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Image", name: "image", widget: image}
-              - {label: "Small Image", name: "image", widget: image}
+              - {label: "Small Image", name: "smallImage", widget: image}
               - {label: "Subtitle", name: "subtitle", widget: "string"}
               - {label: "Blurb", name: "blurb", widget: "text"}
               - label: "Activities"

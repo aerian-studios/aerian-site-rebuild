@@ -1,0 +1,89 @@
+/**
+ * This is typically a relationship where there is an image/medium + some text
+ * It is used for a good many of the rows in the grid.
+ */
+
+.media-content {
+    width: 100%;
+    margin: 0 auto;
+    .content-wrap {
+        background-color: $whiteish;
+        position: relative;
+    }
+}
+
+// not all content is correctly nested
+.content-wrap,
+.block--hero__content-wrap,
+.media-content--rtf-content > * {
+    max-width: 78ch;
+    z-index: 1;
+}
+
+.content-wrap {
+    @media (min-width: $bp-s) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section__content {
+    padding: var(--pad-0);
+    &:first-child {
+        padding-top: 0;
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.media-content--centred,
+.media-content--centred-flip {
+    @media (min-width: $bp-s) {
+        text-align: center;
+    }
+    .content,
+    .section-title {
+        > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .content:not(:last-child) {
+        margin-bottom: var(--s-h2);
+        @media (min-width: $bp-s) {
+            // margin-bottom: var(--s-h2);
+        }
+        @media (min-width: $bp-m) {
+            // margin-bottom: var(--s-h2);
+        }
+    }
+    .section-title:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+.media-content--centred {
+    .media-content__content {
+        padding-bottom: var(--pad-0);
+        @media (min-width: $bp-s) {
+            padding-bottom: var(--pad-1);
+        }
+        @media (min-width: $bp-m) {
+            padding-bottom: var(--pad-2);
+        }
+    }
+}
+
+// Content created by rich text
+.media-content--rtf-content {
+    > * {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        flex: 1;
+    }
+}

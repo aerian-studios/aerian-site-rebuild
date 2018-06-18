@@ -1,0 +1,113 @@
+/**
+ * Overrides appear in here. Only 1 thing per rule
+ */
+ .list-plain {
+  list-style: none;
+  padding-left: 0;
+  li {
+      &:before {
+          display: none;
+      }
+  }
+}
+
+#hidden,
+.hidden {
+  display: none;
+}
+
+#visually-hidden,
+.visually-hidden,
+.helper-text {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: 100%;
+}
+
+// Some features take on a top margin that consumes bottom margin on previous elements
+#feature-top-vspace,
+.feature-top-vspace {
+  margin-top: calc(5 * var(--vertical-rythym));
+  @media (min-width: $bp-m) {
+    margin-top: calc(8 * var(--vertical-rythym));
+  }
+  @media (min-width: $bp-l) {
+    margin-top: calc(10 * var(--vertical-rythym));
+  }
+}
+
+#pull-to-s-screen-edge {
+  margin-left: calc(-1 * var(--side-gutter));
+  margin-right: calc(-1 * var(--side-gutter));
+  @media (min-width: $bp-s) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+%full-width-text {
+  max-width: initial !important;
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+
+%before-padding {
+  &::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: var(--pad-0);
+    grid-column: full;
+  }
+  @media (min-width: $bp-s) {
+    &::before {
+      height: var(--pad-1);
+    }
+  }
+  @media (min-width: $bp-m) {
+    &::before {
+      height: var(--pad-2);
+    }
+  }
+}
+
+%after-padding {
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: var(--pad-0);
+    grid-column: full;
+  }
+  @media (min-width: $bp-s) {
+    &::after {
+      height: var(--pad-1);
+    }
+  }
+  @media (min-width: $bp-m) {
+    &::after {
+      height: var(--pad-2);
+    }
+  }
+}
+
+%no-before-padding {
+  &::before {
+    display: none !important;
+  }
+}
+
+%no-after-padding {
+  &::after {
+    display: none !important;
+  }
+}
+
+%no-margin-auto {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

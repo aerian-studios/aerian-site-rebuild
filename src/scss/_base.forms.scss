@@ -1,0 +1,18 @@
+/**
+ * Form element styles
+ */
+input:not([type="submit"], [type="range"]),
+select,
+textarea {
+  @include shadow-by-name("strong-1");
+  border: 1px solid $c-black-30;
+  background-color: $whiteish;
+
+  &:disabled {
+    background-color: $c-black-20;
+  }
+
+  &:focus {
+    border-color: $c-brand-c;
+  }
+}

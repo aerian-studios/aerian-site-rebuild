@@ -1,0 +1,188 @@
+/**
+ * Blocks of content in no particular grouping
+ */
+.block {
+    position: relative;
+    z-index: 1;
+    background-color: $whiteish;
+    text-align: left;
+    @extend %before-padding;
+    @extend %after-padding;
+
+    @media (min-width: $bp-s) {
+        text-align: center;
+    }
+
+    .section-title {
+        &::before {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: var(--s-3);
+        }
+        &:last-child {
+            margin-bottom: 0; //added in to stop extra gap when no sub heading added with stats
+        }
+    }
+}
+
+.block--white_skin,
+.block--_skin {
+    + .block--white_skin,
+    + .block--_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--light_skin {
+    + .block--light_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--light-grey_skin {
+    + .block--light-grey_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--mid_skin {
+    + .block--mid_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--mid-grey_skin {
+    + .block--mid-grey_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--pattern_skin {
+    + .block--pattern_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--add-pattern_skin {
+    + .block--add-pattern_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--dark {
+    + .block--dark {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--dark_skin {
+    + .block--dark_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--dark-grey_skin {
+    + .block--dark-grey_skin {
+        &::before {
+            height: 0;
+        }
+    }
+}
+
+.block--light_skin,
+.block--light-grey_skin {
+    background-color: $c-black-20;
+}
+
+.block--mid_skin,
+.block--mid-grey_skin {
+    background-color: $c-black-40;
+}
+
+.block--header {
+    margin-top: var(--pad-0);
+}
+
+// Dark Themes
+.block--dark_skin,
+.block--black_skin,
+.block--hero,
+.block--dark-grey_skin {
+    color: $whiteish;
+    * {
+        color: currentColor;
+    }
+}
+
+.block--dark_skin {
+    background-color: $dark-grey;
+}
+
+.block--black_skin,
+.block--dark-grey_skin,
+.block--hero {
+    background-color: $accent-black;
+}
+
+// Most styles in _hero-component, these are just block based styles
+.block--fixed-background-image {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    &::before {
+        height: 0 !important;
+    }
+
+    @media (min-width: $bp-m) {
+        grid-column: full;
+        &::before {
+            height: var(--pad-2) !important;
+        }
+    }
+
+    @media (min-width: $bp-l) {
+        grid-column: main;
+    }
+
+    * {
+        z-index: 1; //for IE edge
+        position: relative;
+    } // === end
+}
+
+.block--fixed-background-image + .block {
+    &::before {
+        height: var(--pad-0);
+    }
+
+    @media (min-width: $bp-s) {
+        text-align: center;
+        &::before {
+            height: var(--pad-1);
+        }
+    }
+    @media (min-width: $bp-m) {
+        &::before {
+            height: var(--pad-2);
+        }
+    }
+}

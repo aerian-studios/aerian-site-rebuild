@@ -48,5 +48,11 @@
     "hurdles": []
   },
   "performance": [],
-  "testimonial": null
+  "testimonial": null,
+  "gallery": [
+    {
+      "image": "/resources/551/eastenders-story-maker-mac.jpg",
+      "alt": "Mixital's EastEnders Story Maker kit"
+    }
+  ]
 }

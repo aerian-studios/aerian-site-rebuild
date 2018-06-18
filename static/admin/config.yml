@@ -121,6 +121,7 @@ collections:
             widget: list
             fields:
               - {label: "Name", name: "name", widget: "string"}
+              - {label: "Live", name: live, widget: boolean}
               - {label: "Normal image", name: "imageNormal", widget: "image"}
               - {label: "Funny image", name: "imageFunny", widget: "image"}
               - {label: "Job title", name: "jobTitle", widget: "string"}

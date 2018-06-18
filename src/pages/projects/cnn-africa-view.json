@@ -92,5 +92,15 @@
       "text": "Downloads, prior to official launch and marketing"
     }
   ],
-  "testimonial": null
+  "testimonial": null,
+  "gallery": [
+    {
+      "image": "/resources/462/cover.jpg",
+      "alt": "CNN Africa View cover photo"
+    },
+    {
+      "image": "/resources/473/cnn-africa-iphone-on-table.jpg",
+      "alt": "CNN Africa - iPhone on table "
+    }
+  ]
 }

@@ -101,5 +101,17 @@
     "person": "Simon Mackie",
     "title": "Digital Producer | BBC Science",
     "avatar": "/resources/213/bbc-whispering-stars-quote-image.jpg"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/316/bb-ws-grid-image-3.jpg",
+      "alt": "BB WS grid image 3"
+    },
+    {
+      "image": "/resources/260/techandall-mydesk-mockup.png",
+      "alt": "techandall MyDesk mockup"
+    },
+    { "image": "/resources/259/bbcws-mu-laptop.jpg", "alt": "BBCWS-MU-Laptop" },
+    { "image": "/resources/258/bbcws-mu-phone.jpg", "alt": "BBCWS-MU-Phone" }
+  ]
 }

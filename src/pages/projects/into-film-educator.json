@@ -93,5 +93,23 @@
     "person": "Louise Goodspeed",
     "title": "UX Lead",
     "avatar": "/resources/122/into-film-quote-image.png"
-  }
+  },
+  "gallery": [
+    {
+      "image": "/resources/126/into-film-grid-image-1.png",
+      "alt": "Into film grid image 1"
+    },
+    {
+      "image": "/resources/127/into-film-grid-image-2.png",
+      "alt": "Into film grid image 2"
+    },
+    {
+      "image": "/resources/117/into-film-grid-image-3.png",
+      "alt": "Into film grid image 3"
+    },
+    {
+      "image": "/resources/128/into-film-grid-image-4.png",
+      "alt": "Into film grid image 4"
+    }
+  ]
 }

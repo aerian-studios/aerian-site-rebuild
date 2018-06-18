@@ -8,6 +8,10 @@
   "caseStudyText":
     "We created a scalable, production ready companion app that pulled interactive TV companion content (quizzes, videos, information) from a myriad of BBC services and seamlessly wove it together in a cool, fun app",
   "externalUrl": null,
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails":
+    "Enriching the coolest BBC shows with second screen quizzes, videos, behind the scenes... BBC Companion has it all",
   "heroImage": "/resources/300/bbc-compainion-app-hero-image.jpg",
   "heroVideo": null,
   "challenge": {

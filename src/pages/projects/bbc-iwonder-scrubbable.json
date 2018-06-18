@@ -8,6 +8,10 @@
   "caseStudyText":
     "Scrubbable is a novel way of allowing a user to control the flow of a short, high frame rate video clip.",
   "externalUrl": "http://www.bbc.co.uk/taster/projects/scrubbables",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails":
+    "We turned a bonkers idea into a wonderful real-life tool that lets users control micro-detail - and scrub through high quality video with simple gestures.",
   "heroImage": "/resources/263/bbc-iwonder-scrubbable-hero-image.png",
   "heroVideo": null,
   "challenge": {

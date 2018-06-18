@@ -9,6 +9,10 @@
   "caseStudyText":
     "The Council’s website had become dated and bloated with thousands of pages of content, much of which needed to be updated and consolidated.",
   "externalUrl": "http://www.wiltshire.gov.uk/",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails":
+    "We strategised and created a new platform and collection of services for Wiltshire Council that have delivered game-changing service to Wiltshire's residents.",
   "heroImage": "/resources/437/wc-hero-image.jpg",
   "heroVideo": null,
   "challenge": {

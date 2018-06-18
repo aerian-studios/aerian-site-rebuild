@@ -9,6 +9,10 @@
     "Nickelodeon had been looking to do more HTML5 games, but didn’t have a supplier base that enabled them to deliver against the demand from the public.",
   "externalUrl":
     "http://www.nickjr.co.uk/play/peppa-pig/peppa-pig-bat-and-ball ",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails":
+    "We wrote, designed, animated and developed Nick Jnr's first in-browser HTML5 game that combines real episode footage and on-the-fly character animation. ",
   "heroImage": "/resources/400/peppa-pig-hero-image.jpg",
   "heroVideo": null,
   "challenge": {

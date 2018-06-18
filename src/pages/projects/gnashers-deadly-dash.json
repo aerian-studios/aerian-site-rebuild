@@ -8,6 +8,9 @@
   "caseStudyText":
     "We designed, animated and built each and every element of the game to be on-brand, available to all devices, but most of all, devilishly fun!",
   "externalUrl": "https://www.beano.com/games/gnashers-deadly-dash",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails": "Gnasher's Deadly Dash",
   "heroImage": "/resources/721/main-header.png",
   "heroVideo": "/resources/718/beanodeadlydash.mp4",
   "challenge": {

@@ -8,6 +8,10 @@
   "caseStudyText":
     "This project was created to allow users to compare available tariffs using a fun and interactive tool that we designed and created. As key UX and Visual Designers on the project we oversaw the whole \u0003design process.",
   "externalUrl": "http://shop.tescomobile.com/matchmaker/",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails":
+    "You tell us what you want: minutes, data and messages, and we'll find you the perfect tariff. It's that simple (and awesome)!",
   "heroImage": "/resources/157/tesco-hero-image.jpg",
   "heroVideo": null,
   "challenge": {

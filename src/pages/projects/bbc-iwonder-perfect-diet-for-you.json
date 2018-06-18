@@ -8,6 +8,10 @@
   "caseStudyText":
     "With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.",
   "externalUrl": "http://www.bbc.co.uk/guides/z2csfg8",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails":
+    "With over 1.5m users in two days, and beating even the BBC World Cup, can you resist trying our interactive Diet Quiz? ",
   "heroImage": "/resources/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg",
   "heroVideo": null,
   "challenge": {

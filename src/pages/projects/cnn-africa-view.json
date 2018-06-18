@@ -8,6 +8,10 @@
   "caseStudyText":
     "We created a stunning app delivering content-rich news to people across the continent, at a data rate that they can control.",
   "externalUrl": null,
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails":
+    "We created a personalised continent wide news app for CNN, MTN and their partners",
   "heroImage": "/resources/539/cnn-hero-image.jpg",
   "heroVideo": null,
   "challenge": {

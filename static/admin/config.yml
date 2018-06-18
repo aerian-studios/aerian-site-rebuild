@@ -51,6 +51,9 @@ collections:
       - {label: "Case study text", name: "caseStudyText", widget: "text"}
       - {label: "Case study image", name: "caseStudyImage", widget: "image"}
       - {label: "External Link", name: "externalUrl", widget: "string"}
+      - {label: "Rollover details", name: "rolloverDetails", widget: "string"}
+      - {label: "Homepage", name: "homepage", widget: boolean, default: true}
+      - {label: "Featured", name: "featured", widget: boolean, default: true}
       - {label: "Gallery", name: "gallery", widget: "list", fields: [{label: "Alt", name: alt, widget: string}, {label: "Image", name: image, widget: image}]}
       - label: "The challenge"
         name: "challenge"

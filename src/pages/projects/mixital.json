@@ -9,6 +9,9 @@
   "caseStudyText":
     "Mixital is an award nominated platform giving young creators and makers the tools they need to make stories, videos, music and more. We couldn’t be prouder of our involvement in helping shape and deliver this rewarding project.",
   "externalUrl": "www.mixital.co.uk",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails": null,
   "heroImage": "/resources/551/eastenders-story-maker-mac.jpg",
   "heroVideo": null,
   "challenge": {

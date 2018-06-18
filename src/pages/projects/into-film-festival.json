@@ -8,6 +8,9 @@
   "caseStudyText":
     "The Into Film Festival is the world's largest free film and education event for young people. The Festival offers more than 3,000 cinema screenings of 165+ films, all selected with educators in mind.",
   "externalUrl": "https://www.intofilm.org/events/festival",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails": null,
   "heroImage": "/resources/693/into-film-festival-header.png",
   "heroVideo": null,
   "challenge": {

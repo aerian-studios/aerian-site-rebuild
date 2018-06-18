@@ -6,14 +6,166 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
+  - name: "clients" 
+    label: "Clients"
+    label_singular: "Client"
+    folder: "src/clients"
+    create: true
+    extension: json
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Featured image", name: "featuredImage", widget: "image"}
+      - label: "Featured project"
+        name: "featuredProject"
+        widget: "relation"
+        collection: "projects"
+        displayFields: ["name", "client"]
+        searchFields: ["name", "client"]
+        valueField: "slug"
+
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "src/projects"
+    create: true
+    extension: json
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Hero Image", name: "heroImage", widget: "image"}
+      - {label: "Hero Video", name: "heroVideo", widget: "file", required: false}
+      - {label: "Title line 1", name: "titleLineOne", widget: "string"}
+      - {label: "Title line 2", name: "titleLineTwo", widget: "string", required: false}
+      - label: "Client"
+        name: "client"
+        widget: "relation"
+        collection: "clients"
+        valueField: "slug"
+        searchFields: ["name"]
+
+      - {label: "Go Live Date", name: "goLiveDate", widget: "date", required: false}
+      - {label: "Case study title", name: "caseStudyTitle", widget: "string"}
+      - {label: "Case study text", name: "caseStudyText", widget: "text"}
+      - {label: "Case study image", name: "caseStudyImage", widget: "image"}
+      - {label: "External Link", name: "externalUrl", widget: "string"}
+      - {label: "Gallery", name: "gallery", widget: "list", fields: [{label: "Alt", name: alt, widget: string}, {label: "Image", name: image, widget: image}]}
+      - label: "The challenge"
+        name: "challenge"
+        widget: object
+        fields:
+          - { label: "Description", name: "description", widget: "text"}
+          - label: "Hurdles"
+            name: "hurdles"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: image}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: text}
+      - label: "The solution"
+        name: "solution"
+        widget: object
+        fields:
+          - { label: "Description", name: "description", widget: "text"}
+          - label: "Hurdles"
+            name: "hurdles"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: image}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: text}
+      - label: "The result"
+        name: "result"
+        widget: object
+        fields:
+          - { label: "Description", name: "description", widget: "text"}
+          - label: "Hurdles"
+            name: "hurdles"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: image}
+              - {label: "Text", name: "text", widget: text}
+      - label: "Performance and statistics"
+        name: "performance"
+        required: false
+        widget: list
+        fields:
+          - { label: "Stat", name: "stat", widget: "string"}
+          - { label: "Text", name: "text", widget: "text"}
+      - label: "Testimonial"
+        name: "testimonial"
+        required: false
+        widget: object
+        fields:
+          - { label: "Quote", name: "quote", widget: "text"}  
+          - { label: "Person", name: "person", widget: "string"}
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Avatar", name: "avatar", widget: "image"}
+
+
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Hero Image", name: "heroimage", widget: "image"}
-          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/meet-the-team.json"
+        label: "Meet the team"
+        name: "meet-the-team"
+        fields: 
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "team-page"}
+          - label: "Staff"
+            name: "staff"
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Normal image", name: "imageNormal", widget: "image"}
+              - {label: "Funny image", name: "imageFunny", widget: "image"}
+              - {label: "Job title", name: "jobTitle", widget: "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Fact", name: "fact", widget: "text"}
+              - label: "Skills"
+                name: "name"
+                widget: "list"
+          
+      - file: "src/pages/what-we-do.json"
+        label: "What we do"
+        name: "what-we-do"
+        fields: 
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "what-we-do-page"}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: image}
+              - {label: "Subitle", name: "subtitle", widget: "string"}
+              - {label: "Blurb", name: "blurb", widget: "text"}
+              - label: "Activities"
+                name: "activities"
+                widget: "list"
+                - fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "string"}
+              - label: "Success story"
+                required: false
+                name: successStory
+                widget: object
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - label: "Stats"
+                    name: "stats"
+                    widget: list
+                    fields:
+                      - {label: "Title", name: "name", widget: "string"}
+                      - {label: "Text", name: "name", widget: "string"}
+                      - {label: "Image", name: "image", widget: "image"}
+              - label: "Testimonial"
+                name: "testimonial"
+                required: false
+                widget: object
+                fields:
+                  - { label: "Quote", name: "quote", widget: "text"}
+                  - { label: "Person", name: "person", widget: "string"}
+                  - { label: "Title", name: "title", widget: "string"}
+                  - { label: "Avatar", name: "avatar", widget: "image"}

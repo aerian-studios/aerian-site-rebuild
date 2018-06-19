@@ -1,7 +1,7 @@
 {
   "name": "TES",
-  "logo": "/resources/443/tes-logo.png",
-  "promoLogo": "/resources/443/tes-logo.png",
+  "logo": "/static/assets/imported/443/tes-logo.png",
+  "promoLogo": "/static/assets/imported/443/tes-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "tes"

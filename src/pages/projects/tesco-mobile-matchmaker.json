@@ -13,7 +13,7 @@
   "featured": true,
   "rolloverDetails":
     "You tell us what you want: minutes, data and messages, and we'll find you the perfect tariff. It's that simple (and awesome)!",
-  "heroImage": "/resources/157/tesco-hero-image.jpg",
+  "heroImage": "/static/assets/imported/157/tesco-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +23,19 @@
         "title": "Tight deadlines required meticulous planning",
         "text":
           "We worked face-to-face with the Tesco Mobile team in their Slough offices. We had daily conference calls, and regularly sprint planning, to monitor progress of all parties involved to unpick and blockers and aid a single vision of what success would look like.",
-        "image": "/resources/590/tesco-01.png"
+        "image": "/static/assets/imported/590/tesco-01.png"
       },
       {
         "title": "Stretching the edges of the brands",
         "text":
           "Of course we needed to conform to the Tesco Mobile brand guidelines, but we also had to find our own space, our own brand. We needed users to feel the process would be fun, and actually helpful and rewarding for them. We worked hard, particularly with animation and transitions, to inject some competitive edges and wow factor.",
-        "image": "/resources/591/tesco-02.png"
+        "image": "/static/assets/imported/591/tesco-02.png"
       },
       {
         "title": "Complex user journeys to consider and test",
         "text":
           "The selection process is highly complex, requiring selection of various mobile phone, SIM tariffs and data plans, all planned and fed back on the fly.",
-        "image": "/resources/592/tesco-03.png"
+        "image": "/static/assets/imported/592/tesco-03.png"
       }
     ]
   },
@@ -47,19 +47,19 @@
         "title": "Test test and test some more",
         "text":
           "We tested all our solutions with real users (both Tesco Mobile customers, and not) under lab conditions. We were on hand, responding to feedback live with our UX teams, enabling the most rapid or rapid prototyping, shaving weeks off the project timeline.",
-        "image": "/resources/593/tesco-04.png"
+        "image": "/static/assets/imported/593/tesco-04.png"
       },
       {
         "title": "We added more than just design acumen ",
         "text":
           "We aren't just designer with any project. And MatchMaker was no different. We made strategic suggestions about possible big data uses of the data, and how the information gathered could help change the face of Tesco Mobile's contract creation.",
-        "image": "/resources/594/tesco-05.png"
+        "image": "/static/assets/imported/594/tesco-05.png"
       },
       {
         "title": "On hand troubleshooting and consultancy",
         "text":
           "Unusually, we weren't responsible for the build of this project, but we tried were possible to treat it like an internal project, making ourselves available to the build team - fine tuning design details and supplying interaction advice throughout the build process.",
-        "image": "/resources/595/tesco-06.png"
+        "image": "/static/assets/imported/595/tesco-06.png"
       }
     ]
   },
@@ -71,19 +71,19 @@
         "title": "Test test and test some more",
         "text":
           "We tested all our solutions with real users (both Tesco Mobile customers, and not) under lab conditions. We were on hand, responding to feedback live with our UX teams, enabling the most rapid or rapid prototyping, shaving weeks off the project timeline.",
-        "image": "/resources/593/tesco-04.png"
+        "image": "/static/assets/imported/593/tesco-04.png"
       },
       {
         "title": "We added more than just design acumen ",
         "text":
           "We aren't just designer with any project. And MatchMaker was no different. We made strategic suggestions about possible big data uses of the data, and how the information gathered could help change the face of Tesco Mobile's contract creation.",
-        "image": "/resources/594/tesco-05.png"
+        "image": "/static/assets/imported/594/tesco-05.png"
       },
       {
         "title": "On hand troubleshooting and consultancy",
         "text":
           "Unusually, we weren't responsible for the build of this project, but we tried were possible to treat it like an internal project, making ourselves available to the build team - fine tuning design details and supplying interaction advice throughout the build process.",
-        "image": "/resources/595/tesco-06.png"
+        "image": "/static/assets/imported/595/tesco-06.png"
       }
     ]
   },
@@ -93,23 +93,23 @@
       "Our Match Maker project had a tight deadline and needed a comprehensive set of user journeys and designs ready for user testing. As always, Aerian stepped up to the plate and delivered the perfect solution, accommodating our ever evolving brief with the “can do” attitude we have come to expect! Great work Aerian, it has been a pleasure working with you all again!",
     "person": "Manish Shah",
     "title": "Project manager | Tesco Mobile",
-    "avatar": "/resources/148/tesco-quote-image.jpg"
+    "avatar": "/static/assets/imported/148/tesco-quote-image.jpg"
   },
   "gallery": [
     {
-      "image": "/resources/154/tesco-grid-image-1.jpg",
+      "image": "/static/assets/imported/154/tesco-grid-image-1.jpg",
       "alt": "Tesco grid image 1"
     },
     {
-      "image": "/resources/155/tesco-grid-image-2.jpg",
+      "image": "/static/assets/imported/155/tesco-grid-image-2.jpg",
       "alt": "Tesco grid image 2"
     },
     {
-      "image": "/resources/156/tesco-grid-image-3.jpg",
+      "image": "/static/assets/imported/156/tesco-grid-image-3.jpg",
       "alt": "Tesco grid image 3"
     },
     {
-      "image": "/resources/158/tesco-grid-image-4.jpg",
+      "image": "/static/assets/imported/158/tesco-grid-image-4.jpg",
       "alt": "Tesco grid image 4"
     }
   ]

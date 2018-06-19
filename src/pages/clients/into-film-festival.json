@@ -1,7 +1,7 @@
 {
   "name": "Into Film Festival",
-  "logo": "/resources/695/into-film-festival-logo-filled.png",
-  "promoLogo": "/resources/694/white-into-film-festival-logo.png",
+  "logo": "/static/assets/imported/695/into-film-festival-logo-filled.png",
+  "promoLogo": "/static/assets/imported/694/white-into-film-festival-logo.png",
   "featured": false,
   "featuredProject": "into-film-festival",
   "slug": "into-film-festival"

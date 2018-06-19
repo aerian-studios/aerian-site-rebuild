@@ -1,7 +1,7 @@
 {
   "name": "BBC Whispering Stars",
-  "logo": "/resources/210/bbc-whispering-stars-logo.png",
-  "promoLogo": "/resources/256/whispering-stars-logo.png",
+  "logo": "/static/assets/imported/210/bbc-whispering-stars-logo.png",
+  "promoLogo": "/static/assets/imported/256/whispering-stars-logo.png",
   "featured": true,
   "featuredProject": "bbc-whispering-stars",
   "slug": "bbc-whispering-stars"

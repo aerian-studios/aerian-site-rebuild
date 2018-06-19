@@ -1,7 +1,7 @@
 {
   "name": "British Council",
-  "logo": "/resources/454/british-council-logo.png",
-  "promoLogo": "/resources/454/british-council-logo.png",
+  "logo": "/static/assets/imported/454/british-council-logo.png",
+  "promoLogo": "/static/assets/imported/454/british-council-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "british-council"

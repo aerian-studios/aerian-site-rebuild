@@ -13,7 +13,8 @@
   "featured": true,
   "rolloverDetails":
     "We turned a bonkers idea into a wonderful real-life tool that lets users control micro-detail - and scrub through high quality video with simple gestures.",
-  "heroImage": "/resources/263/bbc-iwonder-scrubbable-hero-image.png",
+  "heroImage":
+    "/static/assets/imported/263/bbc-iwonder-scrubbable-hero-image.png",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +24,19 @@
         "title": "Turning an idea into reality",
         "text":
           "Expanding on an original concept, we needed to create a production ready Scrubbable tool to be used across the BBC real estate in any number of ways, under extreme usage stress.",
-        "image": "/resources/632/bbc-scrubbable-01.png"
+        "image": "/static/assets/imported/632/bbc-scrubbable-01.png"
       },
       {
         "title": "Tiny payload capacity",
         "text":
           "We needed to reduce the file size down massively, to allow our entire application and video to be under a 500mb library download.",
-        "image": "/resources/631/bbc-scrubbable-02.png"
+        "image": "/static/assets/imported/631/bbc-scrubbable-02.png"
       },
       {
         "title": "Making it smooth, and obvious",
         "text":
           "We worked hard to make sure the interactions were obvious, intuitive and fun - meaning anyone can Scrub quickly and easily.",
-        "image": "/resources/633/bbc-scrubbable-03.png"
+        "image": "/static/assets/imported/633/bbc-scrubbable-03.png"
       }
     ]
   },
@@ -47,19 +48,19 @@
         "title": "Continual optimisation of libraries and code",
         "text":
           "We needed to continually re-imagine our technical approaches to create a highly optimised and performant experience for usage and CMS upload. We removed all large libraries (Angular, jQuery), replacing with either vanilla JS or micro libraries, greatly reducing the download needed.",
-        "image": "/resources/634/bbc-scrubbable-04.png"
+        "image": "/static/assets/imported/634/bbc-scrubbable-04.png"
       },
       {
         "title": "Responsive image resolution / download",
         "text":
           "We worked hard to deliver a responsive solution to handling and presenting imagery, enabling device specific presentation of images for performance.",
-        "image": "/resources/635/bbc-scrubbable-05.png"
+        "image": "/static/assets/imported/635/bbc-scrubbable-05.png"
       },
       {
         "title": "CMS controlled Scrubs",
         "text":
           "We created a simple, bespoke CMS to allow editorial to control video frame-rates and thus total image downloads.",
-        "image": "/resources/636/bbc-scrubbable-06.png"
+        "image": "/static/assets/imported/636/bbc-scrubbable-06.png"
       }
     ]
   },
@@ -71,19 +72,19 @@
         "title": "Continual optimisation of libraries and code",
         "text":
           "We needed to continually re-imagine our technical approaches to create a highly optimised and performant experience for usage and CMS upload. We removed all large libraries (Angular, jQuery), replacing with either vanilla JS or micro libraries, greatly reducing the download needed.",
-        "image": "/resources/634/bbc-scrubbable-04.png"
+        "image": "/static/assets/imported/634/bbc-scrubbable-04.png"
       },
       {
         "title": "Responsive image resolution / download",
         "text":
           "We worked hard to deliver a responsive solution to handling and presenting imagery, enabling device specific presentation of images for performance.",
-        "image": "/resources/635/bbc-scrubbable-05.png"
+        "image": "/static/assets/imported/635/bbc-scrubbable-05.png"
       },
       {
         "title": "CMS controlled Scrubs",
         "text":
           "We created a simple, bespoke CMS to allow editorial to control video frame-rates and thus total image downloads.",
-        "image": "/resources/636/bbc-scrubbable-06.png"
+        "image": "/static/assets/imported/636/bbc-scrubbable-06.png"
       }
     ]
   },
@@ -96,23 +97,23 @@
       "The most fun I've had with a video in a long time! Launching the rocket was awesome!",
     "person": "A user",
     "title": "BBC iWonder user",
-    "avatar": "/resources/270/bbc-scrubbable-grid-quote-image.jpg"
+    "avatar": "/static/assets/imported/270/bbc-scrubbable-grid-quote-image.jpg"
   },
   "gallery": [
     {
-      "image": "/resources/332/bbc-scrubbable-grid-image-1.jpg",
+      "image": "/static/assets/imported/332/bbc-scrubbable-grid-image-1.jpg",
       "alt": "BBC scrubbable grid image 1"
     },
     {
-      "image": "/resources/331/bbc-scrubbable-grid-image-2.jpg",
+      "image": "/static/assets/imported/331/bbc-scrubbable-grid-image-2.jpg",
       "alt": "BBC scrubbable grid image 2"
     },
     {
-      "image": "/resources/469/bbc-scrubbable-grid-image-3.jpg",
+      "image": "/static/assets/imported/469/bbc-scrubbable-grid-image-3.jpg",
       "alt": "bbc-scrubbable-grid-image-3"
     },
     {
-      "image": "/resources/334/bbc-scrubbable-grid-image-4.jpg",
+      "image": "/static/assets/imported/334/bbc-scrubbable-grid-image-4.jpg",
       "alt": "BBC scrubbable grid image 4"
     }
   ]

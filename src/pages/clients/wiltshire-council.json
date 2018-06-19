@@ -1,7 +1,7 @@
 {
   "name": "Wiltshire Council ",
-  "logo": "/resources/228/wiltshire-college-logo.png",
-  "promoLogo": "/resources/254/wiltshire-council.png",
+  "logo": "/static/assets/imported/228/wiltshire-college-logo.png",
+  "promoLogo": "/static/assets/imported/254/wiltshire-council.png",
   "featured": true,
   "featuredProject": "wiltshire-council",
   "slug": "wiltshire-council"

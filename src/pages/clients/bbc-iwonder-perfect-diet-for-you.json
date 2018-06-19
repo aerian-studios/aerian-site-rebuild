@@ -1,7 +1,7 @@
 {
   "name": "BBC iWonder Perfect Diet For You",
-  "logo": "/resources/320/bbc-iwonder-logo.png",
-  "promoLogo": "/resources/319/bbc-iwonder-logo-white.png",
+  "logo": "/static/assets/imported/320/bbc-iwonder-logo.png",
+  "promoLogo": "/static/assets/imported/319/bbc-iwonder-logo-white.png",
   "featured": true,
   "featuredProject": "bbc-iwonder-perfect-diet-for-you",
   "slug": "bbc-iwonder-perfect-diet-for-you"

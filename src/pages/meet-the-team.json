@@ -3,6 +3,7 @@
   "staff": [
     {
       "name": "Paul Goodenough",
+      "jobTitle": "CEO & Founder",
       "active": false,
       "imageNormal": "/assets/imported/484/paolo.png",
       "imageFunny": "/assets/imported/483/paolo-funny.png",
@@ -40,6 +41,7 @@
     },
     {
       "name": "Geoff Wells",
+      "jobTitle": "COO",
       "active": false,
       "imageNormal": "/assets/imported/486/geoff.png",
       "imageFunny": "/assets/imported/485/geoff-funny.png",
@@ -62,6 +64,7 @@
     },
     {
       "name": "Simon Neaves",
+      "jobTitle": "Technical Director  ",
       "active": false,
       "imageNormal": "/assets/imported/488/simon.png",
       "imageFunny": "/assets/imported/487/simon-funny.png",
@@ -89,6 +92,7 @@
     },
     {
       "name": "Ben Poole",
+      "jobTitle": "Director of DevOps",
       "active": false,
       "imageNormal": "/assets/imported/491/ben.png",
       "imageFunny": "/assets/imported/489/ben-funny.png",
@@ -143,6 +147,7 @@
     },
     {
       "name": "Andy Max",
+      "jobTitle": "Senior Developer ",
       "active": false,
       "imageNormal": "/assets/imported/493/andy.png",
       "imageFunny": "/assets/imported/492/andy-funny.png",
@@ -182,6 +187,7 @@
     },
     {
       "name": "Adam Smith",
+      "jobTitle": "Senior Developer",
       "active": false,
       "imageNormal": "/assets/imported/532/adam.png",
       "imageFunny": "/assets/imported/531/adam-funny.png",
@@ -215,6 +221,7 @@
     },
     {
       "name": "Anthony Butterfield",
+      "jobTitle": "Senior UI Designer",
       "active": false,
       "imageNormal": "/assets/imported/564/ant.png",
       "imageFunny": "/assets/imported/563/ant-funny.png",
@@ -234,6 +241,7 @@
     },
     {
       "name": "Chris Bingham",
+      "jobTitle": "Project & Admin Assistant",
       "active": false,
       "imageNormal": "/assets/imported/566/chris.png",
       "imageFunny": "/assets/imported/565/chris-funny.png",
@@ -253,6 +261,7 @@
     },
     {
       "name": "Darren Torchia",
+      "jobTitle": "Developer ",
       "active": false,
       "imageNormal": "/assets/imported/498/darren.png",
       "imageFunny": "/assets/imported/497/darren-funny.png",
@@ -273,6 +282,7 @@
     },
     {
       "name": "David Martinez-Plaza",
+      "jobTitle": "Creative Developer ",
       "active": false,
       "imageNormal": "/assets/imported/502/david.png",
       "imageFunny": "/assets/imported/501/david-funny.png",
@@ -301,6 +311,7 @@
     },
     {
       "name": "Hannah Williams",
+      "jobTitle": "Client Side Developer ",
       "active": false,
       "imageNormal": "/assets/imported/504/hannah.png",
       "imageFunny": "/assets/imported/503/hannah-funny.png",
@@ -325,6 +336,7 @@
     },
     {
       "name": "Gyula Soós",
+      "jobTitle": "Developer",
       "active": false,
       "imageNormal": "/assets/imported/735/dscf2303.jpg",
       "imageFunny": "/assets/imported/736/dscf2317.jpg",
@@ -348,6 +360,7 @@
     },
     {
       "name": "James Pearce",
+      "jobTitle": "Client Side Developer ",
       "active": false,
       "imageNormal": "/assets/imported/506/james.png",
       "imageFunny": "/assets/imported/505/james-funny.png",
@@ -375,6 +388,7 @@
     },
     {
       "name": "Jason  Goodenough",
+      "jobTitle": "Client Side Developer ",
       "active": false,
       "imageNormal": "/assets/imported/509/jason.png",
       "imageFunny": "/assets/imported/508/jason-funny.png",
@@ -386,6 +400,7 @@
     },
     {
       "name": "Jonathan Chard",
+      "jobTitle": "Technical Project Manager",
       "active": false,
       "imageNormal": "/assets/imported/758/dsc00096.jpg",
       "imageFunny": "/assets/imported/757/dsc00108.jpg",
@@ -426,6 +441,7 @@
     },
     {
       "name": "Marek Rodgers",
+      "jobTitle": "Project & Admin Assistant",
       "active": false,
       "imageNormal": "/assets/imported/568/marek.png",
       "imageFunny": "/assets/imported/567/marek-funny.png",
@@ -445,6 +461,7 @@
     },
     {
       "name": "Margy Cunningham",
+      "jobTitle": "Finance Controller ",
       "active": false,
       "imageNormal": "/assets/imported/515/margy.png",
       "imageFunny": "/assets/imported/514/margy-funny.png",
@@ -457,6 +474,7 @@
     },
     {
       "name": "Matt Kane",
+      "jobTitle": "Head of Software",
       "active": false,
       "imageNormal": "/assets/imported/734/dscf2391.jpg",
       "imageFunny": "/assets/imported/752/dscf2407.jpg",
@@ -469,6 +487,7 @@
     },
     {
       "name": "Matthew Ellis",
+      "jobTitle": "Developer",
       "active": false,
       "imageNormal": "/assets/imported/755/dscf2338.jpg",
       "imageFunny": "/assets/imported/754/dscf2348.jpg",
@@ -492,6 +511,7 @@
     },
     {
       "name": "Paul Warder",
+      "jobTitle": "Senior Designer ",
       "active": false,
       "imageNormal": "/assets/imported/517/paul.png",
       "imageFunny": "/assets/imported/516/paul-funny.png",
@@ -515,6 +535,7 @@
     },
     {
       "name": "Neil Thorne",
+      "jobTitle": "Head of Design",
       "active": false,
       "imageNormal": "/assets/imported/521/neil.png",
       "imageFunny": "/assets/imported/520/neil-funny.png",
@@ -537,6 +558,7 @@
     },
     {
       "name": "Ryan Cheetham",
+      "jobTitle": "Designer",
       "active": false,
       "imageNormal": "/assets/imported/523/ryan.png",
       "imageFunny": "/assets/imported/522/ryan-funny.png",
@@ -566,6 +588,7 @@
     },
     {
       "name": "S'unya Dickman",
+      "jobTitle": "Head of CSD",
       "active": false,
       "imageNormal": "/assets/imported/525/sunya.png",
       "imageFunny": "/assets/imported/524/sunya-funny.png",
@@ -585,6 +608,7 @@
     },
     {
       "name": "Spencer Westwood",
+      "jobTitle": "Senior Developer ",
       "active": false,
       "imageNormal": "/assets/imported/527/spencer.png",
       "imageFunny": "/assets/imported/526/spencer-funny.png",
@@ -661,6 +685,7 @@
     },
     {
       "name": "Wayne Pitts",
+      "jobTitle": "Client Side Developer ",
       "active": false,
       "imageNormal": "/assets/imported/529/wayne.png",
       "imageFunny": "/assets/imported/528/wayne-funny.png",
@@ -688,6 +713,7 @@
     },
     {
       "name": "Aero The Dog",
+      "jobTitle": "Distractor",
       "active": false,
       "imageNormal": "/assets/imported/530/aero.png",
       "imageFunny": "/assets/imported/530/aero.png",
@@ -700,6 +726,7 @@
     },
     {
       "name": "Dave Houghton",
+      "jobTitle": "Head of Operations ",
       "active": false,
       "imageNormal": "/assets/imported/500/dave.png",
       "imageFunny": "/assets/imported/499/dave-funny.png",
@@ -721,6 +748,7 @@
     },
     {
       "name": "Lucy Pitman",
+      "jobTitle": "Junior Designer ",
       "active": false,
       "imageNormal": "/assets/imported/208/lucy.jpg",
       "imageFunny": "/assets/imported/430/lucy-funny-copy.jpg",
@@ -739,6 +767,7 @@
     },
     {
       "name": "Liam Farrell",
+      "jobTitle": "Senior Technology Lead ",
       "active": false,
       "imageNormal": "/assets/imported/513/liam.png",
       "imageFunny": "/assets/imported/512/liam-funny.png",
@@ -774,6 +803,7 @@
     },
     {
       "name": "Arno Blumer",
+      "jobTitle": "Javascript Developer ",
       "active": false,
       "imageNormal": "/assets/imported/533/arno.png",
       "imageFunny": "/assets/imported/494/arno-funny.png",
@@ -794,6 +824,7 @@
     },
     {
       "name": "Matt Bazley",
+      "jobTitle": "Project & Admin Assistant ",
       "active": false,
       "imageNormal": "/assets/imported/519/matt.png",
       "imageFunny": "/assets/imported/518/matt-funny.png",
@@ -814,6 +845,7 @@
     },
     {
       "name": "John Farrow",
+      "jobTitle": "Senior Developer ",
       "active": false,
       "imageNormal": "/assets/imported/511/john.png",
       "imageFunny": "/assets/imported/510/john-funny.png",
@@ -834,6 +866,7 @@
     },
     {
       "name": "Jon Chard",
+      "jobTitle": "Technical Project Manager",
       "active": false,
       "imageNormal": "/assets/imported/757/dsc00108.jpg",
       "imageFunny": "/assets/imported/758/dsc00096.jpg",

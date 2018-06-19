@@ -120,7 +120,6 @@ collections:
             name: "staff"
             widget: list
             fields:
-              - {label: "Path", name: "path", widget: "hidden", default: "/meet-the-team"}
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Live", name: live, widget: boolean}
               - {label: "Normal image", name: "imageNormal", widget: "image"}
@@ -128,8 +127,8 @@ collections:
               - {label: "Job title", name: "jobTitle", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
               - {label: "Fact", name: "fact", widget: "text"}
-              - label: "Skills"
-                name: "name"
+              - label: "Skills (comma-separated)"
+                name: "skills"
                 widget: "list"
           
       - file: "src/pages/what-we-do.json"

@@ -64,8 +64,8 @@ collections:
             name: "hurdles"
             widget: "list"
             fields:
-              - {label: "Image", name: "image", widget: image}
               - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: image}
               - {label: "Text", name: "text", widget: text}
       - label: "The solution"
         name: "solution"
@@ -76,11 +76,11 @@ collections:
             name: "hurdles"
             widget: "list"
             fields:
-              - {label: "Image", name: "image", widget: image}
               - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: image}
               - {label: "Text", name: "text", widget: text}
       - label: "The result"
-        name: "result"
+        name: "results"
         widget: object
         fields:
           - { label: "Description", name: "description", widget: "text"}

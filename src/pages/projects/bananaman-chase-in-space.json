@@ -10,10 +10,10 @@
     "Designed for Beano, using Beano Town’s resident super hero, we created the Beano's latest HTML5 game. Players can help our very own Bananaman take to the skies and dodge the various obstacles to bring back the dastardly General Blight and deliver him back to his jail cell on earth!\n\nBuilt to be on-brand, available to all devices, SUPER easy to play, but most of all, devilishly fun!",
   "externalUrl": "https://www.beano.com/games/bananaman-chase-in-space",
   "client": "beano",
-  "homepage": false,
-  "featured": false,
+  "homepage": true,
+  "featured": true,
   "rolloverDetails": "Bananaman Chase in Space",
-  "heroImage": "/resources/737/main-header-copy.png",
+  "heroImage": "/resources/781/artboard-1.png",
   "heroVideo": "/resources/738/bananamanheader.m4v",
   "challenge": {
     "description":
@@ -88,13 +88,7 @@
     ]
   },
   "performance": [],
-  "testimonial": {
-    "quote":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor tempor neque non rhoncus. Nunc a diam sit amet nunc ultrices tempus quis ut lacus. Vivamus porta velit eu leo lobortis, eget convallis quam porta. Nulla sed ultricies urna.",
-    "person": "Tom Shreeve",
-    "title": "Senior Digital Content Producer at Beano Studios",
-    "avatar": "/resources/733/beano-testimonial-image-large.png"
-  },
+  "testimonial": null,
   "gallery": [
     {
       "image": "/resources/748/bannanamanv2-animation.png",

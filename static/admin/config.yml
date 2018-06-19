@@ -48,7 +48,7 @@ collections:
 
       - {label: "Go Live Date", name: "goLiveDate", widget: "date", required: false}
       - {label: "Case study title", name: "caseStudyTitle", widget: "string"}
-      - {label: "Case study text", name: "caseStudyText", widget: "text"}
+      - {label: "Case study text", name: "caseStudyText", widget: "markdown"}
       - {label: "Case study image", name: "caseStudyImage", widget: "image"}
       - {label: "External Link", name: "externalUrl", widget: "string"}
       - {label: "Rollover details", name: "rolloverDetails", widget: "string"}
@@ -66,7 +66,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Image", name: "image", widget: image}
-              - {label: "Text", name: "text", widget: text}
+              - {label: "Text", name: "text", widget: markdown}
       - label: "The solution"
         name: "solution"
         widget: object
@@ -90,7 +90,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Image", name: "image", widget: image}
-              - {label: "Text", name: "text", widget: text}
+              - {label: "Text", name: "text", widget: markdown}
       - label: "Performance and statistics"
         name: "performance"
         required: false

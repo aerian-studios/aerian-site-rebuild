@@ -1,7 +1,7 @@
 {
   "name": "Arts Council",
-  "logo": "/static/assets/imported/457/arts-council-logo.png",
-  "promoLogo": "/static/assets/imported/457/arts-council-logo.png",
+  "logo": "imported/457/arts-council-logo.png",
+  "promoLogo": "imported/457/arts-council-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "arts-council"

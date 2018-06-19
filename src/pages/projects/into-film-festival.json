@@ -12,7 +12,7 @@
   "homepage": true,
   "featured": true,
   "rolloverDetails": null,
-  "heroImage": "/static/assets/imported/693/into-film-festival-header.png",
+  "heroImage": "imported/693/into-film-festival-header.png",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -22,19 +22,19 @@
         "title": "Reach for the stars",
         "text":
           "The Into Film Festival website needed to appeal to a diverse range of users across all age groups, as well as meet stakeholder aspirations. Whatever design we proposed needed to be visually stunning and aspirational, whilst remaining easy-to-use for super fast bookings (zoooom!!!).",
-        "image": "/static/assets/imported/680/into-film-festival-01.png"
+        "image": "imported/680/into-film-festival-01.png"
       },
       {
         "title": "Multiple user permissions",
         "text":
           "The website needed to be scalable and robust to ensure a smooth and seamless user experience during periods of incredibly high booking demand. Cinema owners (Exhibitors) and event organisers needed access to booking details so they could see how popular events were and make the appropriate arrangements.",
-        "image": "/static/assets/imported/679/into-film-festival-02.png"
+        "image": "imported/679/into-film-festival-02.png"
       },
       {
         "title": "Multiple user types",
         "text":
           "Into Film Festival caters for a wide range of user types, varying in both age and digital literacy. With this in mind we needed to ensure the look and feel delivered the right message and is easy to use while at the same time offering more advanced features for the more capable and experienced user.",
-        "image": "/static/assets/imported/681/into-film-festival-03.png"
+        "image": "imported/681/into-film-festival-03.png"
       }
     ]
   },
@@ -46,19 +46,19 @@
         "title": "Utilising the magic of the cinema",
         "text":
           "We peppered dynamic and aspirational imagery to celebrate the wonder of cinematography, and grab users. We complimented this imagery with alluring promo blocks and call-to-actions for the primary navigation paths, leading to an delightful browsing (and more importantly, booking) experience.",
-        "image": "/static/assets/imported/682/into-film-festival-04.png"
+        "image": "imported/682/into-film-festival-04.png"
       },
       {
         "title": "Flexible solutions for maximum results",
         "text":
           "We worked tirelessly to understand and plan meticulously for the various third party systems our application would need to integrate with. Communication between our teams was critical to the success, and the creation of a final product that not only performed flawlessly under immense traffic pressures; but also delivered an delightful user experience that exceeded Into Film's booking targets.",
-        "image": "/static/assets/imported/683/into-film-festival-05.png"
+        "image": "imported/683/into-film-festival-05.png"
       },
       {
         "title": "Lets make booking a pleasure",
         "text":
           "To ensure maximum bookings during the festival we implemented a swathe of features and created a highly targetted and optimised booking journey. Geo-location technology was utilised to pre-define user locations and recommend events near them, complemented by an extensive filter system that allowed highly tailored filtering.",
-        "image": "/static/assets/imported/684/into-film-festival-06.png"
+        "image": "imported/684/into-film-festival-06.png"
       }
     ]
   },
@@ -70,19 +70,19 @@
         "title": "Utilising the magic of the cinema",
         "text":
           "We peppered dynamic and aspirational imagery to celebrate the wonder of cinematography, and grab users. We complimented this imagery with alluring promo blocks and call-to-actions for the primary navigation paths, leading to an delightful browsing (and more importantly, booking) experience.",
-        "image": "/static/assets/imported/682/into-film-festival-04.png"
+        "image": "imported/682/into-film-festival-04.png"
       },
       {
         "title": "Flexible solutions for maximum results",
         "text":
           "We worked tirelessly to understand and plan meticulously for the various third party systems our application would need to integrate with. Communication between our teams was critical to the success, and the creation of a final product that not only performed flawlessly under immense traffic pressures; but also delivered an delightful user experience that exceeded Into Film's booking targets.",
-        "image": "/static/assets/imported/683/into-film-festival-05.png"
+        "image": "imported/683/into-film-festival-05.png"
       },
       {
         "title": "Lets make booking a pleasure",
         "text":
           "To ensure maximum bookings during the festival we implemented a swathe of features and created a highly targetted and optimised booking journey. Geo-location technology was utilised to pre-define user locations and recommend events near them, complemented by an extensive filter system that allowed highly tailored filtering.",
-        "image": "/static/assets/imported/684/into-film-festival-06.png"
+        "image": "imported/684/into-film-festival-06.png"
       }
     ]
   },
@@ -96,23 +96,23 @@
       "Aerian delivered the design to brief and beyond. They are a great bunch to work with - really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. I loved working on this project with them and am chuffed to bits with the result.",
     "person": "Louise Goodspeed",
     "title": "Lead UX",
-    "avatar": "/static/assets/imported/688/intofilm-festival-quote-image.png"
+    "avatar": "imported/688/intofilm-festival-quote-image.png"
   },
   "gallery": [
     {
-      "image": "/static/assets/imported/691/festival-gallery-image-3.png",
+      "image": "imported/691/festival-gallery-image-3.png",
       "alt": "festival gallery image 3"
     },
     {
-      "image": "/static/assets/imported/689/festival-gallery-image-2.png",
+      "image": "imported/689/festival-gallery-image-2.png",
       "alt": "festival gallery image 2"
     },
     {
-      "image": "/static/assets/imported/690/festival-gallery-image-1.png",
+      "image": "imported/690/festival-gallery-image-1.png",
       "alt": "festival gallery image 1"
     },
     {
-      "image": "/static/assets/imported/692/festival-gallery-image-4.png",
+      "image": "imported/692/festival-gallery-image-4.png",
       "alt": "festival gallery image 4"
     }
   ]

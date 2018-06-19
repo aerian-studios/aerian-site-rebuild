@@ -3,8 +3,8 @@
   "sections": [
     {
       "title": "We plan",
-      "image": "/static/assets/imported/425/we-plan-image.jpg",
-      "smallImage": "/static/assets/imported/535/we-plan-image-small.jpg",
+      "image": "imported/425/we-plan-image.jpg",
+      "smallImage": "imported/535/we-plan-image-small.jpg",
       "subtitle": "Changing the face of digital.",
       "blurb":
         "Our strategy team have worked at the highest levels of industry. Working with our partners to change the behaviours, content disseminations, buying patterns and perception of billions of users. We work with you to really break down the barriers that are stopping you being the digital powerhouse you could be.",
@@ -29,13 +29,13 @@
           "Aerian delivered the design to brief and beyond. They are a great bunch to work with, really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. ",
         "person": "Louise Goodspeed",
         "title": "UX Lead | Into Film",
-        "avatar": "/static/assets/imported/124/louise-goodspeed.png"
+        "avatar": "imported/124/louise-goodspeed.png"
       }
     },
     {
       "title": "We design",
-      "image": "/static/assets/imported/423/we-design-image.jpg",
-      "smallImage": "/static/assets/imported/536/we-design-image-small.jpg",
+      "image": "imported/423/we-design-image.jpg",
+      "smallImage": "imported/536/we-design-image-small.jpg",
       "subtitle": "Designed to be loved.",
       "blurb":
         "We create things that people love to use. Our job as creatives is to continually question ourselves and the work we do. It's a mixture of gut instinct, artistic integrity and an obsession with creating the easiest possible experience. We blend scientific process with artistic vision.",
@@ -69,8 +69,8 @@
     },
     {
       "title": "We develop",
-      "image": "/static/assets/imported/424/we-develop.jpg",
-      "smallImage": "/static/assets/imported/537/we-develop-image-small.jpg",
+      "image": "imported/424/we-develop.jpg",
+      "smallImage": "imported/537/we-develop-image-small.jpg",
       "subtitle": "Rock solid, high performance development.",
       "blurb":
         "Our dev house is the cornerstone of our success. Our team of expert developers, technical architects, software engineers, security and DevOps experts work incredibly hard to create the perfect piece of engineering excellence.",
@@ -105,8 +105,8 @@
     },
     {
       "title": "We deliver",
-      "image": "/static/assets/imported/422/we-deliver.jpg",
-      "smallImage": "/static/assets/imported/422/we-deliver.jpg",
+      "image": "imported/422/we-deliver.jpg",
+      "smallImage": "imported/422/we-deliver.jpg",
       "subtitle": "If you rely on the web, you can rely on us.",
       "blurb":
         "You need someone you can trust. That's us. We work incredibly hard (because we want to) to ensure that we don't let people down. That's not just about long, hard hours. That's about planning, consideration, communication and being honest. We don't want to work for you, we want to work with you.",
@@ -132,13 +132,13 @@
           "Thanks so much to all of you for the speed and quality of your work across the board - design, communication, build and overall passion for the project that’s made it as amazing as it is. ",
         "person": "James Elliot",
         "title": "Assistant Director of Digital Engagement",
-        "avatar": "/static/assets/imported/109/james-elliot.jpg"
+        "avatar": "imported/109/james-elliot.jpg"
       }
     },
     {
       "title": "We celebrate",
-      "image": "/static/assets/imported/480/we-celebrate.jpg",
-      "smallImage": "/static/assets/imported/538/we-celebrate-image-small.jpg",
+      "image": "imported/480/we-celebrate.jpg",
+      "smallImage": "imported/538/we-celebrate-image-small.jpg",
       "subtitle":
         "Industry leading results, delivered by us and you, together.",
       "blurb":

@@ -1,120 +1,110 @@
 {
-    "name": "Bananaman - Chase in Space",
-    "slug": "bananaman-chase-in-space",
-    "titleLineOne": "A cosmic html 5 chase",
-    "titleLineTwo": "through space… with ALIENS!",
-    "goLiveDate": "2017-11-22T00:00:00.000Z",
-    "caseStudyTitle":
-        "Guide our “Man of Peel” throudgh space to bring General Blight crashing back to justice!",
-    "caseStudyText":
-        "Designed for Beano, using Beano Town’s resident super hero, we created the Beano's latest HTML5 game. Players can help our very own Bananaman take to the skies and dodge the various obstacles to bring back the dastardly General Blight and deliver him back to his jail cell on earth!\n\nBuilt to be on-brand, available to all devices, SUPER easy to play, but most of all, devilishly fun!",
-    "externalUrl": "https://www.beano.com/games/bananaman-chase-in-space",
-    "client": "beano",
-    "homepage": true,
-    "featured": true,
-    "rolloverDetails": "Bananaman Chase in Space",
-    "heroImage": "/static/assets/imported/781/artboard-1.png",
-    "heroVideo": "/static/assets/imported/738/bananamanheader.m4v",
-    "challenge": {
-        "description":
-            "We wanted to create a game that would capture the imagination, fun and creativity that the Beano brings to all it’s audience. Our game needed to feature all the Bananaman favourites, in an easy to play and simple game environment.",
-        "hurdles": [
-            {
-                "title": "Creating a story",
-                "text":
-                    "To ensure our game is perfectly in sync with the Beano we wanted to make sure our game followed a story.\n\nPlayers would take on the roll of their favourite Beano town hero. playing as though they are in one of the Beanos latest though they were part of one of their favourite Beano town adventures.",
-                "image":
-                    "/static/assets/imported/745/bananaman-challenge-storyline.png"
-            },
-            {
-                "title": "Featuring familiar faces",
-                "text":
-                    "We wanted our game to be instantly recognisable as Beano so we needed to ensure the look and feel of the game embraced everything people have come to expect from a Beano product…\n\nLoud, Crazy, Naughty, full-blooded mayhem! But most importantly delivering those Laugh out loud moments that brings players back again and again!",
-                "image":
-                    "/static/assets/imported/743/bananaman-challenge-faces-familiar-faces.png"
-            },
-            {
-                "title": "Its all about the Assets",
-                "text":
-                    "Although we had a variety of assets and sprites provided, we would need to create our own custom asset library to ensure we had characters available in the range of positions that our story and design team would require.\n\nThats what the design team said… though we are starting to think they just wanted more excuses to buy Beano comics!",
-                "image":
-                    "/static/assets/imported/742/bananaman-challenge-assets.png"
-            }
-        ]
-    },
-    "solution": {
-        "description":
-            "Bananaman’s “Chase in Space!”… A HTML 5 game that sees our epic hero flying through space to bring the dastardly Blight back to his cell on earth.",
-        "hurdles": [
-            {
-                "title": "Its a game… BASED IN SPACE!!",
-                "text":
-                    "Through copious amounts of research… and because we knew it would be cool! A space theme was used for our game.\n\nPlayers take control of their favourite superhero, helping guide him through the copious amounts of space junk obstacles. Clicking or tapping would be the control mechanism, moving Bananaman up or down the screen in a flappy bird style.",
-                "image":
-                    "/static/assets/imported/746/bananaman-challenge-space-space.png"
-            },
-            {
-                "title": "Making our hero the star",
-                "text":
-                    "We wanted the game to embrace the characteristics viewers and readers have come to love with Bananaman.\n\nThe iconic flying pattern that Bananaman adopts would require special attention from our animation team. We needed to re-create the swimming technique while ensuring a minimal amount of frames would be used so that file size was not jeopardised.",
-                "image":
-                    "/static/assets/imported/744/bananaman-challenge-hero.png"
-            },
-            {
-                "title": "It’s ALIVE!!",
-                "text":
-                    "To ensure compatibility with all devices we used the latest HTML 5 technology to create the game.\n\nThis, combined with some snazzy CSS styling and a sprinkle of java script enabled us to add subtle animations and crazy sound effects that brought characters and story lines to life.",
-                "image":
-                    "/static/assets/imported/741/bananaman-challenge-animation.png"
-            }
-        ]
-    },
-    "results": {
-        "description":
-            "We are delighted to say that Bananaman’s Chase in Space has now launched on the Beano website. Players young and old can take to the stars as their favourite Beano town superhero, helping to catch Blight and bring him to justice!",
-        "hurdles": [
-            {
-                "title": "Its a game… BASED IN SPACE!!",
-                "text":
-                    "Through copious amounts of research… and because we knew it would be cool! A space theme was used for our game.\n\nPlayers take control of their favourite superhero, helping guide him through the copious amounts of space junk obstacles. Clicking or tapping would be the control mechanism, moving Bananaman up or down the screen in a flappy bird style.",
-                "image":
-                    "/static/assets/imported/746/bananaman-challenge-space-space.png"
-            },
-            {
-                "title": "Making our hero the star",
-                "text":
-                    "We wanted the game to embrace the characteristics viewers and readers have come to love with Bananaman.\n\nThe iconic flying pattern that Bananaman adopts would require special attention from our animation team. We needed to re-create the swimming technique while ensuring a minimal amount of frames would be used so that file size was not jeopardised.",
-                "image":
-                    "/static/assets/imported/744/bananaman-challenge-hero.png"
-            },
-            {
-                "title": "It’s ALIVE!!",
-                "text":
-                    "To ensure compatibility with all devices we used the latest HTML 5 technology to create the game.\n\nThis, combined with some snazzy CSS styling and a sprinkle of java script enabled us to add subtle animations and crazy sound effects that brought characters and story lines to life.",
-                "image":
-                    "/static/assets/imported/741/bananaman-challenge-animation.png"
-            }
-        ]
-    },
-    "performance": [],
-    "testimonial": null,
-    "gallery": [
-        {
-            "image": "/static/assets/imported/748/bannanamanv2-animation.png",
-            "alt": "Bananaman - gallery - animation"
-        },
-        {
-            "image": "/static/assets/imported/747/bannanamanv2-game-play-1.png",
-            "alt": "Bananman - Gallery - Start screen"
-        },
-        {
-            "image": "/static/assets/imported/749/bannanamanv2-game-play-2.png",
-            "alt": "Bananaman - Gallery - game screen"
-        },
-        {
-            "image":
-                "/static/assets/imported/750/bannanamanv2-asset-creation.png",
-            "alt": "Image for gallery of bananaman"
-        }
+  "name": "Bananaman - Chase in Space",
+  "slug": "bananaman-chase-in-space",
+  "titleLineOne": "A cosmic html 5 chase",
+  "titleLineTwo": "through space… with ALIENS!",
+  "goLiveDate": "2017-11-22T00:00:00.000Z",
+  "caseStudyTitle":
+    "Guide our “Man of Peel” through space to bring General Blight crashing back to justice!",
+  "caseStudyText":
+    "Designed for Beano, using Beano Town’s resident super hero, we created the Beano's latest HTML5 game. Players can help our very own Bananaman take to the skies and dodge the various obstacles to bring back the dastardly General Blight and deliver him back to his jail cell on earth!\n\nBuilt to be on-brand, available to all devices, SUPER easy to play, but most of all, devilishly fun!",
+  "externalUrl": "https://www.beano.com/games/bananaman-chase-in-space",
+  "client": "beano",
+  "homepage": true,
+  "featured": true,
+  "rolloverDetails": "Bananaman Chase in Space",
+  "heroImage": "imported/781/artboard-1.png",
+  "heroVideo": "imported/738/bananamanheader.m4v",
+  "challenge": {
+    "description":
+      "We wanted to create a game that would capture the imagination, fun and creativity that the Beano brings to all it’s audience. Our game needed to feature all the Bananaman favourites, in an easy to play and simple game environment.",
+    "hurdles": [
+      {
+        "title": "Creating a story",
+        "text":
+          "To ensure our game is perfectly in sync with the Beano we wanted to make sure our game followed a story.\n\nPlayers would take on the roll of their favourite Beano town hero. playing as though they are in one of the Beanos latest though they were part of one of their favourite Beano town adventures.",
+        "image": "imported/745/bananaman-challenge-storyline.png"
+      },
+      {
+        "title": "Featuring familiar faces",
+        "text":
+          "We wanted our game to be instantly recognisable as Beano so we needed to ensure the look and feel of the game embraced everything people have come to expect from a Beano product…\n\nLoud, Crazy, Naughty, full-blooded mayhem! But most importantly delivering those Laugh out loud moments that brings players back again and again!",
+        "image": "imported/743/bananaman-challenge-faces-familiar-faces.png"
+      },
+      {
+        "title": "Its all about the Assets",
+        "text":
+          "Although we had a variety of assets and sprites provided, we would need to create our own custom asset library to ensure we had characters available in the range of positions that our story and design team would require.\n\nThats what the design team said… though we are starting to think they just wanted more excuses to buy Beano comics!",
+        "image": "imported/742/bananaman-challenge-assets.png"
+      }
     ]
+  },
+  "solution": {
+    "description":
+      "Bananaman’s “Chase in Space!”… A HTML 5 game that sees our epic hero flying through space to bring the dastardly Blight back to his cell on earth.",
+    "hurdles": [
+      {
+        "title": "Its a game… BASED IN SPACE!!",
+        "text":
+          "Through copious amounts of research… and because we knew it would be cool! A space theme was used for our game.\n\nPlayers take control of their favourite superhero, helping guide him through the copious amounts of space junk obstacles. Clicking or tapping would be the control mechanism, moving Bananaman up or down the screen in a flappy bird style.",
+        "image": "imported/746/bananaman-challenge-space-space.png"
+      },
+      {
+        "title": "Making our hero the star",
+        "text":
+          "We wanted the game to embrace the characteristics viewers and readers have come to love with Bananaman.\n\nThe iconic flying pattern that Bananaman adopts would require special attention from our animation team. We needed to re-create the swimming technique while ensuring a minimal amount of frames would be used so that file size was not jeopardised.",
+        "image": "imported/744/bananaman-challenge-hero.png"
+      },
+      {
+        "title": "It’s ALIVE!!",
+        "text":
+          "To ensure compatibility with all devices we used the latest HTML 5 technology to create the game.\n\nThis, combined with some snazzy CSS styling and a sprinkle of java script enabled us to add subtle animations and crazy sound effects that brought characters and story lines to life.",
+        "image": "imported/741/bananaman-challenge-animation.png"
+      }
+    ]
+  },
+  "results": {
+    "description":
+      "We are delighted to say that Bananaman’s Chase in Space has now launched on the Beano website. Players young and old can take to the stars as their favourite Beano town superhero, helping to catch Blight and bring him to justice!",
+    "hurdles": [
+      {
+        "title": "Its a game… BASED IN SPACE!!",
+        "text":
+          "Through copious amounts of research… and because we knew it would be cool! A space theme was used for our game.\n\nPlayers take control of their favourite superhero, helping guide him through the copious amounts of space junk obstacles. Clicking or tapping would be the control mechanism, moving Bananaman up or down the screen in a flappy bird style.",
+        "image": "imported/746/bananaman-challenge-space-space.png"
+      },
+      {
+        "title": "Making our hero the star",
+        "text":
+          "We wanted the game to embrace the characteristics viewers and readers have come to love with Bananaman.\n\nThe iconic flying pattern that Bananaman adopts would require special attention from our animation team. We needed to re-create the swimming technique while ensuring a minimal amount of frames would be used so that file size was not jeopardised.",
+        "image": "imported/744/bananaman-challenge-hero.png"
+      },
+      {
+        "title": "It’s ALIVE!!",
+        "text":
+          "To ensure compatibility with all devices we used the latest HTML 5 technology to create the game.\n\nThis, combined with some snazzy CSS styling and a sprinkle of java script enabled us to add subtle animations and crazy sound effects that brought characters and story lines to life.",
+        "image": "imported/741/bananaman-challenge-animation.png"
+      }
+    ]
+  },
+  "performance": [],
+  "testimonial": null,
+  "gallery": [
+    {
+      "image": "imported/748/bannanamanv2-animation.png",
+      "alt": "Bananaman - gallery - animation"
+    },
+    {
+      "image": "imported/747/bannanamanv2-game-play-1.png",
+      "alt": "Bananman - Gallery - Start screen"
+    },
+    {
+      "image": "imported/749/bannanamanv2-game-play-2.png",
+      "alt": "Bananaman - Gallery - game screen"
+    },
+    {
+      "image": "imported/750/bannanamanv2-asset-creation.png",
+      "alt": "Image for gallery of bananaman"
+    }
+  ]
 }

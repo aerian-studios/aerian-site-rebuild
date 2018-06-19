@@ -13,7 +13,7 @@
   "featured": true,
   "rolloverDetails":
     "Enriching the coolest BBC shows with second screen quizzes, videos, behind the scenes... BBC Companion has it all",
-  "heroImage": "/static/assets/imported/300/bbc-compainion-app-hero-image.jpg",
+  "heroImage": "imported/300/bbc-compainion-app-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +23,19 @@
         "title": "A new user experience ",
         "text":
           "The programmes feed didn't currently allow for much interactivity or cross pollination of content and journeys, so a new user experience and flow through content needed to be created, with an arm-chair ‘lazy engagement' view in mind.",
-        "image": "/static/assets/imported/614/bbc-companion-01.png"
+        "image": "imported/614/bbc-companion-01.png"
       },
       {
         "title": "Content from a range of sources ",
         "text":
           "The key challenge for Companion was to deliver content from a diverse range of information sources across the BBC, at a time when the BBC infrastructure was migrating to new systems.",
-        "image": "/static/assets/imported/613/bbc-companion-02.png"
+        "image": "imported/613/bbc-companion-02.png"
       },
       {
         "title": "Creating a responsive app",
         "text":
           "The BBC needed to create a scalable, interactive solution . In order to do this, it needed to deal with a vast array of diverse devices with any number of different content challenges surrounding some of BBC's best loved brands.",
-        "image": "/static/assets/imported/615/bbc-companion-03.png"
+        "image": "imported/615/bbc-companion-03.png"
       }
     ]
   },
@@ -47,19 +47,19 @@
         "title": "Structured agile PM ",
         "text":
           "We were swimming in uncharted territories, with technology changing around us everyday. So we absolutely needed a well structured Agile PM approach to ensure the myriad of BBC services & requirements were prioritised against business needs.",
-        "image": "/static/assets/imported/616/bbc-companion-04.png"
+        "image": "imported/616/bbc-companion-04.png"
       },
       {
         "title": "Rigorous QA testing ",
         "text":
           "We worked night and day to identified device failings and incompatibilities across the diverse and complex landscape of Android devices. We even created a solution that allowed Samsung devices to manage their own graphical output (don't ask!)",
-        "image": "/static/assets/imported/617/bbc-companion-05.png"
+        "image": "imported/617/bbc-companion-05.png"
       },
       {
         "title": "Putting the client in control",
         "text":
           "We used Jira extensively to give complete transparency to the BBC in terms of how we spent our time, enabling them to respond quickly and efficiently when issues arose.",
-        "image": "/static/assets/imported/618/bbc-companion-06.png"
+        "image": "imported/618/bbc-companion-06.png"
       }
     ]
   },
@@ -71,19 +71,19 @@
         "title": "Structured agile PM ",
         "text":
           "We were swimming in uncharted territories, with technology changing around us everyday. So we absolutely needed a well structured Agile PM approach to ensure the myriad of BBC services & requirements were prioritised against business needs.",
-        "image": "/static/assets/imported/616/bbc-companion-04.png"
+        "image": "imported/616/bbc-companion-04.png"
       },
       {
         "title": "Rigorous QA testing ",
         "text":
           "We worked night and day to identified device failings and incompatibilities across the diverse and complex landscape of Android devices. We even created a solution that allowed Samsung devices to manage their own graphical output (don't ask!)",
-        "image": "/static/assets/imported/617/bbc-companion-05.png"
+        "image": "imported/617/bbc-companion-05.png"
       },
       {
         "title": "Putting the client in control",
         "text":
           "We used Jira extensively to give complete transparency to the BBC in terms of how we spent our time, enabling them to respond quickly and efficiently when issues arose.",
-        "image": "/static/assets/imported/618/bbc-companion-06.png"
+        "image": "imported/618/bbc-companion-06.png"
       }
     ]
   },
@@ -93,26 +93,23 @@
       "Users told us that they enjoyed our 'upcoming programme' content so much they watched programmes they then went on to watch the upcoming show, which they wouldn't have otherwise. ",
     "person": "BBC audience testing results",
     "title": "Project Owner | Editorial lead",
-    "avatar": "/static/assets/imported/301/bbc-compainion-quote-image.jpg"
+    "avatar": "imported/301/bbc-compainion-quote-image.jpg"
   },
   "gallery": [
     {
-      "image":
-        "/static/assets/imported/347/bbc-compainion-app-grid-image-1.jpg",
+      "image": "imported/347/bbc-compainion-app-grid-image-1.jpg",
       "alt": "BBC compainion app grid image 1"
     },
     {
-      "image":
-        "/static/assets/imported/346/bbc-compainion-app-grid-image-2.jpg",
+      "image": "imported/346/bbc-compainion-app-grid-image-2.jpg",
       "alt": "BBC compainion app grid image 2"
     },
     {
-      "image": "/static/assets/imported/553/bbc-companion-app.jpg",
+      "image": "imported/553/bbc-companion-app.jpg",
       "alt": "bbc companion app"
     },
     {
-      "image":
-        "/static/assets/imported/349/bbc-compainion-app-grid-image-4.jpg",
+      "image": "imported/349/bbc-compainion-app-grid-image-4.jpg",
       "alt": "BBC compainion app grid image 4"
     }
   ]

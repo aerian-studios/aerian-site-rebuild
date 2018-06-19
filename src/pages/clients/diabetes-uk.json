@@ -1,7 +1,7 @@
 {
   "name": "Diabetes UK",
-  "logo": "/static/assets/imported/760/duk-primary-logo2x.png",
-  "promoLogo": "/static/assets/imported/761/duk-white-primary-logo.png",
+  "logo": "imported/760/duk-primary-logo2x.png",
+  "promoLogo": "imported/761/duk-white-primary-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "diabetes-uk"

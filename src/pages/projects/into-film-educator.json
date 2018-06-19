@@ -13,7 +13,7 @@
   "featured": true,
   "rolloverDetails":
     "We helped re-imagine into Film's digital learning product and core offering with a highly innovative and beautiful product that has caught the eyes of teachers, users and awards alike. ",
-  "heroImage": "/static/assets/imported/119/into-film-hero-image.jpg",
+  "heroImage": "imported/119/into-film-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +23,19 @@
         "title": "Original and beautiful",
         "text":
           "Although we knew the product needed to be usable first, we needed it to feel cinematic and a thing of aspirational beauty. We needed to harness the power of film throughout all levels of the product.",
-        "image": "/static/assets/imported/580/into-film-01.png"
+        "image": "imported/580/into-film-01.png"
       },
       {
         "title": "The challenges  ",
         "text":
           "*   Complex and disperse users journeys to consolidate \n*   A wide variety of audiences needed catering for (teachers, press, student, film etc)\n*   Users need to be able to \"dip in\", create and consolidate content \n*   The system would need to work seamlessly with multiple existing systems, and eventually replace many",
-        "image": "/static/assets/imported/579/into-film-02.png"
+        "image": "imported/579/into-film-02.png"
       },
       {
         "title": "The Into Film real-estate",
         "text":
           "*   We needed to ensure that our design paradigms could encompass multiple sub brands, campaigns, teams and the potential for change and extension\n*   Our design paradigms and global experience language needed to let the content sing, without background noise\n*   Those design paradigms needed to be styled and extended through sub brands and third party partners\n*   Tight deadline with a 1 year project being delivered in 3 months.",
-        "image": "/static/assets/imported/581/into-film-03.png"
+        "image": "imported/581/into-film-03.png"
       }
     ]
   },
@@ -47,19 +47,19 @@
         "title": "Bold new look & feel",
         "text":
           "Adhering to and validating our designs against these epics ensured that not only would we create a bold new look and feel for Into Film but that all tasks could be completed with a consistent set of tools and components. Basically, through careful and close partnerships with Into Film and their audiences, we delivered a set of designs that were as confident and aspirational as they were easy to use.",
-        "image": "/static/assets/imported/582/into-film-04.png"
+        "image": "imported/582/into-film-04.png"
       },
       {
         "title": "We made tools and services, not sites and applications",
         "text":
           "We created consistent, considered tools and components that allows users to perform tasks quickly, intuitively and easily, regardless of their digital literacy and skill level. We carefully thought through the context and situations of our users, and this enables us to design solutions perfect for them.",
-        "image": "/static/assets/imported/583/into-film-05.png"
+        "image": "imported/583/into-film-05.png"
       },
       {
         "title": "Film at it's heart",
         "text":
           "Use of photography was key to this subtle branding task, and we employed full screen imagery and sympathetic colour palettes extensively. This helped the product pop off the page, giving it the same love and excitement as the silver screen - a large part of our remit was to excite the audience.",
-        "image": "/static/assets/imported/584/into-film-06.png"
+        "image": "imported/584/into-film-06.png"
       }
     ]
   },
@@ -71,19 +71,19 @@
         "title": "Bold new look & feel",
         "text":
           "Adhering to and validating our designs against these epics ensured that not only would we create a bold new look and feel for Into Film but that all tasks could be completed with a consistent set of tools and components. Basically, through careful and close partnerships with Into Film and their audiences, we delivered a set of designs that were as confident and aspirational as they were easy to use.",
-        "image": "/static/assets/imported/582/into-film-04.png"
+        "image": "imported/582/into-film-04.png"
       },
       {
         "title": "We made tools and services, not sites and applications",
         "text":
           "We created consistent, considered tools and components that allows users to perform tasks quickly, intuitively and easily, regardless of their digital literacy and skill level. We carefully thought through the context and situations of our users, and this enables us to design solutions perfect for them.",
-        "image": "/static/assets/imported/583/into-film-05.png"
+        "image": "imported/583/into-film-05.png"
       },
       {
         "title": "Film at it's heart",
         "text":
           "Use of photography was key to this subtle branding task, and we employed full screen imagery and sympathetic colour palettes extensively. This helped the product pop off the page, giving it the same love and excitement as the silver screen - a large part of our remit was to excite the audience.",
-        "image": "/static/assets/imported/584/into-film-06.png"
+        "image": "imported/584/into-film-06.png"
       }
     ]
   },
@@ -93,23 +93,23 @@
       "Aerian delivered the design to brief and beyond. They are a great bunch to work with, really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. I loved working on this project with them and am chuffed to bits with the result.",
     "person": "Louise Goodspeed",
     "title": "UX Lead",
-    "avatar": "/static/assets/imported/122/into-film-quote-image.png"
+    "avatar": "imported/122/into-film-quote-image.png"
   },
   "gallery": [
     {
-      "image": "/static/assets/imported/126/into-film-grid-image-1.png",
+      "image": "imported/126/into-film-grid-image-1.png",
       "alt": "Into film grid image 1"
     },
     {
-      "image": "/static/assets/imported/127/into-film-grid-image-2.png",
+      "image": "imported/127/into-film-grid-image-2.png",
       "alt": "Into film grid image 2"
     },
     {
-      "image": "/static/assets/imported/117/into-film-grid-image-3.png",
+      "image": "imported/117/into-film-grid-image-3.png",
       "alt": "Into film grid image 3"
     },
     {
-      "image": "/static/assets/imported/128/into-film-grid-image-4.png",
+      "image": "imported/128/into-film-grid-image-4.png",
       "alt": "Into film grid image 4"
     }
   ]

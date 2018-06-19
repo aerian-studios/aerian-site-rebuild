@@ -1,7 +1,7 @@
 {
   "name": "Sky",
-  "logo": "/static/assets/imported/442/sky-logo.png",
-  "promoLogo": "/static/assets/imported/442/sky-logo.png",
+  "logo": "imported/442/sky-logo.png",
+  "promoLogo": "imported/442/sky-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "sky"

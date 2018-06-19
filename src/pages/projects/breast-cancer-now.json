@@ -14,7 +14,7 @@
   "featured": true,
   "rolloverDetails":
     "We befriended the audience, we rewrote the book and we helped deliver one of the most worthwhile digital products ever. ",
-  "heroImage": "/static/assets/imported/102/bcn-hero-image.jpg",
+  "heroImage": "imported/102/bcn-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -24,19 +24,19 @@
         "title": "Fast turnaroud",
         "text":
           "We were, and continue to be the lead agency responsible for digital output. Due to the press launch and necessary velocity of the project, we had a mere 3 month turnaround to find the audience, know them, rebrand and relaunch their digital real-estate: quicker, better and more exciting than ever before.",
-        "image": "/static/assets/imported/650/bcn-01.png"
+        "image": "imported/650/bcn-01.png"
       },
       {
         "title": "Unmovable launch and enormous amounts to do",
         "text":
           "As you can imagine, when you're in the spotlight, with booked TV slots and a slew of industry and public PR waiting in the wings. We simply could not be late. It was an enormous task needed to combine two teams, thousands of pieces of content, several systems, applications etc.",
-        "image": "/static/assets/imported/649/bcn-02.png"
+        "image": "imported/649/bcn-02.png"
       },
       {
         "title": "Complex auditing ",
         "text":
           "We needed to complete a series of complex and thorough auditing and consolidation rounds, covering two highly complex websites and all their microsites, interactives, apps and donation platforms.",
-        "image": "/static/assets/imported/651/bcn-03.png"
+        "image": "imported/651/bcn-03.png"
       }
     ]
   },
@@ -48,19 +48,19 @@
         "title": "Creating user personas ",
         "text":
           "We knew nothing could be decided quickly and easily unless we absolutely knew what our audience wanted. So we harnessed user research analytics from both charities to create a consolidated set of 6 personas which we used to user test against and validate our potential solutions.",
-        "image": "/static/assets/imported/652/bcn-04.png"
+        "image": "imported/652/bcn-04.png"
       },
       {
         "title": "Key characteristics ",
         "text":
           "We further extrapolated on this and identified key characteristics (temperament/behaviors), their specific content requirements and the success criteria needed to meet their wants and needs. Basically, we made the site work for THEM, and not US.",
-        "image": "/static/assets/imported/653/bcn-05.png"
+        "image": "imported/653/bcn-05.png"
       },
       {
         "title": "Elegant messaging  ",
         "text":
           "We knew the charity needed a new voice in a crowded space, and by working closely with the brand team we created a website targeted at the simple, yet elegant, message to end breast cancer by 2050.",
-        "image": "/static/assets/imported/654/bcn-06.png"
+        "image": "imported/654/bcn-06.png"
       }
     ]
   },
@@ -72,19 +72,19 @@
         "title": "Creating user personas ",
         "text":
           "We knew nothing could be decided quickly and easily unless we absolutely knew what our audience wanted. So we harnessed user research analytics from both charities to create a consolidated set of 6 personas which we used to user test against and validate our potential solutions.",
-        "image": "/static/assets/imported/652/bcn-04.png"
+        "image": "imported/652/bcn-04.png"
       },
       {
         "title": "Key characteristics ",
         "text":
           "We further extrapolated on this and identified key characteristics (temperament/behaviors), their specific content requirements and the success criteria needed to meet their wants and needs. Basically, we made the site work for THEM, and not US.",
-        "image": "/static/assets/imported/653/bcn-05.png"
+        "image": "imported/653/bcn-05.png"
       },
       {
         "title": "Elegant messaging  ",
         "text":
           "We knew the charity needed a new voice in a crowded space, and by working closely with the brand team we created a website targeted at the simple, yet elegant, message to end breast cancer by 2050.",
-        "image": "/static/assets/imported/654/bcn-06.png"
+        "image": "imported/654/bcn-06.png"
       }
     ]
   },
@@ -94,24 +94,12 @@
       "Thanks so much to all of you for the speed and quality of your work across the board - design, communication build and overall passion for the project that’s made it as amazing as it is. It’s been awesome working with you on this and we’re looking forward to all the next steps that can now be taken without such a massive immovable deadline propelling us along!",
     "person": "James Elliot ",
     "title": "Assistant Director of Digital Engagement",
-    "avatar": "/static/assets/imported/105/bcn-quote-image.jpg"
+    "avatar": "imported/105/bcn-quote-image.jpg"
   },
   "gallery": [
-    {
-      "image": "/static/assets/imported/111/bcn-grid-image-1.jpg",
-      "alt": "BCN grid image 1"
-    },
-    {
-      "image": "/static/assets/imported/110/bcn-grid-image-2.jpg",
-      "alt": "BCN grid image 2"
-    },
-    {
-      "image": "/static/assets/imported/101/bcn-grid-image-3.jpg",
-      "alt": "BCN grid image 3"
-    },
-    {
-      "image": "/static/assets/imported/100/bcn-grid-image-4.jpg",
-      "alt": "BCN grid image 4"
-    }
+    { "image": "imported/111/bcn-grid-image-1.jpg", "alt": "BCN grid image 1" },
+    { "image": "imported/110/bcn-grid-image-2.jpg", "alt": "BCN grid image 2" },
+    { "image": "imported/101/bcn-grid-image-3.jpg", "alt": "BCN grid image 3" },
+    { "image": "imported/100/bcn-grid-image-4.jpg", "alt": "BCN grid image 4" }
   ]
 }

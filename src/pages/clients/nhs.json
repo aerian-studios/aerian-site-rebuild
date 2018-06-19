@@ -1,7 +1,7 @@
 {
   "name": "NHS",
-  "logo": "/static/assets/imported/438/nhs-logo.png",
-  "promoLogo": "/static/assets/imported/438/nhs-logo.png",
+  "logo": "imported/438/nhs-logo.png",
+  "promoLogo": "imported/438/nhs-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "nhs"

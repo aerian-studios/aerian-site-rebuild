@@ -1,7 +1,7 @@
 {
   "name": "Vodafone",
-  "logo": "/static/assets/imported/445/vodafone-logo.png",
-  "promoLogo": "/static/assets/imported/445/vodafone-logo.png",
+  "logo": "imported/445/vodafone-logo.png",
+  "promoLogo": "imported/445/vodafone-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "vodafone"

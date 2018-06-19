@@ -1,7 +1,7 @@
 {
   "name": "Danone",
-  "logo": "/static/assets/imported/451/danone-logo.png",
-  "promoLogo": "/static/assets/imported/451/danone-logo.png",
+  "logo": "imported/451/danone-logo.png",
+  "promoLogo": "imported/451/danone-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "danone"

@@ -14,7 +14,7 @@
   "featured": true,
   "rolloverDetails":
     "We strategised and created a new platform and collection of services for Wiltshire Council that have delivered game-changing service to Wiltshire's residents.",
-  "heroImage": "/static/assets/imported/437/wc-hero-image.jpg",
+  "heroImage": "imported/437/wc-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -24,19 +24,19 @@
         "title": "Responsiveness from day one",
         "text":
           "The site previously didn't work across mobile devices, which was an increasing problem in tackling rising visitors and user expectations. Load times were slow and rounded off a generally poor user experience.",
-        "image": "/static/assets/imported/605/wiltshire-01.png"
+        "image": "imported/605/wiltshire-01.png"
       },
       {
         "title": "Making CMS useable  ",
         "text":
           "The CMS was not flexible enough to adapt and scale to future business needs. Load times were slow and rounded off a generally poor user experience.",
-        "image": "/static/assets/imported/606/wiltshire-02.png"
+        "image": "imported/606/wiltshire-02.png"
       },
       {
         "title": "Gradual takeover ",
         "text":
           "To complicate things, the site would be replaced piecemeal. Some sections would be served on the old site and some on the new site with the new one ramping up and taking over gradually.",
-        "image": "/static/assets/imported/607/wiltshire-03.png"
+        "image": "imported/607/wiltshire-03.png"
       }
     ]
   },
@@ -48,19 +48,19 @@
         "title": "Our responsive and customisable CMS - Tapestry  ",
         "text":
           "Our proprietary CMS ‘Tapestry' was customised with bespoke content blocks and data entry views based on editorial team workflows and content requirements.",
-        "image": "/static/assets/imported/608/wiltshire-04.png"
+        "image": "imported/608/wiltshire-04.png"
       },
       {
         "title": "Handling traffic management ",
         "text":
           "We proposed and executed creative use of Varnish which acted as a cache layer for the new and old sites. As a ‘Traffic Manager' this also managed the routing of requests to either the old or new site without needing multiple domain names.",
-        "image": "/static/assets/imported/609/wiltshire-05.png"
+        "image": "imported/609/wiltshire-05.png"
       },
       {
         "title": "Lightning quick search functionality ",
         "text":
           "In the 11th hour, we were asked to include search functionality across legacy pages as well as the new site. We used Apache Nutch with Solr with some custom boost settings to index pages across the new site.",
-        "image": "/static/assets/imported/610/wiltshire-06.png"
+        "image": "imported/610/wiltshire-06.png"
       }
     ]
   },
@@ -72,40 +72,28 @@
         "title": "Our responsive and customisable CMS - Tapestry  ",
         "text":
           "Our proprietary CMS ‘Tapestry' was customised with bespoke content blocks and data entry views based on editorial team workflows and content requirements.",
-        "image": "/static/assets/imported/608/wiltshire-04.png"
+        "image": "imported/608/wiltshire-04.png"
       },
       {
         "title": "Handling traffic management ",
         "text":
           "We proposed and executed creative use of Varnish which acted as a cache layer for the new and old sites. As a ‘Traffic Manager' this also managed the routing of requests to either the old or new site without needing multiple domain names.",
-        "image": "/static/assets/imported/609/wiltshire-05.png"
+        "image": "imported/609/wiltshire-05.png"
       },
       {
         "title": "Lightning quick search functionality ",
         "text":
           "In the 11th hour, we were asked to include search functionality across legacy pages as well as the new site. We used Apache Nutch with Solr with some custom boost settings to index pages across the new site.",
-        "image": "/static/assets/imported/610/wiltshire-06.png"
+        "image": "imported/610/wiltshire-06.png"
       }
     ]
   },
   "performance": [{ "title": 2000, "text": "Percent reduction in load time" }],
   "testimonial": null,
   "gallery": [
-    {
-      "image": "/static/assets/imported/369/wc-grid-image-1.jpg",
-      "alt": "WC grid image 1"
-    },
-    {
-      "image": "/static/assets/imported/370/wc-grid-image-2.jpg",
-      "alt": "WC grid image 2"
-    },
-    {
-      "image": "/static/assets/imported/371/wc-grid-image-3.jpg",
-      "alt": "WC grid image 3"
-    },
-    {
-      "image": "/static/assets/imported/372/wc-grid-image-4.jpg",
-      "alt": "WC grid image 4"
-    }
+    { "image": "imported/369/wc-grid-image-1.jpg", "alt": "WC grid image 1" },
+    { "image": "imported/370/wc-grid-image-2.jpg", "alt": "WC grid image 2" },
+    { "image": "imported/371/wc-grid-image-3.jpg", "alt": "WC grid image 3" },
+    { "image": "imported/372/wc-grid-image-4.jpg", "alt": "WC grid image 4" }
   ]
 }

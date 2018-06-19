@@ -12,8 +12,8 @@
   "homepage": true,
   "featured": true,
   "rolloverDetails": "Gnasher's Deadly Dash",
-  "heroImage": "/static/assets/imported/721/main-header.png",
-  "heroVideo": "/static/assets/imported/718/beanodeadlydash.mp4",
+  "heroImage": "imported/721/main-header.png",
+  "heroVideo": "imported/718/beanodeadlydash.mp4",
   "challenge": {
     "description":
       "We wanted to create a game that would capture the imagination, fun and creativity that the Beano brings. Delivering an experience that brings children's favourite characters to life in another rip roaring, side scrolling adventure.",
@@ -22,20 +22,19 @@
         "title": "Young audience",
         "text":
           "Beano's core audience is young people aged 5 - 13. We would need to ensure our game delivered fun, imaginative content that captured players' attention as soon as the game started",
-        "image":
-          "/static/assets/imported/722/beano-challenge-young-audience.png"
+        "image": "imported/722/beano-challenge-young-audience.png"
       },
       {
         "title": "Make it fun!",
         "text":
           "Beano stands by one key principle: to deliver fun and entertaining content to its readers (no matter how daft or crazy). This was a principle we upheld at every stage when creating our game.",
-        "image": "/static/assets/imported/723/beano-challenge-make-it-fun.png"
+        "image": "imported/723/beano-challenge-make-it-fun.png"
       },
       {
         "title": "Make it Beano!",
         "text":
           "Come on, it's the Beano, it needs to be naughty, full-blooded mayhem as insane as the comics and TV shows.",
-        "image": "/static/assets/imported/724/beano-challenge-make-it-beano.png"
+        "image": "imported/724/beano-challenge-make-it-beano.png"
       }
     ]
   },
@@ -47,20 +46,19 @@
         "title": "Capture imagination",
         "text":
           "In order to immediately capture the attention of a young audience, we ensured that the game would focus on fun first. We purposely chose a game that is intuitive and can be played by anyone, of any age. \n\nWe simply wanted to transport the gamer to the heart of the game in as few steps as possible.",
-        "image": "/static/assets/imported/705/challenge-image-3.png"
+        "image": "imported/705/challenge-image-3.png"
       },
       {
         "title": "Character animation",
         "text":
           "To make the game instantly fun, we added quirky interactions, sound effects and character animations. \n\nWhen combined, this helped bring the game to life, immersing the player in the crazy world of Beano.",
-        "image": "/static/assets/imported/725/beano-solution-animation.png"
+        "image": "imported/725/beano-solution-animation.png"
       },
       {
         "title": "Featuring all the Beano favourites",
         "text":
           "You'll probably notice a fair few recognisable faces in the game. We wanted every spare part of the page to tell it's own story - from Walter and his devilish drones, to a gargantuan Octopus (who created that I hear you ask)... there's a story behind every choice we made.",
-        "image":
-          "/static/assets/imported/726/beano-solution-beano-favourites.png"
+        "image": "imported/726/beano-solution-beano-favourites.png"
       }
     ]
   },
@@ -72,20 +70,19 @@
         "title": "Capture imagination",
         "text":
           "In order to immediately capture the attention of a young audience, we ensured that the game would focus on fun first. We purposely chose a game that is intuitive and can be played by anyone, of any age. \n\nWe simply wanted to transport the gamer to the heart of the game in as few steps as possible.",
-        "image": "/static/assets/imported/705/challenge-image-3.png"
+        "image": "imported/705/challenge-image-3.png"
       },
       {
         "title": "Character animation",
         "text":
           "To make the game instantly fun, we added quirky interactions, sound effects and character animations. \n\nWhen combined, this helped bring the game to life, immersing the player in the crazy world of Beano.",
-        "image": "/static/assets/imported/725/beano-solution-animation.png"
+        "image": "imported/725/beano-solution-animation.png"
       },
       {
         "title": "Featuring all the Beano favourites",
         "text":
           "You'll probably notice a fair few recognisable faces in the game. We wanted every spare part of the page to tell it's own story - from Walter and his devilish drones, to a gargantuan Octopus (who created that I hear you ask)... there's a story behind every choice we made.",
-        "image":
-          "/static/assets/imported/726/beano-solution-beano-favourites.png"
+        "image": "imported/726/beano-solution-beano-favourites.png"
       }
     ]
   },
@@ -93,11 +90,11 @@
   "testimonial": null,
   "gallery": [
     {
-      "image": "/static/assets/imported/731/beano-gallery-image1.png",
+      "image": "imported/731/beano-gallery-image1.png",
       "alt": "Beano - gallery image1"
     },
     {
-      "image": "/static/assets/imported/730/beano-gallery-image2.png",
+      "image": "imported/730/beano-gallery-image2.png",
       "alt": "Beano - gallery image2"
     }
   ]

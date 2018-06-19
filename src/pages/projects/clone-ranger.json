@@ -13,7 +13,7 @@
   "homepage": true,
   "featured": true,
   "rolloverDetails": "HTML5 Game created for Beano Studios",
-  "heroImage": "/static/assets/imported/780/header.png",
+  "heroImage": "imported/780/header.png",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +23,19 @@
         "title": "Simple and fun game mechanic",
         "text":
           "As with any interactive we create, user experience had to be thought about at every stage.\n\nWe would have to ensure that the young audience we were aiming the game at would be able to easily use and understand how to play it.",
-        "image": "/static/assets/imported/766/challenge-1.png"
+        "image": "imported/766/challenge-1.png"
       },
       {
         "title": "Focusing on female characters",
         "text":
           "Keen to show a diverse range of characters in the Beano universe, we were asked to make the story revolve around one of its female cast.\n\nEver willing, our research teams were happy to read and watch some of Beanos new material to determine who would be the most appropriate lead for the html5 game would be.",
-        "image": "/static/assets/imported/767/challenge-2.png"
+        "image": "imported/767/challenge-2.png"
       },
       {
         "title": "Art working to the extreme!",
         "text":
           "Beano said they would like a game that continues the 3d style humour that the Dennis & Gnasher Unleashed TV show delivers to its audience.\n\nExcited at the opportunity to get their hands on some 3D modelling… our design and development teams took to work!",
-        "image": "/static/assets/imported/768/challenge-3.png"
+        "image": "imported/768/challenge-3.png"
       }
     ]
   },
@@ -48,19 +48,19 @@
           "A proven game mechanic thats been tested through history… well, the 80s!",
         "text":
           "Our top writers created a game narative based around the infamous game mechanic of Lemmings!\n\nPlayers young and old would be tasked with helping some of Beano's most popular characters guide rogue robots back to their home using a variety of comedy upgrades.",
-        "image": "/static/assets/imported/770/solution-1.png"
+        "image": "imported/770/solution-1.png"
       },
       {
         "title": "Introducing Rubidium von Screwtop…or Rubi for short",
         "text":
           "Watching Dennis & Gnasher Unleashed, it was clear who our main character was going to be. We wanted to mould our chosen game approach around Rubi von Screwtop - Beano Towns resident tech genius and all round great gal!",
-        "image": "/static/assets/imported/771/solution-2.png"
+        "image": "imported/771/solution-2.png"
       },
       {
         "title": "Fun with 3D models and animating",
         "text":
           "To create a finished piece that felt like the live Dennis & Gnasher Unleashed show we decided that this game would be created using skeleton rig animation. This allowed us the ability to take characters seen in the show and custom animate them especially fpr the game.In addition to this, we created custom 3D models to use for our interactive characters, ensuring that they again look and felt like they were straight out of the Dennis & Gnasher Unleashed show.",
-        "image": "/static/assets/imported/772/solution-3.png"
+        "image": "imported/772/solution-3.png"
       }
     ]
   },
@@ -73,45 +73,33 @@
           "A proven game mechanic thats been tested through history… well, the 80s!",
         "text":
           "Our top writers created a game narative based around the infamous game mechanic of Lemmings!\n\nPlayers young and old would be tasked with helping some of Beano's most popular characters guide rogue robots back to their home using a variety of comedy upgrades.",
-        "image": "/static/assets/imported/770/solution-1.png"
+        "image": "imported/770/solution-1.png"
       },
       {
         "title": "Introducing Rubidium von Screwtop…or Rubi for short",
         "text":
           "Watching Dennis & Gnasher Unleashed, it was clear who our main character was going to be. We wanted to mould our chosen game approach around Rubi von Screwtop - Beano Towns resident tech genius and all round great gal!",
-        "image": "/static/assets/imported/771/solution-2.png"
+        "image": "imported/771/solution-2.png"
       },
       {
         "title": "Fun with 3D models and animating",
         "text":
           "To create a finished piece that felt like the live Dennis & Gnasher Unleashed show we decided that this game would be created using skeleton rig animation. This allowed us the ability to take characters seen in the show and custom animate them especially fpr the game.In addition to this, we created custom 3D models to use for our interactive characters, ensuring that they again look and felt like they were straight out of the Dennis & Gnasher Unleashed show.",
-        "image": "/static/assets/imported/772/solution-3.png"
+        "image": "imported/772/solution-3.png"
       }
     ]
   },
   "performance": [],
   "testimonial": null,
   "gallery": [
-    { "image": "/static/assets/imported/773/branding.png", "alt": "Branding" },
+    { "image": "imported/773/branding.png", "alt": "Branding" },
+    { "image": "imported/777/user-journey.png", "alt": "User  journey" },
+    { "image": "imported/774/character-poses.png", "alt": "Character poses" },
+    { "image": "imported/778/spine-animation.png", "alt": "Spine animation" },
     {
-      "image": "/static/assets/imported/777/user-journey.png",
-      "alt": "User  journey"
-    },
-    {
-      "image": "/static/assets/imported/774/character-poses.png",
-      "alt": "Character poses"
-    },
-    {
-      "image": "/static/assets/imported/778/spine-animation.png",
-      "alt": "Spine animation"
-    },
-    {
-      "image": "/static/assets/imported/775/game-screens-copy.png",
+      "image": "imported/775/game-screens-copy.png",
       "alt": "Game screens copy"
     },
-    {
-      "image": "/static/assets/imported/776/game-screens.png",
-      "alt": "Game screens"
-    }
+    { "image": "imported/776/game-screens.png", "alt": "Game screens" }
   ]
 }

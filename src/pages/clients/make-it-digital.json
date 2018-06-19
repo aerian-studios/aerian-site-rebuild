@@ -1,7 +1,7 @@
 {
   "name": "Make It Digital",
-  "logo": "/static/assets/imported/549/make-it-digital.jpg",
-  "promoLogo": "/static/assets/imported/589/bbc-logo-blocks-white.png",
+  "logo": "imported/549/make-it-digital.jpg",
+  "promoLogo": "imported/589/bbc-logo-blocks-white.png",
   "featured": false,
   "featuredProject": "mixital",
   "slug": "make-it-digital"

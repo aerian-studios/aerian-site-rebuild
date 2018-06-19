@@ -1,7 +1,7 @@
 {
   "name": "Gov.uk",
-  "logo": "/static/assets/imported/447/gov-uk-logo.png",
-  "promoLogo": "/static/assets/imported/447/gov-uk-logo.png",
+  "logo": "imported/447/gov-uk-logo.png",
+  "promoLogo": "imported/447/gov-uk-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "gov.uk"

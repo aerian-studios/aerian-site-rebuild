@@ -1,7 +1,7 @@
 {
   "name": "Alzheimer's Society",
-  "logo": "/static/assets/imported/458/alzheimers-society-logo.png",
-  "promoLogo": "/static/assets/imported/458/alzheimers-society-logo.png",
+  "logo": "imported/458/alzheimers-society-logo.png",
+  "promoLogo": "imported/458/alzheimers-society-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "alzheimers-society"

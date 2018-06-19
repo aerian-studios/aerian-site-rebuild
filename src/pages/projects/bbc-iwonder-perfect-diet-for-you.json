@@ -13,8 +13,7 @@
   "featured": true,
   "rolloverDetails":
     "With over 1.5m users in two days, and beating even the BBC World Cup, can you resist trying our interactive Diet Quiz? ",
-  "heroImage":
-    "/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg",
+  "heroImage": "imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -24,19 +23,19 @@
         "title": "Responsive guidelines ",
         "text":
           "*   Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.\n*   Work with iWonder responsive guidelines.",
-        "image": "/static/assets/imported/622/bbc-iwonder-01.png"
+        "image": "imported/622/bbc-iwonder-01.png"
       },
       {
         "title": "Audience sharing ",
         "text":
           "*   Work with iWonder games guidelines.\n*   Creating an app framework that will work with a variety of question types.\n*   High audience and sharing figures were a requirement.",
-        "image": "/static/assets/imported/623/bbc-iwonder-02.png"
+        "image": "imported/623/bbc-iwonder-02.png"
       },
       {
         "title": "Tight turn around",
         "text":
           "*   As always, a tight turn around time.\n*   The total download size of the initial activity load MUST be less than 250kb.\n*   Any individual asset within an activity SHOULD NOT exceed 100KB.",
-        "image": "/static/assets/imported/624/bbc-iwonder-03.png"
+        "image": "imported/624/bbc-iwonder-03.png"
       }
     ]
   },
@@ -48,19 +47,19 @@
         "title": "Maximising sharing ",
         "text":
           "To increase the appeal of the app, animated features and interactions were added. Share buttons situated at key stages of the journey maximised exposure of sharing.",
-        "image": "/static/assets/imported/625/bbc-iwonder-04.png"
+        "image": "imported/625/bbc-iwonder-04.png"
       },
       {
         "title": "Agile approach",
         "text":
           "*   Agile project approach to ensure all progress and blockers are expedited.\n*   Close working relationship with BBC to ensure guidelines were adhered.",
-        "image": "/static/assets/imported/626/bbc-iwonder-05.png"
+        "image": "imported/626/bbc-iwonder-05.png"
       },
       {
         "title": "CMS implementation",
         "text":
           "Content management was implemented so that content and javascript elements were editable.",
-        "image": "/static/assets/imported/627/bbc-iwonder-06.png"
+        "image": "imported/627/bbc-iwonder-06.png"
       }
     ]
   },
@@ -72,19 +71,19 @@
         "title": "Maximising sharing ",
         "text":
           "To increase the appeal of the app, animated features and interactions were added. Share buttons situated at key stages of the journey maximised exposure of sharing.",
-        "image": "/static/assets/imported/625/bbc-iwonder-04.png"
+        "image": "imported/625/bbc-iwonder-04.png"
       },
       {
         "title": "Agile approach",
         "text":
           "*   Agile project approach to ensure all progress and blockers are expedited.\n*   Close working relationship with BBC to ensure guidelines were adhered.",
-        "image": "/static/assets/imported/626/bbc-iwonder-05.png"
+        "image": "imported/626/bbc-iwonder-05.png"
       },
       {
         "title": "CMS implementation",
         "text":
           "Content management was implemented so that content and javascript elements were editable.",
-        "image": "/static/assets/imported/627/bbc-iwonder-06.png"
+        "image": "imported/627/bbc-iwonder-06.png"
       }
     ]
   },
@@ -98,28 +97,23 @@
       "It was seen by 1.5m unique browsers and was really well received by audience members. Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn’t have done it without Aerian.",
     "person": " Anna-Louise Taylor",
     "title": "Senior Content Producer",
-    "avatar":
-      "/static/assets/imported/281/bbc-perfect-diet-for-you-qoute-image.jpg.jpg"
+    "avatar": "imported/281/bbc-perfect-diet-for-you-qoute-image.jpg.jpg"
   },
   "gallery": [
     {
-      "image":
-        "/static/assets/imported/383/bbc-perfect-diet-for-you-grid-image-1.jpg.jpg",
+      "image": "imported/383/bbc-perfect-diet-for-you-grid-image-1.jpg.jpg",
       "alt": "BBC perfect diet for you grid image 1.jpg"
     },
     {
-      "image":
-        "/static/assets/imported/384/bbc-perfect-diet-for-you-grid-image-2.jpg.jpg",
+      "image": "imported/384/bbc-perfect-diet-for-you-grid-image-2.jpg.jpg",
       "alt": "BBC perfect diet for you grid image 2.jpg"
     },
     {
-      "image":
-        "/static/assets/imported/385/bbc-perfect-diet-for-you-grid-image-3.jpg.jpg",
+      "image": "imported/385/bbc-perfect-diet-for-you-grid-image-3.jpg.jpg",
       "alt": "BBC perfect diet for you grid image 3.jpg"
     },
     {
-      "image":
-        "/static/assets/imported/467/bbc-perfect-diet-for-you-grid-image-4.jpg",
+      "image": "imported/467/bbc-perfect-diet-for-you-grid-image-4.jpg",
       "alt": "bbc-perfect-diet-for-you-grid-image-4"
     }
   ]

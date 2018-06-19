@@ -1,7 +1,7 @@
 {
   "name": "CNN",
-  "logo": "assets/imported/452/cnn-logo.png",
-  "promoLogo": "assets/imported/474/cnn-white-logo.png",
+  "logo": "/assets/imported/452/cnn-logo.png",
+  "promoLogo": "/assets/imported/474/cnn-white-logo.png",
   "featured": true,
   "featuredProject": "cnn-africa-view",
   "slug": "cnn"

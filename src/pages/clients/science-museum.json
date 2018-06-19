@@ -1,7 +1,7 @@
 {
   "name": "Science Museum",
-  "logo": "assets/imported/441/science-museum-logo.png",
-  "promoLogo": "assets/imported/441/science-museum-logo.png",
+  "logo": "/assets/imported/441/science-museum-logo.png",
+  "promoLogo": "/assets/imported/441/science-museum-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "science-museum"

@@ -1,7 +1,7 @@
 {
   "name": "Into Film Clubs",
-  "logo": "assets/imported/713/into-film-clubs-logo-filled.png",
-  "promoLogo": "assets/imported/714/into-film-clubs-white.png",
+  "logo": "/assets/imported/713/into-film-clubs-logo-filled.png",
+  "promoLogo": "/assets/imported/714/into-film-clubs-white.png",
   "featured": false,
   "featuredProject": "into-film-clubs",
   "slug": "into-film-clubs"

@@ -1,7 +1,7 @@
 {
   "name": "Into Film",
-  "logo": "assets/imported/118/into-film-logo.png",
-  "promoLogo": "assets/imported/255/into-film-logo-grey-rgb.png",
+  "logo": "/assets/imported/118/into-film-logo.png",
+  "promoLogo": "/assets/imported/255/into-film-logo-grey-rgb.png",
   "featured": true,
   "featuredProject": "into-film-educator",
   "slug": "into-film"

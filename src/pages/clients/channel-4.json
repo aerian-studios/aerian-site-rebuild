@@ -1,7 +1,7 @@
 {
   "name": "Channel 4",
-  "logo": "assets/imported/453/channel-4-logo.png",
-  "promoLogo": "assets/imported/453/channel-4-logo.png",
+  "logo": "/assets/imported/453/channel-4-logo.png",
+  "promoLogo": "/assets/imported/453/channel-4-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "channel-4"

@@ -1,7 +1,7 @@
 {
   "name": "Historic Royal Palaces",
-  "logo": "assets/imported/764/hrp-logo.png",
-  "promoLogo": "assets/imported/763/hrp-logo-reverse2x.png",
+  "logo": "/assets/imported/764/hrp-logo.png",
+  "promoLogo": "/assets/imported/763/hrp-logo-reverse2x.png",
   "featured": true,
   "featuredProject": null,
   "slug": "historic-royal-palaces"

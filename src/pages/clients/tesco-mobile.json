@@ -1,7 +1,7 @@
 {
   "name": "Tesco Mobile",
-  "logo": "assets/imported/364/tesco-mobile-logo.png",
-  "promoLogo": "assets/imported/363/tm-landscape-white.png",
+  "logo": "/assets/imported/364/tesco-mobile-logo.png",
+  "promoLogo": "/assets/imported/363/tm-landscape-white.png",
   "featured": true,
   "featuredProject": "tesco-mobile-matchmaker",
   "slug": "tesco-mobile"

@@ -13,7 +13,7 @@
   "homepage": true,
   "featured": true,
   "rolloverDetails": null,
-  "heroImage": "assets/imported/551/eastenders-story-maker-mac.jpg",
+  "heroImage": "/assets/imported/551/eastenders-story-maker-mac.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +23,19 @@
         "title": "Plays well with others",
         "text":
           "The BBC not only needed a strong tech platform that would enable young people to build and upload their creations, but they also needed an extensible library framework that would allow third parties to create ‘kits' for the young people to use. To that end we would need to create a plug and play dev system that would allow third party content providers such as Aardman to be unrestricted by our system.",
-        "image": "assets/imported/549/make-it-digital.jpg"
+        "image": "/assets/imported/549/make-it-digital.jpg"
       },
       {
         "title": "Keeping young people safe, but not restricted",
         "text":
           "UGC within the BBC is one of the toughest asks. Due to the way that the BBC is held accountable, we need to create any number of bespoke uploader, moderation and user management systems to fulfil the needs of the BBC security teams, while not restricting any creativity in our users.",
-        "image": "assets/imported/599/mixital-02.png"
+        "image": "/assets/imported/599/mixital-02.png"
       },
       {
         "title": "Rock solid performance, rock hard security",
         "text":
           "Due to the nature of the project, both BBC and Aerian decided to create the project off the BBC's normal internal infrastructure. We worked closely with BBC technical teams to scope, strategise and deliver an off-site AWS hosting solution that would allow easy integration to any number of industry leading technical solution providers.",
-        "image": "assets/imported/600/mixital-03.png"
+        "image": "/assets/imported/600/mixital-03.png"
       }
     ]
   },
@@ -52,7 +52,7 @@
   "testimonial": null,
   "gallery": [
     {
-      "image": "assets/imported/551/eastenders-story-maker-mac.jpg",
+      "image": "/assets/imported/551/eastenders-story-maker-mac.jpg",
       "alt": "Mixital's EastEnders Story Maker kit"
     }
   ]

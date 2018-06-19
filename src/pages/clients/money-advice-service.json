@@ -1,7 +1,7 @@
 {
   "name": "Money Advice Service",
-  "logo": "assets/imported/439/money-advice-service-logo.png",
-  "promoLogo": "assets/imported/439/money-advice-service-logo.png",
+  "logo": "/assets/imported/439/money-advice-service-logo.png",
+  "promoLogo": "/assets/imported/439/money-advice-service-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "money-advice-service"

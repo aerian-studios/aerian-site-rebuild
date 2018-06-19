@@ -1,7 +1,7 @@
 {
   "name": "Innovate UK",
-  "logo": "assets/imported/545/innovate-uk.png",
-  "promoLogo": "assets/imported/545/innovate-uk.png",
+  "logo": "/assets/imported/545/innovate-uk.png",
+  "promoLogo": "/assets/imported/545/innovate-uk.png",
   "featured": true,
   "featuredProject": null,
   "slug": "innovate-uk"

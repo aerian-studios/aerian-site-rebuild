@@ -1,7 +1,7 @@
 {
   "name": "BBC Companion",
-  "logo": "assets/imported/336/bbc-compainion-app-logo-colour.png",
-  "promoLogo": "assets/imported/335/bbc-compainion-app-white.png",
+  "logo": "/assets/imported/336/bbc-compainion-app-logo-colour.png",
+  "promoLogo": "/assets/imported/335/bbc-compainion-app-white.png",
   "featured": true,
   "featuredProject": "bbc-companion-app",
   "slug": "bbc-companion"

@@ -5,7 +5,7 @@ import { HeroBlock } from "../components/HeroBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 
 import { ImageSharpSizes } from "../types/data";
-import { SectionNav } from "../components/SectionNav";
+import { SectionNav } from "../components/SectionNav/";
 
 interface block {
     description: string;
@@ -150,38 +150,38 @@ export const projectPageQuery = graphql`
             heroImage
             heroVideo
             challenge {
-              description
-              hurdles {
-                title
-                image
-                text
-              }
+                description
+                hurdles {
+                    title
+                    image
+                    text
+                }
             }
             solution {
-              hurdles {
-                title
-                image
-                text
-              }
-              description
+                hurdles {
+                    title
+                    image
+                    text
+                }
+                description
             }
             results {
-              description
-              hurdles {
-                title
-                image
-                text
-              }
+                description
+                hurdles {
+                    title
+                    image
+                    text
+                }
             }
             performance {
-              title
-              text
+                title
+                text
             }
             testimonial {
-              quote
-              person
-              title
-              avatar
+                quote
+                person
+                title
+                avatar
             }
             id
         }

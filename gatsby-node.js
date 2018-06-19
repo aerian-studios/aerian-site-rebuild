@@ -8,6 +8,31 @@ const { createFilePath } = require("gatsby-source-filesystem");
 exports.createPages = ({ boundActionCreators, graphql }) => {
     const { createPage } = boundActionCreators;
 
+    /**
+     * Work out the necessary to generate disntinct pages
+     * @param {object} edge - The data for the distinct page
+     */
+    const generateDistinctPage = data => {
+        const template = data.path && data.path.replace("/", "");
+        const { id, sections, staff } = data;
+
+        // for the time being we can just assume that there are different teplates for each of the pages, but we can add logic here to reuse page templates
+        createPage({
+            path: template,
+            component: path.resolve(`src/templates/${String(template)}.tsx`),
+            // additional data can be passed via context
+            context: {
+                id
+            }
+        });
+    };
+
+    /**
+     *
+     * @param {string} id - JSON id, generally a path to the file
+     * @param {string} template - the string name of the template without the `.tsx`
+     * @param {string} slug - generally the unique name of the JSON file (without path or file type)
+     */
     const generatePage = (id, template, slug) => {
         createPage({
             path: slug,
@@ -19,35 +44,39 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         });
     };
 
-    // The “graphql” function allows us to run arbitrary
-    // queries against this graphql schema. Like a built-in database constructed
-    // from static data that you can run queries against.
-    //
-    // Post is a data node type derived from data/posts.json
-    // which is created when scrapping Instagram. “allPostsJson”
-    // is a "connection" (a GraphQL convention for accessing
-    // a list of nodes) gives us an easy way to query all
-    // Post nodes.
+    /**
+     * Run queries to get all the types of pages for which we need to make static pages
+     *
+     * `allPagesJson` needs a bit more information if we want to control how they are
+     * processed in the future
+     */
     return graphql(
         `
-      {
-        allProjectsJson(limit: 1000)  {
-            edges {
-            node {
-              id
-              slug
+            {
+                allProjectsJson(limit: 1000) {
+                    edges {
+                        node {
+                            id
+                            slug
+                        }
+                    }
+                }
+                allPagesJson(limit: 1000) {
+                    edges {
+                        node {
+                            id
+                            path
+                            staff {
+                                name
+                            }
+                            sections {
+                                title
+                            }
+                        }
+                    }
+                }
             }
-          }
-          }
-          allPagesJson(limit: 1000) {
-            edges {
-              node {
-                id
-              }
-            }
-          }
-      }
-    `
+        `
     ).then(result => {
         if (result.errors) {
             result.errors.forEach(e => console.error(e.toString()));
@@ -65,9 +94,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             generatePage(id, template, slug);
         });
 
-        // result.data.allPagesJson.edges.forEach(edge => {
-        //     generatePage(edge);
-        // });
+        result.data.allPagesJson.edges.forEach(edge => {
+            generateDistinctPage(edge.node);
+        });
         return Promise.resolve();
     });
 };

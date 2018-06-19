@@ -1,18 +1,21 @@
 import * as React from "react";
 
+import Content, { HTMLContent } from "../components/GenericContent";
 import { HeroBlock } from "../components/HeroBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 
-import { ImageSharpSizes, ImageSharp, PageSection } from "../types/data";
+import { ImageSharpSizes, PageSection, Staff, ImageSharp } from "../types/data";
 
 interface Props {
     title: string;
     sections: PageSection[];
+    staff: Staff[];
     heroImage: ImageSharpSizes | string;
 }
-export const WhatWeDoPageTemplate: React.SFC<Props> = ({
+export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
     title,
     sections,
+    staff,
     heroImage
 }) => {
     return (
@@ -38,40 +41,41 @@ export const WhatWeDoPageTemplate: React.SFC<Props> = ({
                 </div>
             </HeroBlock>
             <div className="block--full block layout-grid">
-                {sections.map(section => {
-                    // Make componenets for here
-                })}
+                {
+                    // add staff
+                }
             </div>
         </section>
     );
 };
 
 // Make type interface
-const WhatWeDoPage: React.SFC<graphData> = ({ data }) => {
+const MeeTheTeamPage: React.SFC<graphData> = ({ data }) => {
     return (
-        <WhatWeDoPageTemplate
+        <MeeTheTeamPageTemplate
             title={data.pageTitle || ""}
-            sections={data.sections || []}
             heroImage={
                 !data.heroImage || typeof data.heroImage === "string"
                     ? data.heroImage || ""
                     : data.heroImage.childImageSharp.sizes
             }
+            staff={data.staff}
+            sections={data.sections}
         />
     );
 };
-export default WhatWeDoPage;
+export default MeeTheTeamPage;
 
 interface graphData {
     data: {
-        heroImage?: ImageSharp | string;
+        heroImage?: string | ImageSharp;
         pageTitle?: string;
         sections?: PageSection[];
+        staff: Staff[];
     };
 }
-
-export const whatWeDoPageQuery: graphData = graphql`
-    query WhatWeDoPage($id: String!) {
+export const meeTheTeamPageQuery: graphData = graphql`
+    query MeeTheTeamPage($id: String!) {
         pagesJson(id: { eq: $id }) {
             # heroImage
             # pageTitle
@@ -81,6 +85,16 @@ export const whatWeDoPageQuery: graphData = graphql`
                 smallImage
                 subtitle
                 blurb
+            }
+            staff {
+                name
+                jobTitle
+                live
+                imageNormal
+                imageFunny
+                description
+                fact
+                skills
             }
         }
     }

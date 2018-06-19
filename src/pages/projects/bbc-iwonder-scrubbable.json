@@ -8,6 +8,7 @@
   "caseStudyText":
     "Scrubbable is a novel way of allowing a user to control the flow of a short, high frame rate video clip.",
   "externalUrl": "http://www.bbc.co.uk/taster/projects/scrubbables",
+  "client": "bbc-iwonder-scrubbable",
   "homepage": true,
   "featured": true,
   "rolloverDetails":

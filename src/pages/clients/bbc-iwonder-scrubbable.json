@@ -3,6 +3,6 @@
   "logo": "/resources/320/bbc-iwonder-logo.png",
   "promoLogo": "/resources/319/bbc-iwonder-logo-white.png",
   "featured": true,
-  "featuredProject": null,
+  "featuredProject": "bbc-iwonder-scrubbable",
   "slug": "bbc-iwonder-scrubbable"
 }

@@ -3,6 +3,6 @@
   "logo": "/resources/695/into-film-festival-logo-filled.png",
   "promoLogo": "/resources/694/white-into-film-festival-logo.png",
   "featured": false,
-  "featuredProject": null,
+  "featuredProject": "into-film-festival",
   "slug": "into-film-festival"
 }

@@ -3,6 +3,6 @@
   "logo": "/resources/118/into-film-logo.png",
   "promoLogo": "/resources/255/into-film-logo-grey-rgb.png",
   "featured": true,
-  "featuredProject": null,
+  "featuredProject": "into-film-educator",
   "slug": "into-film"
 }

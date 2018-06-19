@@ -8,6 +8,7 @@
   "caseStudyText":
     "Whispering Stars is a BBC Taster project which enables people to message each other via the stars. Users are able to explore the night sky with an accurate live 3D star map, find an interesting star and write a message on it to share via social media.",
   "externalUrl": "http://www.bbc.co.uk/taster/projects/whispering-stars",
+  "client": "bbc-whispering-stars",
   "homepage": true,
   "featured": true,
   "rolloverDetails":

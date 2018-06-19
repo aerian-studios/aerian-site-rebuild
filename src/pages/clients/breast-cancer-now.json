@@ -3,6 +3,6 @@
   "logo": "/resources/460/breast-cancer-now-logo.png",
   "promoLogo": "/resources/251/bcn-primary-logo-whtout-blk-cmyk.png",
   "featured": true,
-  "featuredProject": null,
+  "featuredProject": "breast-cancer-now",
   "slug": "breast-cancer-now"
 }

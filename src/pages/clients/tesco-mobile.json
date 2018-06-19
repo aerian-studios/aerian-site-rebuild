@@ -3,6 +3,6 @@
   "logo": "/resources/364/tesco-mobile-logo.png",
   "promoLogo": "/resources/363/tm-landscape-white.png",
   "featured": true,
-  "featuredProject": null,
+  "featuredProject": "tesco-mobile-matchmaker",
   "slug": "tesco-mobile"
 }

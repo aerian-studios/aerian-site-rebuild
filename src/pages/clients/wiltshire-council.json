@@ -3,6 +3,6 @@
   "logo": "/resources/228/wiltshire-college-logo.png",
   "promoLogo": "/resources/254/wiltshire-council.png",
   "featured": true,
-  "featuredProject": null,
+  "featuredProject": "wiltshire-council",
   "slug": "wiltshire-council"
 }

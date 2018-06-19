@@ -13,7 +13,7 @@
   "featured": true,
   "rolloverDetails":
     "We created a personalised continent wide news app for CNN, MTN and their partners",
-  "heroImage": "imported/539/cnn-hero-image.jpg",
+  "heroImage": "assets/imported/539/cnn-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +23,19 @@
         "title": "Mobile data sensitivities",
         "text":
           "Mobile internet and data charges are a massive issue in various parts of Africa, so we needed to be cognisant of the amount of data our app would consume, and allow users to make informed choices about how they received their news.",
-        "image": "imported/658/cnn-01.png"
+        "image": "assets/imported/658/cnn-01.png"
       },
       {
         "title": "Multiple stakeholder requirements",
         "text":
           "The app had multiple stakeholders, each with their own distinct direction and content strategy. In order for the app to be launched and successful, we needed to offer a considered and well reasoned approach that was consistent while meeting everyone's needs.",
-        "image": "imported/659/cnn-02.png"
+        "image": "assets/imported/659/cnn-02.png"
       },
       {
         "title": "Device compatability ",
         "text":
           "The range of mobile devices in use is as diverse as Africa itself. We needed to ensure our app degraded gracefully through many generations of mobile devices while still maintaining the same standards, design paradigms and love that the top devices enjoyed.",
-        "image": "imported/660/cnn-03.png"
+        "image": "assets/imported/660/cnn-03.png"
       }
     ]
   },
@@ -47,19 +47,19 @@
         "title": "Personalised data control",
         "text":
           "To deliver the optimum, user-controlled, experience, we allowed users to personalise their interactions with our app. Users can control what content they download and when - delivering high quality video down or text-only news with optimum load times even in places with limited internet connectivity.",
-        "image": "imported/661/cnn-04.png"
+        "image": "assets/imported/661/cnn-04.png"
       },
       {
         "title": "A beautiful experience",
         "text":
           "We worked incredibly hard to ensure that we fulfilled the requirements of all the stakeholder groups, while still creating a user-centred app which was as well considered and easy to use as if we were building it for ourselves.",
-        "image": "imported/663/cnn-05.png"
+        "image": "assets/imported/663/cnn-05.png"
       },
       {
         "title": "Targetted device builds",
         "text":
           "Although we naturally designed for the optimum device coverage, we devoted time, effort and care to creating specific plans for popular, but often older, mobile devices to ensure that the widest possible audience could get the best possible experience.",
-        "image": "imported/662/cnn-06.png"
+        "image": "assets/imported/662/cnn-06.png"
       }
     ]
   },
@@ -70,19 +70,19 @@
         "title": "Personalised data control",
         "text":
           "To deliver the optimum, user-controlled, experience, we allowed users to personalise their interactions with our app. Users can control what content they download and when - delivering high quality video down or text-only news with optimum load times even in places with limited internet connectivity.",
-        "image": "imported/661/cnn-04.png"
+        "image": "assets/imported/661/cnn-04.png"
       },
       {
         "title": "A beautiful experience",
         "text":
           "We worked incredibly hard to ensure that we fulfilled the requirements of all the stakeholder groups, while still creating a user-centred app which was as well considered and easy to use as if we were building it for ourselves.",
-        "image": "imported/663/cnn-05.png"
+        "image": "assets/imported/663/cnn-05.png"
       },
       {
         "title": "Targetted device builds",
         "text":
           "Although we naturally designed for the optimum device coverage, we devoted time, effort and care to creating specific plans for popular, but often older, mobile devices to ensure that the widest possible audience could get the best possible experience.",
-        "image": "imported/662/cnn-06.png"
+        "image": "assets/imported/662/cnn-06.png"
       }
     ]
   },
@@ -95,9 +95,12 @@
   ],
   "testimonial": null,
   "gallery": [
-    { "image": "imported/462/cover.jpg", "alt": "CNN Africa View cover photo" },
     {
-      "image": "imported/473/cnn-africa-iphone-on-table.jpg",
+      "image": "assets/imported/462/cover.jpg",
+      "alt": "CNN Africa View cover photo"
+    },
+    {
+      "image": "assets/imported/473/cnn-africa-iphone-on-table.jpg",
       "alt": "CNN Africa - iPhone on table "
     }
   ]

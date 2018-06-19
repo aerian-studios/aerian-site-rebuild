@@ -1,7 +1,7 @@
 {
   "name": "Creditsafe",
-  "logo": "imported/546/creditsafe.png",
-  "promoLogo": "imported/546/creditsafe.png",
+  "logo": "assets/imported/546/creditsafe.png",
+  "promoLogo": "assets/imported/546/creditsafe.png",
   "featured": true,
   "featuredProject": null,
   "slug": "creditsafe"

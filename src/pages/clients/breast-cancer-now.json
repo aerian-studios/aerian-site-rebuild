@@ -1,7 +1,7 @@
 {
   "name": "Breast Cancer Now",
-  "logo": "imported/460/breast-cancer-now-logo.png",
-  "promoLogo": "imported/251/bcn-primary-logo-whtout-blk-cmyk.png",
+  "logo": "assets/imported/460/breast-cancer-now-logo.png",
+  "promoLogo": "assets/imported/251/bcn-primary-logo-whtout-blk-cmyk.png",
   "featured": true,
   "featuredProject": "breast-cancer-now",
   "slug": "breast-cancer-now"

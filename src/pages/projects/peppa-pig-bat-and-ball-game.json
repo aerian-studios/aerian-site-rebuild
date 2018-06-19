@@ -14,7 +14,7 @@
   "featured": true,
   "rolloverDetails":
     "We wrote, designed, animated and developed Nick Jnr's first in-browser HTML5 game that combines real episode footage and on-the-fly character animation. ",
-  "heroImage": "imported/400/peppa-pig-hero-image.jpg",
+  "heroImage": "assets/imported/400/peppa-pig-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -24,19 +24,19 @@
         "title": "Kids don't generally have up to date devices",
         "text":
           "They needed to set out their stall as a forward looking, innovative,  entertainment company who brought the best brands and the best experiences to their audience, no matter what device they were using. Since Peppa Pig is one of their most treasured brands, particular attention fell on our project to reach new, mobile audiences.",
-        "image": "imported/477/george-crying.png"
+        "image": "assets/imported/477/george-crying.png"
       },
       {
         "title": "The game needed seamless video, on apple devices (uh, oh)",
         "text":
           "Video on Apple devices is particularly hard as it takes over the browser, we had to be sneaky and devious to integrate real video with the animations we created.",
-        "image": "imported/601/nick-02.png"
+        "image": "assets/imported/601/nick-02.png"
       },
       {
         "title": "Re-usable and extensible. ",
         "text":
           "We're always keen to create an extensible system that's larger than just a single game, we worked with Nickelodeon, E-One and ABD to create a system that could then create game after game, quickly and easily.",
-        "image": "imported/602/nick-03.png"
+        "image": "assets/imported/602/nick-03.png"
       }
     ]
   },
@@ -48,19 +48,19 @@
         "title": "Careful, fun script and storyboard",
         "text":
           "We used every step of the process to squeeze every inch of possibility out of the project. Right from the scripting process, we were looking for ways to deliver a game that would work on slower and older devices, without compromising quality and fun.",
-        "image": "imported/603/nick-04.png"
+        "image": "assets/imported/603/nick-04.png"
       },
       {
         "title": "HTML5, on-the-fly character rigs",
         "text":
           "To give us the most amount of flexibility and performance across all screens, we recreated all the character designs using vectors, and then attached this to a dynamic HTML5 rig. This allowed us to basically ‘drop' any character we wished into any scene, and have them controlled by the user.",
-        "image": "imported/415/peppa-pig-solution-icon-2.png"
+        "image": "assets/imported/415/peppa-pig-solution-icon-2.png"
       },
       {
         "title": "Come on, it's Peppa - it's got to be fun!",
         "text":
           "Furthermore, we added experience led game mechanics including levels, humourous ‘fail' clips and interactions and a number of silly and fun interactions to keep the little ones entertained.",
-        "image": "imported/416/peppa-pig-solution-icon-3.png"
+        "image": "assets/imported/416/peppa-pig-solution-icon-3.png"
       }
     ]
   },
@@ -72,19 +72,19 @@
         "title": "Careful, fun script and storyboard",
         "text":
           "We used every step of the process to squeeze every inch of possibility out of the project. Right from the scripting process, we were looking for ways to deliver a game that would work on slower and older devices, without compromising quality and fun.",
-        "image": "imported/603/nick-04.png"
+        "image": "assets/imported/603/nick-04.png"
       },
       {
         "title": "HTML5, on-the-fly character rigs",
         "text":
           "To give us the most amount of flexibility and performance across all screens, we recreated all the character designs using vectors, and then attached this to a dynamic HTML5 rig. This allowed us to basically ‘drop' any character we wished into any scene, and have them controlled by the user.",
-        "image": "imported/415/peppa-pig-solution-icon-2.png"
+        "image": "assets/imported/415/peppa-pig-solution-icon-2.png"
       },
       {
         "title": "Come on, it's Peppa - it's got to be fun!",
         "text":
           "Furthermore, we added experience led game mechanics including levels, humourous ‘fail' clips and interactions and a number of silly and fun interactions to keep the little ones entertained.",
-        "image": "imported/416/peppa-pig-solution-icon-3.png"
+        "image": "assets/imported/416/peppa-pig-solution-icon-3.png"
       }
     ]
   },
@@ -92,19 +92,19 @@
   "testimonial": null,
   "gallery": [
     {
-      "image": "imported/401/peppapig-grid-image-1.jpg",
+      "image": "assets/imported/401/peppapig-grid-image-1.jpg",
       "alt": "PeppaPig grid image 1"
     },
     {
-      "image": "imported/402/peppapig-grid-image-2.jpg",
+      "image": "assets/imported/402/peppapig-grid-image-2.jpg",
       "alt": "PeppaPig grid image 2"
     },
     {
-      "image": "imported/534/peppapig-gid-image-3.jpg",
+      "image": "assets/imported/534/peppapig-gid-image-3.jpg",
       "alt": "peppapig gid image 3"
     },
     {
-      "image": "imported/405/peppapig-grid-image-4.jpg",
+      "image": "assets/imported/405/peppapig-grid-image-4.jpg",
       "alt": "PeppaPig grid image 4"
     }
   ]

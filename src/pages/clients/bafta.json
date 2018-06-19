@@ -1,7 +1,7 @@
 {
   "name": "BAFTA",
-  "logo": "imported/456/bafta-logo.png",
-  "promoLogo": "imported/456/bafta-logo.png",
+  "logo": "assets/imported/456/bafta-logo.png",
+  "promoLogo": "assets/imported/456/bafta-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "bafta"

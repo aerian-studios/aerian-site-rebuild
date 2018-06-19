@@ -1,7 +1,7 @@
 {
   "name": "The Times",
-  "logo": "imported/444/the-times-logo.png",
-  "promoLogo": "imported/444/the-times-logo.png",
+  "logo": "assets/imported/444/the-times-logo.png",
+  "promoLogo": "assets/imported/444/the-times-logo.png",
   "featured": false,
   "featuredProject": null,
   "slug": "the-times"

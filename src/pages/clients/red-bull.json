@@ -1,7 +1,7 @@
 {
   "name": "Red Bull",
-  "logo": "imported/544/red-bull.png",
-  "promoLogo": "imported/544/red-bull.png",
+  "logo": "assets/imported/544/red-bull.png",
+  "promoLogo": "assets/imported/544/red-bull.png",
   "featured": true,
   "featuredProject": null,
   "slug": "red-bull"

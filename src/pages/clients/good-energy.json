@@ -1,7 +1,7 @@
 {
   "name": "Good Energy",
-  "logo": "imported/448/good-energy-logo.png",
-  "promoLogo": "imported/448/good-energy-logo.png",
+  "logo": "assets/imported/448/good-energy-logo.png",
+  "promoLogo": "assets/imported/448/good-energy-logo.png",
   "featured": true,
   "featuredProject": null,
   "slug": "good-energy"

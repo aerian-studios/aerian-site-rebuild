@@ -1,7 +1,7 @@
 {
   "name": "DVB",
-  "logo": "imported/547/dvb.png",
-  "promoLogo": "imported/547/dvb.png",
+  "logo": "assets/imported/547/dvb.png",
+  "promoLogo": "assets/imported/547/dvb.png",
   "featured": true,
   "featuredProject": null,
   "slug": "dvb"

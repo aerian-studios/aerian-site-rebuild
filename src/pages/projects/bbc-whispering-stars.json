@@ -13,7 +13,7 @@
   "featured": true,
   "rolloverDetails":
     "There's a message waiting for you in the stars, and we put it there",
-  "heroImage": "imported/211/bbc-whispering-stars-hero-image.jpg",
+  "heroImage": "assets/imported/211/bbc-whispering-stars-hero-image.jpg",
   "heroVideo": null,
   "challenge": {
     "description":
@@ -23,19 +23,19 @@
         "title": "Familiar gestures",
         "text":
           "We needed to use existing paradigms and familiar gestures to help ease people into a tool they never would have seen before. This would then encouraged people to use the product creatively, rather than just trying to 'use it'. We also needed to add facts about the night sky to make their messages more inspiring.",
-        "image": "imported/640/bbc-whispering-01.png"
+        "image": "assets/imported/640/bbc-whispering-01.png"
       },
       {
         "title": "Real world scenarios ",
         "text":
           "Other than the technical challenges, we also had to consider real world scenarios such as aching arms. We recognised that people won't want to hold their arms in the air for a long time. This needed to be quick, and fun!",
-        "image": "imported/641/bbc-whispering-02.png"
+        "image": "assets/imported/641/bbc-whispering-02.png"
       },
       {
         "title": "Thinking about the user",
         "text":
           "We also needed to test how long people would use the app before they tire. If a users default action remains to always start with the sky, they still needed an alternative that didn't require that level of mobility when required.",
-        "image": "imported/642/bbc-whispering-03.png"
+        "image": "assets/imported/642/bbc-whispering-03.png"
       }
     ]
   },
@@ -47,19 +47,19 @@
         "title": "Making the stars cool again! (Weren't they always?)",
         "text":
           "By using a personal, social media message as a users first step, we subtly introduced users to the stars through a familiar voice - that of a friend or a loved one. And once they're 'in', they can explore other stars to their heart's content, and leave a message for their friends and loved ones - passing on the experience.",
-        "image": "imported/643/bbc-whispering-04.png"
+        "image": "assets/imported/643/bbc-whispering-04.png"
       },
       {
         "title": "Social networking ",
         "text":
           "By using the public's social networks to reach new audiences, we hope to make facts about the night sky more accessible, and fun, to a wider audience.",
-        "image": "imported/644/bbc-whispering-05.png"
+        "image": "assets/imported/644/bbc-whispering-05.png"
       },
       {
         "title": "Discover amazing facts ",
         "text":
           "Both sender and recipient can discover amazing facts about the stars and visible planets that inspire them to write a message and share with their community.",
-        "image": "imported/645/bbc-whispering-06.png"
+        "image": "assets/imported/645/bbc-whispering-06.png"
       }
     ]
   },
@@ -71,19 +71,19 @@
         "title": "Making the stars cool again! (Weren't they always?)",
         "text":
           "By using a personal, social media message as a users first step, we subtly introduced users to the stars through a familiar voice - that of a friend or a loved one. And once they're 'in', they can explore other stars to their heart's content, and leave a message for their friends and loved ones - passing on the experience.",
-        "image": "imported/643/bbc-whispering-04.png"
+        "image": "assets/imported/643/bbc-whispering-04.png"
       },
       {
         "title": "Social networking ",
         "text":
           "By using the public's social networks to reach new audiences, we hope to make facts about the night sky more accessible, and fun, to a wider audience.",
-        "image": "imported/644/bbc-whispering-05.png"
+        "image": "assets/imported/644/bbc-whispering-05.png"
       },
       {
         "title": "Discover amazing facts ",
         "text":
           "Both sender and recipient can discover amazing facts about the stars and visible planets that inspire them to write a message and share with their community.",
-        "image": "imported/645/bbc-whispering-06.png"
+        "image": "assets/imported/645/bbc-whispering-06.png"
       }
     ]
   },
@@ -101,18 +101,24 @@
       "Aerian are a fantastic team! Not only did they understand the brief immediately, and create a clean and elegant interface, but they somehow managed to build a live 3D star map that works in a web browser. Even better, users can write messages in it. That’s quite a thing!",
     "person": "Simon Mackie",
     "title": "Digital Producer | BBC Science",
-    "avatar": "imported/213/bbc-whispering-stars-quote-image.jpg"
+    "avatar": "assets/imported/213/bbc-whispering-stars-quote-image.jpg"
   },
   "gallery": [
     {
-      "image": "imported/316/bb-ws-grid-image-3.jpg",
+      "image": "assets/imported/316/bb-ws-grid-image-3.jpg",
       "alt": "BB WS grid image 3"
     },
     {
-      "image": "imported/260/techandall-mydesk-mockup.png",
+      "image": "assets/imported/260/techandall-mydesk-mockup.png",
       "alt": "techandall MyDesk mockup"
     },
-    { "image": "imported/259/bbcws-mu-laptop.jpg", "alt": "BBCWS-MU-Laptop" },
-    { "image": "imported/258/bbcws-mu-phone.jpg", "alt": "BBCWS-MU-Phone" }
+    {
+      "image": "assets/imported/259/bbcws-mu-laptop.jpg",
+      "alt": "BBCWS-MU-Laptop"
+    },
+    {
+      "image": "assets/imported/258/bbcws-mu-phone.jpg",
+      "alt": "BBCWS-MU-Phone"
+    }
   ]
 }

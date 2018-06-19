@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./heroBlock.scss";
+import "./HeroBlock.scss";
 
 export const HeroBlock: React.SFC = ({ children }) => (
     <header className="block--hero block--full block block--dark_skin layout-grid">

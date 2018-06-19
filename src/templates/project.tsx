@@ -5,7 +5,7 @@ import { HeroBlock } from "../components/HeroBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 
 import { ImageSharpSizes } from "../types/data";
-import { SectionNav } from "../components/Sectionnav";
+import { SectionNav } from "../components/SectionNav";
 
 interface block {
     description: string;

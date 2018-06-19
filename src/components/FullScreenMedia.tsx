@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 
 import { ImageSharpSizes } from "../types/data";
 
-import "./fullScreenMedia.scss";
+import "./FullScreenMedia.scss";
 
 interface Props {
     image?: ImageSharpSizes | string;

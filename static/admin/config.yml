@@ -116,6 +116,7 @@ collections:
         label: "Meet the team"
         name: "meet-the-team"
         fields: 
+          - {label: "Title", name: "title", widget: "hidden", default: "Meet the team"}
           - {label: "Path", name: "path", widget: "hidden", default: "/meet-the-team"}
           - label: "Staff"
             name: "staff"
@@ -136,6 +137,7 @@ collections:
         label: "What we do"
         name: "what-we-do"
         fields: 
+          - {label: "Title", name: "title", widget: "hidden", default: "What to do"}
           - {label: "Path", name: "path", widget: "hidden", default: "/what-we-do"}
           - label: "Sections"
             name: "sections"

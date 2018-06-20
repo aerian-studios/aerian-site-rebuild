@@ -1,9 +1,3 @@
----
-name: New component
-about: Merging a new component
-
----
-
 **Ensure each of these tasks is complete before merging**
 
 Use component name as PR title and request code review before merging. You can

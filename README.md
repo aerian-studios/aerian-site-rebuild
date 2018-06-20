@@ -1,4 +1,4 @@
-# Aerian Studios LLC website
+# Aerian Studios website
 
 Static website build for Aerian Studio's website.
 

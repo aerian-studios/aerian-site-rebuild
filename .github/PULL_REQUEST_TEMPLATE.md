@@ -4,9 +4,10 @@ about: Merging a new component
 
 ---
 
-**Ensure each of these tasks is complete before opening the PR**
+**Ensure each of these tasks is complete before merging**
 
-Use component name as PR title and request code review before merging
+Use component name as PR title and request code review before merging. You can
+open a PR and request review for an incomplete component if you'd like.
 
 -   [ ] Component created
 -   [ ] Styles written

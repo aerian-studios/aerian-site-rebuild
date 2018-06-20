@@ -25,3 +25,23 @@ export interface ImageSharpSizes {
     srcSet?: string;
     tracedSVG?: string;
 }
+
+// PAGES
+export interface PageSection {
+    title: string;
+    image?: ImageSharp | string;
+    smallImage?: ImageSharp | string;
+    subtitle: string;
+    blurb: string;
+}
+
+export interface Staff {
+    name: string;
+    jobTitle: string;
+    live: boolean;
+    imageNormal: string;
+    imageFunny: string;
+    description: string;
+    fact: string;
+    skills: string[];
+}

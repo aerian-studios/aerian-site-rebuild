@@ -149,7 +149,7 @@ collections:
             widget: "list"
             fields:
               - {label: "Primary text", name: "title", widget: "string", required: false}
-              - {label: "Type", name: "type", widget: "list", options: ["Single Line", "Compact Single Line", "Split", "Bar", "Vertical", "Horizontal", "Surround"]}
+              - {label: "Type", name: "type", widget: "select", options: ["Single Line", "Compact Single Line", "Split", "Bar", "Vertical", "Horizontal", "Surround"]}
               - {label: "Secondary text", name: "secondary", widget: "string", required: false}
               - {label: "Image", name: "image", widget: "image", required: false}
               - {label: "Image count", name: "count", widget: "number", default: 1, type: "int", min: 0}

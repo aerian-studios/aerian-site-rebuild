@@ -68,10 +68,26 @@
       "successStory": {
         "title": "BBC iWonder The Perfect Diet for you guide",
         "stats": [
-          { "title": "90,000 ", "text": "Users in the first 2 hours " },
-          { "title": "Top guide ", "text": "On iwonder" },
-          { "title": "1.5m", "text": "unique users after the first show" },
-          { "title": "22,000", "text": "Concurrent users" }
+          {
+            "title": "90,000 ",
+            "text": "Users in the first 2 hours ",
+            "image": "/assets/imported/426/90000-icon.png"
+          },
+          {
+            "title": "Top guide ",
+            "text": "On iwonder",
+            "image": "/assets/imported/429/top-guide-icon.png"
+          },
+          {
+            "title": "1.5m",
+            "text": "unique users after the first show",
+            "image": "/assets/imported/428/54000-icon.png"
+          },
+          {
+            "title": "22,000",
+            "text": "Concurrent users",
+            "image": "/assets/imported/427/22000-icon.png"
+          }
         ]
       },
       "testimonial": null
@@ -104,10 +120,26 @@
         "title":
           "From front-end to back-end and Dev Ops, our team excels in building systems that scale ",
         "stats": [
-          { "title": "7 Accredited ", "text": "Scrum Masters" },
-          { "title": "Managing", "text": "Over 100 Client Servers" },
-          { "title": "99.95%", "text": "Monthly Uptime" },
-          { "title": "Experts", "text": "In over 20 development languages" }
+          {
+            "title": "7 Accredited ",
+            "text": "Scrum Masters",
+            "image": "/assets/imported/540/scrum-leader.png"
+          },
+          {
+            "title": "Managing",
+            "text": "Over 100 Client Servers",
+            "image": "/assets/imported/541/server-management.png"
+          },
+          {
+            "title": "99.95%",
+            "text": "Monthly Uptime",
+            "image": "/assets/imported/542/uptime.png"
+          },
+          {
+            "title": "Experts",
+            "text": "In over 20 development languages",
+            "image": "/assets/imported/543/languages.png"
+          }
         ]
       },
       "testimonial": null

@@ -116,8 +116,8 @@ collections:
         label: "Meet the team"
         name: "meet-the-team"
         fields: 
-          - {label: "Title", name: "title", widget: "hidden", default: "Meet the team"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/meet-the-team"}
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Path", name: "path", widget: string}
           - label: "Staff"
             name: "staff"
             widget: list
@@ -137,8 +137,13 @@ collections:
         label: "What we do"
         name: "what-we-do"
         fields: 
-          - {label: "Title", name: "title", widget: "hidden", default: "What to do"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/what-we-do"}
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Path", name: "path", widget: string}
+          - {label: "Subheading", name: "subheading", widget: string}
+          - {label: "Description", name: "description", widget: text}
+          - {label: "SEO title", name: "seoTitle", widget: string}
+          - {label: "SEO description", name: "seoDescription", widget: text}
+          - {label: "SEO keywords", name: "seoKeywords", widget: string}
           - label: "Sections"
             name: "sections"
             widget: "list"

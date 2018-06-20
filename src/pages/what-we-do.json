@@ -1,5 +1,13 @@
 {
-  "title": "What We Do",
+  "name": "What We Do",
+  "subheading":
+    "A family of enthusiastic geeks who love all things web and innovative",
+  "description":
+    "For over 20 years we have built industry leading campaigns, websites, products and mobile Apps and we have never lost a client because we always deliver on our promises with scientifically proven results, and we always put the user first.",
+  "seoTitle": "What Aerian Studios does",
+  "seoDescription":
+    "Using proven techniques to create user driven design and delivery of industry leading campaigns, websites, products and mobile Apps.",
+  "seoKeywords": "Aerian, digital, websites, campaigns, products, mobile apps",
   "path": "/what-we-do",
   "sections": [
     {

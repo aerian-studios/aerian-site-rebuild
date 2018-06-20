@@ -132,7 +132,30 @@ collections:
               - label: "Skills (comma-separated)"
                 name: "skills"
                 widget: "list"
-          
+
+      - file: "src/pages/about.json"
+        label: "About"
+        name: "about"
+        fields: 
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Path", name: "path", widget: string}
+          - {label: "Subheading", name: "subheading", widget: string}
+          - {label: "Description", name: "description", widget: text}
+          - {label: "SEO title", name: "seoTitle", widget: string}
+          - {label: "SEO description", name: "seoDescription", widget: text}
+          - {label: "SEO keywords", name: "seoKeywords", widget: string}
+          - label: "Infographic"
+            name: "infographic"
+            widget: "list"
+            fields:
+              - {label: "Primary text", name: "title", widget: "string", required: false}
+              - {label: "Type", name: "type", widget: "list", options: ["Single Line", "Compact Single Line", "Split", "Bar", "Vertical", "Horizontal", "Surround"]}
+              - {label: "Secondary text", name: "secondary", widget: "string", required: false}
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "Image count", name: "count", widget: "number", default: 1, type: "int", min: 0}
+              - {label: "Secondary Image", name: "title", widget: "image", required: false}
+
+
       - file: "src/pages/what-we-do.json"
         label: "What we do"
         name: "what-we-do"

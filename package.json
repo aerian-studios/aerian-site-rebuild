@@ -28,19 +28,28 @@
     "scripts": {
         "build": "gatsby build",
         "start": "gatsby develop",
-        "format": "prettier --write 'src/**/*.js'",
-        "test": "test"
+        "test": "jest",
+        "storybook": "start-storybook -p 9001 -c .storybook"
     },
     "devDependencies": {
+        "@storybook/addon-actions": "^3.4.8",
+        "@storybook/addon-info": "^3.4.8",
+        "@storybook/react": "^3.4.8",
+        "@types/storybook__addon-actions": "^3.0.3",
+        "@types/storybook__addon-info": "^3.2.3",
+        "@types/storybook__react": "^3.0.7",
         "gh-pages": "^1.2.0",
         "husky": "^0.14.3",
         "hygen-react-typescript": "^1.0.2",
         "lint-staged": "^7.2.0",
         "prettier": "^1.13.5",
+        "react-docgen-typescript-loader": "^2.1.1",
+        "react-docgen-typescript-webpack-plugin": "^1.1.0",
         "tslint": "^5.10.0",
         "tslint-config-aerian": "^1.0.2",
         "typescript": "^2.9.2",
-        "typings-for-css-modules-loader": "^1.7.0"
+        "typings-for-css-modules-loader": "^1.7.0",
+        "webpack": "^3.12.0"
     },
     "lint-staged": {
         "*.{js,jsx,css,md,scss}": [

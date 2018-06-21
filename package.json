@@ -37,6 +37,7 @@
         "hygen-react-typescript": "^1.0.2",
         "lint-staged": "^7.2.0",
         "prettier": "^1.13.5",
+        "tslint": "^5.10.0",
         "tslint-config-aerian": "^1.0.2",
         "typescript": "^2.9.2",
         "typings-for-css-modules-loader": "^1.7.0"

@@ -14,24 +14,10 @@ import * as logo from "../assets/furniture/logo.svg";
 interface Props {
     children: () => React.Component;
     className?: string;
+    data: PagesListData["data"];
 }
 
-const pages = [
-    {
-        path: "/",
-        id: "Home"
-    },
-    {
-        path: "/what-we-do",
-        id: "what-we-do"
-    },
-    {
-        path: "/meet-the-team",
-        id: "meet-the-team"
-    }
-];
-
-const TemplateWrapper: React.SFC<Props> = ({ className, children }) => (
+const TemplateWrapper: React.SFC<Props> = ({ data, className, children }) => (
     <div className={`layout-container ${className}`}>
         <Helmet>
             <html lang="en" />
@@ -39,32 +25,49 @@ const TemplateWrapper: React.SFC<Props> = ({ className, children }) => (
             <meta name="description" content="SET ME PLEASE" />
             <title>SET ME PLEASE</title>
         </Helmet>
-        <PageNavBar>
-            <div className="{}">
-                <svg className="{}">
-                    <use xlinkHref={`#${logo.id}`} />
-                </svg>
-            </div>
-            <div>
-                {pages
-                    ? pages.map(page => {
-                          return (
-                              <Link to={page.path} key={`menu-${page.id}`}>
-                                  <span>
-                                      {page.id
-                                          .replace("/", "")
-                                          .replace("-", " ")}
-                                  </span>
-                              </Link>
-                          );
-                      })
-                    : null}
-            </div>
-        </PageNavBar>
         <ErrorBoundary>
+            <PageNavBar pages={data}>
+                <div className="{}">
+                    <svg className="{}">
+                        <use xlinkHref={`#${logo.id}`} />
+                    </svg>
+                </div>
+            </PageNavBar>
             <div id="content-wrapper">{children()}</div>
         </ErrorBoundary>
     </div>
 );
 
 export default TemplateWrapper;
+
+export interface PageListNode {
+    node: {
+        id: string;
+        path: string;
+        title: string;
+    };
+}
+
+export interface PageList {
+    edges: PageListNode[];
+}
+
+export interface PagesListData {
+    data: {
+        allPagesJson: PageList;
+    };
+}
+
+export const pageListQuery: PagesListData = graphql`
+    query PageList {
+        allPagesJson(limit: 1000) {
+            edges {
+                node {
+                    id
+                    path
+                    title
+                }
+            }
+        }
+    }
+`;

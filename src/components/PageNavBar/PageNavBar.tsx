@@ -1,10 +1,13 @@
 import * as React from "react";
 
+import { MainNavigation } from "../MainNavigation/";
 import * as styles from "./PageNavBar.scss";
+import { PagesListData } from "../../layouts";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
+    pages: PagesListData["data"];
 }
 interface State {
     myStateValue?: boolean;
@@ -24,6 +27,7 @@ export class PageNavBar extends React.PureComponent<Props, State> {
                 style={this.props.style}
             >
                 {this.props.children}
+                <MainNavigation pages={this.props.pages} />
             </header>
         );
     }

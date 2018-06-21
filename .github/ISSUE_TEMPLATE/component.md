@@ -4,7 +4,7 @@ about: An issue to create a new component
 
 ---
 
-## Component Type: (delete as appropriate) Stateless / Class
+## Component Type: Class / Stateless
 
 Check each box once you have completed done the task.
 

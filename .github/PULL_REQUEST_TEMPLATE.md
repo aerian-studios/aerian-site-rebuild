@@ -8,4 +8,4 @@ open a PR and request review for an incomplete component if you'd like.
 -   [ ] Storybook created, with stories for all normal states
 -   [ ] Tests written, with snapshot test at minimum
 
-Link to original issue: #
+Closes # (add original issue number)

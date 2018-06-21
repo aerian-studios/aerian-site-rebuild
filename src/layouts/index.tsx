@@ -16,28 +16,36 @@ interface Props {
     children: () => React.Component;
     className?: string;
     data: PagesListData["data"];
+    // this comes from the router
+    location: {
+        pathname: string;
+    };
 }
 
-const TemplateWrapper: React.SFC<Props> = ({ data, className, children }) => (
-    <div className={`layout-container ${className}`}>
-        <Helmet>
-            <html lang="en" />
-            <meta charSet="utf-8" />
-            <meta name="description" content="SET ME PLEASE" />
-            <title>SET ME PLEASE</title>
-        </Helmet>
-        <ErrorBoundary>
-            <PageNavBar pages={data}>
-                <div className="{}">
-                    <svg className="{}">
-                        <use xlinkHref={`#${logo.id}`} />
-                    </svg>
-                </div>
-            </PageNavBar>
-            <div id="content-wrapper">{children()}</div>
-        </ErrorBoundary>
-    </div>
-);
+const TemplateWrapper: React.SFC<Props> = props => {
+    const { data, className, children } = props;
+
+    return (
+        <div className={`layout-container ${className}`}>
+            <Helmet>
+                <html lang="en" />
+                <meta charSet="utf-8" />
+                <meta name="description" content="SET ME PLEASE" />
+                <title>SET ME PLEASE</title>
+            </Helmet>
+            <ErrorBoundary>
+                <PageNavBar pages={data} activePath={props.location.pathname}>
+                    <div className="{}">
+                        <svg className="{}">
+                            <use xlinkHref={`#${logo.id}`} />
+                        </svg>
+                    </div>
+                </PageNavBar>
+                <div id="content-wrapper">{children()}</div>
+            </ErrorBoundary>
+        </div>
+    );
+};
 
 export default TemplateWrapper;
 

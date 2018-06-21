@@ -8,27 +8,32 @@ interface Props {
     style?: React.CSSProperties;
     className?: string;
     pages: PagesListData["data"];
+    activePath: string;
 }
 
-const makePageLink = (id: string, path: string, title: string) => (
+const makePageLink = (
+    id: string,
+    path: string,
+    title: string,
+    activePath: string
+) => (
     <Link to={path} key={`menu-${id}`}>
-        <span>{title}</span>
+        <span className={activePath === path ? styles.activePath : ""}>
+            {title}
+        </span>
     </Link>
 );
 
-const constructPages = (pageList: PageList["edges"]) => {
+const constructPages = (pageList: PageList["edges"], activePath: string) => {
     return pageList.map((page: PageListNode) => {
         const { id, path, title } = page.node;
-
-        return makePageLink(id, path, title);
+        console.log(activePath, path);
+        return makePageLink(id, path, title, activePath);
     });
 };
 
-export const MainNavigation: React.SFC<Props> = ({
-    style,
-    className,
-    pages
-}) => {
+export const MainNavigation: React.SFC<Props> = props => {
+    const { style, className, pages, activePath } = props;
     const pageList: PageList["edges"] =
         pages && pages.allPagesJson && pages.allPagesJson.edges;
 
@@ -38,7 +43,7 @@ export const MainNavigation: React.SFC<Props> = ({
             className={[styles.component, className].join(" ")}
             style={style}
         >
-            {pages ? constructPages(pageList) : null}
+            {pages ? constructPages(pageList, activePath) : null}
         </nav>
     );
 };

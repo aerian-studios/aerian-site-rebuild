@@ -8,6 +8,7 @@ interface Props {
     style?: React.CSSProperties;
     className?: string;
     pages: PagesListData["data"];
+    activePath: string;
 }
 interface State {
     myStateValue?: boolean;
@@ -27,7 +28,10 @@ export class PageNavBar extends React.PureComponent<Props, State> {
                 style={this.props.style}
             >
                 {this.props.children}
-                <MainNavigation pages={this.props.pages} />
+                <MainNavigation
+                    pages={this.props.pages}
+                    activePath={this.props.activePath}
+                />
             </header>
         );
     }

@@ -21,6 +21,24 @@ export interface ImageSharpSizes {
 }
 
 // PAGES
+export interface PagesListData {
+    data: {
+        allPagesJson: PageList;
+    };
+}
+
+export interface PageList {
+    edges: PageListNode[];
+}
+
+export interface PageListNode {
+    node: {
+        id: string;
+        path: string;
+        title: string;
+    };
+}
+
 export interface PageSection {
     title: string;
     image?: ImageSharp | string;

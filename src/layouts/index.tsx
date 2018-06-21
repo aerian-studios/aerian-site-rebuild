@@ -10,6 +10,7 @@ import "../scss/base-theme.scss";
 
 // logo
 import * as logo from "../assets/furniture/logo.svg";
+import { PagesListData } from "../types/data";
 
 interface Props {
     children: () => React.Component;
@@ -39,24 +40,6 @@ const TemplateWrapper: React.SFC<Props> = ({ data, className, children }) => (
 );
 
 export default TemplateWrapper;
-
-export interface PageListNode {
-    node: {
-        id: string;
-        path: string;
-        title: string;
-    };
-}
-
-export interface PageList {
-    edges: PageListNode[];
-}
-
-export interface PagesListData {
-    data: {
-        allPagesJson: PageList;
-    };
-}
 
 export const pageListQuery: PagesListData = graphql`
     query PageList {

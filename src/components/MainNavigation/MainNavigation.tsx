@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import * as styles from "./MainNavigation.scss";
-import { PagesListData, PageList, PageListNode } from "../../layouts";
+import { PagesListData, PageList, PageListNode } from "../../types/data";
 
 interface Props {
     style?: React.CSSProperties;

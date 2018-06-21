@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { MainNavigation } from "../MainNavigation/";
 import * as styles from "./PageNavBar.scss";
-import { PagesListData } from "../../layouts";
+import { PagesListData } from "../../types/data";
 
 interface Props {
     style?: React.CSSProperties;

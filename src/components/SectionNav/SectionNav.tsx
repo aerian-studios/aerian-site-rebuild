@@ -3,20 +3,18 @@ import * as React from "react";
 import * as styles from "./SectionNav.scss";
 
 interface Props {
-    keyConsts: {
-        string: string;
-    };
+    keyConsts: {};
     sections: any;
     style?: React.CSSProperties;
     className?: string;
-    onNavigation: (scrollTo: string) => void;
+    onNavigation: (itemKey: string) => void;
 }
 
 const wrapNavItem = (
     content: string,
     itemKey: string,
-    onNavigation
-): React.ReactChild => (
+    onNavigation: Props["onNavigation"]
+) => (
     <a
         className={styles.sectionNavItem}
         href={`#${itemKey}`}
@@ -29,22 +27,23 @@ const wrapNavItem = (
     </a>
 );
 
-const getKeyWrapper = (keyConsts: { string: string }, onNavigation) => (
-    itemKey: string
-) => {
+const getKeyWrapper = (
+    keyConsts: Props["keyConsts"],
+    onNavigation: Props["onNavigation"]
+) => (itemKey: string) => {
     return wrapNavItem(keyConsts[itemKey], itemKey, onNavigation);
 };
 
 const createNavItems = (
-    items,
-    keyConsts,
-    onNavigation
-): React.ReactChildren[] => {
+    sections: Props["sections"],
+    keyConsts: Props["keyConsts"],
+    onNavigation: Props["onNavigation"]
+): React.ReactElement<HTMLAnchorElement>[] => {
     const nav = [];
     const navItemWrapper = getKeyWrapper(keyConsts, onNavigation);
 
-    for (const itemKey in items) {
-        const entry = items[itemKey];
+    for (const itemKey in sections) {
+        const entry = sections[itemKey];
         console.log(itemKey, keyConsts[itemKey]);
 
         switch (itemKey) {

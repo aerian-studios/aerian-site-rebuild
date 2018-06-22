@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialLink renders correctly 1`] = `
+<li
+  className="item myClass"
+>
+  <a
+    href="www.facebook.com"
+  />
+</li>
+`;

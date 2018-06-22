@@ -1,3 +1,4 @@
+import { StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
@@ -7,7 +8,7 @@ import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 import { SectionNav } from "../components/SectionNav/";
 import { ImageSharpSizes } from "../types/data";
 
-interface block {
+interface Block {
     description: string;
     hurdles: {
         title: string;
@@ -25,9 +26,9 @@ interface Props {
         title: string;
         text: string;
     };
-    challenge?: block;
-    solution?: block;
-    results?: block;
+    challenge?: Block;
+    solution?: Block;
+    results?: Block;
     performance?: {
         title: string;
         text: string;
@@ -49,7 +50,7 @@ const keys = {
     results: "The Result"
 };
 
-const onNavigation = id => {
+const onNavigation = (id: string) => {
     alert(id);
 };
 
@@ -115,75 +116,82 @@ const createCorrectMediumComponent = image => {
 // Make type interface
 const ProjectPage: React.SFC = ({ data }) => {
     const project = data.projectsJson;
-
     return (
-        <ProjectPageTemplate
-            pageTitle1={project.titleLineOne}
-            pageTitle2={project.titleLineTwo}
-            heroImage={createCorrectMediumComponent(project.heroImage)}
-            heroVideo={project.heroVideo}
-            caseStudy={{
-                title: project.caseStudyTitle,
-                text: project.caseStudyText
+        <StaticQuery
+            query={graphql`
+                query project($id: String!) {
+                    projectsJson(id: { eq: $id }) {
+                        name
+                        titleLineOne
+                        titleLineTwo
+                        goLiveDate
+                        caseStudyTitle
+                        caseStudyText
+                        externalUrl
+                        heroImage
+                        heroVideo
+                        challenge {
+                            description
+                            hurdles {
+                                title
+                                image
+                                text
+                            }
+                        }
+                        solution {
+                            hurdles {
+                                title
+                                image
+                                text
+                            }
+                            description
+                        }
+                        results {
+                            description
+                            hurdles {
+                                title
+                                image
+                                text
+                            }
+                        }
+                        performance {
+                            title
+                            text
+                        }
+                        testimonial {
+                            quote
+                            person
+                            title
+                            avatar
+                        }
+                        id
+                    }
+                }
+            `}
+            render={data => {
+                return (
+                    <ProjectPageTemplate
+                        pageTitle1={project.titleLineOne}
+                        pageTitle2={project.titleLineTwo}
+                        heroImage={createCorrectMediumComponent(
+                            project.heroImage
+                        )}
+                        heroVideo={project.heroVideo}
+                        caseStudy={{
+                            title: project.caseStudyTitle,
+                            text: project.caseStudyText
+                        }}
+                        challenge={project.challenge}
+                        solution={project.solution}
+                        results={project.results}
+                        performance={project.performance}
+                        testimonial={project.testimonial}
+                        id={project.id}
+                    />
+                );
             }}
-            challenge={project.challenge}
-            solution={project.solution}
-            results={project.results}
-            performance={project.performance}
-            testimonial={project.testimonial}
-            id={project.id}
         />
     );
 };
-export default ProjectPage;
 
-export const projectPageQuery = graphql`
-    query project($id: String!) {
-        projectsJson(id: { eq: $id }) {
-            name
-            titleLineOne
-            titleLineTwo
-            goLiveDate
-            caseStudyTitle
-            caseStudyText
-            externalUrl
-            heroImage
-            heroVideo
-            challenge {
-                description
-                hurdles {
-                    title
-                    image
-                    text
-                }
-            }
-            solution {
-                hurdles {
-                    title
-                    image
-                    text
-                }
-                description
-            }
-            results {
-                description
-                hurdles {
-                    title
-                    image
-                    text
-                }
-            }
-            performance {
-                title
-                text
-            }
-            testimonial {
-                quote
-                person
-                title
-                avatar
-            }
-            id
-        }
-    }
-`;
+export default ProjectPage;

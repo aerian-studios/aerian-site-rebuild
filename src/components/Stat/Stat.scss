@@ -1,2 +1,21 @@
-.component {
+.stat {
+    border: 1px solid fuchsia;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    text-align: center;
+    min-width: 250px;
+    min-height: 185px;
+    background-color: grey;
+}
+
+.statNumber {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.statDescription {
+    display: block;
+    background-color: white;
 }

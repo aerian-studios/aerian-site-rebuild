@@ -1,6 +1,6 @@
 import * as React from "react";
 import { HeroBlock } from "../components/HeroBlock/HeroBlock";
-import Layout from "../components/LayoutTemplate";
+import Layout from "../components/Layout";
 
 export default () => (
     <Layout>

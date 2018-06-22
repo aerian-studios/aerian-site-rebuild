@@ -1,33 +1,39 @@
+import { StaticQuery } from "gatsby";
 import * as React from "react";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import Layout from "../components/Layout";
 
 interface Props {
-    data: any;
+    children?: React.ReactChildren;
+    location: {
+        pathname: string;
+    };
 }
 
-const IndexPage: React.SFC<Props> = ({ data }) => {
-    return (
-        <main className="layout-grid">
-            <HeroBlock>
-                <div className="block--hero__content-wrap">
-                    <h1>Latest Stories</h1>
-                </div>
-            </HeroBlock>
-            <div className="block--full" />
-        </main>
-    );
-};
-export default IndexPage;
-
-export const pageQuery = graphql`
-    query IndexQuery {
-        allProjectsJson(sort: { order: DESC, fields: [goLiveDate] }) {
-            edges {
-                node {
-                    id
+const IndexPage: React.SFC<Props> = props => (
+    <StaticQuery
+        query={graphql`
+            query IndexQuery {
+                allProjectsJson(sort: { order: DESC, fields: [goLiveDate] }) {
+                    edges {
+                        node {
+                            id
+                        }
+                    }
                 }
             }
-        }
-    }
-`;
+        `}
+        render={data => {
+            return (
+                <Layout location={props.location}>
+                    <main className="layout-grid">
+                        <div className="block--full">This is the home page</div>
+                    </main>
+                </Layout>
+            );
+        }}
+    />
+);
+
+export default IndexPage;

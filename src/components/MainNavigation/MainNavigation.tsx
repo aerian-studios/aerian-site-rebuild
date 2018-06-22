@@ -1,5 +1,5 @@
+import { Link } from "gatsby";
 import * as React from "react";
-import { Link } from "react-router-dom";
 
 import { PageList, PageListNode, PagesListData } from "../../types/data";
 import * as styles from "./MainNavigation.scss";

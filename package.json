@@ -29,8 +29,9 @@
         "build": "gatsby build",
         "start": "gatsby develop",
         "test": "jest",
+        "updateSnapshot": "jest --updateSnapshot",
         "storybook": "start-storybook -p 9001 -c .storybook",
-        "precommit": "lint-staged && jest --ci --onlyChanged",
+        "precommit": "lint-staged",
         "prepush": "jest --ci"
     },
     "devDependencies": {
@@ -63,11 +64,13 @@
     "lint-staged": {
         "*.{js,jsx,css,md,scss}": [
             "prettier --write",
-            "git add"
+            "git add",
+            "jest --ci --findRelatedTests"
         ],
         "*.{ts,tsx}": [
-            "tslint --project . --fix",
-            "git add"
+            "tslint --fix",
+            "git add",
+            "jest --ci --findRelatedTests"
         ]
     },
     "repository": {

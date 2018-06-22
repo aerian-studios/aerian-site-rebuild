@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroBlock renders correctly 1`] = `
+<header
+  className="block--hero block--full block block--dark_skin layout-grid"
+>
+  Hero block
+</header>
+`;

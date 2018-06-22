@@ -30,8 +30,8 @@
         "start": "gatsby develop",
         "test": "jest",
         "storybook": "start-storybook -p 9001 -c .storybook",
-        "precommit": "lint-staged",
-        "prepush": "npm test"
+        "precommit": "lint-staged && jest --ci --onlyChanged",
+        "prepush": "jest --ci"
     },
     "devDependencies": {
         "@storybook/addon-actions": "^3.4.8",

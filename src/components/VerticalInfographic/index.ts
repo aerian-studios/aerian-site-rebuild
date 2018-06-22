@@ -1,0 +1,1 @@
+export { VerticalInfographic } from "./VerticalInfographic";

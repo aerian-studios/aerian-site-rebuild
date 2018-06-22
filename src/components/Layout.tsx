@@ -1,4 +1,5 @@
-import { graphql, Link, StaticQuery } from "gatsby";
+import { Link, StaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
 import Helmet from "react-helmet";
 
@@ -10,10 +11,9 @@ import "../scss/base-theme.scss";
 
 // logo
 import * as logo from "../assets/furniture/logo.svg";
-import { PagesListData } from "../types/data";
+// import { PagesListData } from "../types/data";
 
 interface Props {
-    children: React.ReactChildren;
     className?: string;
     // this comes from the router
     location: {
@@ -43,7 +43,7 @@ const Layout: React.SFC<Props> = ({ children, className, location }) => (
                 }
             }
         `}
-        render={(data: PagesListData["data"]) => {
+        render={data => {
             return (
                 <div className={`layout-container ${className}`}>
                     <Helmet

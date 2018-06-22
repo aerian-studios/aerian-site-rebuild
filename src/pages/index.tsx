@@ -5,7 +5,6 @@ import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 import Layout from "../components/Layout";
 
 interface Props {
-    children?: React.ReactChildren;
     location: {
         pathname: string;
     };

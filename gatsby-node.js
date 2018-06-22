@@ -114,3 +114,32 @@ exports.createPages = ({ actions, graphql }) => {
 //         });
 //     }
 // };
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+    switch (stage) {
+        case `build-javascript`:
+            actions.setWebpackConfig({
+                module: {
+                    rules: [
+                        {
+                            test: /\.mjs$/,
+                            include: /node_modules/,
+                            type: "javascript/auto"
+                        }
+                    ]
+                },
+                resolve: {
+                    extensions: [
+                        ".webpack.js",
+                        ".web.js",
+                        ".mjs",
+                        ".js",
+                        ".json",
+                        ".jsx",
+                        ".ts",
+                        ".tsx"
+                    ]
+                }
+            });
+    }
+};

@@ -35,21 +35,11 @@ const Layout: React.SFC<Props> = ({ children, className, location }) => (
                     }
                 }
             }
-            query LayoutQuery {
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
-            }
         `}
         render={data => {
             return (
                 <div className={`layout-container ${className}`}>
-                    <Helmet
-                        titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-                        defaultTitle={data.site.siteMetadata.title}
-                    >
+                    <Helmet defaultTitle="Aerian Studios">
                         <html lang="en" />
                         <meta charSet="utf-8" />
                         <meta name="description" content="SET ME PLEASE" />
@@ -65,7 +55,9 @@ const Layout: React.SFC<Props> = ({ children, className, location }) => (
                                 </Link>
                             </div>
                         </PageNavBar>
-                        <div id="content-wrapper">{children}</div>
+                        <main id="content-wrapper" className="layout-grid">
+                            {children}
+                        </main>
                     </ErrorBoundary>
                 </div>
             );

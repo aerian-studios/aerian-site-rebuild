@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientLogo renders correctly 1`] = `
+<div
+  className="component myClass"
+  style={
+    Object {
+      "width": "50%",
+    }
+  }
+>
+  <figure
+    className="figure"
+  >
+    <img
+      alt="Family enjoying the beach circa 1950s"
+      className="imgResponsive"
+      src="https://i.imgur.com/BOOPM8n.jpg"
+    />
+  </figure>
+</div>
+`;

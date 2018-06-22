@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
+import { PageList, PageListNode, PagesListData } from "../../types/data";
 import * as styles from "./MainNavigation.scss";
-import { PagesListData, PageList, PageListNode } from "../../types/data";
 
 interface Props {
     style?: React.CSSProperties;
@@ -16,13 +16,18 @@ const makePageLink = (
     path: string,
     title: string,
     activePath: string
-) => (
-    <Link to={path} key={`menu-${id}`}>
-        <span className={activePath === path ? styles.activePath : ""}>
-            {title}
-        </span>
-    </Link>
-);
+) => {
+    const classes =
+        activePath === path
+            ? [styles.activePath, "menu-item"].join(" ")
+            : "menu-item";
+
+    return (
+        <Link to={path} key={`menu-${id}`}>
+            <span className={classes}>{title}</span>
+        </Link>
+    );
+};
 
 const constructPages = (pageList: PageList["edges"], activePath: string) => {
     return pageList.map((page: PageListNode) => {

@@ -1,0 +1,1 @@
+export { HeroBlock } from "./HeroBlock";

@@ -5,8 +5,8 @@ const { createFilePath } = require("gatsby-source-filesystem");
 // called after the Gatsby bootstrap is finished so you have
 // access to any information necessary to programmatically
 // create pages.
-exports.createPages = ({ boundActionCreators, graphql }) => {
-    const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+    const { createPage } = actions;
 
     /**
      * Work out the necessary to generate disntinct pages
@@ -101,8 +101,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
 };
 
-// exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-//     const { createNodeField } = boundActionCreators;
+// exports.onCreateNode = ({ node, actions, getNode }) => {
+//     const { createNodeField } = actions;
 //     fmImagesToRelative(node);
 
 //     if (node.internal.type.test(/Json$/)) {

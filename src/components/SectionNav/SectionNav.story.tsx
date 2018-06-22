@@ -1,9 +1,10 @@
 import * as React from "react";
 
+import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
-
 import { SectionNav } from "./SectionNav";
 
-storiesOf("SectionNav", module).add("Default", () => (
-    <SectionNav className="myClass" />
-));
+storiesOf("SectionNav", module).add(
+    "Default",
+    withInfo({ inline: true })(() => <SectionNav className="myClass" />)
+);

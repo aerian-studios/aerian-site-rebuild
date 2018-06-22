@@ -4,11 +4,14 @@ to: src/components/<%= h.inflection.undasherize(name) %>/<%= h.inflection.undash
 <% const comp = h.inflection.undasherize(name) -%>
 import * as React from "react";
 
+import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 
 import { <%= comp %> } from "./index";
 
 
-storiesOf("<%= comp %>", module).add("Default", () => (
+storiesOf("<%= comp %>", module).add(
+    "Default", 
+    withInfo({ inline: true })(() => (
     <<%= comp %>  className="myClass" />
-));
+)));

@@ -38,10 +38,11 @@ const createNavItems = (
     sections: Props["sections"],
     keyConsts: Props["keyConsts"],
     onNavigation: Props["onNavigation"]
-): React.ReactElement<HTMLAnchorElement>[] => {
+): Array<React.ReactElement<HTMLAnchorElement>> => {
     const nav = [];
     const navItemWrapper = getKeyWrapper(keyConsts, onNavigation);
 
+    // tslint:disable-next-line:forin
     for (const itemKey in sections) {
         const entry = sections[itemKey];
         console.log(itemKey, keyConsts[itemKey]);

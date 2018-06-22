@@ -35,6 +35,7 @@
         "test": "jest",
         "updateSnapshot": "jest --updateSnapshot",
         "storybook": "start-storybook -p 9001 -c .storybook",
+        "storybook-build": "build-storybook -c .storybook -o docs",
         "precommit": "lint-staged",
         "prepush": "jest --ci",
         "docz": "docz dev"

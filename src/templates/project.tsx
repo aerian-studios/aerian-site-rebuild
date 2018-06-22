@@ -1,11 +1,11 @@
 import * as React from "react";
 
-import Content, { HTMLContent } from "../components/GenericContent";
-import { HeroBlock } from "../components/HeroBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
+import Content, { HTMLContent } from "../components/GenericContent";
+import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 
-import { ImageSharpSizes } from "../types/data";
 import { SectionNav } from "../components/SectionNav/";
+import { ImageSharpSizes } from "../types/data";
 
 interface block {
     description: string;

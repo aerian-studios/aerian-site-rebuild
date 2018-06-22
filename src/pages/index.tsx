@@ -1,7 +1,6 @@
 import * as React from "react";
-import Link from "gatsby-link";
-import { HeroBlock } from "../components/HeroBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
+import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 
 interface Props {
     data: any;

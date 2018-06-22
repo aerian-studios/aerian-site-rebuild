@@ -1,9 +1,9 @@
 import * as React from "react";
 
-import { HeroBlock } from "../components/HeroBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
+import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 
-import { ImageSharpSizes, ImageSharp, PageSection } from "../types/data";
+import { ImageSharp, ImageSharpSizes, PageSection } from "../types/data";
 
 interface Props {
     title: string;

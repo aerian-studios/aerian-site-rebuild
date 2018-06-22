@@ -1,22 +1,11 @@
----
-to: src/components/<%= h.inflection.undasherize(name) %>/<%= h.inflection.undasherize(name) %>Test.tsx
----
-<% const comp = h.inflection.undasherize(name) -%>
-/// <reference types="@types/jest" />
-import * as React from "react";
-
-import * as renderer from "react-test-renderer";
-
-import { <%= comp %> } from "./index";
+--- to: src/components/
+<%= h.inflection.undasherize(name) %>/
+    <%= h.inflection.undasherize(name) %>.test.tsx ---
+        <% const comp = h.inflection.undasherize(name) -%>
+            ///
+            <reference types="@types/jest" /> import * as React from "react"; import * as renderer from "react-test-renderer"; import {
+            <%= comp %> } from "./index"; describe("
 
 
-describe("<%= comp %>", () => (
-    it("renders correctly", () => {
-        const tree = renderer
-            .create(<<%= comp %> className="myClass" />
-            )
-            .toJSON();
-        expect(tree).toMatchSnapshot();
-    })
-));
-
+                <%= comp %>", () => ( it("renders correctly", () => { const tree = renderer .create(
+                    <<%=c omp %> className="myClass" /> ) .toJSON(); expect(tree).toMatchSnapshot(); }) ));

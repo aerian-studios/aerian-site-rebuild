@@ -19,7 +19,7 @@
         "netlify-cms": "^1.9.2",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
-        "react-helmet": "next"
+        "react-helmet": "^5.2.0"
     },
     "keywords": [
         "gatsby"

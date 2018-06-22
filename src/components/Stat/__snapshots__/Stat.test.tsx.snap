@@ -1,7 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stat renders correctly 1`] = `
-<div
-  className="base myClass"
-/>
+<figure
+  className="stat  stat"
+>
+  <span
+    className="statNumber statNumber"
+  >
+    <strong>
+      477455
+    </strong>
+  </span>
+  <span
+    className="statDescription statDescription"
+  >
+    Total places booked 
+  </span>
+</figure>
 `;

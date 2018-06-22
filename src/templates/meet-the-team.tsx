@@ -1,4 +1,4 @@
-import { graphql, StaticQuery } from "gatsby";
+import { StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
@@ -50,7 +50,7 @@ export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
 };
 
 // Make type interface
-const MeeTheTeamPage: React.SFC<graphData> = props => (
+const MeeTheTeamPage: React.SFC = props => (
     <StaticQuery
         query={graphql`
             query MeeTheTeamPage($id: String!) {

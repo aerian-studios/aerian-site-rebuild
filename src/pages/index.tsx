@@ -26,9 +26,9 @@ const IndexPage: React.SFC<Props> = props => (
         render={data => {
             return (
                 <Layout location={props.location}>
-                    <main className="layout-grid">
+                    <section id="section-index">
                         <div className="block--full">This is the home page</div>
-                    </main>
+                    </section>
                 </Layout>
             );
         }}

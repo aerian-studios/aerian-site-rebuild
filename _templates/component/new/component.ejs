@@ -32,7 +32,7 @@ export class <%= comp %> extends React.PureComponent<Props, State> {
 }
 <% } else { %>
 export const <%= comp %>: React.SFC<Props> = ({ children, style, className }) => (
-    <div className={[styles.base, className].join(" ")} style={style}>
+    <div className={[styles.component, className].join(" ")} style={style}>
         {children}
     </div>
 );

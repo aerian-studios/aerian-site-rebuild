@@ -28,7 +28,7 @@
     "scripts": {
         "build": "gatsby build",
         "start": "gatsby develop",
-        "test": "jest",
+        "test": "jest --config jest.config.js --no-cache",
         "updateSnapshot": "jest --updateSnapshot",
         "storybook": "start-storybook -p 9001 -c .storybook",
         "precommit": "lint-staged",

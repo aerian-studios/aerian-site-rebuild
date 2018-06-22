@@ -1,10 +1,11 @@
 import * as React from "react";
+import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import Layout from "../components/layout";
 
-const NotFoundPage: React.SFC = () => (
-    <div>
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
+export default props => (
+    <Layout>
+        <HeroBlock>
+            <h1>NOT FOUND</h1>
+        </HeroBlock>
+    </Layout>
 );
-
-export default NotFoundPage;

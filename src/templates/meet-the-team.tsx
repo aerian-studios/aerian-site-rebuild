@@ -1,4 +1,4 @@
-import { StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";

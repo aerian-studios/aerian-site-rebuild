@@ -1,4 +1,4 @@
-import { StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
@@ -114,8 +114,7 @@ const createCorrectMediumComponent = image => {
 };
 
 // Make type interface
-const ProjectPage: React.SFC = ({ data }) => {
-    const project = data.projectsJson;
+const ProjectPage: React.SFC = props => {
     return (
         <StaticQuery
             query={graphql`
@@ -169,6 +168,7 @@ const ProjectPage: React.SFC = ({ data }) => {
                 }
             `}
             render={data => {
+                const project = data.projectsJson;
                 return (
                     <ProjectPageTemplate
                         pageTitle1={project.titleLineOne}

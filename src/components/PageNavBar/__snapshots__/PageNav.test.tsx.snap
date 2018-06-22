@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageNavBar renders correctly 1`] = `
+<header
+  className="component myClass"
+>
+  <nav
+    className="component "
+    id="menu-main"
+  />
+</header>
+`;

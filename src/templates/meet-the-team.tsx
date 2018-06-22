@@ -1,3 +1,4 @@
+import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
@@ -49,23 +50,53 @@ export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
 };
 
 // Make type interface
-const MeeTheTeamPage: React.SFC<graphData> = ({ data }) => {
-    return (
-        <MeeTheTeamPageTemplate
-            title={data.pageTitle || ""}
-            heroImage={
-                !data.heroImage || typeof data.heroImage === "string"
-                    ? data.heroImage || ""
-                    : data.heroImage.childImageSharp.sizes
+const MeeTheTeamPage: React.SFC<graphData> = props => (
+    <StaticQuery
+        query={graphql`
+            query MeeTheTeamPage($id: String!) {
+                pagesJson(id: { eq: $id }) {
+                    # heroImage
+                    # pageTitle
+                    sections {
+                        title
+                        image
+                        smallImage
+                        subtitle
+                        blurb
+                    }
+                    staff {
+                        name
+                        jobTitle
+                        live
+                        imageNormal
+                        imageFunny
+                        description
+                        fact
+                        skills
+                    }
+                }
             }
-            staff={data.staff}
-            sections={data.sections}
-        />
-    );
-};
+        `}
+        render={(data: GraphData["data"]) => {
+            return (
+                <MeeTheTeamPageTemplate
+                    title={data.pageTitle || ""}
+                    heroImage={
+                        !data.heroImage || typeof data.heroImage === "string"
+                            ? data.heroImage || ""
+                            : data.heroImage.childImageSharp.sizes
+                    }
+                    staff={data.staff}
+                    sections={data.sections || []}
+                />
+            );
+        }}
+    />
+);
+
 export default MeeTheTeamPage;
 
-interface graphData {
+interface GraphData {
     data: {
         heroImage?: string | ImageSharp;
         pageTitle?: string;
@@ -73,28 +104,3 @@ interface graphData {
         staff: Staff[];
     };
 }
-export const meeTheTeamPageQuery: graphData = graphql`
-    query MeeTheTeamPage($id: String!) {
-        pagesJson(id: { eq: $id }) {
-            # heroImage
-            # pageTitle
-            sections {
-                title
-                image
-                smallImage
-                subtitle
-                blurb
-            }
-            staff {
-                name
-                jobTitle
-                live
-                imageNormal
-                imageFunny
-                description
-                fact
-                skills
-            }
-        }
-    }
-`;

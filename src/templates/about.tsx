@@ -3,6 +3,9 @@ import * as React from "react";
 interface Props {
     style?: React.CSSProperties;
     className?: string;
+    location: {
+        pathname: string;
+    };
 }
 
 export const about: React.SFC<Props> = ({
@@ -11,7 +14,7 @@ export const about: React.SFC<Props> = ({
     className,
     location
 }) => (
-    <Layout location={props.location}>
+    <Layout location={location}>
         <main className={[className, "layout-grid"].join(" ")} style={style}>
             {children}
         </main>

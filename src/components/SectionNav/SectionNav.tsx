@@ -1,10 +1,11 @@
 import * as React from "react";
 
+import { PageSection } from "../../types/data";
 import * as styles from "./SectionNav.scss";
 
 interface Props {
-    keyConsts: {};
-    sections: any;
+    keyConsts: { [key: string]: string };
+    sections: PageSection[];
     style?: React.CSSProperties;
     className?: string;
     onNavigation: (itemKey: string) => void;

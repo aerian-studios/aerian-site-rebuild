@@ -38,7 +38,7 @@
     "devDependencies": {
         "@storybook/addon-actions": "^3.4.8",
         "@storybook/addon-info": "^3.4.8",
-        "@storybook/react": "^3.4.8",
+        "@storybook/react": "^4.0.0-alpha.10",
         "@types/jest": "^23.1.1",
         "@types/react-test-renderer": "^16.0.1",
         "@types/storybook__addon-actions": "^3.0.3",

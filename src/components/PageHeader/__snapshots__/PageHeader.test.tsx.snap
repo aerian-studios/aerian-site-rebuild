@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader renders correctly 1`] = `
+<header
+  className="block block--full layout-grid myClass"
+  id="page-header"
+  style={Object {}}
+/>
+`;

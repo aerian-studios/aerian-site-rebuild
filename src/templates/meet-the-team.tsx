@@ -2,7 +2,7 @@ import { StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { ImageSharp, ImageSharpSizes, PageSection, Staff } from "../types/data";
 
@@ -20,7 +20,7 @@ export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
 }) => {
     return (
         <section className="section section--about">
-            <HeroBlock>
+            <PageHeader>
                 {typeof heroImage === "string" ? (
                     // Cover the situation where there is no imageSharp (e.g. in the cms)
                     <img
@@ -38,8 +38,9 @@ export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
                 )}
                 <div className="block--hero__content-wrap">
                     <h1 className="block--hero__title">{title}</h1>
+                    <button>Hello</button>
                 </div>
-            </HeroBlock>
+            </PageHeader>
             <div className="block--full block layout-grid">
                 {
                     // add staff

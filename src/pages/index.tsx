@@ -1,8 +1,7 @@
 import { StaticQuery } from "gatsby";
 import * as React from "react";
-import { FullScreenMedia } from "../components/FullScreenMedia";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 import Layout from "../components/Layout";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
 interface Props {
     location: {
@@ -27,7 +26,9 @@ const IndexPage: React.SFC<Props> = props => (
             return (
                 <Layout location={props.location}>
                     <section id="section-index">
-                        <div className="block--full">This is the home page</div>
+                        <PageHeader>
+                            <h1>This is the home page</h1>
+                        </PageHeader>
                     </section>
                 </Layout>
             );

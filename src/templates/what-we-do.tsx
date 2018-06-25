@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { ImageSharp, ImageSharpSizes, PageSection } from "../types/data";
 
@@ -17,7 +17,7 @@ export const WhatWeDoPageTemplate: React.SFC<Props> = ({
 }) => {
     return (
         <section className="section section--about">
-            <HeroBlock>
+            <PageHeader>
                 {typeof heroImage === "string" ? (
                     // Cover the situation where there is no imageSharp (e.g. in the cms)
                     <img
@@ -36,7 +36,7 @@ export const WhatWeDoPageTemplate: React.SFC<Props> = ({
                 <div className="block--hero__content-wrap">
                     <h1 className="block--hero__title">{title}</h1>
                 </div>
-            </HeroBlock>
+            </PageHeader>
             <div className="block--full block layout-grid">
                 {sections.map(section => {
                     // Make componenets for here

@@ -2,8 +2,7 @@ import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import Content, { HTMLContent } from "../components/GenericContent";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { SectionNav } from "../components/SectionNav/";
 import { ImageSharpSizes } from "../types/data";
@@ -71,7 +70,7 @@ export const ProjectPageTemplate: React.SFC<Props> = props => {
 
     return (
         <section className="section section--about">
-            <HeroBlock>
+            <PageHeader>
                 {typeof heroImage === "string" ? (
                     // Cover the situation where there is no imageSharp (e.g. in the cms)
                     !heroVideo ? (
@@ -98,7 +97,7 @@ export const ProjectPageTemplate: React.SFC<Props> = props => {
                         {pageTitle2}
                     </h1>
                 </div>
-            </HeroBlock>
+            </PageHeader>
             <SectionNav
                 keyConsts={keys}
                 sections={props}

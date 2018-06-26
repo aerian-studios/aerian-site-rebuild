@@ -6,7 +6,8 @@ import Content, { HTMLContent } from "../components/GenericContent";
 import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 
 import { SectionNav } from "../components/SectionNav/";
-import { ImageSharpSizes } from "../types/data";
+import { isImageSharp } from "../lib/helpers";
+import { ImageSharp, ImageSharpSizes } from "../types/data";
 
 interface Block {
     description: string;
@@ -99,18 +100,18 @@ export const ProjectPageTemplate: React.SFC<Props> = props => {
                     </h1>
                 </div>
             </HeroBlock>
-            <SectionNav
+            {/* <SectionNav
                 keyConsts={keys}
                 sections={props}
                 onNavigation={onNavigation}
-            />
+            /> */}
             <div className="block--full block layout-grid" />
         </section>
     );
 };
 
-const createCorrectMediumComponent = image => {
-    return typeof image === "string" ? image : image.childImageSharp.sizes;
+const createCorrectMediumComponent = (image: ImageSharp | string) => {
+    return isImageSharp(image) ? image.childImageSharp.sizes : image;
 };
 
 // Make type interface

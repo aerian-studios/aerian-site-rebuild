@@ -1,4 +1,4 @@
-import { StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
@@ -12,7 +12,15 @@ interface Props {
     staff: Staff[];
     heroImage: ImageSharpSizes | string;
 }
-export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
+
+interface GraphData {
+    heroImage?: string | ImageSharp;
+    pageTitle?: string;
+    sections?: PageSection[];
+    staff: Staff[];
+}
+
+export const MeetTheTeamPageTemplate: React.SFC<Props> = ({
     title,
     sections,
     staff,
@@ -50,20 +58,11 @@ export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
 };
 
 // Make type interface
-const MeeTheTeamPage: React.SFC = props => (
+const MeetTheTeamPage: React.SFC<GraphData> = props => (
     <StaticQuery
         query={graphql`
-            query MeeTheTeamPage($id: String!) {
+            query MeetTheTeamPage($id: String!) {
                 pagesJson(id: { eq: $id }) {
-                    # heroImage
-                    # pageTitle
-                    sections {
-                        title
-                        image
-                        smallImage
-                        subtitle
-                        blurb
-                    }
                     staff {
                         name
                         jobTitle
@@ -77,9 +76,9 @@ const MeeTheTeamPage: React.SFC = props => (
                 }
             }
         `}
-        render={(data: GraphData["data"]) => {
+        render={(data: GraphData) => {
             return (
-                <MeeTheTeamPageTemplate
+                <MeetTheTeamPageTemplate
                     title={data.pageTitle || ""}
                     heroImage={
                         !data.heroImage || typeof data.heroImage === "string"
@@ -94,13 +93,4 @@ const MeeTheTeamPage: React.SFC = props => (
     />
 );
 
-export default MeeTheTeamPage;
-
-interface GraphData {
-    data: {
-        heroImage?: string | ImageSharp;
-        pageTitle?: string;
-        sections?: PageSection[];
-        staff: Staff[];
-    };
-}
+export default MeetTheTeamPage;

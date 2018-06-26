@@ -1,5 +1,5 @@
+import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
-
 import { FullScreenMedia } from "../components/FullScreenMedia";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
@@ -47,41 +47,42 @@ export const WhatWeDoPageTemplate: React.SFC<Props> = ({
 };
 
 // Make type interface
-const WhatWeDoPage: React.SFC<graphData> = ({ data }) => {
+const WhatWeDoPage: React.SFC = ({ children }) => {
     return (
-        <WhatWeDoPageTemplate
-            title={data.pageTitle || ""}
-            sections={data.sections || []}
-            heroImage={
-                !data.heroImage || typeof data.heroImage === "string"
-                    ? data.heroImage || ""
-                    : data.heroImage.childImageSharp.sizes
-            }
+        <StaticQuery
+            query={graphql`
+                query WhatWeDoPage($id: String!) {
+                    pagesJson(id: { eq: $id }) {
+                        # heroImage
+                        # pageTitle
+                        sections {
+                            title
+                            image
+                            smallImage
+                            subtitle
+                            blurb
+                        }
+                    }
+                }
+            `}
+            render={(data: WWDGraphData) => (
+                <WhatWeDoPageTemplate
+                    title={data.pageTitle || ""}
+                    sections={data.sections || []}
+                    heroImage={
+                        !data.heroImage || typeof data.heroImage === "string"
+                            ? data.heroImage || ""
+                            : data.heroImage.childImageSharp.sizes
+                    }
+                />
+            )}
         />
     );
 };
 export default WhatWeDoPage;
 
-interface graphData {
-    data: {
-        heroImage?: ImageSharp | string;
-        pageTitle?: string;
-        sections?: PageSection[];
-    };
+interface WWDGraphData {
+    heroImage?: ImageSharp | string;
+    pageTitle?: string;
+    sections?: PageSection[];
 }
-
-export const whatWeDoPageQuery: graphData = graphql`
-    query WhatWeDoPage($id: String!) {
-        pagesJson(id: { eq: $id }) {
-            # heroImage
-            # pageTitle
-            sections {
-                title
-                image
-                smallImage
-                subtitle
-                blurb
-            }
-        }
-    }
-`;

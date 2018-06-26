@@ -17,7 +17,7 @@ const wrapNavItem = (
     onNavigation: Props["onNavigation"]
 ) => (
     <a
-        className={styles.sectionNavItem}
+        // className={styles.sectionNavItem}
         href={`#${itemKey}`}
         key={`sectionnav-${itemKey}`}
         onClick={() => {

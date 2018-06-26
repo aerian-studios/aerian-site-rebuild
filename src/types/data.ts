@@ -47,6 +47,12 @@ export interface PageSection {
     blurb: string;
 }
 
+export interface StaffPage {
+    title: string;
+    path: string;
+    staff: Staff[];
+}
+
 export interface Staff {
     name: string;
     jobTitle: string;

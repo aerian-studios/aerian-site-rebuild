@@ -1,11 +1,11 @@
 import * as React from "react";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 import Layout from "../components/Layout";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
 export default () => (
     <Layout location={location}>
-        <HeroBlock>
+        <PageHeader>
             <h1>NOT FOUND</h1>
-        </HeroBlock>
+        </PageHeader>
     </Layout>
 );

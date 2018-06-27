@@ -36,6 +36,7 @@ const Layout: React.SFC<Props> = ({ children, className, location }) => (
             }
         `}
         render={data => {
+            console.log(data);
             return (
                 <div className={`layout-container ${className}`}>
                     <Helmet defaultTitle="Aerian Studios">

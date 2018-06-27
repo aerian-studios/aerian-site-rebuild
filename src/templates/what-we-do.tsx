@@ -4,7 +4,7 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { isImageSharp } from "../lib/helpers";
-import { ImageSharp, ImageSharpSizes, PageSection } from "../types/data";
+import { ImageSharp, PageSection } from "../types/data";
 
 interface GraphData {
     pagesJson: {
@@ -51,7 +51,7 @@ export const WhatWeDoPage: React.SFC<Props> = props => {
     );
 };
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
     query WhatWeDoPage($id: String!) {
         pagesJson(id: { eq: $id }) {
             # heroImage

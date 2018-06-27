@@ -20,7 +20,7 @@ interface GraphData {
     };
 }
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
     query MeetTheTeamPage($id: String!) {
         pagesJson(id: { eq: $id }) {
             title

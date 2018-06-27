@@ -1,24 +1,34 @@
-import { graphql, StaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
+import { isImageSharp } from "../lib/helpers";
 import { ImageSharp, ImageSharpSizes, PageSection } from "../types/data";
 
-interface Props {
-    title: string;
-    sections: PageSection[];
-    heroImage: ImageSharpSizes | string;
+interface GraphData {
+    pagesJson: {
+        heroImage?: ImageSharp | string;
+        title?: string;
+        sections?: PageSection[];
+    };
 }
-export const WhatWeDoPageTemplate: React.SFC<Props> = ({
-    title,
-    sections,
-    heroImage
-}) => {
+
+interface Props {
+    data: GraphData;
+}
+export const WhatWeDoPage: React.SFC<Props> = props => {
+    const { title, sections, heroImage } = props.data.pagesJson;
     return (
         <section className="section section--about">
             <PageHeader>
-                {typeof heroImage === "string" ? (
+                {heroImage && isImageSharp(heroImage) ? (
+                    <FullScreenMedia
+                        image={heroImage.childImageSharp.sizes}
+                        altText={title}
+                        video=""
+                    />
+                ) : (
                     // Cover the situation where there is no imageSharp (e.g. in the cms)
                     <img
                         className="full-screen"
@@ -26,63 +36,74 @@ export const WhatWeDoPageTemplate: React.SFC<Props> = ({
                         alt=""
                         aria-hidden="true"
                     />
-                ) : (
-                    <FullScreenMedia
-                        image={heroImage}
-                        altText={title}
-                        video=""
-                    />
                 )}
                 <div className="block--hero__content-wrap">
                     <h1 className="block--hero__title">{title}</h1>
                 </div>
             </PageHeader>
             <div className="block--full block layout-grid">
-                {sections.map(section => {
-                    // Make componenets for here
-                })}
+                {sections &&
+                    sections.map(section => {
+                        // Make componenets for here
+                    })}
             </div>
         </section>
     );
 };
 
-// Make type interface
-const WhatWeDoPage: React.SFC = ({ children }) => {
-    return (
-        <StaticQuery
-            query={graphql`
-                query WhatWeDoPage($id: String!) {
-                    pagesJson(id: { eq: $id }) {
-                        # heroImage
-                        # pageTitle
-                        sections {
-                            title
-                            image
-                            smallImage
-                            subtitle
-                            blurb
-                        }
-                    }
-                }
-            `}
-            render={(data: WWDGraphData) => (
-                <WhatWeDoPageTemplate
-                    title={data.pageTitle || ""}
-                    sections={data.sections || []}
-                    heroImage={
-                        !data.heroImage || typeof data.heroImage === "string"
-                            ? data.heroImage || ""
-                            : data.heroImage.childImageSharp.sizes
-                    }
-                />
-            )}
-        />
-    );
-};
-export default WhatWeDoPage;
+const pageQuery = graphql`
+    query WhatWeDoPage($id: String!) {
+        pagesJson(id: { eq: $id }) {
+            # heroImage
+            # pageTitle
+            title
+            sections {
+                title
+                image
+                smallImage
+                subtitle
+                blurb
+            }
+        }
+    }
+`;
 
-interface WWDGraphData {
-    heroImage?: ImageSharp | string;
-    pageTitle?: string;
-    sections?: PageSection[];
-}
+// Make type interface
+// const WhatWeDoPage: React.SFC = ({ children }) => {
+//     return (
+//         <StaticQuery
+//             query={graphql`
+//                 query WhatWeDoPage {
+//                     pagesJson(path: { eq: "/what-we-do" }) {
+//                         # heroImage
+//                         # pageTitle
+//                         title
+//                         sections {
+//                             title
+//                             image
+//                             smallImage
+//                             subtitle
+//                             blurb
+//                         }
+//                     }
+//                 }
+//             `}
+//             render={({ pagesJson: data }: { pagesJson: GraphData }) => {
+//                 console.log(data);
+//                 return (
+//                     <WhatWeDoPageTemplate
+//                         title={data.title || ""}
+//                         sections={data.sections || []}
+//                         heroImage={
+//                             !data.heroImage ||
+//                             typeof data.heroImage === "string"
+//                                 ? data.heroImage || ""
+//                                 : data.heroImage.childImageSharp.sizes
+//                         }
+//                     />
+//                 );
+//             }}
+//         />
+//     );
+// };
+export default WhatWeDoPage;

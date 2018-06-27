@@ -18,6 +18,7 @@ interface Props {
     data: GraphData;
 }
 export const WhatWeDoPage: React.SFC<Props> = props => {
+    console.log(props);
     const { title, sections, heroImage } = props.data.pagesJson;
     return (
         <section className="section section--about">
@@ -43,9 +44,13 @@ export const WhatWeDoPage: React.SFC<Props> = props => {
             </PageHeader>
             <div className="block--full block layout-grid">
                 {sections &&
-                    sections.map(section => {
-                        // Make componenets for here
-                    })}
+                    sections.map(section => (
+                        <section>
+                            <h4>{section.title}</h4>
+                            <h5>{section.subtitle}</h5>
+                            <p>{section.blurb}</p>
+                        </section>
+                    ))}
             </div>
         </section>
     );
@@ -68,42 +73,4 @@ export const pageQuery = graphql`
     }
 `;
 
-// Make type interface
-// const WhatWeDoPage: React.SFC = ({ children }) => {
-//     return (
-//         <StaticQuery
-//             query={graphql`
-//                 query WhatWeDoPage {
-//                     pagesJson(path: { eq: "/what-we-do" }) {
-//                         # heroImage
-//                         # pageTitle
-//                         title
-//                         sections {
-//                             title
-//                             image
-//                             smallImage
-//                             subtitle
-//                             blurb
-//                         }
-//                     }
-//                 }
-//             `}
-//             render={({ pagesJson: data }: { pagesJson: GraphData }) => {
-//                 console.log(data);
-//                 return (
-//                     <WhatWeDoPageTemplate
-//                         title={data.title || ""}
-//                         sections={data.sections || []}
-//                         heroImage={
-//                             !data.heroImage ||
-//                             typeof data.heroImage === "string"
-//                                 ? data.heroImage || ""
-//                                 : data.heroImage.childImageSharp.sizes
-//                         }
-//                     />
-//                 );
-//             }}
-//         />
-//     );
-// };
 export default WhatWeDoPage;

@@ -2,11 +2,16 @@ import { graphql } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
+import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { SectionNav } from "../components/SectionNav/";
 import { isImageSharp } from "../lib/helpers";
-import { ImageSharp, ImageSharpSizes } from "../types/data";
+import {
+    ImageSharp,
+    ImageSharpSizes,
+    ReactRouterLocation
+} from "../types/data";
 
 interface Block {
     description: string;
@@ -19,6 +24,7 @@ interface Block {
 
 interface Props {
     data: GraphData;
+    location: ReactRouterLocation;
 }
 
 interface GraphData {
@@ -75,42 +81,47 @@ export const ProjectPage: React.SFC<Props> = props => {
         id
     } = props.data.projectsJson;
     return (
-        <section className="section section--about">
-            <PageHeader>
-                {typeof heroImage === "string" ? (
-                    // Cover the situation where there is no imageSharp (e.g. in the cms)
-                    !heroVideo ? (
-                        <img
-                            className="full-screen"
-                            src={heroImage}
-                            alt=""
-                            aria-hidden="true"
-                        />
+        <Layout location={props.location}>
+            <section className="section section--about">
+                <PageHeader>
+                    {typeof heroImage === "string" ? (
+                        // Cover the situation where there is no imageSharp (e.g. in the cms)
+                        !heroVideo ? (
+                            <img
+                                className="full-screen"
+                                src={heroImage}
+                                alt=""
+                                aria-hidden="true"
+                            />
+                        ) : (
+                            <FullScreenMedia
+                                image={heroImage}
+                                video={heroVideo}
+                            />
+                        )
                     ) : (
-                        <FullScreenMedia image={heroImage} video={heroVideo} />
-                    )
-                ) : (
-                    <FullScreenMedia
-                        image={heroImage}
-                        aria-labelled-by="page-title"
-                        video=""
-                    />
-                )}
-                <div className="block--hero__content-wrap">
-                    <h1 id="page-title" className="block--hero__title">
-                        {pageTitle1}
-                        <br />
-                        {pageTitle2}
-                    </h1>
-                </div>
-            </PageHeader>
-            {/* <SectionNav
+                        <FullScreenMedia
+                            image={heroImage}
+                            aria-labelled-by="page-title"
+                            video=""
+                        />
+                    )}
+                    <div className="block--hero__content-wrap">
+                        <h1 id="page-title" className="block--hero__title">
+                            {pageTitle1}
+                            <br />
+                            {pageTitle2}
+                        </h1>
+                    </div>
+                </PageHeader>
+                {/* <SectionNav
                 keyConsts={keys}
                 sections={props}
                 onNavigation={onNavigation}
             /> */}
-            <div className="block--full block layout-grid" />
-        </section>
+                <div className="block--full block layout-grid" />
+            </section>
+        </Layout>
     );
 };
 

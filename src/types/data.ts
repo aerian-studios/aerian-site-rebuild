@@ -95,3 +95,12 @@ export interface Staff {
     fact: string;
     skills: string[];
 }
+
+export interface ReactRouterLocation {
+    action: string;
+    hash: string;
+    key: string;
+    pathname: string;
+    search: string;
+    state: null | string;
+}

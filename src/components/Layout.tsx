@@ -60,18 +60,20 @@ const Layout: React.SFC<Props> = ({
                         <title>{title}</title>
                     </Helmet>
                     <ErrorBoundary>
-                        <PageNavBar
-                            pages={pages}
-                            activePath={location.pathname}
-                        >
-                            <div className="{}">
-                                <Link to="/">
-                                    <svg className="{}">
-                                        <use xlinkHref={`#${logo.id}`} />
-                                    </svg>
-                                </Link>
-                            </div>
-                        </PageNavBar>
+                        {pages ? (
+                            <PageNavBar
+                                pages={pages}
+                                activePath={location.pathname}
+                            >
+                                <div className="{}">
+                                    <Link to="/">
+                                        <svg className="{}">
+                                            <use xlinkHref={`#${logo.id}`} />
+                                        </svg>
+                                    </Link>
+                                </div>
+                            </PageNavBar>
+                        ) : null}
                         <main id="content-wrapper" className="layout-grid">
                             {children}
                         </main>

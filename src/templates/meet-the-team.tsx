@@ -4,32 +4,47 @@ import * as React from "react";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
-import { ImageSharp, ImageSharpSizes, PageSection, Staff } from "../types/data";
+import { isImageSharp } from "../lib/helpers";
+import { MeetTheTeam } from "../types/data";
 
 interface Props {
-    title: string;
-    sections: PageSection[];
-    staff: Staff[];
-    heroImage: ImageSharpSizes | string;
+    data: GraphData;
 }
 
 interface GraphData {
-    heroImage?: string | ImageSharp;
-    pageTitle?: string;
-    sections?: PageSection[];
-    staff: Staff[];
+    pagesJson: MeetTheTeam;
 }
 
-export const MeetTheTeamPageTemplate: React.SFC<Props> = ({
-    title,
-    sections,
-    staff,
-    heroImage
-}) => {
+export const pageQuery = graphql`
+    query MeetTheTeamPage($id: String!) {
+        pagesJson(id: { eq: $id }) {
+            ...PageFields
+            staff {
+                name
+                jobTitle
+                live
+                imageNormal
+                imageFunny
+                description
+                fact
+                skills
+            }
+        }
+    }
+`;
+
+export const MeetTheTeamPage: React.SFC<Props> = props => {
+    const { title, staff, heroImage } = props.data.pagesJson;
     return (
         <section className="section section--about">
             <PageHeader>
-                {typeof heroImage === "string" ? (
+                {heroImage && isImageSharp(heroImage) ? (
+                    <FullScreenMedia
+                        image={heroImage.childImageSharp.sizes}
+                        altText={title}
+                        video=""
+                    />
+                ) : (
                     // Cover the situation where there is no imageSharp (e.g. in the cms)
                     <img
                         className="full-screen"
@@ -37,61 +52,17 @@ export const MeetTheTeamPageTemplate: React.SFC<Props> = ({
                         alt=""
                         aria-hidden="true"
                     />
-                ) : (
-                    <FullScreenMedia
-                        image={heroImage}
-                        altText={title}
-                        video=""
-                    />
                 )}
                 <div className="block--hero__content-wrap">
                     <h1 className="block--hero__title">{title}</h1>
                     <button>Hello</button>
                 </div>
             </PageHeader>
-            <div className="block--full block layout-grid">
-                {
-                    // add staff
-                }
-            </div>
+            <ul className="block--full block layout-grid">
+                {staff.map(person => <li key={person.name}>{person.name}</li>)}
+            </ul>
         </section>
     );
 };
-
-// Make type interface
-const MeetTheTeamPage: React.SFC<GraphData> = props => (
-    <StaticQuery
-        query={graphql`
-            query MeetTheTeamPage($id: String!) {
-                pagesJson(id: { eq: $id }) {
-                    staff {
-                        name
-                        jobTitle
-                        live
-                        imageNormal
-                        imageFunny
-                        description
-                        fact
-                        skills
-                    }
-                }
-            }
-        `}
-        render={(data: GraphData) => {
-            return (
-                <MeetTheTeamPageTemplate
-                    title={data.pageTitle || ""}
-                    heroImage={
-                        !data.heroImage || typeof data.heroImage === "string"
-                            ? data.heroImage || ""
-                            : data.heroImage.childImageSharp.sizes
-                    }
-                    staff={data.staff}
-                    sections={data.sections || []}
-                />
-            );
-        }}
-    />
-);
 
 export default MeetTheTeamPage;

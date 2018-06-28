@@ -139,6 +139,7 @@ collections:
         fields: 
           - {label: "Title", name: "title", widget: string}
           - {label: "Path", name: "path", widget: string}
+          - {label: "Hero image", name: "heroImage", widget: "image"}
           - {label: "Subheading", name: "subheading", widget: string}
           - {label: "Description", name: "description", widget: text}
           - {label: "SEO title", name: "seoTitle", widget: string}
@@ -162,6 +163,7 @@ collections:
         fields: 
           - {label: "Title", name: "title", widget: string}
           - {label: "Path", name: "path", widget: string}
+          - {label: "Hero image", name: "heroImage", widget: "image"}
           - {label: "Subheading", name: "subheading", widget: string}
           - {label: "Description", name: "description", widget: text}
           - {label: "SEO title", name: "seoTitle", widget: string}

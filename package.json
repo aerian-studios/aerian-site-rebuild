@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
-        "gatsby": "next",
+        "gatsby": "^2.0.0-beta.12",
         "gatsby-image": "next",
         "gatsby-plugin-manifest": "next",
         "gatsby-plugin-netlify-cms": "^2.0.1",
@@ -37,6 +37,7 @@
         "docz": "docz dev"
     },
     "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
         "@storybook/addon-actions": "^3.4.8",
         "@storybook/addon-info": "^3.4.8",
         "@storybook/react": "^4.0.0-alpha.10",

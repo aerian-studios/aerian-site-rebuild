@@ -558,7 +558,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.42"
 
-"@babel/plugin-syntax-dynamic-import@7.0.0-beta.51":
+"@babel/plugin-syntax-dynamic-import@7.0.0-beta.51", "@babel/plugin-syntax-dynamic-import@^7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.0.0-beta.51.tgz#9c0aeef57d0678e3726db171aa73e474a25de7f2"
   dependencies:
@@ -2470,14 +2470,14 @@ autoprefixer@^7.1.2:
     postcss-value-parser "^3.2.3"
 
 autoprefixer@^8.6.0:
-  version "8.6.3"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.3.tgz#1d38a129e6a4582a565b6570d16f2d7d3de9cbf9"
+  version "8.6.4"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.4.tgz#6bf501de426a3b95973f5d237dbcc9181e9904d2"
   dependencies:
     browserslist "^3.2.8"
-    caniuse-lite "^1.0.30000856"
+    caniuse-lite "^1.0.30000859"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^6.0.22"
+    postcss "^6.0.23"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -4138,7 +4138,7 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000859"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000859.tgz#6e813a1757f19a93cb3675f6b5037aca80bea062"
 
-caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30000815, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000856:
+caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30000815, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000859:
   version "1.0.30000859"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000859.tgz#da974adc5348fffe94724877a7ef8cb5d6d3d777"
 
@@ -5538,9 +5538,9 @@ doctrine@^2.0.0, doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
-docz-core@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/docz-core/-/docz-core-0.3.3.tgz#8b31926b901b821acc9be82d5974a09bb27a9e21"
+docz-core@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/docz-core/-/docz-core-0.3.4.tgz#23938419b2a38b5361af1bf5f4427af7c8b70f49"
   dependencies:
     "@babel/core" "7.0.0-beta.51"
     "@babel/preset-typescript" "^7.0.0-beta.51"
@@ -5560,7 +5560,7 @@ docz-core@^0.3.3:
     cpy "^7.0.1"
     deepmerge "^2.1.1"
     detect-port "^1.2.3"
-    docz-theme-default "^0.3.3"
+    docz-theme-default "^0.3.4"
     express "^4.16.3"
     fast-glob "^2.2.2"
     file-loader "^1.1.11"
@@ -5573,7 +5573,7 @@ docz-core@^0.3.3:
     koa-connect "^2.0.1"
     koa-mount "^3.0.0"
     koa-static "^5.0.0"
-    load-cfg "^0.3.3"
+    load-cfg "^0.3.4"
     lodash.get "^4.4.2"
     prettier "^1.13.6"
     react-dev-utils "^5.0.1"
@@ -5605,11 +5605,11 @@ docz-core@^0.3.3:
     ws "^5.2.1"
     yargs "^11.0.0"
 
-docz-theme-default@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/docz-theme-default/-/docz-theme-default-0.3.3.tgz#4575de73ba38c4883c1f20ba1de2606ef439be37"
+docz-theme-default@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/docz-theme-default/-/docz-theme-default-0.3.4.tgz#8884688c74362f218edd54ed8669d2466ed6deec"
   dependencies:
-    docz "^0.3.3"
+    docz "^0.3.4"
     emotion "^9.2.4"
     emotion-theming "^9.2.4"
     facepaint "^1.2.1"
@@ -5627,14 +5627,15 @@ docz-theme-default@^0.3.3:
     react-spinners "^0.3.2"
     webfontloader "^1.6.28"
 
-docz@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/docz/-/docz-0.3.3.tgz#25c70008b1308a051ab16ad5dcf7ca1e65c74e06"
+docz@^0.3.3, docz@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/docz/-/docz-0.3.4.tgz#bfa0c5b29f5b80b8c3a921478cc9bdeb02865ced"
   dependencies:
     "@mdx-js/tag" "^0.11.0"
     "@sindresorhus/slugify" "^0.3.0"
     deepmerge "^2.1.1"
-    docz-core "^0.3.3"
+    docz-core "^0.3.4"
+    docz-theme-default "^0.3.4"
     invariant "^2.2.4"
     loadable-components "^2.2.2"
     pascalcase "^0.1.1"
@@ -6264,10 +6265,10 @@ exec-series@^1.0.0:
     object-assign "^4.1.0"
 
 exec-sh@^0.2.0:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/exec-sh/-/exec-sh-0.2.1.tgz#163b98a6e89e6b65b47c2a28d215bc1f63989c38"
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/exec-sh/-/exec-sh-0.2.2.tgz#2a5e7ffcbd7d0ba2755bdecb16e5a427dfbdec36"
   dependencies:
-    merge "^1.1.3"
+    merge "^1.2.0"
 
 execa@^0.10.0:
   version "0.10.0"
@@ -7183,18 +7184,18 @@ gatsby-transformer-json@next:
     "@babel/runtime" "7.0.0-beta.51"
     bluebird "^3.5.0"
 
-gatsby-transformer-sharp@next:
-  version "2.1.1-beta.2"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.1-beta.2.tgz#08fed34914de0f7645643eb52377563d93dc19da"
+gatsby-transformer-sharp@^2.1.1-beta.3:
+  version "2.1.1-beta.3"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.1-beta.3.tgz#63e4d5a3997f5fe4f38bdba3a9e5a6d276f606c6"
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
     bluebird "^3.5.0"
     fs-extra "^4.0.2"
     probe-image-size "^4.0.0"
 
-gatsby@next:
-  version "2.0.0-beta.11"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.11.tgz#768500351a8931b509c5da9992be0b22c0355bdd"
+gatsby@^2.0.0-beta.12:
+  version "2.0.0-beta.12"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.12.tgz#5cd7c7a350ac773bd3489d2c48db25fe3d4bb93f"
   dependencies:
     "@babel/code-frame" "7.0.0-beta.51"
     "@babel/core" "7.0.0-beta.51"
@@ -10037,9 +10038,9 @@ load-bmfont@^1.2.3:
     xhr "^2.0.1"
     xtend "^4.0.0"
 
-load-cfg@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/load-cfg/-/load-cfg-0.3.3.tgz#a22d570e6572ec516b6bbd3d89b8fc3b74150476"
+load-cfg@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/load-cfg/-/load-cfg-0.3.4.tgz#f4f61ac164fc131ab69bff319c8a6305064e3d47"
   dependencies:
     deepmerge "^2.1.1"
     esm "^3.0.55"
@@ -10662,7 +10663,7 @@ merge2@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.2.2.tgz#03212e3da8d86c4d8523cebd6318193414f94e34"
 
-merge@^1.1.3:
+merge@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/merge/-/merge-1.2.0.tgz#7531e39d4949c281a66b8c5a6e0265e8b05894da"
 
@@ -12270,7 +12271,7 @@ postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.17, postcss@^6.0.22:
+postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.17, postcss@^6.0.23:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   dependencies:
@@ -14331,8 +14332,8 @@ simple-swizzle@^0.2.2:
     is-arrayish "^0.3.1"
 
 sisteransi@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-0.1.0.tgz#2e6706ac427019b84e60f751d588d87920484f25"
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-0.1.1.tgz#5431447d5f7d1675aac667ccd0b865a4994cb3ce"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -15960,8 +15961,8 @@ uuid@^2.0.1:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
 
 uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0, uuid@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.2.1.tgz#12c528bb9d58d0b9265d9a2f6f0fe8be17ff1f14"
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.0.tgz#b237147804881d7b86f40a7ff8f590f15c37de32"
 
 v8-compile-cache@^1.1.0:
   version "1.1.2"
@@ -16323,8 +16324,8 @@ webpack-stats-plugin@^0.1.5:
   resolved "https://registry.yarnpkg.com/webpack-stats-plugin/-/webpack-stats-plugin-0.1.5.tgz#29e5f12ebfd53158d31d656a113ac1f7b86179d9"
 
 webpack@^4.10.2, webpack@^4.12.0, webpack@^4.12.1:
-  version "4.12.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.12.1.tgz#9108078c67fdd72c2609cea22af87d7aed2acb08"
+  version "4.12.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.12.2.tgz#d2b8418eb40cedcbf2c1f5905d23a99546011ce9"
   dependencies:
     "@webassemblyjs/ast" "1.5.12"
     "@webassemblyjs/helper-module-context" "1.5.12"

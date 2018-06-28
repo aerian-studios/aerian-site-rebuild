@@ -81,7 +81,7 @@ export const ProjectPage: React.SFC<Props> = props => {
         id
     } = props.data.projectsJson;
     return (
-        <Layout location={props.location}>
+        <Layout location={props.location} title={pageTitle1}>
             <section className="section section--about">
                 <PageHeader>
                     {typeof heroImage === "string" ? (

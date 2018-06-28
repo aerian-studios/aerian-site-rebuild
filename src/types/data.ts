@@ -1,8 +1,12 @@
-import * as React from "react";
+import { graphql } from "gatsby";
+
+export type ImageField = string | ImageSharp;
+
+// Images
 
 export interface Image {
     alt?: string;
-    image: string | ImageSharp;
+    image: ImageField;
 }
 
 export interface ImageSharp {
@@ -41,17 +45,45 @@ export interface PageListNode {
 
 export interface PageSection {
     title: string;
-    image?: ImageSharp | string;
-    smallImage?: ImageSharp | string;
+    image?: ImageField;
+    smallImage?: ImageField;
     subtitle: string;
     blurb: string;
 }
 
-export interface StaffPage {
+export interface Page {
     title: string;
     path: string;
+
+    heroImage?: ImageField;
+    subheading: string;
+    description: string;
+    seoTitle: string;
+    seoDescription: string;
+    seoKeyword: string;
+}
+
+export interface WhatWeDo extends Page {
+    sections?: PageSection[];
+}
+
+export const pageFieldsFragment = graphql`
+    fragment PageFields on PagesJson {
+        title
+        heroImage
+        subheading
+        description
+        seoTitle
+        seoDescription
+        seoKeywords
+    }
+`;
+
+export interface MeetTheTeam extends Page {
     staff: Staff[];
 }
+
+export interface About extends Page {}
 
 export interface Staff {
     name: string;

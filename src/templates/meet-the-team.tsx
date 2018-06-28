@@ -5,25 +5,20 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { isImageSharp } from "../lib/helpers";
-import { ImageSharp, ImageSharpSizes, PageSection, Staff } from "../types/data";
+import { MeetTheTeam } from "../types/data";
 
 interface Props {
     data: GraphData;
 }
 
 interface GraphData {
-    pagesJson: {
-        heroImage?: string | ImageSharp;
-        title?: string;
-        sections?: PageSection[];
-        staff: Staff[];
-    };
+    pagesJson: MeetTheTeam;
 }
 
 export const pageQuery = graphql`
     query MeetTheTeamPage($id: String!) {
         pagesJson(id: { eq: $id }) {
-            title
+            ...PageFields
             staff {
                 name
                 jobTitle
@@ -39,7 +34,7 @@ export const pageQuery = graphql`
 `;
 
 export const MeetTheTeamPage: React.SFC<Props> = props => {
-    const { title, sections, staff, heroImage } = props.data.pagesJson;
+    const { title, staff, heroImage } = props.data.pagesJson;
     return (
         <section className="section section--about">
             <PageHeader>

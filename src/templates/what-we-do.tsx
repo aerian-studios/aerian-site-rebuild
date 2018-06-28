@@ -4,21 +4,16 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { isImageSharp } from "../lib/helpers";
-import { ImageSharp, PageSection } from "../types/data";
+import { WhatWeDo } from "../types/data";
 
 interface GraphData {
-    pagesJson: {
-        heroImage?: ImageSharp | string;
-        title?: string;
-        sections?: PageSection[];
-    };
+    pagesJson: WhatWeDo;
 }
 
 interface Props {
     data: GraphData;
 }
 export const WhatWeDoPage: React.SFC<Props> = props => {
-    console.log(props);
     const { title, sections, heroImage } = props.data.pagesJson;
     return (
         <section className="section section--about">
@@ -59,9 +54,7 @@ export const WhatWeDoPage: React.SFC<Props> = props => {
 export const pageQuery = graphql`
     query WhatWeDoPage($id: String!) {
         pagesJson(id: { eq: $id }) {
-            # heroImage
-            # pageTitle
-            title
+            ...PageFields
             sections {
                 title
                 image

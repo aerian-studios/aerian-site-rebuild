@@ -1,4 +1,4 @@
-import { StaffPage } from "../types/data";
+import { MeetTheTeam } from "../types/data";
 
-declare const staffPage: StaffPage;
+declare const staffPage: MeetTheTeam;
 export default staffPage;

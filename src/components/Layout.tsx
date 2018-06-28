@@ -10,22 +10,20 @@ import "../scss/base-theme.scss";
 
 // logo
 import * as logo from "../assets/furniture/logo.svg";
+import { ReactRouterLocation } from "../types/data";
 // import { PagesListData } from "../types/data";
 
 interface Props {
     className?: string;
     // this comes from the router
-    location: {
-        pathname: string;
-    };
-
-    title: string;
+    location: ReactRouterLocation;
+    title?: string;
     seoDescription?: string;
     seoTitle?: string;
     seoKeywords?: string;
 }
 
-export const Layout: React.SFC<Props> = ({
+const Layout: React.SFC<Props> = ({
     children,
     className,
     location,

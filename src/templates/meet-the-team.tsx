@@ -36,11 +36,25 @@ export const pageQuery = graphql`
 `;
 
 export const MeetTheTeamPage: React.SFC<Props> = props => {
-    const { title, staff, heroImage } = props.data.pagesJson;
+    const {
+        title,
+        staff,
+        heroImage,
+        seoDescription,
+        seoKeywords,
+        seoTitle
+    } = props.data.pagesJson;
 
-    console.log({ props });
     return (
-        <Layout location={props.location} title={title}>
+        <Layout
+            location={props.location}
+            {...{
+                title,
+                seoDescription,
+                seoKeywords,
+                seoTitle
+            }}
+        >
             <section className="section section--about">
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (

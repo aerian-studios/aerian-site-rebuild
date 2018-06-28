@@ -17,8 +17,7 @@ const makePageLink = (
     title: string,
     activePath: string
 ) => {
-    const classes = `menu-item ${(activePath === path && styles.activePath) ||
-        ""}`;
+    const classes = `menu-item${activePath === path && " active-path"}`;
 
     return (
         <Link className={classes} to={path} key={`menu-${id}`}>

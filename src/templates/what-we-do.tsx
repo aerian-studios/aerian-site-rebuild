@@ -1,9 +1,9 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
+import { Layout } from "../components/Layout";
 import { isImageSharp } from "../lib/helpers";
 import { ReactRouterLocation, WhatWeDo } from "../types/data";
 
@@ -16,9 +16,17 @@ interface Props {
     location: ReactRouterLocation;
 }
 export const WhatWeDoPage: React.SFC<Props> = props => {
-    const { title, sections, heroImage } = props.data.pagesJson;
+    console.log(props);
+    const {
+        title,
+        sections,
+        heroImage,
+        seoDescription,
+        seoKeywords,
+        seoTitle
+    } = props.data.pagesJson;
     return (
-        <Layout location={props.location}>
+        <Layout title={title} location={props.location}>
             <section className="section section--about">
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (

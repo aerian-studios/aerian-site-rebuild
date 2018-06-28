@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
-        "gatsby": "^2.0.0-beta.12",
+        "gatsby": "next",
         "gatsby-image": "next",
         "gatsby-plugin-manifest": "next",
         "gatsby-plugin-netlify-cms": "^2.0.1",

@@ -18,9 +18,22 @@ interface Props {
     location: {
         pathname: string;
     };
+
+    title: string;
+    seoDescription?: string;
+    seoTitle?: string;
+    seoKeywords?: string;
 }
 
-const Layout: React.SFC<Props> = ({ children, className, location }) => (
+export const Layout: React.SFC<Props> = ({
+    children,
+    className,
+    location,
+    title,
+    seoTitle,
+    seoDescription,
+    seoKeywords
+}) => (
     <StaticQuery
         query={graphql`
             query PageList {
@@ -36,14 +49,15 @@ const Layout: React.SFC<Props> = ({ children, className, location }) => (
             }
         `}
         render={data => {
-            console.log(data);
             return (
                 <div className={`layout-container ${className}`}>
                     <Helmet defaultTitle="Aerian Studios">
                         <html lang="en" />
                         <meta charSet="utf-8" />
-                        <meta name="description" content="SET ME PLEASE" />
-                        <title>SET ME PLEASE</title>
+                        <meta name="description" content={seoDescription} />
+                        <meta name="title" content={seoTitle} />
+                        <meta name="keywords" content={seoKeywords} />
+                        <title>{title}</title>
                     </Helmet>
                     <ErrorBoundary>
                         <PageNavBar pages={data} activePath={location.pathname}>

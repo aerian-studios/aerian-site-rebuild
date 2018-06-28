@@ -17,14 +17,12 @@ const makePageLink = (
     title: string,
     activePath: string
 ) => {
-    const classes =
-        activePath === path
-            ? [styles.activePath, "menu-item"].join(" ")
-            : "menu-item";
+    const classes = `menu-item ${(activePath === path && styles.activePath) ||
+        ""}`;
 
     return (
-        <Link to={path} key={`menu-${id}`}>
-            <span className={classes}>{title}</span>
+        <Link className={classes} to={path} key={`menu-${id}`}>
+            <span className="menu-item-content">{title}</span>
         </Link>
     );
 };
@@ -32,7 +30,7 @@ const makePageLink = (
 const constructPages = (pageList: PageList["edges"], activePath: string) => {
     return pageList.map((page: PageListNode) => {
         const { id, path, title } = page.node;
-        console.log(activePath, path);
+
         return makePageLink(id, path, title, activePath);
     });
 };

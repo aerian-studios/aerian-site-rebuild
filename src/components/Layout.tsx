@@ -10,7 +10,7 @@ import "../scss/base-theme.scss";
 
 // logo
 import * as logo from "../assets/furniture/logo.svg";
-import { ReactRouterLocation } from "../types/data";
+import { PageListNode, ReactRouterLocation } from "../types/data";
 // import { PagesListData } from "../types/data";
 
 interface Props {
@@ -47,6 +47,8 @@ const Layout: React.SFC<Props> = ({
             }
         `}
         render={data => {
+            const pages: PageListNode[] =
+                (data && data.allPagesJson && data.allPagesJson.edges) || null;
             return (
                 <div className={`layout-container ${className}`}>
                     <Helmet defaultTitle="Aerian Studios">
@@ -58,7 +60,10 @@ const Layout: React.SFC<Props> = ({
                         <title>{title}</title>
                     </Helmet>
                     <ErrorBoundary>
-                        <PageNavBar pages={data} activePath={location.pathname}>
+                        <PageNavBar
+                            pages={pages}
+                            activePath={location.pathname}
+                        >
                             <div className="{}">
                                 <Link to="/">
                                     <svg className="{}">

@@ -19,7 +19,7 @@ export const about: React.SFC<Props> = props => {
     const { title, heroImage } = props.data.pagesJson;
 
     return (
-        <Layout location={props.location}>
+        <Layout location={props.location} title={title}>
             <section className="section section--about">
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (

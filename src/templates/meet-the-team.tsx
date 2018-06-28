@@ -40,7 +40,7 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
 
     console.log({ props });
     return (
-        <Layout location={props.location}>
+        <Layout location={props.location} title={title}>
             <section className="section section--about">
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (

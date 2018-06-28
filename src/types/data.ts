@@ -60,7 +60,7 @@ export interface Page {
     description: string;
     seoTitle: string;
     seoDescription: string;
-    seoKeyword: string;
+    seoKeywords: string;
 }
 
 export interface WhatWeDo extends Page {

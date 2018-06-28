@@ -10,9 +10,8 @@ interface Props {
 }
 
 const IndexPage: React.SFC<Props> = props => {
-    console.log(props);
     return (
-        <Layout location={props.location}>
+        <Layout location={props.location} title={"Aerian Studios"}>
             <section id="section-index">
                 <PageHeader>
                     <h1>This is the home page</h1>

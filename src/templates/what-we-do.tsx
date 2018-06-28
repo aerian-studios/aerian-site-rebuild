@@ -5,7 +5,7 @@ import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import { Layout } from "../components/Layout";
 import { isImageSharp } from "../lib/helpers";
-import { WhatWeDo } from "../types/data";
+import { ReactRouterLocation, WhatWeDo } from "../types/data";
 
 interface GraphData {
     pagesJson: WhatWeDo;
@@ -13,10 +13,7 @@ interface GraphData {
 
 interface Props {
     data: GraphData;
-
-    location: {
-        pathname: string;
-    };
+    location: ReactRouterLocation;
 }
 export const WhatWeDoPage: React.SFC<Props> = props => {
     console.log(props);

@@ -6,6 +6,8 @@ import * as renderer from "react-test-renderer";
 import { PageListNode } from "../../types/data";
 // import { MainNavigation } from "./index";
 
+import { MemoryRouter } from "react-router-dom";
+
 const pages: PageListNode[] = [
     {
         node: {
@@ -23,15 +25,17 @@ const pages: PageListNode[] = [
     }
 ];
 
-describe("MainNavigation", () => {
-    xit("renders correctly", () => {
+xdescribe("MainNavigation", () => {
+    it("renders correctly", () => {
         const tree = renderer
             .create(
-                <MainNavigation
-                    className="myClass"
-                    pages={pages}
-                    activePath={pages[1].node.path}
-                />
+                <MemoryRouter>
+                    <MainNavigation
+                        className="myClass"
+                        pages={pages}
+                        activePath={pages[1].node.path}
+                    />
+                </MemoryRouter>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();

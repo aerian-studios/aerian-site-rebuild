@@ -5,39 +5,57 @@ import { PageListNode } from "../../types/data";
 import * as styles from "./MainNavigation.scss";
 
 interface Props {
-    style?: React.CSSProperties;
+    activeClassName?: string;
+    activePath?: string;
+    activeStyle?: React.CSSProperties;
     className?: string;
     pages: PageListNode[];
-    activePath: string;
+    style?: React.CSSProperties;
 }
 
 const makePageLink = (
     id: string,
     path: string,
     title: string,
-    activePath: string
+    activeClassName?: string,
+    activeStyle?: React.CSSProperties
 ) => {
-    const classes = `menu-item${activePath === path && " active-path"}`;
-
     return (
         path && (
-            <Link className={classes} to={path} key={`menu-${id}`}>
+            <Link
+                className="menu-item"
+                activeClassName={["active-path", activeClassName].join(" ")}
+                activeStyle={activeStyle}
+                to={path}
+                key={`menu-${id}`}
+            >
                 <span className="menu-item-content">{title}</span>
             </Link>
         )
     );
 };
 
-const constructPages = (pages: PageListNode[], activePath: string) => {
+const constructPages = (
+    pages: PageListNode[],
+    activeClassName?: string,
+    activeStyle?: React.CSSProperties
+) => {
     return pages.map((page: PageListNode) => {
         const { id, path, title } = page.node;
 
-        return makePageLink(id, path, title, activePath);
+        return makePageLink(id, path, title, activeClassName, activeStyle);
     });
 };
 
 export const MainNavigation: React.SFC<Props> = props => {
-    const { style, className, pages, activePath } = props;
+    const {
+        style,
+        className,
+        pages,
+        activePath,
+        activeClassName,
+        activeStyle
+    } = props;
 
     return (
         <nav
@@ -45,7 +63,7 @@ export const MainNavigation: React.SFC<Props> = props => {
             className={[styles.component, className].join(" ")}
             style={style}
         >
-            {pages ? constructPages(pages, activePath) : null}
+            {pages ? constructPages(pages, activeClassName, activeStyle) : null}
         </nav>
     );
 };

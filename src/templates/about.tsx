@@ -16,10 +16,24 @@ interface Props {
 }
 
 export const about: React.SFC<Props> = props => {
-    const { title, heroImage } = props.data.pagesJson;
+    const {
+        title,
+        heroImage,
+        seoDescription,
+        seoKeywords,
+        seoTitle
+    } = props.data.pagesJson;
 
     return (
-        <Layout location={props.location} title={title}>
+        <Layout
+            location={props.location}
+            {...{
+                title,
+                seoDescription,
+                seoKeywords,
+                seoTitle
+            }}
+        >
             <section className="section section--about">
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (

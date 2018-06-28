@@ -1,12 +1,10 @@
-import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
+import { ReactRouterLocation } from "../types/data";
 
 interface Props {
-    location: {
-        pathname: string;
-    };
+    location: ReactRouterLocation;
 }
 
 const IndexPage: React.SFC<Props> = props => {

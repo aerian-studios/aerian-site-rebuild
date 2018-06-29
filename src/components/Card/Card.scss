@@ -1,0 +1,13 @@
+.card {
+    width: 376px;
+    height: 376px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px;
+    .content {
+        background: blue;
+    }
+}

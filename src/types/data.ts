@@ -49,12 +49,14 @@ export interface PageSection {
     smallImage?: ImageField;
     subtitle: string;
     blurb: string;
+    activities?: Activity[];
+    successStory?: SuccessStory;
+    testimonial?: Testimonial;
 }
 
 export interface Page {
     title: string;
     path: string;
-
     heroImage?: ImageField;
     subheading: string;
     description: string;
@@ -109,4 +111,26 @@ export interface ReactRouterLocation {
     pathname: string;
     search: string;
     state: null | string;
+}
+
+export interface Testimonial {
+    quote?: string;
+    person?: string;
+    title?: string;
+    avatar?: ImageField;
+}
+
+export interface Stat {
+    title: string;
+    text: string;
+    image: ImageField;
+}
+export interface SuccessStory {
+    title: string;
+    stats?: Stat[];
+}
+
+export interface Activity {
+    title: string;
+    text: string;
 }

@@ -25,8 +25,20 @@ export const pageQuery = graphql`
                 name
                 jobTitle
                 live
-                imageNormal
-                imageFunny
+                imageNormal {
+                    childImageSharp {
+                        fixed(width: 500) {
+                            ...GatsbyImageSharpFixed
+                        }
+                    }
+                }
+                imageFunny {
+                    childImageSharp {
+                        fixed(width: 500) {
+                            ...GatsbyImageSharpFixed
+                        }
+                    }
+                }
                 description
                 fact
                 skills

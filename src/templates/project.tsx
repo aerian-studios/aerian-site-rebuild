@@ -139,20 +139,38 @@ export const ProjectQuery = graphql`
             caseStudyTitle
             caseStudyText
             externalUrl
-            heroImage
+            heroImage {
+                childImageSharp {
+                    fluid(maxWidth: 2048) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
             heroVideo
             challenge {
                 description
                 hurdles {
                     title
-                    image
+                    image {
+                        childImageSharp {
+                            fixed(width: 290) {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
                     text
                 }
             }
             solution {
                 hurdles {
                     title
-                    image
+                    image {
+                        childImageSharp {
+                            fixed(width: 290) {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
                     text
                 }
                 description
@@ -161,7 +179,13 @@ export const ProjectQuery = graphql`
                 description
                 hurdles {
                     title
-                    image
+                    image {
+                        childImageSharp {
+                            fixed(width: 290) {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
                     text
                 }
             }
@@ -173,7 +197,13 @@ export const ProjectQuery = graphql`
                 quote
                 person
                 title
-                avatar
+                avatar {
+                    childImageSharp {
+                        fixed(width: 290) {
+                            ...GatsbyImageSharpFixed
+                        }
+                    }
+                }
             }
             id
         }

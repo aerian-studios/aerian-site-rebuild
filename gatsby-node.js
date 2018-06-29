@@ -1,6 +1,6 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
-
+const deepMap = require("deep-map");
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
 // access to any information necessary to programmatically
@@ -101,19 +101,46 @@ exports.createPages = ({ actions, graphql }) => {
     });
 };
 
-// exports.onCreateNode = ({ node, actions, getNode }) => {
-//     const { createNodeField } = actions;
-//     fmImagesToRelative(node);
+const excluded = new Set(["internal", "children", "parent", "id"]);
 
-//     if (node.internal.type.test(/Json$/)) {
-//         const value = createFilePath({ node, getNode });
-//         createNodeField({
-//             name: `name`,
-//             node,
-//             value
-//         });
-//     }
-// };
+exports.onCreateNode = ({ node, getNode, getNodes }) => {
+    if (node.internal.owner === "gatsby-transformer-json") {
+        const parent = getNode(node.parent);
+        const makeRelative = value => {
+            if (typeof value === "string") {
+                const pathToFile = path.join(__dirname, "static", value);
+                const foundImageFileNode = getNodes().find(
+                    n => n.absolutePath === pathToFile
+                );
+
+                if (foundImageFileNode) {
+                    const p = path.relative(
+                        parent.dir,
+                        foundImageFileNode.absolutePath
+                    );
+                    const imageNode = foundImageFileNode.children
+                        .map(id => getNode(id))
+                        .find(node => node.internal.type === "ImageSharp");
+
+                    if (imageNode) {
+                        return p;
+                    }
+                }
+            }
+            return value;
+        };
+        Object.keys(node).forEach(key => {
+            if (excluded.has(key)) {
+                return;
+            }
+
+            if (typeof node[key] === "string") {
+                node[key] = makeRelative(node[key]);
+            }
+            deepMap(node[key], makeRelative, { inPlace: true });
+        });
+    }
+};
 
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
     switch (stage) {

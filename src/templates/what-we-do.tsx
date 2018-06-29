@@ -77,8 +77,24 @@ export const pageQuery = graphql`
             ...PageFields
             sections {
                 title
-                image
-                smallImage
+                image {
+                    childImageSharp {
+                        fluid(maxWidth: 100) {
+                            base64
+                            src
+                            srcSet
+                        }
+                    }
+                }
+                smallImage {
+                    childImageSharp {
+                        fluid(maxWidth: 100) {
+                            base64
+                            src
+                            srcSet
+                        }
+                    }
+                }
                 subtitle
                 blurb
             }

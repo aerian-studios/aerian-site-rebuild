@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
+        "deep-map": "^1.5.0",
         "gatsby": "next",
         "gatsby-image": "next",
         "gatsby-plugin-manifest": "next",

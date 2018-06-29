@@ -70,7 +70,13 @@ export interface WhatWeDo extends Page {
 export const pageFieldsFragment = graphql`
     fragment PageFields on PagesJson {
         title
-        heroImage
+        heroImage {
+            childImageSharp {
+                fluid(maxWidth: 2048) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         subheading
         description
         seoTitle

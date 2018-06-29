@@ -5,7 +5,8 @@ exports[`SocialLink renders correctly 1`] = `
   className=" myClass"
 >
   <a
-    href="www.facebook.com"
+    href="https://www.facebook.com"
+    rel="nofollow noreferer"
   />
 </li>
 `;

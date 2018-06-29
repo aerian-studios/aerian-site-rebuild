@@ -1,7 +1,7 @@
 import Img, { GatsbyImageProps } from "gatsby-image";
 import * as React from "react";
 import { isImageSharp } from "../../lib/helpers";
-import { ImageField, ImageSharp } from "../../types/data";
+import { ImageField } from "../../types/data";
 import * as styles from "./Image.scss";
 
 interface MyProps {

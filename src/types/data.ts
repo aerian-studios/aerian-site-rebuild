@@ -25,6 +25,14 @@ export interface ImageSharpSizes {
 }
 
 // PAGES
+
+export interface NodeList<T> {
+    edges: Array<Edge<T>>;
+}
+
+export interface Edge<T> {
+    node: T;
+}
 export interface PagesListData {
     data: {
         allPagesJson: PageList;
@@ -35,12 +43,12 @@ export interface PageList {
     edges: PageListNode[];
 }
 
-export interface PageListNode {
-    node: {
-        id: string;
-        path: string;
-        title: string;
-    };
+export type PageListNode = Edge<PageRef>;
+
+export interface PageRef {
+    id: string;
+    path: string;
+    title: string;
 }
 
 export interface PageSection {

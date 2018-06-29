@@ -3,7 +3,7 @@ import { ImageSharp, ImageSharpSizes } from "../types/data";
 export const isImageSharp = (
     image: ImageSharp | string
 ): image is ImageSharp => {
-    return typeof image !== "string";
+    return image.hasOwnProperty("childImageSharp");
 };
 
 export const isImageSharpSizes = (

@@ -1,38 +1,22 @@
-import { StaticQuery } from "gatsby";
 import * as React from "react";
-import { FullScreenMedia } from "../components/FullScreenMedia";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 import Layout from "../components/Layout";
+import { PageHeader } from "../components/PageHeader/PageHeader";
+import { ReactRouterLocation } from "../types/data";
 
 interface Props {
-    location: {
-        pathname: string;
-    };
+    location: ReactRouterLocation;
 }
 
-const IndexPage: React.SFC<Props> = props => (
-    <StaticQuery
-        query={graphql`
-            query IndexQuery {
-                allProjectsJson(sort: { order: DESC, fields: [goLiveDate] }) {
-                    edges {
-                        node {
-                            id
-                        }
-                    }
-                }
-            }
-        `}
-        render={data => {
-            return (
-                <Layout location={props.location}>
-                    <section id="section-index">
-                        <div className="block--full">This is the home page</div>
-                    </section>
-                </Layout>
-            );
-        }}
-    />
-);
+const IndexPage: React.SFC<Props> = props => {
+    return (
+        <Layout location={props.location} title={"Aerian Studios"}>
+            <section id="section-index">
+                <PageHeader>
+                    <h1>This is the home page</h1>
+                </PageHeader>
+            </section>
+        </Layout>
+    );
+};
 
 export default IndexPage;

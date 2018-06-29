@@ -35,56 +35,8 @@
     }
 }
 
-.block--light_skin {
-    + .block--light_skin {
-        &::before {
-            height: 0;
-        }
-    }
-}
-
-.block--light-grey_skin {
-    + .block--light-grey_skin {
-        &::before {
-            height: 0;
-        }
-    }
-}
-
-.block--mid_skin {
-    + .block--mid_skin {
-        &::before {
-            height: 0;
-        }
-    }
-}
-
 .block--mid-grey_skin {
     + .block--mid-grey_skin {
-        &::before {
-            height: 0;
-        }
-    }
-}
-
-.block--pattern_skin {
-    + .block--pattern_skin {
-        &::before {
-            height: 0;
-        }
-    }
-}
-
-.block--add-pattern_skin {
-    + .block--add-pattern_skin {
-        &::before {
-            height: 0;
-        }
-    }
-}
-
-.block--dark {
-    + .block--dark {
         &::before {
             height: 0;
         }
@@ -99,22 +51,9 @@
     }
 }
 
-.block--dark-grey_skin {
-    + .block--dark-grey_skin {
-        &::before {
-            height: 0;
-        }
-    }
-}
-
-.block--light_skin,
-.block--light-grey_skin {
-    background-color: $c-black-20;
-}
-
 .block--mid_skin,
 .block--mid-grey_skin {
-    background-color: $c-black-40;
+    background-color: $c-alt-bg;
 }
 
 .block--header {
@@ -132,14 +71,9 @@
     }
 }
 
-.block--dark_skin {
-    background-color: $dark-grey;
-}
-
-.block--black_skin,
-.block--dark-grey_skin,
+.block--dark_skin,
 .block--hero {
-    background-color: $accent-black;
+    background-color: $c-bg;
 }
 
 // Most styles in _hero-component, these are just block based styles

@@ -1,7 +1,18 @@
-import { About, ImageField, ImageSharp, MeetTheTeam, WhatWeDo } from "./data";
+import {
+    About,
+    Client,
+    ImageField,
+    ImageSharp,
+    MeetTheTeam,
+    Project,
+    WhatWeDo
+} from "./data";
 
 // tslint:disable-next-line:no-var-requires
-export const project = require("../pages/projects/bananaman-chase-in-space.json");
+export const project: Project = require("../pages/projects/bananaman-chase-in-space.json");
+
+// tslint:disable-next-line:no-var-requires
+export const client: Client = require("../pages/clients/cnn.json");
 
 // tslint:disable-next-line:no-var-requires
 export const whatWeDo: WhatWeDo = require("../pages/what-we-do.json");

@@ -4,7 +4,7 @@ export type ImageField = string | ImageSharp;
 
 // Images
 
-export interface Image {
+export interface GalleryImage {
     alt?: string;
     image: ImageField;
 }
@@ -91,7 +91,26 @@ export interface MeetTheTeam extends Page {
     staff: Staff[];
 }
 
-export interface About extends Page {}
+export interface About extends Page {
+    infographic?: Infographic[];
+}
+
+export type InfographicType =
+    | "Single Line"
+    | "Compact Single Line"
+    | "Split"
+    | "Bar"
+    | "Vertical"
+    | "Horizontal"
+    | "Surround";
+export interface Infographic {
+    primaryText?: string;
+    type: InfographicType;
+    secondaryText?: string;
+    image?: ImageField;
+    imageCount: number;
+    secondaryImage?: ImageField;
+}
 
 export interface Staff {
     name: string;
@@ -133,4 +152,52 @@ export interface SuccessStory {
 export interface Activity {
     title: string;
     text: string;
+}
+
+export interface Hurdle {
+    title: string;
+    image: ImageField;
+    text: string;
+}
+
+export interface ProjectStage {
+    description: string;
+    hurdles: Hurdle[];
+}
+
+export interface Performance {
+    stat: string;
+    text: string;
+}
+
+export interface Project {
+    name: string;
+    heroImage: ImageField;
+    heroVideo?: string;
+    titleLineOne: string;
+    titleLineTwo?: string;
+    client: string;
+    goLiveDate?: string;
+    caseStudyTitle: string;
+    caseStudyText: string;
+    caseStudyImage: ImageField;
+    externalUrl: string;
+    rolloverDetails: string;
+    homepage: boolean;
+    featured: boolean;
+    gallery: GalleryImage[];
+    challenge: ProjectStage;
+    solution: ProjectStage;
+    results: ProjectStage;
+    performance?: Performance[];
+    testimonial?: Testimonial;
+}
+
+export interface Client {
+    name: string;
+    logo: ImageField;
+    promoLogo: ImageField;
+    featured: boolean;
+    featuredProject?: string;
+    slug: string;
 }

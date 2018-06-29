@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image renders correctly 1`] = `
+<img
+  src="https://beta.aerian.com/static/paolo-funny-005127dcb434602413b9e1fcb297282d-66790.png"
+/>
+`;

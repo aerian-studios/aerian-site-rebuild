@@ -10,16 +10,17 @@ export interface Image {
 }
 
 export interface ImageSharp {
-    childImageSharp: ImageSharpSizes;
+    childImageSharp: {
+        fluid?: ImageSharpSizes;
+        fixed?: ImageSharpSizes;
+    };
 }
-
 export interface ImageSharpSizes {
     aspectRatio?: number;
-    fluid?: string;
-    fixed?: string;
     src: string;
     srcSet?: string;
     tracedSVG?: string;
+    base64?: string;
 }
 
 // PAGES

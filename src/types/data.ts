@@ -10,15 +10,13 @@ export interface Image {
 }
 
 export interface ImageSharp {
-    childImageSharp: {
-        sizes: ImageSharpSizes;
-        src: string;
-    };
+    childImageSharp: ImageSharpSizes;
 }
 
 export interface ImageSharpSizes {
     aspectRatio?: number;
-    sizes?: string;
+    fluid?: string;
+    fixed?: string;
     src: string;
     srcSet?: string;
     tracedSVG?: string;
@@ -95,8 +93,8 @@ export interface Staff {
     name: string;
     jobTitle: string;
     live: boolean;
-    imageNormal: string;
-    imageFunny: string;
+    imageNormal: ImageField;
+    imageFunny: ImageField;
     description: string;
     fact: string;
     skills: string[];

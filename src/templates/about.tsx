@@ -38,7 +38,7 @@ export const about: React.SFC<Props> = props => {
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (
                         <FullScreenMedia
-                            image={heroImage.childImageSharp.sizes}
+                            image={heroImage.childImageSharp.fluid}
                             altText={title}
                             video=""
                         />

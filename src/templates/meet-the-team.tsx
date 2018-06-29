@@ -1,4 +1,5 @@
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
@@ -71,7 +72,7 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (
                         <FullScreenMedia
-                            image={heroImage.childImageSharp.sizes}
+                            image={heroImage.childImageSharp.fluid}
                             altText={title}
                             video=""
                         />
@@ -89,11 +90,9 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                         <button>Hello</button>
                     </div>
                 </PageHeader>
-                <ul className="block--full block layout-grid">
-                    {staff.map(person => (
-                        <li key={person.name}>{person.name}</li>
-                    ))}
-                </ul>
+                {staff.map(person => (
+                    <Img fixed={person.imageFunny.childImageSharp.fixed} />
+                ))}
             </section>
         </Layout>
     );

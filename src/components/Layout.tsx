@@ -11,7 +11,6 @@ import "../scss/base-theme.scss";
 // logo
 import * as logo from "../assets/furniture/logo.svg";
 import { PageListNode, ReactRouterLocation } from "../types/data";
-// import { PagesListData } from "../types/data";
 
 interface Props {
     className?: string;

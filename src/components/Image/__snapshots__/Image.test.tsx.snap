@@ -2,6 +2,6 @@
 
 exports[`Image renders correctly 1`] = `
 <img
-  src="https://beta.aerian.com/static/paolo-funny-005127dcb434602413b9e1fcb297282d-66790.png"
+  src="https://www.aerian.com/images/483/scaledcroppedtop/490x590/resources/483/paolo-funny.png"
 />
 `;

@@ -126,7 +126,7 @@ export const ProjectPage: React.SFC<Props> = props => {
 };
 
 const createCorrectMediumComponent = (image: ImageSharp | string) => {
-    return isImageSharp(image) ? image.childImageSharp.sizes : image;
+    return isImageSharp(image) ? image.childImageSharp.fluid : image;
 };
 
 export const ProjectQuery = graphql`

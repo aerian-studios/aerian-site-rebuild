@@ -17,6 +17,7 @@ export interface ImageSharp {
 }
 export interface ImageSharpSizes {
     aspectRatio?: number;
+    sizes?: string;
     src: string;
     srcSet?: string;
     tracedSVG?: string;

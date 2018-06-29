@@ -4,7 +4,7 @@ export type ImageField = string | ImageSharp;
 
 // Images
 
-export interface Image {
+export interface GalleryImage {
     alt?: string;
     image: ImageField;
 }
@@ -17,6 +17,7 @@ export interface ImageSharp {
 }
 export interface ImageSharpSizes {
     aspectRatio?: number;
+    sizes?: string;
     src: string;
     srcSet?: string;
     tracedSVG?: string;
@@ -24,6 +25,14 @@ export interface ImageSharpSizes {
 }
 
 // PAGES
+
+export interface NodeList<T> {
+    edges: Array<Edge<T>>;
+}
+
+export interface Edge<T> {
+    node: T;
+}
 export interface PagesListData {
     data: {
         allPagesJson: PageList;
@@ -34,12 +43,12 @@ export interface PageList {
     edges: PageListNode[];
 }
 
-export interface PageListNode {
-    node: {
-        id: string;
-        path: string;
-        title: string;
-    };
+export type PageListNode = Edge<PageRef>;
+
+export interface PageRef {
+    id: string;
+    path: string;
+    title: string;
 }
 
 export interface PageSection {
@@ -48,12 +57,14 @@ export interface PageSection {
     smallImage?: ImageField;
     subtitle: string;
     blurb: string;
+    activities?: Activity[];
+    successStory?: SuccessStory;
+    testimonial?: Testimonial;
 }
 
 export interface Page {
     title: string;
     path: string;
-
     heroImage?: ImageField;
     subheading: string;
     description: string;
@@ -88,7 +99,26 @@ export interface MeetTheTeam extends Page {
     staff: Staff[];
 }
 
-export interface About extends Page {}
+export interface About extends Page {
+    infographic?: Infographic[];
+}
+
+export type InfographicType =
+    | "Single Line"
+    | "Compact Single Line"
+    | "Split"
+    | "Bar"
+    | "Vertical"
+    | "Horizontal"
+    | "Surround";
+export interface Infographic {
+    primaryText?: string;
+    type: InfographicType;
+    secondaryText?: string;
+    image?: ImageField;
+    imageCount: number;
+    secondaryImage?: ImageField;
+}
 
 export interface Staff {
     name: string;
@@ -108,4 +138,74 @@ export interface ReactRouterLocation {
     pathname: string;
     search: string;
     state: null | string;
+}
+
+export interface Testimonial {
+    quote?: string;
+    person?: string;
+    title?: string;
+    avatar?: ImageField;
+}
+
+export interface Stat {
+    title: string;
+    text: string;
+    image: ImageField;
+}
+export interface SuccessStory {
+    title: string;
+    stats?: Stat[];
+}
+
+export interface Activity {
+    title: string;
+    text: string;
+}
+
+export interface Hurdle {
+    title: string;
+    image: ImageField;
+    text: string;
+}
+
+export interface ProjectStage {
+    description: string;
+    hurdles: Hurdle[];
+}
+
+export interface Performance {
+    stat: string;
+    text: string;
+}
+
+export interface Project {
+    name: string;
+    heroImage: ImageField;
+    heroVideo?: string;
+    titleLineOne: string;
+    titleLineTwo?: string;
+    client: string;
+    goLiveDate?: string;
+    caseStudyTitle: string;
+    caseStudyText: string;
+    caseStudyImage: ImageField;
+    externalUrl: string;
+    rolloverDetails: string;
+    homepage: boolean;
+    featured: boolean;
+    gallery: GalleryImage[];
+    challenge: ProjectStage;
+    solution: ProjectStage;
+    results: ProjectStage;
+    performance?: Performance[];
+    testimonial?: Testimonial;
+}
+
+export interface Client {
+    name: string;
+    logo: ImageField;
+    promoLogo: ImageField;
+    featured: boolean;
+    featuredProject?: string;
+    slug: string;
 }

@@ -3,7 +3,6 @@ import * as React from "react";
 import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 
-import { ImageSharp } from "../../types/data";
 import { Image } from "./index";
 
 import { image, imageSharp } from "../../types/fixtures";

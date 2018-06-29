@@ -1,8 +1,7 @@
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import * as React from "react";
-
 import { FullScreenMedia } from "../components/FullScreenMedia";
+import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
@@ -91,7 +90,7 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                     </div>
                 </PageHeader>
                 {staff.map(person => (
-                    <Img fixed={person.imageFunny.childImageSharp.fixed} />
+                    <Image key={person.name} source={person.imageFunny} />
                 ))}
             </section>
         </Layout>

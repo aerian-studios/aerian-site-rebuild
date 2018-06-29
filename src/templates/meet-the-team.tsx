@@ -90,7 +90,11 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                     </div>
                 </PageHeader>
                 {staff.map(person => (
-                    <Image key={person.name} source={person.imageFunny} />
+                    <Image
+                        key={person.name}
+                        source={person.imageFunny}
+                        alt={person.name}
+                    />
                 ))}
             </section>
         </Layout>

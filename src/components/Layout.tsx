@@ -5,8 +5,7 @@ import Helmet from "react-helmet";
 import ErrorBoundary from "../components/ErrorBoundary";
 import { PageNavBar } from "../components/PageNavBar";
 
-// Theme styles
-import "../scss/base-theme.scss";
+import "../lib/theme";
 
 // logo
 import * as logo from "../assets/furniture/logo.svg";

@@ -3,12 +3,15 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
-import { HeroBlock } from "./HeroBlock";
+import { PageHeader } from "./index";
 
-describe("HeroBlock", () =>
+
+describe("PageHeader", () => (
     it("renders correctly", () => {
         const tree = renderer
-            .create(<HeroBlock>Hero block</HeroBlock>)
+            .create(<PageHeader className="myClass" />
+            )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    })
+));

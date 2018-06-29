@@ -139,6 +139,7 @@ collections:
         fields: 
           - {label: "Title", name: "title", widget: string}
           - {label: "Path", name: "path", widget: string}
+          - {label: "Hero image", name: "heroImage", widget: "image"}
           - {label: "Subheading", name: "subheading", widget: string}
           - {label: "Description", name: "description", widget: text}
           - {label: "SEO title", name: "seoTitle", widget: string}
@@ -153,7 +154,7 @@ collections:
               - {label: "Secondary text", name: "secondary", widget: "string", required: false}
               - {label: "Image", name: "image", widget: "image", required: false}
               - {label: "Image count", name: "count", widget: "number", default: 1, type: "int", min: 0}
-              - {label: "Secondary Image", name: "title", widget: "image", required: false}
+              - {label: "Secondary Image", name: "secondaryImage", widget: "image", required: false}
 
 
       - file: "src/pages/what-we-do.json"
@@ -162,6 +163,7 @@ collections:
         fields: 
           - {label: "Title", name: "title", widget: string}
           - {label: "Path", name: "path", widget: string}
+          - {label: "Hero image", name: "heroImage", widget: "image"}
           - {label: "Subheading", name: "subheading", widget: string}
           - {label: "Description", name: "description", widget: text}
           - {label: "SEO title", name: "seoTitle", widget: string}

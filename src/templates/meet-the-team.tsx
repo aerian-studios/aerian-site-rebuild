@@ -1,106 +1,100 @@
-import { graphql, StaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
-
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import { Image } from "../components/Image";
+import Layout from "../components/Layout";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
-import { ImageSharp, ImageSharpSizes, PageSection, Staff } from "../types/data";
+import { isImageSharp } from "../lib/helpers";
+import { MeetTheTeam, ReactRouterLocation } from "../types/data";
 
 interface Props {
-    title: string;
-    sections: PageSection[];
-    staff: Staff[];
-    heroImage: ImageSharpSizes | string;
+    data: GraphData;
+    location: ReactRouterLocation;
 }
-export const MeeTheTeamPageTemplate: React.SFC<Props> = ({
-    title,
-    sections,
-    staff,
-    heroImage
-}) => {
-    return (
-        <section className="section section--about">
-            <HeroBlock>
-                {typeof heroImage === "string" ? (
-                    // Cover the situation where there is no imageSharp (e.g. in the cms)
-                    <img
-                        className="full-screen"
-                        src={heroImage}
-                        alt=""
-                        aria-hidden="true"
-                    />
-                ) : (
-                    <FullScreenMedia
-                        image={heroImage}
-                        altText={title}
-                        video=""
-                    />
-                )}
-                <div className="block--hero__content-wrap">
-                    <h1 className="block--hero__title">{title}</h1>
-                </div>
-            </HeroBlock>
-            <div className="block--full block layout-grid">
-                {
-                    // add staff
+
+interface GraphData {
+    pagesJson: MeetTheTeam;
+}
+
+export const pageQuery = graphql`
+    query MeetTheTeamPage($id: String!) {
+        pagesJson(id: { eq: $id }) {
+            ...PageFields
+            staff {
+                name
+                jobTitle
+                live
+                imageNormal {
+                    childImageSharp {
+                        fixed(width: 500) {
+                            ...GatsbyImageSharpFixed
+                        }
+                    }
                 }
-            </div>
-        </section>
+                imageFunny {
+                    childImageSharp {
+                        fixed(width: 500) {
+                            ...GatsbyImageSharpFixed
+                        }
+                    }
+                }
+                description
+                fact
+                skills
+            }
+        }
+    }
+`;
+
+export const MeetTheTeamPage: React.SFC<Props> = props => {
+    const {
+        title,
+        staff,
+        heroImage,
+        seoDescription,
+        seoKeywords,
+        seoTitle
+    } = props.data.pagesJson;
+
+    return (
+        <Layout
+            location={props.location}
+            {...{
+                title,
+                seoDescription,
+                seoKeywords,
+                seoTitle
+            }}
+        >
+            <section className="section section--about">
+                <PageHeader>
+                    {heroImage && isImageSharp(heroImage) ? (
+                        <FullScreenMedia
+                            image={heroImage.childImageSharp.fluid}
+                            altText={title}
+                            video=""
+                        />
+                    ) : (
+                        // Cover the situation where there is no imageSharp (e.g. in the cms)
+                        <img
+                            className="full-screen"
+                            src={heroImage}
+                            alt=""
+                            aria-hidden="true"
+                        />
+                    )}
+                    <div className="block--hero__content-wrap">
+                        <h1 className="block--hero__title">{title}</h1>
+                        <button>Hello</button>
+                    </div>
+                </PageHeader>
+                {staff.map(person => (
+                    <Image key={person.name} source={person.imageFunny} />
+                ))}
+            </section>
+        </Layout>
     );
 };
 
-// Make type interface
-const MeeTheTeamPage: React.SFC<graphData> = props => (
-    <StaticQuery
-        query={graphql`
-            query MeeTheTeamPage($id: String!) {
-                pagesJson(id: { eq: $id }) {
-                    # heroImage
-                    # pageTitle
-                    sections {
-                        title
-                        image
-                        smallImage
-                        subtitle
-                        blurb
-                    }
-                    staff {
-                        name
-                        jobTitle
-                        live
-                        imageNormal
-                        imageFunny
-                        description
-                        fact
-                        skills
-                    }
-                }
-            }
-        `}
-        render={(data: GraphData["data"]) => {
-            return (
-                <MeeTheTeamPageTemplate
-                    title={data.pageTitle || ""}
-                    heroImage={
-                        !data.heroImage || typeof data.heroImage === "string"
-                            ? data.heroImage || ""
-                            : data.heroImage.childImageSharp.sizes
-                    }
-                    staff={data.staff}
-                    sections={data.sections || []}
-                />
-            );
-        }}
-    />
-);
-
-export default MeeTheTeamPage;
-
-interface GraphData {
-    data: {
-        heroImage?: string | ImageSharp;
-        pageTitle?: string;
-        sections?: PageSection[];
-        staff: Staff[];
-    };
-}
+export default MeetTheTeamPage;

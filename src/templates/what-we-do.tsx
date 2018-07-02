@@ -16,7 +16,6 @@ interface Props {
     location: ReactRouterLocation;
 }
 export const WhatWeDoPage: React.SFC<Props> = props => {
-    console.log(props);
     const {
         title,
         sections,

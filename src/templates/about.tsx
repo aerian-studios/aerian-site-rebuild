@@ -15,7 +15,7 @@ interface Props {
     location: ReactRouterLocation;
 }
 
-export const about: React.SFC<Props> = props => {
+export const AboutPage: React.SFC<Props> = props => {
     const {
         title,
         heroImage,
@@ -67,4 +67,4 @@ export const pageQuery = graphql`
         }
     }
 `;
-export default about;
+export default AboutPage;

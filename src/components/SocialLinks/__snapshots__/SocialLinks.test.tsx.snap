@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialLinks renders correctly 1`] = `
+<div
+  className=" "
+>
+  <li
+    className=" myClass"
+  >
+    <a
+      href="https://www.facebook.com"
+      rel="nofollow noreferer"
+    />
+  </li>
+  <li
+    className=" myClass"
+  >
+    <a
+      href="https://www.twitter.com"
+      rel="nofollow noreferer"
+    />
+  </li>
+  <li
+    className=" myClass"
+  >
+    <a
+      href="https://instagram.com"
+      rel="nofollow noreferer"
+    />
+  </li>
+</div>
+`;

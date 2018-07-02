@@ -1,24 +1,29 @@
-import Img from "gatsby-image";
+import Img, { GatsbyImageProps } from "gatsby-image";
 import * as React from "react";
-
 import { isImageSharp } from "../../lib/helpers";
 import { ImageField } from "../../types/data";
 import * as styles from "./Image.scss";
 
-interface Props {
+interface MyProps {
     source: ImageField;
 }
+
+type ImgProps = React.ImgHTMLAttributes<HTMLImageElement>;
+
+type Props = MyProps & GatsbyImageProps & ImgProps;
 
 export const Image: React.SFC<Props> = ({ source, ...props }) => {
     if (!source) {
         return null;
     }
     if (!isImageSharp(source)) {
-        return <img src={source} {...props} />;
+        const imgProps = props as ImgProps;
+        return <img src={source} {...imgProps} />;
     }
+    const sharpProps = props as GatsbyImageProps;
     if (source.childImageSharp.fixed) {
-        return <Img fixed={source.childImageSharp.fixed} {...props} />;
+        return <Img fixed={source.childImageSharp.fixed} {...sharpProps} />;
     }
-    return <Img fluid={source.childImageSharp.fluid} {...props} />;
+    return <Img fluid={source.childImageSharp.fluid} {...sharpProps} />;
 };
 export default Image;

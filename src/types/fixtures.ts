@@ -1,5 +1,3 @@
-// tslint:disable:no-var-requires
-
 import {
     About,
     Client,

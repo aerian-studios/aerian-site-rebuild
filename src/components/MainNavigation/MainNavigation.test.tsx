@@ -4,7 +4,7 @@ import * as React from "react";
 import * as renderer from "react-test-renderer";
 
 import { PageListNode } from "../../types/data";
-// import { MainNavigation } from "./index";
+import { MainNavigation } from "./index";
 
 import { MemoryRouter } from "react-router-dom";
 
@@ -25,7 +25,7 @@ const pages: PageListNode[] = [
     }
 ];
 
-xdescribe("MainNavigation", () => {
+describe("MainNavigation", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -41,14 +41,16 @@ xdescribe("MainNavigation", () => {
         expect(tree).toMatchSnapshot();
     });
 
-    xit("sets '.active-path' to the matching menu item", () => {
+    it("sets '.active-path' to the matching menu item", () => {
         const tree = renderer
             .create(
-                <MainNavigation
-                    className="myClass"
-                    pages={pages}
-                    activePath={pages[1].node.path}
-                />
+                <MemoryRouter>
+                    <MainNavigation
+                        className="myClass"
+                        pages={pages}
+                        activePath={pages[1].node.path}
+                    />
+                </MemoryRouter>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();

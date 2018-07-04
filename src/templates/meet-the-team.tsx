@@ -1,10 +1,10 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
+import { StaffGridBlock } from "../components/StaffGridBlock";
 import { isImageSharp } from "../lib/helpers";
 import { MeetTheTeam, ReactRouterLocation } from "../types/data";
 
@@ -67,7 +67,7 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                 seoTitle
             }}
         >
-            <section className="section section--about">
+            <section>
                 <PageHeader>
                     {heroImage && isImageSharp(heroImage) ? (
                         <FullScreenMedia
@@ -89,13 +89,8 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                         <button>Hello</button>
                     </div>
                 </PageHeader>
-                {staff.map(person => (
-                    <Image
-                        key={person.name}
-                        source={person.imageFunny}
-                        alt={person.name}
-                    />
-                ))}
+
+                <StaffGridBlock staff={staff} />
             </section>
         </Layout>
     );

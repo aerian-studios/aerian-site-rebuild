@@ -1,5 +1,5 @@
 import deepMap from "deep-map";
-import { ImageSharp, ImageSharpSizes } from "../types/data";
+import { ImageSharp, ImageSharpSizes, NodeList } from "../types/data";
 export const isImageSharp = (
     image: ImageSharp | string
 ): image is ImageSharp => {
@@ -21,3 +21,6 @@ export const absolutifyURL = (url: string) => {
 export const absolutifyURLs = <T = any>(obj: T) => {
     return deepMap<T>(obj, absolutifyURL);
 };
+
+export const extractNodes = <T>(nodeList: NodeList<T>): T[] =>
+    nodeList.edges.map(node => node.node);

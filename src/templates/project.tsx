@@ -5,9 +5,9 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
-import { SectionNav } from "../components/SectionNav/";
 import { isImageSharp } from "../lib/helpers";
 import {
+    ImageField,
     ImageSharp,
     ImageSharpSizes,
     ReactRouterLocation
@@ -31,7 +31,7 @@ interface GraphData {
     projectsJson: {
         pageTitle1: string;
         pageTitle2: string;
-        heroImage: ImageSharpSizes | string;
+        heroImage: ImageField;
         heroVideo?: string;
         caseStudy: {
             title: string;
@@ -84,30 +84,14 @@ export const ProjectPage: React.SFC<Props> = props => {
         <Layout location={props.location} title={pageTitle1}>
             <section className="section section--about">
                 <PageHeader>
-                    {typeof heroImage === "string" ? (
-                        // Cover the situation where there is no imageSharp (e.g. in the cms)
-                        !heroVideo ? (
-                            <img
-                                className="full-screen"
-                                src={heroImage}
-                                alt=""
-                                aria-hidden="true"
-                            />
-                        ) : (
-                            <FullScreenMedia
-                                image={heroImage}
-                                video={heroVideo}
-                            />
-                        )
-                    ) : (
-                        <FullScreenMedia
-                            image={heroImage}
-                            aria-labelled-by="page-title"
-                            video=""
-                        />
-                    )}
-                    <div className="block--hero__content-wrap">
-                        <h1 id="page-title" className="block--hero__title">
+                    <FullScreenMedia
+                        image={heroImage}
+                        aria-labelled-by="page-title"
+                        video={heroVideo}
+                    />
+
+                    <div>
+                        <h1>
                             {pageTitle1}
                             <br />
                             {pageTitle2}
@@ -123,10 +107,6 @@ export const ProjectPage: React.SFC<Props> = props => {
             </section>
         </Layout>
     );
-};
-
-const createCorrectMediumComponent = (image: ImageSharp | string) => {
-    return isImageSharp(image) ? image.childImageSharp.fluid : image;
 };
 
 export const ProjectQuery = graphql`

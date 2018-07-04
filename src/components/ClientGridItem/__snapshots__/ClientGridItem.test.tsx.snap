@@ -5,7 +5,7 @@ exports[`ClientGridItem renders correctly 1`] = `
   className=" myClass"
 >
   <a
-    href="/projects/cnn-africa-view"
+    href="/our-work/project/cnn-africa-view"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >

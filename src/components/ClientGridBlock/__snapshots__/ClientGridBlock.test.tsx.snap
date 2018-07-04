@@ -8,7 +8,7 @@ exports[`ClientGridBlock renders correctly 1`] = `
     className=" "
   >
     <a
-      href="/projects/cnn-africa-view"
+      href="/our-work/project/cnn-africa-view"
       onClick={[Function]}
       onMouseEnter={[Function]}
     >

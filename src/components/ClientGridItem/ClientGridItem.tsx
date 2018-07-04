@@ -16,7 +16,9 @@ export const ClientGridItem: React.SFC<Props> = ({
 }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
         {client.featuredProject && (
-            <Link to={`/projects/${client.featuredProject}`}>Project</Link>
+            <Link to={`/our-work/project/${client.featuredProject}`}>
+                Project
+            </Link>
         )}
         <Image source={client.logo} />
     </div>

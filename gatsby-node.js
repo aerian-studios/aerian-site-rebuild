@@ -89,7 +89,7 @@ exports.createPages = ({ actions, graphql }) => {
         result.data.allProjectsJson.edges.forEach(edge => {
             const id = edge.node.id;
             const template = "project";
-            const slug = edge.node.slug;
+            const slug = `projects/${edge.node.slug}`;
 
             generatePage(id, template, slug);
         });

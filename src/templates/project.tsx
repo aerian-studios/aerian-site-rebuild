@@ -5,22 +5,15 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
+import { Block } from "../components/Block";
+import { CaseStudyIntro } from "../components/CaseStudyIntro";
+import { Gallery } from "../components/Gallery";
+import { GroupThree } from "../components/GroupThree";
+import { OnwardJourneys } from "../components/OnwardJourneys";
+import { PerformanceBlock } from "../components/PerformanceBlock";
+import { ProjectStageBlock } from "../components/ProjectStageBlock";
 import { isImageSharp } from "../lib/helpers";
-import {
-    ImageField,
-    ImageSharp,
-    ImageSharpSizes,
-    ReactRouterLocation
-} from "../types/data";
-
-interface Block {
-    description: string;
-    hurdles: {
-        title: string;
-        image: string | ImageSharpSizes;
-        text: string;
-    };
-}
+import { Project, ReactRouterLocation } from "../types/data";
 
 interface Props {
     data: GraphData;
@@ -28,30 +21,7 @@ interface Props {
 }
 
 interface GraphData {
-    projectsJson: {
-        pageTitle1: string;
-        pageTitle2: string;
-        heroImage: ImageField;
-        heroVideo?: string;
-        caseStudy: {
-            title: string;
-            text: string;
-        };
-        challenge?: Block;
-        solution?: Block;
-        results?: Block;
-        performance?: {
-            title: string;
-            text: string;
-        };
-        testimonial?: {
-            quote: string;
-            person: string;
-            title: string;
-            avatar: string | ImageSharpSizes;
-        };
-        id: string;
-    };
+    projectsJson: Project;
 }
 
 const keys = {
@@ -67,44 +37,66 @@ const onNavigation = (id: string) => {
 };
 
 export const ProjectPage: React.SFC<Props> = props => {
-    const {
-        pageTitle1,
-        pageTitle2,
-        heroImage,
-        heroVideo,
-        caseStudy,
-        challenge,
-        solution,
-        results,
-        performance,
-        testimonial,
-        id
-    } = props.data.projectsJson;
+    const project = props.data.projectsJson;
     return (
-        <Layout location={props.location} title={pageTitle1}>
-            <section className="section section--about">
-                <PageHeader>
-                    <FullScreenMedia
-                        image={heroImage}
-                        aria-labelled-by="page-title"
-                        video={heroVideo}
-                    />
+        <Layout location={props.location} title={project.titleLineOne}>
+            <PageHeader>
+                <FullScreenMedia
+                    image={project.heroImage}
+                    aria-labelled-by="page-title"
+                    video={project.heroVideo}
+                />
 
-                    <div>
-                        <h1>
-                            {pageTitle1}
-                            <br />
-                            {pageTitle2}
-                        </h1>
-                    </div>
-                </PageHeader>
-                {/* <SectionNav
+                <div>
+                    <h1>
+                        {project.titleLineOne}
+                        <br />
+                        {project.titleLineTwo}
+                    </h1>
+                </div>
+            </PageHeader>
+            {/* <SectionNav
                 keyConsts={keys}
                 sections={props}
                 onNavigation={onNavigation}
             /> */}
-                <div className="block--full block layout-grid" />
-            </section>
+            <Block>
+                <div>Client logo</div>
+                <CaseStudyIntro project={project} />
+            </Block>
+            <Block>
+                <Gallery gallery={project.gallery} />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Challenge"
+                    projectStage={project.challenge}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Solution"
+                    projectStage={project.solution}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Result"
+                    projectStage={project.results}
+                />
+            </Block>
+            <Block>
+                {/*  TestimonialBlock  */}
+                {JSON.stringify(project.testimonial)}
+            </Block>
+            {project.performance && (
+                <Block>
+                    <PerformanceBlock performance={project.performance} />
+                </Block>
+            )}
+            <Block>
+                <OnwardJourneys projectURL={project.externalUrl} />
+            </Block>
         </Layout>
     );
 };
@@ -127,6 +119,16 @@ export const ProjectQuery = graphql`
                 }
             }
             heroVideo
+            gallery {
+                image {
+                    childImageSharp {
+                        fluid(maxWidth: 1024) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+                alt
+            }
             challenge {
                 description
                 hurdles {

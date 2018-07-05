@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectStageBlock renders correctly 1`] = `
+<div
+  className=" "
+>
+  <div
+    className=" "
+  >
+    <h2 />
+    <p>
+      Whatever we built needed to be awesome, no matter how non-awesome someone's device might be
+    </p>
+  </div>
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <img
+        alt="Responsive guidelines "
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/622/bbc-iwonder-01.png"
+      />
+      <h3>
+        Responsive guidelines 
+      </h3>
+      <p>
+        *   Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
+*   Work with iWonder responsive guidelines.
+      </p>
+    </div>
+    <div
+      className=" "
+    >
+      <img
+        alt="Audience sharing "
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/623/bbc-iwonder-02.png"
+      />
+      <h3>
+        Audience sharing 
+      </h3>
+      <p>
+        *   Work with iWonder games guidelines.
+*   Creating an app framework that will work with a variety of question types.
+*   High audience and sharing figures were a requirement.
+      </p>
+    </div>
+    <div
+      className=" "
+    >
+      <img
+        alt="Tight turn around"
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/624/bbc-iwonder-03.png"
+      />
+      <h3>
+        Tight turn around
+      </h3>
+      <p>
+        *   As always, a tight turn around time.
+*   The total download size of the initial activity load MUST be less than 250kb.
+*   Any individual asset within an activity SHOULD NOT exceed 100KB.
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,117 +1,118 @@
 {
-  "name": "Breast Cancer Now Launch",
-  "slug": "breast-cancer-now",
-  "titleLineOne": "It's our aim, that by 2050",
-  "titleLineTwo": "no women will die from breast cancer",
-  "goLiveDate": "2015-06-01T23:00:00.000Z",
-  "caseStudyTitle":
-    "We helped create an industry leading, user centred charity",
-  "caseStudyText":
-    "Breast Cancer Campaign and Breakthrough Breast Cancer needed to merge to form a new £50m+ charity, and as such they needed a digital footprint and launch to match the ambition of the new charity.",
-  "externalUrl": "http://breastcancernow.org/?gclid=CJvE_YmHwMsCFfQW0wod_xkIDA",
-  "client": "breast-cancer-now",
-  "homepage": true,
-  "featured": true,
-  "rolloverDetails":
-    "We befriended the audience, we rewrote the book and we helped deliver one of the most worthwhile digital products ever. ",
-  "heroImage": "/assets/imported/102/bcn-hero-image.jpg",
-  "heroVideo": null,
-  "challenge": {
-    "description":
-      "As a team, we needed to combine two diverse teams, and two digital real estates and brands under a single, coherent and compelling banner. ",
-    "hurdles": [
-      {
-        "title": "Fast turnaroud",
-        "text":
-          "We were, and continue to be the lead agency responsible for digital output. Due to the press launch and necessary velocity of the project, we had a mere 3 month turnaround to find the audience, know them, rebrand and relaunch their digital real-estate: quicker, better and more exciting than ever before.",
-        "image": "/assets/imported/650/bcn-01.png"
-      },
-      {
-        "title": "Unmovable launch and enormous amounts to do",
-        "text":
-          "As you can imagine, when you're in the spotlight, with booked TV slots and a slew of industry and public PR waiting in the wings. We simply could not be late. It was an enormous task needed to combine two teams, thousands of pieces of content, several systems, applications etc.",
-        "image": "/assets/imported/649/bcn-02.png"
-      },
-      {
-        "title": "Complex auditing ",
-        "text":
-          "We needed to complete a series of complex and thorough auditing and consolidation rounds, covering two highly complex websites and all their microsites, interactives, apps and donation platforms.",
-        "image": "/assets/imported/651/bcn-03.png"
-      }
-    ]
-  },
-  "solution": {
-    "description":
-      "At all times, we worked up from the users. They were our inspiration, our decision makers and drove our innovation. ",
-    "hurdles": [
-      {
-        "title": "Creating user personas ",
-        "text":
-          "We knew nothing could be decided quickly and easily unless we absolutely knew what our audience wanted. So we harnessed user research analytics from both charities to create a consolidated set of 6 personas which we used to user test against and validate our potential solutions.",
-        "image": "/assets/imported/652/bcn-04.png"
-      },
-      {
-        "title": "Key characteristics ",
-        "text":
-          "We further extrapolated on this and identified key characteristics (temperament/behaviors), their specific content requirements and the success criteria needed to meet their wants and needs. Basically, we made the site work for THEM, and not US.",
-        "image": "/assets/imported/653/bcn-05.png"
-      },
-      {
-        "title": "Elegant messaging  ",
-        "text":
-          "We knew the charity needed a new voice in a crowded space, and by working closely with the brand team we created a website targeted at the simple, yet elegant, message to end breast cancer by 2050.",
-        "image": "/assets/imported/654/bcn-06.png"
-      }
-    ]
-  },
-  "results": {
-    "description":
-      "Football teams, broadcasters, celebrities and volunteers across the country have embraced our project like never before. It's been featured, shared, award nominated and loved like no other. ",
-    "hurdles": [
-      {
-        "title": "Highly successful, and award worthy",
-        "text":
-          "The site launched successfully June 2015 in conjuncture with the TV ad campaign to wider-spread acclaim and a whirlwind of interactions. Furthermore, it's been picked up, blogged and featured across the net, and nominated for a number of awards (wish us luck)",
-        "image": "/assets/imported/655/bcn-07.png"
-      },
-      {
-        "title": "Reaching new audiences, and mobile ones at that",
-        "text":
-          "Leading the way in the breast cancer sector, Breast Cancer Now has set a new standard and created a unique niche that is as well used, as it is loved. Further, mobile usage has exploded, now accounting for over half the audience.",
-        "image": "/assets/imported/656/bcn-08.png"
-      },
-      {
-        "title": "Deep engagement ",
-        "text":
-          "This has seen a deeper, and longer engagement than anyone could have guessed. Interactions are markedly up, donations are up and the site is performing way above expectation.",
-        "image": "/assets/imported/657/bcn-09.png"
-      }
-    ]
-  },
-  "performance": [],
-  "testimonial": {
-    "quote":
-      "Thanks so much to all of you for the speed and quality of your work across the board - design, communication build and overall passion for the project that’s made it as amazing as it is. It’s been awesome working with you on this and we’re looking forward to all the next steps that can now be taken without such a massive immovable deadline propelling us along!",
-    "person": "James Elliot ",
-    "title": "Assistant Director of Digital Engagement",
-    "avatar": "/assets/imported/105/bcn-quote-image.jpg"
-  },
-  "gallery": [
-    {
-      "image": "/assets/imported/111/bcn-grid-image-1.jpg",
-      "alt": "BCN grid image 1"
+    "name": "Breast Cancer Now Launch",
+    "slug": "breast-cancer-now",
+    "titleLineOne": "It's our aim, that by 2050",
+    "titleLineTwo": "no women will die from breast cancer",
+    "goLiveDate": "2015-06-01T23:00:00.000Z",
+    "caseStudyTitle":
+        "We helped create an industry leading, user centred charity",
+    "caseStudyText":
+        "Breast Cancer Campaign and Breakthrough Breast Cancer needed to merge to form a new £50m+ charity, and as such they needed a digital footprint and launch to match the ambition of the new charity.",
+    "externalUrl":
+        "http://breastcancernow.org/?gclid=CJvE_YmHwMsCFfQW0wod_xkIDA",
+    "client": "breast-cancer-now",
+    "homepage": true,
+    "featured": true,
+    "rolloverDetails":
+        "We befriended the audience, we rewrote the book and we helped deliver one of the most worthwhile digital products ever. ",
+    "heroImage": "/assets/imported/102/bcn-hero-image.jpg",
+    "heroVideo": null,
+    "challenge": {
+        "description":
+            "As a team, we needed to combine two diverse teams, and two digital real estates and brands under a single, coherent and compelling banner. ",
+        "hurdles": [
+            {
+                "title": "Fast turnaroud",
+                "text":
+                    "We were, and continue to be the lead agency responsible for digital output. Due to the press launch and necessary velocity of the project, we had a mere 3 month turnaround to find the audience, know them, rebrand and relaunch their digital real-estate: quicker, better and more exciting than ever before.",
+                "image": "/assets/imported/650/bcn-01.png"
+            },
+            {
+                "title": "Immovable launch and enormous amounts to do",
+                "text":
+                    "As you can imagine, when you're in the spotlight, with booked TV slots and a slew of industry and public PR waiting in the wings. We simply could not be late. It was an enormous task needed to combine two teams, thousands of pieces of content, several systems, applications etc.",
+                "image": "/assets/imported/649/bcn-02.png"
+            },
+            {
+                "title": "Complex auditing ",
+                "text":
+                    "We needed to complete a series of complex and thorough auditing and consolidation rounds, covering two highly complex websites and all their microsites, interactives, apps and donation platforms.",
+                "image": "/assets/imported/651/bcn-03.png"
+            }
+        ]
     },
-    {
-      "image": "/assets/imported/110/bcn-grid-image-2.jpg",
-      "alt": "BCN grid image 2"
+    "solution": {
+        "description":
+            "At all times, we worked up from the users. They were our inspiration, our decision makers and drove our innovation. ",
+        "hurdles": [
+            {
+                "title": "Creating user personas ",
+                "text":
+                    "We knew nothing could be decided quickly and easily unless we absolutely knew what our audience wanted. So we harnessed user research analytics from both charities to create a consolidated set of 6 personas which we used to user test against and validate our potential solutions.",
+                "image": "/assets/imported/652/bcn-04.png"
+            },
+            {
+                "title": "Key characteristics ",
+                "text":
+                    "We further extrapolated on this and identified key characteristics (temperament/behaviors), their specific content requirements and the success criteria needed to meet their wants and needs. Basically, we made the site work for THEM, and not US.",
+                "image": "/assets/imported/653/bcn-05.png"
+            },
+            {
+                "title": "Elegant messaging  ",
+                "text":
+                    "We knew the charity needed a new voice in a crowded space, and by working closely with the brand team we created a website targeted at the simple, yet elegant, message to end breast cancer by 2050.",
+                "image": "/assets/imported/654/bcn-06.png"
+            }
+        ]
     },
-    {
-      "image": "/assets/imported/101/bcn-grid-image-3.jpg",
-      "alt": "BCN grid image 3"
+    "results": {
+        "description":
+            "Football teams, broadcasters, celebrities and volunteers across the country have embraced our project like never before. It's been featured, shared, award nominated and loved like no other. ",
+        "hurdles": [
+            {
+                "title": "Highly successful, and award worthy",
+                "text":
+                    "The site launched successfully June 2015 in conjuncture with the TV ad campaign to wider-spread acclaim and a whirlwind of interactions. Furthermore, it's been picked up, blogged and featured across the net, and nominated for a number of awards (wish us luck)",
+                "image": "/assets/imported/655/bcn-07.png"
+            },
+            {
+                "title": "Reaching new audiences, and mobile ones at that",
+                "text":
+                    "Leading the way in the breast cancer sector, Breast Cancer Now has set a new standard and created a unique niche that is as well used, as it is loved. Further, mobile usage has exploded, now accounting for over half the audience.",
+                "image": "/assets/imported/656/bcn-08.png"
+            },
+            {
+                "title": "Deep engagement ",
+                "text":
+                    "This has seen a deeper, and longer engagement than anyone could have guessed. Interactions are markedly up, donations are up and the site is performing way above expectation.",
+                "image": "/assets/imported/657/bcn-09.png"
+            }
+        ]
     },
-    {
-      "image": "/assets/imported/100/bcn-grid-image-4.jpg",
-      "alt": "BCN grid image 4"
-    }
-  ]
+    "performance": [],
+    "testimonial": {
+        "quote":
+            "Thanks so much to all of you for the speed and quality of your work across the board - design, communication build and overall passion for the project that’s made it as amazing as it is. It’s been awesome working with you on this and we’re looking forward to all the next steps that can now be taken without such a massive immovable deadline propelling us along!",
+        "person": "James Elliot ",
+        "title": "Assistant Director of Digital Engagement",
+        "avatar": "/assets/imported/105/bcn-quote-image.jpg"
+    },
+    "gallery": [
+        {
+            "image": "/assets/imported/111/bcn-grid-image-1.jpg",
+            "alt": "BCN grid image 1"
+        },
+        {
+            "image": "/assets/imported/110/bcn-grid-image-2.jpg",
+            "alt": "BCN grid image 2"
+        },
+        {
+            "image": "/assets/imported/101/bcn-grid-image-3.jpg",
+            "alt": "BCN grid image 3"
+        },
+        {
+            "image": "/assets/imported/100/bcn-grid-image-4.jpg",
+            "alt": "BCN grid image 4"
+        }
+    ]
 }

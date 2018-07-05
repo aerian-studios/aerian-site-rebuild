@@ -19,7 +19,7 @@ export const PerformanceBlock: React.SFC<Props> = ({
         <h2>Performance &amp; Statistics</h2>
         <GroupThree>
             {performance.map(perf => (
-                <div>
+                <div key={perf.title}>
                     <h4>{perf.title}</h4>
                     <p>{perf.text}</p>
                 </div>

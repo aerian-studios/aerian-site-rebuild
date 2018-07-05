@@ -174,7 +174,7 @@ export interface ProjectStage {
 }
 
 export interface Performance {
-    stat: string;
+    title: string;
     text: string;
 }
 

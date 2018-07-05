@@ -8,8 +8,8 @@
         "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
         "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
         "@fortawesome/react-fontawesome": "^0.1.0-11",
-        "extract-text-webpack-plugin": "^3.0.2",
         "deep-map": "^1.5.0",
+        "extract-text-webpack-plugin": "^3.0.2",
         "gatsby": "next",
         "gatsby-image": "next",
         "gatsby-plugin-manifest": "next",
@@ -25,7 +25,8 @@
         "netlify-cms": "^1.9.2",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
-        "react-helmet": "^5.2.0"
+        "react-helmet": "^5.2.0",
+        "react-markdown": "^3.3.4"
     },
     "keywords": [
         "gatsby"

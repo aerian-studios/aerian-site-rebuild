@@ -11,9 +11,15 @@ exports[`HurdleBlock renders correctly 1`] = `
   <h3>
     Responsive guidelines 
   </h3>
-  <p>
-    *   Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
-*   Work with iWonder responsive guidelines.
-  </p>
+  <div>
+    <ul>
+      <li>
+        Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
+      </li>
+      <li>
+        Work with iWonder responsive guidelines.
+      </li>
+    </ul>
+  </div>
 </div>
 `;

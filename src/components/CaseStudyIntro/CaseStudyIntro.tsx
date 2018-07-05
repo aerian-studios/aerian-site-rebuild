@@ -1,6 +1,5 @@
 import * as React from "react";
-
-import { Link } from "gatsby";
+import Markdown from "react-markdown";
 import { Project } from "../../types/data";
 import * as styles from "./CaseStudyIntro.scss";
 
@@ -18,7 +17,7 @@ export const CaseStudyIntro: React.SFC<Props> = ({
     <div className={[styles.component, className].join(" ")} style={style}>
         <h3>Case study</h3>
         <h2>{project.caseStudyTitle}</h2>
-        <p>{project.caseStudyText}</p>
+        <Markdown source={project.caseStudyText} />
         <a href={project.externalUrl}>Launch project</a>
     </div>
 );

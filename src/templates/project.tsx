@@ -8,11 +8,9 @@ import { PageHeader } from "../components/PageHeader/PageHeader";
 import { Block } from "../components/Block";
 import { CaseStudyIntro } from "../components/CaseStudyIntro";
 import { Gallery } from "../components/Gallery";
-import { GroupThree } from "../components/GroupThree";
-import { OnwardJourneys } from "../components/OnwardJourneys";
+import { OnwardJournies } from "../components/OnwardJournies";
 import { PerformanceBlock } from "../components/PerformanceBlock";
 import { ProjectStageBlock } from "../components/ProjectStageBlock";
-import { isImageSharp } from "../lib/helpers";
 import { Project, ReactRouterLocation } from "../types/data";
 
 interface Props {
@@ -95,7 +93,7 @@ export const ProjectPage: React.SFC<Props> = props => {
                 </Block>
             )}
             <Block>
-                <OnwardJourneys projectURL={project.externalUrl} />
+                <OnwardJournies projectURL={project.externalUrl} />
             </Block>
         </Layout>
     );

@@ -9,7 +9,9 @@ import { ProjectStageBlock } from "./index";
 describe("ProjectStageBlock", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<ProjectStageBlock projectStage={projectStage} />)
+            .create(
+                <ProjectStageBlock title="Stage" projectStage={projectStage} />
+            )
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

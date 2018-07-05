@@ -89,7 +89,7 @@ export const SectionNav: React.SFC<Props> = ({
     className,
     onNavigation
 }) => (
-    <nav className={[styles.base, className].join(" ")} style={style}>
+    <nav className={[styles.component, className].join(" ")} style={style}>
         {createNavItems(sections, keyConsts, onNavigation)}
     </nav>
 );

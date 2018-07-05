@@ -83,10 +83,14 @@ export const ProjectPage: React.SFC<Props> = props => {
                     projectStage={project.results}
                 />
             </Block>
-            <Block>
-                {/*  TestimonialBlock  */}
-                {JSON.stringify(project.testimonial)}
-            </Block>
+            {project.testimonial && (
+                <Block>
+                    {/*  TestimonialBlock  */}
+                    <blockquote>{project.testimonial.quote}</blockquote>
+                    <cite>{project.testimonial.person}</cite>
+                    <cite>{project.testimonial.title}</cite>
+                </Block>
+            )}
             {project.performance && (
                 <Block>
                     <PerformanceBlock performance={project.performance} />

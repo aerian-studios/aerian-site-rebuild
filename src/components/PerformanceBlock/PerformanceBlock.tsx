@@ -14,17 +14,18 @@ export const PerformanceBlock: React.SFC<Props> = ({
     style,
     className,
     performance
-}) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
-        <h2>Performance &amp; Statistics</h2>
-        <GroupThree>
-            {performance.map(perf => (
-                <div key={perf.title}>
-                    <h4>{perf.title}</h4>
-                    <p>{perf.text}</p>
-                </div>
-            ))}
-        </GroupThree>
-    </div>
-);
+}) =>
+    performance.length === 0 ? null : (
+        <div className={[styles.component, className].join(" ")} style={style}>
+            <h2>Performance &amp; Statistics</h2>
+            <GroupThree>
+                {performance.map(perf => (
+                    <div key={perf.title}>
+                        <h4>{perf.title}</h4>
+                        <p>{perf.text}</p>
+                    </div>
+                ))}
+            </GroupThree>
+        </div>
+    );
 export default PerformanceBlock;

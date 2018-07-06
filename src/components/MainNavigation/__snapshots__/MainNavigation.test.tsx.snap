@@ -5,16 +5,32 @@ exports[`MainNavigation renders correctly 1`] = `
   className=" myClass"
   id="menu-main"
 >
-  <span
-    className="menu-item-content"
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
-    Page 1
-  </span>
-  <span
-    className="menu-item-content"
+    <span
+      className="menu-item-content"
+    >
+      Page 1
+    </span>
+  </a>
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
-    Page 2
-  </span>
+    <span
+      className="menu-item-content"
+    >
+      Page 2
+    </span>
+  </a>
 </nav>
 `;
 
@@ -23,15 +39,31 @@ exports[`MainNavigation sets '.active-path' to the matching menu item 1`] = `
   className=" myClass"
   id="menu-main"
 >
-  <span
-    className="menu-item-content"
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
-    Page 1
-  </span>
-  <span
-    className="menu-item-content"
+    <span
+      className="menu-item-content"
+    >
+      Page 1
+    </span>
+  </a>
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
-    Page 2
-  </span>
+    <span
+      className="menu-item-content"
+    >
+      Page 2
+    </span>
+  </a>
 </nav>
 `;

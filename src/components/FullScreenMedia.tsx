@@ -1,14 +1,13 @@
-import Img from "gatsby-image";
 import * as React from "react";
 
-import { ImageSharpSizes } from "../types/data";
-
-import { isImageSharpSizes } from "../lib/helpers";
+import { isImageSharp } from "../lib/helpers";
+import { ImageField } from "../types/data";
 import { Omit } from "../types/helpers";
 import "./FullScreenMedia.scss";
+import { Image } from "./Image";
 
 interface Props {
-    image?: ImageSharpSizes | string;
+    image?: ImageField;
     altText?: string;
     video?: string;
     wrapperClassName?: string;
@@ -20,7 +19,10 @@ const getMedia = ({
     altText
 }: Omit<Props, { wrapperClassName: string }>) => {
     if (video) {
-        const poster = image && isImageSharpSizes(image) ? image.src : image;
+        const poster =
+            image && isImageSharp(image)
+                ? image.childImageSharp.fluid!.src
+                : image;
         return (
             <video
                 preload="auto"
@@ -39,11 +41,7 @@ const getMedia = ({
     if (!image) {
         return;
     }
-
-    if (isImageSharpSizes(image)) {
-        return <Img sizes={image} alt={altText} />;
-    }
-    return <img src={image} alt={altText} />;
+    return <Image source={image} alt={altText} />;
 };
 
 export const FullScreenMedia: React.SFC<Props> = ({

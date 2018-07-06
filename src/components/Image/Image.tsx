@@ -1,27 +1,16 @@
 import Img, { GatsbyImageProps } from "gatsby-image";
 import * as React from "react";
-
 import { isImageSharp } from "../../lib/helpers";
-import { ImageField, ImageSharp } from "../../types/data";
+import { ImageField } from "../../types/data";
 import * as styles from "./Image.scss";
 
-interface MySharpProps {
-    source: ImageSharp;
+interface MyProps {
+    source: ImageField;
 }
 
-interface MyStringProps {
-    source: string;
-}
+type ImgProps = React.ImgHTMLAttributes<HTMLImageElement>;
 
-type ImgProps = React.DetailedHTMLProps<
-    React.ImgHTMLAttributes<HTMLImageElement>,
-    HTMLImageElement
->;
-
-type SharpProps = MySharpProps & GatsbyImageProps;
-type StringProps = MyStringProps & ImgProps;
-
-type Props = SharpProps | StringProps;
+type Props = MyProps & GatsbyImageProps & ImgProps;
 
 export const Image: React.SFC<Props> = ({ source, ...props }) => {
     if (!source) {

@@ -4,7 +4,12 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+        "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
+        "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+        "@fortawesome/react-fontawesome": "^0.1.0-11",
         "deep-map": "^1.5.0",
+        "extract-text-webpack-plugin": "^3.0.2",
         "gatsby": "next",
         "gatsby-image": "next",
         "gatsby-plugin-manifest": "next",
@@ -20,7 +25,8 @@
         "netlify-cms": "^1.9.2",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
-        "react-helmet": "^5.2.0"
+        "react-helmet": "^5.2.0",
+        "react-markdown": "^3.3.4"
     },
     "keywords": [
         "gatsby"
@@ -100,7 +106,8 @@
             "node"
         ],
         "moduleNameMapper": {
-            "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+            "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+            "^./pages.json$": "<rootDir>/__mocks__/pages.json"
         }
     }
 }

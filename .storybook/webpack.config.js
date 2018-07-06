@@ -32,5 +32,9 @@ module.exports = (baseConfig, env, config) => {
         ]
     });
     config.resolve.extensions.push(".ts", ".tsx");
+    config.resolve.alias["./pages.json"] = path.resolve(
+        __dirname,
+        "../__mocks__/pages.json"
+    );
     return config;
 };

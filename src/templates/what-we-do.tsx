@@ -4,6 +4,7 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import Layout from "../components/Layout";
+import { PageSectionBlock } from "../components/PageSectionBlock";
 import { isImageSharp } from "../lib/helpers";
 import { ReactRouterLocation, WhatWeDo } from "../types/data";
 
@@ -16,7 +17,6 @@ interface Props {
     location: ReactRouterLocation;
 }
 export const WhatWeDoPage: React.SFC<Props> = props => {
-    console.log(props);
     const {
         title,
         sections,
@@ -37,33 +37,21 @@ export const WhatWeDoPage: React.SFC<Props> = props => {
         >
             <section className="section section--about">
                 <PageHeader>
-                    {heroImage && isImageSharp(heroImage) ? (
-                        <FullScreenMedia
-                            image={heroImage.childImageSharp.fluid}
-                            altText={title}
-                            video=""
-                        />
-                    ) : (
-                        // Cover the situation where there is no imageSharp (e.g. in the cms)
-                        <img
-                            className="full-screen"
-                            src={heroImage}
-                            alt=""
-                            aria-hidden="true"
-                        />
-                    )}
+                    <FullScreenMedia
+                        image={heroImage}
+                        aria-labelled-by="page-title"
+                    />
                     <div className="block--hero__content-wrap">
                         <h1 className="block--hero__title">{title}</h1>
                     </div>
                 </PageHeader>
-                <div className="block--full block layout-grid">
+                <div>
                     {sections &&
-                        sections.map(section => (
-                            <section key={section.title}>
-                                <h4>{section.title}</h4>
-                                <h5>{section.subtitle}</h5>
-                                <p>{section.blurb}</p>
-                            </section>
+                        sections.map((section, i) => (
+                            <PageSectionBlock
+                                section={section}
+                                alternate={i % 2 === 0}
+                            />
                         ))}
                 </div>
             </section>
@@ -79,24 +67,50 @@ export const pageQuery = graphql`
                 title
                 image {
                     childImageSharp {
-                        fluid(maxWidth: 100) {
-                            base64
-                            src
-                            srcSet
+                        fluid(maxWidth: 1000) {
+                            ...GatsbyImageSharpFluid
                         }
                     }
                 }
                 smallImage {
                     childImageSharp {
-                        fluid(maxWidth: 100) {
-                            base64
-                            src
-                            srcSet
+                        fluid(maxWidth: 600) {
+                            ...GatsbyImageSharpFluid
                         }
                     }
                 }
                 subtitle
                 blurb
+                activities {
+                    title
+                    text
+                }
+                successStory {
+                    title
+                    stats {
+                        title
+                        text
+                        image {
+                            childImageSharp {
+                                fixed(width: 48) {
+                                    ...GatsbyImageSharpFixed
+                                }
+                            }
+                        }
+                    }
+                }
+                testimonial {
+                    person
+                    title
+                    quote
+                    avatar {
+                        childImageSharp {
+                            fixed(width: 77) {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -1,20 +1,16 @@
 import * as React from "react";
+import Markdown from "react-markdown";
+import { Testimonial } from "../../types/data";
 import { Image } from "./../Image";
 import * as styles from "./TestimonialBlock.scss";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-
-    mainImage: string;
-  quoteIcon?: string; // todo if not passed then set a default
-    testimonialText: string;
-    reviewerAvatar: string;
-    reviewerName: string;
-    jobTitle: string;
+    testimonial: Testimonial
 }
 
-function showMainImage(mainImage: string) {
+function showMainImage(mainImage?: string) {
     return(
         <div>
         {mainImage ?
@@ -25,20 +21,20 @@ function showMainImage(mainImage: string) {
     )
 }
 
-export const TestimonialBlock: React.SFC<Props> = ({ children, style, className, mainImage, quoteIcon, testimonialText, reviewerAvatar, reviewerName, jobTitle }) => (
+export const TestimonialBlock: React.SFC<Props> = ({ children, style, className, testimonial }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
-        {showMainImage(mainImage)}
+        {showMainImage(testimonial.title)}
         <blockquote className={styles.quote}>
             <div className={styles.testimonialText}>
-                {testimonialText}
+                {testimonial.quote}
             </div>
             <footer>
                 <figure className={styles.blockquoteImage}>
-                    <Image source={mainImage} /> 
+                   a
                 </figure>
                 <span className={styles.nameTitle}>
-                    <span className={styles.name}>{reviewerName}</span>
-                    <span className={styles.title}>{jobTitle}</span>
+                    <span className={styles.name}>{testimonial.person}</span>
+                    <span className={styles.title}>{testimonial.title}</span>
                 </span>
             </footer>
         </blockquote>

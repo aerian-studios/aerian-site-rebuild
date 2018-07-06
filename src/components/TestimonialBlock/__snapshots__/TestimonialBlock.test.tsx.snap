@@ -5,15 +5,25 @@ exports[`TestimonialBlock renders correctly 1`] = `
   className=" myClass"
 >
   <div>
-    
+    <img
+      src="Senior Content Producer"
+    />
   </div>
   <blockquote>
-    <div />
+    <div>
+      It was seen by 1.5m unique browsers and was really well received by audience members. Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn’t have done it without Aerian.
+    </div>
     <footer>
-      <figure />
+      <figure>
+        a
+      </figure>
       <span>
-        <span />
-        <span />
+        <span>
+           Anna-Louise Taylor
+        </span>
+        <span>
+          Senior Content Producer
+        </span>
       </span>
     </footer>
   </blockquote>

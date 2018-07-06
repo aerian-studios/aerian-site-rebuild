@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ClientLogo renders correctly 1`] = `
-<div
+<figure
   className="component myClass"
   style={
     Object {
@@ -9,14 +9,10 @@ exports[`ClientLogo renders correctly 1`] = `
     }
   }
 >
-  <figure
-    className="figure"
-  >
-    <img
-      alt="Family enjoying the beach circa 1950s"
-      className="imgResponsive"
-      src="https://i.imgur.com/BOOPM8n.jpg"
-    />
-  </figure>
-</div>
+  <img
+    alt="Family enjoying the beach circa 1950s"
+    className="imgResponsive"
+    src="https://i.imgur.com/BOOPM8n.jpg"
+  />
+</figure>
 `;

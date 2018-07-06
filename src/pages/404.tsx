@@ -1,11 +1,16 @@
 import * as React from "react";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
 import Layout from "../components/Layout";
+import { PageHeader } from "../components/PageHeader";
+import { ReactRouterLocation } from "../types/data";
 
-export default () => (
-    <Layout location={location}>
-        <HeroBlock>
+interface Props {
+    location: ReactRouterLocation;
+}
+export const FourOhFour: React.SFC<Props> = ({ location }) => (
+    <Layout location={location} title="Page not found">
+        <PageHeader>
             <h1>NOT FOUND</h1>
-        </HeroBlock>
+        </PageHeader>
     </Layout>
 );
+export default FourOhFour;

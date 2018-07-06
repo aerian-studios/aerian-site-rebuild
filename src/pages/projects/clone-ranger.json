@@ -69,23 +69,22 @@
       "Clone Ranger! An all singing, all dancing bespoke Dennis and Gnasher Unleashed html5 game featuring custom animations, sound effects, characters and most importantly a BUNCH OF FUN!",
     "hurdles": [
       {
-        "title":
-          "A proven game mechanic thats been tested through history… well, the 80s!",
+        "title": "Always on time!",
         "text":
-          "Our top writers created a game narative based around the infamous game mechanic of Lemmings!\n\nPlayers young and old would be tasked with helping some of Beano's most popular characters guide rogue robots back to their home using a variety of comedy upgrades.",
-        "image": "/assets/imported/770/solution-1.png"
+          "We are PROUD to say that we successfully delivered the game on time for the launch of the new Dennis and Gnasher Unleashed show. Beano fans all round the globe can now enjoy the fruits of our labour and help to capture the rogue Dennis Bots before the professor finds out that Rubi has been using his machine.",
+        "image": "/assets/imported/728/beano-results-launch.png"
       },
       {
-        "title": "Introducing Rubidium von Screwtop…or Rubi for short",
+        "title": "Fully responsive html5 gameplay",
         "text":
-          "Watching Dennis & Gnasher Unleashed, it was clear who our main character was going to be. We wanted to mould our chosen game approach around Rubi von Screwtop - Beano Towns resident tech genius and all round great gal!",
-        "image": "/assets/imported/771/solution-2.png"
+          "With custom designs, bespoke builds, original animation and story writing, complex 3D modelling and a brand to go with it we can honestly say that this game has everything a fun html5 web game should. Clone Ranger gives players the opportunity to challenge themselves on 12 levels. With scores saved on their machine, players can return again and again to try and better their previous scores!",
+        "image": "/assets/imported/729/beano-results-responsive.png"
       },
       {
-        "title": "Fun with 3D models and animating",
+        "title": "Watch this space!",
         "text":
-          "To create a finished piece that felt like the live Dennis & Gnasher Unleashed show we decided that this game would be created using skeleton rig animation. This allowed us the ability to take characters seen in the show and custom animate them especially fpr the game.In addition to this, we created custom 3D models to use for our interactive characters, ensuring that they again look and felt like they were straight out of the Dennis & Gnasher Unleashed show.",
-        "image": "/assets/imported/772/solution-3.png"
+          "With the successful phase 1 launch of Clone Ranger, we are already working on a phase 2. Phase 2 will feature new levels, new robot upgrades, enhanced visuals, screen transitions, more animations and updated saving / level unlocking functionality that really will make this great game even greater! Be sure to keep an eye out for the next release Clone Ranger on the Beano.com website",
+        "image": "/assets/imported/769/result-3.png"
       }
     ]
   },

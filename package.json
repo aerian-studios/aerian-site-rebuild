@@ -4,10 +4,16 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+        "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
+        "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+        "@fortawesome/react-fontawesome": "^0.1.0-11",
+        "deep-map": "^1.5.0",
         "extract-text-webpack-plugin": "^3.0.2",
-        "gatsby": "^2.0.0-beta.9",
+        "gatsby": "next",
         "gatsby-image": "next",
         "gatsby-plugin-manifest": "next",
+        "gatsby-plugin-netlify-cms": "^2.0.1",
         "gatsby-plugin-offline": "next",
         "gatsby-plugin-react-helmet": "next",
         "gatsby-plugin-sass": "next",
@@ -19,7 +25,8 @@
         "netlify-cms": "^1.9.2",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
-        "react-helmet": "^5.2.0"
+        "react-helmet": "^5.2.0",
+        "react-markdown": "^3.3.4"
     },
     "keywords": [
         "gatsby"
@@ -37,6 +44,7 @@
         "docz": "docz dev"
     },
     "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
         "@storybook/addon-actions": "^3.4.8",
         "@storybook/addon-info": "^3.4.8",
         "@storybook/react": "^4.0.0-alpha.10",
@@ -47,7 +55,8 @@
         "@types/storybook__addon-info": "^3.2.3",
         "@types/storybook__react": "^3.0.7",
         "css-loader": "^0.28.11",
-        "docz": "latest",
+        "docz": "^0.3.3",
+        "extract-text-webpack-plugin": "^3.0.2",
         "gh-pages": "^1.2.0",
         "husky": "^0.14.3",
         "hygen": "^1.6.2",
@@ -97,7 +106,8 @@
             "node"
         ],
         "moduleNameMapper": {
-            "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+            "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+            "^./pages.json$": "<rootDir>/__mocks__/pages.json"
         }
     }
 }

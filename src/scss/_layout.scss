@@ -1,35 +1,27 @@
-/**
- * This file will contain only styles that layout SECTIONS of the page. No other
- * styles applied here.
- */
-%grid-setup {
-  @supports (display: grid) {
-    display: grid; // start with a simple auto row
-    grid-auto-rows: auto; // setup grid with a main area and a named area that we can break into
-    grid-template-columns:
-      [full-start] minmax(var(--side-gutter), 1fr) [main-start] minmax(
-        0,
-        var(--max-content-width)
-      )
-      [main-end] minmax(var(--side-gutter), 1fr) [full-end];
-  }
-  > * {
-    @supports (display: grid) {
-      margin-left: 0;
-      margin-right: 0;
-      grid-column: main;
-    }
-  }
-}
-
 // .grid is for spanning content rather than page layout
-.layout-grid {
-  @extend %grid-setup;
+.layoutGrid {
+    @supports (display: grid) {
+        display: grid; // start with a simple auto row
+        grid-auto-rows: auto; // setup grid with a main area and a named area that we can break into
+        grid-template-columns:
+            [full-start] minmax(var(--side-gutter), 1fr) [main-start] minmax(
+                0,
+                var(--max-content-width)
+            )
+            [main-end] minmax(var(--side-gutter), 1fr) [full-end];
+    }
+    > * {
+        @supports (display: grid) {
+            margin-left: 0;
+            margin-right: 0;
+            grid-column: main;
+        }
+    }
 }
 
 // Fills the grid
-.block--full {
-  @supports (display: grid) {
-    grid-column: full !important;
-  }
+.blockFull {
+    @supports (display: grid) {
+        grid-column: full !important;
+    }
 }

@@ -1,13 +1,13 @@
 import * as React from "react";
 
+import { PageListNode, PagesListData } from "../../types/data";
 import { MainNavigation } from "../MainNavigation/";
 import * as styles from "./PageNavBar.scss";
-import { PagesListData } from "../../types/data";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-    pages: PagesListData["data"];
+    pages: PageListNode[];
     activePath: string;
 }
 interface State {

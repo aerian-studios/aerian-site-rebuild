@@ -2,7 +2,68 @@
 
 exports[`MainNavigation renders correctly 1`] = `
 <nav
-  className="component myClass"
+  className=" myClass"
   id="menu-main"
-/>
+>
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <span
+      className="menu-item-content"
+    >
+      Page 1
+    </span>
+  </a>
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <span
+      className="menu-item-content"
+    >
+      Page 2
+    </span>
+  </a>
+</nav>
+`;
+
+exports[`MainNavigation sets '.active-path' to the matching menu item 1`] = `
+<nav
+  className=" myClass"
+  id="menu-main"
+>
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <span
+      className="menu-item-content"
+    >
+      Page 1
+    </span>
+  </a>
+  <a
+    aria-current={null}
+    className="menu-item"
+    href="/page2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <span
+      className="menu-item-content"
+    >
+      Page 2
+    </span>
+  </a>
+</nav>
 `;

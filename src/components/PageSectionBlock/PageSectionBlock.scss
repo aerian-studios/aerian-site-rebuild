@@ -1,0 +1,17 @@
+.bigScreenImage {
+    //Media query in here
+    foo: bar;
+}
+.smallScreenImage {
+    display: none;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+
+.alternateBlock {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}

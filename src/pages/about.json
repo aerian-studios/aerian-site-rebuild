@@ -1,14 +1,23 @@
 {
-  "title": "About",
-  "subheading":
-    "A family of enthusiastic geeks who love all things web and innovative",
-  "description":
-    "For over 20 years we have built industry leading campaigns, websites, products and mobile Apps and we have never lost a client because we always deliver on our promises with scientifically proven results, and we always put the user first.",
-  "seoTitle": "About Aerian Studios",
-  "seoDescription":
-    "Industry leading campaigns, websites, products and mobile Apps. Bespoke user driven design and software development with open source web technologies for over 20 years. ",
-  "seoKeywords":
-    "Aerian, websites, campaigns, products, mobile apps, opensource, web technologies, user driven, usercentric",
-  "path": "/about",
-  "infographic": []
+    "heroImage": "/assets/imported/421/about-hero-image.jpg",
+    "title": "About",
+    "subheading":
+        "A family of enthusiastic geeks who love all things web and innovative",
+    "description":
+        "For over 20 years we have built industry leading campaigns, websites, products and mobile Apps and we have never lost a client because we always deliver on our promises with scientifically proven results, and we always put the user first.",
+    "seoTitle": "About Aerian Studios",
+    "seoDescription":
+        "Industry leading campaigns, websites, products and mobile Apps. Bespoke user driven design and software development with open source web technologies for over 20 years. ",
+    "seoKeywords":
+        "Aerian, websites, campaigns, products, mobile apps, opensource, web technologies, user driven, usercentric",
+    "path": "/about",
+    "infographic": [
+        {
+            "primaryText": "18x",
+            "type": "Horizontal",
+            "secondaryText": "Developers",
+            "image": "/assets/infographics/Icon_devs.svg",
+            "imageCount": 18
+        }
+    ]
 }

@@ -1,46 +1,61 @@
 import { Link } from "gatsby";
 import * as React from "react";
 
-import { PageList, PageListNode, PagesListData } from "../../types/data";
+import { PageListNode } from "../../types/data";
 import * as styles from "./MainNavigation.scss";
 
 interface Props {
-    style?: React.CSSProperties;
+    activeClassName?: string;
+    activePath?: string;
+    activeStyle?: React.CSSProperties;
     className?: string;
-    pages: PagesListData["data"];
-    activePath: string;
+    pages: PageListNode[];
+    style?: React.CSSProperties;
 }
 
 const makePageLink = (
     id: string,
     path: string,
     title: string,
-    activePath: string
+    activeClassName?: string,
+    activeStyle?: React.CSSProperties
 ) => {
-    const classes =
-        activePath === path
-            ? [styles.activePath, "menu-item"].join(" ")
-            : "menu-item";
-
     return (
-        <Link to={path} key={`menu-${id}`}>
-            <span className={classes}>{title}</span>
-        </Link>
+        path && (
+            <Link
+                className="menu-item"
+                activeClassName={["active-path", activeClassName].join(" ")}
+                activeStyle={activeStyle}
+                to={path}
+                key={`menu-${id}`}
+            >
+                <span className="menu-item-content">{title}</span>
+            </Link>
+        )
     );
 };
 
-const constructPages = (pageList: PageList["edges"], activePath: string) => {
-    return pageList.map((page: PageListNode) => {
+const constructPages = (
+    pages: PageListNode[],
+    activeClassName?: string,
+    activeStyle?: React.CSSProperties
+) => {
+    return pages.map((page: PageListNode) => {
         const { id, path, title } = page.node;
-        console.log(activePath, path);
-        return makePageLink(id, path, title, activePath);
+
+        return makePageLink(id, path, title, activeClassName, activeStyle);
     });
 };
 
 export const MainNavigation: React.SFC<Props> = props => {
-    const { style, className, pages, activePath } = props;
-    const pageList: PageList["edges"] =
-        pages && pages.allPagesJson && pages.allPagesJson.edges;
+    const {
+        style,
+        className,
+        pages,
+        activePath,
+        activeClassName,
+        activeStyle
+    } = props;
 
     return (
         <nav
@@ -48,7 +63,7 @@ export const MainNavigation: React.SFC<Props> = props => {
             className={[styles.component, className].join(" ")}
             style={style}
         >
-            {pages ? constructPages(pageList, activePath) : null}
+            {pages ? constructPages(pages, activeClassName, activeStyle) : null}
         </nav>
     );
 };

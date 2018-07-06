@@ -1,5 +1,3 @@
-import { graphql } from "gatsby";
-
 export type ImageField = string | ImageSharp;
 
 // Images
@@ -76,24 +74,6 @@ export interface Page {
 export interface WhatWeDo extends Page {
     sections?: PageSection[];
 }
-
-export const pageFieldsFragment = graphql`
-    fragment PageFields on PagesJson {
-        title
-        heroImage {
-            childImageSharp {
-                fluid(maxWidth: 2048) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
-        subheading
-        description
-        seoTitle
-        seoDescription
-        seoKeywords
-    }
-`;
 
 export interface MeetTheTeam extends Page {
     staff: Staff[];
@@ -174,12 +154,13 @@ export interface ProjectStage {
 }
 
 export interface Performance {
-    stat: string;
+    title: string;
     text: string;
 }
 
 export interface Project {
     name: string;
+    slug: string;
     heroImage: ImageField;
     heroVideo?: string;
     titleLineOne: string;

@@ -5,11 +5,9 @@ import Helmet from "react-helmet";
 import ErrorBoundary from "../components/ErrorBoundary";
 import { PageNavBar } from "../components/PageNavBar";
 
-// Theme styles
-import "../scss/base-theme.scss";
+import "../lib/theme";
 
-// logo
-import * as logo from "../assets/furniture/logo.svg";
+import logo from "../../static/assets/furniture/aerian-logo.svg";
 import { PageListNode, ReactRouterLocation } from "../types/data";
 
 interface Props {
@@ -66,16 +64,12 @@ const Layout: React.SFC<Props> = ({
                             >
                                 <div className="{}">
                                     <Link to="/">
-                                        <svg className="{}">
-                                            <use xlinkHref={`#${logo.id}`} />
-                                        </svg>
+                                        <img src={logo} alt="Aerian" />
                                     </Link>
                                 </div>
                             </PageNavBar>
                         ) : null}
-                        <main id="content-wrapper" className="layout-grid">
-                            {children}
-                        </main>
+                        <main id="content-wrapper">{children}</main>
                     </ErrorBoundary>
                 </div>
             );

@@ -210,9 +210,11 @@ blockquote {
     &::before {
         line-height: 1.9em;
         display: block;
-        font-family: FontAwesome;
-        font-size: 2em;
-        content: "\f10d";
+        font-family: museo;
+        font-size: 4em;
+        line-height: 50%;
+        content: "❝";
+        // content: "\f10d";
         color: #cf254d;
     }
 }

@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageSectionBlock renders correctly 1`] = `
+Array [
+  <div
+    className=" "
+  >
+    <div>
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
+      />
+      <div>
+        <h2>
+          We design
+        </h2>
+        <h3>
+          Designed to be loved.
+        </h3>
+        <p>
+          We create things that people love to use. Our job as creatives is to continually question ourselves and the work we do. It's a mixture of gut instinct, artistic integrity and an obsession with creating the easiest possible experience. We blend scientific process with artistic vision.
+        </p>
+        <h4>
+          Award winning 
+        </h4>
+        <p>
+          Full time, multi award winning,  in-house design and artworking department.
+        </p>
+        <h4>
+          User-centred
+        </h4>
+        <p>
+          User-centred methodology bled into all our process, at all levels.
+        </p>
+        <h4>
+          Prototyping 
+        </h4>
+        <p>
+          Multi-tiered rapid prototyping for user and stakeholder tests.
+        </p>
+      </div>
+    </div>
+    <img
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
+    />
+  </div>,
+  <div
+    className=" "
+  >
+    <blockquote>
+      Aerian delivered the design to brief and beyond. They are a great bunch to work with, really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. 
+    </blockquote>
+    <cite>
+      Louise Goodspeed
+    </cite>
+    <cite>
+      UX Lead | Into Film
+    </cite>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <h2>
+        <span>
+          Success story
+        </span>
+         
+        BBC iWonder The Perfect Diet for you guide
+      </h2>
+      <div
+        className=" "
+      >
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+          />
+          <h3>
+            90,000 
+          </h3>
+          <p>
+            Users in the first 2 hours 
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+          />
+          <h3>
+            Top guide 
+          </h3>
+          <p>
+            On iwonder
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+          />
+          <h3>
+            1.5m
+          </h3>
+          <p>
+            unique users after the first show
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+          />
+          <h3>
+            22,000
+          </h3>
+          <p>
+            Concurrent users
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

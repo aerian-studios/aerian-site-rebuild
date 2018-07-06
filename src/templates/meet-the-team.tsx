@@ -1,10 +1,10 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
+import { StaffGridBlock } from "../components/StaffGridBlock";
 import { isImageSharp } from "../lib/helpers";
 import { MeetTheTeam, ReactRouterLocation } from "../types/data";
 
@@ -67,31 +67,19 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                 seoTitle
             }}
         >
-            <section className="section section--about">
+            <section>
                 <PageHeader>
-                    {heroImage && isImageSharp(heroImage) ? (
-                        <FullScreenMedia
-                            image={heroImage.childImageSharp.fluid}
-                            altText={title}
-                            video=""
-                        />
-                    ) : (
-                        // Cover the situation where there is no imageSharp (e.g. in the cms)
-                        <img
-                            className="full-screen"
-                            src={heroImage}
-                            alt=""
-                            aria-hidden="true"
-                        />
-                    )}
+                    <FullScreenMedia
+                        image={heroImage}
+                        aria-labelled-by="page-title"
+                    />
                     <div className="block--hero__content-wrap">
                         <h1 className="block--hero__title">{title}</h1>
                         <button>Hello</button>
                     </div>
                 </PageHeader>
-                {staff.map(person => (
-                    <Image key={person.name} source={person.imageFunny} />
-                ))}
+
+                <StaffGridBlock staff={staff} />
             </section>
         </Layout>
     );

@@ -1,5 +1,5 @@
-import { ImageSharp, ImageSharpSizes } from "../types/data";
-
+import deepMap from "deep-map";
+import { ImageSharp, ImageSharpSizes, NodeList } from "../types/data";
 export const isImageSharp = (
     image: ImageSharp | string
 ): image is ImageSharp => {
@@ -11,3 +11,16 @@ export const isImageSharpSizes = (
 ): image is ImageSharpSizes => {
     return typeof image !== "string";
 };
+
+export const absolutifyURL = (url: string) => {
+    if (typeof url !== "string" || url.substr(0, 8) !== "/assets/") {
+        return url;
+    }
+    return `https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static${url}`;
+};
+export const absolutifyURLs = <T = any>(obj: T) => {
+    return deepMap<T>(obj, absolutifyURL);
+};
+
+export const extractNodes = <T>(nodeList: NodeList<T>): T[] =>
+    nodeList.edges.map(node => node.node);

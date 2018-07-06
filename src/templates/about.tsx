@@ -1,13 +1,15 @@
 import { graphql } from "gatsby";
 import * as React from "react";
+import { ClientGridBlock } from "../components/ClientGridBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader";
-import { isImageSharp } from "../lib/helpers";
-import { About, ReactRouterLocation } from "../types/data";
+import { extractNodes, isImageSharp } from "../lib/helpers";
+import { About, Client, NodeList, ReactRouterLocation } from "../types/data";
 
 interface GraphData {
     pagesJson: About;
+    allClientsJson: NodeList<Client>;
 }
 
 interface Props {
@@ -15,7 +17,7 @@ interface Props {
     location: ReactRouterLocation;
 }
 
-export const about: React.SFC<Props> = props => {
+export const AboutPage: React.SFC<Props> = props => {
     const {
         title,
         heroImage,
@@ -23,7 +25,6 @@ export const about: React.SFC<Props> = props => {
         seoKeywords,
         seoTitle
     } = props.data.pagesJson;
-
     return (
         <Layout
             location={props.location}
@@ -34,27 +35,19 @@ export const about: React.SFC<Props> = props => {
                 seoTitle
             }}
         >
-            <section className="section section--about">
+            <section>
                 <PageHeader>
-                    {heroImage && isImageSharp(heroImage) ? (
-                        <FullScreenMedia
-                            image={heroImage.childImageSharp.fluid}
-                            altText={title}
-                            video=""
-                        />
-                    ) : (
-                        // Cover the situation where there is no imageSharp (e.g. in the cms)
-                        <img
-                            className="full-screen"
-                            src={heroImage}
-                            alt=""
-                            aria-hidden="true"
-                        />
-                    )}
+                    <FullScreenMedia
+                        image={heroImage}
+                        aria-labelled-by="page-title"
+                    />
                     <div className="block--hero__content-wrap">
                         <h1 className="block--hero__title">{title}</h1>
                     </div>
                 </PageHeader>
+                <ClientGridBlock
+                    clients={extractNodes(props.data.allClientsJson)}
+                />
             </section>
         </Layout>
     );
@@ -65,6 +58,13 @@ export const pageQuery = graphql`
         pagesJson(id: { eq: $id }) {
             ...PageFields
         }
+        allClientsJson(skip: 0) {
+            edges {
+                node {
+                    ...Client
+                }
+            }
+        }
     }
 `;
-export default about;
+export default AboutPage;

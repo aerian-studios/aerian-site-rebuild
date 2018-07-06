@@ -38,23 +38,7 @@ export const pageQuery = graphql`
         allClientsJson(limit: 1000, filter: { featured: { eq: true } }) {
             edges {
                 node {
-                    name
-                    logo {
-                        childImageSharp {
-                            fixed(width: 420) {
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }
-                    promoLogo {
-                        childImageSharp {
-                            fixed(width: 420) {
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }
-                    featured
-                    featuredProject
+                    ...Client
                 }
             }
         }

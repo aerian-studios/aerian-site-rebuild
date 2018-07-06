@@ -25,7 +25,6 @@ export const AboutPage: React.SFC<Props> = props => {
         seoKeywords,
         seoTitle
     } = props.data.pagesJson;
-    console.log(props);
     return (
         <Layout
             location={props.location}
@@ -62,21 +61,7 @@ export const pageQuery = graphql`
         allClientsJson(skip: 0) {
             edges {
                 node {
-                    name
-                    logo {
-                        childImageSharp {
-                            fixed(width: 400) {
-                                base64
-                                width
-                                height
-                                src
-                                srcSet
-                                srcWebp
-                                srcSetWebp
-                            }
-                        }
-                    }
-                    featuredProject
+                    ...Client
                 }
             }
         }

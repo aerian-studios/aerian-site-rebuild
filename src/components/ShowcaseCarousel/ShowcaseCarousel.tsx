@@ -27,7 +27,7 @@ export class ShowcaseCarousel extends React.PureComponent<Props, State> {
                 style={this.props.style}
             >
                 {this.props.projects.map(project => (
-                    <Link to={`/our-work/${project.slug}`}>
+                    <Link to={`/our-work/project/${project.slug}`}>
                         <Image
                             key={project.titleLineOne}
                             source={project.heroImage}

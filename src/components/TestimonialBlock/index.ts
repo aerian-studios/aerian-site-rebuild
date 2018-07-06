@@ -1,0 +1,1 @@
+export { TestimonialBlock } from "./TestimonialBlock";

@@ -1,0 +1,43 @@
+.component {
+    display: flex;
+}
+
+.quote {
+    float: right;
+    padding: 20px 0 20px 20px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #a6a6a8;
+}
+
+.testimonialText {
+    padding-bottom: 10px;
+}
+
+.cite {
+    display: block;
+    padding-top: 10px;
+}
+
+.nameTitle {
+    display: inline-block;
+}
+
+.name {
+    font-size: 22px;
+    display: block;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.blockquoteImage {
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 22px;
+    float: left;
+    width: 77px;
+    height: 77px;
+}

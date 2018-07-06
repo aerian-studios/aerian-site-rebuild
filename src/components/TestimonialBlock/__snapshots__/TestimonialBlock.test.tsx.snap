@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialBlock renders correctly 1`] = `
+<div
+  className=" myClass"
+>
+  <div>
+    
+  </div>
+  <blockquote>
+    <div />
+    <footer>
+      <figure />
+      <span>
+        <span />
+        <span />
+      </span>
+    </footer>
+  </blockquote>
+</div>
+`;

@@ -1,6 +1,6 @@
 import * as React from "react";
 import Markdown from "react-markdown";
-import { Testimonial } from "../../types/data";
+import { ImageField, Testimonial } from "../../types/data";
 import { Image } from "./../Image";
 import * as styles from "./TestimonialBlock.scss";
 
@@ -10,27 +10,25 @@ interface Props {
     testimonial: Testimonial
 }
 
-function showMainImage(mainImage?: string) {
+function showMainImage(mainImage?: ImageField) {
     return(
-        <div>
-        {mainImage ?
+        mainImage ?
                 <Image source={mainImage} /> 
-            : ""
-        }
-        </div>
+            : null
+        
     )
 }
 
 export const TestimonialBlock: React.SFC<Props> = ({ children, style, className, testimonial }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
-        {showMainImage(testimonial.title)}
+        {showMainImage(testimonial.image)}
         <blockquote className={styles.quote}>
             <div className={styles.testimonialText}>
                 {testimonial.quote}
             </div>
             <footer>
                 <figure className={styles.blockquoteImage}>
-                   a
+                    {showMainImage(testimonial.avatar)}
                 </figure>
                 <span className={styles.nameTitle}>
                     <span className={styles.name}>{testimonial.person}</span>

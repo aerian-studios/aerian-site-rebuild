@@ -19,6 +19,7 @@ html * {
 }
 
 body {
+    color: $c-text;
     font-family: $t-font-basic;
     font-size: var(--t-base, 16px);
     line-height: calculateRem(21);
@@ -51,10 +52,20 @@ h1 {
 
 h2 {
     @include font-size(var(--t-h2));
+    color: $c-brand-a;
     line-height: calculateRem(42);
     margin-bottom: calc(var(--s-h2) - 8px); // -8 is for the descenders
     // this is for top 'extra' line height
     margin-top: -6px;
+
+    &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: $c-brand-b;
+        display: inline-block;
+        margin-left: 2px;
+    }
 }
 
 h3 {

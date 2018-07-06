@@ -104,6 +104,7 @@ collections:
         widget: object
         fields:
           - { label: "Quote", name: "quote", widget: "text"}  
+          - { label: "Image", name: "image", widget: "image"}
           - { label: "Person", name: "person", widget: "string"}
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Avatar", name: "avatar", widget: "image"}

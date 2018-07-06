@@ -101,7 +101,8 @@
       "Aerian are a fantastic team! Not only did they understand the brief immediately, and create a clean and elegant interface, but they somehow managed to build a live 3D star map that works in a web browser. Even better, users can write messages in it. That’s quite a thing!",
     "person": "Simon Mackie",
     "title": "Digital Producer | BBC Science",
-    "avatar": "/assets/imported/213/bbc-whispering-stars-quote-image.jpg"
+    "image": "/assets/imported/213/bbc-whispering-stars-quote-image.jpg",
+    "avatar": "/assets/imported/212/simon-makie.jpg"
   },
   "gallery": [
     {

@@ -24,7 +24,7 @@ interface Props {
 export const OurWorkPage: React.SFC<Props> = props => {
     const {
         title,
-        heroImage,
+        subheading,
         seoDescription,
         seoKeywords,
         seoTitle
@@ -40,6 +40,8 @@ export const OurWorkPage: React.SFC<Props> = props => {
             }}
         >
             <section>
+                <h1>{title}</h1>
+                <p>{subheading}</p>
                 <ShowcaseCarousel
                     projects={extractNodes(props.data.allProjectsJson)}
                 />

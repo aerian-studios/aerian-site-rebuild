@@ -1,8 +1,8 @@
+import { Link } from "gatsby";
 import * as React from "react";
 import { Project } from "../../types/data";
 import { Image } from "../Image";
 import * as styles from "./ShowcaseCarousel.scss";
-
 interface Props {
     projects: Project[];
     style?: React.CSSProperties;
@@ -21,21 +21,21 @@ export class ShowcaseCarousel extends React.PureComponent<Props, State> {
 
     public render() {
         return (
-            <marquee>
-                <div
-                    className={[styles.component, this.props.className].join(
-                        " "
-                    )}
-                    style={this.props.style}
-                >
-                    {this.props.projects.map(project => (
+            // <marquee>
+            <div
+                className={[styles.component, this.props.className].join(" ")}
+                style={this.props.style}
+            >
+                {this.props.projects.map(project => (
+                    <Link to={`/our-work/${project.slug}`}>
                         <Image
                             key={project.titleLineOne}
                             source={project.heroImage}
                         />
-                    ))}
-                </div>
-            </marquee>
+                    </Link>
+                ))}
+            </div>
+            // </marquee>
         );
     }
 }

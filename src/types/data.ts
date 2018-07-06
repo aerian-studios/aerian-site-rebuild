@@ -160,6 +160,7 @@ export interface Performance {
 
 export interface Project {
     name: string;
+    slug: string;
     heroImage: ImageField;
     heroVideo?: string;
     titleLineOne: string;

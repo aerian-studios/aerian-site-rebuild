@@ -15,7 +15,7 @@ module.exports = (baseConfig, env, config) => {
                     silent: true
                 }
             },
-            "sass-loader"
+            "sass-loader?modules"
         ],
         include: path.resolve(__dirname, "../")
     });

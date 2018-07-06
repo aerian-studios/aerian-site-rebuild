@@ -5,7 +5,7 @@ exports[`ShowcaseCarousel renders correctly 1`] = `
   className=" "
 >
   <a
-    href="/our-work/bbc-iwonder-perfect-diet-for-you"
+    href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >

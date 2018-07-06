@@ -8,7 +8,5 @@ import { StaffDetail } from "./index";
 
 storiesOf("StaffDetail", module).add(
     "Default",
-    withInfo({ inline: true })(() => (
-        <StaffDetail className="myClass" staff={person} />
-    ))
+    withInfo({ inline: true })(() => <StaffDetail staff={person} />)
 );

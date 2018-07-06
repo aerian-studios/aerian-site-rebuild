@@ -5,19 +5,10 @@ import * as renderer from "react-test-renderer";
 
 import { StaffDetail } from "./index";
 
-const staff = {
-    name: "Matt",
-    description: "Description",
-    role: "Role",
-    skills: ["AWS", "Git"],
-    fact: "Fact",
-    image: "../../../static/assets/imported/528/wayne-funny.png"
-};
+import { person } from "../../types/fixtures";
 
 describe("StaffDetail", () =>
     it("renders correctly", () => {
-        const tree = renderer
-            .create(<StaffDetail className="myClass" staff={staff} />)
-            .toJSON();
+        const tree = renderer.create(<StaffDetail staff={person} />).toJSON();
         expect(tree).toMatchSnapshot();
     }));

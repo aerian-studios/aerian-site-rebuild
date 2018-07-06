@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StaffDetail renders correctly 1`] = `
+<div
+  className=" "
+>
+  <figure>
+    <img
+      alt="Paul Goodenough photo"
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+    />
+  </figure>
+  <div>
+    <p>
+      CEO & Founder
+    </p>
+    <h2>
+      Paul Goodenough
+    </h2>
+    <p>
+      Paul founded Aerian to work on projects of worth, and has shaped, managed and delivered some of the biggest national and international digital projects for clients such as BBC, Channel 4, Sky, Into Film, The Science Museum, Breast Cancer Now, Dementia Friends, Alzheimer's Society, Danone, Tesco Mobile, Nickelodeon and more.
+    </p>
+    <h3>
+      Core skillSet
+    </h3>
+    <ul>
+      <li
+        className=" "
+      >
+        Accessibility and Compliance Semantics
+      </li>
+      <li
+        className=" "
+      >
+        Business Development
+      </li>
+      <li
+        className=" "
+      >
+        Conceptual Design
+      </li>
+      <li
+        className=" "
+      >
+        Consulting
+      </li>
+      <li
+        className=" "
+      >
+        Conversion Rate Optimisation
+      </li>
+      <li
+        className=" "
+      >
+        Copywriting
+      </li>
+      <li
+        className=" "
+      >
+        Flash
+      </li>
+      <li
+        className=" "
+      >
+        Graphic design
+      </li>
+      <li
+        className=" "
+      >
+        Marketing
+      </li>
+      <li
+        className=" "
+      >
+        Motion Graphics
+      </li>
+      <li
+        className=" "
+      >
+        Multivariate Testing
+      </li>
+      <li
+        className=" "
+      >
+        Partnerships
+      </li>
+      <li
+        className=" "
+      >
+        Product Development
+      </li>
+      <li
+        className=" "
+      >
+        Product Management
+      </li>
+      <li
+        className=" "
+      >
+        Prototypes
+      </li>
+      <li
+        className=" "
+      >
+        SEO
+      </li>
+      <li
+        className=" "
+      >
+        Strategy
+      </li>
+      <li
+        className=" "
+      >
+        UI Design
+      </li>
+      <li
+        className=" "
+      >
+        User Experience
+      </li>
+      <li
+        className=" "
+      >
+        User Testing
+      </li>
+      <li
+        className=" "
+      >
+        UX Design
+      </li>
+      <li
+        className=" "
+      >
+        Visual Design
+      </li>
+      <li
+        className=" "
+      >
+        Wireframes
+      </li>
+      <li
+        className=" "
+      >
+        XSLT
+      </li>
+    </ul>
+    <h3>
+      Did you know
+    </h3>
+    <p>
+      Paul is also a double Emmy nominated writer & producer for  brands inc. BBC, How to Train Your Dragon and Peppa Pig; and owns over 20k comics. Paul has also been highlighted as one of the top ten innovators in the UK by UKTI.
+    </p>
+  </div>
+</div>
+`;

@@ -125,6 +125,7 @@ export interface Testimonial {
     person?: string;
     title?: string;
     avatar?: ImageField;
+    image?: ImageField;
 }
 
 export interface Stat {

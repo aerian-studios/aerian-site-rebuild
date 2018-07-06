@@ -18,21 +18,6 @@ html * {
     box-sizing: border-box;
 }
 
-// These classes are set on the HTML element once the fonts are loaded
-%fonts-loaded {
-    font-family: $t-font;
-}
-
-.fonts-stage-1 body,
-.fonts-stage-2 body {
-    @extend %fonts-loaded;
-    transition: font-size 0.3s ease; // this is for IE11
-    * {
-        @extend %fonts-loaded;
-        transition: font-size 0.3s ease;
-    }
-}
-
 body {
     font-family: $t-font-basic;
     font-size: var(--t-base, 16px);
@@ -43,7 +28,6 @@ body {
 }
 
 p {
-    @extend %fonts-loaded;
     margin-bottom: var(--s-p);
     &:last-child {
         margin-bottom: 0;

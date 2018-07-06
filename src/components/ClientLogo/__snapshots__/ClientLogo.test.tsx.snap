@@ -2,7 +2,7 @@
 
 exports[`ClientLogo renders correctly 1`] = `
 <figure
-  className="component myClass"
+  className=" myClass"
   style={
     Object {
       "width": "50%",
@@ -11,7 +11,6 @@ exports[`ClientLogo renders correctly 1`] = `
 >
   <img
     alt="Family enjoying the beach circa 1950s"
-    className="imgResponsive"
     src="https://i.imgur.com/BOOPM8n.jpg"
   />
 </figure>

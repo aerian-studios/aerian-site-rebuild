@@ -10,25 +10,66 @@ interface Props {
     count: number;
 }
 
-export const renderImages = (count, image) => {
-    const images = [];
-    for (let i = 0; i < count; i++) {
-        images.push(<img key={i} src={image} alt="icon" />);
-    }
-    return images;
-};
+interface State {
+    visibleImages: number;
+}
 
-export const VerticalInfographic: React.SFC<Props> = ({
-    style,
-    className,
-    title,
-    image,
-    count
-}) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
-        <p>{count}X</p>
-        <p>{title}</p>
-        {renderImages(count, image)}
-    </div>
-);
+export class VerticalInfographic extends React.Component<Props, State> {
+    public state: State = {
+        visibleImages: 0
+    };
+
+    public timer?: number;
+
+    public componentDidMount() {
+        this.timer = window.setInterval(this.increment, 100);
+    }
+
+    public componentWillUnmount() {
+        clearInterval(this.timer);
+    }
+
+    public increment = () => {
+        if (this.state.visibleImages === this.props.count) {
+            clearInterval(this.timer);
+            return;
+        }
+        this.setState({
+            visibleImages: this.state.visibleImages + 1
+        });
+    };
+
+    public renderImages(count: number, image: string) {
+        const images = [];
+        for (let i = 0; i < count; i++) {
+            let output = styles.infoGraphicHidden;
+            if (this.state.visibleImages > i) {
+                output = styles.infoGraphicShown;
+            }
+            images.push(
+                <figure key={i} className={styles.infographicImage}>
+                    <img key={i} className={output} src={image} alt="icon" />
+                </figure>
+            );
+        }
+        return images;
+    }
+
+    public render() {
+        return (
+            <div
+                className={[styles.component, this.props.className].join(" ")}
+                style={this.props.style}
+            >
+                <div className={styles.infographicCount}>
+                    {this.props.count}X
+                    <span className={styles.infographicTitle}>
+                        {this.props.title}
+                    </span>
+                </div>
+                {this.renderImages(this.props.count, this.props.image)}
+            </div>
+        );
+    }
+}
 export default VerticalInfographic;

@@ -13,7 +13,7 @@ describe("VerticalInfographic", () =>
                     title="Cats"
                     className="myClass"
                     image="http://placekitten.com/100/100"
-                    count="10"
+                    count={10}
                 />
             )
             .toJSON();

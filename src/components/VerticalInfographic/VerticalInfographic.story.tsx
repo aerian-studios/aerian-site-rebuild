@@ -12,8 +12,8 @@ storiesOf("VerticalInfographic", module)
             <VerticalInfographic
                 title="BEARDS"
                 className="myClass"
-                image="http://placekitten.com/100/100"
-                count="8"
+                image="http://placekitten.com/50/50"
+                count={8}
             />
         ))
     )
@@ -23,8 +23,8 @@ storiesOf("VerticalInfographic", module)
             <VerticalInfographic
                 title="Cats"
                 className="myClass"
-                image="http://placekitten.com/100/100"
-                count="10"
+                image="http://placekitten.com/50/50"
+                count={10}
             />
         ))
     );

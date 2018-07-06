@@ -1,3 +1,44 @@
 .component {
-    background: yellow;
+    background: white;
+}
+.infographicCount {
+    line-height: 70px;
+    font-size: 70px;
+    padding-top: 11px;
+    font-family: museo, sans-serif;
+    font-weight: 700;
+    color: #cf254d;
+}
+.infographicTitle {
+    line-height: 1em;
+    display: inline-block;
+    font-size: 24px;
+    font-family: museo, sans-serif;
+    font-weight: 700;
+    color: #cf254d;
+}
+
+.infographicImage {
+    display: inline-block;
+    padding: 5px;
+
+    img {
+        width: auto;
+    }
+}
+
+.infoGraphicHidden {
+    opacity: 0;
+}
+.infoGraphicShown {
+    -webkit-animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

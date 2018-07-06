@@ -41,7 +41,7 @@ export const OurWorkPage: React.SFC<Props> = props => {
         >
             <section>
                 <ShowcaseCarousel
-                    projects={extractNodes(props.data.allClientsJson)}
+                    projects={extractNodes(props.data.allProjectsJson)}
                 />
             </section>
         </Layout>

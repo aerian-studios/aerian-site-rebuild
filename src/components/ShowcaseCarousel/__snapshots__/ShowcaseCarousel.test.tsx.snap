@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShowcaseCarousel renders correctly 1`] = `
-<div
-  className=" myClass"
-/>
+<marquee>
+  <div
+    className=" "
+  >
+    <img
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+    />
+  </div>
+</marquee>
 `;

@@ -1,2 +1,6 @@
 .component {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    transform: translateX(-100%);
 }

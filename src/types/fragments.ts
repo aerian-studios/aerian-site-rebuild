@@ -40,6 +40,19 @@ export const clientFragment = graphql`
     }
 `;
 
+export const projectBoxFragment = graphql`
+    fragment ProjectBox on ProjectsJson {
+        name
+        heroImage {
+            childImageSharp {
+                fixed(width: 532, height: 532) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+    }
+`;
+
 export const projectFragment = graphql`
     fragment Project on ProjectsJson {
         name

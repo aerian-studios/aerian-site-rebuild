@@ -7,7 +7,6 @@ import { PageNavBar } from "../components/PageNavBar";
 
 import "../lib/theme";
 
-import logo from "../../static/assets/furniture/aerian-logo.svg";
 import { PageListNode, ReactRouterLocation } from "../types/data";
 
 interface Props {
@@ -61,13 +60,7 @@ const Layout: React.SFC<Props> = ({
                             <PageNavBar
                                 pages={pages}
                                 activePath={location.pathname}
-                            >
-                                <div className="{}">
-                                    <Link to="/">
-                                        <img src={logo} alt="Aerian" />
-                                    </Link>
-                                </div>
-                            </PageNavBar>
+                            />
                         ) : null}
                         <main id="content-wrapper">{children}</main>
                     </ErrorBoundary>

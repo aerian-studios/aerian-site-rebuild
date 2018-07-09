@@ -30,26 +30,7 @@ describe("MainNavigation", () => {
         const tree = renderer
             .create(
                 <MemoryRouter>
-                    <MainNavigation
-                        className="myClass"
-                        pages={pages}
-                        activePath={pages[1].node.path}
-                    />
-                </MemoryRouter>
-            )
-            .toJSON();
-        expect(tree).toMatchSnapshot();
-    });
-
-    it("sets '.active-path' to the matching menu item", () => {
-        const tree = renderer
-            .create(
-                <MemoryRouter>
-                    <MainNavigation
-                        className="myClass"
-                        pages={pages}
-                        activePath={pages[1].node.path}
-                    />
+                    <MainNavigation className="myClass" pages={pages} />
                 </MemoryRouter>
             )
             .toJSON();

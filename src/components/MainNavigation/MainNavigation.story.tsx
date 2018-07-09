@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 
 import { MemoryRouter } from "react-router-dom";
@@ -20,14 +21,42 @@ const pages: PageListNode[] = [
             path: "/page2",
             title: "Page 2"
         }
+    },
+    {
+        node: {
+            id: "page3",
+            path: "/page3",
+            title: "Page 3"
+        }
+    },
+    {
+        node: {
+            id: "page4",
+            path: "/page4",
+            title: "Page 4"
+        }
     }
 ];
 
+import * as styles from "../PageNavBar/PageNavBar.scss";
+
+const onClick = () => {};
+
 storiesOf("MainNavigation", module)
     .addDecorator(story => <MemoryRouter>{story()}</MemoryRouter>)
-    .add("Page 1 active", () => (
-        <MainNavigation className="myClass" pages={pages} activePath="/page1" />
+    .add("No context styles", () => (
+        <MainNavigation
+            className={styles.nav}
+            pages={pages}
+            onClick={action("clicked navigator")}
+        />
     ))
-    .add("Page 2 active", () => (
-        <MainNavigation className="myClass" pages={pages} activePath="/page2" />
+    .add("With context styles", () => (
+        <MainNavigation
+            className={styles.nav}
+            pages={pages}
+            activeLinkClassName={styles.activeLink}
+            linkClassName={styles.link}
+            onClick={action("clicked navigator")}
+        />
     ));

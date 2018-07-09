@@ -20,23 +20,18 @@ export class ShowcaseCarousel extends React.PureComponent<Props, State> {
     public state = INITIAL_STATE;
     public elements = new Map();
 
-    public renderItem = (index, ref) => {
-        console.log("render", index);
-        return (
-            <Card key={index} ref={ref}>
-                {this.props.children[index]}
-            </Card>
-        );
-    };
+    public renderItem = (index: number, ref: () => void) => (
+        <Card key={index} ref={ref}>
+            {this.props.children[index]}
+        </Card>
+    );
 
-    public handleChange = (ev:IntersectionObserverEntry, index) => {
-        console.log(ev);
+    public handleChange = (ev: IntersectionObserverEntry, index: number) => {
         const element = this.elements.get(index);
-        if(element) {
+        if (element) {
             element.setVisible(ev.isIntersecting);
         }
-    }
-
+    };
 
     public render() {
         return (
@@ -48,7 +43,16 @@ export class ShowcaseCarousel extends React.PureComponent<Props, State> {
                 ].join(" ")}
                 style={this.props.style}
             >
-                {this.props.children.map((el, index) => <Observer key={index} onChange={(ev) => this.handleChange(ev, index)}><Card ref={(ref) => this.elements.set(index, ref)}>{el}</Card></Observer>)}
+                {this.props.children.map((el, index) => (
+                    <Observer
+                        key={index}
+                        onChange={ev => this.handleChange(ev, index)}
+                    >
+                        <Card ref={ref => this.elements.set(index, ref)}>
+                            {el}
+                        </Card>
+                    </Observer>
+                ))}
             </div>
         );
     }

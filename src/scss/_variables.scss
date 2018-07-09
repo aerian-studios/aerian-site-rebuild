@@ -23,12 +23,14 @@ $c-black-80: rgb(50, 50, 50);
 $c-black-90: rgb(25, 25, 25);
 $c-bg: rgb(63, 63, 63);
 $c-alt-bg: rgb(88, 88, 88);
+$c-menu-bg: #cf254d;
 
 $social-link-colour: #808080;
 // Generic variable names for use in the code (so that the colours only need changing on one place)
 $c-brand-a: $aerian;
 $c-brand-b: $lime;
 $c-brand-c: $whiteish;
+$c-brand-a-alt: #b11539;
 $c-text: rgb(110, 110, 110);
 $c-text-alt: $whiteish;
 $c-link: $aerian;
@@ -58,9 +60,6 @@ $t-font-accent: museo, courier, sans-serif;
     --s-3: 30px;
     --s-4: 32px;
     --s-5: 100px;
-    --s-6: 10px;
-    --s-7: 10px;
-    --s-8: 10px;
     --s-h2: 25px;
     --s-h3: 20px;
     --s-p: 58px;

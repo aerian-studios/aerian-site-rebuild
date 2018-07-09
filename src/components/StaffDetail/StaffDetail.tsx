@@ -22,7 +22,7 @@ export const StaffDetail: React.SFC<Props> = ({ style, className, staff }) => (
             <h2>{staff.name}</h2>
             <p>{staff.description}</p>
 
-            <h3>Core skillSet</h3>
+            <h3>Core skillset</h3>
             <ul className={styles.skils}>
                 {staff.skills.map(skill => <Tag key={skill} value={skill} />)}
             </ul>

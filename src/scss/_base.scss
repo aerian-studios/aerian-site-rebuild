@@ -18,22 +18,8 @@ html * {
     box-sizing: border-box;
 }
 
-// These classes are set on the HTML element once the fonts are loaded
-%fonts-loaded {
-    font-family: $t-font;
-}
-
-.fonts-stage-1 body,
-.fonts-stage-2 body {
-    @extend %fonts-loaded;
-    transition: font-size 0.3s ease; // this is for IE11
-    * {
-        @extend %fonts-loaded;
-        transition: font-size 0.3s ease;
-    }
-}
-
 body {
+    color: $c-text;
     font-family: $t-font-basic;
     font-size: var(--t-base, 16px);
     line-height: calculateRem(21);
@@ -43,7 +29,6 @@ body {
 }
 
 p {
-    @extend %fonts-loaded;
     margin-bottom: var(--s-p);
     &:last-child {
         margin-bottom: 0;
@@ -67,10 +52,20 @@ h1 {
 
 h2 {
     @include font-size(var(--t-h2));
+    color: $c-brand-a;
     line-height: calculateRem(42);
     margin-bottom: calc(var(--s-h2) - 8px); // -8 is for the descenders
     // this is for top 'extra' line height
     margin-top: -6px;
+
+    &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: $c-brand-b;
+        display: inline-block;
+        margin-left: 2px;
+    }
 }
 
 h3 {
@@ -210,9 +205,11 @@ blockquote {
     &::before {
         line-height: 1.9em;
         display: block;
-        font-family: FontAwesome;
-        font-size: 2em;
-        content: "\f10d";
+        font-family: museo;
+        font-size: 4em;
+        line-height: 50%;
+        content: "❝";
+        // content: "\f10d";
         color: #cf254d;
     }
 }

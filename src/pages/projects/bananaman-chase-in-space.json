@@ -69,22 +69,22 @@
       "We are delighted to say that Bananaman’s Chase in Space has now launched on the Beano website. Players young and old can take to the stars as their favourite Beano town superhero, helping to catch Blight and bring him to justice!",
     "hurdles": [
       {
-        "title": "Its a game… BASED IN SPACE!!",
+        "title": "Successful launch",
         "text":
-          "Through copious amounts of research… and because we knew it would be cool! A space theme was used for our game.\n\nPlayers take control of their favourite superhero, helping guide him through the copious amounts of space junk obstacles. Clicking or tapping would be the control mechanism, moving Bananaman up or down the screen in a flappy bird style.",
-        "image": "/assets/imported/746/bananaman-challenge-space-space.png"
+          "With a hard delivery timeline of only 1 month, Aerian and the team at Beano went from brainstorming the initial concept, designing the visuals, animating the characters and creating the game all in the given timescale.\n\nBananaman Chase in Space was successfully launched in November 2017 and is building in popularity as we write this!",
+        "image": "/assets/imported/751/bannanamanv2-responsive-copy.png"
       },
       {
-        "title": "Making our hero the star",
+        "title": "Fully responsive gameplay",
         "text":
-          "We wanted the game to embrace the characteristics viewers and readers have come to love with Bananaman.\n\nThe iconic flying pattern that Bananaman adopts would require special attention from our animation team. We needed to re-create the swimming technique while ensuring a minimal amount of frames would be used so that file size was not jeopardised.",
-        "image": "/assets/imported/744/bananaman-challenge-hero.png"
+          "All players; no matter what age, ability or device they are using can enjoy our Bananaman Chase in Space game\n\n.\n\nA simple game mechanic, decorated with a great \"Beano\" storyline, designed at multiple breakpoints and tested to the max by our in-house testing team made sure we had a game that everyone could play.",
+        "image": "/assets/imported/739/bananaman-challenge-responsive.png"
       },
       {
-        "title": "It’s ALIVE!!",
+        "title": "One small step for Beano, One giant leap Beano users!",
         "text":
-          "To ensure compatibility with all devices we used the latest HTML 5 technology to create the game.\n\nThis, combined with some snazzy CSS styling and a sprinkle of java script enabled us to add subtle animations and crazy sound effects that brought characters and story lines to life.",
-        "image": "/assets/imported/741/bananaman-challenge-animation.png"
+          "Working with the team at Beano, we created a big happy project family. Co-operation and Communication were encouraged throughout to ensure that they had every opportunity possible to be involved in what was created.\n\nA happy family meant that any artwork and branding were being used accordingly but also helped create a speedy sign off period so that we could roll the game out to the waiting Beano community as soon as possible.",
+        "image": "/assets/imported/740/bananaman-challenge-happy.png"
       }
     ]
   },

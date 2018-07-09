@@ -39,7 +39,6 @@ $c-shadow: $c-black-80;
 
 // TYPOGRAPHY - $t- + name or --t- + name (see below)
 $t-font-basic: open-sans, Helvetica, Verdana, Arial, Utkal, sans-serif;
-$t-font: Helvetica, Verdana, Arial, Utkal, sans-serif;
 $t-font-accent: museo, courier, sans-serif;
 
 // VARIABLES (that change with context e.g. breakpoint, etc) can use CSS custom property syntax
@@ -48,7 +47,7 @@ $t-font-accent: museo, courier, sans-serif;
     --border-radius: 0px;
     --max-content-width: 1200px;
     --min-content-width: 280px;
-    --side-gutter: 12px;
+    --side-gutter: 15px;
     --h-grid-spacing: 2.5%;
     --v-grid-spacing: var(--s-1);
     --vertical-rythym: 8px;

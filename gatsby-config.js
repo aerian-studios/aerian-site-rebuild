@@ -36,13 +36,7 @@ module.exports = {
             options: siteConfig.manifest
         },
         // must come AFTER manifest plugin, Generates a service worker and AppShell
-        `gatsby-plugin-offline`,
-        {
-            resolve: `gatsby-plugin-sass`,
-            options: {
-                sourceMaps: `inline`
-            }
-        },
+
         {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {

@@ -2,6 +2,16 @@
 
 exports[`ShowcaseCarousel renders correctly 1`] = `
 <div
-  className=" myClass"
-/>
+  className=" "
+>
+  <a
+    href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <img
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+    />
+  </a>
+</div>
 `;

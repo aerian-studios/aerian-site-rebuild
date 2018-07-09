@@ -5,22 +5,13 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader/PageHeader";
 
-import { SectionNav } from "../components/SectionNav/";
-import { isImageSharp } from "../lib/helpers";
-import {
-    ImageSharp,
-    ImageSharpSizes,
-    ReactRouterLocation
-} from "../types/data";
-
-interface Block {
-    description: string;
-    hurdles: {
-        title: string;
-        image: string | ImageSharpSizes;
-        text: string;
-    };
-}
+import { Block } from "../components/Block";
+import { CaseStudyIntro } from "../components/CaseStudyIntro";
+import { Gallery } from "../components/Gallery";
+import { OnwardJournies } from "../components/OnwardJournies";
+import { PerformanceBlock } from "../components/PerformanceBlock";
+import { ProjectStageBlock } from "../components/ProjectStageBlock";
+import { Project, ReactRouterLocation } from "../types/data";
 
 interface Props {
     data: GraphData;
@@ -28,30 +19,7 @@ interface Props {
 }
 
 interface GraphData {
-    projectsJson: {
-        pageTitle1: string;
-        pageTitle2: string;
-        heroImage: ImageSharpSizes | string;
-        heroVideo?: string;
-        caseStudy: {
-            title: string;
-            text: string;
-        };
-        challenge?: Block;
-        solution?: Block;
-        results?: Block;
-        performance?: {
-            title: string;
-            text: string;
-        };
-        testimonial?: {
-            quote: string;
-            person: string;
-            title: string;
-            avatar: string | ImageSharpSizes;
-        };
-        id: string;
-    };
+    projectsJson: Project;
 }
 
 const keys = {
@@ -67,145 +35,78 @@ const onNavigation = (id: string) => {
 };
 
 export const ProjectPage: React.SFC<Props> = props => {
-    const {
-        pageTitle1,
-        pageTitle2,
-        heroImage,
-        heroVideo,
-        caseStudy,
-        challenge,
-        solution,
-        results,
-        performance,
-        testimonial,
-        id
-    } = props.data.projectsJson;
+    const project = props.data.projectsJson;
     return (
-        <Layout location={props.location} title={pageTitle1}>
-            <section className="section section--about">
-                <PageHeader>
-                    {typeof heroImage === "string" ? (
-                        // Cover the situation where there is no imageSharp (e.g. in the cms)
-                        !heroVideo ? (
-                            <img
-                                className="full-screen"
-                                src={heroImage}
-                                alt=""
-                                aria-hidden="true"
-                            />
-                        ) : (
-                            <FullScreenMedia
-                                image={heroImage}
-                                video={heroVideo}
-                            />
-                        )
-                    ) : (
-                        <FullScreenMedia
-                            image={heroImage}
-                            aria-labelled-by="page-title"
-                            video=""
-                        />
-                    )}
-                    <div className="block--hero__content-wrap">
-                        <h1 id="page-title" className="block--hero__title">
-                            {pageTitle1}
-                            <br />
-                            {pageTitle2}
-                        </h1>
-                    </div>
-                </PageHeader>
-                {/* <SectionNav
+        <Layout location={props.location} title={project.titleLineOne}>
+            <PageHeader>
+                <FullScreenMedia
+                    image={project.heroImage}
+                    aria-labelled-by="page-title"
+                    video={project.heroVideo}
+                />
+
+                <div>
+                    <h1>
+                        {project.titleLineOne}
+                        <br />
+                        {project.titleLineTwo}
+                    </h1>
+                </div>
+            </PageHeader>
+            {/* <SectionNav
                 keyConsts={keys}
                 sections={props}
                 onNavigation={onNavigation}
             /> */}
-                <div className="block--full block layout-grid" />
-            </section>
+            <Block>
+                <div>Client logo</div>
+                <CaseStudyIntro project={project} />
+            </Block>
+            <Block>
+                <Gallery gallery={project.gallery} />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Challenge"
+                    projectStage={project.challenge}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Solution"
+                    projectStage={project.solution}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Result"
+                    projectStage={project.results}
+                />
+            </Block>
+            {project.testimonial && (
+                <Block>
+                    {/*  TestimonialBlock  */}
+                    <blockquote>{project.testimonial.quote}</blockquote>
+                    <cite>{project.testimonial.person}</cite>
+                    <cite>{project.testimonial.title}</cite>
+                </Block>
+            )}
+            {project.performance && (
+                <Block>
+                    <PerformanceBlock performance={project.performance} />
+                </Block>
+            )}
+            <Block>
+                <OnwardJournies projectURL={project.externalUrl} />
+            </Block>
         </Layout>
     );
-};
-
-const createCorrectMediumComponent = (image: ImageSharp | string) => {
-    return isImageSharp(image) ? image.childImageSharp.fluid : image;
 };
 
 export const ProjectQuery = graphql`
     query project($id: String!) {
         projectsJson(id: { eq: $id }) {
-            name
-            titleLineOne
-            titleLineTwo
-            goLiveDate
-            caseStudyTitle
-            caseStudyText
-            externalUrl
-            heroImage {
-                childImageSharp {
-                    fluid(maxWidth: 2048) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            heroVideo
-            challenge {
-                description
-                hurdles {
-                    title
-                    image {
-                        childImageSharp {
-                            fixed(width: 290) {
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }
-                    text
-                }
-            }
-            solution {
-                hurdles {
-                    title
-                    image {
-                        childImageSharp {
-                            fixed(width: 290) {
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }
-                    text
-                }
-                description
-            }
-            results {
-                description
-                hurdles {
-                    title
-                    image {
-                        childImageSharp {
-                            fixed(width: 290) {
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }
-                    text
-                }
-            }
-            performance {
-                title
-                text
-            }
-            testimonial {
-                quote
-                person
-                title
-                avatar {
-                    childImageSharp {
-                        fixed(width: 290) {
-                            ...GatsbyImageSharpFixed
-                        }
-                    }
-                }
-            }
-            id
+            ...Project
         }
     }
 `;

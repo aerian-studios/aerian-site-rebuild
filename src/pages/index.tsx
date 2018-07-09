@@ -21,7 +21,10 @@ const IndexPage: React.SFC<Props> = props => {
             <section id="section-index">
                 <ShowcaseCarousel feature={true}>
                     {extractNodes(props.data.allProjectsJson).map(project => (
-                        <Link to={`/our-work/project/${project.slug}`}>
+                        <Link
+                            key={project.slug}
+                            to={`/our-work/project/${project.slug}`}
+                        >
                             <Image
                                 key={project.titleLineOne}
                                 source={project.heroImage}

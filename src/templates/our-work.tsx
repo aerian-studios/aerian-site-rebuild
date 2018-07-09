@@ -47,7 +47,10 @@ export const OurWorkPage: React.SFC<Props> = props => {
                 </div>
                 <ShowcaseCarousel feature={false}>
                     {extractNodes(props.data.allProjectsJson).map(project => (
-                        <Link to={`/our-work/project/${project.slug}`}>
+                        <Link
+                            to={`/our-work/project/${project.slug}`}
+                            key={project.slug}
+                        >
                             <Image
                                 key={project.titleLineOne}
                                 source={project.heroImage}

@@ -73,13 +73,9 @@ export const MeetTheTeamPage: React.SFC<Props> = props => {
                         image={heroImage}
                         aria-labelled-by="page-title"
                     />
-                    <div className="block--hero__content-wrap">
-                        <h1 className="block--hero__title">{title}</h1>
-                        <button>Hello</button>
-                    </div>
                 </PageHeader>
 
-                <StaffGridBlock staff={staff} />
+                <StaffGridBlock staff={staff.filter(person => person.live)} />
             </section>
         </Layout>
     );

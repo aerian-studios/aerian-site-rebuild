@@ -1,5 +1,6 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import * as React from "react";
+import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { ShowcaseCarousel } from "../components/ShowcaseCarousel";
 import { extractNodes, isImageSharp } from "../lib/helpers";
@@ -40,11 +41,20 @@ export const OurWorkPage: React.SFC<Props> = props => {
             }}
         >
             <section>
-                <h1>{title}</h1>
-                <p>{subheading}</p>
-                <ShowcaseCarousel
-                    projects={extractNodes(props.data.allProjectsJson)}
-                />
+                <div>
+                    <h1>{title}</h1>
+                    <p>{subheading}</p>
+                </div>
+                <ShowcaseCarousel feature={false}>
+                    {extractNodes(props.data.allProjectsJson).map(project => (
+                        <Link to={`/our-work/project/${project.slug}`}>
+                            <Image
+                                key={project.titleLineOne}
+                                source={project.heroImage}
+                            />
+                        </Link>
+                    ))}
+                </ShowcaseCarousel>
             </section>
         </Layout>
     );
@@ -55,7 +65,10 @@ export const pageQuery = graphql`
         pagesJson(id: { eq: $id }) {
             ...PageFields
         }
-        allProjectsJson(skip: 0) {
+        allProjectsJson(
+            filter: { featured: { eq: true } }
+            sort: { order: DESC, fields: [goLiveDate] }
+        ) {
             edges {
                 node {
                     ...ProjectBox

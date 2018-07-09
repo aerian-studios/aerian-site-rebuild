@@ -5,7 +5,7 @@ import { project } from "../../types/fixtures";
 import { Image } from "../Image";
 import { ShowcaseCarousel } from "./index";
 
-global.IntersectionObserver = jest.fn(() => ({
+(global as any).IntersectionObserver = jest.fn(() => ({
     observe: jest.fn(),
     unobserve: jest.fn(),
     disconnect: jest.fn()

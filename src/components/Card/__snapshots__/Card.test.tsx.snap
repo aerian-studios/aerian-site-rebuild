@@ -2,10 +2,8 @@
 
 exports[`Card renders correctly 1`] = `
 <div
-  className=" myClass"
+  className="  "
 >
-  <a
-    href="/my-bogus-site"
-  />
+  <div />
 </div>
 `;

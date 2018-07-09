@@ -8,9 +8,9 @@ import { Card } from "./index";
 storiesOf("Card", module).add(
     "Default",
     withInfo({ inline: true })(() => (
-        <Card link="google.com">
+        <Card>
             <div className="content">
-                <h3>Tilte</h3>
+                <h3>Title</h3>
                 <p>Some content</p>
                 <button>This is a button</button>
             </div>

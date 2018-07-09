@@ -8,7 +8,7 @@ import { Card } from "./index";
 describe("Card", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<Card className="myClass" link="/my-bogus-site" />)
+            .create(<Card />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

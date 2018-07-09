@@ -5,17 +5,32 @@ import * as styles from "./Card.scss";
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-    link: string;
 }
 
-export const Card: React.SFC<Props> = ({
-    children,
-    style,
-    className,
-    link
-}) => (
-    <div className={[styles.card, className].join(" ")} style={style}>
-        <a href={link}>{children}</a>
-    </div>
-);
+interface State {
+    visible: boolean;
+}
+
+export class Card extends React.PureComponent<Props> {
+    public state = {
+        visible: false
+    };
+
+    public setVisible = (visible: boolean) => this.setState({visible})
+
+    public render() {
+        return (
+            <div
+                className={[
+                    styles.card,
+                    this.props.className,
+                    this.state.visible ? styles.visible : ""
+                ].join(" ")}
+                style={this.props.style}
+            >
+                <div className={styles.flip}>{this.props.children}</div>
+            </div>
+        );
+    }
+}
 export default Card;

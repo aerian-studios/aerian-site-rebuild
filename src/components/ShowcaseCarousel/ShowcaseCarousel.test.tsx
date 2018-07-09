@@ -1,19 +1,23 @@
 /// <reference types="@types/jest" />
 import * as React from "react";
-
 import * as renderer from "react-test-renderer";
-
-import { MemoryRouter } from "react-router";
 import { project } from "../../types/fixtures";
+import { Image } from "../Image";
 import { ShowcaseCarousel } from "./index";
+
+global.IntersectionObserver = jest.fn(() => ({
+    observe: jest.fn(),
+    unobserve: jest.fn(),
+    disconnect: jest.fn()
+}));
 
 describe("ShowcaseCarousel", () =>
     it("renders correctly", () => {
         const tree = renderer
             .create(
-                <MemoryRouter>
-                    <ShowcaseCarousel projects={[project]} />
-                </MemoryRouter>
+                <ShowcaseCarousel>
+                    {[<Image key={1} source={project.heroImage} />]}
+                </ShowcaseCarousel>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();

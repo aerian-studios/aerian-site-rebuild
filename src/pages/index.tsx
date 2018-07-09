@@ -1,10 +1,7 @@
-import { graphql } from "gatsby";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import * as React from "react";
-import { Card } from "../components/Card";
 import { Image } from "../components/Image";
 import Layout from "../components/Layout";
-import { PageHeader } from "../components/PageHeader/PageHeader";
 import { ShowcaseCarousel } from "../components/ShowcaseCarousel";
 import { extractNodes } from "../lib/helpers";
 import { Client, NodeList, Project, ReactRouterLocation } from "../types/data";
@@ -24,12 +21,12 @@ const IndexPage: React.SFC<Props> = props => {
             <section id="section-index">
                 <ShowcaseCarousel feature={true}>
                     {extractNodes(props.data.allProjectsJson).map(project => (
-                            <Link to={`/our-work/project/${project.slug}`}>
-                                <Image
-                                    key={project.titleLineOne}
-                                    source={project.heroImage}
-                                />
-                            </Link>
+                        <Link to={`/our-work/project/${project.slug}`}>
+                            <Image
+                                key={project.titleLineOne}
+                                source={project.heroImage}
+                            />
+                        </Link>
                     ))}
                 </ShowcaseCarousel>
             </section>

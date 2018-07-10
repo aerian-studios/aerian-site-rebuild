@@ -5,13 +5,13 @@ exports[`ClientLogo renders correctly 1`] = `
   className=" myClass"
   style={
     Object {
-      "width": "50%",
+      "width": 400,
     }
   }
 >
   <img
-    alt="Family enjoying the beach circa 1950s"
-    src="https://i.imgur.com/BOOPM8n.jpg"
+    alt="CNN"
+    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
   />
 </figure>
 `;

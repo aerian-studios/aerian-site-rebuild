@@ -23,15 +23,15 @@ export const clientFragment = graphql`
         name
         logo {
             childImageSharp {
-                fixed(width: 420) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 420) {
+                    ...GatsbyImageSharpFluid
                 }
             }
         }
         promoLogo {
             childImageSharp {
-                fixed(width: 420) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 420) {
+                    ...GatsbyImageSharpFluid
                 }
             }
         }

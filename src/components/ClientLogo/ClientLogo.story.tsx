@@ -1,14 +1,18 @@
-
 import * as React from "react";
 
 import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 
+import { client } from "../../types/fixtures";
 import { ClientLogo } from "./index";
 
-
 storiesOf("ClientLogo", module).add(
-    "Default", 
+    "Default",
     withInfo({ inline: true })(() => (
-    <ClientLogo  className="myClass" imgSrc="https://i.imgur.com/BOOPM8n.jpg" imgAlt="Family enjoying the beach circa 1950s" style={{width: '50%'}} />
-)));
+        <ClientLogo
+            className="myClass"
+            client={client}
+            style={{ width: 400 }}
+        />
+    ))
+);

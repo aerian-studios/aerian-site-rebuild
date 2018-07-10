@@ -1,17 +1,21 @@
 import * as React from "react";
-
+import { Client } from "../../types/data";
+import { Image } from "../Image";
 import * as styles from "./ClientLogo.scss";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-    imgSrc: string;
-    imgAlt: string;
+    client: Client;
 }
 
-export const ClientLogo: React.SFC<Props> = ({ style, className, imgSrc, imgAlt }) => (
+export const ClientLogo: React.SFC<Props> = ({ style, className, client }) => (
     <figure className={[styles.component, className].join(" ")} style={style}>
-        <img src={imgSrc} alt={imgAlt} className={styles.imgResponsive} />
+        <Image
+            source={client.logo}
+            alt={client.name}
+            className={styles.imgResponsive}
+        />
     </figure>
 );
 export default ClientLogo;

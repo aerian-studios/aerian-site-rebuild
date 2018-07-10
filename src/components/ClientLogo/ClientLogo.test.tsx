@@ -3,15 +3,19 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
+import { client } from "../../types/fixtures";
 import { ClientLogo } from "./index";
 
-
-describe("ClientLogo", () => (
+describe("ClientLogo", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<ClientLogo className="myClass" imgSrc="https://i.imgur.com/BOOPM8n.jpg" imgAlt="Family enjoying the beach circa 1950s" style={{width: '50%'}} />
+            .create(
+                <ClientLogo
+                    className="myClass"
+                    client={client}
+                    style={{ width: 400 }}
+                />
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    })
-));
+    }));

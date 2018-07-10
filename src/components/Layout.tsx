@@ -9,6 +9,7 @@ import "../lib/theme";
 
 import logo from "../../static/assets/furniture/aerian-logo.svg";
 import { PageListNode, ReactRouterLocation } from "../types/data";
+import { PageFooter } from "./PageFooter";
 
 interface Props {
     className?: string;
@@ -70,6 +71,14 @@ const Layout: React.SFC<Props> = ({
                             </PageNavBar>
                         ) : null}
                         <main id="content-wrapper">{children}</main>
+                        <PageFooter>
+                            <div>
+                                <p>ContactDetails</p>
+                            </div>
+                            <div>
+                                <p>SocialIcons</p>
+                            </div>
+                        </PageFooter>
                     </ErrorBoundary>
                 </div>
             );

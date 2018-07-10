@@ -46,8 +46,8 @@ export const projectBoxFragment = graphql`
         slug
         heroImage {
             childImageSharp {
-                fixed(width: 532, height: 532) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 1066, maxHeight: 1066) {
+                    ...GatsbyImageSharpFluid
                 }
             }
         }

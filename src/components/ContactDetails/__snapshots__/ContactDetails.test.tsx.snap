@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactDetails renders correctly 1`] = `
+<div
+  className=" myClass"
+  itemscope={true}
+  itemtype="http://schema.org/Organization"
+>
+  <p>
+    Call 
+    <span
+      itemprop="telephone"
+    >
+      0345 408 6009
+    </span>
+  </p>
+  <p
+    itemprop="address"
+    itemscope={true}
+    itemtype="http://schema.org/PostalAddress"
+  >
+    <span
+      itemprop="streetAddress"
+    >
+      The Old Malthouse, Mill Lane
+    </span>
+    <span
+      itemprop="addressLocality"
+    >
+      Box
+    </span>
+    <span
+      itemprop="addressRegion"
+    >
+      Wiltshire
+    </span>
+    <span
+      itemprop="postalCode"
+    >
+      SN13 8PN
+    </span>
+  </p>
+</div>
+`;

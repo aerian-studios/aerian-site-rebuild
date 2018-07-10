@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import { Image } from "../Image";
 import * as styles from "./ClientLogo.scss";
 
 interface Props {
@@ -9,9 +9,14 @@ interface Props {
     imgAlt: string;
 }
 
-export const ClientLogo: React.SFC<Props> = ({ style, className, imgSrc, imgAlt }) => (
+export const ClientLogo: React.SFC<Props> = ({
+    style,
+    className,
+    imgSrc,
+    imgAlt
+}) => (
     <figure className={[styles.component, className].join(" ")} style={style}>
-        <img src={imgSrc} alt={imgAlt} className={styles.imgResponsive} />
+        <Image source={imgSrc} alt={imgAlt} className={styles.imgResponsive} />
     </figure>
 );
 export default ClientLogo;

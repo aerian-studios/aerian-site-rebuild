@@ -10,10 +10,8 @@ interface Props {
 }
 
 export const ClientLogo: React.SFC<Props> = ({ style, className, imgSrc, imgAlt }) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
-        <figure className={styles.figure}>
-            <img src={imgSrc} alt={imgAlt} className={styles.imgResponsive} />
-        </figure>
-    </div>
+    <figure className={[styles.component, className].join(" ")} style={style}>
+        <img src={imgSrc} alt={imgAlt} className={styles.imgResponsive} />
+    </figure>
 );
 export default ClientLogo;

@@ -1,13 +1,10 @@
-.component {
-}
-
 .phoneNumber {
-    font-size: 0.875em;
+    font-size: calc(var(--t-small) * 1px);
     margin: 0;
 }
 
 .address {
-    font-size: 0.75em;
+    font-size: calc(var(--t-xsmall) * 1px);
     margin: 0;
 }
 

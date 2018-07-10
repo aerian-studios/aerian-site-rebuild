@@ -8,6 +8,8 @@ import { PageNavBar } from "../components/PageNavBar";
 import "../lib/theme";
 
 import { PageListNode, ReactRouterLocation } from "../types/data";
+import { ContactDetails } from "./ContactDetails";
+import { PageFooter } from "./PageFooter";
 
 interface Props {
     className?: string;
@@ -63,6 +65,17 @@ const Layout: React.SFC<Props> = ({
                             />
                         ) : null}
                         <main id="content-wrapper">{children}</main>
+                        <PageFooter>
+                            <ContactDetails
+                                phoneNumber="0345 408 6009"
+                                street="The Old Malthouse, Mill Lane"
+                                locality="Box"
+                                postcode="SN13 8PN"
+                            />
+                            <div>
+                                <p>SocialIcons</p>
+                            </div>
+                        </PageFooter>
                     </ErrorBoundary>
                 </div>
             );

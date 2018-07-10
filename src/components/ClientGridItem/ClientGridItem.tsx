@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import * as React from "react";
 import { Client } from "../../types/data";
+import { ClientLogo } from "../ClientLogo";
 import { Image } from "../Image";
 import * as styles from "./ClientGridItem.scss";
 interface Props {
@@ -15,12 +16,13 @@ export const ClientGridItem: React.SFC<Props> = ({
     className
 }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
-        {client.featuredProject && (
+        {client.featuredProject ? (
             <Link to={`/our-work/project/${client.featuredProject}`}>
-                Project
+                <ClientLogo client={client} className={styles.figure} />
             </Link>
+        ) : (
+            <ClientLogo client={client} className={styles.figure} />
         )}
-        <Image source={client.logo} />
     </div>
 );
 export default ClientGridItem;

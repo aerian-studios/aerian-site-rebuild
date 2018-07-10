@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientLogo renders correctly 1`] = `
+<figure
+  className=" myClass"
+  style={
+    Object {
+      "width": 400,
+    }
+  }
+>
+  <img
+    alt="CNN"
+    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
+  />
+</figure>
+`;

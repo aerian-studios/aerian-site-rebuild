@@ -1,0 +1,22 @@
+@import "../../scss/variables";
+
+.component {
+    display: flex;
+    width: 100%;
+}
+
+.funny,
+.details {
+    flex: 0 1 50%;
+}
+
+.role {
+    background: $c-text;
+    color: $c-brand-c;
+    padding: 3px 10px;
+    display: inline-block;
+}
+
+.skils {
+    margin-left: 0;
+}

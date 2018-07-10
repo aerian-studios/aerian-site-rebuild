@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialGrid renders correctly 1`] = `
+<div
+  className=" myClass"
+>
+  <h2>
+    SocialGrid
+  </h2>
+</div>
+`;

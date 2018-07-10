@@ -68,22 +68,22 @@
       "The application was launched successfully on time, in a performant and engaging manner to great acclaim both within the BBC and without. ",
     "hurdles": [
       {
-        "title": "Structured agile PM ",
+        "title": "TV shows aren't late, so we couldn't be",
         "text":
-          "We were swimming in uncharted territories, with technology changing around us everyday. So we absolutely needed a well structured Agile PM approach to ensure the myriad of BBC services & requirements were prioritised against business needs.",
-        "image": "/assets/imported/616/bbc-companion-04.png"
+          "Despite an aggressive launch schedule, and many unforeseen external circumstances, the app was launched successfully, and on time. Celebrations were well earned!",
+        "image": "/assets/imported/620/bbc-companion-07.png"
       },
       {
-        "title": "Rigorous QA testing ",
+        "title": "Yay! Users loved it",
         "text":
-          "We worked night and day to identified device failings and incompatibilities across the diverse and complex landscape of Android devices. We even created a solution that allowed Samsung devices to manage their own graphical output (don't ask!)",
-        "image": "/assets/imported/617/bbc-companion-05.png"
+          "It user-tested incredibly well with audiences \"delighted\" and \"surprised\" by the new companion content they discovered around their favourite shows. Whether it was more information on the Strictly dancers, or quizzes on their favourite game show - they loved it!",
+        "image": "/assets/imported/619/bbc-companion-08.png"
       },
       {
-        "title": "Putting the client in control",
+        "title": "The future of Companion",
         "text":
-          "We used Jira extensively to give complete transparency to the BBC in terms of how we spent our time, enabling them to respond quickly and efficiently when issues arose.",
-        "image": "/assets/imported/618/bbc-companion-06.png"
+          "The app was very well received internally and externally. Furthermore, the JS libraries we created to overcome performance issues across Android devices have been used by both ourselves and the BBC on multiple projects.",
+        "image": "/assets/imported/621/bbc-companion-09.png"
       }
     ]
   },
@@ -93,7 +93,8 @@
       "Users told us that they enjoyed our 'upcoming programme' content so much they watched programmes they then went on to watch the upcoming show, which they wouldn't have otherwise. ",
     "person": "BBC audience testing results",
     "title": "Project Owner | Editorial lead",
-    "avatar": "/assets/imported/301/bbc-compainion-quote-image.jpg"
+    "image": "/assets/imported/301/bbc-compainion-quote-image.jpg",
+    "avatar": "/assets/imported/262/bbclogo.png"
   },
   "gallery": [
     {

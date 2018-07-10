@@ -69,22 +69,22 @@
       "So successful was the relaunch that Wiltshire Council have now created a digital strategy team to continue finding new ways to harness digital to deliver better service and value for money.",
     "hurdles": [
       {
-        "title": "Our responsive and customisable CMS - Tapestry  ",
+        "title": "Mobile users sky rocketed",
         "text":
-          "Our proprietary CMS ‘Tapestry' was customised with bespoke content blocks and data entry views based on editorial team workflows and content requirements.",
-        "image": "/assets/imported/608/wiltshire-04.png"
+          "The site meets accessibility standards and a responsive build takes the pain out of cross-device browsing regardless of screen size. Users can search for content on not only the new and old sites but a range of Council run microsites - opening new the and exciting territories with users.",
+        "image": "/assets/imported/611/wiltshire-07.png"
       },
       {
-        "title": "Handling traffic management ",
+        "title": "Super efficient workflow",
         "text":
-          "We proposed and executed creative use of Varnish which acted as a cache layer for the new and old sites. As a ‘Traffic Manager' this also managed the routing of requests to either the old or new site without needing multiple domain names.",
-        "image": "/assets/imported/609/wiltshire-05.png"
+          "Our intuitive and time saving CMS boasts a custom built digital asset management system to help the editorial team keep track of imagery and other file types. Furthermore, access and content tasks can be devolved into WYSIWYG interfaces, and extended and personalised to suit the needs of each content team.",
+        "image": "/assets/imported/606/wiltshire-02.png"
       },
       {
-        "title": "Lightning quick search functionality ",
+        "title": "Slashed loading times ",
         "text":
-          "In the 11th hour, we were asked to include search functionality across legacy pages as well as the new site. We used Apache Nutch with Solr with some custom boost settings to index pages across the new site.",
-        "image": "/assets/imported/610/wiltshire-06.png"
+          "Load times have been slashed for legacy pages by around 2000%, and cached versions of pages are served in the event of server error.",
+        "image": "/assets/imported/612/wiltshire-09.png"
       }
     ]
   },

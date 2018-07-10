@@ -2,9 +2,9 @@
     "compilerOptions": {
         /* Basic Options */
         "target":
-            "ES5" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */,
+            "ES2016" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */,
         "module":
-            "es2015" /* Specify module code generation: 'none', commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+            "commonjs" /* Specify module code generation: 'none', commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
         // "lib": [
         //     "dom"
         // ] /* Specify library files to be included in the compilation:  */,
@@ -59,6 +59,7 @@
         /* Experimental Options */
         // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
         // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */,
+        "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true
     },
     "exclude": ["./node_modules", "./build", "./dist"]

@@ -1,87 +1,119 @@
+import { graphql } from "gatsby";
 import * as React from "react";
-
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
-import { ImageSharp, ImageSharpSizes, PageSection } from "../types/data";
+import Layout from "../components/Layout";
+import { PageSectionBlock } from "../components/PageSectionBlock";
+import { isImageSharp } from "../lib/helpers";
+import { ReactRouterLocation, WhatWeDo } from "../types/data";
+
+interface GraphData {
+    pagesJson: WhatWeDo;
+}
 
 interface Props {
-    title: string;
-    sections: PageSection[];
-    heroImage: ImageSharpSizes | string;
+    data: GraphData;
+    location: ReactRouterLocation;
 }
-export const WhatWeDoPageTemplate: React.SFC<Props> = ({
-    title,
-    sections,
-    heroImage
-}) => {
+export const WhatWeDoPage: React.SFC<Props> = props => {
+    const {
+        title,
+        sections,
+        heroImage,
+        seoDescription,
+        seoKeywords,
+        seoTitle
+    } = props.data.pagesJson;
     return (
-        <section className="section section--about">
-            <HeroBlock>
-                {typeof heroImage === "string" ? (
-                    // Cover the situation where there is no imageSharp (e.g. in the cms)
-                    <img
-                        className="full-screen"
-                        src={heroImage}
-                        alt=""
-                        aria-hidden="true"
-                    />
-                ) : (
+        <Layout
+            title={title}
+            location={props.location}
+            {...{
+                seoDescription,
+                seoKeywords,
+                seoTitle
+            }}
+        >
+            <section className="section section--about">
+                <PageHeader>
                     <FullScreenMedia
                         image={heroImage}
-                        altText={title}
-                        video=""
+                        aria-labelled-by="page-title"
                     />
-                )}
-                <div className="block--hero__content-wrap">
-                    <h1 className="block--hero__title">{title}</h1>
+                    <div className="block--hero__content-wrap">
+                        <h1 className="block--hero__title">{title}</h1>
+                    </div>
+                </PageHeader>
+                <div>
+                    {sections &&
+                        sections.map((section, i) => (
+                            <PageSectionBlock
+                                section={section}
+                                alternate={i % 2 === 0}
+                            />
+                        ))}
                 </div>
-            </HeroBlock>
-            <div className="block--full block layout-grid">
-                {sections.map(section => {
-                    // Make componenets for here
-                })}
-            </div>
-        </section>
+            </section>
+        </Layout>
     );
 };
 
-// Make type interface
-const WhatWeDoPage: React.SFC<graphData> = ({ data }) => {
-    return (
-        <WhatWeDoPageTemplate
-            title={data.pageTitle || ""}
-            sections={data.sections || []}
-            heroImage={
-                !data.heroImage || typeof data.heroImage === "string"
-                    ? data.heroImage || ""
-                    : data.heroImage.childImageSharp.sizes
-            }
-        />
-    );
-};
-export default WhatWeDoPage;
-
-interface graphData {
-    data: {
-        heroImage?: ImageSharp | string;
-        pageTitle?: string;
-        sections?: PageSection[];
-    };
-}
-
-export const whatWeDoPageQuery: graphData = graphql`
+export const pageQuery = graphql`
     query WhatWeDoPage($id: String!) {
         pagesJson(id: { eq: $id }) {
-            # heroImage
-            # pageTitle
+            ...PageFields
             sections {
                 title
-                image
-                smallImage
+                image {
+                    childImageSharp {
+                        fluid(maxWidth: 1000) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+                smallImage {
+                    childImageSharp {
+                        fluid(maxWidth: 600) {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
                 subtitle
                 blurb
+                activities {
+                    title
+                    text
+                }
+                successStory {
+                    title
+                    stats {
+                        title
+                        text
+                        image {
+                            childImageSharp {
+                                fixed(width: 48) {
+                                    ...GatsbyImageSharpFixed
+                                }
+                            }
+                        }
+                    }
+                }
+                testimonial {
+                    person
+                    title
+                    quote
+                    avatar {
+                        childImageSharp {
+                            fixed(width: 77) {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 `;
+
+export default WhatWeDoPage;

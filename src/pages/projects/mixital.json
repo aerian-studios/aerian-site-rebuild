@@ -46,7 +46,14 @@
   },
   "results": {
     "description": "Award winning, but most importantly, great fun!",
-    "hurdles": []
+    "hurdles": [
+      {
+        "title": "Powering a community of developers",
+        "text":
+          "To enable high quality, imaginative third party content, we created a API and library system that allowed third party developers to call common services and functionality within their ‘kit', allowing a common experience across all interactives, while maintaining consistent development approaches and code.",
+        "image": "/assets/imported/588/mixital-digital-leaders-nomination.png"
+      }
+    ]
   },
   "performance": [],
   "testimonial": null,

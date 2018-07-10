@@ -1,38 +1,53 @@
-import { StaticQuery } from "gatsby";
+import { graphql, Link } from "gatsby";
 import * as React from "react";
-import { FullScreenMedia } from "../components/FullScreenMedia";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import { Image } from "../components/Image";
 import Layout from "../components/Layout";
-
+import { ShowcaseCarousel } from "../components/ShowcaseCarousel";
+import { extractNodes } from "../lib/helpers";
+import { Client, NodeList, Project, ReactRouterLocation } from "../types/data";
+import * as styles from "./index.scss";
 interface Props {
-    location: {
-        pathname: string;
-    };
+    data: GraphData;
+    location: ReactRouterLocation;
 }
 
-const IndexPage: React.SFC<Props> = props => (
-    <StaticQuery
-        query={graphql`
-            query IndexQuery {
-                allProjectsJson(sort: { order: DESC, fields: [goLiveDate] }) {
-                    edges {
-                        node {
-                            id
-                        }
-                    }
+interface GraphData {
+    allProjectsJson: NodeList<Project>;
+}
+
+const IndexPage: React.SFC<Props> = props => {
+    return (
+        <Layout location={props.location} title={"Aerian Studios"}>
+            <section id="section-index">
+                <ShowcaseCarousel feature={true}>
+                    {extractNodes(props.data.allProjectsJson).map(project => (
+                        <Link
+                            key={project.slug}
+                            to={`/our-work/project/${project.slug}`}
+                        >
+                            <Image
+                                key={project.titleLineOne}
+                                source={project.heroImage}
+                            />
+                        </Link>
+                    ))}
+                </ShowcaseCarousel>
+            </section>
+        </Layout>
+    );
+};
+export const pageQuery = graphql`
+    query ProjectsQuery {
+        allProjectsJson(
+            filter: { featured: { eq: true } }
+            sort: { order: DESC, fields: [goLiveDate] }
+        ) {
+            edges {
+                node {
+                    ...ProjectBox
                 }
             }
-        `}
-        render={data => {
-            return (
-                <Layout location={props.location}>
-                    <section id="section-index">
-                        <div className="block--full">This is the home page</div>
-                    </section>
-                </Layout>
-            );
-        }}
-    />
-);
-
+        }
+    }
+`;
 export default IndexPage;

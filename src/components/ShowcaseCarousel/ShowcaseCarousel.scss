@@ -1,0 +1,46 @@
+@import "../../scss/variables";
+.feature.component > :first-child {
+    grid-area: feature;
+}
+.component {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-areas: "feature", "a";
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    @media (min-width: $bp-s) {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "feature    a"
+            "b          c";
+    }
+    @media (min-width: $bp-m) {
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas:
+            "feature feature a"
+            "feature feature b"
+            "e f g";
+    }
+
+    @media (min-width: $bp-l) {
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas:
+            "feature feature a b"
+            "feature feature c d"
+            "e f g h";
+    }
+
+    @media (min-width: $bp-xxl) {
+        grid-template-columns: repeat(5, 1fr);
+
+        grid-template-areas:
+            "feature feature a b c"
+            "feature feature d e f"
+            "g h i j k";
+    }
+}

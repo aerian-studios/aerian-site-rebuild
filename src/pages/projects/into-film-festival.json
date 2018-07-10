@@ -67,22 +67,22 @@
       "The Into Film Festival launched with an amazing reception from users. We achieved record breaking figures for bookings in the first week, ith a peak of over 1 million website hits in a day.",
     "hurdles": [
       {
-        "title": "Utilising the magic of the cinema",
+        "title": "All expectations smashed!!",
         "text":
-          "We peppered dynamic and aspirational imagery to celebrate the wonder of cinematography, and grab users. We complimented this imagery with alluring promo blocks and call-to-actions for the primary navigation paths, leading to an delightful browsing (and more importantly, booking) experience.",
-        "image": "/assets/imported/682/into-film-festival-04.png"
+          "The level of bookings massively increased from previous years, with over **12,667** events booked in the first week and over **477,445** seats booked in total.",
+        "image": "/assets/imported/685/into-film-festival-07.png"
       },
       {
-        "title": "Flexible solutions for maximum results",
+        "title": "Loved by exhibitors",
         "text":
-          "We worked tirelessly to understand and plan meticulously for the various third party systems our application would need to integrate with. Communication between our teams was critical to the success, and the creation of a final product that not only performed flawlessly under immense traffic pressures; but also delivered an delightful user experience that exceeded Into Film's booking targets.",
-        "image": "/assets/imported/683/into-film-festival-05.png"
+          "Exhibitors uploaded a total of 2,969 events compared to last years number of 2,707 events. So it's safe to say that the Festival was quite the success!",
+        "image": "/assets/imported/686/into-film-festival-08.png"
       },
       {
-        "title": "Lets make booking a pleasure",
+        "title": "Loved by users",
         "text":
-          "To ensure maximum bookings during the festival we implemented a swathe of features and created a highly targetted and optimised booking journey. Geo-location technology was utilised to pre-define user locations and recommend events near them, complemented by an extensive filter system that allowed highly tailored filtering.",
-        "image": "/assets/imported/684/into-film-festival-06.png"
+          "When Into Film Festival launched, we saw numbers of 400 hits per minute, which equated to around 1 million hits per day! That's a lot of hits and we still maintained 0% downtime, and we also saw an additional 7,724 membership accounts created during the running of the festival.",
+        "image": "/assets/imported/687/into-film-festival-09.png"
       }
     ]
   },
@@ -96,7 +96,8 @@
       "Aerian delivered the design to brief and beyond. They are a great bunch to work with - really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. I loved working on this project with them and am chuffed to bits with the result.",
     "person": "Louise Goodspeed",
     "title": "Lead UX",
-    "avatar": "/assets/imported/688/intofilm-festival-quote-image.png"
+    "image": "/assets/imported/688/intofilm-festival-quote-image.png",
+    "avatar": "/assets/imported/124/louise-goodspeed.png"
   },
   "gallery": [
     {

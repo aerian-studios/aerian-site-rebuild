@@ -1,5 +1,6 @@
 import { configure } from "@storybook/react";
-import "../src/scss/base-theme.scss";
+import "../src/lib/theme";
+
 const req = require.context("../src/components", true, /\.story\.[tj]sx?$/);
 
 function loadStories() {

@@ -1,45 +1,25 @@
-import { graphql, StaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
 
 import { FullScreenMedia } from "../components/FullScreenMedia";
-import Content, { HTMLContent } from "../components/GenericContent";
-import { HeroBlock } from "../components/HeroBlock/HeroBlock";
+import Layout from "../components/Layout";
+import { PageHeader } from "../components/PageHeader/PageHeader";
 
-import { SectionNav } from "../components/SectionNav/";
-import { ImageSharpSizes } from "../types/data";
-
-interface Block {
-    description: string;
-    hurdles: {
-        title: string;
-        image: string | ImageSharpSizes;
-        text: string;
-    };
-}
+import { Block } from "../components/Block";
+import { CaseStudyIntro } from "../components/CaseStudyIntro";
+import { Gallery } from "../components/Gallery";
+import { OnwardJournies } from "../components/OnwardJournies";
+import { PerformanceBlock } from "../components/PerformanceBlock";
+import { ProjectStageBlock } from "../components/ProjectStageBlock";
+import { Project, ReactRouterLocation } from "../types/data";
 
 interface Props {
-    pageTitle1: string;
-    pageTitle2: string;
-    heroImage: ImageSharpSizes | string;
-    heroVideo?: string;
-    caseStudy: {
-        title: string;
-        text: string;
-    };
-    challenge?: Block;
-    solution?: Block;
-    results?: Block;
-    performance?: {
-        title: string;
-        text: string;
-    };
-    testimonial?: {
-        quote: string;
-        person: string;
-        title: string;
-        avatar: string | ImageSharpSizes;
-    };
-    id: string;
+    data: GraphData;
+    location: ReactRouterLocation;
+}
+
+interface GraphData {
+    projectsJson: Project;
 }
 
 const keys = {
@@ -54,144 +34,81 @@ const onNavigation = (id: string) => {
     alert(id);
 };
 
-export const ProjectPageTemplate: React.SFC<Props> = props => {
-    const {
-        pageTitle1,
-        pageTitle2,
-        heroImage,
-        heroVideo,
-        caseStudy,
-        challenge,
-        solution,
-        results,
-        performance,
-        testimonial,
-        id
-    } = props;
-
+export const ProjectPage: React.SFC<Props> = props => {
+    const project = props.data.projectsJson;
     return (
-        <section className="section section--about">
-            <HeroBlock>
-                {typeof heroImage === "string" ? (
-                    // Cover the situation where there is no imageSharp (e.g. in the cms)
-                    !heroVideo ? (
-                        <img
-                            className="full-screen"
-                            src={heroImage}
-                            alt=""
-                            aria-hidden="true"
-                        />
-                    ) : (
-                        <FullScreenMedia image={heroImage} video={heroVideo} />
-                    )
-                ) : (
-                    <FullScreenMedia
-                        image={heroImage}
-                        aria-labelled-by="page-title"
-                        video=""
-                    />
-                )}
-                <div className="block--hero__content-wrap">
-                    <h1 id="page-title" className="block--hero__title">
-                        {pageTitle1}
+        <Layout location={props.location} title={project.titleLineOne}>
+            <PageHeader>
+                <FullScreenMedia
+                    image={project.heroImage}
+                    aria-labelled-by="page-title"
+                    video={project.heroVideo}
+                />
+
+                <div>
+                    <h1>
+                        {project.titleLineOne}
                         <br />
-                        {pageTitle2}
+                        {project.titleLineTwo}
                     </h1>
                 </div>
-            </HeroBlock>
-            <SectionNav
+            </PageHeader>
+            {/* <SectionNav
                 keyConsts={keys}
                 sections={props}
                 onNavigation={onNavigation}
-            />
-            <div className="block--full block layout-grid" />
-        </section>
+            /> */}
+            <Block>
+                <div>Client logo</div>
+                <CaseStudyIntro project={project} />
+            </Block>
+            <Block>
+                <Gallery gallery={project.gallery} />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Challenge"
+                    projectStage={project.challenge}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Solution"
+                    projectStage={project.solution}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Result"
+                    projectStage={project.results}
+                />
+            </Block>
+            {project.testimonial && (
+                <Block>
+                    {/*  TestimonialBlock  */}
+                    <blockquote>{project.testimonial.quote}</blockquote>
+                    <cite>{project.testimonial.person}</cite>
+                    <cite>{project.testimonial.title}</cite>
+                </Block>
+            )}
+            {project.performance && (
+                <Block>
+                    <PerformanceBlock performance={project.performance} />
+                </Block>
+            )}
+            <Block>
+                <OnwardJournies projectURL={project.externalUrl} />
+            </Block>
+        </Layout>
     );
 };
 
-const createCorrectMediumComponent = image => {
-    return typeof image === "string" ? image : image.childImageSharp.sizes;
-};
-
-// Make type interface
-const ProjectPage: React.SFC = props => {
-    return (
-        <StaticQuery
-            query={graphql`
-                query project($id: String!) {
-                    projectsJson(id: { eq: $id }) {
-                        name
-                        titleLineOne
-                        titleLineTwo
-                        goLiveDate
-                        caseStudyTitle
-                        caseStudyText
-                        externalUrl
-                        heroImage
-                        heroVideo
-                        challenge {
-                            description
-                            hurdles {
-                                title
-                                image
-                                text
-                            }
-                        }
-                        solution {
-                            hurdles {
-                                title
-                                image
-                                text
-                            }
-                            description
-                        }
-                        results {
-                            description
-                            hurdles {
-                                title
-                                image
-                                text
-                            }
-                        }
-                        performance {
-                            title
-                            text
-                        }
-                        testimonial {
-                            quote
-                            person
-                            title
-                            avatar
-                        }
-                        id
-                    }
-                }
-            `}
-            render={data => {
-                const project = data.projectsJson;
-                return (
-                    <ProjectPageTemplate
-                        pageTitle1={project.titleLineOne}
-                        pageTitle2={project.titleLineTwo}
-                        heroImage={createCorrectMediumComponent(
-                            project.heroImage
-                        )}
-                        heroVideo={project.heroVideo}
-                        caseStudy={{
-                            title: project.caseStudyTitle,
-                            text: project.caseStudyText
-                        }}
-                        challenge={project.challenge}
-                        solution={project.solution}
-                        results={project.results}
-                        performance={project.performance}
-                        testimonial={project.testimonial}
-                        id={project.id}
-                    />
-                );
-            }}
-        />
-    );
-};
+export const ProjectQuery = graphql`
+    query project($id: String!) {
+        projectsJson(id: { eq: $id }) {
+            ...Project
+        }
+    }
+`;
 
 export default ProjectPage;

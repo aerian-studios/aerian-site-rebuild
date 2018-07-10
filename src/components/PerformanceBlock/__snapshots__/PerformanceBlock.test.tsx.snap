@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PerformanceBlock renders correctly 1`] = `
+<div
+  className=" "
+>
+  <h2>
+    Performance & Statistics
+  </h2>
+  <div
+    className=" "
+  >
+    <div>
+      <h4>
+        558000
+      </h4>
+      <p>
+        558,000 additional visits
+      </p>
+    </div>
+  </div>
+</div>
+`;

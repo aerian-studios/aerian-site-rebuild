@@ -36,21 +36,15 @@ module.exports = {
             options: siteConfig.manifest
         },
         // must come AFTER manifest plugin, Generates a service worker and AppShell
-        `gatsby-plugin-offline`,
+
         {
-            resolve: `gatsby-plugin-sass`,
+            resolve: `gatsby-plugin-netlify-cms`,
             options: {
-                sourceMaps: `inline`
+                // One convention is to place your Netlify CMS customization code in a
+                // `src/cms` directory.
+                modulePath: `${__dirname}/src/cms/cms.ts`
             }
         },
-        // {
-        //     resolve: `gatsby-plugin-netlify-cms`,
-        //     options: {
-        //         // One convention is to place your Netlify CMS customization code in a
-        //         // `src/cms` directory.
-        //         modulePath: `${__dirname}/src/cms/cms.ts`
-        //     }
-        // },
         `gatsby-plugin-typescript`
     ]
 };

@@ -2,40 +2,40 @@
 
 exports[`ContactDetails renders correctly 1`] = `
 <div
-  className=" myClass"
-  itemscope={true}
-  itemtype="http://schema.org/Organization"
+  className="myClass"
+  itemScope={true}
+  itemType="http://schema.org/Organization"
 >
   <p>
     Call 
     <span
-      itemprop="telephone"
+      itemProp="telephone"
     >
       0345 408 6009
     </span>
   </p>
   <p
-    itemprop="address"
-    itemscope={true}
-    itemtype="http://schema.org/PostalAddress"
+    itemProp="address"
+    itemScope={true}
+    itemType="http://schema.org/PostalAddress"
   >
     <span
-      itemprop="streetAddress"
+      itemProp="streetAddress"
     >
       The Old Malthouse, Mill Lane
     </span>
     <span
-      itemprop="addressLocality"
+      itemProp="addressLocality"
     >
       Box
     </span>
     <span
-      itemprop="addressRegion"
+      itemProp="addressRegion"
     >
       Wiltshire
     </span>
     <span
-      itemprop="postalCode"
+      itemProp="postalCode"
     >
       SN13 8PN
     </span>

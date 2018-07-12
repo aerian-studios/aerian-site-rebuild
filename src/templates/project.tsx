@@ -11,6 +11,7 @@ import { Gallery } from "../components/Gallery";
 import { OnwardJournies } from "../components/OnwardJournies";
 import { PerformanceBlock } from "../components/PerformanceBlock";
 import { ProjectStageBlock } from "../components/ProjectStageBlock";
+import { SectionNav } from "../components/SectionNav";
 import { Project, ReactRouterLocation } from "../types/data";
 
 interface Props {
@@ -53,11 +54,7 @@ export const ProjectPage: React.SFC<Props> = props => {
                     </h1>
                 </div>
             </PageHeader>
-            {/* <SectionNav
-                keyConsts={keys}
-                sections={props}
-                onNavigation={onNavigation}
-            /> */}
+            <SectionNav keyConsts={keys} onNavigation={onNavigation} />
             <Block>
                 <div>Client logo</div>
                 <CaseStudyIntro project={project} />

@@ -1,81 +1,66 @@
+import classNames from "classnames/bind";
 import * as React from "react";
 
+import { Link } from "gatsby";
 import { PageSection } from "../../types/data";
 import * as styles from "./SectionNav.scss";
 
+const cx = classNames.bind(styles);
+
 interface Props {
     keyConsts: { [key: string]: string };
-    sections: PageSection[];
     style?: React.CSSProperties;
     className?: string;
     onNavigation: (itemKey: string) => void;
+    navItemClassName?: string;
 }
 
 const wrapNavItem = (
     content: string,
     itemKey: string,
-    onNavigation: Props["onNavigation"]
+    onNavigation: (itemKey: string) => void,
+    navItemClassName?: string
 ) => (
-    <a
-        // className={styles.sectionNavItem}
-        href={`#${itemKey}`}
+    <Link
+        className={cx(styles.sectionNavItem, navItemClassName)}
+        to={`#${itemKey}`}
         key={`sectionnav-${itemKey}`}
         onClick={() => {
             onNavigation(itemKey);
         }}
     >
         {content}
-    </a>
+    </Link>
 );
 
 const getKeyWrapper = (
-    keyConsts: Props["keyConsts"],
-    onNavigation: Props["onNavigation"]
+    keyConsts: { [key: string]: string },
+    onNavigation: (itemKey: string) => void,
+    navItemClassName?: string
 ) => (itemKey: string) => {
-    return wrapNavItem(keyConsts[itemKey], itemKey, onNavigation);
+    return wrapNavItem(
+        keyConsts[itemKey],
+        itemKey,
+        onNavigation,
+        navItemClassName
+    );
 };
 
 const createNavItems = (
-    sections: Props["sections"],
-    keyConsts: Props["keyConsts"],
-    onNavigation: Props["onNavigation"]
+    keyConsts: { [key: string]: string },
+    onNavigation: (itemKey: string) => void,
+    navItemClassName?: string
 ): Array<React.ReactElement<HTMLAnchorElement>> => {
     const nav = [];
-    const navItemWrapper = getKeyWrapper(keyConsts, onNavigation);
+    const navItemWrapper = getKeyWrapper(
+        keyConsts,
+        onNavigation,
+        navItemClassName
+    );
 
-    // tslint:disable-next-line:forin
-    for (const itemKey in sections) {
-        const entry = sections[itemKey];
-        console.log(itemKey, keyConsts[itemKey]);
-
-        switch (itemKey) {
-            case "caseStudy":
-                if (entry.title || entry.text) {
-                    nav.push(navItemWrapper(itemKey));
-                }
-                break;
-            case "gallery":
-                if (typeof entry !== "undefined") {
-                    nav.push(navItemWrapper(itemKey));
-                }
-                break;
-            case "challenge":
-                if (typeof entry !== "undefined") {
-                    nav.push(navItemWrapper(itemKey));
-                }
-                break;
-            case "solution":
-                if (typeof entry !== "undefined") {
-                    nav.push(navItemWrapper(itemKey));
-                }
-                break;
-            case "results":
-                if (typeof entry !== "undefined") {
-                    nav.push(navItemWrapper(itemKey));
-                }
-                break;
-            default:
-                break;
+    for (const navItemKey in keyConsts) {
+        if (keyConsts.hasOwnProperty(navItemKey)) {
+            nav.push(navItemWrapper(navItemKey));
         }
     }
 
@@ -84,13 +69,13 @@ const createNavItems = (
 
 export const SectionNav: React.SFC<Props> = ({
     keyConsts,
-    sections,
     style,
     className,
-    onNavigation
+    onNavigation,
+    navItemClassName
 }) => (
-    <nav className={[styles.component, className].join(" ")} style={style}>
-        {createNavItems(sections, keyConsts, onNavigation)}
+    <nav className={cx(styles.component, className)} style={style}>
+        {createNavItems(keyConsts, onNavigation, navItemClassName)}
     </nav>
 );
 export default SectionNav;

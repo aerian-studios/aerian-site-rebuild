@@ -2,6 +2,6 @@
 
 exports[`SectionNav renders correctly 1`] = `
 <nav
-  className=" myClass"
+  className="myClass"
 />
 `;

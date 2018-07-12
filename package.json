@@ -112,7 +112,7 @@
             "node"
         ],
         "moduleNameMapper": {
-            "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+            "^.+\\.(css|less|scss|png)$": "identity-obj-proxy",
             "^./pages.json$": "<rootDir>/__mocks__/pages.json"
         }
     }

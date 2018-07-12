@@ -9,6 +9,7 @@
         "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
         "@fortawesome/react-fontawesome": "^0.1.0-11",
         "@researchgate/react-intersection-observer": "^0.7.3",
+        "classnames": "^2.2.6",
         "deep-map": "^1.5.0",
         "extract-text-webpack-plugin": "^3.0.2",
         "gatsby": "next",

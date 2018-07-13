@@ -1,6 +1,8 @@
 /**
  * Buttons should be a component and use contextual styles for further styling
  */
+
+@import "./variables";
 $c-action: $c-black-60;
 $c-action-bg: transparent;
 $c-action-border: $c-black-60;
@@ -9,7 +11,8 @@ $c-action-hover: $whiteish;
 $c-action-active-bg: $c-black-60;
 $c-action-active-border: $c-black-60;
 
-%button-normal {
+.button {
+    appearance: none;
     display: inline-block;
     position: relative;
     border-color: $c-action-border;
@@ -17,14 +20,10 @@ $c-action-active-border: $c-black-60;
         color 0.1s ease 0s;
     color: $c-action;
     background: $c-action-bg;
-    
+
     &:hover {
         border-color: $c-action-active-bg;
         background: $c-action-active-bg;
         color: $c-action-hover;
     }
-}
-
-.button {
-    @extend %button-normal;
 }

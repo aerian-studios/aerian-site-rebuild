@@ -60,6 +60,7 @@
         "@types/storybook__addon-actions": "^3.0.3",
         "@types/storybook__addon-info": "^3.2.3",
         "@types/storybook__react": "^3.0.7",
+        "autoprefixer": "^8.6.5",
         "css-loader": "^0.28.11",
         "docz": "^0.3.3",
         "extract-text-webpack-plugin": "^3.0.2",

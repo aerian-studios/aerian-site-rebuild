@@ -2,7 +2,7 @@
 
 exports[`Tag renders correctly 1`] = `
 <li
-  className=" myClass"
+  className=" "
 >
   Default
 </li>

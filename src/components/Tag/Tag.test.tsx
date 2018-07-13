@@ -7,8 +7,6 @@ import { Tag } from "./index";
 
 describe("Tag", () =>
     it("renders correctly", () => {
-        const tree = renderer
-            .create(<Tag className="myClass" value="Default" />)
-            .toJSON();
+        const tree = renderer.create(<Tag value="Default" />).toJSON();
         expect(tree).toMatchSnapshot();
     }));

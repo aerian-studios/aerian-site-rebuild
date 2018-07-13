@@ -5,10 +5,14 @@ exports[`StaffDetail renders correctly 1`] = `
   className=" "
 >
   <figure>
-    <img
-      alt="Paul Goodenough photo"
-      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
-    />
+    <div
+      className=""
+    >
+      <img
+        alt="Paul Goodenough photo"
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+      />
+    </div>
   </figure>
   <div>
     <p>

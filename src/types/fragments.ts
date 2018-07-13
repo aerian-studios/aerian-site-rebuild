@@ -27,6 +27,7 @@ export const clientFragment = graphql`
                     ...GatsbyImageSharpFluid
                 }
             }
+            publicURL
         }
         promoLogo {
             childImageSharp {
@@ -34,6 +35,7 @@ export const clientFragment = graphql`
                     ...GatsbyImageSharpFluid
                 }
             }
+            publicURL
         }
         featured
         featuredProject
@@ -50,6 +52,7 @@ export const projectBoxFragment = graphql`
                     ...GatsbyImageSharpFluid
                 }
             }
+            publicURL
         }
     }
 `;
@@ -70,8 +73,11 @@ export const projectFragment = graphql`
                     ...GatsbyImageSharpFluid
                 }
             }
+            publicURL
         }
-        heroVideo
+        heroVideo {
+            publicURL
+        }
         gallery {
             image {
                 childImageSharp {
@@ -79,6 +85,7 @@ export const projectFragment = graphql`
                         ...GatsbyImageSharpFluid
                     }
                 }
+                publicURL
             }
             alt
         }
@@ -92,6 +99,7 @@ export const projectFragment = graphql`
                             ...GatsbyImageSharpFixed
                         }
                     }
+                    publicURL
                 }
                 text
             }
@@ -105,6 +113,7 @@ export const projectFragment = graphql`
                             ...GatsbyImageSharpFixed
                         }
                     }
+                    publicURL
                 }
                 text
             }
@@ -120,6 +129,7 @@ export const projectFragment = graphql`
                             ...GatsbyImageSharpFixed
                         }
                     }
+                    publicURL
                 }
                 text
             }
@@ -138,6 +148,7 @@ export const projectFragment = graphql`
                         ...GatsbyImageSharpFixed
                     }
                 }
+                publicURL
             }
         }
         id

@@ -1,4 +1,8 @@
+import { Stats } from "fs";
+import { ParsedPath } from "path";
+
 export type ImageField = string | ImageSharp;
+export type FileField = string | Partial<FileNode>;
 
 // Images
 
@@ -7,7 +11,31 @@ export interface GalleryImage {
     image: ImageField;
 }
 
-export interface ImageSharp {
+export interface FileNode extends ParsedPath, Stats {
+    publicURL: string;
+    id: string;
+    children: any[];
+    sourceInstanceName: string;
+    absolutePath: string;
+    relativePath: string;
+    relativeDirectory: string;
+    extension: string;
+    size: number;
+    prettySize: string;
+
+    modifiedTime: string;
+    accessTime: string;
+    changeTime: string;
+    birthTime: string;
+    internal: {
+        contentDigest: string;
+        type: "Directory" | "File";
+        mediaType?: string;
+        description: string;
+    };
+}
+
+export interface ImageSharp extends Partial<FileNode> {
     childImageSharp: {
         fluid?: ImageSharpSizes;
         fixed?: ImageSharpSizes;

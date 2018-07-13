@@ -11,19 +11,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-    testimonial: Testimonial
+    testimonial: Testimonial;
 }
 
 function showImage(image?: ImageField) {
-    return (
-        image ? <Image source={image} /> : null
-    )
+    return image ? <Image source={image} /> : null;
 }
 
-export const TestimonialBlock: React.SFC<Props> = ({ children, style, className, testimonial }) => (
-    <div className={[styles.component, className].join(" ")} style={style} itemProp="review" itemScope={true} itemType="http://schema.org/Review">
+export const TestimonialBlock: React.SFC<Props> = ({
+    children,
+    style,
+    className,
+    testimonial
+}) => (
+    <div
+        className={[styles.component, className].join(" ")}
+        style={style}
+        itemProp="review"
+        itemScope={true}
+        itemType="http://schema.org/Review"
+    >
         {showImage(testimonial.image)}
-        <blockquote className={styles.quote}>
+        <blockquote>
             <FontAwesomeIcon className={styles.quoteLeft} icon={faQuoteLeft} />
             <div className={styles.testimonialText} itemProp="reviewBody">
                 {testimonial.quote}
@@ -32,13 +41,16 @@ export const TestimonialBlock: React.SFC<Props> = ({ children, style, className,
                 <figure className={styles.blockquoteImage}>
                     {showImage(testimonial.avatar)}
                 </figure>
-                <div className={styles.nameTitle}>
-                    <span className={styles.name} itemProp="author">{testimonial.person}</span>
-                    <span className={styles.title} itemProp="name">{testimonial.title}</span>
+                <div>
+                    <span className={styles.name} itemProp="author">
+                        {testimonial.person}
+                    </span>
+                    <span className={styles.title} itemProp="name">
+                        {testimonial.title}
+                    </span>
                 </div>
             </footer>
         </blockquote>
     </div>
 );
 export default TestimonialBlock;
-

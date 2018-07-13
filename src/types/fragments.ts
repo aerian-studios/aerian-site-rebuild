@@ -144,8 +144,8 @@ export const projectFragment = graphql`
             title
             avatar {
                 childImageSharp {
-                    fixed(width: 290) {
-                        ...GatsbyImageSharpFixed
+                    fluid(maxWidth: 231) {
+                        ...GatsbyImageSharpFluid
                     }
                 }
                 publicURL

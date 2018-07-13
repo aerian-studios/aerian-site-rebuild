@@ -10,9 +10,9 @@ describe("SocialLink", () =>
         const tree = renderer
             .create(
                 <SocialLink
-                    className="myClass"
-                    iconName="facebook"
-                    url="https://www.facebook.com"
+                    className="item"
+                    iconName="facebook-f"
+                    url="https://www.facebook.com/aerianstudios/"
                 />
             )
             .toJSON();

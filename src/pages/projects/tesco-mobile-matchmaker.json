@@ -68,22 +68,22 @@
       "Successful delivery of highly complex interactive prototypes for user testing sessions.",
     "hurdles": [
       {
-        "title": "Test test and test some more",
+        "title": "It looks wonderful",
         "text":
-          "We tested all our solutions with real users (both Tesco Mobile customers, and not) under lab conditions. We were on hand, responding to feedback live with our UX teams, enabling the most rapid or rapid prototyping, shaving weeks off the project timeline.",
-        "image": "/assets/imported/593/tesco-04.png"
+          "The project was successfully delivered and passed all internal reviews. But more than that, it looks great. When placed against the challenges and timeline, the project stands out as one of the polished of Tesco Mobile interactives.",
+        "image": "/assets/imported/597/tesco-07.png"
       },
       {
-        "title": "We added more than just design acumen ",
+        "title": "The perfect handover",
         "text":
-          "We aren't just designer with any project. And MatchMaker was no different. We made strategic suggestions about possible big data uses of the data, and how the information gathered could help change the face of Tesco Mobile's contract creation.",
-        "image": "/assets/imported/594/tesco-05.png"
+          "It's such an under-appreciated part of a project, so we work incredibly hard to create human-readable handover docs, interaction guides, code snippets, styleguide, usage patterns and documentation to help whoever builds our designs get it spot on, first time.",
+        "image": "/assets/imported/596/tesco-08.png"
       },
       {
-        "title": "On hand troubleshooting and consultancy",
+        "title": "The start of a great relationship",
         "text":
-          "Unusually, we weren't responsible for the build of this project, but we tried were possible to treat it like an internal project, making ourselves available to the build team - fine tuning design details and supplying interaction advice throughout the build process.",
-        "image": "/assets/imported/595/tesco-06.png"
+          "Following our successful delivery, we've gone on to iterate on MatchMaker, and also deliver Tesco Mobile's Help and Support interactive service. But it all started here, from the effort and commitment we showed on MatchMaker.",
+        "image": "/assets/imported/598/tesco-09.png"
       }
     ]
   },
@@ -93,7 +93,8 @@
       "Our Match Maker project had a tight deadline and needed a comprehensive set of user journeys and designs ready for user testing. As always, Aerian stepped up to the plate and delivered the perfect solution, accommodating our ever evolving brief with the “can do” attitude we have come to expect! Great work Aerian, it has been a pleasure working with you all again!",
     "person": "Manish Shah",
     "title": "Project manager | Tesco Mobile",
-    "avatar": "/assets/imported/148/tesco-quote-image.jpg"
+    "image": "/assets/imported/148/tesco-quote-image.jpg",
+    "avatar": null
   },
   "gallery": [
     {

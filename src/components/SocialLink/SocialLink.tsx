@@ -1,18 +1,15 @@
 import * as React from "react";
 
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconName } from "@fortawesome/fontawesome-svg-core";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import * as styles from "./SocialLink.scss";
-
-library.add(fab);
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-    iconName: IconProp;
+    iconName: IconName;
     url: string;
 }
 
@@ -23,8 +20,8 @@ export const SocialLink: React.SFC<Props> = ({
     url
 }) => (
     <li className={[styles.item, className].join(" ")} style={style}>
-        <a href={url}>
-            <FontAwesomeIcon icon={iconName} />
+        <a href={url} rel="nofollow noreferer">
+            <FontAwesomeIcon icon={["fab", iconName]} />
         </a>
     </li>
 );

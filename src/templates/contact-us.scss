@@ -1,0 +1,24 @@
+.component {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: minmax(500px, auto);
+    grid-template-areas:
+        "map map map"
+        "contact social1 social2"
+        "contact social3 social4";
+}
+
+.map {
+    grid-area: map;
+    height: 600px;
+    overflow: hidden;
+}
+
+.contactForm {
+    grid-area: contact;
+    border: 1px green solid;
+}
+
+.socialGrid {
+    border: 1px blue solid;
+}

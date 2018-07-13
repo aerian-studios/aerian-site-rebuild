@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HurdleBlock renders correctly 1`] = `
+<div
+  className=" "
+>
+  <div
+    className=""
+  >
+    <img
+      alt="Responsive guidelines "
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/622/bbc-iwonder-01.png"
+    />
+  </div>
+  <h3>
+    Responsive guidelines 
+  </h3>
+  <div>
+    <ul>
+      <li>
+        Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
+      </li>
+      <li>
+        Work with iWonder responsive guidelines.
+      </li>
+    </ul>
+  </div>
+</div>
+`;

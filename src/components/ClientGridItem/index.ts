@@ -1,0 +1,1 @@
+export { ClientGridItem } from "./ClientGridItem";

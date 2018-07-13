@@ -5,14 +5,16 @@ import * as renderer from "react-test-renderer";
 
 import { SocialLink } from "./index";
 
-
-describe("SocialLink", () => (
+describe("SocialLink", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(    <SocialLink  className="myClass" iconName="facebook" url="www.facebook.com" />
-
+            .create(
+                <SocialLink
+                    className="myClass"
+                    iconName="facebook"
+                    url="https://www.facebook.com"
+                />
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    })
-));
+    }));

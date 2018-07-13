@@ -2,10 +2,11 @@
 
 exports[`SocialLink renders correctly 1`] = `
 <li
-  className="item myClass"
+  className=" myClass"
 >
   <a
-    href="www.facebook.com"
+    href="https://www.facebook.com"
+    rel="nofollow noreferer"
   />
 </li>
 `;

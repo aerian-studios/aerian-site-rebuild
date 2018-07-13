@@ -68,22 +68,22 @@
       "One of the most successful BBC iWonder tools ever, Scrubbable has been used extensively for the 2014 World Cup, Bitesize, Comedy and loads more.",
     "hurdles": [
       {
-        "title": "Continual optimisation of libraries and code",
+        "title": "Reduced page download ",
         "text":
-          "We needed to continually re-imagine our technical approaches to create a highly optimised and performant experience for usage and CMS upload. We removed all large libraries (Angular, jQuery), replacing with either vanilla JS or micro libraries, greatly reducing the download needed.",
-        "image": "/assets/imported/634/bbc-scrubbable-04.png"
+          "After careful development, we managed to reduced initial page download to under 150kb, 100kb under the BBC's internal 250kb target.",
+        "image": "/assets/imported/637/bbc-scrubbable-07.png"
       },
       {
-        "title": "Responsive image resolution / download",
+        "title": "Reduced like for like",
         "text":
-          "We worked hard to deliver a responsive solution to handling and presenting imagery, enabling device specific presentation of images for performance.",
-        "image": "/assets/imported/635/bbc-scrubbable-05.png"
+          "Reduced like for like instance from 17mb to as low as 2mb total download on mobile devices.",
+        "image": "/assets/imported/638/bbc-scrubbable-08.png"
       },
       {
-        "title": "CMS controlled Scrubs",
+        "title": "Application accepted, and loved!",
         "text":
-          "We created a simple, bespoke CMS to allow editorial to control video frame-rates and thus total image downloads.",
-        "image": "/assets/imported/636/bbc-scrubbable-06.png"
+          "Our application was succesfully accepted into BBC iWonder suite and advertised on television nationally, including a TV slot with Frank Skinner. Furthermore, Scrubbables have been made for any number of programmes, including the 2014 Football World Cup.",
+        "image": "/assets/imported/639/bbc-scrubbable-09.png"
       }
     ]
   },
@@ -96,7 +96,8 @@
       "The most fun I've had with a video in a long time! Launching the rocket was awesome!",
     "person": "A user",
     "title": "BBC iWonder user",
-    "avatar": "/assets/imported/270/bbc-scrubbable-grid-quote-image.jpg"
+    "image": "/assets/imported/270/bbc-scrubbable-grid-quote-image.jpg",
+    "avatar": "/assets/imported/262/bbclogo.png"
   },
   "gallery": [
     {

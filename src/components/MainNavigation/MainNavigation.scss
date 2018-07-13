@@ -1,5 +1,10 @@
-.component {}
+.component {
+    display: block;
+    position: relative;
+    width: 100%;
+}
 
-.activePath {
-    border: 1px solid red; // change this
+.menuItemContent {
+    color: currentColor;
+    display: block;
 }

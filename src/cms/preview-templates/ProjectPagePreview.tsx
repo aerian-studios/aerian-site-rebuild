@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ProjectPageTemplate } from "../../templates/project";
+import { ProjectPage } from "../../templates/project";
 
 interface Props {
     entry: any;
@@ -7,7 +7,7 @@ interface Props {
 }
 
 const ProjectPagePreview: React.SFC<Props> = ({ entry, widgetFor }) => (
-    <ProjectPageTemplate
+    <ProjectPage
         title={entry.getIn(["data", "title"])}
         content={widgetFor("body")}
         heroImage={entry.getIn(["data", "heroimage"])}

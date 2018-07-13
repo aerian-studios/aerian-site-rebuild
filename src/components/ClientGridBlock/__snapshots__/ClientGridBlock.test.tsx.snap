@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientGridBlock renders correctly 1`] = `
+<div
+  className=" myClass"
+>
+  <div
+    className=" "
+  >
+    <a
+      href="/our-work/project/cnn-africa-view"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <figure
+        className=" "
+      >
+        <div
+          className=""
+        >
+          <img
+            alt="CNN"
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
+          />
+        </div>
+      </figure>
+    </a>
+  </div>
+</div>
+`;

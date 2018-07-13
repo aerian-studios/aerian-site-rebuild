@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery renders correctly 1`] = `
+<div
+  className=" myClass"
+>
+  <div
+    className=""
+  >
+    <img
+      alt="BBC perfect diet for you grid image 1.jpg"
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/383/bbc-perfect-diet-for-you-grid-image-1.jpg.jpg"
+    />
+  </div>
+  <div
+    className=""
+  >
+    <img
+      alt="BBC perfect diet for you grid image 2.jpg"
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/384/bbc-perfect-diet-for-you-grid-image-2.jpg.jpg"
+    />
+  </div>
+  <div
+    className=""
+  >
+    <img
+      alt="BBC perfect diet for you grid image 3.jpg"
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/385/bbc-perfect-diet-for-you-grid-image-3.jpg.jpg"
+    />
+  </div>
+  <div
+    className=""
+  >
+    <img
+      alt="bbc-perfect-diet-for-you-grid-image-4"
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/467/bbc-perfect-diet-for-you-grid-image-4.jpg"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialGrid renders correctly 1`] = `
+Array [
+  <div>
+    Facebook
+  </div>,
+  <div>
+    Twitter
+  </div>,
+  <div>
+    G+
+  </div>,
+  <div>
+    LinkedIn
+  </div>,
+]
+`;

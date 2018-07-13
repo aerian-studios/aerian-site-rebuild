@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm renders correctly 1`] = `
+<div
+  className=" myClass"
+>
+  <h2>
+    ContactForm
+  </h2>
+</div>
+`;

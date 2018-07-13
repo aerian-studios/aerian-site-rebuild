@@ -1,14 +1,128 @@
 {
-  "title": "About",
-  "subheading":
-    "A family of enthusiastic geeks who love all things web and innovative",
-  "description":
-    "For over 20 years we have built industry leading campaigns, websites, products and mobile Apps and we have never lost a client because we always deliver on our promises with scientifically proven results, and we always put the user first.",
-  "seoTitle": "About Aerian Studios",
-  "seoDescription":
-    "Industry leading campaigns, websites, products and mobile Apps. Bespoke user driven design and software development with open source web technologies for over 20 years. ",
-  "seoKeywords":
-    "Aerian, websites, campaigns, products, mobile apps, opensource, web technologies, user driven, usercentric",
-  "path": "/about",
-  "infographic": []
+    "heroImage": "/assets/imported/421/about-hero-image.jpg",
+    "title": "About",
+    "subheading":
+        "A family of enthusiastic geeks who love all things web and innovative",
+    "description":
+        "For over 20 years we have built industry leading campaigns, websites, products and mobile Apps and we have never lost a client because we always deliver on our promises with scientifically proven results, and we always put the user first.",
+    "seoTitle": "About Aerian Studios",
+    "seoDescription":
+        "Industry leading campaigns, websites, products and mobile Apps. Bespoke user driven design and software development with open source web technologies for over 20 years. ",
+    "seoKeywords":
+        "Aerian, websites, campaigns, products, mobile apps, opensource, web technologies, user driven, usercentric",
+    "path": "/about",
+    "infographic": [
+        {
+            "primaryText": "18x",
+            "type": "Horizontal",
+            "secondaryText": "Developers",
+            "image": "/assets/infographics/Icon_devs.svg",
+            "imageCount": 18
+        },
+        {
+            "primaryText": "5x",
+            "type": "Horizontal",
+            "secondaryText": "Designers",
+            "image": "/assets/infographics/Icon_designers.svg",
+            "imageCount": 5
+        },
+        {
+            "primaryText": "5x",
+            "type": "Horizontal",
+            "secondaryText": "Management",
+            "image": "/assets/infographics/Icon_management.svg",
+            "imageCount": 5
+        },
+        {
+            "primaryText": "64x",
+            "type": "Split",
+            "secondaryText": "Monitor",
+            "image": "/assets/infographics/Icon_monitor.svg",
+            "imageCount": 64
+        },
+        {
+            "primaryText": "26",
+            "type": "Bar",
+            "secondaryText": "26 Apple users",
+            "image": "/assets/infographics/Icon_monitor.svg",
+            "imageCount": 26
+        },
+        {
+            "primaryText": "04",
+            "type": "Bar",
+            "secondaryText": "04 Windows users",
+            "image": "/assets/infographics/Icon_monitor.svg",
+            "imageCount": 4
+        },
+        {
+            "primaryText": "03",
+            "type": "Bar",
+            "secondaryText": "03 Linux users",
+            "image": "/assets/infographics/Icon_monitor.svg",
+            "imageCount": 3
+        },
+        {
+            "primaryText": "8x",
+            "type": "Vertical",
+            "secondaryText": "Beards",
+            "image": "/assets/infographics/Icon_beard.svg",
+            "imageCount": 8
+        },
+        {
+            "primaryText": "18x",
+            "type": "Vertical",
+            "secondaryText": "Standing desks",
+            "image": "/assets/infographics/Icon_desk.svg",
+            "imageCount": 18
+        },
+        {
+            "primaryText": "2x",
+            "type": "Horizontal",
+            "secondaryText": "Home brewers",
+            "image": "/assets/infographics/Icon_beer.svg",
+            "imageCount": 2
+        },
+        {
+            "primaryText": "16x",
+            "type": "Horizontal",
+            "secondaryText": "Pot plants",
+            "image": "/assets/infographics/Icon_plant.svg",
+            "imageCount": 16
+        },
+        {
+            "primaryText": "1x",
+            "type": "Horizontal",
+            "secondaryText": "Piano",
+            "image": "/assets/infographics/Icon_piano.svg",
+            "imageCount": 1
+        },
+        {
+            "primaryText": "2x",
+            "type": "Horizontal",
+            "secondaryText": "Guitars",
+            "image": "/assets/infographics/Icon_guitar.svg",
+            "imageCount": 18
+        },
+        {
+            "primaryText": "All",
+            "type": "Horizontal",
+            "secondaryText": "Tone deaf",
+            "image": "/assets/infographics/Icon_mic.svg",
+            "imageCount": 1
+        },
+        {
+            "primaryText": "8",
+            "type": "Horizontal",
+            "secondaryText": "x Electric Cars",
+            "image": "/assets/infographics/Icon_car.svg",
+            "imageCount": 18
+        },
+        {
+            "primaryText": "306x",
+            "type": "Horizontal",
+            "secondaryText": "Barrels of crude oil",
+            "image": "/assets/infographics/Icon_barrel.svg",
+            "imageCount": 18
+        }
+    ]
 }

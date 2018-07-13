@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image renders correctly 1`] = `
+<div
+  className=""
+>
+  <img
+    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+  />
+</div>
+`;

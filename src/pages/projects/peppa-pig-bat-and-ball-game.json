@@ -69,22 +69,22 @@
       "The technical achievement cannot be underestimated, and the script, animation and gameplay were well loved by kids across the country. ",
     "hurdles": [
       {
-        "title": "Careful, fun script and storyboard",
+        "title": "Massive success ",
         "text":
-          "We used every step of the process to squeeze every inch of possibility out of the project. Right from the scripting process, we were looking for ways to deliver a game that would work on slower and older devices, without compromising quality and fun.",
-        "image": "/assets/imported/603/nick-04.png"
+          "The game was a massive success, launching at a time when the technology was still very nascent and required a lot of R&D from our JS teams. Furthermore it helped blaze a path for in-browser animation for us and the wider industry.",
+        "image": "/assets/imported/478/emily-elephant-celebration.png"
       },
       {
-        "title": "HTML5, on-the-fly character rigs",
+        "title": "Delighted young audiences ",
         "text":
-          "To give us the most amount of flexibility and performance across all screens, we recreated all the character designs using vectors, and then attached this to a dynamic HTML5 rig. This allowed us to basically ‘drop' any character we wished into any scene, and have them controlled by the user.",
-        "image": "/assets/imported/415/peppa-pig-solution-icon-2.png"
+          "The game delighted the young audiences of Peppa Pig, and for them, blurred the line between \"sitting back\" episodes, and \"get involved\" episodes - helping to inform the future phases of interactive TV and video shows.",
+        "image": "/assets/imported/476/danny-dog-laugh.jpg"
       },
       {
-        "title": "Come on, it's Peppa - it's got to be fun!",
+        "title": "We made a system, not just a game",
         "text":
-          "Furthermore, we added experience led game mechanics including levels, humourous ‘fail' clips and interactions and a number of silly and fun interactions to keep the little ones entertained.",
-        "image": "/assets/imported/416/peppa-pig-solution-icon-3.png"
+          "Further, we delivered a responsive, extensible framework for Nickelodeon that allows them to spin up Peppa Pig games, animations and interactives quickly and easily, vastly decreasing their time to market when they wish to commission new games and experiences.",
+        "image": "/assets/imported/413/peppa-pig-result-icon-3.png"
       }
     ]
   },

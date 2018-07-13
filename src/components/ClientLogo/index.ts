@@ -1,0 +1,1 @@
+export { ClientLogo } from "./ClientLogo";

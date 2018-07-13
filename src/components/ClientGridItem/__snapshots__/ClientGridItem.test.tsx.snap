@@ -9,10 +9,18 @@ exports[`ClientGridItem renders correctly 1`] = `
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
-    Project
+    <figure
+      className=" "
+    >
+      <div
+        className=""
+      >
+        <img
+          alt="CNN"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
+        />
+      </div>
+    </figure>
   </a>
-  <img
-    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
-  />
 </div>
 `;

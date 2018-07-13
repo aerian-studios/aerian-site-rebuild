@@ -75,18 +75,26 @@ const Layout: React.SFC<Props> = ({
                             />
                             <SocialLinks>
                                 <SocialLink
-                                    iconName="facebook"
-                                    url="https://www.facebook.com"
+                                    className="item"
+                                    iconName="facebook-f"
+                                    url="https://www.facebook.com/aerianstudios/"
                                 />
                                 <SocialLink
+                                    className="item"
                                     iconName="twitter"
-                                    url="https://www.twitter.com"
+                                    url="https://twitter.com/aerianstudios"
                                 />
                                 <SocialLink
-                                    iconName="instagram"
-                                    url="https://instagram.com"
+                                    className="item"
+                                    iconName="linkedin-in"
+                                    url="https://www.linkedin.com/company/aerian-studios"
                                 />
-                            </SocialLinks>{" "}
+                                <SocialLink
+                                    className="item"
+                                    iconName="vimeo-v"
+                                    url="https://vimeo.com/aerianstudios"
+                                />
+                            </SocialLinks>
                         </PageFooter>
                     </ErrorBoundary>
                 </div>

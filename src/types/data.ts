@@ -194,7 +194,7 @@ export interface Project {
     heroVideo?: string;
     titleLineOne: string;
     titleLineTwo?: string;
-    client: string;
+    client: Client;
     goLiveDate?: string;
     caseStudyTitle: string;
     caseStudyText: string;
@@ -217,5 +217,5 @@ export interface Client {
     promoLogo: ImageField;
     featured: boolean;
     featuredProject?: string;
-    slug: string;
+    id: string;
 }

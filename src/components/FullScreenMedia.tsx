@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { isImageSharp } from "../lib/helpers";
+import { getSrc, isImageSharp } from "../lib/helpers";
 import { ImageField } from "../types/data";
 import { Omit } from "../types/helpers";
 import "./FullScreenMedia.scss";
@@ -19,10 +19,8 @@ const getMedia = ({
     altText
 }: Omit<Props, { wrapperClassName: string }>) => {
     if (video) {
-        const poster =
-            image && isImageSharp(image)
-                ? image.childImageSharp.fluid!.src
-                : image;
+        const poster = getSrc(image);
+        const vid = getSrc(video);
         return (
             <video
                 preload="auto"
@@ -33,7 +31,7 @@ const getMedia = ({
                 playsInline={true}
                 poster={poster}
             >
-                <source src={video} type="video/mp4" />
+                <source src={vid} type="video/mp4" />
             </video>
         );
     }

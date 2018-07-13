@@ -109,20 +109,16 @@ exports.onCreateNode = ({ node, getNode, getNodes }) => {
         const makeRelative = value => {
             if (typeof value === "string") {
                 const pathToFile = path.join(__dirname, "static", value);
-                const foundImageFileNode = getNodes().find(
+                const foundFileNode = getNodes().find(
                     n => n.absolutePath === pathToFile
                 );
 
-                if (foundImageFileNode) {
+                if (foundFileNode) {
                     const p = path.relative(
                         parent.dir,
-                        foundImageFileNode.absolutePath
+                        foundFileNode.absolutePath
                     );
-                    const imageNode = foundImageFileNode.children
-                        .map(id => getNode(id))
-                        .find(node => node.internal.type === "ImageSharp");
-
-                    if (imageNode) {
+                    if (p) {
                         return p;
                     }
                 }
@@ -166,7 +162,7 @@ exports.onCreateWebpackConfig = (
             namedExport: true,
             silent: true,
             importLoaders: 2,
-            localIdentName: "[name]__[local]___[hash:base64:5]"
+            localIdentName: "[path][name]__[local]--[hash:base64:5]"
         }
     };
 
@@ -176,7 +172,7 @@ exports.onCreateWebpackConfig = (
             loaders.miniCssExtract(),
             cssLoader,
             loaders.postcss({
-                plugins: postCssPlugins
+                plugins: [require("autoprefixer")({ browsers: [">1%"] })]
             }),
             sassLoader
         ]

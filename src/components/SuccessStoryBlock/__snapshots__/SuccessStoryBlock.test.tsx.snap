@@ -15,9 +15,13 @@ exports[`SuccessStoryBlock renders correctly 1`] = `
     className=" "
   >
     <div>
-      <img
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+        />
+      </div>
       <h3>
         90,000 
       </h3>
@@ -26,9 +30,13 @@ exports[`SuccessStoryBlock renders correctly 1`] = `
       </p>
     </div>
     <div>
-      <img
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+        />
+      </div>
       <h3>
         Top guide 
       </h3>
@@ -37,9 +45,13 @@ exports[`SuccessStoryBlock renders correctly 1`] = `
       </p>
     </div>
     <div>
-      <img
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+        />
+      </div>
       <h3>
         1.5m
       </h3>
@@ -48,9 +60,13 @@ exports[`SuccessStoryBlock renders correctly 1`] = `
       </p>
     </div>
     <div>
-      <img
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+        />
+      </div>
       <h3>
         22,000
       </h3>

@@ -12,10 +12,14 @@ exports[`ClientGridItem renders correctly 1`] = `
     <figure
       className=" "
     >
-      <img
-        alt="CNN"
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          alt="CNN"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
+        />
+      </div>
     </figure>
   </a>
 </div>

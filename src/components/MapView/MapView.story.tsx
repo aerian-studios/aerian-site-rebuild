@@ -1,4 +1,3 @@
-
 import * as React from "react";
 
 import { withInfo } from "@storybook/addon-info";
@@ -6,9 +5,9 @@ import { storiesOf } from "@storybook/react";
 
 import { MapView } from "./index";
 
-
 storiesOf("MapView", module).add(
-    "Default", 
+    "Default",
     withInfo({ inline: true })(() => (
-    <MapView  className="myClass" />
-)));
+        <MapView position={[51.4194618, -2.2542012]} />
+    ))
+);

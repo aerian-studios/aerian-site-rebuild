@@ -20,10 +20,14 @@ exports[`ProjectStageBlock renders correctly 1`] = `
     <div
       className=" "
     >
-      <img
-        alt="Responsive guidelines "
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/622/bbc-iwonder-01.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          alt="Responsive guidelines "
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/622/bbc-iwonder-01.png"
+        />
+      </div>
       <h3>
         Responsive guidelines 
       </h3>
@@ -41,10 +45,14 @@ exports[`ProjectStageBlock renders correctly 1`] = `
     <div
       className=" "
     >
-      <img
-        alt="Audience sharing "
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/623/bbc-iwonder-02.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          alt="Audience sharing "
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/623/bbc-iwonder-02.png"
+        />
+      </div>
       <h3>
         Audience sharing 
       </h3>
@@ -65,10 +73,14 @@ exports[`ProjectStageBlock renders correctly 1`] = `
     <div
       className=" "
     >
-      <img
-        alt="Tight turn around"
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/624/bbc-iwonder-03.png"
-      />
+      <div
+        className=""
+      >
+        <img
+          alt="Tight turn around"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/624/bbc-iwonder-03.png"
+        />
+      </div>
       <h3>
         Tight turn around
       </h3>

@@ -11,11 +11,7 @@ interface Props {
 
 export const ClientLogo: React.SFC<Props> = ({ style, className, client }) => (
     <figure className={[styles.component, className].join(" ")} style={style}>
-        <Image
-            source={client.logo}
-            alt={client.name}
-            className={styles.imgResponsive}
-        />
+        <Image source={client.logo} alt={client.name} />
     </figure>
 );
 export default ClientLogo;

@@ -4,10 +4,14 @@ exports[`HurdleBlock renders correctly 1`] = `
 <div
   className=" "
 >
-  <img
-    alt="Responsive guidelines "
-    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/622/bbc-iwonder-01.png"
-  />
+  <div
+    className=""
+  >
+    <img
+      alt="Responsive guidelines "
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/622/bbc-iwonder-01.png"
+    />
+  </div>
   <h3>
     Responsive guidelines 
   </h3>

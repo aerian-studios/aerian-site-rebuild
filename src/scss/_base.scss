@@ -57,7 +57,6 @@ h2 {
     margin-bottom: calc(var(--s-h2) - 8px); // -8 is for the descenders
     // this is for top 'extra' line height
     margin-top: -6px;
-
     &:after {
         content: "";
         width: 4px;
@@ -117,8 +116,7 @@ ol {
     padding-left: calc(var(--s-1) * 2);
     margin-left: 0;
     list-style-type: none;
-    text-align: left;
-    // counter-reset: section;
+    text-align: left; // counter-reset: section;
     // li {
     //     &::before {
     //         color: $c-brand-a;
@@ -190,24 +188,16 @@ q {
 
 blockquote {
     @include font-size(20);
-    line-height: calculateRem(24);
+    line-height: calculateRem(28);
     font-family: $t-font-basic;
     font-weight: 400;
-
     @media (min-width: $bp-m) {
-        @include font-size(32);
-        line-height: calculateRem(18);
+        @include font-size(24);
+        line-height: calculateRem(32);
     }
-
-    &::before {
-        line-height: 1.9em;
-        display: block;
-        font-family: museo;
-        font-size: 4em;
-        line-height: 50%;
-        content: "❝";
-        // content: "\f10d";
-        color: #cf254d;
+    @media (min-width: $bp-l) {
+        @include font-size(30);
+        line-height: calculateRem(38);
     }
 }
 

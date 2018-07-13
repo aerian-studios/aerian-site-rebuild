@@ -11,6 +11,7 @@ import { Gallery } from "../components/Gallery";
 import { OnwardJournies } from "../components/OnwardJournies";
 import { PerformanceBlock } from "../components/PerformanceBlock";
 import { ProjectStageBlock } from "../components/ProjectStageBlock";
+import { TestimonialBlock } from "../components/TestimonialBlock";
 import { Project, ReactRouterLocation } from "../types/data";
 
 interface Props {
@@ -85,10 +86,7 @@ export const ProjectPage: React.SFC<Props> = props => {
             </Block>
             {project.testimonial && (
                 <Block>
-                    {/*  TestimonialBlock  */}
-                    <blockquote>{project.testimonial.quote}</blockquote>
-                    <cite>{project.testimonial.person}</cite>
-                    <cite>{project.testimonial.title}</cite>
+                    <TestimonialBlock testimonial={project.testimonial} />
                 </Block>
             )}
             {project.performance && (

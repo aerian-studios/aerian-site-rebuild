@@ -5,31 +5,36 @@ import { PageListNode } from "../../types/data";
 import * as styles from "./MainNavigation.scss";
 
 interface Props {
-    activeClassName?: string;
-    activePath?: string;
-    activeStyle?: React.CSSProperties;
+    activeLinkClassName?: string;
     className?: string;
+    linkClassName?: string;
     pages: PageListNode[];
     style?: React.CSSProperties;
+    onClick?: () => void;
 }
 
 const makePageLink = (
     id: string,
     path: string,
     title: string,
-    activeClassName?: string,
-    activeStyle?: React.CSSProperties
+    linkClassName?: string,
+    activeLinkClassName?: string,
+    activeLinkStyle?: React.CSSProperties
 ) => {
     return (
         path && (
             <Link
-                className="menu-item"
-                activeClassName={["active-path", activeClassName].join(" ")}
-                activeStyle={activeStyle}
+                className={["menu-item", linkClassName].join(" ")}
+                activeClassName={["active-path", activeLinkClassName].join(" ")}
+                style={activeLinkStyle}
                 to={path}
                 key={`menu-${id}`}
             >
-                <span className="menu-item-content">{title}</span>
+                <span
+                    className={["menu-item", styles.menuItemContent].join(" ")}
+                >
+                    {title}
+                </span>
             </Link>
         )
     );
@@ -37,13 +42,19 @@ const makePageLink = (
 
 const constructPages = (
     pages: PageListNode[],
-    activeClassName?: string,
-    activeStyle?: React.CSSProperties
+    activeLinkClassName?: string,
+    linkClassName?: string
 ) => {
     return pages.map((page: PageListNode) => {
         const { id, path, title } = page.node;
 
-        return makePageLink(id, path, title, activeClassName, activeStyle);
+        return makePageLink(
+            id,
+            path,
+            title,
+            linkClassName,
+            activeLinkClassName
+        );
     });
 };
 
@@ -52,9 +63,9 @@ export const MainNavigation: React.SFC<Props> = props => {
         style,
         className,
         pages,
-        activePath,
-        activeClassName,
-        activeStyle
+        activeLinkClassName,
+        linkClassName,
+        onClick
     } = props;
 
     return (
@@ -62,8 +73,11 @@ export const MainNavigation: React.SFC<Props> = props => {
             id="menu-main"
             className={[styles.component, className].join(" ")}
             style={style}
+            onClick={onClick}
         >
-            {pages ? constructPages(pages, activeClassName, activeStyle) : null}
+            {pages
+                ? constructPages(pages, activeLinkClassName, linkClassName)
+                : null}
         </nav>
     );
 };

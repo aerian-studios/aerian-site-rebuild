@@ -1,3 +1,23 @@
 .component {
     foo: bar;
 }
+
+.grid1 {
+    grid-area: social1;
+    background-color: blue;
+}
+
+.grid2 {
+    grid-area: social2;
+    background-color: cyan;
+}
+
+.grid3 {
+    grid-area: social3;
+    background-color: red;
+}
+
+.grid4 {
+    grid-area: social4;
+    background-color: darkblue;
+}

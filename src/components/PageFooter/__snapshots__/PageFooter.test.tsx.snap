@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageFooter renders correctly 1`] = `
+<footer
+  className=" myClass block--full"
+>
+  <div />
+</footer>
+`;

@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import { ClientGridBlock } from "../components/ClientGridBlock";
 import { FullScreenMedia } from "../components/FullScreenMedia";
+import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader";
 import { extractNodes, isImageSharp } from "../lib/helpers";
@@ -23,7 +24,8 @@ export const AboutPage: React.SFC<Props> = props => {
         heroImage,
         seoDescription,
         seoKeywords,
-        seoTitle
+        seoTitle,
+        infographic
     } = props.data.pagesJson;
     return (
         <Layout
@@ -35,6 +37,7 @@ export const AboutPage: React.SFC<Props> = props => {
                 seoTitle
             }}
         >
+            {/* {JSON.stringify(infographic)} */}
             <section>
                 <PageHeader>
                     <FullScreenMedia
@@ -48,6 +51,18 @@ export const AboutPage: React.SFC<Props> = props => {
                 <ClientGridBlock
                     clients={extractNodes(props.data.allClientsJson)}
                 />
+                <div style={{ display: "flex" }}>
+                    {infographic &&
+                        infographic.map(
+                            i =>
+                                i.image && (
+                                    <Image
+                                        style={{ width: 100, height: 100 }}
+                                        source={i.image}
+                                    />
+                                )
+                        )}
+                </div>
             </section>
         </Layout>
     );
@@ -57,6 +72,15 @@ export const pageQuery = graphql`
     query AboutPage($id: String!) {
         pagesJson(id: { eq: $id }) {
             ...PageFields
+            infographic {
+                primaryText
+                type
+                secondaryText
+                imageCount
+                image {
+                    publicURL
+                }
+            }
         }
         allClientsJson(skip: 0) {
             edges {

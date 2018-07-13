@@ -5,10 +5,14 @@ exports[`StaffDetail renders correctly 1`] = `
   className=" "
 >
   <figure>
-    <img
-      alt="Paul Goodenough photo"
-      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
-    />
+    <div
+      className=""
+    >
+      <img
+        alt="Paul Goodenough photo"
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+      />
+    </div>
   </figure>
   <div>
     <p>
@@ -21,7 +25,7 @@ exports[`StaffDetail renders correctly 1`] = `
       Paul founded Aerian to work on projects of worth, and has shaped, managed and delivered some of the biggest national and international digital projects for clients such as BBC, Channel 4, Sky, Into Film, The Science Museum, Breast Cancer Now, Dementia Friends, Alzheimer's Society, Danone, Tesco Mobile, Nickelodeon and more.
     </p>
     <h3>
-      Core skillSet
+      Core skillset
     </h3>
     <ul>
       <li

@@ -1,15 +1,48 @@
 import deepMap from "deep-map";
-import { ImageSharp, ImageSharpSizes, NodeList } from "../types/data";
-export const isImageSharp = (
-    image: ImageSharp | string
-): image is ImageSharp => {
-    return image.hasOwnProperty("childImageSharp");
+import {
+    FileField,
+    FileNode,
+    ImageField,
+    ImageSharp,
+    ImageSharpSizes,
+    NodeList
+} from "../types/data";
+export const isImageSharp = (image: FileField): image is ImageSharp => {
+    return (
+        image.hasOwnProperty("childImageSharp") &&
+        !!(image as ImageSharp).childImageSharp
+    );
+};
+
+export const isFileNode = (file: FileField): file is FileNode => {
+    return file.hasOwnProperty("publicURL");
 };
 
 export const isImageSharpSizes = (
     image: ImageSharpSizes | string
 ): image is ImageSharpSizes => {
     return typeof image !== "string";
+};
+
+export const getSrc = (file?: FileField) => {
+    if (!file) {
+        return "";
+    }
+    if (isImageSharp(file)) {
+        if (file.childImageSharp.fixed) {
+            return file.childImageSharp.fixed.src;
+        }
+        if (file.childImageSharp.fluid) {
+            return file.childImageSharp.fluid.src;
+        }
+    }
+    if (isFileNode(file)) {
+        return file.publicURL;
+    }
+    if (typeof file === "string") {
+        return file;
+    }
+    return "";
 };
 
 export const absolutifyURL = (url: string) => {

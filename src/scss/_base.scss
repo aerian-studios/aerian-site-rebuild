@@ -136,10 +136,7 @@ ol {
 a {
     color: $c-link;
     text-decoration: none;
-    border: 1px solid transparent;
-    padding: 3px 3px 1px;
     transition: all 0.2s ease-out 0s;
-    position: relative;
     &:hover {
         text-decoration: none;
     }

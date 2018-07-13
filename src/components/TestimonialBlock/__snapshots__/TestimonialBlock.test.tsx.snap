@@ -62,3 +62,59 @@ exports[`TestimonialBlock renders correctly 1`] = `
   </blockquote>
 </div>
 `;
+
+exports[`TestimonialBlock renders correctly without an image 1`] = `
+<div
+  className=" myClass"
+  itemProp="review"
+  itemScope={true}
+  itemType="http://schema.org/Review"
+>
+  <blockquote>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-quote-left fa-w-16 "
+      data-icon="quote-left"
+      data-prefix="fas"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <div
+      itemProp="reviewBody"
+    >
+      It was seen by 1.5m unique browsers and was really well received by audience members. Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn’t have done it without Aerian.
+    </div>
+    <footer>
+      <figure>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/282/anna.png"
+          />
+        </div>
+      </figure>
+      <div>
+        <span
+          itemProp="author"
+        >
+           Anna-Louise Taylor
+        </span>
+        <span
+          itemProp="name"
+        >
+          Senior Content Producer
+        </span>
+      </div>
+    </footer>
+  </blockquote>
+</div>
+`;

@@ -3,16 +3,12 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
-import { SectionNav } from "./index";
+import { SectionNav } from ".";
 
-
-describe("SectionNav", () => (
+describe("SectionNav", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<SectionNav className="myClass" />
-            )
+            .create(<SectionNav className="myClass" />)
             .toJSON();
         expect(tree).toMatchSnapshot();
-    })
-));
-
+    }));

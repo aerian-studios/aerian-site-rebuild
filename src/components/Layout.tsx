@@ -2,8 +2,8 @@ import { graphql, Link, StaticQuery } from "gatsby";
 import * as React from "react";
 import Helmet from "react-helmet";
 
-import ErrorBoundary from "../components/ErrorBoundary";
-import { PageNavBar } from "../components/PageNavBar";
+import ErrorBoundary from "./ErrorBoundary";
+import { PageNavBar } from "./PageNavBar";
 
 import "../lib/theme";
 

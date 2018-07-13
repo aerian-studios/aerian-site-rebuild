@@ -14,6 +14,8 @@ import { ProjectStageBlock } from "../components/ProjectStageBlock";
 import { SectionNav } from "../components/SectionNav";
 import { Project, ReactRouterLocation } from "../types/data";
 
+import sharedStyles from "../components/Layout.scss";
+
 interface Props {
     data: GraphData;
     location: ReactRouterLocation;
@@ -54,7 +56,12 @@ export const ProjectPage: React.SFC<Props> = props => {
                     </h1>
                 </div>
             </PageHeader>
-            <SectionNav keyConsts={keys} onNavigation={onNavigation} />
+            <SectionNav
+                keyConsts={keys}
+                onNavigation={onNavigation}
+                className={sharedStyles.SectionNav}
+                navItemClassName={sharedStyles.sectionNaveItem}
+            />
             <Block>
                 <div>Client logo</div>
                 <CaseStudyIntro project={project} />

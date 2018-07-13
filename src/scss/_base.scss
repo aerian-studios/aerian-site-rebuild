@@ -2,6 +2,83 @@
  * This file will contain generic styles applied to unclassed HTML elements.
  */
 
+// VARIABLES (that change with context e.g. breakpoint, etc) can use CSS custom property syntax
+:root {
+    // MISC
+    --border-radius: 0px;
+    --max-content-width: 1200px;
+    --min-content-width: 280px;
+    --side-gutter: 15px;
+    --h-grid-spacing: 2.5%;
+    --v-grid-spacing: var(--s-1);
+    --vertical-rythym: 8px;
+    --grid-gap: 2.74%;
+    --grid-column: 5.82%; // SPACING - --s- + name  !! needs cleaning up
+    --s-1: 12px;
+    --s-2: 28px;
+    --s-3: 30px;
+    --s-4: 32px;
+    --s-5: 100px;
+    --s-h2: 25px;
+    --s-h3: 20px;
+    --s-p: 58px;
+    --pad-0: calc(8 * var(--vertical-rythym));
+    --pad-1: calc(12 * var(--vertical-rythym));
+    --pad-2: calc(14 * var(--vertical-rythym));
+    --feature-pad-0: calc(5 * var(--vertical-rythym));
+    --feature-pad-1: calc(8 * var(--vertical-rythym));
+    --feature-pad-2: calc(
+        10 * var(--vertical-rythym)
+    ); // needs to be here for the text calculations
+    --t: 16; // base font size without units
+    $t: 16;
+    --t-xxs: 10px;
+    --t-button: 14px; // XSmall
+    --t-base: calc(var(--t) * 1px); // normal text size
+    --t-h1: 32;
+    --t-h2: 25;
+    --t-h3: 20;
+    --t-h4: 18;
+    --t-h5: 16;
+    --t-h6: 14;
+    --t-intro: 22;
+    --t-small: 14;
+    --t-xsmall: 12;
+    --t-xl: 48;
+    --t-xxl: calc(48 * 1px);
+    --t-menu: 20;
+}
+
+@media (min-width: $bp-s) {
+    :root {
+        --side-gutter: 28px;
+    }
+}
+
+@media (min-width: $bp-m) {
+    :root {
+        --s-h2: 30px;
+        --s-h3: 23px;
+        --s-p: 32px;
+        --side-gutter: 68px;
+        --t-h1: 48;
+        --t-h2: 38;
+        --t-h3: 22;
+    }
+}
+
+@media (min-width: $bp-l) {
+    :root {
+        --side-gutter: 28px;
+    }
+}
+
+@media (min-width: $bp-xl) {
+    :root {
+        --side-gutter: 48px;
+    }
+}
+
 //=====================
 // TEXT
 //=====================
@@ -57,7 +134,6 @@ h2 {
     margin-bottom: calc(var(--s-h2) - 8px); // -8 is for the descenders
     // this is for top 'extra' line height
     margin-top: -6px;
-
     &:after {
         content: "";
         width: 4px;
@@ -117,8 +193,7 @@ ol {
     padding-left: calc(var(--s-1) * 2);
     margin-left: 0;
     list-style-type: none;
-    text-align: left;
-    // counter-reset: section;
+    text-align: left; // counter-reset: section;
     // li {
     //     &::before {
     //         color: $c-brand-a;
@@ -193,20 +268,17 @@ blockquote {
     line-height: calculateRem(24);
     font-family: $t-font-basic;
     font-weight: 400;
-
     @media (min-width: $bp-m) {
         @include font-size(32);
         line-height: calculateRem(18);
     }
-
     &::before {
         line-height: 1.9em;
         display: block;
         font-family: museo;
         font-size: 4em;
         line-height: 50%;
-        content: "❝";
-        // content: "\f10d";
+        content: "❝"; // content: "\f10d";
         color: #cf254d;
     }
 }

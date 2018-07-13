@@ -2,7 +2,6 @@ import classNames from "classnames/bind";
 import * as React from "react";
 
 import { Link } from "gatsby";
-import { PageSection } from "../../types/data";
 import * as styles from "./SectionNav.scss";
 
 const cx = classNames.bind(styles);

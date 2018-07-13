@@ -4,7 +4,6 @@ export const component: string;
 export const quote: string;
 export const testimonialText: string;
 export const cite: string;
-export const nameTitle: string;
 export const name: string;
 export const title: string;
 export const blockquoteImage: string;

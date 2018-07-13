@@ -10,25 +10,22 @@ interface Props {
     testimonial: Testimonial
 }
 
-function showMainImage(mainImage?: ImageField) {
+function showImage(image?: ImageField) {
     return(
-        mainImage ?
-                <Image source={mainImage} /> 
-            : null
-        
+        image ? <Image source={image} /> : null
     )
 }
 
 export const TestimonialBlock: React.SFC<Props> = ({ children, style, className, testimonial }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
-        {showMainImage(testimonial.image)}
+        {showImage(testimonial.image)}
         <blockquote className={styles.quote}>
             <div className={styles.testimonialText}>
                 {testimonial.quote}
             </div>
             <footer>
                 <figure className={styles.blockquoteImage}>
-                    {showMainImage(testimonial.avatar)}
+                    {showImage(testimonial.avatar)}
                 </figure>
                 <span className={styles.nameTitle}>
                     <span className={styles.name}>{testimonial.person}</span>

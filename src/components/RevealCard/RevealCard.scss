@@ -1,2 +1,8 @@
 .component {
+    color: inherit;
+}
+
+.button {
+    composes: button from "../../scss/_base.buttons.scss";
+    background-color: red;
 }

@@ -3,5 +3,22 @@
 exports[`RevealCard renders correctly 1`] = `
 <div
   className=" myClass"
-/>
+>
+  <div
+    className="overlay"
+  >
+    <div
+      className="content"
+    >
+      <h3>
+        BBC
+      </h3>
+      <a
+        href="bbc-iwonder-perfect-diet-for-you"
+      >
+        View more
+      </a>
+    </div>
+  </div>
+</div>
 `;

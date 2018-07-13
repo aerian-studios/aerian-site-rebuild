@@ -46,6 +46,9 @@ export const projectBoxFragment = graphql`
     fragment ProjectBox on ProjectsJson {
         name
         slug
+        client {
+            ...Client
+        }
         heroImage {
             childImageSharp {
                 fluid(maxWidth: 1066, maxHeight: 1066) {
@@ -61,6 +64,9 @@ export const projectFragment = graphql`
     fragment Project on ProjectsJson {
         name
         slug
+        client {
+            ...Client
+        }
         titleLineOne
         titleLineTwo
         goLiveDate

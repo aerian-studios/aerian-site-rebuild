@@ -3,6 +3,9 @@ const siteConfig = require("./site-config");
 module.exports = {
     pathPrefix: siteConfig.pathPrefix,
     siteMetadata: siteConfig.siteMetadata,
+    mapping: {
+        "ProjectsJson.client": "ClientsJson"
+    },
     plugins: [
         `gatsby-plugin-react-helmet`,
         {

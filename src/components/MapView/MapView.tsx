@@ -21,9 +21,9 @@ const getMap = async (props: Props) => {
     const { Map, Marker, TileLayer } = await import("react-leaflet");
 
     const marker = icon({
-        iconUrl: require("../../../static/assets/furniture/aerian-map-marker.png"),
-        iconSize: [28, 40],
-        iconAnchor: [14, 40]
+        iconUrl: require("../../../static/assets/furniture/aerian-map-marker.svg"),
+        iconSize: [30, 36],
+        iconAnchor: [15, 36]
     });
 
     return (

@@ -3,6 +3,9 @@
     composes: layoutGrid from "../scss/layout.scss";
     composes: blockFull from "../scss/layout.scss";
     background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .sectionNavWrapper {

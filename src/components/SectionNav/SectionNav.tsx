@@ -1,10 +1,7 @@
-import classNames from "classnames/bind";
+import cx from "classnames";
 import * as React from "react";
 
 import { Link } from "gatsby";
-import * as styles from "./SectionNav.scss";
-
-const cx = classNames.bind(styles);
 
 interface Props {
     keyConsts: { [key: string]: string };
@@ -22,7 +19,7 @@ const wrapNavItem = (
     navItemClassName?: string
 ) => (
     <Link
-        className={cx(styles.sectionNavItem, navItemClassName)}
+        className={cx(navItemClassName)}
         to={`#${itemKey}`}
         key={`sectionnav-${itemKey}`}
         onClick={() => {
@@ -75,7 +72,7 @@ export const SectionNav: React.SFC<Props> = ({
     navItemClassName,
     navWrapperClassName
 }) => (
-    <nav className={cx(styles.component, className)} style={style}>
+    <nav className={cx(className)} style={style}>
         <div className={cx(navWrapperClassName)}>
             {createNavItems(keyConsts, onNavigation, navItemClassName)}
         </div>

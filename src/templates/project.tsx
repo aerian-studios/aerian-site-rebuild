@@ -55,14 +55,14 @@ export const ProjectPage: React.SFC<Props> = props => {
                         {project.titleLineTwo}
                     </h1>
                 </div>
+                <SectionNav
+                    keyConsts={keys}
+                    onNavigation={onNavigation}
+                    className={sharedStyles.sectionNav}
+                    navItemClassName={sharedStyles.sectionNavItem}
+                    navWrapperClassName={sharedStyles.sectionNavWrapper}
+                />
             </PageHeader>
-            <SectionNav
-                keyConsts={keys}
-                onNavigation={onNavigation}
-                className={sharedStyles.sectionNav}
-                navItemClassName={sharedStyles.sectionNavItem}
-                navWrapperClassName={sharedStyles.sectionNavWrapper}
-            />
             <Block>
                 <div>Client logo</div>
                 <CaseStudyIntro project={project} />

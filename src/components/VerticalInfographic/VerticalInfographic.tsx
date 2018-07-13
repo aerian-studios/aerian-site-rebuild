@@ -1,13 +1,13 @@
 import * as React from "react";
 
+import { Infographic } from "../../types/data";
+import { Image } from "../Image";
 import * as styles from "./VerticalInfographic.scss";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-    title: string;
-    image: string;
-    count: number;
+    infographic: Infographic;
 }
 
 interface State {
@@ -30,7 +30,7 @@ export class VerticalInfographic extends React.Component<Props, State> {
     }
 
     public increment = () => {
-        if (this.state.visibleImages === this.props.count) {
+        if (this.state.visibleImages === this.props.infographic.imageCount) {
             clearInterval(this.timer);
             return;
         }
@@ -39,7 +39,7 @@ export class VerticalInfographic extends React.Component<Props, State> {
         });
     };
 
-    public renderImages(count: number, image: string) {
+    public renderImages(count: number, image: any) {
         const images = [];
         for (let i = 0; i < count; i++) {
             let output = styles.infoGraphicHidden;
@@ -48,7 +48,7 @@ export class VerticalInfographic extends React.Component<Props, State> {
             }
             images.push(
                 <figure key={i} className={styles.infographicImage}>
-                    <img key={i} className={output} src={image} alt="icon" />
+                    <Image className={output} source={image} alt="icon" />
                 </figure>
             );
         }
@@ -58,16 +58,28 @@ export class VerticalInfographic extends React.Component<Props, State> {
     public render() {
         return (
             <div
-                className={[styles.component, this.props.className].join(" ")}
+                className={[
+                    styles.component,
+                    this.props.className,
+                    styles.Horizontal
+                ].join(" ")}
                 style={this.props.style}
             >
-                <div className={styles.infographicCount}>
-                    {this.props.count}X
-                    <span className={styles.infographicTitle}>
-                        {this.props.title}
-                    </span>
+                <div className={styles.infographicPrimary}>
+                    <div className={styles.infographicCount}>
+                        {this.props.infographic.primaryText}
+                    </div>
+                    <div className={styles.infographicSecondary}>
+                        {this.props.infographic.secondaryText}
+                    </div>
                 </div>
-                {this.renderImages(this.props.count, this.props.image)}
+
+                <div className={styles.infographicGraphics}>
+                    {this.renderImages(
+                        this.props.infographic.imageCount,
+                        this.props.infographic.image
+                    )}
+                </div>
             </div>
         );
     }

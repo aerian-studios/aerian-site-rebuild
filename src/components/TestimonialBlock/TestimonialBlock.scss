@@ -1,25 +1,30 @@
+@import "../../scss/variables";
 .component {
-    display: flex;
+    @media (min-width: $bp-m) {
+        display: flex;
+    }
 }
 
-.quote {
-    float: right;
-    padding: 20px 0 20px 20px;
+.quoteLeft {
+    line-height: 1.9em;
+    display: block;
+    font-size: 1em;
+    line-height: 50%;
+    fill: $c-menu-bg;
 }
 
 .testimonialText {
     padding-bottom: 10px;
 }
 
-.cite {
-    display: block;
-    padding-top: 10px;
+.testimonialFooter {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
 }
 
 .name {
     font-size: 22px;
     display: block;
-    padding-top: 10px;
 }
 
 .title {
@@ -30,7 +35,6 @@
     overflow: hidden;
     border-radius: 50%;
     margin-right: 22px;
-    float: left;
     width: 77px;
     height: 77px;
 }

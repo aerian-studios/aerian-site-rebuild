@@ -12,6 +12,7 @@ interface Props {
     className?: string;
     onNavigation: (itemKey: string) => void;
     navItemClassName?: string;
+    navWrapperClassName?: string;
 }
 
 const wrapNavItem = (
@@ -71,10 +72,13 @@ export const SectionNav: React.SFC<Props> = ({
     style,
     className,
     onNavigation,
-    navItemClassName
+    navItemClassName,
+    navWrapperClassName
 }) => (
     <nav className={cx(styles.component, className)} style={style}>
-        {createNavItems(keyConsts, onNavigation, navItemClassName)}
+        <div className={cx(navWrapperClassName)}>
+            {createNavItems(keyConsts, onNavigation, navItemClassName)}
+        </div>
     </nav>
 );
 export default SectionNav;

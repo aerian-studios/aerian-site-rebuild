@@ -59,8 +59,9 @@ export const ProjectPage: React.SFC<Props> = props => {
             <SectionNav
                 keyConsts={keys}
                 onNavigation={onNavigation}
-                className={sharedStyles.SectionNav}
-                navItemClassName={sharedStyles.sectionNaveItem}
+                className={sharedStyles.sectionNav}
+                navItemClassName={sharedStyles.sectionNavItem}
+                navWrapperClassName={sharedStyles.sectionNavWrapper}
             />
             <Block>
                 <div>Client logo</div>

@@ -3,5 +3,9 @@
 exports[`SectionNav renders correctly 1`] = `
 <nav
   className="myClass"
-/>
+>
+  <div
+    className=""
+  />
+</nav>
 `;

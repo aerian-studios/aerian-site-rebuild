@@ -96,7 +96,8 @@
       "The most fun I've had with a video in a long time! Launching the rocket was awesome!",
     "person": "A user",
     "title": "BBC iWonder user",
-    "avatar": "/assets/imported/270/bbc-scrubbable-grid-quote-image.jpg"
+    "image": "/assets/imported/270/bbc-scrubbable-grid-quote-image.jpg",
+    "avatar": "/assets/imported/262/bbclogo.png"
   },
   "gallery": [
     {

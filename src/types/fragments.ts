@@ -23,17 +23,19 @@ export const clientFragment = graphql`
         name
         logo {
             childImageSharp {
-                fixed(width: 420) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 420) {
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
+            publicURL
         }
         promoLogo {
             childImageSharp {
-                fixed(width: 420) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 420) {
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
+            publicURL
         }
         featured
         featuredProject
@@ -46,10 +48,11 @@ export const projectBoxFragment = graphql`
         slug
         heroImage {
             childImageSharp {
-                fixed(width: 532, height: 532) {
-                    ...GatsbyImageSharpFixed
+                fluid(maxWidth: 1066, maxHeight: 1066) {
+                    ...GatsbyImageSharpFluid
                 }
             }
+            publicURL
         }
     }
 `;
@@ -70,8 +73,11 @@ export const projectFragment = graphql`
                     ...GatsbyImageSharpFluid
                 }
             }
+            publicURL
         }
-        heroVideo
+        heroVideo {
+            publicURL
+        }
         gallery {
             image {
                 childImageSharp {
@@ -79,6 +85,7 @@ export const projectFragment = graphql`
                         ...GatsbyImageSharpFluid
                     }
                 }
+                publicURL
             }
             alt
         }
@@ -92,6 +99,7 @@ export const projectFragment = graphql`
                             ...GatsbyImageSharpFixed
                         }
                     }
+                    publicURL
                 }
                 text
             }
@@ -105,6 +113,7 @@ export const projectFragment = graphql`
                             ...GatsbyImageSharpFixed
                         }
                     }
+                    publicURL
                 }
                 text
             }
@@ -120,6 +129,7 @@ export const projectFragment = graphql`
                             ...GatsbyImageSharpFixed
                         }
                     }
+                    publicURL
                 }
                 text
             }
@@ -138,6 +148,7 @@ export const projectFragment = graphql`
                         ...GatsbyImageSharpFixed
                     }
                 }
+                publicURL
             }
         }
         id

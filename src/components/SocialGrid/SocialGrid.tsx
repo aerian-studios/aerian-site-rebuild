@@ -8,8 +8,11 @@ interface Props {
 }
 
 export const SocialGrid: React.SFC<Props> = ({ style, className }) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
-        <h2>SocialGrid</h2>
-    </div>
+    <>
+        <div className={styles.grid1}>Facebook</div>
+        <div className={styles.grid2}>Twitter</div>
+        <div className={styles.grid3}>G+</div>
+        <div className={styles.grid4}>LinkedIn</div>
+    </>
 );
 export default SocialGrid;

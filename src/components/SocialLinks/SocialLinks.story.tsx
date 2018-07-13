@@ -3,28 +3,36 @@ import * as React from "react";
 import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 
+import { PageFooter } from "../PageFooter";
 import { SocialLink } from "../SocialLink";
 import { SocialLinks } from "./index";
 
 storiesOf("SocialLinks", module).add(
     "Default",
     withInfo({ inline: true })(() => (
-        <SocialLinks>
-            <SocialLink
-                className="myClass"
-                iconName="facebook"
-                url="https://www.facebook.com"
-            />
-            <SocialLink
-                className="myClass"
-                iconName="twitter"
-                url="https://www.twitter.com"
-            />
-            <SocialLink
-                className="myClass"
-                iconName="instagram"
-                url="https://instagram.com"
-            />
-        </SocialLinks>
+        <PageFooter>
+            <SocialLinks>
+                <SocialLink
+                    className="item"
+                    iconName="facebook-f"
+                    url="https://www.facebook.com/aerianstudios/"
+                />
+                <SocialLink
+                    className="item"
+                    iconName="twitter"
+                    url="https://twitter.com/aerianstudios"
+                />
+                <SocialLink
+                    className="item"
+                    iconName="linkedin-in"
+                    url="https://www.linkedin.com/company/aerian-studios"
+                />
+                <SocialLink
+                    className="item"
+                    iconName="vimeo-v"
+                    url="https://vimeo.com/aerianstudios"
+                />
+            </SocialLinks>
+        </PageFooter>
     ))
 );

@@ -1,8 +1,10 @@
 import * as React from "react";
-
-import { Project } from "../../types/data";
-// import { Image } from "../Image";
 import * as styles from "./RevealCard.scss";
+
+import { Link } from "gatsby";
+import { Project } from "../../types/data";
+import { Image } from "../Image";
+
 interface Props {
     style?: React.CSSProperties;
     className?: string;
@@ -16,16 +18,30 @@ export const RevealCard: React.SFC<Props> = ({
     project
 }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
-        <div className="overlay">
-            {/* this will have the dark transparent background */}
-            <div className="content">
+        <figure className={styles.bgImg}>
+            <Image
+                source={project.heroImage}
+                className={styles.heroImage}
+                alt="FEED ME"
+            />
+        </figure>
+        <a
+            href={"/our-work/project/" + project.slug}
+            title={project.caseStudyTitle}
+            className={styles.anchor}
+        >
+            <figure className={styles.clientLogo}>
+                <Image
+                    className={styles.promoLogo}
+                    source={project.client.promoLogo}
+                    // alt={throw new Error()}
+                />
+            </figure>
+            <div className={styles.overlay}>
                 <h3>{project.name}</h3>
-                <a className={styles.button} href={project.slug}>
-                    View more
-                </a>
-                {/* <Image source={project.client.promoLogo} /> */}
+                <button className={styles.button}>View project</button>
             </div>
-        </div>
+        </a>
     </div>
 );
 export default RevealCard;

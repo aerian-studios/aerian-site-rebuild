@@ -1,8 +1,46 @@
 .component {
     color: inherit;
+    position: relative;
+}
+.bgImg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    > * {
+        object-fit: cover;
+    }
 }
 
+.anchor {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientLogo {
+    flex: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.75s ease;
+}
 .button {
-    composes: button from "../../scss/_base.buttons.scss";
-    background-color: red;
+    composes: button from "../../scss/base.buttons.scss";
 }

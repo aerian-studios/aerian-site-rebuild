@@ -5,6 +5,8 @@ import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 import { SectionNav } from "./SectionNav";
 
+import sharedStyles from "../Layout.scss";
+
 const keys = {
     caseStudy: "Introduction",
     gallery: "Gallery",
@@ -22,6 +24,18 @@ storiesOf("SectionNav", module)
                 keyConsts={keys}
                 onNavigation={itemKey => console.log(`clicked ${itemKey}`)}
                 className="myClass"
+            />
+        ))
+    )
+    .add(
+        "With contextual styles",
+        withInfo({ inline: true })(() => (
+            <SectionNav
+                keyConsts={keys}
+                onNavigation={itemKey => console.log(`clicked ${itemKey}`)}
+                className={sharedStyles.sectionNav}
+                navItemClassName={sharedStyles.sectionNavItem}
+                navWrapperClassName={sharedStyles.sectionNavWrapper}
             />
         ))
     );

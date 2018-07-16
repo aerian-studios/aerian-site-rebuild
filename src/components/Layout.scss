@@ -15,10 +15,13 @@
 }
 
 .sectionNavWrapper {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
+    display: none;
+    @media (min-width: $bp-m) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
 }
 
 .sectionNavItem {

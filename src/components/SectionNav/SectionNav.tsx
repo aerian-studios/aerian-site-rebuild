@@ -1,4 +1,4 @@
-import cx from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 
 import { Link } from "gatsby";
@@ -19,7 +19,7 @@ const wrapNavItem = (
     navItemClassName?: string
 ) => (
     <Link
-        className={cx(navItemClassName)}
+        className={classNames(navItemClassName)}
         to={`#${itemKey}`}
         key={`sectionnav-${itemKey}`}
         onClick={() => {
@@ -72,8 +72,8 @@ export const SectionNav: React.SFC<Props> = ({
     navItemClassName,
     navWrapperClassName
 }) => (
-    <nav className={cx(className)} style={style}>
-        <div className={cx(navWrapperClassName)}>
+    <nav className={classNames(className)} style={style}>
+        <div className={classNames(navWrapperClassName)}>
             {createNavItems(keyConsts, onNavigation, navItemClassName)}
         </div>
     </nav>

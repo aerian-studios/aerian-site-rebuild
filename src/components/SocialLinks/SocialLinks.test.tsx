@@ -12,19 +12,24 @@ describe("SocialLinks", () =>
             .create(
                 <SocialLinks>
                     <SocialLink
-                        className="myClass"
-                        iconName="facebook"
-                        url="https://www.facebook.com"
+                        className="item"
+                        iconName="facebook-f"
+                        url="https://www.facebook.com/aerianstudios/"
                     />
                     <SocialLink
-                        className="myClass"
+                        className="item"
                         iconName="twitter"
-                        url="https://www.twitter.com"
+                        url="https://twitter.com/aerianstudios"
                     />
                     <SocialLink
-                        className="myClass"
-                        iconName="instagram"
-                        url="https://instagram.com"
+                        className="item"
+                        iconName="linkedin-in"
+                        url="https://www.linkedin.com/company/aerian-studios"
+                    />
+                    <SocialLink
+                        className="item"
+                        iconName="vimeo-v"
+                        url="https://vimeo.com/aerianstudios"
                     />
                 </SocialLinks>
             )

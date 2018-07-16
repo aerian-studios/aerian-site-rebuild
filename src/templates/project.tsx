@@ -12,6 +12,7 @@ import { OnwardJournies } from "../components/OnwardJournies";
 import { PerformanceBlock } from "../components/PerformanceBlock";
 import { ProjectStageBlock } from "../components/ProjectStageBlock";
 import { SectionNav } from "../components/SectionNav";
+import { TestimonialBlock } from "../components/TestimonialBlock";
 import { Project, ReactRouterLocation } from "../types/data";
 
 import sharedStyles from "../components/Layout.scss";
@@ -90,10 +91,7 @@ export const ProjectPage: React.SFC<Props> = props => {
             </Block>
             {project.testimonial && (
                 <Block>
-                    {/*  TestimonialBlock  */}
-                    <blockquote>{project.testimonial.quote}</blockquote>
-                    <cite>{project.testimonial.person}</cite>
-                    <cite>{project.testimonial.title}</cite>
+                    <TestimonialBlock testimonial={project.testimonial} />
                 </Block>
             )}
             {project.performance && (

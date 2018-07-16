@@ -9,8 +9,8 @@ storiesOf("SocialLink", module).add(
     "Default",
     withInfo({ inline: true })(() => (
         <SocialLink
-            className="myClass"
-            iconName="facebook"
+            className="item"
+            iconName="facebook-f"
             url="https://www.facebook.com"
         />
     ))

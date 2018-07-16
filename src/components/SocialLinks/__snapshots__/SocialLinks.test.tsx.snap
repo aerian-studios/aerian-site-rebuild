@@ -5,26 +5,34 @@ exports[`SocialLinks renders correctly 1`] = `
   className=" "
 >
   <li
-    className=" myClass"
+    className=" item"
   >
     <a
-      href="https://www.facebook.com"
+      href="https://www.facebook.com/aerianstudios/"
       rel="nofollow noreferer"
     />
   </li>
   <li
-    className=" myClass"
+    className=" item"
   >
     <a
-      href="https://www.twitter.com"
+      href="https://twitter.com/aerianstudios"
       rel="nofollow noreferer"
     />
   </li>
   <li
-    className=" myClass"
+    className=" item"
   >
     <a
-      href="https://instagram.com"
+      href="https://www.linkedin.com/company/aerian-studios"
+      rel="nofollow noreferer"
+    />
+  </li>
+  <li
+    className=" item"
+  >
+    <a
+      href="https://vimeo.com/aerianstudios"
       rel="nofollow noreferer"
     />
   </li>

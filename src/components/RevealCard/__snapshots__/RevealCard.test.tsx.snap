@@ -18,15 +18,6 @@ exports[`RevealCard renders correctly 1`] = `
     href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
     title="Two interactive 'foodie' quizzes for BBC iWonder"
   >
-    <figure>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/474/cnn-white-logo.png"
-        />
-      </div>
-    </figure>
     <div>
       <h3>
         BBC
@@ -36,5 +27,15 @@ exports[`RevealCard renders correctly 1`] = `
       </button>
     </div>
   </a>
+  <figure>
+    <div
+      className=""
+    >
+      <img
+        alt="clientlogo"
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/474/cnn-white-logo.png"
+      />
+    </div>
+  </figure>
 </div>
 `;

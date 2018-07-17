@@ -25,23 +25,24 @@ export const RevealCard: React.SFC<Props> = ({
                 alt="FEED ME"
             />
         </figure>
+
         <a
+            className={styles.anchor}
             href={"/our-work/project/" + project.slug}
             title={project.caseStudyTitle}
-            className={styles.anchor}
         >
-            <figure className={styles.clientLogo}>
-                <Image
-                    className={styles.promoLogo}
-                    source={project.client.promoLogo}
-                    // alt={throw new Error()}
-                />
-            </figure>
             <div className={styles.overlay}>
                 <h3>{project.name}</h3>
-                <button className={styles.button}>View project</button>
+                <button>View project</button>
             </div>
         </a>
+        <figure className={styles.clientLogo}>
+            <Image
+                className={styles.promoLogo}
+                source={project.client.promoLogo}
+                alt="clientlogo"
+            />
+        </figure>
     </div>
 );
 export default RevealCard;

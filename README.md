@@ -1,10 +1,12 @@
-# Aerian Studios website
+# Aerian Studios website [![Build Status](https://travis-ci.org/aerian-studios/aerian-site-rebuild.svg?branch=master)](https://travis-ci.org/aerian-studios/aerian-site-rebuild)
 
 Static website build for Aerian Studio's website.
 
-It uses Gatsby for static site generation with React and Netlify CMS for the content management.
+It uses Gatsby for static site generation with React and Netlify CMS for the
+content management.
 
-Site structure is opinionated and uses our component hygen generator and S'unya's 3 types of Style theming structure.
+Site structure is opinionated and uses our component hygen generator and
+S'unya's 3 types of Style theming structure.
 
 ## Install
 
@@ -34,4 +36,5 @@ npm run build
 gatsby build
 ```
 
-Then commit and push changes to `master`, this will cause Netlify to run a build.
+Then commit and push changes to `master`, this will cause Netlify to run a
+build.

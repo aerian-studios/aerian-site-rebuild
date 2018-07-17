@@ -8,23 +8,8 @@ interface Props {
     feature?: boolean;
     children: Array<React.ReactElement<any>>;
 }
-interface State {
-    myStateValue?: boolean;
-}
-
-const INITIAL_STATE: State = {
-    myStateValue: true
-};
-
-export class ShowcaseCarousel extends React.PureComponent<Props, State> {
-    public state = INITIAL_STATE;
+export class ShowcaseCarousel extends React.PureComponent<Props> {
     public elements = new Map();
-
-    public renderItem = (index: number, ref: () => void) => (
-        <Card key={index} ref={ref}>
-            {this.props.children[index]}
-        </Card>
-    );
 
     public handleChange = (ev: IntersectionObserverEntry, index: number) => {
         const element = this.elements.get(index);

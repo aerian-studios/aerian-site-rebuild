@@ -1,4 +1,4 @@
-# Aerian Studios website [![Build Status](https://travis-ci.org/aerian-studios/aerian-site-rebuild.svg?branch=master)](https://travis-ci.org/aerian-studios/aerian-site-rebuild)
+# Aerian Studios website [![Build Status](https://travis-ci.org/aerian-studios/aerian-site-rebuild.svg?branch=master)](https://travis-ci.org/aerian-studios/aerian-site-rebuild) [![Coverage Status](https://coveralls.io/repos/github/aerian-studios/aerian-site-rebuild/badge.svg?branch=master)](https://coveralls.io/github/aerian-studios/aerian-site-rebuild?branch=master)
 
 Static website build for Aerian Studio's website.
 
@@ -22,13 +22,17 @@ Then you can run develop by:
 yarn start
 ```
 
-You can run Storybooks at the same time:
+You can run the Storybook dev server at the same time:
 
 ```sh
 yarn storybook
 ```
 
 They will be available at http://localhost:9001
+
+Storybooks are also built for the master branch in git, and are available at
+https://aerian-storybook.netlify.com. Deploy previews for Storybooks are also
+built for all pull requests.
 
 ## Test
 
@@ -69,4 +73,5 @@ yarn build
 
 Then commit and push changes and make a pull request. This will cause Netlify to
 run a build and generate a deploy preview. This will be added to the pull
-request automatically.
+request automatically. When the PR is merged to master, Netlify will run a new
+build and deploy to https://beta.aerian.com/

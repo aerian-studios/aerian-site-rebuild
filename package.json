@@ -44,7 +44,8 @@
         "storybook-build": "build-storybook -c .storybook -o docs",
         "precommit": "lint-staged",
         "prepush": "jest --ci",
-        "docz": "docz dev"
+        "docz": "docz dev",
+        "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 && codecov"
     },
     "devDependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
@@ -61,7 +62,7 @@
         "@types/storybook__addon-info": "^3.2.3",
         "@types/storybook__react": "^3.0.7",
         "autoprefixer": "^8.6.5",
-        "coveralls": "^3.0.2",
+        "codecov": "^3.0.4",
         "css-loader": "^0.28.11",
         "docz": "^0.3.3",
         "extract-text-webpack-plugin": "^3.0.2",

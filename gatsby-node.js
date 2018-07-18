@@ -138,15 +138,14 @@ exports.onCreateNode = ({ node, getNode, getNodes }) => {
     }
 };
 
-exports.onCreateWebpackConfig = (
-    { actions, stage, loaders, getConfig },
-    { postCssPlugins, ...sassOptions }
-) => {
+exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
+    const PRODUCTION = stage !== `develop`;
+    const isSSR = stage.includes(`html`);
+
     const sassLoader = {
         loader: require.resolve(`sass-loader`),
         options: {
-            sourceMap: stage === "develop",
-            ...sassOptions
+            sourceMap: !PRODUCTION
         }
     };
 
@@ -167,13 +166,11 @@ exports.onCreateWebpackConfig = (
     const sassModuleRule = {
         test: /\.s(a|c)ss$/,
         use: [
-            loaders.miniCssExtract(),
+            !isSSR && loaders.miniCssExtract(),
             cssLoader,
-            loaders.postcss({
-                plugins: [require("autoprefixer")({ browsers: [">1%"] })]
-            }),
+            loaders.postcss(),
             sassLoader
-        ]
+        ].filter(Boolean)
     };
 
     let configRules = [];

@@ -8183,9 +8183,9 @@ gatsby-transformer-sharp@^2.1.1-beta.5:
     fs-extra "^4.0.2"
     probe-image-size "^4.0.0"
 
-gatsby@2.0.0-beta.44:
-  version "2.0.0-beta.44"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.44.tgz#cb87ed7c0c6e7972f11f066d2e80f66f6df5fbae"
+gatsby@2.0.0-beta.45:
+  version "2.0.0-beta.45"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-beta.45.tgz#cf9f9d24228cad78e981e2ed135ad3766291f050"
   dependencies:
     "@babel/code-frame" "7.0.0-beta.51"
     "@babel/core" "7.0.0-beta.51"

@@ -45,7 +45,7 @@
         "precommit": "lint-staged",
         "prepush": "jest --ci",
         "docz": "docz dev",
-        "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 && codecov"
+        "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 > coverage.lcov && codecov"
     },
     "devDependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
@@ -105,7 +105,7 @@
     "jest": {
         "transform": {
             "^.+\\.tsx?$": "ts-jest",
-            "^.+\\.js$": "<rootDir>/jestPreprocess.js"
+            "^.+\\.jsx?$": "<rootDir>/jestPreprocess.js"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?)$",
         "moduleFileExtensions": [

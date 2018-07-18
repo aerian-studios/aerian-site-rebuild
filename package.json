@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
+        "@babel/preset-env": "^7.0.0-beta.54",
         "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
         "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
         "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
@@ -12,18 +13,18 @@
         "classnames": "^2.2.6",
         "deep-map": "^1.5.0",
         "extract-text-webpack-plugin": "^3.0.2",
-        "gatsby": "next",
-        "gatsby-image": "next",
-        "gatsby-plugin-manifest": "next",
-        "gatsby-plugin-netlify-cms": "^2.0.1",
+        "gatsby": "2.0.0-beta.44",
+        "gatsby-image": "^2.0.0-beta.6",
+        "gatsby-plugin-manifest": "^2.0.2-beta.2",
+        "gatsby-plugin-netlify-cms": "^2.0.0-beta.6",
         "gatsby-plugin-offline": "next",
-        "gatsby-plugin-react-helmet": "next",
-        "gatsby-plugin-sass": "next",
-        "gatsby-plugin-sharp": "next",
-        "gatsby-plugin-typescript": "next",
-        "gatsby-source-filesystem": "next",
-        "gatsby-transformer-json": "next",
-        "gatsby-transformer-sharp": "next",
+        "gatsby-plugin-react-helmet": "^3.0.0-beta.3",
+        "gatsby-plugin-sass": "^2.0.0-beta.5",
+        "gatsby-plugin-sharp": "^2.0.0-beta.5",
+        "gatsby-plugin-typescript": "^2.0.0-beta.5",
+        "gatsby-source-filesystem": "^2.0.1-beta.5",
+        "gatsby-transformer-json": "^2.1.1-beta.2",
+        "gatsby-transformer-sharp": "^2.1.1-beta.5",
         "leaflet": "^1.3.1",
         "netlify-cms": "^1.9.2",
         "react": "^16.4.1",
@@ -45,10 +46,15 @@
         "storybook-build": "build-storybook -c .storybook -o docs",
         "precommit": "lint-staged",
         "prepush": "jest --ci",
-        "docz": "docz dev"
+        "docz": "docz dev",
+        "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 > coverage.lcov && codecov"
     },
     "devDependencies": {
+        "@babel/core": "^7.0.0-beta.54",
+        "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54",
+        "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.54",
         "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
+        "@babel/preset-react": "^7.0.0-beta.54",
         "@storybook/addon-actions": "^3.4.8",
         "@storybook/addon-info": "^3.4.8",
         "@storybook/react": "^4.0.0-alpha.10",
@@ -63,6 +69,9 @@
         "@types/storybook__addon-info": "^3.2.3",
         "@types/storybook__react": "^3.0.7",
         "autoprefixer": "^8.6.5",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^23.4.0",
+        "codecov": "^3.0.4",
         "css-loader": "^0.28.11",
         "docz": "^0.3.3",
         "extract-text-webpack-plugin": "^3.0.2",
@@ -79,6 +88,7 @@
         "react-docgen-typescript-loader": "^2.1.1",
         "react-docgen-typescript-webpack-plugin": "^1.1.0",
         "react-test-renderer": "^16.4.1",
+        "regenerator-runtime": "^0.12.0",
         "ts-jest": "^22.4.6",
         "ts-loader": "^4.4.1",
         "tslint": "^5.10.0",
@@ -104,7 +114,8 @@
     },
     "jest": {
         "transform": {
-            "^.+\\.tsx?$": "ts-jest"
+            "^.+\\.tsx?$": "ts-jest",
+            "^.+\\.jsx?$": "<rootDir>/jestPreprocess.js"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?)$",
         "moduleFileExtensions": [
@@ -118,6 +129,9 @@
         "moduleNameMapper": {
             "^.+\\.(css|less|scss|png)$": "identity-obj-proxy",
             "^./pages.json$": "<rootDir>/__mocks__/pages.json"
-        }
+        },
+        "transformIgnorePatterns": [
+            "node_modules/(?!(gatsby)/)"
+        ]
     }
 }

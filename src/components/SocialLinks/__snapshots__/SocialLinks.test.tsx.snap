@@ -10,7 +10,11 @@ exports[`SocialLinks renders correctly 1`] = `
     <a
       href="https://www.facebook.com/aerianstudios/"
       rel="nofollow noreferer"
-    />
+    >
+      <i
+        className="fa"
+      />
+    </a>
   </li>
   <li
     className=" item"
@@ -18,7 +22,11 @@ exports[`SocialLinks renders correctly 1`] = `
     <a
       href="https://twitter.com/aerianstudios"
       rel="nofollow noreferer"
-    />
+    >
+      <i
+        className="fa"
+      />
+    </a>
   </li>
   <li
     className=" item"
@@ -26,7 +34,11 @@ exports[`SocialLinks renders correctly 1`] = `
     <a
       href="https://www.linkedin.com/company/aerian-studios"
       rel="nofollow noreferer"
-    />
+    >
+      <i
+        className="fa"
+      />
+    </a>
   </li>
   <li
     className=" item"
@@ -34,7 +46,11 @@ exports[`SocialLinks renders correctly 1`] = `
     <a
       href="https://vimeo.com/aerianstudios"
       rel="nofollow noreferer"
-    />
+    >
+      <i
+        className="fa"
+      />
+    </a>
   </li>
 </div>
 `;

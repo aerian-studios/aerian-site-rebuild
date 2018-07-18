@@ -181,7 +181,6 @@ exports.onCreateWebpackConfig = (
     let configRules = [];
     switch (stage) {
         case `develop`:
-        case `build-javascript`:
         case `build-html`:
         case `develop-html`:
             configRules.push(sassModuleRule);

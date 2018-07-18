@@ -1,4 +1,4 @@
-# Aerian Studios website [![Build Status](https://travis-ci.org/aerian-studios/aerian-site-rebuild.svg?branch=master)](https://travis-ci.org/aerian-studios/aerian-site-rebuild) [![Coverage Status](https://coveralls.io/repos/github/aerian-studios/aerian-site-rebuild/badge.svg?branch=master)](https://coveralls.io/github/aerian-studios/aerian-site-rebuild?branch=master)
+# Aerian Studios website [![Build Status](https://travis-ci.org/aerian-studios/aerian-site-rebuild.svg?branch=master)](https://travis-ci.org/aerian-studios/aerian-site-rebuild) [![codecov](https://codecov.io/gh/aerian-studios/aerian-site-rebuild/branch/master/graph/badge.svg)](https://codecov.io/gh/aerian-studios/aerian-site-rebuild)
 
 Static website build for Aerian Studio's website.
 

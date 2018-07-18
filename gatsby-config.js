@@ -7,6 +7,7 @@ module.exports = {
         "ProjectsJson.client": "ClientsJson"
     },
     plugins: [
+        `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -38,8 +39,6 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: siteConfig.manifest
         },
-        // must come AFTER manifest plugin, Generates a service worker and AppShell
-
         {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {
@@ -47,7 +46,6 @@ module.exports = {
                 // `src/cms` directory.
                 modulePath: `${__dirname}/src/cms/cms.ts`
             }
-        },
-        `gatsby-plugin-typescript`
+        }
     ]
 };

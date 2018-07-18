@@ -24,7 +24,7 @@ export const clientFragment = graphql`
         logo {
             childImageSharp {
                 fluid(maxWidth: 420) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }
             }
             publicURL
@@ -32,7 +32,7 @@ export const clientFragment = graphql`
         promoLogo {
             childImageSharp {
                 fluid(maxWidth: 420) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }
             }
             publicURL

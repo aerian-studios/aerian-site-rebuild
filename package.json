@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
+        "@babel/preset-env": "^7.0.0-beta.54",
         "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
         "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
         "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
@@ -11,7 +12,7 @@
         "@researchgate/react-intersection-observer": "^0.7.3",
         "deep-map": "^1.5.0",
         "extract-text-webpack-plugin": "^3.0.2",
-        "gatsby": "2.0.0-beta.12",
+        "gatsby": "2.0.0-beta.44",
         "gatsby-image": "^2.0.0-beta.6",
         "gatsby-plugin-manifest": "^2.0.2-beta.2",
         "gatsby-plugin-netlify-cms": "^2.0.0-beta.6",
@@ -48,7 +49,11 @@
         "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 > coverage.lcov && codecov"
     },
     "devDependencies": {
+        "@babel/core": "^7.0.0-beta.54",
+        "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54",
+        "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.54",
         "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
+        "@babel/preset-react": "^7.0.0-beta.54",
         "@storybook/addon-actions": "^3.4.8",
         "@storybook/addon-info": "^3.4.8",
         "@storybook/react": "^4.0.0-alpha.10",
@@ -62,6 +67,8 @@
         "@types/storybook__addon-info": "^3.2.3",
         "@types/storybook__react": "^3.0.7",
         "autoprefixer": "^8.6.5",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^23.4.0",
         "codecov": "^3.0.4",
         "css-loader": "^0.28.11",
         "docz": "^0.3.3",
@@ -79,6 +86,7 @@
         "react-docgen-typescript-loader": "^2.1.1",
         "react-docgen-typescript-webpack-plugin": "^1.1.0",
         "react-test-renderer": "^16.4.1",
+        "regenerator-runtime": "^0.12.0",
         "ts-jest": "^22.4.6",
         "ts-loader": "^4.4.1",
         "tslint": "^5.10.0",
@@ -119,6 +127,9 @@
         "moduleNameMapper": {
             "^.+\\.(css|less|scss|png)$": "identity-obj-proxy",
             "^./pages.json$": "<rootDir>/__mocks__/pages.json"
-        }
+        },
+        "transformIgnorePatterns": [
+            "node_modules/(?!(gatsby)/)"
+        ]
     }
 }

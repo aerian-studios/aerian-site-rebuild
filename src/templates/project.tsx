@@ -11,8 +11,11 @@ import { Gallery } from "../components/Gallery";
 import { OnwardJournies } from "../components/OnwardJournies";
 import { PerformanceBlock } from "../components/PerformanceBlock";
 import { ProjectStageBlock } from "../components/ProjectStageBlock";
+import { SectionNav } from "../components/SectionNav";
 import { TestimonialBlock } from "../components/TestimonialBlock";
 import { Project, ReactRouterLocation } from "../types/data";
+
+import sharedStyles from "../components/Layout.scss";
 
 interface Props {
     data: GraphData;
@@ -54,11 +57,13 @@ export const ProjectPage: React.SFC<Props> = props => {
                     </h1>
                 </div>
             </PageHeader>
-            {/* <SectionNav
+            <SectionNav
                 keyConsts={keys}
-                sections={props}
                 onNavigation={onNavigation}
-            /> */}
+                className={sharedStyles.sectionNav}
+                navItemClassName={sharedStyles.sectionNavItem}
+                navWrapperClassName={sharedStyles.sectionNavWrapper}
+            />
             <Block>
                 <div>Client logo</div>
                 <CaseStudyIntro project={project} />

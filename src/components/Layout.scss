@@ -1,5 +1,4 @@
 @import "../scss/variables";
-
 .component {
 }
 
@@ -30,13 +29,15 @@
     line-height: 52px;
     border-right: $c-text 1px solid;
     text-align: center;
-
     &:last-of-type {
         border-color: transparent;
     }
-
     &:hover,
     &:focus {
         color: $c-black-20;
     }
+}
+
+.withSectionNav {
+    margin-bottom: -52px;
 }

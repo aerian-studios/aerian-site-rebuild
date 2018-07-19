@@ -2,13 +2,14 @@ import * as React from "react";
 
 import { FullScreenMedia } from "../FullScreenMedia";
 
+import { ImageField } from "../../types/data";
 import * as styles from "./HeroBlock.scss";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
     heroVideo?: string;
-    heroImage?: string;
+    heroImage?: ImageField;
 }
 
 export const HeroBlock: React.SFC<Props> = ({

@@ -43,7 +43,7 @@ export const ProjectPage: React.SFC<Props> = props => {
     const project = props.data.projectsJson;
     return (
         <Layout location={props.location} title={project.titleLineOne}>
-            <PageHeader>
+            <PageHeader className={sharedStyles.withSectionNav}>
                 <HeroBlock
                     heroImage={project.heroImage}
                     heroVideo={project.heroVideo}

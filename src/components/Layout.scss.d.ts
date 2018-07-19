@@ -3,3 +3,4 @@
 export const sectionNav: string;
 export const sectionNavWrapper: string;
 export const sectionNavItem: string;
+export const withSectionNav: string;

@@ -8,6 +8,7 @@ import { PageHeader } from "../components/PageHeader/PageHeader";
 import { Block } from "../components/Block";
 import { CaseStudyIntro } from "../components/CaseStudyIntro";
 import { Gallery } from "../components/Gallery";
+import { HeroBlock } from "../components/HeroBlock";
 import { OnwardJournies } from "../components/OnwardJournies";
 import { PerformanceBlock } from "../components/PerformanceBlock";
 import { ProjectStageBlock } from "../components/ProjectStageBlock";
@@ -40,19 +41,20 @@ export const ProjectPage: React.SFC<Props> = props => {
     return (
         <Layout location={props.location} title={project.titleLineOne}>
             <PageHeader>
-                <FullScreenMedia
-                    image={project.heroImage}
-                    aria-labelled-by="page-title"
-                    video={project.heroVideo}
-                />
-
-                <div>
+                <HeroBlock
+                    heroImage={project.heroImage}
+                    heroVideo={project.heroVideo}
+                >
                     <h1>
                         {project.titleLineOne}
-                        <br />
-                        {project.titleLineTwo}
+                        {project.titleLineTwo ? (
+                            <>
+                                <br />
+                                {project.titleLineTwo}
+                            </>
+                        ) : null}
                     </h1>
-                </div>
+                </HeroBlock>
             </PageHeader>
             {/* <SectionNav
                 keyConsts={keys}

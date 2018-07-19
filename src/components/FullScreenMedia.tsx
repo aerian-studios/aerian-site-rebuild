@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { getSrc, isImageSharp } from "../lib/helpers";
+import { getSrc } from "../lib/helpers";
 import { ImageField } from "../types/data";
 import { Omit } from "../types/helpers";
 import "./FullScreenMedia.scss";

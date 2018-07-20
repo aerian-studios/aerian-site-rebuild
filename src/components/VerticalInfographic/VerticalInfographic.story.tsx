@@ -3,9 +3,9 @@ import * as React from "react";
 import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 
+import { VerticalInfographic } from ".";
 import { infographic } from "../../types/fixtures";
 import { infographics } from "../../types/fixtures";
-import { VerticalInfographic } from "./index";
 
 storiesOf("VerticalInfographic", module)
     .add(

@@ -4,7 +4,7 @@ import * as React from "react";
 import * as renderer from "react-test-renderer";
 import { infographic } from "../../types/fixtures";
 
-import { VerticalInfographic } from "./index";
+import { VerticalInfographic } from ".";
 
 describe("VerticalInfographic", () =>
     it("renders correctly", () => {

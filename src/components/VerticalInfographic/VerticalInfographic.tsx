@@ -1,8 +1,9 @@
 import * as React from "react";
 
+import classNames from "classnames";
 import { Infographic } from "../../types/data";
 import { Image } from "../Image";
-import * as styles from "./VerticalInfographic.scss";
+import * as styles from "./VerticalInfographic.module.scss";
 
 interface Props {
     style?: React.CSSProperties;
@@ -15,6 +16,13 @@ interface State {
 }
 
 export class VerticalInfographic extends React.Component<Props, State> {
+    public type = {
+        Vertical: "vertical",
+        Horizontal: "horizontal",
+        Bar: "bar",
+        Split: "split"
+    };
+
     public state: State = {
         visibleImages: 0
     };
@@ -58,11 +66,11 @@ export class VerticalInfographic extends React.Component<Props, State> {
     public render() {
         return (
             <div
-                className={[
+                className={classNames(
                     styles.component,
                     this.props.className,
-                    styles.Horizontal
-                ].join(" ")}
+                    styles[this.type[this.props.infographic.type]]
+                )}
                 style={this.props.style}
             >
                 <div className={styles.infographicPrimary}>

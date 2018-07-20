@@ -1,0 +1,139 @@
+.component {
+    display: grid;
+    // grid-template-columns: 1fr 3fr;
+    // grid-auto-rows: minmax(500px, auto);
+
+    figure {
+        width: 80px;
+    }
+}
+
+.infographicCount {
+    line-height: 70px;
+    font-size: 70px;
+    padding-top: 11px;
+    font-family: museo, sans-serif;
+    font-weight: 700;
+    color: #cf254d;
+    display: inline;
+}
+.infographicTitle {
+    line-height: 1em;
+    display: inline-block;
+    font-size: 24px;
+    font-family: museo, sans-serif;
+    font-weight: 700;
+    color: #cf254d;
+}
+
+.infographicImage {
+    display: inline-block;
+    padding: 5px;
+
+    img {
+        width: auto;
+    }
+}
+
+.infoGraphicHidden {
+    opacity: 0;
+}
+.infoGraphicShown {
+    -webkit-animation: fadein 1s;
+}
+
+.vertical {
+    border: 8px solid red;
+
+    grid-template-areas:
+        "primary a"
+        "graphics graphics";
+
+    .infographicPrimary {
+        grid-area: primary;
+    }
+    .infographicGraphics {
+        grid-area: graphics;
+        column-span: 2;
+    }
+    .infographicSecondary {
+        display: inline;
+    }
+}
+
+.horizontal {
+    border: 8px solid hotpink;
+    grid-template-areas:
+        "primary a"
+        "graphics graphics";
+
+    .infographicPrimary {
+        grid-area: primary;
+    }
+    .infographicGraphics {
+        grid-area: graphics;
+        column-span: 2;
+    }
+
+    .infographicSecondary {
+        display: inline;
+    }
+}
+
+.bar {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    .infographicCount {
+        font-size: 26px;
+    }
+
+    .infographicGraphics > * {
+        display: none;
+    }
+    .infographicGraphics {
+        width: 92%;
+        height: 62px;
+        position: relative;
+        float: left;
+        background: #e7e7e7;
+    }
+
+    .infographicGraphics:before {
+        height: 62px;
+        position: absolute;
+        background: #cf254d;
+        width: 50%;
+    }
+
+    .infographicPrimary {
+        width: 8%;
+        line-height: 64px;
+        float: left;
+        font-size: 32px;
+        color: #cf254d;
+    }
+
+    .infographicSecondary {
+        position: absolute;
+        top: 12px;
+        right: 25px;
+        z-index: 2;
+        font-size: 16px;
+        color: grey;
+    }
+}
+
+.split {
+    border: 8px solid blue;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

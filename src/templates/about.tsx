@@ -5,6 +5,7 @@ import { FullScreenMedia } from "../components/FullScreenMedia";
 import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { PageHeader } from "../components/PageHeader";
+import { VerticalInfographic } from "../components/VerticalInfographic";
 import { extractNodes, isImageSharp } from "../lib/helpers";
 import { About, Client, NodeList, ReactRouterLocation } from "../types/data";
 
@@ -51,15 +52,12 @@ export const AboutPage: React.SFC<Props> = props => {
                 <ClientGridBlock
                     clients={extractNodes(props.data.allClientsJson)}
                 />
-                <div style={{ display: "flex" }}>
+                <div /*style={{ display: "flex" }}*/>
                     {infographic &&
                         infographic.map(
-                            i =>
-                                i.image && (
-                                    <Image
-                                        style={{ width: 100, height: 100 }}
-                                        source={i.image}
-                                    />
+                            item =>
+                                infographic && (
+                                    <VerticalInfographic infographic={item} />
                                 )
                         )}
                 </div>

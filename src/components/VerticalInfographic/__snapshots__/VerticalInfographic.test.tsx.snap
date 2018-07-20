@@ -2,7 +2,7 @@
 
 exports[`VerticalInfographic renders correctly 1`] = `
 <div
-  className="  "
+  className=""
 >
   <div>
     <div>

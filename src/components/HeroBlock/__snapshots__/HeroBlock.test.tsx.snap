@@ -1,11 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HeroBlock renders correctly 1`] = `
-<div
-  className=" myClass"
->
-  <figure
-    className="full-screen undefined"
-  />
-</div>
+Array [
+  <div
+    className="myClass"
+  >
+    <figure
+      className=""
+    />
+    <div />
+  </div>,
+  <div />,
+]
 `;

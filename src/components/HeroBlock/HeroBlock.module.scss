@@ -1,0 +1,55 @@
+@import "../../scss/variables";
+
+.HeroBlock {
+    position: fixed;
+    composes: layoutGrid from "../../scss/layoutGrid.module.scss";
+    composes: blockFull from "../../scss/layoutGrid.module.scss";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 54px;
+    left: 0;
+    max-height: calc(100vh - 54px);
+
+    @media (min-width: $bp-l) {
+        top: 90px;
+        max-height: 992px;
+    }
+
+    > * {
+        grid-row: 1/2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: block;
+    }
+}
+
+.heroMedia {
+    composes: blockFull from "../../scss/layoutGrid.module.scss";
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.heroContent {
+    color: $c-text-alt;
+    position: relative;
+    z-index: 2;
+}
+
+.placeholder {
+    position: relative;
+    height: 100vh;
+
+    @media screen {
+        max-height: 992px;
+    }
+}

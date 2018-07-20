@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import * as React from "react";
 
 import { getSrc } from "../../lib/helpers";
@@ -46,7 +47,7 @@ export const FullScreenMedia: React.SFC<Props> = ({
     wrapperClassName,
     ...props
 }) => (
-    <figure className={`${styles.fullScreen} ${wrapperClassName}`}>
+    <figure className={classNames(styles.fullScreen, wrapperClassName)}>
         {getMedia(props)}
     </figure>
 );

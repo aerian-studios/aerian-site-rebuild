@@ -1,9 +1,9 @@
+import classNames from "classnames";
 import * as React from "react";
 
-import { FullScreenMedia } from "../FullScreenMedia";
-
 import { ImageField } from "../../types/data";
-import * as styles from "./HeroBlock.scss";
+import { FullScreenMedia } from "../FullScreenMedia";
+import * as styles from "./HeroBlock.module.scss";
 
 interface Props {
     style?: React.CSSProperties;
@@ -19,13 +19,17 @@ export const HeroBlock: React.SFC<Props> = ({
     heroVideo,
     heroImage
 }) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
-        <FullScreenMedia
-            image={heroImage}
-            aria-labelled-by="page-title"
-            video={heroVideo}
-        />
-        {children}
-    </div>
+    <>
+        <div className={classNames(styles.HeroBlock, className)} style={style}>
+            <FullScreenMedia
+                image={heroImage}
+                aria-labelled-by="page-title"
+                video={heroVideo}
+                wrapperClassName={styles.heroMedia}
+            />
+            <div className={styles.heroContent}>{children}</div>
+        </div>
+        <div className={styles.placeholder} />
+    </>
 );
 export default HeroBlock;

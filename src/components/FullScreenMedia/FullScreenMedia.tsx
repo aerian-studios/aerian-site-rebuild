@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import { getSrc } from "../lib/helpers";
-import { ImageField } from "../types/data";
-import { Omit } from "../types/helpers";
+import { getSrc } from "../../lib/helpers";
+import { ImageField } from "../../types/data";
+import { Omit } from "../../types/helpers";
+import { Image } from "../Image";
 import * as styles from "./FullScreenMedia.module.scss";
-import { Image } from "./Image";
 
 interface Props {
     image?: ImageField;

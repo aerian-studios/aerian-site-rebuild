@@ -2,6 +2,7 @@
 import * as React from "react";
 import * as renderer from "react-test-renderer";
 import { project } from "../../types/fixtures";
+import { Card } from "../Card";
 import { Image } from "../Image";
 import { ShowcaseCarousel } from "./index";
 
@@ -11,7 +12,7 @@ import { ShowcaseCarousel } from "./index";
     disconnect: jest.fn()
 }));
 
-describe("ShowcaseCarousel", () =>
+describe("ShowcaseCarousel", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -21,4 +22,23 @@ describe("ShowcaseCarousel", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+    it("renders handles intersection", () => {
+        const entry = {
+            isIntersecting: true
+        };
+
+        const tree = renderer.create(
+            <ShowcaseCarousel>
+                {[<Image key={1} source={project.heroImage} />]}
+            </ShowcaseCarousel>
+        );
+
+        const spy = jest.fn();
+        tree.root.findByType(Card).instance.setVisible = spy;
+        const instance = tree.getInstance() as any;
+        instance.handleChange(entry, 0);
+
+        expect(spy).toHaveBeenCalledWith(true);
+    });
+});

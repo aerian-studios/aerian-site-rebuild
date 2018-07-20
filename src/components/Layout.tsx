@@ -12,6 +12,8 @@ import { PageListNode, ReactRouterLocation } from "../types/data";
 import { ContactDetails } from "./ContactDetails";
 import { PageFooter } from "./PageFooter";
 
+import * as styles from "./Layout.module.scss";
+
 interface Props {
     className?: string;
     // this comes from the router
@@ -63,6 +65,7 @@ const Layout: React.SFC<Props> = ({
                             <PageNavBar
                                 pages={pages}
                                 activePath={location.pathname}
+                                className={styles.pageNavBar}
                             />
                         ) : null}
                         <main id="content-wrapper">{children}</main>

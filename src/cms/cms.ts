@@ -7,7 +7,7 @@ import * as React from "react";
 // import ProjectPagePreview from "./preview-templates/ProjectPagePreview";
 
 // // Styles for the CMS
-// // CMS.registerPreviewStyle("/styles.css");
+CMS.registerPreviewStyle("/styles.css");
 
 // // Register preview templates
 // CMS.registerPreviewTemplate("what-we-do", AboutPagePreview);

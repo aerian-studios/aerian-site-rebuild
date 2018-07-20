@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./PageFooter.scss";
+import * as styles from "./PageFooter.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

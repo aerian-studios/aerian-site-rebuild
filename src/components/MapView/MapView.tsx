@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as styles from "./MapView.scss";
+import * as styles from "./MapView.module.scss";
 
 interface Props {
     position: [number, number];

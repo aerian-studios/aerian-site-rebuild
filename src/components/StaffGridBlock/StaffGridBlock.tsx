@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Staff } from "../../types/data";
 import { StaffGridItem } from "../StaffGridItem";
-import * as styles from "./StaffGridBlock.scss";
+import * as styles from "./StaffGridBlock.module.scss";
 
 interface Props {
     staff: Staff[];

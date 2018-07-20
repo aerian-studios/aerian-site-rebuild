@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./ContactInfo.scss";
+import * as styles from "./ContactInfo.module.scss";
 
 interface Props {
     title: string;

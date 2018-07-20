@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import styles from "./PageHeader.scss";
+import styles from "./PageHeader.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

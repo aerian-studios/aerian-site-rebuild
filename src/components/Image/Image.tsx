@@ -3,7 +3,7 @@ import Img, { GatsbyImageProps } from "gatsby-image";
 import * as React from "react";
 import { isFileNode, isImageSharp } from "../../lib/helpers";
 import { ImageField } from "../../types/data";
-import * as styles from "./Image.scss";
+import * as styles from "./Image.module.scss";
 interface MyProps {
     source: ImageField;
 }

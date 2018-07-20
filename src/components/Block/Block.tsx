@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./Block.scss";
+import * as styles from "./Block.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

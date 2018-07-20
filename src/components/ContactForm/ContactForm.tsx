@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./ContactForm.scss";
+import * as styles from "./ContactForm.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

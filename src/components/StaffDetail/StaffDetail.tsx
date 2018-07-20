@@ -3,7 +3,7 @@ import * as React from "react";
 import { Staff } from "../../types/data";
 import { Image } from "../Image";
 import { Tag } from "../Tag";
-import * as styles from "./StaffDetail.scss";
+import * as styles from "./StaffDetail.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

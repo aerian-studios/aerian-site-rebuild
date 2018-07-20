@@ -1,7 +1,7 @@
 import * as React from "react";
 import Markdown from "react-markdown";
 import { Project } from "../../types/data";
-import * as styles from "./CaseStudyIntro.scss";
+import * as styles from "./CaseStudyIntro.module.scss";
 
 interface Props {
     project: Project;

@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import { ShowcaseCarousel } from "../components/ShowcaseCarousel";
 import { extractNodes } from "../lib/helpers";
 import { Client, NodeList, Project, ReactRouterLocation } from "../types/data";
-import * as styles from "./index.scss";
+import * as styles from "./index.module.scss";
 interface Props {
     data: GraphData;
     location: ReactRouterLocation;

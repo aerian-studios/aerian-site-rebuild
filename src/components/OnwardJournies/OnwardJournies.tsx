@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import * as React from "react";
-import * as styles from "./OnwardJournies.scss";
+import * as styles from "./OnwardJournies.module.scss";
 
 interface Props {
     projectURL: string;

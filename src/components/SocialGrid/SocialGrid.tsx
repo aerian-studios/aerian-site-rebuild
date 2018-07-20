@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./SocialGrid.scss";
+import * as styles from "./SocialGrid.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

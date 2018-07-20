@@ -1,0 +1,40 @@
+@import "../../scss/variables";
+.component {
+    @media (min-width: $bp-m) {
+        display: flex;
+    }
+}
+
+.quoteLeft {
+    line-height: 1.9em;
+    display: block;
+    font-size: 1em;
+    line-height: 50%;
+    fill: $c-menu-bg;
+}
+
+.testimonialText {
+    padding-bottom: 10px;
+}
+
+.testimonialFooter {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+}
+
+.name {
+    font-size: 22px;
+    display: block;
+}
+
+.title {
+    font-size: var(--t-small);
+}
+
+.blockquoteImage {
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 22px;
+    width: 77px;
+    height: 77px;
+}

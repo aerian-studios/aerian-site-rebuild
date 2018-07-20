@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { Staff } from "../../types/data";
-import * as styles from "./StaffGridItem.scss";
+import * as styles from "./StaffGridItem.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

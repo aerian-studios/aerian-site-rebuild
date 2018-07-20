@@ -2,7 +2,7 @@
 
 exports[`PageHeader renders correctly 1`] = `
 <header
-  className="block block--full layout-grid myClass"
+  className="block block--full layout-grid component myClass"
   id="page-header"
   style={Object {}}
 />

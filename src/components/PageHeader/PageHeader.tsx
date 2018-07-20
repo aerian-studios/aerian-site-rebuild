@@ -1,6 +1,7 @@
+import classNames from "classnames";
 import * as React from "react";
 
-import "./PageHeader.scss";
+import styles from "./PageHeader.module.scss";
 
 interface Props {
     style?: React.CSSProperties;
@@ -17,7 +18,7 @@ export const PageHeader: React.SFC<Props> = ({
     <header
         id="page-header"
         style={style || {}}
-        className={[...layoutClassNames, className].join(" ")}
+        className={classNames(layoutClassNames, styles.component, className)}
     >
         {children}
     </header>

@@ -24,7 +24,7 @@ export const clientFragment = graphql`
         logo {
             childImageSharp {
                 fluid(maxWidth: 420) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }
             }
             publicURL
@@ -32,7 +32,7 @@ export const clientFragment = graphql`
         promoLogo {
             childImageSharp {
                 fluid(maxWidth: 420) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }
             }
             publicURL
@@ -46,6 +46,9 @@ export const projectBoxFragment = graphql`
     fragment ProjectBox on ProjectsJson {
         name
         slug
+        client {
+            ...Client
+        }
         heroImage {
             childImageSharp {
                 fluid(maxWidth: 1066, maxHeight: 1066) {
@@ -61,6 +64,9 @@ export const projectFragment = graphql`
     fragment Project on ProjectsJson {
         name
         slug
+        client {
+            ...Client
+        }
         titleLineOne
         titleLineTwo
         goLiveDate
@@ -144,8 +150,8 @@ export const projectFragment = graphql`
             title
             avatar {
                 childImageSharp {
-                    fixed(width: 290) {
-                        ...GatsbyImageSharpFixed
+                    fluid(maxWidth: 231) {
+                        ...GatsbyImageSharpFluid
                     }
                 }
                 publicURL

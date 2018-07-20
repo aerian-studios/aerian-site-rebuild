@@ -2,10 +2,10 @@ import { Link } from "gatsby";
 import * as React from "react";
 
 import { PageListNode } from "../../types/data";
-import { MainNavigation } from "../MainNavigation/";
+import { MainNavigation } from "../MainNavigation";
 
 import logo from "../../../static/assets/furniture/aerian-logo.svg";
-import * as styles from "./PageNavBar.scss";
+import * as styles from "./PageNavBar.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

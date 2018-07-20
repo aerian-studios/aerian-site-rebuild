@@ -4,7 +4,8 @@ import { PageSection } from "../../types/data";
 import { Block } from "../Block";
 import { Image } from "../Image";
 import { SuccessStoryBlock } from "../SuccessStoryBlock";
-import * as styles from "./PageSectionBlock.scss";
+import { TestimonialBlock } from "../TestimonialBlock";
+import * as styles from "./PageSectionBlock.module.scss";
 interface Props {
     section: PageSection;
     alternate?: boolean;
@@ -55,11 +56,8 @@ export const PageSectionBlock: React.SFC<Props> = ({ section, alternate }) => (
             )}
         </Block>
         {section.testimonial && (
-            // Testimonial
-            <Block key={`${section.title}_testimonial`}>
-                <blockquote>{section.testimonial.quote}</blockquote>
-                <cite>{section.testimonial.person}</cite>
-                <cite>{section.testimonial.title}</cite>
+            <Block>
+                <TestimonialBlock testimonial={section.testimonial} />
             </Block>
         )}
         {section.successStory && (

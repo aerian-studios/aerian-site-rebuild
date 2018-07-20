@@ -20,9 +20,9 @@ import * as projectData from "../pages/projects/bbc-iwonder-perfect-diet-for-you
 import * as whatWeDoData from "../pages/what-we-do.json";
 
 import { absolutifyURLs } from "../lib/helpers";
-
-export const project = absolutifyURLs<Project>(projectData);
 export const client = absolutifyURLs<Client>(clientData);
+
+export const project = { ...absolutifyURLs<Project>(projectData), client };
 export const whatWeDo = absolutifyURLs<Required<WhatWeDo>>(whatWeDoData);
 export const about = absolutifyURLs<About>(aboutData);
 export const meetTheTeam = absolutifyURLs<MeetTheTeam>(meetTheTeamData);

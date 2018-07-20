@@ -3,7 +3,11 @@ const siteConfig = require("./site-config");
 module.exports = {
     pathPrefix: siteConfig.pathPrefix,
     siteMetadata: siteConfig.siteMetadata,
+    mapping: {
+        "ProjectsJson.client": "ClientsJson"
+    },
     plugins: [
+        `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -30,13 +34,12 @@ module.exports = {
         // images with the NPM package “sharp”. It's used by
         // several plugins.
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-sass`,
         // Manifest for AppCache and PWA compatibility
         {
             resolve: `gatsby-plugin-manifest`,
             options: siteConfig.manifest
         },
-        // must come AFTER manifest plugin, Generates a service worker and AppShell
-
         {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {
@@ -44,7 +47,6 @@ module.exports = {
                 // `src/cms` directory.
                 modulePath: `${__dirname}/src/cms/cms.ts`
             }
-        },
-        `gatsby-plugin-typescript`
+        }
     ]
 };

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./ContactDetails.scss";
+import * as styles from "./ContactDetails.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

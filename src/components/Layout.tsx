@@ -4,7 +4,8 @@ import Helmet from "react-helmet";
 
 import ErrorBoundary from "../components/ErrorBoundary";
 import { PageNavBar } from "../components/PageNavBar";
-
+import { SocialLink } from "../components/SocialLink";
+import { SocialLinks } from "../components/SocialLinks";
 import "../lib/theme";
 
 import { PageListNode, ReactRouterLocation } from "../types/data";
@@ -72,9 +73,28 @@ const Layout: React.SFC<Props> = ({
                                 locality="Box"
                                 postcode="SN13 8PN"
                             />
-                            <div>
-                                <p>SocialIcons</p>
-                            </div>
+                            <SocialLinks>
+                                <SocialLink
+                                    className="item"
+                                    iconName="facebook-f"
+                                    url="https://www.facebook.com/aerianstudios/"
+                                />
+                                <SocialLink
+                                    className="item"
+                                    iconName="twitter"
+                                    url="https://twitter.com/aerianstudios"
+                                />
+                                <SocialLink
+                                    className="item"
+                                    iconName="linkedin-in"
+                                    url="https://www.linkedin.com/company/aerian-studios"
+                                />
+                                <SocialLink
+                                    className="item"
+                                    iconName="vimeo-v"
+                                    url="https://vimeo.com/aerianstudios"
+                                />
+                            </SocialLinks>
                         </PageFooter>
                     </ErrorBoundary>
                 </div>

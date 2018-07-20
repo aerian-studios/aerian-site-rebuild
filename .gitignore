@@ -8,3 +8,4 @@ yarn-error.log
 .DS_Store
 static/admin/*.bundle.*
 docs
+coverage

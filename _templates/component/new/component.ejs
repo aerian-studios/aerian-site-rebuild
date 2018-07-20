@@ -3,8 +3,9 @@ to: src/components/<%= h.inflection.undasherize(name) %>/<%= h.inflection.undash
 ---
 <% const comp = h.inflection.undasherize(name) -%>
 import * as React from "react";
+import classNames from "classnames";
 
-import * as styles from "./<%= comp %>.scss";
+import * as styles from "./<%= comp %>.module.scss";
 
 interface Props {
     style?: React.CSSProperties;
@@ -24,7 +25,7 @@ export class <%= comp %> extends React.PureComponent<Props, State> {
 
     public render() {
         return (
-            <div className={[styles.component, this.props.className].join(" ")} style={this.props.style}>
+            <div className={classNames(styles.component, this.props.className)} style={this.props.style}>
                 {this.props.children}
             </div>
         );
@@ -32,7 +33,7 @@ export class <%= comp %> extends React.PureComponent<Props, State> {
 }
 <% } else { %>
 export const <%= comp %>: React.SFC<Props> = ({ children, style, className }) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
+    <div className={cx(styles.component, this.props.className)} style={style}>
         {children}
     </div>
 );

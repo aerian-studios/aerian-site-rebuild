@@ -2,6 +2,51 @@
 
 exports[`SectionNav renders correctly 1`] = `
 <nav
-  className=" myClass"
-/>
+  className="myClass"
+>
+  <div
+    className=""
+  >
+    <a
+      className=""
+      href="/#caseStudy"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Introduction
+    </a>
+    <a
+      className=""
+      href="/#gallery"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Gallery
+    </a>
+    <a
+      className=""
+      href="/#challenge"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      The Challenge
+    </a>
+    <a
+      className=""
+      href="/#solution"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      The Solution
+    </a>
+    <a
+      className=""
+      href="/#results"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      The Result
+    </a>
+  </div>
+</nav>
 `;

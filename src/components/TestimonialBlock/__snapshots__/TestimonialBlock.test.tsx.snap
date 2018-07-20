@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialBlock renders correctly 1`] = `
+<div
+  className=" myClass"
+  itemProp="review"
+  itemScope={true}
+  itemType="http://schema.org/Review"
+>
+  <div
+    className=""
+  >
+    <img
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/281/bbc-perfect-diet-for-you-qoute-image.jpg.jpg"
+    />
+  </div>
+  <blockquote>
+    <i
+      className="fa"
+    />
+    <div
+      itemProp="reviewBody"
+    >
+      It was seen by 1.5m unique browsers and was really well received by audience members. Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn’t have done it without Aerian.
+    </div>
+    <footer>
+      <figure>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/282/anna.png"
+          />
+        </div>
+      </figure>
+      <div>
+        <span
+          itemProp="author"
+        >
+           Anna-Louise Taylor
+        </span>
+        <span
+          itemProp="name"
+        >
+          Senior Content Producer
+        </span>
+      </div>
+    </footer>
+  </blockquote>
+</div>
+`;
+
+exports[`TestimonialBlock renders correctly without an image 1`] = `
+<div
+  className=" myClass"
+  itemProp="review"
+  itemScope={true}
+  itemType="http://schema.org/Review"
+>
+  <blockquote>
+    <i
+      className="fa"
+    />
+    <div
+      itemProp="reviewBody"
+    >
+      It was seen by 1.5m unique browsers and was really well received by audience members. Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn’t have done it without Aerian.
+    </div>
+    <footer>
+      <figure>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/282/anna.png"
+          />
+        </div>
+      </figure>
+      <div>
+        <span
+          itemProp="author"
+        >
+           Anna-Louise Taylor
+        </span>
+        <span
+          itemProp="name"
+        >
+          Senior Content Producer
+        </span>
+      </div>
+    </footer>
+  </blockquote>
+</div>
+`;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Client } from "../../types/data";
 import { Image } from "../Image";
-import * as styles from "./ClientLogo.scss";
+import * as styles from "./ClientLogo.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

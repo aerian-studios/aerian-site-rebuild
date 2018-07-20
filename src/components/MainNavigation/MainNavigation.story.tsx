@@ -38,7 +38,7 @@ const pages: PageListNode[] = [
     }
 ];
 
-import * as styles from "../PageNavBar/PageNavBar.scss";
+import * as styles from "../PageNavBar/PageNavBar.module.scss";
 
 const onClick = () => {};
 

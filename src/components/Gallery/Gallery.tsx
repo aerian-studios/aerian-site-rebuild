@@ -2,7 +2,7 @@ import * as React from "react";
 import { GalleryImage } from "../../types/data";
 import { GroupFour } from "../GroupFour";
 import { Image } from "../Image";
-import * as styles from "./Gallery.scss";
+import * as styles from "./Gallery.module.scss";
 
 interface Props {
     gallery: GalleryImage[];

@@ -1,0 +1,42 @@
+@import "../scss/variables";
+
+.component {
+}
+
+// SectionNav contextual styles
+.sectionNav {
+    composes: layoutGrid from "../scss/layout.module.scss";
+    composes: blockFull from "../scss/layout.module.scss";
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+.sectionNavWrapper {
+    display: none;
+    @media (min-width: $bp-m) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+}
+
+.sectionNavItem {
+    color: $c-text-alt;
+    flex: 1;
+    line-height: 52px;
+    border-right: $c-text 1px solid;
+    text-align: center;
+
+    &:last-of-type {
+        border-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+        color: $c-black-20;
+    }
+}

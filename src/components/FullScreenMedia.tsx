@@ -3,7 +3,7 @@ import * as React from "react";
 import { getSrc, isImageSharp } from "../lib/helpers";
 import { ImageField } from "../types/data";
 import { Omit } from "../types/helpers";
-import "./FullScreenMedia.scss";
+import * as styles from "./FullScreenMedia.module.scss";
 import { Image } from "./Image";
 
 interface Props {
@@ -46,7 +46,7 @@ export const FullScreenMedia: React.SFC<Props> = ({
     wrapperClassName,
     ...props
 }) => (
-    <figure className={`full-screen ${wrapperClassName}`}>
+    <figure className={`${styles.fullScreen} ${wrapperClassName}`}>
         {getMedia(props)}
     </figure>
 );

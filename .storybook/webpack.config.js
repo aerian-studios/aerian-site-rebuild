@@ -33,6 +33,12 @@ module.exports = (baseConfig, env, config) => {
             require.resolve("react-docgen-typescript-loader")
         ]
     });
+    config.module.rules[0].exclude = [];
+    config.module.rules[0].include = [
+        path.resolve(__dirname, "../node_modules/gatsby"),
+        path.resolve(__dirname, "../src")
+    ];
+
     config.resolve.extensions.push(".ts", ".tsx");
     config.resolve.alias["./pages.json"] = path.resolve(
         __dirname,

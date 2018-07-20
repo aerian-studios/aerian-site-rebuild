@@ -4,8 +4,8 @@
 
 // SectionNav contextual styles
 .sectionNav {
-    composes: layoutGrid from "../scss/layout.scss";
-    composes: blockFull from "../scss/layout.scss";
+    composes: layoutGrid from "../scss/layout.module.scss";
+    composes: blockFull from "../scss/layout.module.scss";
     background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left: 0;

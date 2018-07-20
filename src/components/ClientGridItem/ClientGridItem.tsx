@@ -3,7 +3,7 @@ import * as React from "react";
 import { Client } from "../../types/data";
 import { ClientLogo } from "../ClientLogo";
 import { Image } from "../Image";
-import * as styles from "./ClientGridItem.scss";
+import * as styles from "./ClientGridItem.module.scss";
 interface Props {
     client: Client;
     style?: React.CSSProperties;

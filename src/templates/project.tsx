@@ -16,7 +16,7 @@ import { SectionNav } from "../components/SectionNav";
 import { TestimonialBlock } from "../components/TestimonialBlock";
 import { Project, ReactRouterLocation } from "../types/data";
 
-import sharedStyles from "../components/Layout.scss";
+import * as sharedStyles from "../components/Layout.module.scss";
 
 interface Props {
     data: GraphData;

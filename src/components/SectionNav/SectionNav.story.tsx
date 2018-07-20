@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 import { SectionNav } from "./SectionNav";
 
-import sharedStyles from "../Layout.scss";
+import sharedStyles from "../Layout.module.scss";
 
 const keys = {
     caseStudy: "Introduction",

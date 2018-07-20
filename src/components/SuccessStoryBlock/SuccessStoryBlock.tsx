@@ -3,7 +3,7 @@ import * as React from "react";
 import { SuccessStory } from "../../types/data";
 import { GroupFour } from "../GroupFour";
 import { Image } from "../Image";
-import * as styles from "./SuccessStoryBlock.scss";
+import * as styles from "./SuccessStoryBlock.module.scss";
 interface Props {
     successStory: SuccessStory;
     style?: React.CSSProperties;

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./GroupThree.scss";
+import * as styles from "./GroupThree.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

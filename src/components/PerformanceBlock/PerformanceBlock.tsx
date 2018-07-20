@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Performance } from "../../types/data";
 import { GroupThree } from "../GroupThree";
-import * as styles from "./PerformanceBlock.scss";
+import * as styles from "./PerformanceBlock.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

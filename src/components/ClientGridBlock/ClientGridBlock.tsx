@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Client } from "../../types/data";
 import { ClientGridItem } from "../ClientGridItem";
-import * as styles from "./ClientGridBlock.scss";
+import * as styles from "./ClientGridBlock.module.scss";
 
 interface Props {
     clients: Client[];

@@ -4,7 +4,7 @@ import { ProjectStage } from "../../types/data";
 import { BlockHeader } from "../BlockHeader";
 import { GroupThree } from "../GroupThree";
 import { HurdleBlock } from "../HurdleBlock";
-import * as styles from "./ProjectStageBlock.scss";
+import * as styles from "./ProjectStageBlock.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

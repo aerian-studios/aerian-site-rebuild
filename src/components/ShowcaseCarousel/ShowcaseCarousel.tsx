@@ -1,7 +1,7 @@
 import Observer from "@researchgate/react-intersection-observer";
 import * as React from "react";
 import { Card } from "../Card";
-import * as styles from "./ShowcaseCarousel.scss";
+import * as styles from "./ShowcaseCarousel.module.scss";
 interface Props {
     style?: React.CSSProperties;
     className?: string;

@@ -4,7 +4,7 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import * as styles from "./SocialLink.scss";
+import * as styles from "./SocialLink.module.scss";
 
 interface Props {
     style?: React.CSSProperties;

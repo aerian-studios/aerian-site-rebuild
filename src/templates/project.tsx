@@ -66,44 +66,46 @@ export const ProjectPage: React.SFC<Props> = props => {
                 navItemClassName={sharedStyles.sectionNavItem}
                 navWrapperClassName={sharedStyles.sectionNavWrapper}
             />
-            <Block>
-                <div>Client logo</div>
-                <CaseStudyIntro project={project} />
-            </Block>
-            <Block>
-                <Gallery gallery={project.gallery} />
-            </Block>
-            <Block>
-                <ProjectStageBlock
-                    title="The Challenge"
-                    projectStage={project.challenge}
-                />
-            </Block>
-            <Block>
-                <ProjectStageBlock
-                    title="The Solution"
-                    projectStage={project.solution}
-                />
-            </Block>
-            <Block>
-                <ProjectStageBlock
-                    title="The Result"
-                    projectStage={project.results}
-                />
-            </Block>
-            {project.testimonial && (
+            <section className={sharedStyles.contentWrapper}>
                 <Block>
-                    <TestimonialBlock testimonial={project.testimonial} />
+                    <div>Client logo</div>
+                    <CaseStudyIntro project={project} />
                 </Block>
-            )}
-            {project.performance && (
                 <Block>
-                    <PerformanceBlock performance={project.performance} />
+                    <Gallery gallery={project.gallery} />
                 </Block>
-            )}
-            <Block>
-                <OnwardJournies projectURL={project.externalUrl} />
-            </Block>
+                <Block>
+                    <ProjectStageBlock
+                        title="The Challenge"
+                        projectStage={project.challenge}
+                    />
+                </Block>
+                <Block>
+                    <ProjectStageBlock
+                        title="The Solution"
+                        projectStage={project.solution}
+                    />
+                </Block>
+                <Block>
+                    <ProjectStageBlock
+                        title="The Result"
+                        projectStage={project.results}
+                    />
+                </Block>
+                {project.testimonial && (
+                    <Block>
+                        <TestimonialBlock testimonial={project.testimonial} />
+                    </Block>
+                )}
+                {project.performance && (
+                    <Block>
+                        <PerformanceBlock performance={project.performance} />
+                    </Block>
+                )}
+                <Block>
+                    <OnwardJournies projectURL={project.externalUrl} />
+                </Block>
+            </section>
         </Layout>
     );
 };

@@ -1,7 +1,13 @@
 @import "../scss/variables";
 
 .pageNavBar {
-    position: fixed;
+    position: sticky;
+}
+
+.contentWrapper {
+    background-color: $c-brand-c;
+    position: relative;
+    z-index: 10;
 }
 
 // SectionNav contextual styles

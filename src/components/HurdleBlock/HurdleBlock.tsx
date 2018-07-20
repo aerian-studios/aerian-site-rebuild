@@ -2,7 +2,7 @@ import * as React from "react";
 import Markdown from "react-markdown";
 import { Hurdle } from "../../types/data";
 import { Image } from "../Image";
-import * as styles from "./HurdleBlock.scss";
+import * as styles from "./HurdleBlock.module.scss";
 interface Props {
     style?: React.CSSProperties;
     className?: string;

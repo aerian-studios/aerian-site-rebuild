@@ -8,7 +8,7 @@ import { MapView } from "../components/MapView";
 import { SocialGrid } from "../components/SocialGrid";
 import { Page, ReactRouterLocation } from "../types/data";
 
-import * as styles from "./contact-us.scss";
+import * as styles from "./contact-us.module.scss";
 interface GraphData {
     pagesJson: Page;
 }

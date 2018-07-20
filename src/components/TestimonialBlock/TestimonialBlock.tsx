@@ -2,7 +2,7 @@ import * as React from "react";
 import Markdown from "react-markdown";
 import { ImageField, Testimonial } from "../../types/data";
 import { Image } from "./../Image";
-import * as styles from "./TestimonialBlock.scss";
+import * as styles from "./TestimonialBlock.module.scss";
 
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 

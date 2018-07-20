@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import * as React from "react";
 
 import { PageListNode } from "../../types/data";
-import * as styles from "./MainNavigation.scss";
+import * as styles from "./MainNavigation.module.scss";
 
 interface Props {
     activeLinkClassName?: string;

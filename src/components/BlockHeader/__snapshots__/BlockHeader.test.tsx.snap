@@ -2,9 +2,13 @@
 
 exports[`BlockHeader renders correctly 1`] = `
 <div
-  className=" myClass"
+  className=" "
 >
-  <h2 />
-  <p />
+  <h2>
+    foo
+  </h2>
+  <p>
+    bar
+  </p>
 </div>
 `;

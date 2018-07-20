@@ -5,7 +5,7 @@ import { Block } from "../Block";
 import { Image } from "../Image";
 import { SuccessStoryBlock } from "../SuccessStoryBlock";
 import { TestimonialBlock } from "../TestimonialBlock";
-import * as styles from "./PageSectionBlock.scss";
+import * as styles from "./PageSectionBlock.module.scss";
 interface Props {
     section: PageSection;
     alternate?: boolean;

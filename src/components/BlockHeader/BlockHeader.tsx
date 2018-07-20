@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as styles from "./BlockHeader.scss";
+import * as styles from "./BlockHeader.module.scss";
 
 interface Props {
     title: string;

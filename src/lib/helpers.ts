@@ -4,7 +4,6 @@ import {
     FileNode,
     ImageField,
     ImageSharp,
-    ImageSharpSizes,
     NodeList
 } from "../types/data";
 export const isImageSharp = (image: FileField): image is ImageSharp => {
@@ -16,12 +15,6 @@ export const isImageSharp = (image: FileField): image is ImageSharp => {
 
 export const isFileNode = (file: FileField): file is FileNode => {
     return file.hasOwnProperty("publicURL");
-};
-
-export const isImageSharpSizes = (
-    image: ImageSharpSizes | string
-): image is ImageSharpSizes => {
-    return typeof image !== "string";
 };
 
 export const getSrc = (file?: FileField) => {

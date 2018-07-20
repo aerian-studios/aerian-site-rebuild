@@ -34,6 +34,7 @@ module.exports = {
         // images with the NPM package “sharp”. It's used by
         // several plugins.
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-sass`,
         // Manifest for AppCache and PWA compatibility
         {
             resolve: `gatsby-plugin-manifest`,

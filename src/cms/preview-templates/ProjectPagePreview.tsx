@@ -1,17 +1,16 @@
 import * as React from "react";
-import { ProjectPage } from "../../templates/project";
+import { ProjectPage } from "../../components/ProjectPage";
+import { Project } from "../../types/data";
 
 interface Props {
     entry: any;
     widgetFor: any;
 }
 
-const ProjectPagePreview: React.SFC<Props> = ({ entry, widgetFor }) => (
-    <ProjectPage
-        title={entry.getIn(["data", "title"])}
-        content={widgetFor("body")}
-        heroImage={entry.getIn(["data", "heroimage"])}
-    />
-);
+const ProjectPagePreview: React.SFC<Props> = ({ entry }) => {
+    const project: Project = entry.getIn(["data"]).toJS();
+
+    return <ProjectPage project={project} />;
+};
 
 export default ProjectPagePreview;

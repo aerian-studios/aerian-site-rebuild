@@ -1,0 +1,537 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectPage renders correctly 1`] = `
+Array [
+  <header
+    className=""
+    id="page-header"
+    style={Object {}}
+  >
+    <figure
+      className=""
+    >
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+        />
+      </div>
+    </figure>
+    <div>
+      <h1>
+        What sort of 'eater' are you?
+        <br />
+        I mean... really?!
+      </h1>
+    </div>
+  </header>,
+  <nav
+    className=""
+  >
+    <div
+      className=""
+    >
+      <a
+        className=""
+        href="/#caseStudy"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Introduction
+      </a>
+      <a
+        className=""
+        href="/#gallery"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Gallery
+      </a>
+      <a
+        className=""
+        href="/#challenge"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        The Challenge
+      </a>
+      <a
+        className=""
+        href="/#solution"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        The Solution
+      </a>
+      <a
+        className=""
+        href="/#results"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        The Result
+      </a>
+    </div>
+  </nav>,
+  <div
+    className=" "
+  >
+    <div>
+      Client logo
+    </div>
+    <div
+      className=" "
+    >
+      <h3>
+        Case study
+      </h3>
+      <h2>
+        Two interactive 'foodie' quizzes for BBC iWonder
+      </h2>
+      <div>
+        <p>
+          With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
+        </p>
+      </div>
+      <a
+        href="http://www.bbc.co.uk/guides/z2csfg8"
+      >
+        Launch project
+      </a>
+    </div>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <div
+        className=""
+      >
+        <img
+          alt="BBC perfect diet for you grid image 1.jpg"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/383/bbc-perfect-diet-for-you-grid-image-1.jpg.jpg"
+        />
+      </div>
+      <div
+        className=""
+      >
+        <img
+          alt="BBC perfect diet for you grid image 2.jpg"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/384/bbc-perfect-diet-for-you-grid-image-2.jpg.jpg"
+        />
+      </div>
+      <div
+        className=""
+      >
+        <img
+          alt="BBC perfect diet for you grid image 3.jpg"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/385/bbc-perfect-diet-for-you-grid-image-3.jpg.jpg"
+        />
+      </div>
+      <div
+        className=""
+      >
+        <img
+          alt="bbc-perfect-diet-for-you-grid-image-4"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/467/bbc-perfect-diet-for-you-grid-image-4.jpg"
+        />
+      </div>
+    </div>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <div
+        className=" "
+      >
+        <h2>
+          The Challenge
+        </h2>
+        <p>
+          Whatever we built needed to be awesome, no matter how non-awesome someone's device might be
+        </p>
+      </div>
+      <div
+        className=" "
+      >
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Responsive guidelines "
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/622/bbc-iwonder-01.png"
+            />
+          </div>
+          <h3>
+            Responsive guidelines 
+          </h3>
+          <div>
+            <ul>
+              <li>
+                Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
+              </li>
+              <li>
+                Work with iWonder responsive guidelines.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Audience sharing "
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/623/bbc-iwonder-02.png"
+            />
+          </div>
+          <h3>
+            Audience sharing 
+          </h3>
+          <div>
+            <ul>
+              <li>
+                Work with iWonder games guidelines.
+              </li>
+              <li>
+                Creating an app framework that will work with a variety of question types.
+              </li>
+              <li>
+                High audience and sharing figures were a requirement.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Tight turn around"
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/624/bbc-iwonder-03.png"
+            />
+          </div>
+          <h3>
+            Tight turn around
+          </h3>
+          <div>
+            <ul>
+              <li>
+                As always, a tight turn around time.
+              </li>
+              <li>
+                The total download size of the initial activity load MUST be less than 250kb.
+              </li>
+              <li>
+                Any individual asset within an activity SHOULD NOT exceed 100KB.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <div
+        className=" "
+      >
+        <h2>
+          The Solution
+        </h2>
+        <p>
+          We used highly flexible design solutions that utilised device interactions such as advanced swipe motions and parallax via CCS3, JavaScript and HTML5, thus reaching the largest device demographic possible. 
+        </p>
+      </div>
+      <div
+        className=" "
+      >
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Maximising sharing "
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/625/bbc-iwonder-04.png"
+            />
+          </div>
+          <h3>
+            Maximising sharing 
+          </h3>
+          <div>
+            <p>
+              To increase the appeal of the app, animated features and interactions were added. Share buttons situated at key stages of the journey maximised exposure of sharing.
+            </p>
+          </div>
+        </div>
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Agile approach"
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/626/bbc-iwonder-05.png"
+            />
+          </div>
+          <h3>
+            Agile approach
+          </h3>
+          <div>
+            <ul>
+              <li>
+                Agile project approach to ensure all progress and blockers are expedited.
+              </li>
+              <li>
+                Close working relationship with BBC to ensure guidelines were adhered.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="CMS implementation"
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/627/bbc-iwonder-06.png"
+            />
+          </div>
+          <h3>
+            CMS implementation
+          </h3>
+          <div>
+            <p>
+              Content management was implemented so that content and javascript elements were editable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <div
+        className=" "
+      >
+        <h2>
+          The Result
+        </h2>
+        <p>
+          With over 1.5 million unique users in 48 hours, it quickly became the number one iWonder guide of all time, beating even the 2014 World Cup! 
+        </p>
+      </div>
+      <div
+        className=" "
+      >
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Furthest reaching guide"
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/628/bbc-iwonder-07.png"
+            />
+          </div>
+          <h3>
+            Furthest reaching guide
+          </h3>
+          <div>
+            <p>
+              "The team at Aerian were a pleasure to work with from start to finish, and helped BBC iWonder deliver its furthest-reaching iWonder guide and interactive build to date, the 'What's the right diet for you?' quiz."
+            </p>
+          </div>
+        </div>
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Seen by 1.5m"
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/629/bbc-iwonder-08.png"
+            />
+          </div>
+          <h3>
+            Seen by 1.5m
+          </h3>
+          <div>
+            <p>
+              It was seen by 1.5m unique browsers and was really well received by audience members.
+            </p>
+          </div>
+        </div>
+        <div
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="Successful weightloss "
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/630/bbc-iwonder-09.png"
+            />
+          </div>
+          <h3>
+            Successful weightloss 
+          </h3>
+          <div>
+            <p>
+              "Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn't have done it without Aerian." Anna-Louise Taylor, BBC Senior Content Producer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+      itemProp="review"
+      itemScope={true}
+      itemType="http://schema.org/Review"
+    >
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/281/bbc-perfect-diet-for-you-qoute-image.jpg.jpg"
+        />
+      </div>
+      <blockquote>
+        <i
+          className="fa"
+        />
+        <div
+          itemProp="reviewBody"
+        >
+          It was seen by 1.5m unique browsers and was really well received by audience members. Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn’t have done it without Aerian.
+        </div>
+        <footer>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/282/anna.png"
+              />
+            </div>
+          </figure>
+          <div>
+            <span
+              itemProp="author"
+            >
+               Anna-Louise Taylor
+            </span>
+            <span
+              itemProp="name"
+            >
+              Senior Content Producer
+            </span>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <h2>
+        Performance & Statistics
+      </h2>
+      <div
+        className=" "
+      >
+        <div>
+          <h4>
+            558000
+          </h4>
+          <p>
+            558,000 additional visits
+          </p>
+        </div>
+        <div>
+          <h4>
+            240000
+          </h4>
+          <p>
+            240,000 visits
+          </p>
+        </div>
+        <div>
+          <h4>
+            1500000
+          </h4>
+          <p>
+            1,500,000+ visits
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <div>
+        <h2>
+          Like what you see?
+        </h2>
+        <a
+          href="http://www.bbc.co.uk/guides/z2csfg8"
+        >
+          Launch project
+        </a>
+      </div>
+      <div>
+        <h2>
+          Got a project in mind?
+        </h2>
+        <a
+          href="/contact-us"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Contact us
+        </a>
+      </div>
+    </div>
+  </div>,
+]
+`;

@@ -37,17 +37,27 @@ export interface FileNode extends ParsedPath, Stats {
 
 export interface ImageSharp extends Partial<FileNode> {
     childImageSharp: {
-        fluid?: ImageSharpSizes;
-        fixed?: ImageSharpSizes;
+        fluid?: ImageSharpFluid;
+        fixed?: ImageSharpFixed;
     };
 }
-export interface ImageSharpSizes {
+export interface ImageSharpFluid {
     aspectRatio?: number;
     sizes?: string;
     src: string;
     srcSet?: string;
     tracedSVG?: string;
     base64?: string;
+}
+
+export interface ImageSharpFixed {
+    aspectRatio?: number;
+    src: string;
+    srcSet?: string;
+    tracedSVG?: string;
+    base64?: string;
+    width: number;
+    height: number;
 }
 
 // PAGES

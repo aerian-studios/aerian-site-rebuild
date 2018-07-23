@@ -2,24 +2,14 @@
 
 import { ImageSharp } from "../types/data";
 import { image, imageSharp } from "../types/fixtures";
-import {
-    absolutifyURL,
-    extractNodes,
-    getSrc,
-    isImageSharp,
-    isImageSharpSizes
-} from "./helpers";
+import { absolutifyURL, extractNodes, getSrc, isImageSharp } from "./helpers";
 
 describe("Helpers", () => {
     it("correctly detects an imageSharp", () => {
         expect(isImageSharp(imageSharp)).toBeTruthy();
         expect(isImageSharp(image)).toBeFalsy();
     });
-    it("correctly detects imageSharpSizes", () => {
-        expect(
-            isImageSharpSizes(imageSharp.childImageSharp.fluid)
-        ).toBeTruthy();
-    });
+
     it("returns src for images", () => {
         const fixed: ImageSharp = {
             childImageSharp: {

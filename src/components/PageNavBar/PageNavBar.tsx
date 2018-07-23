@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { Link } from "gatsby";
 import * as React from "react";
 
@@ -34,7 +35,7 @@ export class PageNavBar extends React.PureComponent<Props, State> {
         }
         return (
             <header
-                className={[styles.component, this.props.className].join(" ")}
+                className={classNames(styles.component, this.props.className)}
                 style={this.props.style}
             >
                 <div className={styles.logo}>

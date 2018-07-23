@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroBlock renders correctly 1`] = `
+Array [
+  <div
+    className="myClass"
+  >
+    <figure
+      className=""
+    />
+    <div>
+      <h1>
+        Two interactive 'foodie' quizzes for BBC iWonder
+      </h1>
+    </div>
+  </div>,
+  <div />,
+]
+`;
+
+exports[`HeroBlock renders correctly with \`heroImage 1`] = `
+Array [
+  <div
+    className="myClass"
+  >
+    <figure
+      className=""
+    >
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+        />
+      </div>
+    </figure>
+    <div>
+      <h1>
+        Two interactive 'foodie' quizzes for BBC iWonder
+      </h1>
+    </div>
+  </div>,
+  <div />,
+]
+`;
+
+exports[`HeroBlock renders correctly with heroVideo 1`] = `
+Array [
+  <div
+    className="myClass"
+  >
+    <figure
+      className=""
+    >
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+        />
+      </div>
+    </figure>
+    <div>
+      <h1>
+        Two interactive 'foodie' quizzes for BBC iWonder
+      </h1>
+    </div>
+  </div>,
+  <div />,
+]
+`;

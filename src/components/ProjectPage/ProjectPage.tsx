@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { FullScreenMedia } from "../FullScreenMedia";
-import Layout from "../Layout";
+import { HeroBlock } from "../HeroBlock/HeroBlock";
 import { PageHeader } from "../PageHeader/PageHeader";
 
 import { Project, ReactRouterLocation } from "../../types/data";
@@ -34,20 +33,22 @@ const onNavigation = (id: string) => {
 
 export const ProjectPage: React.SFC<Props> = ({ project }) => (
     <>
-        <PageHeader>
-            <FullScreenMedia
-                image={project.heroImage}
+        <PageHeader className={sharedStyles.withSectionNav}>
+            <HeroBlock
+                heroImage={project.heroImage}
                 aria-labelled-by="page-title"
-                video={project.heroVideo}
-            />
-
-            <div>
+                heroVideo={project.heroVideo}
+            >
                 <h1>
                     {project.titleLineOne}
-                    <br />
-                    {project.titleLineTwo}
+                    {project.titleLineTwo ? (
+                        <>
+                            <br />
+                            {project.titleLineTwo}
+                        </>
+                    ) : null}
                 </h1>
-            </div>
+            </HeroBlock>
         </PageHeader>
         <SectionNav
             keyConsts={keys}
@@ -56,44 +57,46 @@ export const ProjectPage: React.SFC<Props> = ({ project }) => (
             navItemClassName={sharedStyles.sectionNavItem}
             navWrapperClassName={sharedStyles.sectionNavWrapper}
         />
-        <Block>
-            <div>Client logo</div>
-            <CaseStudyIntro project={project} />
-        </Block>
-        <Block>
-            <Gallery gallery={project.gallery} />
-        </Block>
-        <Block>
-            <ProjectStageBlock
-                title="The Challenge"
-                projectStage={project.challenge}
-            />
-        </Block>
-        <Block>
-            <ProjectStageBlock
-                title="The Solution"
-                projectStage={project.solution}
-            />
-        </Block>
-        <Block>
-            <ProjectStageBlock
-                title="The Result"
-                projectStage={project.results}
-            />
-        </Block>
-        {project.testimonial && (
+        <section className={sharedStyles.contentWrapper}>
             <Block>
-                <TestimonialBlock testimonial={project.testimonial} />
+                <div>Client logo</div>
+                <CaseStudyIntro project={project} />
             </Block>
-        )}
-        {project.performance && (
             <Block>
-                <PerformanceBlock performance={project.performance} />
+                <Gallery gallery={project.gallery} />
             </Block>
-        )}
-        <Block>
-            <OnwardJournies projectURL={project.externalUrl} />
-        </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Challenge"
+                    projectStage={project.challenge}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Solution"
+                    projectStage={project.solution}
+                />
+            </Block>
+            <Block>
+                <ProjectStageBlock
+                    title="The Result"
+                    projectStage={project.results}
+                />
+            </Block>
+            {project.testimonial && (
+                <Block>
+                    <TestimonialBlock testimonial={project.testimonial} />
+                </Block>
+            )}
+            {project.performance && (
+                <Block>
+                    <PerformanceBlock performance={project.performance} />
+                </Block>
+            )}
+            <Block>
+                <OnwardJournies projectURL={project.externalUrl} />
+            </Block>
+        </section>
     </>
 );
 

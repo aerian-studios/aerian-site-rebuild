@@ -16,7 +16,7 @@ export const PageHeader: React.SFC<Props> = ({
     <header
         id="page-header"
         style={style || {}}
-        className={classNames(styles.PageHeader, className)}
+        className={classNames(styles.pageHeader, className)}
     >
         {children}
     </header>

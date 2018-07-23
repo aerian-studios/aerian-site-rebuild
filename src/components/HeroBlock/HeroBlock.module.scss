@@ -1,6 +1,6 @@
 @import "../../scss/variables";
 
-.HeroBlock {
+.heroBlock {
     position: fixed;
     composes: layoutGrid from "../../scss/layoutGrid.module.scss";
     composes: blockFull from "../../scss/layoutGrid.module.scss";

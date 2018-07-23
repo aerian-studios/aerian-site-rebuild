@@ -20,7 +20,7 @@ export const HeroBlock: React.SFC<Props> = ({
     heroImage
 }) => (
     <>
-        <div className={classNames(styles.HeroBlock, className)} style={style}>
+        <div className={classNames(styles.heroBlock, className)} style={style}>
             <FullScreenMedia
                 image={heroImage}
                 aria-labelled-by="page-title"

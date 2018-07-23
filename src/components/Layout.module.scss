@@ -1,7 +1,8 @@
 @import "../scss/variables";
 
 .pageNavBar {
-    position: sticky;
+    position: fixed;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
 }
 
 .contentWrapper {
@@ -14,11 +15,15 @@
 .sectionNav {
     composes: layoutGrid from "../scss/layoutGrid.module.scss";
     composes: blockFull from "../scss/layoutGrid.module.scss";
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     top: 0;
     left: 0;
     position: sticky;
     z-index: 100;
+
+    @media (min-width: $bp-m) {
+        top: 89.45px;
+    }
 }
 
 .sectionNavWrapper {

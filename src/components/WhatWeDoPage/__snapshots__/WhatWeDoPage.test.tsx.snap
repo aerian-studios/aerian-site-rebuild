@@ -1,0 +1,528 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WhatWeDoPage renders correctly 1`] = `
+Array [
+  <header
+    className=""
+    id="page-header"
+    style={Object {}}
+  >
+    <div
+      className=""
+    >
+      <figure
+        className=""
+      >
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/420/what-we-do-hero-image.jpg"
+          />
+        </div>
+      </figure>
+      <div>
+        <div>
+          <h1>
+            What We Do
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div />
+  </header>,
+  <section>
+    <div
+      className=" "
+    >
+      <div>
+        <div>
+          <h2>
+            We plan
+          </h2>
+          <h3>
+            Changing the face of digital.
+          </h3>
+          <p>
+            Our strategy team have worked at the highest levels of industry. Working with our partners to change the behaviours, content disseminations, buying patterns and perception of billions of users. We work with you to really break down the barriers that are stopping you being the digital powerhouse you could be.
+          </p>
+          <h4>
+            Strategising
+          </h4>
+          <p>
+            Global, blue chip and enterprise level strategising team.
+          </p>
+          <h4>
+            Innovating
+          </h4>
+          <p>
+            Highlighted as a top ten UK innovation team.
+          </p>
+          <h4>
+            Simplifying
+          </h4>
+          <p>
+            If it's hard, or inconceivable, give us a call. We love that stuff.
+          </p>
+        </div>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/425/we-plan-image.jpg"
+          />
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/535/we-plan-image-small.jpg"
+        />
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div
+        className=" "
+        itemProp="review"
+        itemScope={true}
+        itemType="http://schema.org/Review"
+      >
+        <blockquote>
+          <i
+            className="fa"
+          />
+          <div
+            itemProp="reviewBody"
+          >
+            Aerian delivered the design to brief and beyond. They are a great bunch to work with, really collaborative, and intent on getting the right design for the brand and for the user. They tackle problems head on with creativity and focus. 
+          </div>
+          <footer>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/124/louise-goodspeed.png"
+                />
+              </div>
+            </figure>
+            <div>
+              <span
+                itemProp="author"
+              >
+                Louise Goodspeed
+              </span>
+              <span
+                itemProp="name"
+              >
+                UX Lead | Into Film
+              </span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
+          />
+        </div>
+        <div>
+          <h2>
+            We design
+          </h2>
+          <h3>
+            Designed to be loved.
+          </h3>
+          <p>
+            We create things that people love to use. Our job as creatives is to continually question ourselves and the work we do. It's a mixture of gut instinct, artistic integrity and an obsession with creating the easiest possible experience. We blend scientific process with artistic vision.
+          </p>
+          <h4>
+            Award winning 
+          </h4>
+          <p>
+            Full time, multi award winning,  in-house design and artworking department.
+          </p>
+          <h4>
+            User-centred
+          </h4>
+          <p>
+            User-centred methodology bled into all our process, at all levels.
+          </p>
+          <h4>
+            Prototyping 
+          </h4>
+          <p>
+            Multi-tiered rapid prototyping for user and stakeholder tests.
+          </p>
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
+        />
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div
+        className=" "
+      >
+        <h2>
+          <span>
+            Success story
+          </span>
+           
+          BBC iWonder The Perfect Diet for you guide
+        </h2>
+        <div
+          className=" "
+        >
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+              />
+            </div>
+            <h3>
+              90,000 
+            </h3>
+            <p>
+              Users in the first 2 hours 
+            </p>
+          </div>
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+              />
+            </div>
+            <h3>
+              Top guide 
+            </h3>
+            <p>
+              On iwonder
+            </p>
+          </div>
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+              />
+            </div>
+            <h3>
+              1.5m
+            </h3>
+            <p>
+              unique users after the first show
+            </p>
+          </div>
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+              />
+            </div>
+            <h3>
+              22,000
+            </h3>
+            <p>
+              Concurrent users
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div>
+        <div>
+          <h2>
+            We develop
+          </h2>
+          <h3>
+            Rock solid, high performance development.
+          </h3>
+          <p>
+            Our dev house is the cornerstone of our success. Our team of expert developers, technical architects, software engineers, security and DevOps experts work incredibly hard to create the perfect piece of engineering excellence.
+          </p>
+          <h4>
+            First class
+          </h4>
+          <p>
+            Full in-house dev team highlighted as "first class" by our clients.
+          </p>
+          <h4>
+            Digital Engineering Excellence
+          </h4>
+          <p>
+            Continuous Integration and Deployment practices, aligned to Digital Engineering Excellence.
+          </p>
+          <h4>
+            Bespoke applications
+          </h4>
+          <p>
+            Complex, high availability bespoke application build is our speciality.
+          </p>
+        </div>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/424/we-develop.jpg"
+          />
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/537/we-develop-image-small.jpg"
+        />
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div
+        className=" "
+      >
+        <h2>
+          <span>
+            Success story
+          </span>
+           
+          From front-end to back-end and Dev Ops, our team excels in building systems that scale 
+        </h2>
+        <div
+          className=" "
+        >
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/540/scrum-leader.png"
+              />
+            </div>
+            <h3>
+              7 Accredited 
+            </h3>
+            <p>
+              Scrum Masters
+            </p>
+          </div>
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/541/server-management.png"
+              />
+            </div>
+            <h3>
+              Managing
+            </h3>
+            <p>
+              Over 100 Client Servers
+            </p>
+          </div>
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/542/uptime.png"
+              />
+            </div>
+            <h3>
+              99.95%
+            </h3>
+            <p>
+              Monthly Uptime
+            </p>
+          </div>
+          <div>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/543/languages.png"
+              />
+            </div>
+            <h3>
+              Experts
+            </h3>
+            <p>
+              In over 20 development languages
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
+          />
+        </div>
+        <div>
+          <h2>
+            We deliver
+          </h2>
+          <h3>
+            If you rely on the web, you can rely on us.
+          </h3>
+          <p>
+            You need someone you can trust. That's us. We work incredibly hard (because we want to) to ensure that we don't let people down. That's not just about long, hard hours. That's about planning, consideration, communication and being honest. We don't want to work for you, we want to work with you.
+          </p>
+          <h4>
+            Cradle to grave
+          </h4>
+          <p>
+            All projects designed "cradle to grave" with extensibility "baked in".
+          </p>
+          <h4>
+            24/7 support 
+          </h4>
+          <p>
+            Full 24/7 operational and maintenance support options.
+          </p>
+          <h4>
+            Working with you
+          </h4>
+          <p>
+            We work with your teams to train, document and create failovers, and ensure it's not 'our' project, it's yours.
+          </p>
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
+        />
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div
+        className=" "
+        itemProp="review"
+        itemScope={true}
+        itemType="http://schema.org/Review"
+      >
+        <blockquote>
+          <i
+            className="fa"
+          />
+          <div
+            itemProp="reviewBody"
+          >
+            Thanks so much to all of you for the speed and quality of your work across the board - design, communication, build and overall passion for the project that’s made it as amazing as it is. 
+          </div>
+          <footer>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/109/james-elliot.jpg"
+                />
+              </div>
+            </figure>
+            <div>
+              <span
+                itemProp="author"
+              >
+                James Elliot
+              </span>
+              <span
+                itemProp="name"
+              >
+                Assistant Director of Digital Engagement
+              </span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+    <div
+      className=" "
+    >
+      <div>
+        <div>
+          <h2>
+            We celebrate
+          </h2>
+          <h3>
+            Industry leading results, delivered by us and you, together.
+          </h3>
+          <p>
+            We dedicate significant blood, sweat and tears to understanding the complex and often labyrinthine requirements and desires for you and your various audiences. We don't offer 'out of the box' solutions, we create solutions for your users, that deliver results. That's why our products are used by over 2% of internet traffic.
+          </p>
+          <h4>
+            Project completion 
+          </h4>
+          <p>
+            100% successful project completion (20 years worth).
+          </p>
+          <h4>
+            On hand
+          </h4>
+          <p>
+            We're always on hand for our clients, whether or not we're actively working on a project.
+          </p>
+          <h4>
+            Hard-working
+          </h4>
+          <p>
+            We're a team, internally, and with clients. We work hard together, we celebrate together.
+          </p>
+        </div>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/480/we-celebrate.jpg"
+          />
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <img
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/538/we-celebrate-image-small.jpg"
+        />
+      </div>
+    </div>
+  </section>,
+]
+`;

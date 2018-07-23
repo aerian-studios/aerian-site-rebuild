@@ -41,6 +41,7 @@
         "build": "gatsby build",
         "start": "gatsby develop",
         "test": "jest",
+        "test-watch": "jest --watchAll --coverage",
         "updateSnapshot": "jest --updateSnapshot",
         "storybook": "start-storybook -p 9001 -c .storybook",
         "storybook-build": "build-storybook -c .storybook -o docs",

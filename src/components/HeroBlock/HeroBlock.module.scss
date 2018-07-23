@@ -1,0 +1,58 @@
+@import "../../scss/variables";
+
+.heroBlock {
+    composes: layoutGrid from "../../scss/layoutGrid.module.scss";
+    composes: blockFull from "../../scss/layoutGrid.module.scss";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 54px);
+    width: 100vw;
+    margin-top: 54px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: $bp-m) {
+        margin-top: 90px;
+        max-height: 992px;
+    }
+
+    > * {
+        grid-row: 1/2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: block;
+    }
+}
+
+// This is used to provide the spacing needed for the hero section
+.placeholder {
+    position: relative;
+    height: calc(100vh - 54px);
+
+    @media (min-width: $bp-m) {
+        max-height: calc(992px + 90px);
+    }
+}
+
+.heroMedia {
+    composes: blockFull from "../../scss/layoutGrid.module.scss";
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.heroContent {
+    color: $c-text-alt;
+    position: relative;
+    z-index: 2;
+}

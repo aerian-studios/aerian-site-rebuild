@@ -1,17 +1,29 @@
 @import "../scss/variables";
 
-.component {
+.pageNavBar {
+    position: fixed;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+}
+
+.contentWrapper {
+    background-color: $c-brand-c;
+    position: relative;
+    z-index: 10;
 }
 
 // SectionNav contextual styles
 .sectionNav {
-    composes: layoutGrid from "../scss/layout.module.scss";
-    composes: blockFull from "../scss/layout.module.scss";
-    background-color: rgba(0, 0, 0, 0.3);
+    composes: layoutGrid from "../scss/layoutGrid.module.scss";
+    composes: blockFull from "../scss/layoutGrid.module.scss";
+    background-color: rgba(0, 0, 0, 0.4);
     top: 0;
     left: 0;
     position: sticky;
     z-index: 100;
+
+    @media (min-width: $bp-m) {
+        top: 89px;
+    }
 }
 
 .sectionNavWrapper {
@@ -30,13 +42,15 @@
     line-height: 52px;
     border-right: $c-text 1px solid;
     text-align: center;
-
     &:last-of-type {
         border-color: transparent;
     }
-
     &:hover,
     &:focus {
         color: $c-black-20;
     }
+}
+
+.withSectionNav {
+    margin-bottom: -52px;
 }

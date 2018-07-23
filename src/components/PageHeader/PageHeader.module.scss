@@ -1,4 +1,7 @@
 @import "../../scss/variables";
 
-.component {
+.pageHeader {
+    position: relative;
+    composes: layoutGrid from "../../scss/layoutGrid.module.scss";
+    composes: blockFull from "../../scss/layoutGrid.module.scss";
 }

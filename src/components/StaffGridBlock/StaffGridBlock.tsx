@@ -10,15 +10,40 @@ interface Props {
     className?: string;
 }
 
-export const StaffGridBlock: React.SFC<Props> = ({
-    staff,
-    style,
-    className
-}) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
-        {staff.map(person => (
-            <StaffGridItem key={person.name} person={person} />
-        ))}
-    </div>
-);
+interface State {
+    selectedItem: number;
+}
+
+export class StaffGridBlock extends React.PureComponent<Props, State> {
+    public state = {
+        selectedItem: -1
+    };
+
+    public expandDetail = (person?: Staff) => {
+        console.log("expand", person);
+        if (!person) {
+            this.setState({ selectedItem: -1 });
+            return;
+        }
+        this.setState({ selectedItem: this.props.staff.indexOf(person) });
+    };
+    public render() {
+        const { staff, style, className } = this.props;
+        return (
+            <div
+                className={[styles.component, className].join(" ")}
+                style={style}
+            >
+                {staff.map((person, i) => (
+                    <StaffGridItem
+                        key={person.name}
+                        person={person}
+                        detail={this.state.selectedItem === i}
+                        onExpand={this.expandDetail}
+                    />
+                ))}
+            </div>
+        );
+    }
+}
 export default StaffGridBlock;

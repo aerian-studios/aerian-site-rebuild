@@ -1,5 +1,24 @@
+@import "../../scss/variables";
+
 .component {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-auto-rows: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-areas:
+        "staff1 staff2"
+        "detail detail";
+
+    @media (min-width: $bp-m) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "staff1 staff2 staff3"
+            "detail detail detail";
+    }
+
+    @media (min-width: $bp-xl) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "staff1 staff2 staff3 staff4"
+            "detail detail detail detail";
+    }
 }

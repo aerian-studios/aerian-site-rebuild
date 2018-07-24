@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OurWorkPage renders correctly 1`] = `
+Array [
+  <header
+    className=""
+    id="page-header"
+    style={Object {}}
+  />,
+  <section>
+    <div>
+      <h1>
+        About
+      </h1>
+      <p>
+        A family of enthusiastic geeks who love all things web and innovative
+      </p>
+    </div>
+    <div
+      className="  false"
+    >
+      <div
+        className="  "
+      >
+        <div>
+          <a
+            href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>,
+]
+`;

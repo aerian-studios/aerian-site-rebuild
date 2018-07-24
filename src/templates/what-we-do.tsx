@@ -1,11 +1,8 @@
 import { graphql } from "gatsby";
 import * as React from "react";
-import { FullScreenMedia } from "../components/FullScreenMedia";
-import { PageHeader } from "../components/PageHeader/PageHeader";
 
 import Layout from "../components/Layout";
-import { PageSectionBlock } from "../components/PageSectionBlock";
-import { isImageSharp } from "../lib/helpers";
+import { WhatWeDoPage } from "../components/WhatWeDoPage";
 import { ReactRouterLocation, WhatWeDo } from "../types/data";
 
 interface GraphData {
@@ -16,45 +13,10 @@ interface Props {
     data: GraphData;
     location: ReactRouterLocation;
 }
-export const WhatWeDoPage: React.SFC<Props> = props => {
-    const {
-        title,
-        sections,
-        heroImage,
-        seoDescription,
-        seoKeywords,
-        seoTitle
-    } = props.data.pagesJson;
+export const WhatWeDoTemplate: React.SFC<Props> = ({ data, location }) => {
     return (
-        <Layout
-            title={title}
-            location={props.location}
-            {...{
-                seoDescription,
-                seoKeywords,
-                seoTitle
-            }}
-        >
-            <section className="section section--about">
-                <PageHeader>
-                    <FullScreenMedia
-                        image={heroImage}
-                        aria-labelled-by="page-title"
-                    />
-                    <div className="block--hero__content-wrap">
-                        <h1 className="block--hero__title">{title}</h1>
-                    </div>
-                </PageHeader>
-                <div>
-                    {sections &&
-                        sections.map((section, i) => (
-                            <PageSectionBlock
-                                section={section}
-                                alternate={i % 2 === 0}
-                            />
-                        ))}
-                </div>
-            </section>
+        <Layout location={location} {...data.pagesJson}>
+            <WhatWeDoPage page={data.pagesJson} />
         </Layout>
     );
 };
@@ -116,4 +78,4 @@ export const pageQuery = graphql`
     }
 `;
 
-export default WhatWeDoPage;
+export default WhatWeDoTemplate;

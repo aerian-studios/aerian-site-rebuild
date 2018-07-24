@@ -1,8 +1,7 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
-import { Image } from "../components/Image";
 import Layout from "../components/Layout";
-import { ShowcaseCarousel } from "../components/ShowcaseCarousel";
+import { OurWorkPage } from "../components/OurWorkPage";
 import { extractNodes, isImageSharp } from "../lib/helpers";
 import {
     About,
@@ -22,43 +21,13 @@ interface Props {
     location: ReactRouterLocation;
 }
 
-export const OurWorkPage: React.SFC<Props> = props => {
-    const {
-        title,
-        subheading,
-        seoDescription,
-        seoKeywords,
-        seoTitle
-    } = props.data.pagesJson;
+export const OurWorkTemplate: React.SFC<Props> = ({ data, location }) => {
     return (
-        <Layout
-            location={props.location}
-            {...{
-                title,
-                seoDescription,
-                seoKeywords,
-                seoTitle
-            }}
-        >
-            <section>
-                <div>
-                    <h1>{title}</h1>
-                    <p>{subheading}</p>
-                </div>
-                <ShowcaseCarousel feature={false}>
-                    {extractNodes(props.data.allProjectsJson).map(project => (
-                        <Link
-                            to={`/our-work/project/${project.slug}`}
-                            key={project.slug}
-                        >
-                            <Image
-                                key={project.titleLineOne}
-                                source={project.heroImage}
-                            />
-                        </Link>
-                    ))}
-                </ShowcaseCarousel>
-            </section>
+        <Layout location={location} {...data.pagesJson}>
+            <OurWorkPage
+                page={data.pagesJson}
+                projects={extractNodes(data.allProjectsJson)}
+            />
         </Layout>
     );
 };
@@ -80,4 +49,4 @@ export const pageQuery = graphql`
         }
     }
 `;
-export default OurWorkPage;
+export default OurWorkTemplate;

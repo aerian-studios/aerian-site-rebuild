@@ -1,11 +1,7 @@
 import { graphql } from "gatsby";
 import * as React from "react";
-import { FullScreenMedia } from "../components/FullScreenMedia";
 import Layout from "../components/Layout";
-import { PageHeader } from "../components/PageHeader/PageHeader";
-
-import { StaffGridBlock } from "../components/StaffGridBlock";
-import { isImageSharp } from "../lib/helpers";
+import { MeetTheTeamPage } from "../components/MeetTheTeamPage";
 import { MeetTheTeam, ReactRouterLocation } from "../types/data";
 
 interface Props {
@@ -47,38 +43,12 @@ export const pageQuery = graphql`
     }
 `;
 
-export const MeetTheTeamPage: React.SFC<Props> = props => {
-    const {
-        title,
-        staff,
-        heroImage,
-        seoDescription,
-        seoKeywords,
-        seoTitle
-    } = props.data.pagesJson;
-
+export const MeetTheTeamTemplate: React.SFC<Props> = ({ data, location }) => {
     return (
-        <Layout
-            location={props.location}
-            {...{
-                title,
-                seoDescription,
-                seoKeywords,
-                seoTitle
-            }}
-        >
-            <section>
-                <PageHeader>
-                    <FullScreenMedia
-                        image={heroImage}
-                        aria-labelled-by="page-title"
-                    />
-                </PageHeader>
-
-                <StaffGridBlock staff={staff.filter(person => person.live)} />
-            </section>
+        <Layout location={location} {...data.pagesJson}>
+            <MeetTheTeamPage page={data.pagesJson} />
         </Layout>
     );
 };
 
-export default MeetTheTeamPage;
+export default MeetTheTeamTemplate;

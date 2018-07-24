@@ -7,6 +7,7 @@ module.exports = {
         "ProjectsJson.client": "ClientsJson"
     },
     plugins: [
+        `gatsby-plugin-netlify-cache`,
         `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
         {

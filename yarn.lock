@@ -8071,6 +8071,13 @@ gatsby-plugin-manifest@^2.0.2-beta.2:
     bluebird "^3.5.0"
     sharp "^0.20.2"
 
+gatsby-plugin-netlify-cache@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cache/-/gatsby-plugin-netlify-cache-0.1.0.tgz#79dfa82609364b37c10fdec1bc9911c9409483ae"
+  dependencies:
+    babel-runtime "^6.26.0"
+    fs-extra "^6.0.1"
+
 gatsby-plugin-netlify-cms@^2.0.0-beta.6:
   version "2.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-2.0.0-beta.6.tgz#c6218fa4ebec3f005b1e355ed3900a94047e9b97"

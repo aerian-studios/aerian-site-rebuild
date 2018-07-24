@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutPage renders correctly 1`] = `
+<section>
+  <header
+    className=""
+    id="page-header"
+    style={Object {}}
+  >
+    <div
+      className=""
+    >
+      <figure
+        className=""
+      >
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/421/about-hero-image.jpg"
+          />
+        </div>
+      </figure>
+      <div />
+    </div>
+    <div />
+    <div>
+      <h1>
+        About
+      </h1>
+    </div>
+  </header>
+  <div
+    className=" "
+  >
+    <div
+      className=" "
+    >
+      <a
+        href="/our-work/project/cnn-africa-view"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <figure
+          className=" "
+        >
+          <div
+            className=""
+          >
+            <img
+              alt="CNN"
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
+            />
+          </div>
+        </figure>
+      </a>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_devs.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_designers.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_management.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_monitor.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_monitor.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_monitor.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_monitor.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_beard.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_desk.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_beer.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_plant.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_piano.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_guitar.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_mic.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_car.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+    <div
+      className=""
+    >
+      <img
+        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/infographics/Icon_barrel.svg"
+        style={
+          Object {
+            "height": 100,
+            "width": 100,
+          }
+        }
+      />
+    </div>
+  </div>
+</section>
+`;

@@ -1,2 +1,3 @@
-.component {
+.contentWrapper {
+    composes: contentWrapper from "../Layout.module.scss";
 }

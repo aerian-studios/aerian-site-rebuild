@@ -1,4 +1,5 @@
 .component {
+    composes: contentWrapper from "../Layout.module.scss";
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-auto-rows: minmax(500px, auto);

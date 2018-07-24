@@ -1,3 +1,23 @@
+@import "../../scss/variables";
+
 .component {
-    color: currentColor;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sidebar" "carousel";
+
+    @media (min-width: $bp-l) {
+        grid-template-columns: 400px auto;
+        grid-template-areas: "sidebar carousel";
+    }
+
+    composes: contentWrapper from "../Layout.module.scss";
+    margin-top: 95px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.carousel {
+    grid-area: carousel;
 }

@@ -5,7 +5,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
   className=" "
 >
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -17,7 +17,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -29,7 +29,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -41,7 +41,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -53,7 +53,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -65,7 +65,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -77,7 +77,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -89,7 +89,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -101,7 +101,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -113,7 +113,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -125,7 +125,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -137,7 +137,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -149,7 +149,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -161,7 +161,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -173,7 +173,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -185,7 +185,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -197,7 +197,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -209,7 +209,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -221,7 +221,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -233,7 +233,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -245,7 +245,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -257,7 +257,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -269,7 +269,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -281,7 +281,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -293,7 +293,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -305,7 +305,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -317,7 +317,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -329,7 +329,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -341,7 +341,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -353,7 +353,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -365,7 +365,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -377,7 +377,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div
@@ -389,7 +389,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
   >
     <div

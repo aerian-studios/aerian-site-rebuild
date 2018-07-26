@@ -20,13 +20,13 @@ export class StaffGridBlock extends React.PureComponent<Props, State> {
     };
 
     public expandDetail = (person?: Staff) => {
-        console.log("expand", person);
         if (!person) {
             this.setState({ selectedItem: -1 });
             return;
         }
         this.setState({ selectedItem: this.props.staff.indexOf(person) });
     };
+
     public render() {
         const { staff, style, className } = this.props;
         return (

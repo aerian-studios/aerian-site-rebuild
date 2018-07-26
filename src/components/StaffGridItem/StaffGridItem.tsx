@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import * as React from "react";
 
 import { Staff } from "../../types/data";
@@ -22,13 +23,18 @@ export const StaffGridItem: React.SFC<Props> = ({
 }) => (
     <>
         <div
-            className={[styles.component, className].join(" ")}
+            className={classNames(className)}
             style={style}
             onClick={() => onExpand(detail ? undefined : person)}
         >
             <Image source={person.imageNormal} />
         </div>
-        {detail && <StaffDetail staff={person} />}
+
+        {detail && (
+            <aside className={styles.detail}>
+                <StaffDetail staff={person} />{" "}
+            </aside>
+        )}
     </>
 );
 export default StaffGridItem;

@@ -1,9 +1,11 @@
 @import "../../scss/variables";
-
+@import "../../scss/animations";
 .component {
     display: flex;
     width: 100%;
-    grid-area: detail;
+    animation: grow-height-in 0.3s ease-in 0s 1 forwards;
+    height: 0;
+    overflow: hidden;
 }
 
 .funny,

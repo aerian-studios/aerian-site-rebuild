@@ -12,3 +12,14 @@
         opacity: 1;
     }
 }
+
+@keyframes grow-height-in {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        height: calc(100vh - 50px);
+    }
+}

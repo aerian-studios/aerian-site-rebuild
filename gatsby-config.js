@@ -42,6 +42,7 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: siteConfig.manifest
         },
+        `gatsby-plugin-offline`,
         {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {

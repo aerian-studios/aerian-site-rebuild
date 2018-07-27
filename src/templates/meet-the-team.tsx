@@ -24,14 +24,14 @@ export const pageQuery = graphql`
                 imageNormal {
                     childImageSharp {
                         fluid(maxWidth: 500, maxHeight: 500) {
-                            ...GatsbyImageSharpFluid_tracedSVG
+                            ...GatsbyImageSharpFluid_withWebp_tracedSVG
                         }
                     }
                 }
                 imageFunny {
                     childImageSharp {
                         fluid(maxWidth: 500, maxHeight: 500) {
-                            ...GatsbyImageSharpFluid_tracedSVG
+                            ...GatsbyImageSharpFluid_withWebp_noBase64
                         }
                     }
                 }

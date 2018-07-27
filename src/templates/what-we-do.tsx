@@ -30,14 +30,14 @@ export const pageQuery = graphql`
                 image {
                     childImageSharp {
                         fluid(maxWidth: 1000) {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }
                 smallImage {
                     childImageSharp {
                         fluid(maxWidth: 600) {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
                         image {
                             childImageSharp {
                                 fixed(width: 48) {
-                                    ...GatsbyImageSharpFixed
+                                    ...GatsbyImageSharpFixed_withWebp_tracedSVG
                                 }
                             }
                         }
@@ -68,7 +68,7 @@ export const pageQuery = graphql`
                     avatar {
                         childImageSharp {
                             fixed(width: 77) {
-                                ...GatsbyImageSharpFixed
+                                ...GatsbyImageSharpFixed_withWebp
                             }
                         }
                     }

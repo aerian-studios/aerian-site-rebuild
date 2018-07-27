@@ -1,84 +1,15 @@
 @import "../../scss/variables";
 @import "../../scss/animations";
+@import "../../scss/tools/tools";
 .component {
     display: flex;
     width: 100%;
-    &:nth-child(n + 2):nth-child(-n + 3) {
-        grid-area: detail1;
-    }
-    &:nth-child(n + 4):nth-child(-n + 5) {
-        grid-area: detail2;
-    }
-    &:nth-child(n + 6):nth-child(-n + 7) {
-        grid-area: detail3;
-    }
-    &:nth-child(n + 8):nth-child(-n + 9) {
-        grid-area: detail4;
-    }
-    &:nth-child(n + 10):nth-child(-n + 11) {
-        grid-area: detail5;
-    }
-    &:nth-child(n + 12):nth-child(-n + 13) {
-        grid-area: detail6;
-    }
-    &:nth-child(n + 14):nth-child(-n + 15) {
-        grid-area: detail7;
-    }
-    &:nth-child(n + 16):nth-child(-n + 17) {
-        grid-area: detail8;
-    }
-    &:nth-child(n + 18):nth-child(-n + 19) {
-        grid-area: detail9;
-    }
-    &:nth-child(n + 20):nth-child(-n + 21) {
-        grid-area: detail10;
-    }
-    &:nth-child(n + 22):nth-child(-n + 23) {
-        grid-area: detail11;
-    }
-    &:nth-child(n + 24):nth-child(-n + 25) {
-        grid-area: detail12;
-    }
-    &:nth-child(n + 26):nth-child(-n + 27) {
-        grid-area: detail13;
-    }
-    &:nth-child(n + 28):nth-child(-n + 29) {
-        grid-area: detail14;
-    }
-    &:nth-child(n + 30):nth-child(-n + 31) {
-        grid-area: detail15;
-    }
+    @include detail-grid-area(2, 30, "detail");
     @media (min-width: $bp-m) {
-        &:nth-child(n + 2):nth-child(-n + 4) {
-            grid-area: detail1;
-        }
-        &:nth-child(n + 5):nth-child(-n + 7) {
-            grid-area: detail2;
-        }
-        &:nth-child(n + 8):nth-child(-n + 10) {
-            grid-area: detail3;
-        }
-        &:nth-child(n + 11):nth-child(-n + 13) {
-            grid-area: detail4;
-        }
-        &:nth-child(n + 14):nth-child(-n + 16) {
-            grid-area: detail5;
-        }
-        &:nth-child(n + 17):nth-child(-n + 19) {
-            grid-area: detail6;
-        }
-        &:nth-child(n + 20):nth-child(-n + 22) {
-            grid-area: detail7;
-        }
-        &:nth-child(n + 23):nth-child(-n + 25) {
-            grid-area: detail8;
-        }
-        &:nth-child(n + 26):nth-child(-n + 28) {
-            grid-area: detail9;
-        }
-        &:nth-child(n + 29):nth-child(-n + 31) {
-            grid-area: detail10;
-        }
+        @include detail-grid-area(3, 30, "detail");
+    }
+    @media (min-width: $bp-xl) {
+        @include detail-grid-area(4, 30, "detail");
     }
     animation: grow-height-in 0.3s ease-in 0s 1 forwards;
     height: 0;

@@ -2,42 +2,94 @@
 // rem fallback - credits: http://zerosixthree.se/
 
 @function calculateRem($size) {
-  $remSize: calc((#{$size} / var(--t)));
-  @return calc(#{$remSize} * 1rem);
+    $remSize: calc((#{$size} / var(--t)));
+    @return calc(#{$remSize} * 1rem);
 }
 
 @mixin font-size($size) {
-  font-size: calc((#{$size}) * 1px);
-  font-size: calculateRem($size);
+    font-size: calc((#{$size}) * 1px);
+    font-size: calculateRem($size);
 }
 
 @function pxem($pixel-size, $pixel-context: $t) {
-  @return ($pixel-size / $pixel-context) * 1em;
+    @return ($pixel-size / $pixel-context) * 1em;
 }
 
 // center vertically and/or horizontally an absolute positioned element
 @mixin center($xy: xy) {
-  @if $xy == xy {
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    transform: translateX(-50%) translateY(-50%);
-  } @else if $xy == x {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-  } @else if $xy == y {
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-  }
+    @if $xy == xy {
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        transform: translateX(-50%) translateY(-50%);
+    } @else if $xy == x {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    } @else if $xy == y {
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+    }
+}
+@function grid-row($row, $columns, $prefix) {
+    $list: "";
+    $start: (($row - 1) * $columns) + 1;
+    $end: ($row * $columns) + 1;
+    @for $j from $start to $end {
+        $list: "#{$list} #{$prefix}#{$j}";
+    }
+    @return $list;
+}
+
+@function repeat-string($value, $count) {
+    $list: "";
+    @for $j from 0 to $count {
+        $list: "#{$list}#{$value}";
+    }
+    @return $list;
+}
+
+@function grid-columns($rows, $columns, $itemPrefix, $detailPrefix) {
+    $res: ();
+    @for $i from 1 through $rows {
+        $res: append($res, grid-row($i, $columns, $itemPrefix));
+        $res: append($res, repeat-string("#{$detailPrefix}#{$i} ", $columns));
+    }
+    @return $res;
+}
+
+@mixin expanding-grid-areas(
+    $columns,
+    $count,
+    $itemPrefix: "staff",
+    $detailPrefix: "detail"
+) {
+    $rows: ceil($count/$columns);
+    grid-template-areas: grid-columns(
+        $rows,
+        $columns,
+        $itemPrefix,
+        $detailPrefix
+    );
+}
+
+@mixin detail-grid-area($columns, $count, $prefix) {
+    $rows: ceil($count / $columns);
+    @for $i from 0 to $rows {
+        $start: $i * $columns + 2;
+        $end: (($i + 1) * $columns) + 1;
+        &:nth-child(n + #{$start}):nth-child(-n + #{$end}) {
+            grid-area: #{$prefix}#{$i + 1};
+        }
+    }
 }
 
 // Use css variables with fallbacks
 @mixin variable($property, $variable, $fallback) {
-  #{$property}: $fallback;
-  #{$property}: var($variable);
+    #{$property}: $fallback;
+    #{$property}: var($variable);
 }
 
 /**
@@ -45,69 +97,69 @@
  */
 
 @mixin shadow-by-name($name: "strong-1") {
-  $fr: 8px;
-  @if $name == "strong-1" {
-    @include shadows(0, $fr / 4, $fr);
-  } @else if $name == "strong-2" {
-    @include shadows(0, $fr, $fr * 2);
-  } @else if $name == "strong-3" {
-    @include shadows(0, $fr * 2, $fr * 3);
-  } @else if $name == "strong-4" {
-    @include shadows(0, $fr * 3, $fr * 4);
-  } @else if $name == "strong-5" {
-    @include shadows(0, $fr * 4, $fr * 5);
-  } @else if $name == "light-1" {
-    @include shadows(0, $fr / 4, $fr, 0, $c-shadow-light);
-  } @else if $name == "light-2" {
-    @include shadows(0, $fr, $fr * 2, 0, $c-shadow-light);
-  } @else if $name == "light-3" {
-    @include shadows(0, $fr * 2, $fr * 3, 0, $c-shadow-light);
-  } @else if $name == "light-4" {
-    @include shadows(0, $fr * 3, $fr * 4, 0, $c-shadow-light);
-  } @else if $name == "light-5" {
-    @include shadows(0, $fr * 4, $fr * 5, 0, $c-shadow-light);
-  }
+    $fr: 8px;
+    @if $name == "strong-1" {
+        @include shadows(0, $fr / 4, $fr);
+    } @else if $name == "strong-2" {
+        @include shadows(0, $fr, $fr * 2);
+    } @else if $name == "strong-3" {
+        @include shadows(0, $fr * 2, $fr * 3);
+    } @else if $name == "strong-4" {
+        @include shadows(0, $fr * 3, $fr * 4);
+    } @else if $name == "strong-5" {
+        @include shadows(0, $fr * 4, $fr * 5);
+    } @else if $name == "light-1" {
+        @include shadows(0, $fr / 4, $fr, 0, $c-shadow-light);
+    } @else if $name == "light-2" {
+        @include shadows(0, $fr, $fr * 2, 0, $c-shadow-light);
+    } @else if $name == "light-3" {
+        @include shadows(0, $fr * 2, $fr * 3, 0, $c-shadow-light);
+    } @else if $name == "light-4" {
+        @include shadows(0, $fr * 3, $fr * 4, 0, $c-shadow-light);
+    } @else if $name == "light-5" {
+        @include shadows(0, $fr * 4, $fr * 5, 0, $c-shadow-light);
+    }
 }
 
 @mixin shadows($left, $top, $blur, $offset: 0, $colour: $c-shadow) {
-  box-shadow: $left $top $blur $offset $colour;
+    box-shadow: $left $top $blur $offset $colour;
 }
 
 @mixin chevron($size: 0.63em, $thickness: 1px) {
-  content: "";
-  display: inline-block;
-  width: $size;
-  height: $size;
-  border-right: $thickness solid currentColor;
-  border-top: $thickness solid currentColor;
-  transform: translateY(-1 * $thickness) rotate(45deg);
-  margin: 0 -14px 0 5px;
+    content: "";
+    display: inline-block;
+    width: $size;
+    height: $size;
+    border-right: $thickness solid currentColor;
+    border-top: $thickness solid currentColor;
+    transform: translateY(-1 * $thickness) rotate(45deg);
+    margin: 0 -14px 0 5px;
 }
 
 @mixin create-dot($position) {
-  $size: 5px;
-  line-height: 0px;
-  content: "";
-  position: absolute;
-  left: $position;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  width: $size;
-  height: $size;
-  background-color: currentColor;
-  border-radius: 50%;
+    $size: 5px;
+    line-height: 0px;
+    content: "";
+    position: absolute;
+    left: $position;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: $size;
+    height: $size;
+    background-color: currentColor;
+    border-radius: 50%;
 }
 
 @mixin submenu-indicator() {
-  @include create-dot(0px);
+    @include create-dot(0px);
 
-  &::before {
-    @include create-dot(11px);
-  }
-  &::after {
-    @include create-dot(22px);
-  }
+    &::before {
+        @include create-dot(11px);
+    }
+    &::after {
+        @include create-dot(22px);
+    }
 }
 
 /*
@@ -118,58 +170,58 @@ https://css-tricks.com/easing-linear-gradients/
 */
 
 @mixin scrimGradient($startColor: var(--blackish), $direction: "to bottom") {
-  $scrimCoordinates: (
-    0: 1,
-    47: 0.9,
-    56.5: 0.738,
-    65: 0.541,
-    73: 0.278,
-    80.2: 0.194,
-    86.1: 0.126,
-    90: 0.075,
-    93.4: 0.042,
-    95.2: 0.021,
-    98.2: 0.008,
-    99.2: 0.002,
-    100: 0
-  );
+    $scrimCoordinates: (
+        0: 1,
+        47: 0.9,
+        56.5: 0.738,
+        65: 0.541,
+        73: 0.278,
+        80.2: 0.194,
+        86.1: 0.126,
+        90: 0.075,
+        93.4: 0.042,
+        95.2: 0.021,
+        98.2: 0.008,
+        99.2: 0.002,
+        100: 0
+    );
 
-  $hue: hue($startColor);
-  $saturation: saturation($startColor);
-  $lightness: lightness($startColor);
-  $stops: ();
+    $hue: hue($startColor);
+    $saturation: saturation($startColor);
+    $lightness: lightness($startColor);
+    $stops: ();
 
-  @each $colorStop, $alphaValue in $scrimCoordinates {
-    $stop: hsla($hue, $saturation, $lightness, $alphaValue)
-      percentage($colorStop/100);
-    $stops: append($stops, $stop, comma);
-  }
+    @each $colorStop, $alphaValue in $scrimCoordinates {
+        $stop: hsla($hue, $saturation, $lightness, $alphaValue)
+            percentage($colorStop/100);
+        $stops: append($stops, $stop, comma);
+    }
 
-  background: linear-gradient(unquote($direction), $stops);
+    background: linear-gradient(unquote($direction), $stops);
 }
 
 @mixin smoothScrimGradient(
-  $startColor: var(--blackish),
-  $direction: "to bottom"
+    $startColor: var(--blackish),
+    $direction: "to bottom"
 ) {
-  $hue: hue($startColor);
-  $saturation: saturation($startColor);
-  $lightness: lightness($startColor);
+    $hue: hue($startColor);
+    $saturation: saturation($startColor);
+    $lightness: lightness($startColor);
 
-  background: linear-gradient(
-    unquote($direction),
-    hsl($hue, $saturation, $lightness) 0%,
-    hsla($hue, $saturation, $lightness, 0.738) 19%,
-    hsla($hue, $saturation, $lightness, 0.541) 34%,
-    hsla($hue, $saturation, $lightness, 0.382) 47%,
-    hsla($hue, $saturation, $lightness, 0.278) 56.5%,
-    hsla($hue, $saturation, $lightness, 0.194) 65%,
-    hsla($hue, $saturation, $lightness, 0.126) 73%,
-    hsla($hue, $saturation, $lightness, 0.075) 80.2%,
-    hsla($hue, $saturation, $lightness, 0.042) 86.1%,
-    hsla($hue, $saturation, $lightness, 0.021) 91%,
-    hsla($hue, $saturation, $lightness, 0.008) 95.2%,
-    hsla($hue, $saturation, $lightness, 0.002) 98.2%,
-    hsla($hue, $saturation, $lightness, 0) 100%
-  );
+    background: linear-gradient(
+        unquote($direction),
+        hsl($hue, $saturation, $lightness) 0%,
+        hsla($hue, $saturation, $lightness, 0.738) 19%,
+        hsla($hue, $saturation, $lightness, 0.541) 34%,
+        hsla($hue, $saturation, $lightness, 0.382) 47%,
+        hsla($hue, $saturation, $lightness, 0.278) 56.5%,
+        hsla($hue, $saturation, $lightness, 0.194) 65%,
+        hsla($hue, $saturation, $lightness, 0.126) 73%,
+        hsla($hue, $saturation, $lightness, 0.075) 80.2%,
+        hsla($hue, $saturation, $lightness, 0.042) 86.1%,
+        hsla($hue, $saturation, $lightness, 0.021) 91%,
+        hsla($hue, $saturation, $lightness, 0.008) 95.2%,
+        hsla($hue, $saturation, $lightness, 0.002) 98.2%,
+        hsla($hue, $saturation, $lightness, 0) 100%
+    );
 }

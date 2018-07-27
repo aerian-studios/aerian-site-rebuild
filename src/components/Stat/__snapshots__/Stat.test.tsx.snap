@@ -2,17 +2,17 @@
 
 exports[`Stat renders correctly 1`] = `
 <figure
-  className="stat  stat"
+  className="  stat"
 >
   <span
-    className="statNumber statNumber"
+    className=" statNumber"
   >
     <strong>
       477455
     </strong>
   </span>
   <span
-    className="statDescription statDescription"
+    className=" statDescription"
   >
     Total places booked 
   </span>

@@ -1,7 +1,7 @@
 @import "../../scss/variables.scss";
 @import "../../scss/tools/tools.scss";
 
-.stat {
+.perfomance {
     border: 1px solid fuchsia;
     display: flex;
     flex-flow: column wrap;
@@ -15,14 +15,14 @@
     }
 }
 
-.statNumber {
+.perfomanceNumber {
     @include font-size(var(--t-xl));
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.statDescription {
+.perfomanceDescription {
     display: block;
     background-color: white;
     @media (min-width: $bp-m) {

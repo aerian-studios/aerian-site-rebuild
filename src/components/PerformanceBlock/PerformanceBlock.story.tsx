@@ -9,6 +9,8 @@ import { PerformanceBlock } from "./index";
 storiesOf("PerformanceBlock", module).add(
     "Default",
     withInfo({ inline: true })(() => (
-        <PerformanceBlock performance={[performance]} />
+        <PerformanceBlock
+            performance={[performance, performance, performance]}
+        />
     ))
 );

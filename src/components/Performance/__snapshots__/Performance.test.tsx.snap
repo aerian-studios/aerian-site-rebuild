@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Performance renders correctly 1`] = `
+<figure
+  className=" "
+>
+  <span>
+    <strong>
+      558000
+    </strong>
+  </span>
+  <span>
+    558,000 additional visits
+  </span>
+</figure>
+`;

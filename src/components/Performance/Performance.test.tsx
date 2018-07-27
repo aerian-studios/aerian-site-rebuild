@@ -2,18 +2,13 @@
 import * as React from "react";
 
 import * as renderer from "react-test-renderer";
+import { performance } from "../../types/fixtures";
+import { Performance } from "./index";
 
-import { Stat } from "./index";
-
-describe("Stat", () =>
+describe("Performance", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(
-                <Stat
-                    statNumber={477455}
-                    statDescription="Total places booked "
-                />
-            )
+            .create(<Performance performance={performance} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
         expect(true).toBeTruthy();

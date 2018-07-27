@@ -1,13 +1,14 @@
 import * as React from "react";
 
-import { Performance } from "../../types/data";
+import { Performance as PerformanceType } from "../../types/data";
 import { GroupThree } from "../GroupThree";
+import { Performance } from "../Performance";
 import * as styles from "./PerformanceBlock.module.scss";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
-    performance: Performance[];
+    performance: PerformanceType[];
 }
 
 export const PerformanceBlock: React.SFC<Props> = ({
@@ -20,10 +21,7 @@ export const PerformanceBlock: React.SFC<Props> = ({
             <h2>Performance &amp; Statistics</h2>
             <GroupThree>
                 {performance.map(perf => (
-                    <div key={perf.title}>
-                        <h4>{perf.title}</h4>
-                        <p>{perf.text}</p>
-                    </div>
+                    <Performance performance={perf} key={perf.title} />
                 ))}
             </GroupThree>
         </div>

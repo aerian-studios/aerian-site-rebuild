@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import * as React from "react";
 
 import { Staff } from "../../types/data";
@@ -26,7 +27,7 @@ export const StaffGridItem: React.SFC<Props> = ({
     return (
         <>
             <div
-                className={[styles.component, className].join(" ")}
+                className={classNames(className)}
                 style={contextual}
                 onClick={() => onExpand(detail ? undefined : person)}
             >

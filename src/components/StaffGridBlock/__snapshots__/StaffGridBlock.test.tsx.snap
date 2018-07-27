@@ -5,7 +5,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
   className=" "
 >
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -22,7 +22,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -39,7 +39,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -56,7 +56,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -73,7 +73,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -90,7 +90,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -107,7 +107,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -124,7 +124,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -141,7 +141,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -158,7 +158,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -175,7 +175,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -192,7 +192,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -209,7 +209,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -226,7 +226,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -243,7 +243,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -260,7 +260,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -277,7 +277,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -294,7 +294,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -311,7 +311,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -328,7 +328,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -345,7 +345,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -362,7 +362,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -379,7 +379,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -396,7 +396,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -413,7 +413,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -430,7 +430,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -447,7 +447,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -464,7 +464,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -481,7 +481,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -498,7 +498,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -515,7 +515,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -532,7 +532,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {
@@ -549,7 +549,7 @@ exports[`StaffGridBlock renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" "
+    className=""
     onClick={[Function]}
     style={
       Object {

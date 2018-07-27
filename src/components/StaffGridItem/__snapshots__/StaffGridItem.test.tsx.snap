@@ -2,7 +2,7 @@
 
 exports[`StaffGridItem renders correctly 1`] = `
 <div
-  className=" myClass"
+  className="myClass"
   onClick={[Function]}
   style={
     Object {

@@ -3,22 +3,68 @@
 .component {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: auto;
     grid-template-areas:
         "staff1 staff2"
-        "detail detail";
+        "detail1 detail1"
+        "staff3 staff4"
+        "detail2 detail2"
+        "staff5 staff6"
+        "detail3 detail3"
+        "staff7 staff8"
+        "detail4 detail4"
+        "staff9 staff10"
+        "detail5 detail5"
+        "staff11 staff12"
+        "detail6 detail6"
+        "staff13 staff14"
+        "detail7 detail7"
+        "staff15 staff16"
+        "detail8 detail8"
+        "staff17 staff18"
+        "detail9 detail9"
+        "staff19 staff20"
+        "detail10 detail10"
+        "staff21 staff22"
+        "detail11 detail11"
+        "staff23 staff24"
+        "detail12 detail12"
+        "staff25 staff26"
+        "detail13 detail13"
+        "staff27 staff28"
+        "detail14 detail14"
+        "staff29 staff30"
+        "detail15 detail15";
 
     @media (min-width: $bp-m) {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
             "staff1 staff2 staff3"
-            "detail detail detail";
+            "detail1 detail1 detail1"
+            "staff4 staff5 staff6"
+            "detail2 detail2 detail2"
+            "staff7 staff8 staff9"
+            "detail3 detail3 detail3"
+            "staff10 staff11 staff12"
+            "detai4 detail4 detail4"
+            "staff13 staff14 staff15"
+            "detail5 detail5 detail5"
+            "staff16 staff17 staff18"
+            "detail6 detail6 detail6"
+            "staff19 staff20 staff21"
+            "detail7 detail7 detail7"
+            "staff22 staff23 staff24"
+            "detail8 detail8 detail8"
+            "staff25 staff26 staff27"
+            "detail9 detail9 detail9"
+            "staff28 staff29 staff30"
+            "detail10 detail10 detail10";
     }
 
     @media (min-width: $bp-xl) {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "staff1 staff2 staff3 staff4"
-            "detail detail detail detail";
+            "detail1 detail1 detail1 detail1";
     }
 }

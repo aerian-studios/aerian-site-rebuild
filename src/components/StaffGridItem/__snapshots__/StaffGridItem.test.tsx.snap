@@ -4,6 +4,11 @@ exports[`StaffGridItem renders correctly 1`] = `
 <div
   className=" myClass"
   onClick={[Function]}
+  style={
+    Object {
+      "gridArea": "staffNaN",
+    }
+  }
 >
   <div
     className=""

@@ -40,6 +40,7 @@ export class StaffGridBlock extends React.PureComponent<Props, State> {
                         person={person}
                         detail={this.state.selectedItem === i}
                         onExpand={this.expandDetail}
+                        index={i}
                     />
                 ))}
             </div>

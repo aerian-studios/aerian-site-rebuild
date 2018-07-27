@@ -11,6 +11,7 @@ interface Props {
     person: Staff;
     detail?: boolean;
     onExpand: (person?: Staff) => void;
+    index?: number;
 }
 
 export const StaffGridItem: React.SFC<Props> = ({
@@ -18,17 +19,21 @@ export const StaffGridItem: React.SFC<Props> = ({
     className,
     person,
     detail,
-    onExpand
-}) => (
-    <>
-        <div
-            className={[styles.component, className].join(" ")}
-            style={style}
-            onClick={() => onExpand(detail ? undefined : person)}
-        >
-            <Image source={person.imageNormal} />
-        </div>
-        {detail && <StaffDetail staff={person} />}
-    </>
-);
+    onExpand,
+    index
+}) => {
+    const contextual = { ...style, gridArea: `staff${Number(index) + 1}` };
+    return (
+        <>
+            <div
+                className={[styles.component, className].join(" ")}
+                style={contextual}
+                onClick={() => onExpand(detail ? undefined : person)}
+            >
+                <Image source={person.imageNormal} />
+            </div>
+            {detail && <StaffDetail staff={person} />}
+        </>
+    );
+};
 export default StaffGridItem;

@@ -6,7 +6,7 @@ export const pageFieldsFragment = graphql`
         heroImage {
             childImageSharp {
                 fluid(maxWidth: 2048) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
         }
@@ -24,7 +24,7 @@ export const clientFragment = graphql`
         logo {
             childImageSharp {
                 fluid(maxWidth: 420) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
             }
             publicURL
@@ -32,7 +32,7 @@ export const clientFragment = graphql`
         promoLogo {
             childImageSharp {
                 fluid(maxWidth: 420) {
-                    ...GatsbyImageSharpFluid_tracedSVG
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
             }
             publicURL
@@ -52,7 +52,7 @@ export const projectBoxFragment = graphql`
         heroImage {
             childImageSharp {
                 fluid(maxWidth: 1066, maxHeight: 1066) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
             publicURL
@@ -76,7 +76,7 @@ export const projectFragment = graphql`
         heroImage {
             childImageSharp {
                 fluid(maxWidth: 2048) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                 }
             }
             publicURL
@@ -88,7 +88,7 @@ export const projectFragment = graphql`
             image {
                 childImageSharp {
                     fluid(maxWidth: 1024) {
-                        ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_withWebp
                     }
                 }
                 publicURL
@@ -102,7 +102,7 @@ export const projectFragment = graphql`
                 image {
                     childImageSharp {
                         fixed(width: 290) {
-                            ...GatsbyImageSharpFixed
+                            ...GatsbyImageSharpFixed_withWebp_tracedSVG
                         }
                     }
                     publicURL
@@ -116,7 +116,7 @@ export const projectFragment = graphql`
                 image {
                     childImageSharp {
                         fixed(width: 290) {
-                            ...GatsbyImageSharpFixed
+                            ...GatsbyImageSharpFixed_withWebp_tracedSVG
                         }
                     }
                     publicURL
@@ -132,7 +132,7 @@ export const projectFragment = graphql`
                 image {
                     childImageSharp {
                         fixed(width: 290) {
-                            ...GatsbyImageSharpFixed
+                            ...GatsbyImageSharpFixed_withWebp_tracedSVG
                         }
                     }
                     publicURL
@@ -151,7 +151,7 @@ export const projectFragment = graphql`
             avatar {
                 childImageSharp {
                     fluid(maxWidth: 231) {
-                        ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                 }
                 publicURL

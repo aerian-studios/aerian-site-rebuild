@@ -7,7 +7,6 @@ module.exports = {
         "ProjectsJson.client": "ClientsJson"
     },
     plugins: [
-        `gatsby-plugin-netlify`,
         `gatsby-plugin-netlify-cache`,
         `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
@@ -48,9 +47,9 @@ module.exports = {
             options: {
                 // One convention is to place your Netlify CMS customization code in a
                 // `src/cms` directory.
-                modulePath: `${__dirname}/src/cms/cms.ts`,
-                stylesPath: `${__dirname}/src/scss/base-theme.scss`
+                modulePath: `${__dirname}/src/cms/cms.ts`
             }
-        }
+        },
+        `gatsby-plugin-netlify`
     ]
 };

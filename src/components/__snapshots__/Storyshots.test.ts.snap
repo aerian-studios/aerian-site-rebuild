@@ -20336,9 +20336,16 @@ exports[`Storyshots StaffDetail Default 1`] = `
   <div
     style={Object {}}
   >
-    <div
-      className=" "
+    <aside
+      className=""
     >
+      <button
+        onClick={[Function]}
+      >
+        <i
+          className="fa"
+        />
+      </button>
       <figure>
         <div
           className=""
@@ -20491,7 +20498,7 @@ exports[`Storyshots StaffDetail Default 1`] = `
           Paul is also a double Emmy nominated writer & producer for  brands inc. BBC, How to Train Your Dragon and Peppa Pig; and owns over 20k comics. Paul has also been highlighted as one of the top ten innovators in the UK by UKTI.
         </p>
       </div>
-    </div>
+    </aside>
   </div>
   <div>
     <div
@@ -20546,7 +20553,7 @@ exports[`Storyshots StaffDetail Default 1`] = `
                 }
               >
                 &lt;
-                Unknown
+                StaffDetail
               </span>
               <span>
                 <span>
@@ -20729,7 +20736,7 @@ exports[`Storyshots StaffDetail Default 1`] = `
             }
           >
             "
-            
+            StaffDetail
             " Component
           </h2>
           <small>

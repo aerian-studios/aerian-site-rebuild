@@ -28,8 +28,6 @@ Array [
           </h1>
           <a
             href="/our-work"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             View our work
           </a>
@@ -57,8 +55,6 @@ Array [
       >
         <a
           href="/our-work/project/cnn-africa-view"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <figure
             className=" "

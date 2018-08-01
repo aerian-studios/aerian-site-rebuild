@@ -85,8 +85,6 @@ exports[`Storyshots AboutPage Default 1`] = `
             </h1>
             <a
               href="/our-work"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               View our work
             </a>
@@ -114,8 +112,6 @@ exports[`Storyshots AboutPage Default 1`] = `
         >
           <a
             href="/our-work/project/cnn-africa-view"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             <figure
               className=" "
@@ -2723,8 +2719,6 @@ exports[`Storyshots ClientGridBlock Default 1`] = `
       >
         <a
           href="/our-work/project/cnn-africa-view"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <figure
             className=" "
@@ -3095,8 +3089,6 @@ exports[`Storyshots ClientGridItem Default 1`] = `
     >
       <a
         href="/our-work/project/cnn-africa-view"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <figure
           className=" "
@@ -9302,11 +9294,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page1"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9315,11 +9305,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page2"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9328,11 +9316,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page3"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9341,11 +9327,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page4"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9363,11 +9347,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page1"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9376,11 +9358,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page2"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9389,11 +9369,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page3"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9402,11 +9380,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page4"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10185,8 +10161,6 @@ exports[`Storyshots OnwardJournies Default 1`] = `
         </h2>
         <a
           href="/contact-us"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Contact us
         </a>
@@ -10429,8 +10403,6 @@ exports[`Storyshots OurWorkPage Default 1`] = `
           <div>
             <a
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               <div
                 className=""
@@ -16280,41 +16252,36 @@ exports[`Storyshots ProjectPage Default 1`] = `
       >
         <a
           className=""
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className=""
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className=""
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className=""
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className=""
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -16772,8 +16739,6 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </h2>
             <a
               href="/contact-us"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               Contact us
             </a>
@@ -17952,41 +17917,36 @@ exports[`Storyshots SectionNav Default 1`] = `
       >
         <a
           className=""
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className=""
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className=""
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className=""
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className=""
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -18363,41 +18323,36 @@ exports[`Storyshots SectionNav With contextual styles 1`] = `
       >
         <a
           className="sectionNavItem"
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className="sectionNavItem"
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className="sectionNavItem"
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className="sectionNavItem"
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className="sectionNavItem"
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -23552,41 +23507,36 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
       >
         <a
           className=""
-          href="/#wePlan"
+          href="#wePlan"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We plan
         </a>
         <a
           className=""
-          href="/#weDesign"
+          href="#weDesign"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We design
         </a>
         <a
           className=""
-          href="/#weDevelop"
+          href="#weDevelop"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We develop
         </a>
         <a
           className=""
-          href="/#weDeliver"
+          href="#weDeliver"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We deliver
         </a>
         <a
           className=""
-          href="/#weCelebrate"
+          href="#weCelebrate"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We celebrate
         </a>

@@ -20,8 +20,6 @@ exports[`OnwardJournies renders correctly 1`] = `
     </h2>
     <a
       href="/contact-us"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
     >
       Contact us
     </a>

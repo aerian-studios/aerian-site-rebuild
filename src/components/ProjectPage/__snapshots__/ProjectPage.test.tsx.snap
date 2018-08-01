@@ -81,7 +81,7 @@ Array [
   </nav>,
   <section>
     <div
-      className=" "
+      className=""
     >
       <div>
         Client logo
@@ -108,7 +108,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -148,7 +148,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -251,7 +251,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -338,7 +338,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -420,7 +420,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -471,7 +471,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -510,7 +510,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "

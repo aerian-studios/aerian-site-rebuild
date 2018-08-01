@@ -4,3 +4,4 @@ export const bigScreenImage: string;
 export const smallScreenImage: string;
 export const block: string;
 export const alternateBlock: string;
+export const body: string;

@@ -1,4 +1,5 @@
 @import "../../scss/variables";
+@import "../../scss/tools/tools";
 .component {
     @media (min-width: $bp-m) {
         display: flex;
@@ -8,13 +9,20 @@
 .quoteLeft {
     line-height: 1.9em;
     display: block;
-    font-size: 1em;
-    line-height: 50%;
+    font-size: 2em;
     fill: $c-menu-bg;
 }
 
 .testimonialText {
     padding-bottom: 10px;
+    @include font-size(20);
+    line-height: calculateRem(28);
+    font-family: $t-font-basic;
+    font-weight: 400;
+    @media (min-width: $bp-m) {
+        @include font-size(24);
+        line-height: calculateRem(32);
+    }
 }
 
 .testimonialFooter {

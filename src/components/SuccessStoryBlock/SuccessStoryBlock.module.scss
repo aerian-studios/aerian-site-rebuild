@@ -1,3 +1,31 @@
+@import "../../scss/variables";
+@import "../../scss/tools/tools";
+
 .component {
-    foo: bar;
+    padding: var(--side-gutter);
+    h3 {
+        @include font-size(var(--t-base));
+        span {
+            display: inline-block;
+            @include font-size(var(--t-small));
+            background: $c-brand-a;
+            color: $c-brand-c;
+            padding: 0 10px;
+            margin-right: var(--s-1);
+        }
+    }
+    .stat {
+        text-transform: uppercase;
+        h3 {
+            @include font-size(28);
+        }
+        p {
+            font-family: $t-font-accent;
+            @include font-size(var(--t-small));
+        }
+        .image {
+            height: 72px;
+            display: block;
+        }
+    }
 }

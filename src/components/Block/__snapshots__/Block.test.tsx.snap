@@ -2,6 +2,6 @@
 
 exports[`Block renders correctly 1`] = `
 <div
-  className=" myClass"
+  className="myClass"
 />
 `;

@@ -24,18 +24,70 @@ Array [
       <div>
         <div>
           <h1>
-            What We Do
+            We work hard
+            <br />
+            so users don't have to
           </h1>
         </div>
       </div>
     </div>
     <div />
   </header>,
+  <nav
+    className=""
+  >
+    <div
+      className=""
+    >
+      <a
+        className=""
+        href="/#wePlan"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        We plan
+      </a>
+      <a
+        className=""
+        href="/#weDesign"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        We design
+      </a>
+      <a
+        className=""
+        href="/#weDevelop"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        We develop
+      </a>
+      <a
+        className=""
+        href="/#weDeliver"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        We deliver
+      </a>
+      <a
+        className=""
+        href="/#weCelebrate"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        We celebrate
+      </a>
+    </div>
+  </nav>,
   <section>
     <div
-      className=" "
+      className=""
     >
-      <div>
+      <div
+        className="undefined"
+      >
         <div>
           <h2>
             We plan
@@ -65,24 +117,28 @@ Array [
             If it's hard, or inconceivable, give us a call. We love that stuff.
           </p>
         </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/425/we-plan-image.jpg"
-          />
-        </div>
-      </div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/535/we-plan-image-small.jpg"
-        />
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/425/we-plan-image.jpg"
+            />
+          </div>
+        </figure>
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/535/we-plan-image-small.jpg"
+            />
+          </div>
+        </figure>
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
@@ -126,16 +182,11 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
-      <div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
-          />
-        </div>
+      <div
+        className=""
+      >
         <div>
           <h2>
             We design
@@ -165,39 +216,52 @@ Array [
             Multi-tiered rapid prototyping for user and stakeholder tests.
           </p>
         </div>
-      </div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
-        />
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
+            />
+          </div>
+        </figure>
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
+            />
+          </div>
+        </figure>
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
       >
-        <h2>
+        <h3>
           <span>
             Success story
           </span>
            
           BBC iWonder The Perfect Diet for you guide
-        </h2>
+        </h3>
         <div
           className=" "
         >
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               90,000 
             </h3>
@@ -206,13 +270,15 @@ Array [
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               Top guide 
             </h3>
@@ -221,13 +287,15 @@ Array [
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               1.5m
             </h3>
@@ -236,13 +304,15 @@ Array [
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               22,000
             </h3>
@@ -254,9 +324,11 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
-      <div>
+      <div
+        className="undefined"
+      >
         <div>
           <h2>
             We develop
@@ -286,46 +358,52 @@ Array [
             Complex, high availability bespoke application build is our speciality.
           </p>
         </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/424/we-develop.jpg"
-          />
-        </div>
-      </div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/537/we-develop-image-small.jpg"
-        />
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/424/we-develop.jpg"
+            />
+          </div>
+        </figure>
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/537/we-develop-image-small.jpg"
+            />
+          </div>
+        </figure>
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
       >
-        <h2>
+        <h3>
           <span>
             Success story
           </span>
            
           From front-end to back-end and Dev Ops, our team excels in building systems that scale 
-        </h2>
+        </h3>
         <div
           className=" "
         >
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/540/scrum-leader.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/540/scrum-leader.png"
+                />
+              </div>
+            </figure>
             <h3>
               7 Accredited 
             </h3>
@@ -334,13 +412,15 @@ Array [
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/541/server-management.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/541/server-management.png"
+                />
+              </div>
+            </figure>
             <h3>
               Managing
             </h3>
@@ -349,13 +429,15 @@ Array [
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/542/uptime.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/542/uptime.png"
+                />
+              </div>
+            </figure>
             <h3>
               99.95%
             </h3>
@@ -364,13 +446,15 @@ Array [
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/543/languages.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/543/languages.png"
+                />
+              </div>
+            </figure>
             <h3>
               Experts
             </h3>
@@ -382,16 +466,11 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
-      <div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
-          />
-        </div>
+      <div
+        className=""
+      >
         <div>
           <h2>
             We deliver
@@ -421,17 +500,28 @@ Array [
             We work with your teams to train, document and create failovers, and ensure it's not 'our' project, it's yours.
           </p>
         </div>
-      </div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
-        />
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
+            />
+          </div>
+        </figure>
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
+            />
+          </div>
+        </figure>
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
@@ -475,9 +565,11 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
-      <div>
+      <div
+        className="undefined"
+      >
         <div>
           <h2>
             We celebrate
@@ -507,20 +599,24 @@ Array [
             We're a team, internally, and with clients. We work hard together, we celebrate together.
           </p>
         </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/480/we-celebrate.jpg"
-          />
-        </div>
-      </div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/538/we-celebrate-image-small.jpg"
-        />
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/480/we-celebrate.jpg"
+            />
+          </div>
+        </figure>
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/538/we-celebrate-image-small.jpg"
+            />
+          </div>
+        </figure>
       </div>
     </div>
   </section>,

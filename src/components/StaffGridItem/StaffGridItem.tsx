@@ -33,7 +33,16 @@ export const StaffGridItem: React.SFC<Props> = ({
             >
                 <Image source={person.imageNormal} />
             </div>
-            {detail && <StaffDetail staff={person} />}
+            {detail && (
+                <StaffDetail
+                    staff={person}
+                    onClose={() => {
+                        window.setTimeout(() => {
+                            onExpand(undefined);
+                        }, 300);
+                    }}
+                />
+            )}
         </>
     );
 };

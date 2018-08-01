@@ -287,6 +287,10 @@ hr {
     margin: 0;
 }
 
+svg {
+    fill: currentColor;
+}
+
 svg * {
     fill: inherit;
     stroke: inherit;

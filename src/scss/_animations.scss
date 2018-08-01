@@ -23,3 +23,24 @@
         height: calc(100vh - 50px);
     }
 }
+
+.staff--detail-enter {
+    opacity: 0.01;
+    height: 0;
+}
+
+.staff--detail-enter.staff--detail-enter-active {
+    opacity: 1;
+    height: calc(100vh - 50px);
+    transition: all 300ms ease-in;
+}
+
+.staff--detail-leave {
+    opacity: 1;
+}
+
+.staff--detail-leave.staff--detail-leave-active {
+    opacity: 0.01;
+    height: 0;
+    transition: all 300ms ease-in;
+}

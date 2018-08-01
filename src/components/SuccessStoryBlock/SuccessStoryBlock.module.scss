@@ -18,14 +18,11 @@
         text-transform: uppercase;
         h3 {
             @include font-size(28);
+            margin: 0;
         }
         p {
             font-family: $t-font-accent;
             @include font-size(var(--t-small));
-        }
-        .image {
-            height: 72px;
-            display: block;
         }
     }
 }

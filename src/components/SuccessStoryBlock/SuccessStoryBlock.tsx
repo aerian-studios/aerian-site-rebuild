@@ -24,7 +24,7 @@ export const SuccessStoryBlock: React.SFC<Props> = ({
                 successStory.stats.map(stat => (
                     // Stat
                     <div key={stat.title} className={styles.stat}>
-                        <figure className={styles.image}>
+                        <figure>
                             <Image source={stat.image} />
                         </figure>
                         <h3>{stat.title}</h3>

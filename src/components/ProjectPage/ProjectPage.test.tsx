@@ -3,18 +3,13 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
-import { MemoryRouter } from "react-router";
 import { project } from "../../types/fixtures";
 import { ProjectPage } from "./index";
 
 describe("ProjectPage", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(
-                <MemoryRouter>
-                    <ProjectPage project={project} />
-                </MemoryRouter>
-            )
+            .create(<ProjectPage project={project} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

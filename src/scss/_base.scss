@@ -125,6 +125,14 @@ h3 {
 h1 {
     @include font-size(var(--t-h1));
     line-height: calculateRem(53);
+    &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: $c-brand-b;
+        display: inline-block;
+        margin-left: 2px;
+    }
 }
 
 h2 {
@@ -260,21 +268,6 @@ q {
         display: inline;
         color: $c-brand-a;
         font-size: var(--t);
-    }
-}
-
-blockquote {
-    @include font-size(20);
-    line-height: calculateRem(28);
-    font-family: $t-font-basic;
-    font-weight: 400;
-    @media (min-width: $bp-m) {
-        @include font-size(24);
-        line-height: calculateRem(32);
-    }
-    @media (min-width: $bp-l) {
-        @include font-size(30);
-        line-height: calculateRem(38);
     }
 }
 

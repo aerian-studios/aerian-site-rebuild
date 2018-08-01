@@ -1,9 +1,6 @@
 /// <reference types="@types/jest" />
 import * as React from "react";
-
-import { MemoryRouter } from "react-router-dom";
 import * as renderer from "react-test-renderer";
-
 import { SectionNav } from ".";
 
 const keys = {
@@ -18,13 +15,11 @@ describe("SectionNav", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
-                <MemoryRouter>
-                    <SectionNav
-                        className="myClass"
-                        onNavigation={() => false}
-                        keyConsts={keys}
-                    />
-                </MemoryRouter>
+                <SectionNav
+                    className="myClass"
+                    onNavigation={() => false}
+                    keyConsts={keys}
+                />
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
@@ -33,13 +28,11 @@ describe("SectionNav", () => {
     it("renders with the correct nav items", () => {
         const tree = renderer
             .create(
-                <MemoryRouter>
-                    <SectionNav
-                        className="myClass"
-                        onNavigation={() => false}
-                        keyConsts={keys}
-                    />
-                </MemoryRouter>
+                <SectionNav
+                    className="myClass"
+                    onNavigation={() => false}
+                    keyConsts={keys}
+                />
             )
             .toJSON();
 

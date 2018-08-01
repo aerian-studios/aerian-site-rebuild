@@ -1,8 +1,6 @@
 /// <reference types="@types/jest" />
 import * as React from "react";
-
 import * as renderer from "react-test-renderer";
-
 import { whatWeDo } from "../../types/fixtures";
 import { WhatWeDoPage } from "./index";
 

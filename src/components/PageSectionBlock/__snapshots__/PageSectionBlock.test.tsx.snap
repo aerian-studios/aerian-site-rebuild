@@ -3,16 +3,11 @@
 exports[`PageSectionBlock renders correctly 1`] = `
 Array [
   <div
-    className=" "
+    className=""
   >
-    <div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
-        />
-      </div>
+    <div
+      className=""
+    >
       <div>
         <h2>
           We design
@@ -42,17 +37,28 @@ Array [
           Multi-tiered rapid prototyping for user and stakeholder tests.
         </p>
       </div>
-    </div>
-    <div
-      className=""
-    >
-      <img
-        src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
-      />
+      <figure>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
+          />
+        </div>
+      </figure>
+      <figure>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
+          />
+        </div>
+      </figure>
     </div>
   </div>,
   <div
-    className=" "
+    className="undefined"
   >
     <div
       className=" "
@@ -96,29 +102,31 @@ Array [
     </div>
   </div>,
   <div
-    className=" "
+    className="undefined"
   >
     <div
       className=" "
     >
-      <h2>
+      <h3>
         <span>
           Success story
         </span>
          
         BBC iWonder The Perfect Diet for you guide
-      </h2>
+      </h3>
       <div
         className=" "
       >
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             90,000 
           </h3>
@@ -127,13 +135,15 @@ Array [
           </p>
         </div>
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             Top guide 
           </h3>
@@ -142,13 +152,15 @@ Array [
           </p>
         </div>
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             1.5m
           </h3>
@@ -157,13 +169,15 @@ Array [
           </p>
         </div>
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             22,000
           </h3>

@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import classNames from "classnames";
 import { PageSection } from "../../types/data";
 import { Block } from "../Block";
 import { Image } from "../Image";
@@ -14,16 +15,13 @@ interface Props {
 export const PageSectionBlock: React.SFC<Props> = ({ section, alternate }) => (
     <>
         <Block key={`${section.title}_main`}>
-            <div className={alternate ? styles.alternateBlock : styles.block}>
-                {section.image &&
-                    !alternate && (
-                        <Image
-                            source={section.image}
-                            className={styles.bigScreenImage}
-                        />
-                    )}
-
-                <div>
+            <div
+                className={classNames([
+                    styles.block,
+                    { [styles.alternateBlock]: alternate }
+                ])}
+            >
+                <div className={styles.body}>
                     <h2>{section.title}</h2>
                     <h3>{section.subtitle}</h3>
                     <p>{section.blurb}</p>
@@ -40,28 +38,25 @@ export const PageSectionBlock: React.SFC<Props> = ({ section, alternate }) => (
                         ))}
                 </div>
 
-                {section.image &&
-                    alternate && (
-                        <Image
-                            source={section.image}
-                            className={styles.bigScreenImage}
-                        />
-                    )}
+                {section.image && (
+                    <figure className={styles.bigScreenImage}>
+                        <Image source={section.image} />
+                    </figure>
+                )}
+                {section.smallImage && (
+                    <figure className={styles.smallScreenImage}>
+                        <Image source={section.smallImage} />
+                    </figure>
+                )}
             </div>
-            {section.smallImage && (
-                <Image
-                    source={section.smallImage}
-                    className={styles.smallScreenImage}
-                />
-            )}
         </Block>
         {section.testimonial && (
-            <Block>
+            <Block alternate={true}>
                 <TestimonialBlock testimonial={section.testimonial} />
             </Block>
         )}
         {section.successStory && (
-            <Block key={`${section.title}_success`}>
+            <Block key={`${section.title}_success`} alternate={true}>
                 <SuccessStoryBlock successStory={section.successStory} />
             </Block>
         )}

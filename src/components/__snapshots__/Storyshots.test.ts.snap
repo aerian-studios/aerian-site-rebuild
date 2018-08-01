@@ -85,8 +85,6 @@ exports[`Storyshots AboutPage Default 1`] = `
             </h1>
             <a
               href="/our-work"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               View our work
             </a>
@@ -97,7 +95,7 @@ exports[`Storyshots AboutPage Default 1`] = `
     </header>
     <section>
       <div
-        className=" "
+        className=""
       >
         <h1>
           A family of enthusiastic geeks who love all things web and innovative
@@ -114,8 +112,6 @@ exports[`Storyshots AboutPage Default 1`] = `
         >
           <a
             href="/our-work/project/cnn-africa-view"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             <figure
               className=" "
@@ -959,6 +955,299 @@ exports[`Storyshots AboutPage Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Block Alternate 1`] = `
+<div>
+  <div>
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "borderBottom": "1px solid #eee",
+            "marginBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "fontSize": "35px",
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          Block
+        </h1>
+        <h2
+          style={
+            Object {
+              "fontSize": "22px",
+              "fontWeight": 400,
+              "margin": "0 0 10px 0",
+              "padding": 0,
+            }
+          }
+        >
+          Alternate
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    style={Object {}}
+  >
+    <div
+      className="undefined"
+    >
+      <p>
+        Some content
+      </p>
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Story Source
+        </h1>
+        <pre
+          className="css-r8d96o"
+        >
+          <div>
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  Unknown
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      alternate
+                    </span>
+                    
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &gt;
+                </span>
+              </div>
+              <div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &lt;
+                    p
+                  </span>
+                  <span />
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &gt;
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 48,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    Some content
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &lt;/
+                    p
+                    &gt;
+                  </span>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;/
+                  Unknown
+                  &gt;
+                </span>
+              </div>
+            </div>
+          </div>
+          <button
+            className="css-zvhq5i"
+            onClick={[Function]}
+          >
+            <div
+              className="css-lvl6aa"
+            >
+              <div
+                style={
+                  Object {
+                    "marginBottom": 6,
+                  }
+                }
+              >
+                Copied!
+              </div>
+              <div>
+                Copy
+              </div>
+            </div>
+          </button>
+        </pre>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Prop Types
+        </h1>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            
+            " Component
+          </h2>
+          <small>
+            No propTypes defined!
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Block Default 1`] = `
 <div>
   <div>
@@ -1019,8 +1308,12 @@ exports[`Storyshots Block Default 1`] = `
     style={Object {}}
   >
     <div
-      className=" myClass"
-    />
+      className=""
+    >
+      <p>
+        Some content
+      </p>
+    </div>
   </div>
   <div>
     <div
@@ -1059,63 +1352,125 @@ exports[`Storyshots Block Default 1`] = `
           className="css-r8d96o"
         >
           <div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
+            <div>
+              <div
                 style={
                   Object {
-                    "color": "#777",
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
                   }
                 }
               >
-                &lt;
-                Unknown
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    className
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      "
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        myClass
-                      </span>
-                      "
-                    </span>
-                  </span>
-                   
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  Unknown
                 </span>
-              </span>
-              <span
+                <span />
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &gt;
+                </span>
+              </div>
+              <div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &lt;
+                    p
+                  </span>
+                  <span />
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &gt;
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 48,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    Some content
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &lt;/
+                    p
+                    &gt;
+                  </span>
+                </div>
+              </div>
+              <div
                 style={
                   Object {
-                    "color": "#777",
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
                   }
                 }
               >
-                /&gt;
-              </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;/
+                  Unknown
+                  &gt;
+                </span>
+              </div>
             </div>
           </div>
           <button
@@ -2364,8 +2719,6 @@ exports[`Storyshots ClientGridBlock Default 1`] = `
       >
         <a
           href="/our-work/project/cnn-africa-view"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <figure
             className=" "
@@ -2736,8 +3089,6 @@ exports[`Storyshots ClientGridItem Default 1`] = `
     >
       <a
         href="/our-work/project/cnn-africa-view"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <figure
           className=" "
@@ -8943,11 +9294,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page1"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -8956,11 +9305,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page2"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -8969,11 +9316,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page3"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -8982,11 +9327,9 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page4"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9004,11 +9347,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page1"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9017,11 +9358,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page2"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9030,11 +9369,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page3"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9043,11 +9380,9 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page4"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -9366,7 +9701,7 @@ exports[`Storyshots MeetTheTeamPage Default 1`] = `
     />
     <section>
       <div
-        className=" "
+        className=""
       >
         <h1>
           Meet the Team
@@ -10114,8 +10449,6 @@ exports[`Storyshots OnwardJournies Default 1`] = `
         </h2>
         <a
           href="/contact-us"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Contact us
         </a>
@@ -10358,8 +10691,6 @@ exports[`Storyshots OurWorkPage Default 1`] = `
           <div>
             <a
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               <div
                 className=""
@@ -14884,9 +15215,11 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
     style={Object {}}
   >
     <div
-      className=" "
+      className=""
     >
-      <div>
+      <div
+        className="undefined"
+      >
         <div>
           <h2>
             We design
@@ -14916,24 +15249,28 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
             Multi-tiered rapid prototyping for user and stakeholder tests.
           </p>
         </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
-          />
-        </div>
-      </div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
-        />
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
+            />
+          </div>
+        </figure>
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
+            />
+          </div>
+        </figure>
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
@@ -14977,29 +15314,31 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
       >
-        <h2>
+        <h3>
           <span>
             Success story
           </span>
            
           BBC iWonder The Perfect Diet for you guide
-        </h2>
+        </h3>
         <div
           className=" "
         >
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               90,000 
             </h3>
@@ -15008,13 +15347,15 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               Top guide 
             </h3>
@@ -15023,13 +15364,15 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               1.5m
             </h3>
@@ -15038,13 +15381,15 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               22,000
             </h3>
@@ -15374,16 +15719,11 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
     style={Object {}}
   >
     <div
-      className=" "
+      className=""
     >
-      <div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
-          />
-        </div>
+      <div
+        className=""
+      >
         <div>
           <h2>
             We design
@@ -15413,17 +15753,28 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
             Multi-tiered rapid prototyping for user and stakeholder tests.
           </p>
         </div>
-      </div>
-      <div
-        className=""
-      >
-        <img
-          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
-        />
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
+            />
+          </div>
+        </figure>
+        <figure>
+          <div
+            className=""
+          >
+            <img
+              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
+            />
+          </div>
+        </figure>
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
@@ -15467,29 +15818,31 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
       </div>
     </div>
     <div
-      className=" "
+      className="undefined"
     >
       <div
         className=" "
       >
-        <h2>
+        <h3>
           <span>
             Success story
           </span>
            
           BBC iWonder The Perfect Diet for you guide
-        </h2>
+        </h3>
         <div
           className=" "
         >
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               90,000 
             </h3>
@@ -15498,13 +15851,15 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               Top guide 
             </h3>
@@ -15513,13 +15868,15 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               1.5m
             </h3>
@@ -15528,13 +15885,15 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
             </p>
           </div>
           <div>
-            <div
-              className=""
-            >
-              <img
-                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
-              />
-            </div>
+            <figure>
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+                />
+              </div>
+            </figure>
             <h3>
               22,000
             </h3>
@@ -16181,41 +16540,36 @@ exports[`Storyshots ProjectPage Default 1`] = `
       >
         <a
           className=""
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className=""
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className=""
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className=""
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className=""
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -16223,7 +16577,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
     </nav>
     <section>
       <div
-        className=" "
+        className=""
       >
         <div>
           Client logo
@@ -16250,7 +16604,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
         <div
           className=" "
@@ -16290,7 +16644,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
         <div
           className=" "
@@ -16393,7 +16747,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
         <div
           className=" "
@@ -16480,7 +16834,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
         <div
           className=" "
@@ -16562,7 +16916,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
         <div
           className=" "
@@ -16613,7 +16967,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
         <div
           className=" "
@@ -16652,7 +17006,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
         <div
           className=" "
@@ -16673,8 +17027,6 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </h2>
             <a
               href="/contact-us"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               Contact us
             </a>
@@ -17853,41 +18205,36 @@ exports[`Storyshots SectionNav Default 1`] = `
       >
         <a
           className=""
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className=""
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className=""
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className=""
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className=""
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -18264,41 +18611,36 @@ exports[`Storyshots SectionNav With contextual styles 1`] = `
       >
         <a
           className="sectionNavItem"
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className="sectionNavItem"
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className="sectionNavItem"
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className="sectionNavItem"
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className="sectionNavItem"
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -22294,24 +22636,26 @@ exports[`Storyshots SuccessStoryBlock Default 1`] = `
     <div
       className=" "
     >
-      <h2>
+      <h3>
         <span>
           Success story
         </span>
          
         BBC iWonder The Perfect Diet for you guide
-      </h2>
+      </h3>
       <div
         className=" "
       >
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             90,000 
           </h3>
@@ -22320,13 +22664,15 @@ exports[`Storyshots SuccessStoryBlock Default 1`] = `
           </p>
         </div>
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             Top guide 
           </h3>
@@ -22335,13 +22681,15 @@ exports[`Storyshots SuccessStoryBlock Default 1`] = `
           </p>
         </div>
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             1.5m
           </h3>
@@ -22350,13 +22698,15 @@ exports[`Storyshots SuccessStoryBlock Default 1`] = `
           </p>
         </div>
         <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
-            />
-          </div>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+              />
+            </div>
+          </figure>
           <h3>
             22,000
           </h3>
@@ -23843,18 +24193,65 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
         <div>
           <div>
             <h1>
-              What We Do
+              We work hard
+              <br />
+              so users don't have to
             </h1>
           </div>
         </div>
       </div>
       <div />
     </header>
+    <nav
+      className=""
+    >
+      <div
+        className=""
+      >
+        <a
+          className=""
+          href="#wePlan"
+          onClick={[Function]}
+        >
+          We plan
+        </a>
+        <a
+          className=""
+          href="#weDesign"
+          onClick={[Function]}
+        >
+          We design
+        </a>
+        <a
+          className=""
+          href="#weDevelop"
+          onClick={[Function]}
+        >
+          We develop
+        </a>
+        <a
+          className=""
+          href="#weDeliver"
+          onClick={[Function]}
+        >
+          We deliver
+        </a>
+        <a
+          className=""
+          href="#weCelebrate"
+          onClick={[Function]}
+        >
+          We celebrate
+        </a>
+      </div>
+    </nav>
     <section>
       <div
-        className=" "
+        className=""
       >
-        <div>
+        <div
+          className="undefined"
+        >
           <div>
             <h2>
               We plan
@@ -23884,24 +24281,28 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               If it's hard, or inconceivable, give us a call. We love that stuff.
             </p>
           </div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/425/we-plan-image.jpg"
-            />
-          </div>
-        </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/535/we-plan-image-small.jpg"
-          />
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/425/we-plan-image.jpg"
+              />
+            </div>
+          </figure>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/535/we-plan-image-small.jpg"
+              />
+            </div>
+          </figure>
         </div>
       </div>
       <div
-        className=" "
+        className="undefined"
       >
         <div
           className=" "
@@ -23945,16 +24346,11 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
-        <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
-            />
-          </div>
+        <div
+          className=""
+        >
           <div>
             <h2>
               We design
@@ -23984,39 +24380,52 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               Multi-tiered rapid prototyping for user and stakeholder tests.
             </p>
           </div>
-        </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
-          />
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/423/we-design-image.jpg"
+              />
+            </div>
+          </figure>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/536/we-design-image-small.jpg"
+              />
+            </div>
+          </figure>
         </div>
       </div>
       <div
-        className=" "
+        className="undefined"
       >
         <div
           className=" "
         >
-          <h2>
+          <h3>
             <span>
               Success story
             </span>
              
             BBC iWonder The Perfect Diet for you guide
-          </h2>
+          </h3>
           <div
             className=" "
           >
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/426/90000-icon.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 90,000 
               </h3>
@@ -24025,13 +24434,15 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               </p>
             </div>
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/429/top-guide-icon.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 Top guide 
               </h3>
@@ -24040,13 +24451,15 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               </p>
             </div>
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/428/54000-icon.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 1.5m
               </h3>
@@ -24055,13 +24468,15 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               </p>
             </div>
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/427/22000-icon.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 22,000
               </h3>
@@ -24073,9 +24488,11 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
-        <div>
+        <div
+          className="undefined"
+        >
           <div>
             <h2>
               We develop
@@ -24105,46 +24522,52 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               Complex, high availability bespoke application build is our speciality.
             </p>
           </div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/424/we-develop.jpg"
-            />
-          </div>
-        </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/537/we-develop-image-small.jpg"
-          />
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/424/we-develop.jpg"
+              />
+            </div>
+          </figure>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/537/we-develop-image-small.jpg"
+              />
+            </div>
+          </figure>
         </div>
       </div>
       <div
-        className=" "
+        className="undefined"
       >
         <div
           className=" "
         >
-          <h2>
+          <h3>
             <span>
               Success story
             </span>
              
             From front-end to back-end and Dev Ops, our team excels in building systems that scale 
-          </h2>
+          </h3>
           <div
             className=" "
           >
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/540/scrum-leader.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/540/scrum-leader.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 7 Accredited 
               </h3>
@@ -24153,13 +24576,15 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               </p>
             </div>
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/541/server-management.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/541/server-management.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 Managing
               </h3>
@@ -24168,13 +24593,15 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               </p>
             </div>
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/542/uptime.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/542/uptime.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 99.95%
               </h3>
@@ -24183,13 +24610,15 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               </p>
             </div>
             <div>
-              <div
-                className=""
-              >
-                <img
-                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/543/languages.png"
-                />
-              </div>
+              <figure>
+                <div
+                  className=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/543/languages.png"
+                  />
+                </div>
+              </figure>
               <h3>
                 Experts
               </h3>
@@ -24201,16 +24630,11 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
-        <div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
-            />
-          </div>
+        <div
+          className=""
+        >
           <div>
             <h2>
               We deliver
@@ -24240,17 +24664,28 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               We work with your teams to train, document and create failovers, and ensure it's not 'our' project, it's yours.
             </p>
           </div>
-        </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
-          />
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
+              />
+            </div>
+          </figure>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/422/we-deliver.jpg"
+              />
+            </div>
+          </figure>
         </div>
       </div>
       <div
-        className=" "
+        className="undefined"
       >
         <div
           className=" "
@@ -24294,9 +24729,11 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
         </div>
       </div>
       <div
-        className=" "
+        className=""
       >
-        <div>
+        <div
+          className="undefined"
+        >
           <div>
             <h2>
               We celebrate
@@ -24326,20 +24763,24 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               We're a team, internally, and with clients. We work hard together, we celebrate together.
             </p>
           </div>
-          <div
-            className=""
-          >
-            <img
-              src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/480/we-celebrate.jpg"
-            />
-          </div>
-        </div>
-        <div
-          className=""
-        >
-          <img
-            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/538/we-celebrate-image-small.jpg"
-          />
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/480/we-celebrate.jpg"
+              />
+            </div>
+          </figure>
+          <figure>
+            <div
+              className=""
+            >
+              <img
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/538/we-celebrate-image-small.jpg"
+              />
+            </div>
+          </figure>
         </div>
       </div>
     </section>
@@ -24381,159 +24822,210 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
           className="css-r8d96o"
         >
           <div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
+            <div>
+              <div
                 style={
                   Object {
-                    "color": "#777",
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
                   }
                 }
               >
-                &lt;
-                Unknown
-              </span>
-              <span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  MemoryRouter
+                </span>
+                <span />
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &gt;
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  Unknown
+                </span>
                 <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    page
-                  </span>
                   <span>
-                    =
+                     
                     <span
                       style={Object {}}
                     >
-                      {
+                      page
+                    </span>
+                    <span>
+                      =
                       <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
+                        style={Object {}}
                       >
                         {
-                        <span>
-                          <span>
-                            <br />
-                              
-                              
-                          </span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            heroImage
-                          </span>
-                        </span>
-                        : 
                         <span
                           style={
                             Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
+                              "color": "#666",
                             }
                           }
                         >
-                          'https://raw.githubusercontent.com/aerian-studios/a…'
-                        </span>
-                        ,
-                        <span>
+                          {
                           <span>
-                            <br />
-                              
-                              
+                            <span>
+                              <br />
+                                
+                                
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              heroImage
+                            </span>
                           </span>
+                          : 
                           <span
                             style={
                               Object {
-                                "color": "#666",
+                                "color": "#22a",
+                                "wordBreak": "break-word",
                               }
                             }
                           >
-                            title
+                            'https://raw.githubusercontent.com/aerian-studios/a…'
                           </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          'What We Do'
-                        </span>
-                        ,
-                        <span>
+                          ,
                           <span>
-                            <br />
-                              
-                              
+                            <span>
+                              <br />
+                                
+                                
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              title
+                            </span>
                           </span>
+                          : 
                           <span
                             style={
                               Object {
-                                "color": "#666",
+                                "color": "#22a",
+                                "wordBreak": "break-word",
                               }
                             }
                           >
-                            subheading
+                            'What We Do'
                           </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
+                          ,
+                          <span>
+                            <span>
+                              <br />
+                                
+                                
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              subheading
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
+                              }
                             }
-                          }
-                        >
-                          'A family of enthusiastic geeks who love all things…'
-                        </span>
-                        ,
-                        <span>
+                          >
+                            'A family of enthusiastic geeks who love all things…'
+                          </span>
+                          ,
+                          <span>
+                            <span>
+                              <br />
+                                
+                                
+                            </span>
+                            …
+                          </span>
                           <span>
                             <br />
                               
-                              
                           </span>
-                          …
-                        </span>
-                        <span>
-                          <br />
-                            
+                          }
                         </span>
                         }
                       </span>
-                      }
                     </span>
+                     
                   </span>
-                   
                 </span>
-              </span>
-              <span
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+              <div
                 style={
                   Object {
-                    "color": "#777",
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
                   }
                 }
               >
-                /&gt;
-              </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;/
+                  MemoryRouter
+                  &gt;
+                </span>
+              </div>
             </div>
           </div>
           <button
@@ -24587,6 +25079,179 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
           <small>
             No propTypes defined!
           </small>
+        </div>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            MemoryRouter
+            " Component
+          </h2>
+          <table
+            className="css-1uhv8nx"
+          >
+            <thead>
+              <tr>
+                <th
+                  className="css-11b5gui"
+                >
+                  property
+                </th>
+                <th
+                  className="css-11b5gui"
+                >
+                  propType
+                </th>
+                <th
+                  className="css-11b5gui"
+                >
+                  required
+                </th>
+                <th
+                  className="css-11b5gui"
+                >
+                  default
+                </th>
+                <th
+                  className="css-11b5gui"
+                >
+                  description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  initialEntries
+                </td>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                />
+              </tr>
+              <tr>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  initialIndex
+                </td>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                />
+              </tr>
+              <tr>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  getUserConfirmation
+                </td>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                />
+              </tr>
+              <tr>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  keyLength
+                </td>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                />
+              </tr>
+              <tr>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  children
+                </td>
+                <td
+                  className="css-1qcb1f7"
+                >
+                  <span />
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                >
+                  -
+                </td>
+                <td
+                  className="css-11b5gui"
+                />
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

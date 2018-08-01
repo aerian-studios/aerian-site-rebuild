@@ -39,41 +39,36 @@ Array [
     >
       <a
         className=""
-        href="/#caseStudy"
+        href="#caseStudy"
         onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Introduction
       </a>
       <a
         className=""
-        href="/#gallery"
+        href="#gallery"
         onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Gallery
       </a>
       <a
         className=""
-        href="/#challenge"
+        href="#challenge"
         onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         The Challenge
       </a>
       <a
         className=""
-        href="/#solution"
+        href="#solution"
         onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         The Solution
       </a>
       <a
         className=""
-        href="/#results"
+        href="#results"
         onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         The Result
       </a>
@@ -81,7 +76,7 @@ Array [
   </nav>,
   <section>
     <div
-      className=" "
+      className=""
     >
       <div>
         Client logo
@@ -108,7 +103,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -148,7 +143,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -251,7 +246,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -338,7 +333,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -420,7 +415,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -471,7 +466,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -510,7 +505,7 @@ Array [
       </div>
     </div>
     <div
-      className=" "
+      className=""
     >
       <div
         className=" "
@@ -531,8 +526,6 @@ Array [
           </h2>
           <a
             href="/contact-us"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Contact us
           </a>

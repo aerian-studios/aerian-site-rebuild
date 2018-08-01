@@ -1,17 +1,50 @@
+@import "../../scss/variables";
+@import "../../scss/tools/tools";
+
 .bigScreenImage {
-    //Media query in here
-    foo: bar;
-}
-.smallScreenImage {
     display: none;
+    grid-area: image;
+    @media (min-width: $bp-m) {
+        display: block;
+    }
+}
+
+.smallScreenImage {
+    grid-area: image;
+    @media (min-width: $bp-m) {
+        display: none;
+    }
 }
 
 .block {
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "body" "image";
+    @media (min-width: $bp-m) {
+        grid-template-columns: auto minmax(auto, 800px);
+        grid-template-areas: "body image";
+    }
 }
 
 .alternateBlock {
-    display: grid;
-    grid-template-columns: 4fr 3fr;
+    @media (min-width: $bp-m) {
+        grid-template-columns: minmax(auto, 800px) auto;
+        grid-template-areas: "image body";
+    }
+}
+
+.body {
+    grid-area: body;
+    padding: var(--side-gutter);
+    p {
+        @include font-size(var(--t-small));
+    }
+    h4 {
+        @include font-size(var(--t-small));
+        background: $c-text;
+        color: $c-brand-c;
+        padding: 4px 10px;
+        display: inline-block;
+        margin: 0;
+    }
 }

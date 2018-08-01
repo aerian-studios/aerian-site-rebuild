@@ -6,11 +6,9 @@ exports[`MainNavigation renders correctly 1`] = `
   id="menu-main"
 >
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page1"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -19,11 +17,9 @@ exports[`MainNavigation renders correctly 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
+    activeClassName="active-path "
     className="menu-item "
     href="/page2"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "

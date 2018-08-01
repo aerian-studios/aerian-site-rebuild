@@ -1,9 +1,6 @@
 /// <reference types="@types/jest" />
 import * as React from "react";
-
 import * as renderer from "react-test-renderer";
-
-import { MemoryRouter } from "react-router";
 import { about, project } from "../../types/fixtures";
 import { OurWorkPage } from "./index";
 
@@ -16,11 +13,7 @@ import { OurWorkPage } from "./index";
 describe("OurWorkPage", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(
-                <MemoryRouter>
-                    <OurWorkPage projects={[project]} page={about} />
-                </MemoryRouter>
-            )
+            .create(<OurWorkPage projects={[project]} page={about} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

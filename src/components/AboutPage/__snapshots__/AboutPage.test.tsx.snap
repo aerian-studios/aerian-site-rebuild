@@ -28,8 +28,6 @@ Array [
           </h1>
           <a
             href="/our-work"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             View our work
           </a>
@@ -40,7 +38,7 @@ Array [
   </header>,
   <section>
     <div
-      className=" "
+      className=""
     >
       <h1>
         A family of enthusiastic geeks who love all things web and innovative
@@ -57,8 +55,6 @@ Array [
       >
         <a
           href="/our-work/project/cnn-africa-view"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <figure
             className=" "

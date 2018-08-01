@@ -1,3 +1,5 @@
-.component {
-    foo: bar;
+@import "../../scss/variables";
+
+.alternate {
+    background-color: $c-alt-block-bg;
 }

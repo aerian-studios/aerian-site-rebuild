@@ -6,7 +6,7 @@ exports[`MainNavigation renders correctly 1`] = `
   id="menu-main"
 >
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page1"
   >
@@ -17,7 +17,7 @@ exports[`MainNavigation renders correctly 1`] = `
     </span>
   </a>
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page2"
   >

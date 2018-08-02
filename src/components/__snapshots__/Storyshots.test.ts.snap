@@ -9294,7 +9294,7 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page1"
   >
@@ -9305,7 +9305,7 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page2"
   >
@@ -9316,7 +9316,7 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page3"
   >
@@ -9327,7 +9327,7 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page4"
   >
@@ -9347,7 +9347,7 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page1"
   >
@@ -9358,7 +9358,7 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page2"
   >
@@ -9369,7 +9369,7 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page3"
   >
@@ -9380,7 +9380,7 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    activeClassName="active-path "
+    activeclassname="active-path "
     className="menu-item "
     href="/page4"
   >

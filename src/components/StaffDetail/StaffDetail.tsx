@@ -4,7 +4,11 @@ import * as ReactDOM from "react-dom";
 
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { scrollToElement } from "../../lib/scrollIntoView";
+import {
+    momoizeCurrentScrollPos,
+    scrollToElement,
+    setTopMargin
+} from "../../lib/scrollIntoView";
 
 import { Staff } from "../../types/data";
 import { Image } from "../Image";
@@ -47,25 +51,27 @@ const hideShow = async (
 
 const setHeight = async (asideEl: HTMLElement) => {
     const asideChildren: HTMLCollection = asideEl.children;
-    const isVertical = window.innerWidth <= 600;
+    const isVertical = window.innerWidth <= 768;
     const vHeight = window.innerHeight - 50;
 
     await hideShow(asideEl, true);
 
     const heights: number[] = await getHeights(asideChildren);
-    const desiredHeight = isVertical
-        ? heights.reduce((accum, curr) => {
-              return accum + curr;
-          }, 0)
-        : heights.reduce((accum, curr) => {
-              return Math.max(curr, accum);
-          }, 0);
+    const desiredHeight =
+        160 +
+        (isVertical
+            ? heights.reduce((accum, curr) => {
+                  return accum + curr;
+              }, 0)
+            : heights.reduce((accum, curr) => {
+                  return Math.max(curr, accum);
+              }, 0));
 
     await hideShow(asideEl, false);
 
     // RAF didn't cut it - render failed to transition
     window.setTimeout(() => {
-        asideEl.style.height = `${Math.max(desiredHeight, vHeight)}px`;
+        asideEl.style.height = `${desiredHeight}px`;
         asideEl.style.opacity = `1`;
     }, 16);
 };
@@ -80,7 +86,11 @@ export class StaffDetail extends React.Component<Props> {
     public componentDidMount() {
         const asideEl = ReactDOM.findDOMNode(this.asideRef.current);
         setHeight(asideEl);
-        scrollToElement(asideEl);
+        momoizeCurrentScrollPos();
+        setTopMargin(80);
+        window.setTimeout(() => {
+            scrollToElement(asideEl);
+        }, 300);
     }
     public render() {
         const { staff, className, style, onClose } = this.props;
@@ -96,8 +106,7 @@ export class StaffDetail extends React.Component<Props> {
                             this.asideRef.current
                         );
                         hideShow(asideEl, false);
-
-                        // @TODO add a scroll back to parent
+                        scrollToElement(undefined, 150);
                         onClose();
                     }}
                     className={styles.closeButton}

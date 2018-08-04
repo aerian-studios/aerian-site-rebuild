@@ -11,7 +11,18 @@ export const documentVerticalScrollPosition = () => {
     return 0; // None of the above.
 };
 
+export const isSmoothScrollSupported =
+    "scrollBehavior" in document.documentElement.style;
+
 const doScrolling = (destY: number, duration: number) => {
+    if (isSmoothScrollSupported) {
+        window.scrollTo({
+            behavior: "smooth",
+            left: 0,
+            top: destY
+        });
+    }
+
     const startY = documentVerticalScrollPosition();
     const diff = destY - startY;
     let startTime: number;
@@ -34,11 +45,35 @@ const doScrolling = (destY: number, duration: number) => {
     window.requestAnimationFrame(scrollTick);
 };
 
-export const scrollToElement = (element: HTMLElement) => {
-    if (!element) {
+let scrollPos: number;
+const defaultTiming = 300;
+let topMargin = 0;
+
+export const setTopMargin = (margin: number) => {
+    topMargin = margin;
+};
+
+export const momoizeCurrentScrollPos = () => {
+    scrollPos = documentVerticalScrollPosition();
+
+    return scrollPos;
+};
+
+export const scrollToElement = (
+    element?: HTMLElement,
+    time: number = defaultTiming
+) => {
+    if (element) {
+        const elementY = element.offsetTop - topMargin;
+
+        doScrolling(elementY, time);
         return;
     }
-    const elementY = element.getBoundingClientRect().top;
 
-    doScrolling(elementY, 300);
+    if (typeof scrollPos !== "undefined") {
+        doScrolling(scrollPos, time);
+        return;
+    }
+
+    return;
 };

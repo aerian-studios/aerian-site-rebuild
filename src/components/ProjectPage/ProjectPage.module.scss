@@ -1,2 +1,10 @@
-.component {
+@import "../../scss/variables";
+.projectIntro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo intro";
+    gap: var(--vertical-gutter);
+    figure {
+        grid-area: logo;
+    }
 }

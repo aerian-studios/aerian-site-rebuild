@@ -78,9 +78,15 @@ Array [
     <div
       className=""
     >
-      <div>
-        Client logo
-      </div>
+      <figure>
+        <div
+          className=""
+        >
+          <img
+            src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/452/cnn-logo.png"
+          />
+        </div>
+      </figure>
       <div
         className=" "
       >

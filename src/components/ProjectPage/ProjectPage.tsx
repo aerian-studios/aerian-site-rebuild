@@ -1,19 +1,20 @@
 import * as React from "react";
 
-import { HeroBlock } from "../HeroBlock/HeroBlock";
-import { PageHeader } from "../PageHeader/PageHeader";
-
-import { Project, ReactRouterLocation } from "../../types/data";
+import { Project } from "../../types/data";
 import { Block } from "../Block";
 import { CaseStudyIntro } from "../CaseStudyIntro";
 import { Gallery } from "../Gallery";
+import { HeroBlock } from "../HeroBlock";
+import { Image } from "../Image";
 import { OnwardJournies } from "../OnwardJournies";
+import { PageHeader } from "../PageHeader";
 import { PerformanceBlock } from "../PerformanceBlock";
 import { ProjectStageBlock } from "../ProjectStageBlock";
 import { SectionNav } from "../SectionNav";
 import { TestimonialBlock } from "../TestimonialBlock";
 
 import * as sharedStyles from "../Layout.module.scss";
+import * as styles from "./ProjectPage.module.scss";
 
 interface Props {
     project: Project;
@@ -58,9 +59,11 @@ export const ProjectPage: React.SFC<Props> = ({ project }) => (
             navWrapperClassName={sharedStyles.sectionNavWrapper}
         />
         <section className={sharedStyles.contentWrapper}>
-            <Block>
-                <div>Client logo</div>
-                <CaseStudyIntro project={project} />
+            <Block className={styles.projectIntro}>
+                <figure>
+                    <Image source={project.client.logo} />
+                </figure>
+                <CaseStudyIntro className={styles.intro} project={project} />
             </Block>
             <Block>
                 <Gallery gallery={project.gallery} />

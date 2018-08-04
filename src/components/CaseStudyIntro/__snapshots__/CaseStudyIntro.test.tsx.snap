@@ -15,10 +15,17 @@ exports[`CaseStudyIntro renders correctly 1`] = `
       With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
     </p>
   </div>
-  <a
-    href="http://www.bbc.co.uk/guides/z2csfg8"
+  <span
+    className="undefined"
   >
-    Launch project
-  </a>
+    <a
+      href="http://www.bbc.co.uk/guides/z2csfg8"
+    >
+      Launch project
+    </a>
+    <i
+      className="fa"
+    />
+  </span>
 </div>
 `;

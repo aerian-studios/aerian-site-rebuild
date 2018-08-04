@@ -28,6 +28,18 @@ Array [
             <br />
             so users don't have to
           </h1>
+          <span
+            className="undefined"
+          >
+            <a
+              href="/our-work/"
+            >
+              Our work
+            </a>
+            <i
+              className="fa"
+            />
+          </span>
         </div>
       </div>
     </div>

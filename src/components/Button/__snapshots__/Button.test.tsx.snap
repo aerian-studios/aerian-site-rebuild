@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<span
+  className="undefined"
+>
+  <a
+    href="#"
+  >
+    Hello
+  </a>
+  <i
+    className="fa"
+  />
+</span>
+`;

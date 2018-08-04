@@ -1,12 +1,13 @@
+import { Link } from "gatsby";
 import * as React from "react";
 import { WhatWeDo } from "../../types/data";
+import { Button } from "../Button";
 import { HeroBlock } from "../HeroBlock";
 import * as sharedStyles from "../Layout.module.scss";
 import { PageHeader } from "../PageHeader";
 import { PageSectionBlock } from "../PageSectionBlock";
 import { SectionNav } from "../SectionNav";
 import * as styles from "./WhatWeDoPage.module.scss";
-
 interface Props {
     page: WhatWeDo;
 }
@@ -31,6 +32,9 @@ export const WhatWeDoPage: React.SFC<Props> = ({ page }) => (
                     <h1>
                         We work hard<br />so users don't have to
                     </h1>
+                    <Button arrow={true} alternate={true}>
+                        <Link to={"/our-work/"}>Our work</Link>
+                    </Button>
                 </div>
             </HeroBlock>
         </PageHeader>

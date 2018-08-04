@@ -43,6 +43,7 @@
     @media (min-width: $bp-m) {
         max-height: calc(992px + 90px);
     }
+    z-index: -1;
 }
 
 .heroMedia {

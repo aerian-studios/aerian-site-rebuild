@@ -4,43 +4,57 @@
 .component {
     position: relative;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "staffinfo";
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     @include detail-grid-area(2, 30, "detail");
-    @media (min-width: $bp-s) {
-        grid-template-columns: minmax(auto, 500px) auto;
-        grid-template-areas: "staffpic staffinfo";
-    }
-    @media (min-width: $bp-m) {
-        @include detail-grid-area(3, 30, "detail");
-    }
-    @media (min-width: $bp-xl) {
-        @include detail-grid-area(4, 30, "detail");
-    }
+    padding: 0 var(--v-grid-spacing);
     height: 0;
     opacity: 0;
     will-change: height, opacity;
     overflow: hidden;
     background-color: $c-black-10;
     box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: $bp-m) {
+        flex-flow: row wrap;
+        @include detail-grid-area(3, 30, "detail");
+    }
+    @media (min-width: $bp-xl) {
+        @include detail-grid-area(4, 30, "detail");
+    }
+
+    > * {
+        flex: 1;
+        max-width: 585px;
+        margin: auto;
+    }
 }
 
 .funny {
-    grid-area: staffpic;
-    padding: var(--v-grid-spacing) var(--h-grid-spacing);
     display: none;
+
     @media (min-width: $bp-s) {
         display: block;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    @media (min-width: $bp-m) {
+        margin-right: 2.5%;
     }
 }
 
 .details {
-    grid-area: staffinfo;
-    margin: var(--side-gutter);
+    margin-top: 80px;
     @media (min-width: $bp-s) {
-        margin: 80px 0;
+        margin-top: auto;
+    }
+
+    @media (min-width: $bp-m) {
+        margin-left: 0;
     }
 }
 

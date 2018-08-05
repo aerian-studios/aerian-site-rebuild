@@ -39,7 +39,7 @@ export const StaffGridItem: React.SFC<Props> = ({
                     onClose={() => {
                         window.setTimeout(() => {
                             onExpand(undefined);
-                        }, 300);
+                        }, 200);
                     }}
                 />
             )}

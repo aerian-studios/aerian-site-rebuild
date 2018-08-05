@@ -21,6 +21,8 @@ const doScrolling = (destY: number, duration: number) => {
             left: 0,
             top: destY
         });
+
+        return;
     }
 
     const startY = documentVerticalScrollPosition();

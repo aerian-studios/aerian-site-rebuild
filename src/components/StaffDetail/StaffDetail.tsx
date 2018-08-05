@@ -52,7 +52,6 @@ const hideShow = async (
 const setHeight = async (asideEl: HTMLElement) => {
     const asideChildren: HTMLCollection = asideEl.children;
     const isVertical = window.innerWidth <= 768;
-    const vHeight = window.innerHeight - 50;
 
     await hideShow(asideEl, true);
 
@@ -77,7 +76,7 @@ const setHeight = async (asideEl: HTMLElement) => {
 };
 
 export class StaffDetail extends React.Component<Props> {
-    public asideRef;
+    public asideRef: React.RefObject<HTMLElement>;
     constructor(props: Props) {
         super(props);
 

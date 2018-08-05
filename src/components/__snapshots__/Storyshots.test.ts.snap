@@ -6446,6 +6446,9 @@ exports[`Storyshots ContactForm Default 1`] = `
         type="hidden"
         value="contact"
       />
+      <div
+        data-netlify-recaptcha={true}
+      />
       <span
         className="undefined"
       >
@@ -6964,6 +6967,9 @@ exports[`Storyshots ContactUsPage Default 1`] = `
           name="form-name"
           type="hidden"
           value="contact"
+        />
+        <div
+          data-netlify-recaptcha={true}
         />
         <span
           className="undefined"

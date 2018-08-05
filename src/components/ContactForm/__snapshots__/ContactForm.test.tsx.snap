@@ -63,6 +63,9 @@ exports[`ContactForm renders correctly 1`] = `
     type="hidden"
     value="contact"
   />
+  <div
+    data-netlify-recaptcha={true}
+  />
   <span
     className="undefined"
   >

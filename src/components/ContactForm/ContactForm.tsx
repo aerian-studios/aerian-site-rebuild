@@ -35,20 +35,27 @@ export class ContactForm extends React.PureComponent<Props, State> {
             keyof State
         >);
 
-    public handleSubmit = (e: React.FormEvent) => {
+    public handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        const captcha = e.currentTarget.elements.namedItem(
+            "g-recaptcha-response"
+        ) as HTMLInputElement;
         e.preventDefault();
-        this.sendMessage();
+        this.sendMessage(captcha);
     };
 
-    public sendMessage = async () => {
-        alert(encode({ "form-name": "contact", ...this.state }));
+    public sendMessage = async (captchaElement?: HTMLInputElement) => {        
+        let captcha: string = "";
+        if(captchaElement) {
+            captcha = captchaElement.value;
+        }
+        console.log("captcha", captcha)
         try {
             await fetch("/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 },
-                body: encode({ "form-name": "contact", ...this.state })
+                body: encode({ "form-name": "contact", "g-recaptcha-response": captcha, ...this.state })
             });
             alert("Sent message");
         } catch (e) {
@@ -102,6 +109,7 @@ export class ContactForm extends React.PureComponent<Props, State> {
                     />
                 </div>
                 <input type="hidden" name="form-name" value="contact" />
+                <div data-netlify-recaptcha={true} />
                 <Button arrow={true}>
                     <button type="submit">Submit</button>
                 </Button>

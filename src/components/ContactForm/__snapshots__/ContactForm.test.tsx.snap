@@ -1,11 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactForm renders correctly 1`] = `
-<div
+<form
   className=" myClass"
+  data-netlify={true}
+  name="contact"
+  onSubmit={[Function]}
 >
-  <h2>
-    ContactForm
-  </h2>
-</div>
+  <div>
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      name="name"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <label
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      name="email"
+      onChange={[Function]}
+      type="email"
+      value=""
+    />
+  </div>
+  <div>
+    <label
+      htmlFor="phone"
+    >
+      Telephone
+    </label>
+    <input
+      name="phone"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <label
+      htmlFor="message"
+    >
+      Message
+    </label>
+    <textarea
+      name="message"
+      onChange={[Function]}
+      value=""
+    />
+  </div>
+  <input
+    name="form-name"
+    type="hidden"
+    value="contact"
+  />
+  <span
+    className="undefined"
+  >
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+    <i
+      className="fa"
+    />
+  </span>
+</form>
 `;

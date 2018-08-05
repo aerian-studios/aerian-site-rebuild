@@ -1,6 +1,7 @@
 @import "../../scss/variables";
 .component {
-    a {
+    a,
+    button {
         border: 2px solid $c-brand-a;
         color: $c-brand-a;
         background: transparent;
@@ -20,12 +21,14 @@
         transition: padding-right 0.3s;
     }
     &.alternate {
-        a {
+        a,
+        button {
             border-color: $c-brand-c;
             color: $c-brand-c;
         }
         &:hover {
-            a {
+            a,
+            button {
                 color: #cf254d;
                 border-color: #fff;
                 background: #fff;
@@ -34,7 +37,8 @@
     }
     &.arrow {
         &:hover {
-            a {
+            a,
+            button {
                 padding-right: 60px;
             }
             .icon {
@@ -42,7 +46,8 @@
                 transform: translateX(-300%);
             }
         }
-        a {
+        a,
+        button {
             padding: 15px 40px;
         }
     }

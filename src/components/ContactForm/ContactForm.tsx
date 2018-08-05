@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import Recaptcha from "react-google-invisible-recaptcha";
 import { Button } from "../Button";
 import * as styles from "./ContactForm.module.scss";
 
@@ -13,8 +13,13 @@ interface State {
     phone: string;
     message: string;
 }
-
-const INITIAL_STATE: State = { name: "", email: "", phone: "", message: "" };
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+const INITIAL_STATE: State = {
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+};
 
 const encode = (data: { [key: string]: string }) => {
     return Object.keys(data)
@@ -26,7 +31,7 @@ const encode = (data: { [key: string]: string }) => {
 
 export class ContactForm extends React.PureComponent<Props, State> {
     public state = INITIAL_STATE;
-
+    public recaptcha?: Recaptcha;
     public handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) =>
@@ -36,26 +41,36 @@ export class ContactForm extends React.PureComponent<Props, State> {
         >);
 
     public handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        const captcha = e.currentTarget.elements.namedItem(
-            "g-recaptcha-response"
-        ) as HTMLInputElement;
         e.preventDefault();
-        this.sendMessage(captcha);
+        if (!this.recaptcha) {
+            console.error("Missing recaptcha");
+            return;
+        }
+        this.recaptcha.execute();
     };
 
-    public sendMessage = async (captchaElement?: HTMLInputElement) => {        
-        let captcha: string = "";
-        if(captchaElement) {
-            captcha = captchaElement.value;
+    public handleCaptcha = () => {
+        console.log("handle captcha");
+        if (!this.recaptcha) {
+            console.error("Missing recaptcha");
+            return;
         }
-        console.log("captcha", captcha)
+        const captcha = this.recaptcha.getResponse();
+        console.log("got response", captcha);
+        this.sendMessage(captcha);
+    };
+    public sendMessage = async (captcha: string) => {
         try {
             await fetch("/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 },
-                body: encode({ "form-name": "contact", "g-recaptcha-response": captcha, ...this.state })
+                body: encode({
+                    "form-name": "contact",
+                    "g-recaptcha-response": captcha,
+                    ...this.state
+                })
             });
             alert("Sent message");
         } catch (e) {
@@ -71,6 +86,7 @@ export class ContactForm extends React.PureComponent<Props, State> {
                 className={[styles.component, this.props.className].join(" ")}
                 style={this.props.style}
                 data-netlify={true}
+                data-netlify-recaptcha={true}
                 name="contact"
             >
                 <div>
@@ -109,7 +125,11 @@ export class ContactForm extends React.PureComponent<Props, State> {
                     />
                 </div>
                 <input type="hidden" name="form-name" value="contact" />
-                <div data-netlify-recaptcha={true} />
+                <Recaptcha
+                    ref={(ref: Recaptcha) => (this.recaptcha = ref)}
+                    sitekey={RECAPTCHA_KEY || ""}
+                    onResolved={this.handleCaptcha}
+                />
                 <Button arrow={true}>
                     <button type="submit">Submit</button>
                 </Button>

@@ -6387,6 +6387,7 @@ exports[`Storyshots ContactForm Default 1`] = `
     <form
       className=" myClass"
       data-netlify={true}
+      data-netlify-recaptcha={true}
       name="contact"
       onSubmit={[Function]}
     >
@@ -6446,8 +6447,9 @@ exports[`Storyshots ContactForm Default 1`] = `
         type="hidden"
         value="contact"
       />
-      <div
-        data-netlify-recaptcha={true}
+      <Recaptcha
+        onResolved={[Function]}
+        sitekey=""
       />
       <span
         className="undefined"
@@ -6909,6 +6911,7 @@ exports[`Storyshots ContactUsPage Default 1`] = `
       <form
         className=" "
         data-netlify={true}
+        data-netlify-recaptcha={true}
         name="contact"
         onSubmit={[Function]}
       >
@@ -6968,8 +6971,9 @@ exports[`Storyshots ContactUsPage Default 1`] = `
           type="hidden"
           value="contact"
         />
-        <div
-          data-netlify-recaptcha={true}
+        <Recaptcha
+          onResolved={[Function]}
+          sitekey=""
         />
         <span
           className="undefined"

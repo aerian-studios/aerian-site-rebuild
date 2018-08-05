@@ -4,6 +4,7 @@ exports[`ContactForm renders correctly 1`] = `
 <form
   className=" myClass"
   data-netlify={true}
+  data-netlify-recaptcha={true}
   name="contact"
   onSubmit={[Function]}
 >
@@ -63,8 +64,9 @@ exports[`ContactForm renders correctly 1`] = `
     type="hidden"
     value="contact"
   />
-  <div
-    data-netlify-recaptcha={true}
+  <Recaptcha
+    onResolved={[Function]}
+    sitekey=""
   />
   <span
     className="undefined"

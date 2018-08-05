@@ -14434,6 +14434,13 @@ react-fuzzy@^0.5.2:
     fuse.js "^3.0.1"
     prop-types "^15.5.9"
 
+react-google-invisible-recaptcha@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/react-google-invisible-recaptcha/-/react-google-invisible-recaptcha-0.2.8.tgz#e9485541c036a9379d3710b02cabf541ddd656fa"
+  dependencies:
+    prop-types "^15.6.0"
+    uuid "^3.1.0"
+
 react-helmet@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.0.tgz#a81811df21313a6d55c5f058c4aeba5d6f3d97a7"

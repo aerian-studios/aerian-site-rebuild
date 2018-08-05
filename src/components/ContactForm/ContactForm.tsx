@@ -13,7 +13,7 @@ interface State {
     phone: string;
     message: string;
 }
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY;
 const INITIAL_STATE: State = {
     name: "",
     email: "",

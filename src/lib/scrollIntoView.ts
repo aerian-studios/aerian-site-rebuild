@@ -12,6 +12,8 @@ export const documentVerticalScrollPosition = () => {
 };
 
 export const isSmoothScrollSupported =
+    document &&
+    document.documentElement &&
     "scrollBehavior" in document.documentElement.style;
 
 const doScrolling = (destY: number, duration: number) => {

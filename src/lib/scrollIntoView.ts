@@ -57,7 +57,7 @@ export const setTopMargin = (margin: number) => {
     topMargin = margin;
 };
 
-export const momoizeCurrentScrollPos = () => {
+export const memoizeCurrentScrollPos = () => {
     scrollPos = documentVerticalScrollPosition();
 
     return scrollPos;

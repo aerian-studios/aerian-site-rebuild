@@ -5,7 +5,7 @@ import * as ReactDOM from "react-dom";
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    momoizeCurrentScrollPos,
+    memoizeCurrentScrollPos,
     scrollToElement,
     setTopMargin
 } from "../../lib/scrollIntoView";
@@ -85,7 +85,7 @@ export class StaffDetail extends React.Component<Props> {
     public componentDidMount() {
         const asideEl = ReactDOM.findDOMNode(this.asideRef.current);
         setHeight(asideEl);
-        momoizeCurrentScrollPos();
+        memoizeCurrentScrollPos();
         setTopMargin(80);
         window.setTimeout(() => {
             scrollToElement(asideEl);

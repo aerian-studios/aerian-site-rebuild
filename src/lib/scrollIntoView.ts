@@ -16,7 +16,7 @@ export const isSmoothScrollSupported =
     document.documentElement &&
     "scrollBehavior" in document.documentElement.style;
 
-const doScrolling = (destY: number, duration: number) => {
+export const doScrolling = (destY: number, duration: number) => {
     if (isSmoothScrollSupported) {
         window.scrollTo({
             behavior: "smooth",

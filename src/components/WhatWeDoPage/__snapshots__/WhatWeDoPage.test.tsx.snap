@@ -33,6 +33,8 @@ Array [
           >
             <a
               href="/our-work/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
             >
               Our work
             </a>
@@ -53,36 +55,41 @@ Array [
     >
       <a
         className=""
-        href="#wePlan"
+        href="/#wePlan"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         We plan
       </a>
       <a
         className=""
-        href="#weDesign"
+        href="/#weDesign"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         We design
       </a>
       <a
         className=""
-        href="#weDevelop"
+        href="/#weDevelop"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         We develop
       </a>
       <a
         className=""
-        href="#weDeliver"
+        href="/#weDeliver"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         We deliver
       </a>
       <a
         className=""
-        href="#weCelebrate"
+        href="/#weCelebrate"
         onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         We celebrate
       </a>

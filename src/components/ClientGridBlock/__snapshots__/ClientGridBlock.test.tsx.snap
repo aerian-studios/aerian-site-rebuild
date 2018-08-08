@@ -9,6 +9,8 @@ exports[`ClientGridBlock renders correctly 1`] = `
   >
     <a
       href="/our-work/project/cnn-africa-view"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
     >
       <figure
         className=" "

@@ -88,6 +88,8 @@ exports[`Storyshots AboutPage Default 1`] = `
             >
               <a
                 href="/our-work/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
                 Our work
               </a>
@@ -119,6 +121,8 @@ exports[`Storyshots AboutPage Default 1`] = `
         >
           <a
             href="/our-work/project/cnn-africa-view"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
           >
             <figure
               className=" "
@@ -390,345 +394,294 @@ exports[`Storyshots AboutPage Default 1`] = `
           className="css-r8d96o"
         >
           <div>
-            <div>
-              <div
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  MemoryRouter
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  Unknown
-                </span>
+                &lt;
+                Unknown
+              </span>
+              <span>
                 <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    page
+                  </span>
                   <span>
-                     
+                    =
                     <span
                       style={Object {}}
                     >
-                      page
-                    </span>
-                    <span>
-                      =
+                      {
                       <span
-                        style={Object {}}
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
                       >
                         {
-                        <span
-                          style={
-                            Object {
-                              "color": "#666",
-                            }
-                          }
-                        >
-                          {
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              heroImage
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'https://raw.githubusercontent.com/aerian-studios/a…'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              title
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'About'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              subheading
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'A family of enthusiastic geeks who love all things…'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            …
-                          </span>
+                        <span>
                           <span>
                             <br />
                               
+                              
                           </span>
-                          }
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            heroImage
+                          </span>
                         </span>
-                        }
-                      </span>
-                    </span>
-                  </span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      clients
-                    </span>
-                    <span>
-                      =
-                      <span
-                        style={Object {}}
-                      >
-                        {
+                        : 
                         <span
                           style={
                             Object {
-                              "color": "#666",
+                              "color": "#22a",
+                              "wordBreak": "break-word",
                             }
                           }
                         >
-                          [
+                          'https://raw.githubusercontent.com/aerian-studios/a…'
+                        </span>
+                        ,
+                        <span>
                           <span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  name
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#22a",
-                                    "wordBreak": "break-word",
-                                  }
-                                }
-                              >
-                                'CNN'
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  logo
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#22a",
-                                    "wordBreak": "break-word",
-                                  }
-                                }
-                              >
-                                'https://raw.githubusercontent.com/aerian-studios/a…'
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  promoLogo
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#22a",
-                                    "wordBreak": "break-word",
-                                  }
-                                }
-                              >
-                                'https://raw.githubusercontent.com/aerian-studios/a…'
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                …
-                              </span>
-                              <span>
-                                <br />
-                                    
-                              </span>
-                              }
-                            </span>
+                            <br />
+                              
+                              
                           </span>
-                          ]
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            title
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'About'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            subheading
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'A family of enthusiastic geeks who love all things…'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          …
+                        </span>
+                        <span>
+                          <br />
+                            
                         </span>
                         }
                       </span>
+                      }
                     </span>
-                     
                   </span>
                 </span>
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  /&gt;
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    clients
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        [
+                        <span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            {
+                            <span>
+                              <span>
+                                <br />
+                                    
+                                  
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                name
+                              </span>
+                            </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#22a",
+                                  "wordBreak": "break-word",
+                                }
+                              }
+                            >
+                              'CNN'
+                            </span>
+                            ,
+                            <span>
+                              <span>
+                                <br />
+                                    
+                                  
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                logo
+                              </span>
+                            </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#22a",
+                                  "wordBreak": "break-word",
+                                }
+                              }
+                            >
+                              'https://raw.githubusercontent.com/aerian-studios/a…'
+                            </span>
+                            ,
+                            <span>
+                              <span>
+                                <br />
+                                    
+                                  
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                promoLogo
+                              </span>
+                            </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#22a",
+                                  "wordBreak": "break-word",
+                                }
+                              }
+                            >
+                              'https://raw.githubusercontent.com/aerian-studios/a…'
+                            </span>
+                            ,
+                            <span>
+                              <span>
+                                <br />
+                                    
+                                  
+                              </span>
+                              …
+                            </span>
+                            <span>
+                              <br />
+                                  
+                            </span>
+                            }
+                          </span>
+                        </span>
+                        ]
+                      </span>
+                      }
+                    </span>
+                  </span>
+                   
                 </span>
-              </div>
-              <div
+              </span>
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  MemoryRouter
-                  &gt;
-                </span>
-              </div>
+                /&gt;
+              </span>
             </div>
           </div>
           <button
@@ -782,179 +735,6 @@ exports[`Storyshots AboutPage Default 1`] = `
           <small>
             No propTypes defined!
           </small>
-        </div>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            MemoryRouter
-            " Component
-          </h2>
-          <table
-            className="css-1uhv8nx"
-          >
-            <thead>
-              <tr>
-                <th
-                  className="css-11b5gui"
-                >
-                  property
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  propType
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  required
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  default
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  description
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialEntries
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialIndex
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  getUserConfirmation
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  keyLength
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  children
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -4299,6 +4079,8 @@ exports[`Storyshots ClientGridBlock Default 1`] = `
       >
         <a
           href="/our-work/project/cnn-africa-view"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           <figure
             className=" "
@@ -4669,6 +4451,8 @@ exports[`Storyshots ClientGridItem Default 1`] = `
     >
       <a
         href="/our-work/project/cnn-africa-view"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         <figure
           className=" "
@@ -10874,9 +10658,10 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10885,9 +10670,10 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10896,9 +10682,10 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page3"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10907,9 +10694,10 @@ exports[`Storyshots MainNavigation No context styles 1`] = `
     </span>
   </a>
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page4"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10927,9 +10715,10 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
   onClick={[Function]}
 >
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10938,9 +10727,10 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10949,9 +10739,10 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page3"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -10960,9 +10751,10 @@ exports[`Storyshots MainNavigation With context styles 1`] = `
     </span>
   </a>
   <a
-    activeclassname="active-path "
     className="menu-item "
     href="/page4"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
   >
     <span
       className="menu-item "
@@ -11741,6 +11533,8 @@ exports[`Storyshots OnwardJournies Default 1`] = `
         </h2>
         <a
           href="/contact-us"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           Contact us
         </a>
@@ -11983,6 +11777,8 @@ exports[`Storyshots OurWorkPage Default 1`] = `
           <div>
             <a
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
             >
               <div
                 className=""
@@ -12034,345 +11830,294 @@ exports[`Storyshots OurWorkPage Default 1`] = `
           className="css-r8d96o"
         >
           <div>
-            <div>
-              <div
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  MemoryRouter
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  Unknown
-                </span>
+                &lt;
+                Unknown
+              </span>
+              <span>
                 <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    projects
+                  </span>
                   <span>
-                     
+                    =
                     <span
                       style={Object {}}
                     >
-                      projects
-                    </span>
-                    <span>
-                      =
+                      {
                       <span
-                        style={Object {}}
-                      >
-                        {
-                        <span
-                          style={
-                            Object {
-                              "color": "#666",
-                            }
+                        style={
+                          Object {
+                            "color": "#666",
                           }
-                        >
-                          [
-                          <span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
+                        }
+                      >
+                        [
+                        <span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
                               }
-                            >
-                              {
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  name
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#22a",
-                                    "wordBreak": "break-word",
-                                  }
-                                }
-                              >
-                                'BBC'
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  slug
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#22a",
-                                    "wordBreak": "break-word",
-                                  }
-                                }
-                              >
-                                'bbc-iwonder-perfect-diet-for-you'
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  titleLineOne
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#22a",
-                                    "wordBreak": "break-word",
-                                  }
-                                }
-                              >
-                                'What sort of 'eater' are you?'
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                …
-                              </span>
+                            }
+                          >
+                            {
+                            <span>
                               <span>
                                 <br />
                                     
+                                  
                               </span>
-                              }
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                name
+                              </span>
                             </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#22a",
+                                  "wordBreak": "break-word",
+                                }
+                              }
+                            >
+                              'BBC'
+                            </span>
+                            ,
+                            <span>
+                              <span>
+                                <br />
+                                    
+                                  
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                slug
+                              </span>
+                            </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#22a",
+                                  "wordBreak": "break-word",
+                                }
+                              }
+                            >
+                              'bbc-iwonder-perfect-diet-for-you'
+                            </span>
+                            ,
+                            <span>
+                              <span>
+                                <br />
+                                    
+                                  
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                titleLineOne
+                              </span>
+                            </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#22a",
+                                  "wordBreak": "break-word",
+                                }
+                              }
+                            >
+                              'What sort of 'eater' are you?'
+                            </span>
+                            ,
+                            <span>
+                              <span>
+                                <br />
+                                    
+                                  
+                              </span>
+                              …
+                            </span>
+                            <span>
+                              <br />
+                                  
+                            </span>
+                            }
                           </span>
-                          ]
                         </span>
-                        }
+                        ]
                       </span>
+                      }
                     </span>
                   </span>
+                </span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    page
+                  </span>
                   <span>
-                     
+                    =
                     <span
                       style={Object {}}
                     >
-                      page
-                    </span>
-                    <span>
-                      =
+                      {
                       <span
-                        style={Object {}}
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
                       >
                         {
-                        <span
-                          style={
-                            Object {
-                              "color": "#666",
-                            }
-                          }
-                        >
-                          {
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              heroImage
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'https://raw.githubusercontent.com/aerian-studios/a…'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              title
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'About'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              subheading
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'A family of enthusiastic geeks who love all things…'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            …
-                          </span>
+                        <span>
                           <span>
                             <br />
                               
+                              
                           </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            heroImage
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
                           }
+                        >
+                          'https://raw.githubusercontent.com/aerian-studios/a…'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            title
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'About'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            subheading
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'A family of enthusiastic geeks who love all things…'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          …
+                        </span>
+                        <span>
+                          <br />
+                            
                         </span>
                         }
                       </span>
+                      }
                     </span>
-                     
                   </span>
+                   
                 </span>
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  /&gt;
-                </span>
-              </div>
-              <div
+              </span>
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  MemoryRouter
-                  &gt;
-                </span>
-              </div>
+                /&gt;
+              </span>
             </div>
           </div>
           <button
@@ -12426,179 +12171,6 @@ exports[`Storyshots OurWorkPage Default 1`] = `
           <small>
             No propTypes defined!
           </small>
-        </div>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            MemoryRouter
-            " Component
-          </h2>
-          <table
-            className="css-1uhv8nx"
-          >
-            <thead>
-              <tr>
-                <th
-                  className="css-11b5gui"
-                >
-                  property
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  propType
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  required
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  default
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  description
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialEntries
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialIndex
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  getUserConfirmation
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  keyLength
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  children
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -17832,36 +17404,41 @@ exports[`Storyshots ProjectPage Default 1`] = `
       >
         <a
           className=""
-          href="#caseStudy"
+          href="/#caseStudy"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className=""
-          href="#gallery"
+          href="/#gallery"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className=""
-          href="#challenge"
+          href="/#challenge"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className=""
-          href="#solution"
+          href="/#solution"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className=""
-          href="#results"
+          href="/#results"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -18332,6 +17909,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </h2>
             <a
               href="/contact-us"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
             >
               Contact us
             </a>
@@ -18377,210 +17956,159 @@ exports[`Storyshots ProjectPage Default 1`] = `
           className="css-r8d96o"
         >
           <div>
-            <div>
-              <div
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  MemoryRouter
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  Unknown
-                </span>
+                &lt;
+                Unknown
+              </span>
+              <span>
                 <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    project
+                  </span>
                   <span>
-                     
+                    =
                     <span
                       style={Object {}}
                     >
-                      project
-                    </span>
-                    <span>
-                      =
+                      {
                       <span
-                        style={Object {}}
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
                       >
                         {
-                        <span
-                          style={
-                            Object {
-                              "color": "#666",
-                            }
-                          }
-                        >
-                          {
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              name
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'BBC'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              slug
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'bbc-iwonder-perfect-diet-for-you'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              titleLineOne
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'What sort of 'eater' are you?'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            …
-                          </span>
+                        <span>
                           <span>
                             <br />
                               
+                              
                           </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            name
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
                           }
+                        >
+                          'BBC'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            slug
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'bbc-iwonder-perfect-diet-for-you'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            titleLineOne
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'What sort of 'eater' are you?'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          …
+                        </span>
+                        <span>
+                          <br />
+                            
                         </span>
                         }
                       </span>
+                      }
                     </span>
-                     
                   </span>
+                   
                 </span>
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  /&gt;
-                </span>
-              </div>
-              <div
+              </span>
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  MemoryRouter
-                  &gt;
-                </span>
-              </div>
+                /&gt;
+              </span>
             </div>
           </div>
           <button
@@ -18634,179 +18162,6 @@ exports[`Storyshots ProjectPage Default 1`] = `
           <small>
             No propTypes defined!
           </small>
-        </div>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            MemoryRouter
-            " Component
-          </h2>
-          <table
-            className="css-1uhv8nx"
-          >
-            <thead>
-              <tr>
-                <th
-                  className="css-11b5gui"
-                >
-                  property
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  propType
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  required
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  default
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  description
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialEntries
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialIndex
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  getUserConfirmation
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  keyLength
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  children
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -19510,36 +18865,41 @@ exports[`Storyshots SectionNav Default 1`] = `
       >
         <a
           className=""
-          href="#caseStudy"
+          href="/#caseStudy"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className=""
-          href="#gallery"
+          href="/#gallery"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className=""
-          href="#challenge"
+          href="/#challenge"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className=""
-          href="#solution"
+          href="/#solution"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className=""
-          href="#results"
+          href="/#results"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -19916,36 +19276,41 @@ exports[`Storyshots SectionNav With contextual styles 1`] = `
       >
         <a
           className="sectionNavItem"
-          href="#caseStudy"
+          href="/#caseStudy"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className="sectionNavItem"
-          href="#gallery"
+          href="/#gallery"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className="sectionNavItem"
-          href="#challenge"
+          href="/#challenge"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className="sectionNavItem"
-          href="#solution"
+          href="/#solution"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className="sectionNavItem"
-          href="#results"
+          href="/#results"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -25092,6 +24457,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             >
               <a
                 href="/our-work/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
                 Our work
               </a>
@@ -25112,36 +24479,41 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
       >
         <a
           className=""
-          href="#wePlan"
+          href="/#wePlan"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           We plan
         </a>
         <a
           className=""
-          href="#weDesign"
+          href="/#weDesign"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           We design
         </a>
         <a
           className=""
-          href="#weDevelop"
+          href="/#weDevelop"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           We develop
         </a>
         <a
           className=""
-          href="#weDeliver"
+          href="/#weDeliver"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           We deliver
         </a>
         <a
           className=""
-          href="#weCelebrate"
+          href="/#weCelebrate"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           We celebrate
         </a>
@@ -25724,210 +25096,159 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
           className="css-r8d96o"
         >
           <div>
-            <div>
-              <div
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  MemoryRouter
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  Unknown
-                </span>
+                &lt;
+                Unknown
+              </span>
+              <span>
                 <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    page
+                  </span>
                   <span>
-                     
+                    =
                     <span
                       style={Object {}}
                     >
-                      page
-                    </span>
-                    <span>
-                      =
+                      {
                       <span
-                        style={Object {}}
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
                       >
                         {
-                        <span
-                          style={
-                            Object {
-                              "color": "#666",
-                            }
-                          }
-                        >
-                          {
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              heroImage
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'https://raw.githubusercontent.com/aerian-studios/a…'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              title
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'What We Do'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              subheading
-                            </span>
-                          </span>
-                          : 
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            'A family of enthusiastic geeks who love all things…'
-                          </span>
-                          ,
-                          <span>
-                            <span>
-                              <br />
-                                
-                                
-                            </span>
-                            …
-                          </span>
+                        <span>
                           <span>
                             <br />
                               
+                              
                           </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            heroImage
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
                           }
+                        >
+                          'https://raw.githubusercontent.com/aerian-studios/a…'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            title
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'What We Do'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            subheading
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'A family of enthusiastic geeks who love all things…'
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          …
+                        </span>
+                        <span>
+                          <br />
+                            
                         </span>
                         }
                       </span>
+                      }
                     </span>
-                     
                   </span>
+                   
                 </span>
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  /&gt;
-                </span>
-              </div>
-              <div
+              </span>
+              <span
                 style={
                   Object {
-                    "paddingLeft": 18,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  MemoryRouter
-                  &gt;
-                </span>
-              </div>
+                /&gt;
+              </span>
             </div>
           </div>
           <button
@@ -25981,179 +25302,6 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
           <small>
             No propTypes defined!
           </small>
-        </div>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            MemoryRouter
-            " Component
-          </h2>
-          <table
-            className="css-1uhv8nx"
-          >
-            <thead>
-              <tr>
-                <th
-                  className="css-11b5gui"
-                >
-                  property
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  propType
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  required
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  default
-                </th>
-                <th
-                  className="css-11b5gui"
-                >
-                  description
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialEntries
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  initialIndex
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  getUserConfirmation
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  keyLength
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-              <tr>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  children
-                </td>
-                <td
-                  className="css-1qcb1f7"
-                >
-                  <span />
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                >
-                  -
-                </td>
-                <td
-                  className="css-11b5gui"
-                />
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { MemoryRouter } from "react-router-dom";
 
 import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
@@ -16,7 +15,6 @@ const keys = {
 };
 
 storiesOf("SectionNav", module)
-    .addDecorator(story => <MemoryRouter>{story()}</MemoryRouter>)
     .add(
         "Default",
         withInfo({ inline: true })(() => (

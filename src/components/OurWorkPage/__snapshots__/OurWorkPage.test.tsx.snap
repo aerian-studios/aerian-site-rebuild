@@ -25,6 +25,8 @@ Array [
         <div>
           <a
             href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
           >
             <div
               className=""

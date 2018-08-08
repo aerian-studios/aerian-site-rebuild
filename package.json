@@ -13,7 +13,7 @@
         "classnames": "^2.2.6",
         "deep-map": "^1.5.0",
         "extract-text-webpack-plugin": "^3.0.2",
-        "gatsby": "2.0.0-beta.45",
+        "gatsby": "^2.0.0-beta.74",
         "gatsby-image": "^2.0.0-beta.6",
         "gatsby-plugin-manifest": "^2.0.2-beta.2",
         "gatsby-plugin-netlify": "^2.0.0-beta.4",

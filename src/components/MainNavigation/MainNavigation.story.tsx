@@ -3,7 +3,6 @@ import * as React from "react";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 
-import { MemoryRouter } from "react-router-dom";
 import { PageListNode } from "../../types/data";
 import { MainNavigation } from "./index";
 
@@ -43,7 +42,6 @@ import * as styles from "../PageNavBar/PageNavBar.module.scss";
 const onClick = () => {};
 
 storiesOf("MainNavigation", module)
-    .addDecorator(story => <MemoryRouter>{story()}</MemoryRouter>)
     .add("No context styles", () => (
         <MainNavigation
             className={styles.nav}

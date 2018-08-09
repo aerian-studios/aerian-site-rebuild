@@ -11,13 +11,16 @@ export const documentVerticalScrollPosition = () => {
     return 0; // None of the above.
 };
 
-export const isSmoothScrollSupported =
-    document &&
-    document.documentElement &&
-    "scrollBehavior" in document.documentElement.style;
+export const isSmoothScrollSupported = () => {
+    return (
+        document &&
+        document.documentElement &&
+        "scrollBehavior" in document.documentElement.style
+    );
+};
 
 export const doScrolling = (destY: number, duration: number) => {
-    if (isSmoothScrollSupported) {
+    if (isSmoothScrollSupported()) {
         window.scrollTo({
             behavior: "smooth",
             left: 0,

@@ -10,6 +10,7 @@ import {
     setTopMargin
 } from "../../lib/scrollIntoView";
 
+import { rejects } from "assert";
 import { Staff } from "../../types/data";
 import { Image } from "../Image";
 import { Tag } from "../Tag";
@@ -24,7 +25,9 @@ interface Props {
 
 const xIcon: IconName = "times";
 
-const getHeights = async (children: HTMLCollection): Promise<number[]> => {
+export const getHeights = async (
+    children: HTMLCollection
+): Promise<number[]> => {
     const heights = [];
     const len = children.length;
 
@@ -37,59 +40,81 @@ const getHeights = async (children: HTMLCollection): Promise<number[]> => {
     return heights;
 };
 
-const showStyles = `visibility: visible; transition: all .3s ease-out 0s; position: relative; height: 0;`;
-const hideStyles = `height: initial; visibility: hidden; transition: none 0s linear 0s; position: absolute;`;
-const hideShow = async (
+export const showStyles = `visibility: visible; transition: all .3s ease-out 0s; position: relative; height: 0;`;
+export const hideStyles = `height: initial; visibility: hidden; transition: none 0s linear 0s; position: absolute;`;
+export const hideShow = async (
     el: HTMLElement,
     hide: boolean = true
-): Promise<string> => {
+): Promise<HTMLElement> => {
     if (hide) {
-        return (el.style.cssText = hideStyles);
+        el.style.cssText = hideStyles;
+        return el;
     }
-    return (el.style.cssText = showStyles);
+    el.style.cssText = showStyles;
+    return el;
 };
 
-const setHeight = async (asideEl: HTMLElement) => {
-    const asideChildren: HTMLCollection = asideEl.children;
+export const setHeightStyles = (
+    el: HTMLElement,
+    height: number
+): Promise<HTMLElement> => {
+    return new Promise((resolve, reject) => {
+        if (!el || typeof height === "undefined") {
+            reject(el);
+        }
+        // RAF didn't cut it - render failed to transition
+        window.setTimeout(() => {
+            el.style.height = `${height}px`;
+            el.style.opacity = `1`;
+            resolve(el);
+        }, 16);
+    });
+};
+
+export const getAppropriteHeights = (heights: number[]): number => {
     const isVertical = window.innerWidth <= 768;
+
+    return isVertical
+        ? heights.reduce((accum, curr) => {
+              return accum + curr;
+          }, 0)
+        : heights.reduce((accum, curr) => {
+              return Math.max(curr, accum);
+          }, 0);
+};
+
+export const setHeight = async (asideEl: HTMLElement): Promise<HTMLElement> => {
+    const asideChildren: HTMLCollection = asideEl.children;
 
     await hideShow(asideEl, true);
 
     const heights: number[] = await getHeights(asideChildren);
-    const desiredHeight =
-        160 +
-        (isVertical
-            ? heights.reduce((accum, curr) => {
-                  return accum + curr;
-              }, 0)
-            : heights.reduce((accum, curr) => {
-                  return Math.max(curr, accum);
-              }, 0));
+    const desiredHeight = 160 + getAppropriteHeights(heights);
 
     await hideShow(asideEl, false);
 
-    // RAF didn't cut it - render failed to transition
-    window.setTimeout(() => {
-        asideEl.style.height = `${desiredHeight}px`;
-        asideEl.style.opacity = `1`;
-    }, 16);
+    return setHeightStyles(asideEl, desiredHeight);
 };
 
 export class StaffDetail extends React.Component<Props> {
-    public asideRef: React.RefObject<HTMLElement>;
+    public asideRef: React.RefObject<React.Component | React.ReactInstance>;
     constructor(props: Props) {
         super(props);
 
         this.asideRef = React.createRef();
     }
     public componentDidMount() {
-        const asideEl = ReactDOM.findDOMNode(this.asideRef.current);
-        setHeight(asideEl);
-        memoizeCurrentScrollPos();
-        setTopMargin(80);
-        window.setTimeout(() => {
-            scrollToElement(asideEl);
-        }, 300);
+        const asideEl: HTMLElement = ReactDOM.findDOMNode(
+            this.asideRef.current
+        );
+        if (asideEl) {
+            setHeight(asideEl);
+            memoizeCurrentScrollPos();
+            setTopMargin(80);
+            window.setTimeout(() => {
+                scrollToElement(asideEl);
+            }, 300);
+        }
     }
     public render() {
         const { staff, className, style, onClose } = this.props;
@@ -100,15 +125,22 @@ export class StaffDetail extends React.Component<Props> {
                 ref={this.asideRef}
             >
                 <button
+                    className={styles.closeButton}
                     onClick={() => {
-                        const asideEl = ReactDOM.findDOMNode(
+                        if (!this.asideRef && this.asideRef.current) {
+                            onClose();
+                            return;
+                        }
+                        const asideEl: HTMLElement = ReactDOM.findDOMNode(
                             this.asideRef.current
                         );
-                        hideShow(asideEl, false);
-                        scrollToElement(undefined, 150);
+
+                        if (asideEl) {
+                            hideShow(asideEl, false);
+                            scrollToElement(undefined, 150);
+                        }
                         onClose();
                     }}
-                    className={styles.closeButton}
                 >
                     <FontAwesomeIcon icon={xIcon} />
                 </button>

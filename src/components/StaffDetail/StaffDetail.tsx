@@ -97,7 +97,7 @@ export const setHeight = async (asideEl: HTMLElement): Promise<HTMLElement> => {
 };
 
 export class StaffDetail extends React.Component<Props> {
-    public asideRef: React.RefObject<React.Component | React.ReactInstance>;
+    public asideRef: React.RefObject<HTMLElement>;
     constructor(props: Props) {
         super(props);
 
@@ -105,8 +105,8 @@ export class StaffDetail extends React.Component<Props> {
     }
     public componentDidMount() {
         const asideEl: HTMLElement = ReactDOM.findDOMNode(
-            this.asideRef.current
-        );
+            this.asideRef.current!
+        ) as HTMLElement;
         if (asideEl) {
             setHeight(asideEl);
             memoizeCurrentScrollPos();
@@ -127,13 +127,9 @@ export class StaffDetail extends React.Component<Props> {
                 <button
                     className={styles.closeButton}
                     onClick={() => {
-                        if (!this.asideRef && this.asideRef.current) {
-                            onClose();
-                            return;
-                        }
                         const asideEl: HTMLElement = ReactDOM.findDOMNode(
-                            this.asideRef.current
-                        );
+                            this.asideRef.current!
+                        ) as HTMLElement;
 
                         if (asideEl) {
                             hideShow(asideEl, false);

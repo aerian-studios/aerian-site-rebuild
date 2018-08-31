@@ -28,7 +28,7 @@ Array [
             <br />
             so users don't have to
           </h1>
-          <span
+          <button
             className="undefined"
           >
             <a
@@ -41,7 +41,7 @@ Array [
             <i
               className="fa"
             />
-          </span>
+          </button>
         </div>
       </div>
     </div>

@@ -83,7 +83,7 @@ exports[`Storyshots AboutPage Default 1`] = `
             <h1>
               If you rely on the web you can rely on us
             </h1>
-            <span
+            <button
               className="undefined"
             >
               <a
@@ -96,7 +96,7 @@ exports[`Storyshots AboutPage Default 1`] = `
               <i
                 className="fa"
               />
-            </span>
+            </button>
           </div>
         </div>
       </div>
@@ -1636,15 +1636,11 @@ exports[`Storyshots Button Alternate 1`] = `
         }
       }
     >
-      <span
+      <button
         className=""
       >
-        <a
-          href="#"
-        >
-          Hello
-        </a>
-      </span>
+        Hello
+      </button>
     </div>
   </div>
   <div>
@@ -1827,103 +1823,23 @@ exports[`Storyshots Button Alternate 1`] = `
                     &gt;
                   </span>
                 </div>
-                <div>
-                  <div
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 48,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
                     style={
                       Object {
-                        "paddingLeft": 48,
-                        "paddingRight": 3,
+                        "color": "#777",
                       }
                     }
                   >
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      &lt;
-                      a
-                    </span>
-                    <span>
-                      <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          href
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            "
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              #
-                            </span>
-                            "
-                          </span>
-                        </span>
-                        
-                      </span>
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      &gt;
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 63,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      Hello
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 48,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      &lt;/
-                      a
-                      &gt;
-                    </span>
-                  </div>
+                    Hello
+                  </span>
                 </div>
                 <div
                   style={
@@ -2093,18 +2009,14 @@ exports[`Storyshots Button Alternate arrow 1`] = `
         }
       }
     >
-      <span
+      <button
         className="undefined"
       >
-        <a
-          href="#"
-        >
-          Hello
-        </a>
+        Hello
         <i
           className="fa"
         />
-      </span>
+      </button>
     </div>
   </div>
   <div>
@@ -2295,103 +2207,23 @@ exports[`Storyshots Button Alternate arrow 1`] = `
                     &gt;
                   </span>
                 </div>
-                <div>
-                  <div
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 48,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
                     style={
                       Object {
-                        "paddingLeft": 48,
-                        "paddingRight": 3,
+                        "color": "#777",
                       }
                     }
                   >
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      &lt;
-                      a
-                    </span>
-                    <span>
-                      <span>
-                         
-                        <span
-                          style={Object {}}
-                        >
-                          href
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            "
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              #
-                            </span>
-                            "
-                          </span>
-                        </span>
-                        
-                      </span>
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      &gt;
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 63,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      Hello
-                    </span>
-                  </div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 48,
-                        "paddingRight": 3,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#777",
-                        }
-                      }
-                    >
-                      &lt;/
-                      a
-                      &gt;
-                    </span>
-                  </div>
+                    Hello
+                  </span>
                 </div>
                 <div
                   style={
@@ -2553,15 +2385,11 @@ exports[`Storyshots Button Default 1`] = `
   <div
     style={Object {}}
   >
-    <span
+    <button
       className=""
     >
-      <a
-        href="#"
-      >
-        Hello
-      </a>
-    </span>
+      Hello
+    </button>
   </div>
   <div>
     <div
@@ -2630,103 +2458,23 @@ exports[`Storyshots Button Default 1`] = `
                   &gt;
                 </span>
               </div>
-              <div>
-                <div
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
                   style={
                     Object {
-                      "paddingLeft": 33,
-                      "paddingRight": 3,
+                      "color": "#777",
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    &lt;
-                    a
-                  </span>
-                  <span>
-                    <span>
-                       
-                      <span
-                        style={Object {}}
-                      >
-                        href
-                      </span>
-                      <span>
-                        =
-                        <span
-                          style={Object {}}
-                        >
-                          "
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            #
-                          </span>
-                          "
-                        </span>
-                      </span>
-                      
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    &gt;
-                  </span>
-                </div>
-                <div
-                  style={
-                    Object {
-                      "paddingLeft": 48,
-                      "paddingRight": 3,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    Hello
-                  </span>
-                </div>
-                <div
-                  style={
-                    Object {
-                      "paddingLeft": 33,
-                      "paddingRight": 3,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    &lt;/
-                    a
-                    &gt;
-                  </span>
-                </div>
+                  Hello
+                </span>
               </div>
               <div
                 style={
@@ -2867,18 +2615,14 @@ exports[`Storyshots Button With arrow 1`] = `
   <div
     style={Object {}}
   >
-    <span
+    <button
       className="undefined"
     >
-      <a
-        href="#"
-      >
-        Hello
-      </a>
+      Hello
       <i
         className="fa"
       />
-    </span>
+    </button>
   </div>
   <div>
     <div
@@ -2957,103 +2701,23 @@ exports[`Storyshots Button With arrow 1`] = `
                   &gt;
                 </span>
               </div>
-              <div>
-                <div
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
                   style={
                     Object {
-                      "paddingLeft": 33,
-                      "paddingRight": 3,
+                      "color": "#777",
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    &lt;
-                    a
-                  </span>
-                  <span>
-                    <span>
-                       
-                      <span
-                        style={Object {}}
-                      >
-                        href
-                      </span>
-                      <span>
-                        =
-                        <span
-                          style={Object {}}
-                        >
-                          "
-                          <span
-                            style={
-                              Object {
-                                "color": "#22a",
-                                "wordBreak": "break-word",
-                              }
-                            }
-                          >
-                            #
-                          </span>
-                          "
-                        </span>
-                      </span>
-                      
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    &gt;
-                  </span>
-                </div>
-                <div
-                  style={
-                    Object {
-                      "paddingLeft": 48,
-                      "paddingRight": 3,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    Hello
-                  </span>
-                </div>
-                <div
-                  style={
-                    Object {
-                      "paddingLeft": 33,
-                      "paddingRight": 3,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#777",
-                      }
-                    }
-                  >
-                    &lt;/
-                    a
-                    &gt;
-                  </span>
-                </div>
+                  Hello
+                </span>
               </div>
               <div
                 style={
@@ -3721,7 +3385,7 @@ exports[`Storyshots CaseStudyIntro Default 1`] = `
           With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
         </p>
       </div>
-      <span
+      <button
         className="undefined"
       >
         <a
@@ -3732,7 +3396,7 @@ exports[`Storyshots CaseStudyIntro Default 1`] = `
         <i
           className="fa"
         />
-      </span>
+      </button>
     </div>
   </div>
   <div>
@@ -19006,7 +18670,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
               With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
             </p>
           </div>
-          <span
+          <button
             className="undefined"
           >
             <a
@@ -19017,7 +18681,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
             <i
               className="fa"
             />
-          </span>
+          </button>
         </div>
       </div>
       <div
@@ -26407,7 +26071,7 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               <br />
               so users don't have to
             </h1>
-            <span
+            <button
               className="undefined"
             >
               <a
@@ -26420,7 +26084,7 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
               <i
                 className="fa"
               />
-            </span>
+            </button>
           </div>
         </div>
       </div>

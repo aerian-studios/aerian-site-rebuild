@@ -17,7 +17,12 @@ interface GraphData {
 
 const IndexPage: React.SFC<Props> = props => {
     return (
-        <Layout location={props.location} title={"Aerian Studios"}>
+        <Layout
+            location={props.location}
+            title={"Aerian Studios"}
+            seoDescription={`Industry leading campaigns, websites, products and mobile Apps. 
+        Bespoke user driven design and software development with open source web technologies for over 20 years. `}
+        >
             <section id="section-index">
                 <ShowcaseCarousel feature={true}>
                     {extractNodes(props.data.allProjectsJson).map(project => (

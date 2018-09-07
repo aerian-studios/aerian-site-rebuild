@@ -5,3 +5,4 @@ export const funny: string;
 export const details: string;
 export const role: string;
 export const skils: string;
+export const closeButton: string;

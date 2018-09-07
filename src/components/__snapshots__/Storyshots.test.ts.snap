@@ -21825,7 +21825,7 @@ exports[`Storyshots SocialLink Default 1`] = `
   <div
     style={Object {}}
   >
-    <li
+    <span
       className=" item"
     >
       <a
@@ -21837,7 +21837,7 @@ exports[`Storyshots SocialLink Default 1`] = `
           className="fa"
         />
       </a>
-    </li>
+    </span>
   </div>
   <div>
     <div
@@ -22113,7 +22113,7 @@ exports[`Storyshots SocialLinks Default 1`] = `
         <div
           className=" "
         >
-          <li
+          <span
             className=" item"
           >
             <a
@@ -22125,8 +22125,8 @@ exports[`Storyshots SocialLinks Default 1`] = `
                 className="fa"
               />
             </a>
-          </li>
-          <li
+          </span>
+          <span
             className=" item"
           >
             <a
@@ -22138,8 +22138,8 @@ exports[`Storyshots SocialLinks Default 1`] = `
                 className="fa"
               />
             </a>
-          </li>
-          <li
+          </span>
+          <span
             className=" item"
           >
             <a
@@ -22151,8 +22151,8 @@ exports[`Storyshots SocialLinks Default 1`] = `
                 className="fa"
               />
             </a>
-          </li>
-          <li
+          </span>
+          <span
             className=" item"
           >
             <a
@@ -22164,7 +22164,7 @@ exports[`Storyshots SocialLinks Default 1`] = `
                 className="fa"
               />
             </a>
-          </li>
+          </span>
         </div>
       </div>
     </footer>

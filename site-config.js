@@ -37,12 +37,12 @@ module.exports = {
             // assuming your favicons are in /static/favicons,
             // you can reference them here
             {
-                src: "/assets/icons/icon-192x192.png",
+                src: "/assets/icons/aerian-icon-192x192.png",
                 sizes: "192x192",
                 type: "image/png"
             },
             {
-                src: "/assets/icons/icon-512x512.png",
+                src: "/assets/icons/aerian-icon-512x512.png",
                 sizes: "512x512",
                 type: "image/png"
             }

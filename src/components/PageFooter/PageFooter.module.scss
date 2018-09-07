@@ -8,38 +8,21 @@
 }
 
 .footerContainer {
-    // max-width: var(--max-content-width);
-    // margin: 0 auto;
-    // color: white;
-    // padding: var(--s-4) 0;
-    // display: flex;
-    // flex-direction: column;
-    // @media (min-width: $bp-m) {
-    //     flex-direction: row;
-    // }
-    // > * {
-    //     border-top: 1px solid $c-black-80;
-    //     flex: 1 1 auto;
-    //     @media (min-width: $bp-m) {
-    //         border: none;
-    //     }
-    //     @media (max-width: $bp-m) {
-    //         margin-bottom: 15px;
-    //     }
-    //     &:first-child {
-    //         border: none;
-    //     }
-    //     &:last-child {
-    //         @media (max-width: $bp-m) {
-    //             // adding padding inside the last child, as the container's edge is the separator line
-    //             padding-top: 15px;
-    //             margin-bottom: 0;
-    //         }
-    //     }
-    // }
-
+    padding: var(--s-4) 0;
     color: white;
     display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: var(--s-4);
+    place-content: center;
+    > * {
+        border-bottom: 1px solid $c-black-80;
+        padding-bottom: var(--s-4);
+        &:last-child {
+            border-bottom: 0;
+        }
+        @media (min-width: $bp-m) {
+            border: none;
+        }
+    }
 }

@@ -19,10 +19,10 @@ export const SocialLink: React.SFC<Props> = ({
     iconName,
     url
 }) => (
-    <li className={[styles.item, className].join(" ")} style={style}>
+    <span className={[styles.item, className].join(" ")} style={style}>
         <a href={url} rel="nofollow noreferer">
             <FontAwesomeIcon icon={["fab", iconName]} />
         </a>
-    </li>
+    </span>
 );
 export default SocialLink;

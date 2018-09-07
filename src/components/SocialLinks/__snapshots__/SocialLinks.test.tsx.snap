@@ -4,7 +4,7 @@ exports[`SocialLinks renders correctly 1`] = `
 <div
   className=" "
 >
-  <li
+  <span
     className=" item"
   >
     <a
@@ -15,8 +15,8 @@ exports[`SocialLinks renders correctly 1`] = `
         className="fa"
       />
     </a>
-  </li>
-  <li
+  </span>
+  <span
     className=" item"
   >
     <a
@@ -27,8 +27,8 @@ exports[`SocialLinks renders correctly 1`] = `
         className="fa"
       />
     </a>
-  </li>
-  <li
+  </span>
+  <span
     className=" item"
   >
     <a
@@ -39,8 +39,8 @@ exports[`SocialLinks renders correctly 1`] = `
         className="fa"
       />
     </a>
-  </li>
-  <li
+  </span>
+  <span
     className=" item"
   >
     <a
@@ -51,6 +51,6 @@ exports[`SocialLinks renders correctly 1`] = `
         className="fa"
       />
     </a>
-  </li>
+  </span>
 </div>
 `;

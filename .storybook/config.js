@@ -1,9 +1,12 @@
-import { configure } from "@storybook/react";
+import { configure, addDecorator } from "@storybook/react";
+
 import "../src/lib/theme";
 global.___loader = {
     enqueue: () => {}
 };
 global.__PATH_PREFIX__ = "";
+
+addDecorator(withInfo({ inline: true }));
 
 const req = require.context("../src/components", true, /\.story\.[tj]sx?$/);
 

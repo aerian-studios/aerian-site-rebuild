@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { withInfo } from "@storybook/addon-info";
+
 import { storiesOf } from "@storybook/react";
 
 import { PageFooter } from "./index";
@@ -8,7 +8,7 @@ import { PageFooter } from "./index";
 storiesOf("PageFooter", module)
     .add(
         "Default",
-        withInfo({ inline: true })(() => (
+        (() => (
             <PageFooter className="myClass">
                 <div style={{ textAlign: "center" }}>
                     <p style={{ margin: 0 }}>This is the address</p>
@@ -23,7 +23,7 @@ storiesOf("PageFooter", module)
     )
     .add(
         "Three children",
-        withInfo({ inline: true })(() => (
+        (() => (
             <PageFooter className="myClass">
                 <div style={{ textAlign: "center" }}>
                     <p style={{ margin: 0 }}>This is the address</p>
@@ -43,7 +43,7 @@ storiesOf("PageFooter", module)
     )
     .add(
         "Show borders",
-        withInfo({ inline: true })(() => (
+        (() => (
             <PageFooter className="myClass">
                 <div style={{ textAlign: "center", border: "1px solid red" }}>
                     <p style={{ margin: 0 }}>This is the address</p>

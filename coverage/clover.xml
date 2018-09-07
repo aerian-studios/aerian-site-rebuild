@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1536318360619" clover="3.2.0">
+  <project timestamp="1536318360620" name="All files">
+    <metrics statements="364" coveredstatements="313" conditionals="103" coveredconditionals="49" methods="67" coveredmethods="56" elements="534" coveredelements="418" complexity="0" loc="364" ncloc="364" packages="35" files="68" classes="68">
+      <package name="components.Block">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="Block.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Block/Block.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="11" count="4" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Block/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.BlockHeader">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="BlockHeader.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/BlockHeader/BlockHeader.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="23" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/BlockHeader/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.Card">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
+        <file name="Card.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Card/Card.tsx">
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="22" count="2" type="stmt"/>
+          <line num="36" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Card/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.CaseStudyIntro">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="CaseStudyIntro.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/CaseStudyIntro/CaseStudyIntro.tsx">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/CaseStudyIntro/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ClientGridBlock">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <file name="ClientGridBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ClientGridBlock/ClientGridBlock.tsx">
+          <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ClientGridBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ClientGridItem">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <file name="ClientGridItem.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ClientGridItem/ClientGridItem.tsx">
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="28" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ClientGridItem/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ClientLogo">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="ClientLogo.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ClientLogo/ClientLogo.tsx">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
+          <line num="17" count="3" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ClientLogo/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ContactDetails">
+        <metrics statements="6" coveredstatements="6" conditionals="15" coveredconditionals="12" methods="1" coveredmethods="1"/>
+        <file name="ContactDetails.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ContactDetails/ContactDetails.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="15" coveredconditionals="12" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="67" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ContactDetails/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ContactForm">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <file name="ContactForm.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ContactForm/ContactForm.tsx">
+          <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ContactForm/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ContactInfo">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="ContactInfo.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ContactInfo/ContactInfo.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ContactInfo/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.Gallery">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <file name="Gallery.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Gallery/Gallery.tsx">
+          <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Gallery/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.GroupFour">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="GroupFour.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/GroupFour/GroupFour.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="4" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="10" count="4" type="stmt"/>
+          <line num="11" count="4" type="stmt"/>
+          <line num="15" count="4" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/GroupFour/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="4" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.GroupThree">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="GroupThree.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/GroupThree/GroupThree.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="3" type="stmt"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="10" count="3" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/GroupThree/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.HalfBlock">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="HalfBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/HalfBlock/HalfBlock.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/HalfBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.HurdleBlock">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="HurdleBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/HurdleBlock/HurdleBlock.tsx">
+          <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/HurdleBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.Image">
+        <metrics statements="27" coveredstatements="17" conditionals="18" coveredconditionals="7" methods="2" coveredmethods="2"/>
+        <file name="Image.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Image/Image.tsx">
+          <metrics statements="26" coveredstatements="16" conditionals="18" coveredconditionals="7" methods="2" coveredmethods="2"/>
+          <line num="1" count="11" type="stmt"/>
+          <line num="2" count="11" type="stmt"/>
+          <line num="3" count="11" type="stmt"/>
+          <line num="4" count="11" type="stmt"/>
+          <line num="6" count="11" type="stmt"/>
+          <line num="15" count="11" type="stmt"/>
+          <line num="16" count="24" type="stmt"/>
+          <line num="17" count="24" type="stmt"/>
+          <line num="24" count="24" type="stmt"/>
+          <line num="25" count="24" type="cond" truecount="1" falsecount="1"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="28" count="24" type="cond" truecount="2" falsecount="2"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="31" count="0" type="stmt"/>
+          <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="37" count="24" type="stmt"/>
+          <line num="39" count="24" type="cond" truecount="3" falsecount="1"/>
+          <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="45" count="24" type="cond" truecount="1" falsecount="1"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="48" count="24" type="stmt"/>
+          <line num="50" count="11" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Image/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="11" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.MainNavigation">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
+        <file name="MainNavigation.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/MainNavigation/MainNavigation.tsx">
+          <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="43" count="1" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="49" count="2" type="stmt"/>
+          <line num="51" count="2" type="stmt"/>
+          <line num="61" count="1" type="stmt"/>
+          <line num="69" count="1" type="stmt"/>
+          <line num="71" count="1" type="stmt"/>
+          <line num="84" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/MainNavigation/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.OnwardJournies">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="OnwardJournies.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/OnwardJournies/OnwardJournies.tsx">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/OnwardJournies/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.PageFooter">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="PageFooter.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PageFooter/PageFooter.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PageFooter/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.PageHeader">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <file name="PageHeader.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PageHeader/PageHeader.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PageHeader/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.PageSectionBlock">
+        <metrics statements="10" coveredstatements="10" conditionals="16" coveredconditionals="14" methods="2" coveredmethods="2"/>
+        <file name="PageSectionBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PageSectionBlock/PageSectionBlock.tsx">
+          <metrics statements="9" coveredstatements="9" conditionals="16" coveredconditionals="14" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="31" count="3" type="stmt"/>
+          <line num="72" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PageSectionBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.PerformanceBlock">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <file name="PerformanceBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PerformanceBlock/PerformanceBlock.tsx">
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="18" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/PerformanceBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ProjectStageBlock">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <file name="ProjectStageBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ProjectStageBlock/ProjectStageBlock.tsx">
+          <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="26" count="3" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ProjectStageBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.SectionNav">
+        <metrics statements="36" coveredstatements="14" conditionals="18" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <file name="SectionNav.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SectionNav/SectionNav.tsx">
+          <metrics statements="35" coveredstatements="13" conditionals="18" coveredconditionals="0" methods="6" coveredmethods="3"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="43" count="1" type="stmt"/>
+          <line num="44" count="1" type="stmt"/>
+          <line num="47" count="1" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="51" count="0" type="stmt"/>
+          <line num="53" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="56" count="0" type="stmt"/>
+          <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="64" count="0" type="stmt"/>
+          <line num="66" count="0" type="stmt"/>
+          <line num="68" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="69" count="0" type="stmt"/>
+          <line num="71" count="0" type="stmt"/>
+          <line num="73" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="74" count="0" type="stmt"/>
+          <line num="76" count="0" type="stmt"/>
+          <line num="78" count="0" type="stmt"/>
+          <line num="82" count="1" type="stmt"/>
+          <line num="85" count="1" type="stmt"/>
+          <line num="92" count="1" type="stmt"/>
+          <line num="96" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SectionNav/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.ShowcaseCarousel">
+        <metrics statements="20" coveredstatements="15" conditionals="4" coveredconditionals="1" methods="7" coveredmethods="4"/>
+        <file name="ShowcaseCarousel.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ShowcaseCarousel/ShowcaseCarousel.tsx">
+          <metrics statements="19" coveredstatements="14" conditionals="4" coveredconditionals="1" methods="7" coveredmethods="4"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="37" count="1" type="stmt"/>
+          <line num="47" count="1" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="51" count="1" type="stmt"/>
+          <line num="60" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/ShowcaseCarousel/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.SocialGrid">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="SocialGrid.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SocialGrid/SocialGrid.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SocialGrid/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.SocialLink">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="SocialLink.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SocialLink/SocialLink.tsx">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="22" count="4" type="stmt"/>
+          <line num="28" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SocialLink/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.SocialLinks">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="SocialLinks.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SocialLinks/SocialLinks.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SocialLinks/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.StaffDetail">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <file name="StaffDetail.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/StaffDetail/StaffDetail.tsx">
+          <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="27" count="24" type="stmt"/>
+          <line num="35" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/StaffDetail/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.StaffGridBlock">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <file name="StaffGridBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/StaffGridBlock/StaffGridBlock.tsx">
+          <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="20" count="33" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/StaffGridBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.StaffGridItem">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="StaffGridItem.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/StaffGridItem/StaffGridItem.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="17" count="34" type="stmt"/>
+          <line num="21" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/StaffGridItem/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.SuccessStoryBlock">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <file name="SuccessStoryBlock.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SuccessStoryBlock/SuccessStoryBlock.tsx">
+          <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="26" count="8" type="stmt"/>
+          <line num="35" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/SuccessStoryBlock/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.Tag">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="Tag.tsx" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Tag/Tag.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="12" count="25" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+        </file>
+        <file name="index.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/components/Tag/index.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="lib">
+        <metrics statements="28" coveredstatements="14" conditionals="18" coveredconditionals="5" methods="8" coveredmethods="4"/>
+        <file name="helpers.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/lib/helpers.ts">
+          <metrics statements="28" coveredstatements="14" conditionals="18" coveredconditionals="5" methods="8" coveredmethods="4"/>
+          <line num="1" count="16" type="stmt"/>
+          <line num="10" count="16" type="stmt"/>
+          <line num="11" count="48" type="stmt"/>
+          <line num="17" count="16" type="stmt"/>
+          <line num="18" count="24" type="stmt"/>
+          <line num="21" count="16" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="27" count="16" type="stmt"/>
+          <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="40" count="0" type="stmt"/>
+          <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="43" count="0" type="stmt"/>
+          <line num="45" count="0" type="stmt"/>
+          <line num="48" count="16" type="stmt"/>
+          <line num="49" count="15744" type="cond" truecount="4" falsecount="0"/>
+          <line num="50" count="13712" type="stmt"/>
+          <line num="52" count="2032" type="stmt"/>
+          <line num="54" count="16" type="stmt"/>
+          <line num="55" count="80" type="stmt"/>
+          <line num="58" count="16" type="stmt"/>
+          <line num="59" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="types">
+        <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="fixtures.ts" path="/Users/sunya/Sites/aerian-site-rebuild/src/types/fixtures.ts">
+          <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="16" count="16" type="stmt"/>
+          <line num="17" count="16" type="stmt"/>
+          <line num="18" count="16" type="stmt"/>
+          <line num="19" count="16" type="stmt"/>
+          <line num="20" count="16" type="stmt"/>
+          <line num="22" count="16" type="stmt"/>
+          <line num="24" count="16" type="stmt"/>
+          <line num="25" count="16" type="stmt"/>
+          <line num="26" count="16" type="stmt"/>
+          <line num="27" count="16" type="stmt"/>
+          <line num="28" count="16" type="stmt"/>
+          <line num="29" count="16" type="stmt"/>
+          <line num="30" count="16" type="stmt"/>
+          <line num="31" count="16" type="stmt"/>
+          <line num="32" count="16" type="stmt"/>
+          <line num="33" count="16" type="stmt"/>
+          <line num="34" count="16" type="stmt"/>
+          <line num="35" count="16" type="stmt"/>
+          <line num="36" count="16" type="stmt"/>
+          <line num="37" count="16" type="stmt"/>
+          <line num="38" count="16" type="stmt"/>
+          <line num="42" count="16" type="stmt"/>
+          <line num="43" count="16" type="stmt"/>
+          <line num="44" count="16" type="stmt"/>
+          <line num="45" count="16" type="stmt"/>
+          <line num="46" count="16" type="stmt"/>
+          <line num="47" count="16" type="stmt"/>
+          <line num="49" count="16" type="stmt"/>
+          <line num="50" count="16" type="stmt"/>
+          <line num="62" count="16" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

@@ -140,7 +140,9 @@ export class StaffDetail extends React.Component<Props> {
                             hideShow(asideEl, false);
                             scrollToElement(undefined, 150);
                         }
-                        onClose();
+                        if (onClose) {
+                            onClose();
+                        }
                     }}
                 >
                     <FontAwesomeIcon icon={xIcon} />

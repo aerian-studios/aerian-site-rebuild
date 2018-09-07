@@ -1,7 +1,6 @@
 @import "../../scss/variables";
 
 .item {
-    list-style: none;
     display: inline-block;
     margin-right: calc(var(--s-1) * 4);
     font-size: var(--t-h2);

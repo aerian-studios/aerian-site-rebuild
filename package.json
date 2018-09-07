@@ -69,7 +69,6 @@
         "@types/jest": "^23.1.1",
         "@types/leaflet": "^1.2.8",
         "@types/node": "^10.5.2",
-        "@types/react": "^16.4.13",
         "@types/react-dom": "^16.0.7",
         "@types/react-helmet": "^5.0.6",
         "@types/react-leaflet": "^1.1.5",

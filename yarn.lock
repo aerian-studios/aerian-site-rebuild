@@ -2156,12 +2156,6 @@
   version "7.0.66"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.66.tgz#3d1dc4d6f52e484e843806ff456379f7e6ad5553"
 
-"@types/prop-types@*":
-  version "15.5.5"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.5.tgz#17038dd322c2325f5da650a94d5f9974943625e3"
-  dependencies:
-    "@types/react" "*"
-
 "@types/puppeteer@*":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-1.5.1.tgz#8e924528322e184d1cd171f33fd2c94329bf059e"
@@ -2211,13 +2205,6 @@
   version "16.4.4"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.4.tgz#ffaa339e41346a7c65ddc914779ae43fa522a39a"
   dependencies:
-    csstype "^2.2.0"
-
-"@types/react@^16.4.13":
-  version "16.4.13"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.13.tgz#1385f5dc3486aa493849a32ccce626a817543e28"
-  dependencies:
-    "@types/prop-types" "*"
     csstype "^2.2.0"
 
 "@types/storybook__addon-actions@^3.0.3":

@@ -36,12 +36,6 @@ module.exports = {
         // several plugins.
         `gatsby-plugin-sharp`,
         `gatsby-plugin-sass`,
-        // Manifest for AppCache and PWA compatibility
-        {
-            resolve: `gatsby-plugin-manifest`,
-            options: siteConfig.manifest
-        },
-        `gatsby-plugin-offline`,
         {
             resolve: `gatsby-plugin-netlify-cms`,
             options: {
@@ -50,6 +44,12 @@ module.exports = {
                 modulePath: `${__dirname}/src/cms/cms.ts`
             }
         },
+        // Manifest for AppCache and PWA compatibility
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: siteConfig.manifest
+        },
+        `gatsby-plugin-offline`,
         `gatsby-plugin-netlify`
     ]
 };

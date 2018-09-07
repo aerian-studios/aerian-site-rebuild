@@ -40,6 +40,17 @@ describe("StaffDetail", () => {
         await setHeightStyles(el, 300);
         expect(el.style.height).toEqual("300px");
     });
+    it("rejects if it doesn't have the right params", async () => {
+        const el = createDetailsEls();
+        const func = jest.fn();
+
+        const result = await setHeightStyles(null, 300).catch(() => {
+            func();
+        });
+
+        expect(result).toBeFalsy();
+        expect(func).toHaveBeenCalled();
+    });
 
     it("adds hide styles to el passed", async () => {
         const el = createDetailsEls();
@@ -52,5 +63,25 @@ describe("StaffDetail", () => {
 
         await hideShow(el, false);
         expect(el.style.cssText).toContain("visibility: visible");
+    });
+
+    it("gets heights from children passed", async () => {
+        const el = createDetailsEls();
+        const result = await getHeights(el.children);
+
+        expect(result.length).toEqual(2);
+        expect(result).toEqual([0, 0]);
+    });
+
+    it("returns the correct styles for setHeight", async () => {
+        const el = createDetailsEls();
+        const errFunc = jest.fn();
+        const result = await setHeight(el).catch(() => {
+            errFunc();
+        });
+
+        expect(errFunc).not.toHaveBeenCalled();
+        expect(result && result.tagName).toEqual("ASIDE");
+        expect(el.style.height).toEqual("160px");
     });
 });

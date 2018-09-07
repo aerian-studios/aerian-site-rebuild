@@ -20,7 +20,7 @@ interface Props {
     staff: Staff;
     style?: React.CSSProperties;
     className?: string;
-    onClose: () => void;
+    onClose?: () => void;
 }
 
 const xIcon: IconName = "times";
@@ -60,13 +60,17 @@ export const setHeightStyles = (
 ): Promise<HTMLElement> => {
     return new Promise((resolve, reject) => {
         if (!el || typeof height === "undefined") {
-            reject(el);
+            return reject(el);
         }
         // RAF didn't cut it - render failed to transition
         window.setTimeout(() => {
+            if (!el || !el.style) {
+                return reject(el);
+            }
+
             el.style.height = `${height}px`;
             el.style.opacity = `1`;
-            resolve(el);
+            return resolve(el);
         }, 16);
     });
 };
@@ -107,14 +111,15 @@ export class StaffDetail extends React.Component<Props> {
         const asideEl: HTMLElement = ReactDOM.findDOMNode(
             this.asideRef.current!
         ) as HTMLElement;
-        if (asideEl) {
-            setHeight(asideEl);
-            memoizeCurrentScrollPos();
-            setTopMargin(80);
-            window.setTimeout(() => {
-                scrollToElement(asideEl);
-            }, 300);
+        if (!asideEl) {
+            return;
         }
+        setHeight(asideEl);
+        memoizeCurrentScrollPos();
+        setTopMargin(80);
+        window.setTimeout(() => {
+            scrollToElement(asideEl);
+        }, 300);
     }
     public render() {
         const { staff, className, style, onClose } = this.props;

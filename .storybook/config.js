@@ -1,4 +1,5 @@
 import { configure, addDecorator } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
 
 import "../src/lib/theme";
 global.___loader = {

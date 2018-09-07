@@ -30,6 +30,8 @@
     --feature-pad-2: calc(
         10 * var(--vertical-rythym)
     ); // needs to be here for the text calculations
+
+    --navBarSize: 54px;
     --t: 16; // base font size without units
     $t: 16;
     --t-xxs: 10px;
@@ -64,6 +66,7 @@
         --t-h1: 48;
         --t-h2: 38;
         --t-h3: 22;
+        --navBarSize: 90px;
     }
 }
 
@@ -87,6 +90,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: $whiteish;
+    min-height: 100vh;
+    position: relative;
 }
 
 html * {
@@ -282,6 +287,7 @@ hr {
 
 svg {
     fill: currentColor;
+    max-height: 100%;
 }
 
 svg * {

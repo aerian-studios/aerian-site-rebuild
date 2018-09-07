@@ -1,11 +1,9 @@
 import * as React from "react";
 
-import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
 
 import { BlockHeader } from "./index";
 
-storiesOf("BlockHeader", module).add(
-    "Default",
-    withInfo({ inline: true })(() => <BlockHeader title="foo" text="bar" />)
-);
+storiesOf("BlockHeader", module).add("Default", () => (
+    <BlockHeader title="foo" text="bar" />
+));

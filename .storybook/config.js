@@ -3,6 +3,7 @@ import "../src/lib/theme";
 global.___loader = {
     enqueue: () => {}
 };
+global.__PATH_PREFIX__ = "";
 
 const req = require.context("../src/components", true, /\.story\.[tj]sx?$/);
 

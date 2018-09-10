@@ -83,7 +83,6 @@
         "babel-plugin-require-context-hook": "^1.0.0",
         "codecov": "^3.0.4",
         "css-loader": "^0.28.11",
-        "docz": "^0.3.3",
         "extract-text-webpack-plugin": "^3.0.2",
         "gh-pages": "^1.2.0",
         "husky": "^0.14.3",

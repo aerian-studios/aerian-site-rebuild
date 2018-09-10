@@ -45,10 +45,10 @@ module.exports = {
             }
         },
         // Manifest for AppCache and PWA compatibility
-        {
-            resolve: `gatsby-plugin-manifest`,
-            options: siteConfig.manifest
-        },
+        // {
+        //     resolve: `gatsby-plugin-manifest`,
+        //     options: siteConfig.manifest
+        // },
         `gatsby-plugin-offline`,
         `gatsby-plugin-netlify`
     ]

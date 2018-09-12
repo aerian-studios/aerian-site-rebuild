@@ -41,7 +41,7 @@ artifacts:
     files:
         - "**/*"
     base-directory: public
-    name: ${CODEBUILD_SOURCE_VERSION}
+    name: $(echo "$CODEBUILD_SOURCE_VERSION" | tr "/" "-")
 # - location
 # - name
 #discard-paths: yes

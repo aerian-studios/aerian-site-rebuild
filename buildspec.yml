@@ -39,11 +39,11 @@ phases:
     # - command
 artifacts:
     files:
-        - public/**/*
+        - **/*
     base-directory: public
 
 # - location
-# - name
+ - name
 #discard-paths: yes
 #base-directory: location
 cache:

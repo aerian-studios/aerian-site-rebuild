@@ -25,7 +25,8 @@ phases:
         # - command
     build:
         commands:
-            yarn build
+            - echo ${CODEBUILD_SOURCE_VERSION}
+            - yarn build
             # - command
         #finally:
         # - command

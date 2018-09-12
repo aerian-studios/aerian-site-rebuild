@@ -40,7 +40,7 @@ phases:
     # - command
 artifacts:
     files:
-        - **/*
+        - "**/*"
     base-directory: public
 
 # - location

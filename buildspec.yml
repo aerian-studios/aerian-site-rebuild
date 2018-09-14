@@ -25,7 +25,7 @@ phases:
         # - command
     build:
         commands:
-            - yarn build --prefix-paths
+            - yarn build
             # - command
         #finally:
         # - command

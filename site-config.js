@@ -11,12 +11,7 @@ const backgroundColor = "#ffffff"; // Used for setting manifest background color
 const themeColor = "#c62828"; // Used for setting manifest and progress theme colors.
 
 module.exports = {
-    pathPrefix: process.env.CODEBUILD_SOURCE_VERSION
-        ? `/public/${process.env.CODEBUILD_SOURCE_VERSION.replace(
-              /[^\w]/g,
-              "-"
-          )}`
-        : "/", // Prefixes all links. For cases when deployed to example.github.io/my-site/.
+    pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/my-site/.
     // meta-data for <head>, used by https://github.com/nfl/react-helmet
     siteMetaDate: {
         siteTitle,

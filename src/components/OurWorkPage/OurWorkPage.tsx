@@ -1,12 +1,12 @@
 import { Link } from "gatsby";
 import * as React from "react";
-import { Page, Project } from "../../types/data";
+import { Page, ProjectBox } from "../../types/data";
 import { Image } from "../Image";
 import { PageHeader } from "../PageHeader";
 import { ShowcaseCarousel } from "../ShowcaseCarousel";
 import * as styles from "./OurWorkPage.module.scss";
 interface Props {
-    projects: Project[];
+    projects: ProjectBox[];
     page: Page;
 }
 
@@ -26,7 +26,7 @@ export const OurWorkPage: React.SFC<Props> = ({ projects, page }) => (
                     >
                         <Image
                             key={project.titleLineOne}
-                            source={project.heroImage}
+                            source={project.thumbnail}
                         />
                     </Link>
                 ))}

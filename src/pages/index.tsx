@@ -4,7 +4,12 @@ import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { ShowcaseCarousel } from "../components/ShowcaseCarousel";
 import { extractNodes } from "../lib/helpers";
-import { Client, NodeList, Project, ReactRouterLocation } from "../types/data";
+import {
+    Client,
+    NodeList,
+    ProjectBox,
+    ReactRouterLocation
+} from "../types/data";
 import * as styles from "./index.module.scss";
 interface Props {
     data: GraphData;
@@ -12,7 +17,7 @@ interface Props {
 }
 
 interface GraphData {
-    allProjectsJson: NodeList<Project>;
+    allProjectsJson: NodeList<ProjectBox>;
 }
 
 const IndexPage: React.SFC<Props> = props => {
@@ -25,17 +30,23 @@ const IndexPage: React.SFC<Props> = props => {
         >
             <section id="section-index">
                 <ShowcaseCarousel feature={true}>
-                    {extractNodes(props.data.allProjectsJson).map(project => (
-                        <Link
-                            key={project.slug}
-                            to={`/our-work/project/${project.slug}`}
-                        >
-                            <Image
-                                key={project.titleLineOne}
-                                source={project.heroImage}
-                            />
-                        </Link>
-                    ))}
+                    {extractNodes(props.data.allProjectsJson).map(
+                        (project, index) => (
+                            <Link
+                                key={project.slug}
+                                to={`/our-work/project/${project.slug}`}
+                            >
+                                <Image
+                                    key={project.titleLineOne}
+                                    source={
+                                        index === 0
+                                            ? project.thumbnail
+                                            : project.heroImage
+                                    }
+                                />
+                            </Link>
+                        )
+                    )}
                 </ShowcaseCarousel>
             </section>
         </Layout>

@@ -1,7 +1,7 @@
 /// <reference types="@types/jest" />
 import * as React from "react";
 import * as renderer from "react-test-renderer";
-import { about, project } from "../../types/fixtures";
+import { about, projectBox } from "../../types/fixtures";
 import { OurWorkPage } from "./index";
 
 (global as any).IntersectionObserver = jest.fn(() => ({
@@ -13,7 +13,7 @@ import { OurWorkPage } from "./index";
 describe("OurWorkPage", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<OurWorkPage projects={[project]} page={about} />)
+            .create(<OurWorkPage projects={[projectBox]} page={about} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

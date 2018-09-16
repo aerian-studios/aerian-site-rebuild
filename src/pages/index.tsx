@@ -40,8 +40,8 @@ const IndexPage: React.SFC<Props> = props => {
                                     key={project.titleLineOne}
                                     source={
                                         index === 0
-                                            ? project.thumbnail
-                                            : project.heroImage
+                                            ? project.heroImage
+                                            : project.thumbnail
                                     }
                                 />
                             </Link>

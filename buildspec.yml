@@ -25,7 +25,7 @@ phases:
         # - command
     build:
         commands:
-            yarn build
+            - yarn build
             # - command
         #finally:
         # - command
@@ -39,16 +39,15 @@ phases:
     # - command
 artifacts:
     files:
-        - public/**/*
+        - "**/*"
     base-directory: public
-
+    name: $(echo $CODEBUILD_SOURCE_VERSION | tr / -)
 # - location
 # - name
 #discard-paths: yes
 #base-directory: location
 cache:
     paths:
-        - .cache/**/*
         - node_modules/**/*
         - public/**/*
         - /usr/local/lib/node_modules/**/*

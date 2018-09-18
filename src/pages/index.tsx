@@ -38,6 +38,8 @@ const IndexPage: React.SFC<Props> = props => {
                             >
                                 <Image
                                     key={project.titleLineOne}
+                                    fadeIn={index >= 7}
+                                    critical={index < 7}
                                     source={
                                         index === 0
                                             ? project.heroImage

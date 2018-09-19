@@ -15,7 +15,18 @@ interface State {
 
 export const MapView: React.SFC<Props> = ({ className, style, position }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
-        <Map center={position} zoom={13}>
+        <Map
+            center={position}
+            zoom={13}
+            attributionPrefix={
+                <a href="https://github.com/mariusandra/pigeon-maps">🐦</a>
+            }
+            attribution={
+                <>
+                    © <a href="https://www.openstreetmap.org/copyright">OSM</a>
+                </>
+            }
+        >
             <Overlay anchor={position} offset={[15, 36]}>
                 <img width={30} height={36} src={icon.replace(/"/g, "")} />
             </Overlay>

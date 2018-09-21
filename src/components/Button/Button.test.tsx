@@ -10,7 +10,7 @@ describe("Button", () =>
         const tree = renderer
             .create(
                 <Button alternate={true} arrow={true}>
-                    <a href="#">Hello</a>
+                    Hello
                 </Button>
             )
             .toJSON();

@@ -10,7 +10,7 @@ storiesOf("Button", module)
         "Default",
         (() => (
             <Button>
-                <a href="#">Hello</a>
+                Hello
             </Button>
         ))
     )
@@ -18,7 +18,7 @@ storiesOf("Button", module)
         "With arrow",
         (() => (
             <Button arrow={true}>
-                <a href="#">Hello</a>
+                Hello
             </Button>
         ))
     )
@@ -26,9 +26,7 @@ storiesOf("Button", module)
         "Alternate",
         (() => (
             <div style={{ padding: 200, backgroundColor: "blue" }}>
-                <Button alternate={true}>
-                    <a href="#">Hello</a>
-                </Button>
+                <Button alternate={true}>Hello</Button>
             </div>
         ))
     )
@@ -37,7 +35,7 @@ storiesOf("Button", module)
         (() => (
             <div style={{ padding: 200, backgroundColor: "blue" }}>
                 <Button alternate={true} arrow={true}>
-                    <a href="#">Hello</a>
+                    Hello
                 </Button>
             </div>
         ))

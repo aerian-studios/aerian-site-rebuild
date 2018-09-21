@@ -19,18 +19,18 @@ export const Button: React.SFC<Props> = ({
     arrow,
     alternate
 }) => (
-    <span
-        className={classNames(
-            styles.component,
-            { [styles.alternate]: alternate, [styles.arrow]: arrow },
-            className
-        )}
-        style={style}
-    >
-        {children}
-        {arrow && (
-            <FontAwesomeIcon icon={faArrowRight} className={styles.icon} />
-        )}
-    </span>
-);
+        <button
+            className={classNames(
+                styles.component,
+                { [styles.alternate]: alternate, [styles.arrow]: arrow },
+                className
+            )}
+            style={style}
+        >
+            {children}
+            {arrow && (
+                <FontAwesomeIcon icon={faArrowRight} className={styles.icon} />
+            )}
+        </button>
+    );
 export default Button;

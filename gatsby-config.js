@@ -7,7 +7,6 @@ module.exports = {
         "ProjectsJson.client": "ClientsJson"
     },
     plugins: [
-        `gatsby-plugin-netlify`,
         `gatsby-plugin-netlify-cache`,
         `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
@@ -37,20 +36,20 @@ module.exports = {
         // several plugins.
         `gatsby-plugin-sharp`,
         `gatsby-plugin-sass`,
+        {
+            resolve: `gatsby-plugin-netlify-cms`,
+            options: {
+                // One convention is to place your Netlify CMS customization code in a
+                // `src/cms` directory.
+                modulePath: `${__dirname}/src/cms/cms.ts`
+            }
+        },
         // Manifest for AppCache and PWA compatibility
         {
             resolve: `gatsby-plugin-manifest`,
             options: siteConfig.manifest
         },
         `gatsby-plugin-offline`,
-        {
-            resolve: `gatsby-plugin-netlify-cms`,
-            options: {
-                // One convention is to place your Netlify CMS customization code in a
-                // `src/cms` directory.
-                modulePath: `${__dirname}/src/cms/cms.ts`,
-                stylesPath: `${__dirname}/src/scss/base-theme.scss`
-            }
-        }
+        `gatsby-plugin-netlify`
     ]
 };

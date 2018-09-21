@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: master
-
+  
 media_folder: static/assets
 public_folder: /assets
 
@@ -14,6 +14,7 @@ collections:
     extension: json
     slug: "{{slug}}"
     fields:
+      - {label: "Path", name: "path", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Logo", name: "logo", widget: "image"}
       - {label: "Promo logo (a white logo works best)", name: "promoLogo", widget: "image"}
@@ -34,6 +35,7 @@ collections:
     extension: json
     slug: "{{slug}}"
     fields:
+      - {label: "Path", name: "path", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Hero Image", name: "heroImage", widget: "image"}
       - {label: "Hero Video", name: "heroVideo", widget: "file", required: false}

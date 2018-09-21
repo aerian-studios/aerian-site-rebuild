@@ -9,3 +9,4 @@ yarn-error.log
 static/admin/*.bundle.*
 docs
 coverage
+.env.*

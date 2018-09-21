@@ -1,7 +1,13 @@
+@import "../../scss/variables";
+
 .component {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     img {
         max-width: 100%;
+    }
+    row-gap: var(--v-grid-spacing);
+    grid-template-columns: 1fr;
+    @media (min-width: $bp-l) {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

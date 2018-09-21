@@ -26,13 +26,20 @@ Array [
           <h1>
             If you rely on the web you can rely on us
           </h1>
-          <a
-            href="/our-work"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
+          <button
+            className="undefined"
           >
-            View our work
-          </a>
+            <a
+              href="/our-work/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Our work
+            </a>
+            <i
+              className="fa"
+            />
+          </button>
         </div>
       </div>
     </div>
@@ -40,7 +47,7 @@ Array [
   </header>,
   <section>
     <div
-      className=" "
+      className=""
     >
       <h1>
         A family of enthusiastic geeks who love all things web and innovative

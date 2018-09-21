@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HalfBlock renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    className=" "
+  >
+    <div
+      onWheel={[Function]}
+      style={
+        Object {
+          "background": "#dddddd",
+          "display": "inline-block",
+          "height": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+          "touchAction": "none",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;

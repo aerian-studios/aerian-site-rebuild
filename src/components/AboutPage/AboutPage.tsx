@@ -4,6 +4,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { About, Client } from "../../types/data";
 import { Block } from "../Block";
+import { Button } from "../Button";
 import { ClientGridBlock } from "../ClientGridBlock";
 import { HeroBlock } from "../HeroBlock";
 import { Image } from "../Image";
@@ -21,7 +22,9 @@ export const AboutPage: React.SFC<Props> = ({ page, clients }) => (
             <HeroBlock heroImage={page.heroImage} aria-labelled-by="page-title">
                 <div>
                     <h1>If you rely on the web you can rely on us</h1>
-                    <Link to={"/our-work"}>View our work</Link>
+                    <Button arrow={true} alternate={true}>
+                        <Link to={"/our-work/"}>Our work</Link>
+                    </Button>
                 </div>
             </HeroBlock>
         </PageHeader>

@@ -46,12 +46,21 @@ export const projectBoxFragment = graphql`
     fragment ProjectBox on ProjectsJson {
         name
         slug
+        titleLineOne
         client {
             ...Client
         }
         heroImage {
             childImageSharp {
                 fluid(maxWidth: 1066, maxHeight: 1066) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+            publicURL
+        }
+        thumbnail: heroImage {
+            childImageSharp {
+                fluid(maxWidth: 250, maxHeight: 250) {
                     ...GatsbyImageSharpFluid_withWebp
                 }
             }

@@ -1,16 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SocialLink renders correctly 1`] = `
-<li
+<span
   className=" item"
 >
   <a
     href="https://www.facebook.com/aerianstudios/"
     rel="nofollow noreferer"
+    title="facebook-f"
   >
     <i
       className="fa"
     />
   </a>
-</li>
+</span>
 `;

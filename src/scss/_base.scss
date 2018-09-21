@@ -30,6 +30,8 @@
     --feature-pad-2: calc(
         10 * var(--vertical-rythym)
     ); // needs to be here for the text calculations
+
+    --navBarSize: 54px;
     --t: 16; // base font size without units
     $t: 16;
     --t-xxs: 10px;
@@ -64,6 +66,7 @@
         --t-h1: 48;
         --t-h2: 38;
         --t-h3: 22;
+        --navBarSize: 90px;
     }
 }
 
@@ -87,6 +90,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: $whiteish;
+    min-height: 100vh;
+    position: relative;
 }
 
 html * {
@@ -125,6 +130,14 @@ h3 {
 h1 {
     @include font-size(var(--t-h1));
     line-height: calculateRem(53);
+    &:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: $c-brand-b;
+        display: inline-block;
+        margin-left: 2px;
+    }
 }
 
 h2 {
@@ -263,21 +276,6 @@ q {
     }
 }
 
-blockquote {
-    @include font-size(20);
-    line-height: calculateRem(28);
-    font-family: $t-font-basic;
-    font-weight: 400;
-    @media (min-width: $bp-m) {
-        @include font-size(24);
-        line-height: calculateRem(32);
-    }
-    @media (min-width: $bp-l) {
-        @include font-size(30);
-        line-height: calculateRem(38);
-    }
-}
-
 address {
     font-style: normal;
 }
@@ -285,6 +283,11 @@ address {
 hr {
     border-bottom: 0;
     margin: 0;
+}
+
+svg {
+    fill: currentColor;
+    max-height: 100%;
 }
 
 svg * {

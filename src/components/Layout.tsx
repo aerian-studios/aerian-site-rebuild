@@ -1,4 +1,5 @@
-import { graphql, Link, StaticQuery } from "gatsby";
+import classNames from "classnames";
+import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 import Helmet from "react-helmet";
 
@@ -51,7 +52,7 @@ const Layout: React.SFC<Props> = ({
             const pages: PageListNode[] =
                 (data && data.allPagesJson && data.allPagesJson.edges) || null;
             return (
-                <div className={`layout-container ${className}`}>
+                <div className={classNames(styles.layoutContainer, className)}>
                     <Helmet defaultTitle="Aerian Studios">
                         <html lang="en" />
                         <meta charSet="utf-8" />
@@ -68,7 +69,12 @@ const Layout: React.SFC<Props> = ({
                                 className={styles.pageNavBar}
                             />
                         ) : null}
-                        <main id="content-wrapper">{children}</main>
+                        <main
+                            id="content-wrapper"
+                            className={styles.mainElement}
+                        >
+                            {children}
+                        </main>
                         <PageFooter>
                             <ContactDetails
                                 phoneNumber="0345 408 6009"

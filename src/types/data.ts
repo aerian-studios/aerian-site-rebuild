@@ -196,7 +196,14 @@ export interface Performance {
     title: string | number;
     text: string;
 }
-
+export interface ProjectBox {
+    name: string;
+    slug: string;
+    heroImage: ImageField;
+    thumbnail: ImageField;
+    client: Client;
+    titleLineOne: string;
+}
 export interface Project {
     name: string;
     slug: string;

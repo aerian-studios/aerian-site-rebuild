@@ -1,0 +1,55 @@
+@import "../../scss/variables";
+
+.component {
+    border: 2px solid $c-brand-a;
+    color: $c-brand-a;
+    background: transparent;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 0;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.42857;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: padding-right 0.3s;
+
+    &.alternate {
+        border-color: $c-brand-c;
+        color: $c-brand-c;
+
+        &:hover {
+            color: #cf254d;
+            border-color: #fff;
+            background: #fff;
+        }
+    }
+    &.arrow {
+        &:hover {
+            padding-right: 60px;
+
+            .icon {
+                opacity: 1;
+                transform: translate(100%, -50%);
+            }
+        }
+
+        padding: 15px 40px;
+    }
+
+    .icon {
+        fill: $c-brand-a;
+        opacity: 0;
+        height: 18px;
+        transition: transform 0.3s, opacity 0.3s;
+        vertical-align: middle;
+        top: 50%;
+        transform: translate(0, -50%);
+        position: absolute;
+    }
+}

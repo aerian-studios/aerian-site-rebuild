@@ -1,8 +1,21 @@
 @import "../scss/variables";
 
+.layoutContainer {
+    min-height: 100%;
+}
+
 .pageNavBar {
     position: fixed;
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    height: var(--navBarSize);
+}
+
+.mainElement {
+    position: relative;
+    margin-top: var(--navBarSize);
 }
 
 .contentWrapper {

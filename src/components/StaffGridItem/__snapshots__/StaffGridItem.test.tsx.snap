@@ -2,8 +2,20 @@
 
 exports[`StaffGridItem renders correctly 1`] = `
 <div
-  className=" myClass"
+  className="myClass"
+  onClick={[Function]}
+  style={
+    Object {
+      "gridArea": "staffNaN",
+    }
+  }
 >
-  {"name":"Paul Goodenough","jobTitle":"CEO & Founder","live":true,"imageNormal":"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/484/paolo.png","imageFunny":"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png","description":"Paul founded Aerian to work on projects of worth, and has shaped, managed and delivered some of the biggest national and international digital projects for clients such as BBC, Channel 4, Sky, Into Film, The Science Museum, Breast Cancer Now, Dementia Friends, Alzheimer's Society, Danone, Tesco Mobile, Nickelodeon and more.","fact":"Paul is also a double Emmy nominated writer & producer for  brands inc. BBC, How to Train Your Dragon and Peppa Pig; and owns over 20k comics. Paul has also been highlighted as one of the top ten innovators in the UK by UKTI.","skills":["Accessibility and Compliance Semantics","Business Development","Conceptual Design","Consulting","Conversion Rate Optimisation","Copywriting","Flash","Graphic design","Marketing","Motion Graphics","Multivariate Testing","Partnerships","Product Development","Product Management","Prototypes","SEO","Strategy","UI Design","User Experience","User Testing","UX Design","Visual Design","Wireframes","XSLT"]}
+  <div
+    className=""
+  >
+    <img
+      src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/484/paolo.png"
+    />
+  </div>
 </div>
 `;

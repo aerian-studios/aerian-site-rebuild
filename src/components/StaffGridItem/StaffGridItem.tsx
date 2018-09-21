@@ -1,21 +1,49 @@
+import classNames from "classnames";
 import * as React from "react";
 
 import { Staff } from "../../types/data";
+import { Image } from "../Image";
+import { StaffDetail } from "../StaffDetail";
 import * as styles from "./StaffGridItem.module.scss";
 
 interface Props {
     style?: React.CSSProperties;
     className?: string;
     person: Staff;
+    detail?: boolean;
+    onExpand: (person?: Staff) => void;
+    index?: number;
 }
 
 export const StaffGridItem: React.SFC<Props> = ({
     style,
     className,
-    person
-}) => (
-    <div className={[styles.component, className].join(" ")} style={style}>
-        {JSON.stringify(person)}
-    </div>
-);
+    person,
+    detail,
+    onExpand,
+    index
+}) => {
+    const contextual = { ...style, gridArea: `staff${Number(index) + 1}` };
+    return (
+        <>
+            <div
+                className={classNames(className)}
+                style={contextual}
+                onClick={() => onExpand(detail ? undefined : person)}
+            >
+                <Image source={person.imageNormal} />
+            </div>
+            {detail && (
+                <StaffDetail
+                    staff={person}
+                    onClose={() => {
+                        window.setTimeout(() => {
+                            onExpand(undefined);
+                        }, 200);
+                    }}
+                />
+            )}
+        </>
+    );
+};
 export default StaffGridItem;

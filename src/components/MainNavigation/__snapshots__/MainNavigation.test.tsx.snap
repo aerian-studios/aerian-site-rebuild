@@ -6,7 +6,6 @@ exports[`MainNavigation renders correctly 1`] = `
   id="menu-main"
 >
   <a
-    aria-current={null}
     className="menu-item "
     href="/page1"
     onClick={[Function]}
@@ -19,7 +18,6 @@ exports[`MainNavigation renders correctly 1`] = `
     </span>
   </a>
   <a
-    aria-current={null}
     className="menu-item "
     href="/page2"
     onClick={[Function]}

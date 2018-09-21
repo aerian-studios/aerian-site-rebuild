@@ -4,36 +4,37 @@
     "version": "0.0.1",
     "author": "sunya.dickman@aerian.com",
     "dependencies": {
-        "@babel/preset-env": "^7.0.0-beta.54",
         "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
         "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
         "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
         "@fortawesome/react-fontawesome": "^0.1.0-11",
         "@researchgate/react-intersection-observer": "^0.7.3",
+        "@types/react-transition-group": "^2.0.11",
         "classnames": "^2.2.6",
         "deep-map": "^1.5.0",
         "extract-text-webpack-plugin": "^3.0.2",
-        "gatsby": "2.0.0-beta.45",
-        "gatsby-image": "^2.0.0-beta.6",
-        "gatsby-plugin-manifest": "^2.0.2-beta.2",
-        "gatsby-plugin-netlify": "^2.0.0-beta.4",
+        "gatsby": "^2.0.3",
+        "gatsby-image": "^2.0.5",
+        "gatsby-plugin-manifest": "^2.0.2",
+        "gatsby-plugin-netlify": "^2.0.0",
         "gatsby-plugin-netlify-cache": "^0.1.0",
-        "gatsby-plugin-netlify-cms": "^2.0.0-beta.6",
-        "gatsby-plugin-offline": "next",
-        "gatsby-plugin-react-helmet": "^3.0.0-beta.3",
-        "gatsby-plugin-sass": "^2.0.0-beta.5",
-        "gatsby-plugin-sharp": "^2.0.0-beta.5",
-        "gatsby-plugin-typescript": "^2.0.0-beta.5",
-        "gatsby-source-filesystem": "^2.0.1-beta.5",
-        "gatsby-transformer-json": "^2.1.1-beta.2",
-        "gatsby-transformer-sharp": "^2.1.1-beta.5",
-        "leaflet": "^1.3.1",
-        "netlify-cms": "^1.9.2",
-        "react": "^16.4.1",
-        "react-dom": "^16.4.1",
+        "gatsby-plugin-netlify-cms": "^3.0.1",
+        "gatsby-plugin-offline": "^2.0.5",
+        "gatsby-plugin-react-helmet": "^3.0.0",
+        "gatsby-plugin-sass": "^2.0.1",
+        "gatsby-plugin-sharp": "^2.0.5",
+        "gatsby-plugin-typescript": "^2.0.0",
+        "gatsby-source-filesystem": "^2.0.1",
+        "gatsby-transformer-json": "^2.1.1",
+        "gatsby-transformer-sharp": "^2.1.1",
+        "netlify-cms": "^2.0.11",
+        "pigeon-maps": "^0.10.4",
+        "pigeon-overlay": "^0.2.2",
+        "react": "^16.5.0",
+        "react-dom": "^16.5.0",
         "react-helmet": "^5.2.0",
-        "react-leaflet": "^2.0.0",
-        "react-markdown": "^3.3.4"
+        "react-markdown": "^3.3.4",
+        "react-transition-group": "^2.4.0"
     },
     "keywords": [
         "gatsby"
@@ -54,21 +55,21 @@
         "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 > coverage.lcov && codecov"
     },
     "devDependencies": {
-        "@babel/core": "^7.0.0-beta.54",
-        "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54",
-        "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.54",
-        "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.51",
-        "@babel/preset-react": "^7.0.0-beta.54",
+        "@babel/core": "^7.0.0",
+        "@babel/plugin-proposal-class-properties": "^7.0.0",
+        "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+        "@babel/preset-env": "^7.0.0",
+        "@babel/preset-react": "^7.0.0",
         "@storybook/addon-actions": "^4.0.0-alpha.14",
-        "@storybook/addon-info": "^4.0.0-alpha.14",
-        "@storybook/addon-storyshots": "^4.0.0-alpha.14",
-        "@storybook/react": "^4.0.0-alpha.10",
+        "@storybook/addon-info": "^4.0.0-alpha.20",
+        "@storybook/addon-storyshots": "^4.0.0-alpha.20",
+        "@storybook/react": "^4.0.0-alpha.20",
         "@types/classnames": "^2.2.4",
         "@types/jest": "^23.1.1",
-        "@types/leaflet": "^1.2.8",
         "@types/node": "^10.5.2",
+        "@types/react-dom": "^16.0.7",
         "@types/react-helmet": "^5.0.6",
-        "@types/react-leaflet": "^1.1.5",
         "@types/react-test-renderer": "^16.0.1",
         "@types/storybook__addon-actions": "^3.0.3",
         "@types/storybook__addon-info": "^3.2.3",
@@ -80,7 +81,6 @@
         "babel-plugin-require-context-hook": "^1.0.0",
         "codecov": "^3.0.4",
         "css-loader": "^0.28.11",
-        "docz": "^0.3.3",
         "extract-text-webpack-plugin": "^3.0.2",
         "gh-pages": "^1.2.0",
         "husky": "^0.14.3",
@@ -95,13 +95,13 @@
         "prettier": "^1.13.5",
         "react-docgen-typescript-loader": "^2.1.1",
         "react-docgen-typescript-webpack-plugin": "^1.1.0",
-        "react-test-renderer": "^16.4.1",
+        "react-test-renderer": "^16.5.0",
         "regenerator-runtime": "^0.12.0",
-        "ts-jest": "^22.4.6",
-        "ts-loader": "^4.4.1",
+        "ts-jest": "^23.1.4",
+        "ts-loader": "4",
         "tslint": "^5.10.0",
         "tslint-config-aerian": "^1.0.2",
-        "typescript": "^2.9.2",
+        "typescript": "^3.0.3",
         "typings-for-css-modules-loader": "^1.7.0"
     },
     "lint-staged": {
@@ -136,11 +136,16 @@
         ],
         "moduleNameMapper": {
             "^.+\\.(css|less|scss)$": "identity-obj-proxy",
-            ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.ts",
-            "^./pages.json$": "<rootDir>/__mocks__/pages.json"
+            ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.ts"
         },
         "transformIgnorePatterns": [
             "node_modules/(?!(gatsby)/)"
-        ]
+        ],
+        "setupFiles": [
+            "<rootDir>/loadershim.js"
+        ],
+        "globals": {
+            "__PATH_PREFIX__": ""
+        }
     }
 }

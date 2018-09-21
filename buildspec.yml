@@ -1,0 +1,53 @@
+version: 0.2
+
+#env:
+#variables:
+# key: "value"
+# key: "value"
+#parameter-store:
+# key: "value"
+# key: "value"
+
+phases:
+    install:
+        commands:
+            npm i -g yarn
+            # - command
+        #finally:
+        # - command
+        # - command
+    pre_build:
+        commands:
+            yarn
+            # - command
+        #finally:
+        # - command
+        # - command
+    build:
+        commands:
+            - yarn build
+            # - command
+        #finally:
+        # - command
+        # - command
+    #post_build:
+    #commands:
+    # - command
+    # - command
+    #finally:
+    # - command
+    # - command
+artifacts:
+    files:
+        - "**/*"
+    base-directory: public
+    name: $(echo $CODEBUILD_SOURCE_VERSION | tr / -)
+# - location
+# - name
+#discard-paths: yes
+#base-directory: location
+cache:
+    paths:
+        - node_modules/**/*
+        - public/**/*
+        - /usr/local/lib/node_modules/**/*

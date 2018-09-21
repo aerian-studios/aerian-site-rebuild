@@ -8,49 +8,43 @@ exports[`Image handles invalid image 1`] = `
 
 exports[`Image renders fixed image correctly 1`] = `
 <div
-  className=" gatsby-image-outer-wrapper"
+  className=" gatsby-image-wrapper"
   style={
     Object {
+      "display": "inline-block",
+      "height": 290,
+      "overflow": "hidden",
       "position": "relative",
+      "width": 290,
     }
   }
 >
-  <div
-    className=" gatsby-image-wrapper"
+  <img
+    alt=""
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAEe0lEQVQ4y42Te1BUVRzH70z/9V9ZToXy2GXfD3Z57C4sDyHtreWMIqmEgUVCak4qwiiRiausiIhk6JLiAzXGEE1FBVMaEBtsrJnQwsEaNTMbmxRrFJZP516EWXykZ+Y3d/fc7/mc7+9xJQJWf3+/8vT7/dy9BvdkzaDufkt6EKznxnXKS0uo+rSCP69eVfb6+vqGaf8XGCjs6enhtZdeRJIkHn9MwmGzcv589yNBhzns7e1VfnuKP2GcTY8nO51Vs96iaNp4ctImcvn3K0NZPBJQXn9fv8EHGWkcKfuIrrpqftmzlXO1VVTNnUG1SD/Q5QOBMszvHxB9297G4sxUjlV5+bqylK76Lzi2bjUNxflsWeOhr1858HCH/ju3fnP8KMU502mqWMmmRR/Sss7L/pKl1OTPY/daDzf/+ffhNRxwONDd002H2LDofVrWe2kuW8FRz8ecKPPQXuGhtVwAL10cAN5ntIYBBwW/7d9Hw7ICftjpo2tLJY1FBTQVL6FzUyXt4oKe7u6HAwMFt8SBI6XLOSAcndpcSUt5CQ3zFnCgpJDmSi83/7r2aCkHujwrGrPLs4RD65bTurGcVpHyHs9CTjTsHLr8QV/M8MG+A7z2xxWqlxbgK5zHcd9qmtcuY33eLH463aG87+29PQS7+ykF3jRws+j47Vs0VJRQNieLls1llOZm8NnC9zjbcXKYG3ke5Qgc9CHg4At5nTzZQXVRPnVF8+ms89HiK6XN52V1QR4rSsro7Dxzz3APQiX5RWAtjhxuIjnlZTInTaamYDY/1lXx84FaOr+spjAnmxFPP4fZFMHENyZTXLySxoOHuXDh4r01bGtrJzPzXWKi43A43FgskazJn0tn/Qa6m3fzff1WslJT0WgNGAwmgoPDGD0qjHC1AacjnqKiZcK1H2n79h1kZ+cSGelArzPhcsUTF5vAE089S17GJM41bKTr8C6+27uT1PGvowrXodHIoUevN2G1RmI22xUjly5dRgoOVhEaqhab1jsRgcVqEw5C8eXN5PzeDZxp3MHBmhqy3pxKiNBqwrWo1Vq0wq3ZbBPQKGEiidraXUgGgxk5jEazkoocJgFOco/h88X5/LpvG6f2bmP/1t3MnpZOmFqDTmdU3JlMVgVoMgmoJUqUKh5pVFCIIpChOhFarR6bLYqEhOdxu8eSnTaDqhVeWr86Rm5WNuEiXaPJImpsE7oY7CJkt0aDlVhXItKIJ0diMloYHaLmnSmT8M6fI+oRS0J8ihIOIYpzp7AwdwFZU6djEFr5Qrs9huiYWHE2QpTAIHrgxBHjRhopxkCl1vNCUhKN61fx9pQ0YoT1ROEw3p3MmKRxxMYmKk6S3fHY7NFKA+WQG6JSaZS0o6JcRAsj0jMjgwgarSLt1VdYPDODUDEGcoFdrgSRdgqJiWPR6S2kTUwlfcIELBGRwkmccOhQQGGh4ei0RsVhpN2JFBoSTliYFrslgmSnUznsFHPociYoMLkuKpWWKJGiS4BstmglXbmzBoOFoKBgAdUQIf7L8R+bum8HTMuX7wAAAABJRU5ErkJggg=="
     style={
       Object {
-        "display": "inline-block",
-        "height": 290,
-        "overflow": "hidden",
-        "position": "relative",
-        "width": 290,
+        "height": "100%",
+        "left": 0,
+        "objectFit": "cover",
+        "objectPosition": "center",
+        "opacity": 0,
+        "position": "absolute",
+        "top": 0,
+        "transitionDelay": "0.5s",
+        "width": "100%",
       }
     }
-  >
-    <img
-      alt=""
-      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAEe0lEQVQ4y42Te1BUVRzH70z/9V9ZToXy2GXfD3Z57C4sDyHtreWMIqmEgUVCak4qwiiRiausiIhk6JLiAzXGEE1FBVMaEBtsrJnQwsEaNTMbmxRrFJZP516EWXykZ+Y3d/fc7/mc7+9xJQJWf3+/8vT7/dy9BvdkzaDufkt6EKznxnXKS0uo+rSCP69eVfb6+vqGaf8XGCjs6enhtZdeRJIkHn9MwmGzcv589yNBhzns7e1VfnuKP2GcTY8nO51Vs96iaNp4ctImcvn3K0NZPBJQXn9fv8EHGWkcKfuIrrpqftmzlXO1VVTNnUG1SD/Q5QOBMszvHxB9297G4sxUjlV5+bqylK76Lzi2bjUNxflsWeOhr1858HCH/ju3fnP8KMU502mqWMmmRR/Sss7L/pKl1OTPY/daDzf/+ffhNRxwONDd002H2LDofVrWe2kuW8FRz8ecKPPQXuGhtVwAL10cAN5ntIYBBwW/7d9Hw7ICftjpo2tLJY1FBTQVL6FzUyXt4oKe7u6HAwMFt8SBI6XLOSAcndpcSUt5CQ3zFnCgpJDmSi83/7r2aCkHujwrGrPLs4RD65bTurGcVpHyHs9CTjTsHLr8QV/M8MG+A7z2xxWqlxbgK5zHcd9qmtcuY33eLH463aG87+29PQS7+ykF3jRws+j47Vs0VJRQNieLls1llOZm8NnC9zjbcXKYG3ke5Qgc9CHg4At5nTzZQXVRPnVF8+ms89HiK6XN52V1QR4rSsro7Dxzz3APQiX5RWAtjhxuIjnlZTInTaamYDY/1lXx84FaOr+spjAnmxFPP4fZFMHENyZTXLySxoOHuXDh4r01bGtrJzPzXWKi43A43FgskazJn0tn/Qa6m3fzff1WslJT0WgNGAwmgoPDGD0qjHC1AacjnqKiZcK1H2n79h1kZ+cSGelArzPhcsUTF5vAE089S17GJM41bKTr8C6+27uT1PGvowrXodHIoUevN2G1RmI22xUjly5dRgoOVhEaqhab1jsRgcVqEw5C8eXN5PzeDZxp3MHBmhqy3pxKiNBqwrWo1Vq0wq3ZbBPQKGEiidraXUgGgxk5jEazkoocJgFOco/h88X5/LpvG6f2bmP/1t3MnpZOmFqDTmdU3JlMVgVoMgmoJUqUKh5pVFCIIpChOhFarR6bLYqEhOdxu8eSnTaDqhVeWr86Rm5WNuEiXaPJImpsE7oY7CJkt0aDlVhXItKIJ0diMloYHaLmnSmT8M6fI+oRS0J8ihIOIYpzp7AwdwFZU6djEFr5Qrs9huiYWHE2QpTAIHrgxBHjRhopxkCl1vNCUhKN61fx9pQ0YoT1ROEw3p3MmKRxxMYmKk6S3fHY7NFKA+WQG6JSaZS0o6JcRAsj0jMjgwgarSLt1VdYPDODUDEGcoFdrgSRdgqJiWPR6S2kTUwlfcIELBGRwkmccOhQQGGh4ei0RsVhpN2JFBoSTliYFrslgmSnUznsFHPociYoMLkuKpWWKJGiS4BstmglXbmzBoOFoKBgAdUQIf7L8R+bum8HTMuX7wAAAABJRU5ErkJggg=="
-      style={
-        Object {
-          "height": "100%",
-          "left": 0,
-          "objectFit": "cover",
-          "objectPosition": "center",
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transition": "opacity 0.5s",
-          "transitionDelay": "0.25s",
-          "width": "100%",
-        }
-      }
+  />
+  <picture>
+    <source
+      srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
     />
     <img
       alt=""
       height={290}
       onLoad={[Function]}
       src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
-      srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
       style={
         Object {
           "height": "100%",
@@ -66,67 +60,61 @@ exports[`Image renders fixed image correctly 1`] = `
       }
       width={290}
     />
-    <noscript
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<img width=\\"290\\" height=\\"290\\" src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/>",
-        }
+  </picture>
+  <noscript
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<picture><source srcSet=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" /><img width=\\"290\\" height=\\"290\\" src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
       }
-    />
-  </div>
+    }
+  />
 </div>
 `;
 
 exports[`Image renders fluid image correctly 1`] = `
 <div
-  className=" gatsby-image-outer-wrapper"
+  className=" gatsby-image-wrapper"
   style={
     Object {
+      "overflow": "hidden",
       "position": "relative",
     }
   }
 >
   <div
-    className=" gatsby-image-wrapper"
     style={
       Object {
-        "overflow": "hidden",
-        "position": "relative",
+        "paddingBottom": "133.33333333333334%",
+        "width": "100%",
       }
     }
-  >
-    <div
-      style={
-        Object {
-          "paddingBottom": "133.33333333333334%",
-          "width": "100%",
-        }
+  />
+  <img
+    alt=""
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAEe0lEQVQ4y42Te1BUVRzH70z/9V9ZToXy2GXfD3Z57C4sDyHtreWMIqmEgUVCak4qwiiRiausiIhk6JLiAzXGEE1FBVMaEBtsrJnQwsEaNTMbmxRrFJZP516EWXykZ+Y3d/fc7/mc7+9xJQJWf3+/8vT7/dy9BvdkzaDufkt6EKznxnXKS0uo+rSCP69eVfb6+vqGaf8XGCjs6enhtZdeRJIkHn9MwmGzcv589yNBhzns7e1VfnuKP2GcTY8nO51Vs96iaNp4ctImcvn3K0NZPBJQXn9fv8EHGWkcKfuIrrpqftmzlXO1VVTNnUG1SD/Q5QOBMszvHxB9297G4sxUjlV5+bqylK76Lzi2bjUNxflsWeOhr1858HCH/ju3fnP8KMU502mqWMmmRR/Sss7L/pKl1OTPY/daDzf/+ffhNRxwONDd002H2LDofVrWe2kuW8FRz8ecKPPQXuGhtVwAL10cAN5ntIYBBwW/7d9Hw7ICftjpo2tLJY1FBTQVL6FzUyXt4oKe7u6HAwMFt8SBI6XLOSAcndpcSUt5CQ3zFnCgpJDmSi83/7r2aCkHujwrGrPLs4RD65bTurGcVpHyHs9CTjTsHLr8QV/M8MG+A7z2xxWqlxbgK5zHcd9qmtcuY33eLH463aG87+29PQS7+ykF3jRws+j47Vs0VJRQNieLls1llOZm8NnC9zjbcXKYG3ke5Qgc9CHg4At5nTzZQXVRPnVF8+ms89HiK6XN52V1QR4rSsro7Dxzz3APQiX5RWAtjhxuIjnlZTInTaamYDY/1lXx84FaOr+spjAnmxFPP4fZFMHENyZTXLySxoOHuXDh4r01bGtrJzPzXWKi43A43FgskazJn0tn/Qa6m3fzff1WslJT0WgNGAwmgoPDGD0qjHC1AacjnqKiZcK1H2n79h1kZ+cSGelArzPhcsUTF5vAE089S17GJM41bKTr8C6+27uT1PGvowrXodHIoUevN2G1RmI22xUjly5dRgoOVhEaqhab1jsRgcVqEw5C8eXN5PzeDZxp3MHBmhqy3pxKiNBqwrWo1Vq0wq3ZbBPQKGEiidraXUgGgxk5jEazkoocJgFOco/h88X5/LpvG6f2bmP/1t3MnpZOmFqDTmdU3JlMVgVoMgmoJUqUKh5pVFCIIpChOhFarR6bLYqEhOdxu8eSnTaDqhVeWr86Rm5WNuEiXaPJImpsE7oY7CJkt0aDlVhXItKIJ0diMloYHaLmnSmT8M6fI+oRS0J8ihIOIYpzp7AwdwFZU6djEFr5Qrs9huiYWHE2QpTAIHrgxBHjRhopxkCl1vNCUhKN61fx9pQ0YoT1ROEw3p3MmKRxxMYmKk6S3fHY7NFKA+WQG6JSaZS0o6JcRAsj0jMjgwgarSLt1VdYPDODUDEGcoFdrgSRdgqJiWPR6S2kTUwlfcIELBGRwkmccOhQQGGh4ei0RsVhpN2JFBoSTliYFrslgmSnUznsFHPociYoMLkuKpWWKJGiS4BstmglXbmzBoOFoKBgAdUQIf7L8R+bum8HTMuX7wAAAABJRU5ErkJggg=="
+    style={
+      Object {
+        "height": "100%",
+        "left": 0,
+        "objectFit": "cover",
+        "objectPosition": "center",
+        "opacity": 0,
+        "position": "absolute",
+        "top": 0,
+        "transitionDelay": "0.5s",
+        "width": "100%",
       }
-    />
-    <img
-      alt=""
-      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAAEe0lEQVQ4y42Te1BUVRzH70z/9V9ZToXy2GXfD3Z57C4sDyHtreWMIqmEgUVCak4qwiiRiausiIhk6JLiAzXGEE1FBVMaEBtsrJnQwsEaNTMbmxRrFJZP516EWXykZ+Y3d/fc7/mc7+9xJQJWf3+/8vT7/dy9BvdkzaDufkt6EKznxnXKS0uo+rSCP69eVfb6+vqGaf8XGCjs6enhtZdeRJIkHn9MwmGzcv589yNBhzns7e1VfnuKP2GcTY8nO51Vs96iaNp4ctImcvn3K0NZPBJQXn9fv8EHGWkcKfuIrrpqftmzlXO1VVTNnUG1SD/Q5QOBMszvHxB9297G4sxUjlV5+bqylK76Lzi2bjUNxflsWeOhr1858HCH/ju3fnP8KMU502mqWMmmRR/Sss7L/pKl1OTPY/daDzf/+ffhNRxwONDd002H2LDofVrWe2kuW8FRz8ecKPPQXuGhtVwAL10cAN5ntIYBBwW/7d9Hw7ICftjpo2tLJY1FBTQVL6FzUyXt4oKe7u6HAwMFt8SBI6XLOSAcndpcSUt5CQ3zFnCgpJDmSi83/7r2aCkHujwrGrPLs4RD65bTurGcVpHyHs9CTjTsHLr8QV/M8MG+A7z2xxWqlxbgK5zHcd9qmtcuY33eLH463aG87+29PQS7+ykF3jRws+j47Vs0VJRQNieLls1llOZm8NnC9zjbcXKYG3ke5Qgc9CHg4At5nTzZQXVRPnVF8+ms89HiK6XN52V1QR4rSsro7Dxzz3APQiX5RWAtjhxuIjnlZTInTaamYDY/1lXx84FaOr+spjAnmxFPP4fZFMHENyZTXLySxoOHuXDh4r01bGtrJzPzXWKi43A43FgskazJn0tn/Qa6m3fzff1WslJT0WgNGAwmgoPDGD0qjHC1AacjnqKiZcK1H2n79h1kZ+cSGelArzPhcsUTF5vAE089S17GJM41bKTr8C6+27uT1PGvowrXodHIoUevN2G1RmI22xUjly5dRgoOVhEaqhab1jsRgcVqEw5C8eXN5PzeDZxp3MHBmhqy3pxKiNBqwrWo1Vq0wq3ZbBPQKGEiidraXUgGgxk5jEazkoocJgFOco/h88X5/LpvG6f2bmP/1t3MnpZOmFqDTmdU3JlMVgVoMgmoJUqUKh5pVFCIIpChOhFarR6bLYqEhOdxu8eSnTaDqhVeWr86Rm5WNuEiXaPJImpsE7oY7CJkt0aDlVhXItKIJ0diMloYHaLmnSmT8M6fI+oRS0J8ihIOIYpzp7AwdwFZU6djEFr5Qrs9huiYWHE2QpTAIHrgxBHjRhopxkCl1vNCUhKN61fx9pQ0YoT1ROEw3p3MmKRxxMYmKk6S3fHY7NFKA+WQG6JSaZS0o6JcRAsj0jMjgwgarSLt1VdYPDODUDEGcoFdrgSRdgqJiWPR6S2kTUwlfcIELBGRwkmccOhQQGGh4ei0RsVhpN2JFBoSTliYFrslgmSnUznsFHPociYoMLkuKpWWKJGiS4BstmglXbmzBoOFoKBgAdUQIf7L8R+bum8HTMuX7wAAAABJRU5ErkJggg=="
-      style={
-        Object {
-          "height": "100%",
-          "left": 0,
-          "objectFit": "cover",
-          "objectPosition": "center",
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transition": "opacity 0.5s",
-          "transitionDelay": "0.25s",
-          "width": "100%",
-        }
-      }
+    }
+  />
+  <picture>
+    <source
+      sizes="(max-width: 290px) 100vw, 290px"
+      srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
     />
     <img
       alt=""
       onLoad={[Function]}
-      sizes="(max-width: 290px) 100vw, 290px"
       src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
-      srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
       style={
         Object {
           "height": "100%",
@@ -141,14 +129,14 @@ exports[`Image renders fluid image correctly 1`] = `
         }
       }
     />
-    <noscript
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<img src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/>",
-        }
+  </picture>
+  <noscript
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<picture><source srcSet=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" /><img src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
       }
-    />
-  </div>
+    }
+  />
 </div>
 `;
 

@@ -8,6 +8,7 @@ import {
     PageSection,
     Performance,
     Project,
+    ProjectBox,
     SuccessStory,
     Testimonial,
     WhatWeDo
@@ -23,6 +24,14 @@ import { absolutifyURLs } from "../lib/helpers";
 export const client = absolutifyURLs<Client>(clientData);
 
 export const project = { ...absolutifyURLs<Project>(projectData), client };
+export const projectBox: ProjectBox = {
+    name: project.name,
+    slug: project.slug,
+    titleLineOne: project.titleLineOne,
+    thumbnail: project.heroImage,
+    heroImage: project.heroImage,
+    client
+};
 export const whatWeDo = absolutifyURLs<Required<WhatWeDo>>(whatWeDoData);
 export const about = absolutifyURLs<About>(aboutData);
 export const meetTheTeam = absolutifyURLs<MeetTheTeam>(meetTheTeamData);

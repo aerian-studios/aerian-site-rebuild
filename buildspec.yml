@@ -19,7 +19,7 @@ phases:
         # - command
     pre_build:
         commands:
-            - yarn test --ci
+            # - yarn test --ci
             # - command
         #finally:
         # - command

@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 import Helmet from "react-helmet";
-
+import favicon from "../../static/assets/favicon.png";
 import ErrorBoundary from "../components/ErrorBoundary";
 import { PageNavBar } from "../components/PageNavBar";
 import { SocialLink } from "../components/SocialLink";
@@ -59,6 +59,11 @@ const Layout: React.SFC<Props> = ({
                         <meta name="description" content={seoDescription} />
                         <meta name="title" content={seoTitle} />
                         <meta name="keywords" content={seoKeywords} />
+                        <link
+                            rel="shortcut icon"
+                            type="image/png"
+                            href={favicon}
+                        />
                         <title>{title}</title>
                     </Helmet>
                     <ErrorBoundary>

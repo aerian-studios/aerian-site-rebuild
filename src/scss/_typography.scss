@@ -2,7 +2,8 @@
     font-family: "museo";
     font-display: fallback;
     src: url("../../static/fonts/Museo700-Regular-webfont.woff2")
-        format("woff2");
+            format("woff2"),
+        url("../../static/fonts/Museo700-Regular-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
@@ -10,14 +11,17 @@
 @font-face {
     font-family: "open-sans";
     font-display: fallback;
-    src: url("../../static/fonts/OpenSans-Italic-webfont.woff") format("woff");
+    src: url("../../static/fonts/OpenSans-Italic-webfont.woff2") format("woff2"),
+        url("../../static/fonts/OpenSans-Italic-webfont.woff") format("woff");
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: "open-sans";
     font-display: fallback;
-    src: url("../../static/fonts/OpenSans-Regular-webfont.woff") format("woff");
+    src: url("../../static/fonts/OpenSans-Regular-webfont.woff2")
+            format("woff2"),
+        url("../../static/fonts/OpenSans-Regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }

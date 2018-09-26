@@ -3,6 +3,7 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
+import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
 import { SocialLink } from "./index";
 
 describe("SocialLink", () =>
@@ -11,7 +12,7 @@ describe("SocialLink", () =>
             .create(
                 <SocialLink
                     className="item"
-                    iconName="facebook-f"
+                    icon={faFacebook}
                     url="https://www.facebook.com/aerianstudios/"
                 />
             )

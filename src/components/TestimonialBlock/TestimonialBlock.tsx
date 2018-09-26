@@ -4,7 +4,7 @@ import { ImageField, Testimonial } from "../../types/data";
 import { Image } from "./../Image";
 import * as styles from "./TestimonialBlock.module.scss";
 
-import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons/faQuoteLeft";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

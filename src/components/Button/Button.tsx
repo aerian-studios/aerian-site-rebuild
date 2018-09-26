@@ -1,4 +1,4 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 import classNames from "classnames";
 import * as React from "react";
 
@@ -19,18 +19,18 @@ export const Button: React.SFC<Props> = ({
     arrow,
     alternate
 }) => (
-        <button
-            className={classNames(
-                styles.component,
-                { [styles.alternate]: alternate, [styles.arrow]: arrow },
-                className
-            )}
-            style={style}
-        >
-            {children}
-            {arrow && (
-                <FontAwesomeIcon icon={faArrowRight} className={styles.icon} />
-            )}
-        </button>
-    );
+    <button
+        className={classNames(
+            styles.component,
+            { [styles.alternate]: alternate, [styles.arrow]: arrow },
+            className
+        )}
+        style={style}
+    >
+        {children}
+        {arrow && (
+            <FontAwesomeIcon icon={faArrowRight} className={styles.icon} />
+        )}
+    </button>
+);
 export default Button;

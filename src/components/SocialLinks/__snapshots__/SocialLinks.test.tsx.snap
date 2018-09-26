@@ -10,7 +10,7 @@ exports[`SocialLinks renders correctly 1`] = `
     <a
       href="https://www.facebook.com/aerianstudios/"
       rel="nofollow noreferer"
-      title="facebook-f"
+      title="facebook"
     >
       <i
         className="fa"
@@ -36,7 +36,7 @@ exports[`SocialLinks renders correctly 1`] = `
     <a
       href="https://www.linkedin.com/company/aerian-studios"
       rel="nofollow noreferer"
-      title="linkedin-in"
+      title="linkedin"
     >
       <i
         className="fa"

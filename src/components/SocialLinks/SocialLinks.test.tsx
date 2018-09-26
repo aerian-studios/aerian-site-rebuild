@@ -3,6 +3,10 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
+import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
+import { faVimeoV } from "@fortawesome/free-brands-svg-icons/faVimeoV";
 import { SocialLink } from "../SocialLink";
 import { SocialLinks } from "./index";
 
@@ -13,22 +17,22 @@ describe("SocialLinks", () =>
                 <SocialLinks>
                     <SocialLink
                         className="item"
-                        iconName="facebook-f"
+                        icon={faFacebook}
                         url="https://www.facebook.com/aerianstudios/"
                     />
                     <SocialLink
                         className="item"
-                        iconName="twitter"
+                        icon={faTwitter}
                         url="https://twitter.com/aerianstudios"
                     />
                     <SocialLink
                         className="item"
-                        iconName="linkedin-in"
+                        icon={faLinkedin}
                         url="https://www.linkedin.com/company/aerian-studios"
                     />
                     <SocialLink
                         className="item"
-                        iconName="vimeo-v"
+                        icon={faVimeoV}
                         url="https://vimeo.com/aerianstudios"
                     />
                 </SocialLinks>

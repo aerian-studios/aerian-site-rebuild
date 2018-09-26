@@ -7,7 +7,7 @@ exports[`SocialLink renders correctly 1`] = `
   <a
     href="https://www.facebook.com/aerianstudios/"
     rel="nofollow noreferer"
-    title="facebook-f"
+    title="facebook"
   >
     <i
       className="fa"

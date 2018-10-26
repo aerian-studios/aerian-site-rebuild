@@ -2,7 +2,6 @@ import classNames from "classnames";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     memoizeCurrentScrollPos,
@@ -10,7 +9,7 @@ import {
     setTopMargin
 } from "../../lib/scrollIntoView";
 
-import { rejects } from "assert";
+import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes";
 import { Staff } from "../../types/data";
 import { Image } from "../Image";
 import { Tag } from "../Tag";
@@ -22,8 +21,6 @@ interface Props {
     className?: string;
     onClose?: () => void;
 }
-
-const xIcon: IconName = "times";
 
 export const getHeights = async (
     children: HTMLCollection
@@ -145,7 +142,7 @@ export class StaffDetail extends React.Component<Props> {
                         }
                     }}
                 >
-                    <FontAwesomeIcon icon={xIcon} />
+                    <FontAwesomeIcon icon={faTimes} />
                 </button>
                 <figure className={styles.funny}>
                     <Image

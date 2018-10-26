@@ -1,6 +1,7 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 const deepMap = require("deep-map");
+// const Visualizer = require("webpack-visualizer-plugin");
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
 // access to any information necessary to programmatically
@@ -141,6 +142,10 @@ exports.onCreateNode = ({ node, getNode, getNodes }) => {
 };
 
 // exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
+//     actions.setWebpackConfig({
+//         plugins: [new Visualizer()]
+//     });
+// };
 //     const PRODUCTION = stage !== `develop`;
 //     const isSSR = stage.includes(`html`);
 

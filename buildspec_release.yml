@@ -1,7 +1,9 @@
 version: 0.2
 
-# env:
-#     variables:
+#env:
+#variables:
+# key: "value"
+# key: "value"
 #parameter-store:
 # key: "value"
 # key: "value"
@@ -19,14 +21,14 @@ phases:
         # - command
     pre_build:
         commands:
-            # - yarn test --ci
+            - yarn test --ci
             # - command
         #finally:
         # - command
         # - command
     build:
         commands:
-            - yarn build && aws s3 sync --delete public "s3://aerian-site-preview-us-east-1/public/$(echo $CODEBUILD_SOURCE_VERSION | tr / -)"
+            - yarn build && aws s3 sync --delete public "s3://aerian-site-preview-us-east-1/master"
         #finally:
         # - command
         # - command
@@ -37,15 +39,7 @@ phases:
     #finally:
     # - command
     # - command
-# artifacts:
-#     files:
-#         - "**/*"
-#     base-directory: public
-#     name: $(echo $CODEBUILD_SOURCE_VERSION | tr / -)
-# - location
-# - name
-#discard-paths: yes
-#base-directory: location
+
 cache:
     paths:
         - node_modules/**/*

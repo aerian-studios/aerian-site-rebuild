@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { graphql, StaticQuery } from "gatsby";
 import * as React from "react";
 import Helmet from "react-helmet";
-
+import favicon from "../../static/assets/favicon.png";
 import ErrorBoundary from "../components/ErrorBoundary";
 import { PageNavBar } from "../components/PageNavBar";
 import { SocialLink } from "../components/SocialLink";
@@ -13,6 +13,10 @@ import { PageListNode, ReactRouterLocation } from "../types/data";
 import { ContactDetails } from "./ContactDetails";
 import { PageFooter } from "./PageFooter";
 
+import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter";
+import { faVimeoV } from "@fortawesome/free-brands-svg-icons/faVimeoV";
 import * as styles from "./Layout.module.scss";
 
 interface Props {
@@ -59,6 +63,11 @@ const Layout: React.SFC<Props> = ({
                         <meta name="description" content={seoDescription} />
                         <meta name="title" content={seoTitle} />
                         <meta name="keywords" content={seoKeywords} />
+                        <link
+                            rel="shortcut icon"
+                            type="image/png"
+                            href={favicon}
+                        />
                         <title>{title}</title>
                     </Helmet>
                     <ErrorBoundary>
@@ -85,22 +94,22 @@ const Layout: React.SFC<Props> = ({
                             <SocialLinks>
                                 <SocialLink
                                     className="item"
-                                    iconName="facebook-f"
+                                    icon={faFacebook}
                                     url="https://www.facebook.com/aerianstudios/"
                                 />
                                 <SocialLink
                                     className="item"
-                                    iconName="twitter"
+                                    icon={faTwitter}
                                     url="https://twitter.com/aerianstudios"
                                 />
                                 <SocialLink
                                     className="item"
-                                    iconName="linkedin-in"
+                                    icon={faLinkedin}
                                     url="https://www.linkedin.com/company/aerian-studios"
                                 />
                                 <SocialLink
                                     className="item"
-                                    iconName="vimeo-v"
+                                    icon={faVimeoV}
                                     url="https://vimeo.com/aerianstudios"
                                 />
                             </SocialLinks>

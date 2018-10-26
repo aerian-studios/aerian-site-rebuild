@@ -53,15 +53,15 @@ export const projectBoxFragment = graphql`
         heroImage {
             childImageSharp {
                 fluid(maxWidth: 1066, maxHeight: 1066) {
-                    ...GatsbyImageSharpFluid_withWebp
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
             }
             publicURL
         }
         thumbnail: heroImage {
             childImageSharp {
-                fluid(maxWidth: 250, maxHeight: 250) {
-                    ...GatsbyImageSharpFluid_withWebp
+                fluid(maxWidth: 500, maxHeight: 500) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
             }
             publicURL

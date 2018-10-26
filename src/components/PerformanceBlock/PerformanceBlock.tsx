@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import * as React from "react";
 
 import { Performance as PerformanceType } from "../../types/data";
@@ -17,9 +18,9 @@ export const PerformanceBlock: React.SFC<Props> = ({
     performance
 }) =>
     performance.length === 0 ? null : (
-        <div className={[styles.component, className].join(" ")} style={style}>
+        <div className={classnames(className)} style={style}>
             <h2>Performance &amp; Statistics</h2>
-            <GroupThree>
+            <GroupThree className={styles.performanceGroup3}>
                 {performance.map(perf => (
                     <Performance performance={perf} key={perf.title} />
                 ))}

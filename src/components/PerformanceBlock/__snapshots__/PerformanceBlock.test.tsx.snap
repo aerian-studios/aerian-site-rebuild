@@ -2,7 +2,7 @@
 
 exports[`PerformanceBlock renders correctly 1`] = `
 <div
-  className=" "
+  className=""
 >
   <h2>
     Performance & Statistics

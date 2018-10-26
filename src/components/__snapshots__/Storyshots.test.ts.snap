@@ -19953,7 +19953,7 @@ exports[`Storyshots PerformanceBlock Default 1`] = `
     style={Object {}}
   >
     <div
-      className=" "
+      className=""
     >
       <h2>
         Performance & Statistics
@@ -20868,7 +20868,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
         className=""
       >
         <div
-          className=" "
+          className=""
         >
           <h2>
             Performance & Statistics

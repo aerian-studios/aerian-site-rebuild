@@ -41,7 +41,7 @@ const Layout: React.SFC<Props> = ({
     <StaticQuery
         query={graphql`
             query PageList {
-                allPagesJson(limit: 1000) {
+                allPagesJson(sort: { fields: order }) {
                     edges {
                         node {
                             id

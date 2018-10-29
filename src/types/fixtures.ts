@@ -28,7 +28,6 @@ export const projectBox: ProjectBox = {
     name: project.name,
     slug: project.slug,
     titleLineOne: project.titleLineOne,
-    thumbnail: project.heroImage,
     heroImage: project.heroImage,
     client
 };

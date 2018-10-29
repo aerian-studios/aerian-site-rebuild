@@ -200,7 +200,6 @@ export interface ProjectBox {
     name: string;
     slug: string;
     heroImage: ImageField;
-    thumbnail: ImageField;
     client: Client;
     titleLineOne: string;
 }

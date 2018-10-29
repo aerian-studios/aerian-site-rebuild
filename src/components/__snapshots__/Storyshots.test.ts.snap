@@ -447,6 +447,33 @@ exports[`Storyshots AboutPage Default 1`] = `
                               }
                             }
                           >
+                            order
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#a11",
+                            }
+                          }
+                        >
+                          2
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
                             heroImage
                           </span>
                         </span>
@@ -488,34 +515,6 @@ exports[`Storyshots AboutPage Default 1`] = `
                           }
                         >
                           'About'
-                        </span>
-                        ,
-                        <span>
-                          <span>
-                            <br />
-                              
-                              
-                          </span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            subheading
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          'A family of enthusiastic geeks who love all things…'
                         </span>
                         ,
                         <span>
@@ -12634,6 +12633,33 @@ exports[`Storyshots MeetTheTeamPage Default 1`] = `
                               }
                             }
                           >
+                            order
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#a11",
+                            }
+                          }
+                        >
+                          3
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
                             title
                           </span>
                         </span>
@@ -12675,34 +12701,6 @@ exports[`Storyshots MeetTheTeamPage Default 1`] = `
                           }
                         >
                           '/meet-the-team'
-                        </span>
-                        ,
-                        <span>
-                          <span>
-                            <br />
-                              
-                              
-                          </span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            seoTitle
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          'About Aerian Studios'
                         </span>
                         ,
                         <span>
@@ -13118,7 +13116,15 @@ exports[`Storyshots OurWorkPage Default 1`] = `
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
               onClick={[Function]}
               onMouseEnter={[Function]}
-            />
+            >
+              <div
+                className=""
+              >
+                <img
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -13349,6 +13355,33 @@ exports[`Storyshots OurWorkPage Default 1`] = `
                               }
                             }
                           >
+                            order
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#a11",
+                            }
+                          }
+                        >
+                          2
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
                             heroImage
                           </span>
                         </span>
@@ -13390,34 +13423,6 @@ exports[`Storyshots OurWorkPage Default 1`] = `
                           }
                         >
                           'About'
-                        </span>
-                        ,
-                        <span>
-                          <span>
-                            <br />
-                              
-                              
-                          </span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            subheading
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          'A family of enthusiastic geeks who love all things…'
                         </span>
                         ,
                         <span>
@@ -27984,6 +27989,33 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
                               }
                             }
                           >
+                            order
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#a11",
+                            }
+                          }
+                        >
+                          1
+                        </span>
+                        ,
+                        <span>
+                          <span>
+                            <br />
+                              
+                              
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
                             heroImage
                           </span>
                         </span>
@@ -28025,34 +28057,6 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
                           }
                         >
                           'What We Do'
-                        </span>
-                        ,
-                        <span>
-                          <span>
-                            <br />
-                              
-                              
-                          </span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            subheading
-                          </span>
-                        </span>
-                        : 
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          'A family of enthusiastic geeks who love all things…'
                         </span>
                         ,
                         <span>

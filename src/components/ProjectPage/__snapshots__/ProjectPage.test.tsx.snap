@@ -487,7 +487,7 @@ Array [
       className=""
     >
       <div
-        className=" "
+        className=""
       >
         <h2>
           Performance & Statistics
@@ -495,30 +495,42 @@ Array [
         <div
           className=" "
         >
-          <div>
-            <h4>
-              558000
-            </h4>
-            <p>
+          <figure
+            className=" "
+          >
+            <span>
+              <strong>
+                558000
+              </strong>
+            </span>
+            <span>
               558,000 additional visits
-            </p>
-          </div>
-          <div>
-            <h4>
-              240000
-            </h4>
-            <p>
+            </span>
+          </figure>
+          <figure
+            className=" "
+          >
+            <span>
+              <strong>
+                240000
+              </strong>
+            </span>
+            <span>
               240,000 visits
-            </p>
-          </div>
-          <div>
-            <h4>
-              1500000
-            </h4>
-            <p>
+            </span>
+          </figure>
+          <figure
+            className=" "
+          >
+            <span>
+              <strong>
+                1500000
+              </strong>
+            </span>
+            <span>
               1,500,000+ visits
-            </p>
-          </div>
+            </span>
+          </figure>
         </div>
       </div>
     </div>

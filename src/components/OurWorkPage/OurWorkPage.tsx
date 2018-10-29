@@ -26,7 +26,7 @@ export const OurWorkPage: React.SFC<Props> = ({ projects, page }) => (
                     >
                         <Image
                             key={project.titleLineOne}
-                            source={project.thumbnail}
+                            source={project.heroImage}
                         />
                     </Link>
                 ))}

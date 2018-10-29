@@ -1,5 +1,11 @@
 @import "../../scss/variables";
 
+.Block {
+    composes: layoutGrid from "../../scss/layoutGrid.module.scss";
+    composes: blockFull from "../../scss/layoutGrid.module.scss";
+    padding: var(--s-5, 100px) 0;
+}
+
 .alternate {
     background-color: $c-alt-block-bg;
 }

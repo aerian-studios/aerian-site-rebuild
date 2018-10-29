@@ -103,7 +103,7 @@ exports[`Storyshots AboutPage Default 1`] = `
       <div />
     </header>
     <section>
-      <div
+      <section
         className=""
       >
         <h1>
@@ -112,7 +112,7 @@ exports[`Storyshots AboutPage Default 1`] = `
         <p>
           For over 20 years we have built industry leading campaigns, websites, products and mobile Apps and we have never lost a client because we always deliver on our promises with scientifically proven results, and we always put the user first.
         </p>
-      </div>
+      </section>
       <div
         className=" "
       >
@@ -800,13 +800,13 @@ exports[`Storyshots Block Alternate 1`] = `
   <div
     style={Object {}}
   >
-    <div
+    <section
       className="undefined"
     >
       <p>
         Some content
       </p>
-    </div>
+    </section>
   </div>
   <div>
     <div
@@ -1093,13 +1093,13 @@ exports[`Storyshots Block Default 1`] = `
   <div
     style={Object {}}
   >
-    <div
+    <section
       className=""
     >
       <p>
         Some content
       </p>
-    </div>
+    </section>
   </div>
   <div>
     <div
@@ -12122,13 +12122,13 @@ exports[`Storyshots MeetTheTeamPage Default 1`] = `
       style={Object {}}
     />
     <section>
-      <div
+      <section
         className=""
       >
         <h1>
           Meet the Team
         </h1>
-      </div>
+      </section>
       <div
         className=" "
       >
@@ -17414,7 +17414,7 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
   <div
     style={Object {}}
   >
-    <div
+    <section
       className=""
     >
       <div
@@ -17468,8 +17468,8 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
           </div>
         </figure>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -17512,8 +17512,8 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
           </footer>
         </blockquote>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -17599,7 +17599,7 @@ exports[`Storyshots PageSectionBlock Alternate 1`] = `
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
   <div>
     <div
@@ -17918,7 +17918,7 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
   <div
     style={Object {}}
   >
-    <div
+    <section
       className=""
     >
       <div
@@ -17972,8 +17972,8 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
           </div>
         </figure>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -18016,8 +18016,8 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
           </footer>
         </blockquote>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -18103,7 +18103,7 @@ exports[`Storyshots PageSectionBlock Default 1`] = `
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
   <div>
     <div
@@ -18781,7 +18781,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
       </div>
     </nav>
     <section>
-      <div
+      <section
         className=""
       >
         <figure>
@@ -18820,8 +18820,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             />
           </button>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -18860,8 +18860,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             />
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -18963,8 +18963,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -19050,8 +19050,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -19132,8 +19132,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -19183,8 +19183,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </footer>
           </blockquote>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -19222,8 +19222,8 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -19252,7 +19252,7 @@ exports[`Storyshots ProjectPage Default 1`] = `
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   </div>
   <div>
@@ -26936,7 +26936,7 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
       </div>
     </nav>
     <section>
-      <div
+      <section
         className=""
       >
         <div
@@ -26990,8 +26990,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </div>
           </figure>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className="undefined"
       >
         <div
@@ -27034,8 +27034,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </footer>
           </blockquote>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -27089,8 +27089,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </div>
           </figure>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className="undefined"
       >
         <div
@@ -27176,8 +27176,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -27231,8 +27231,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </div>
           </figure>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className="undefined"
       >
         <div
@@ -27318,8 +27318,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -27373,8 +27373,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </div>
           </figure>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className="undefined"
       >
         <div
@@ -27417,8 +27417,8 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </footer>
           </blockquote>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         className=""
       >
         <div
@@ -27472,7 +27472,7 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
             </div>
           </figure>
         </div>
-      </div>
+      </section>
     </section>
   </div>
   <div>

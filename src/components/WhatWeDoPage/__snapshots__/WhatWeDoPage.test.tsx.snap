@@ -96,7 +96,7 @@ Array [
     </div>
   </nav>,
   <section>
-    <div
+    <section
       className=""
     >
       <div
@@ -150,8 +150,8 @@ Array [
           </div>
         </figure>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -194,8 +194,8 @@ Array [
           </footer>
         </blockquote>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -249,8 +249,8 @@ Array [
           </div>
         </figure>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -336,8 +336,8 @@ Array [
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -391,8 +391,8 @@ Array [
           </div>
         </figure>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -478,8 +478,8 @@ Array [
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -533,8 +533,8 @@ Array [
           </div>
         </figure>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className="undefined"
     >
       <div
@@ -577,8 +577,8 @@ Array [
           </footer>
         </blockquote>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -632,7 +632,7 @@ Array [
           </div>
         </figure>
       </div>
-    </div>
+    </section>
   </section>,
 ]
 `;

@@ -46,7 +46,7 @@ Array [
     <div />
   </header>,
   <section>
-    <div
+    <section
       className=""
     >
       <h1>
@@ -55,7 +55,7 @@ Array [
       <p>
         For over 20 years we have built industry leading campaigns, websites, products and mobile Apps and we have never lost a client because we always deliver on our promises with scientifically proven results, and we always put the user first.
       </p>
-    </div>
+    </section>
     <div
       className=" "
     >

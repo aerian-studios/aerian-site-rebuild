@@ -8,13 +8,13 @@ Array [
     style={Object {}}
   />,
   <section>
-    <div
+    <section
       className=""
     >
       <h1>
         Meet the Team
       </h1>
-    </div>
+    </section>
     <div
       className=" "
     >

@@ -80,7 +80,7 @@ Array [
     </div>
   </nav>,
   <section>
-    <div
+    <section
       className=""
     >
       <figure>
@@ -119,8 +119,8 @@ Array [
           />
         </button>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -159,8 +159,8 @@ Array [
           />
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -262,8 +262,8 @@ Array [
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -349,8 +349,8 @@ Array [
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -431,8 +431,8 @@ Array [
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -482,8 +482,8 @@ Array [
           </footer>
         </blockquote>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -521,8 +521,8 @@ Array [
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       className=""
     >
       <div
@@ -551,7 +551,7 @@ Array [
           </a>
         </div>
       </div>
-    </div>
+    </section>
   </section>,
 ]
 `;

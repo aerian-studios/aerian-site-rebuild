@@ -5,7 +5,7 @@ export const pageFieldsFragment = graphql`
         title
         heroImage {
             childImageSharp {
-                fluid(srcSetBreakpoints: [1024, 720, 360]) {
+                fluid(srcSetBreakpoints: [1024, 720, 360], toFormat: JPG) {
                     ...GatsbyImageSharpFluid_withWebp
                 }
             }
@@ -56,6 +56,7 @@ export const projectBoxFragment = graphql`
                     maxWidth: 1066
                     maxHeight: 1066
                     srcSetBreakpoints: [1066, 720, 360, 250]
+                    toFormat: JPG
                 ) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
@@ -80,7 +81,7 @@ export const projectFragment = graphql`
         externalUrl
         heroImage {
             childImageSharp {
-                fluid(srcSetBreakpoints: [1024, 720, 360]) {
+                fluid(srcSetBreakpoints: [1024, 720, 360], toFormat: JPG) {
                     ...GatsbyImageSharpFluid_withWebp
                 }
             }
@@ -92,7 +93,7 @@ export const projectFragment = graphql`
         gallery {
             image {
                 childImageSharp {
-                    fluid(srcSetBreakpoints: [720, 360]) {
+                    fluid(srcSetBreakpoints: [720, 360], toFormat: JPG) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }

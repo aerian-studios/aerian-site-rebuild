@@ -28,7 +28,7 @@ phases:
         # - command
     build:
         commands:
-            - yarn build && aws s3 sync --delete public "s3://aerian-site-preview-us-east-1/master"
+            - yarn build && aws s3 sync --no-progress --delete public "s3://aerian-site-preview-us-east-1/master"
         #finally:
         # - command
         # - command

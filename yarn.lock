@@ -6692,9 +6692,9 @@ gatsby-transformer-json@^2.1.5:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
 
-gatsby-transformer-sharp@^2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.7.tgz#55655d1b7ef438711d0947f8c169dc6024167fc5"
+gatsby-transformer-sharp@2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.6.tgz#2c03a53b2883ad4e5fe436fe8e96e6a3fa76077a"
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"

@@ -9789,6 +9789,7 @@ exports[`Storyshots Image With sharp 1`] = `
             "opacity": 1,
             "position": "absolute",
             "top": 0,
+            "transition": "opacity 0.5s",
             "transitionDelay": "0.25s",
             "width": "100%",
           }

@@ -41,7 +41,11 @@ const IndexPage: React.SFC<Props> = props => {
                                     fadeIn={index >= 7}
                                     alt={project.name}
                                     backgroundColor={`#d01944`}
-                                    source={project.heroImage}
+                                    source={
+                                        index === 0
+                                            ? project.heroImage
+                                            : project.thumbnail
+                                    }
                                 />
                             </Link>
                         )

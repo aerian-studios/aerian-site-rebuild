@@ -193,7 +193,7 @@ export interface ProjectStage {
 }
 
 export interface Performance {
-    title: string;
+    title: string | number;
     text: string;
 }
 export interface ProjectBox {

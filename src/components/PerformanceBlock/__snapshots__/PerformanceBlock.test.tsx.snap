@@ -2,7 +2,7 @@
 
 exports[`PerformanceBlock renders correctly 1`] = `
 <div
-  className=" "
+  className=""
 >
   <h2>
     Performance & Statistics
@@ -10,14 +10,18 @@ exports[`PerformanceBlock renders correctly 1`] = `
   <div
     className=" "
   >
-    <div>
-      <h4>
-        558000
-      </h4>
-      <p>
+    <figure
+      className=" "
+    >
+      <span>
+        <strong>
+          558000
+        </strong>
+      </span>
+      <span>
         558,000 additional visits
-      </p>
-    </div>
+      </span>
+    </figure>
   </div>
 </div>
 `;

@@ -8,12 +8,13 @@ import {
     Client,
     NodeList,
     Project,
+    ProjectBox,
     ReactRouterLocation
 } from "../types/data";
 
 interface GraphData {
     pagesJson: About;
-    allProjectsJson: NodeList<Project>;
+    allProjectsJson: NodeList<ProjectBox>;
 }
 
 interface Props {

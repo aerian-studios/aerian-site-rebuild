@@ -35,7 +35,7 @@
             "e f g h";
     }
 
-    @media (min-width: $bp-xxl) {
+    @media (min-width: $bp-xl) {
         grid-template-columns: repeat(5, 1fr);
 
         grid-template-areas:

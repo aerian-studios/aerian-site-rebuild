@@ -26,26 +26,8 @@ phases:
         # - command
     build:
         commands:
-            - yarn build && aws s3 sync --delete public "s3://aerian-site-preview-us-east-1/public/$(echo $CODEBUILD_SOURCE_VERSION | tr / -)"
-        #finally:
-        # - command
-        # - command
-    #post_build:
-    #commands:
-    # - command
-    # - command
-    #finally:
-    # - command
-    # - command
-# artifacts:
-#     files:
-#         - "**/*"
-#     base-directory: public
-#     name: $(echo $CODEBUILD_SOURCE_VERSION | tr / -)
-# - location
-# - name
-#discard-paths: yes
-#base-directory: location
+            - yarn build && aws s3 sync --no-progress --delete public "s3://aerian-site-preview-us-east-1/public/$(echo $CODEBUILD_WEBHOOK_TRIGGER | tr / -)"
+
 cache:
     paths:
         - node_modules/**/*

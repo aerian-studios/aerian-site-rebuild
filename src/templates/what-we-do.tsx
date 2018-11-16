@@ -29,14 +29,22 @@ export const pageQuery = graphql`
                 title
                 image {
                     childImageSharp {
-                        fluid(maxWidth: 1000, srcSetBreakpoints: [650, 350]) {
+                        fluid(
+                            maxWidth: 1000
+                            srcSetBreakpoints: [650, 350]
+                            toFormat: JPG
+                        ) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }
                 smallImage {
                     childImageSharp {
-                        fluid(maxWidth: 600, srcSetBreakpoints: [650, 350]) {
+                        fluid(
+                            maxWidth: 600
+                            srcSetBreakpoints: [650, 350]
+                            toFormat: JPG
+                        ) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }

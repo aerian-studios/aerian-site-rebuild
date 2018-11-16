@@ -27,6 +27,7 @@ export const pageQuery = graphql`
                             maxWidth: 500
                             maxHeight: 600
                             srcSetBreakpoints: [500, 250]
+                            toFormat: JPG
                         ) {
                             ...GatsbyImageSharpFluid_withWebp_tracedSVG
                         }
@@ -38,6 +39,7 @@ export const pageQuery = graphql`
                             maxWidth: 500
                             maxHeight: 600
                             srcSetBreakpoints: [500, 250]
+                            toFormat: JPG
                         ) {
                             ...GatsbyImageSharpFluid_withWebp_noBase64
                         }

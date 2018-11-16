@@ -14,11 +14,15 @@ export const Block: React.SFC<Props> = ({
     className,
     alternate
 }) => (
-    <div
-        className={classNames([{ [styles.alternate]: alternate }, className])}
+    <section
+        className={classNames([
+            { [styles.alternate]: alternate },
+            styles.block,
+            className
+        ])}
         style={style}
     >
         {children}
-    </div>
+    </section>
 );
 export default Block;

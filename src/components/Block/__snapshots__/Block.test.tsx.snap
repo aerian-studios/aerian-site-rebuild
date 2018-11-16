@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Block correctly adds 'alternate' classes 1`] = `
+<section
+  className="undefined myClass"
+/>
+`;
+
 exports[`Block renders correctly 1`] = `
-<div
+<section
   className="myClass"
 />
 `;

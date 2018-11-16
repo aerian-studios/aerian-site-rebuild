@@ -1,6 +1,6 @@
 @import "../../scss/variables";
 
-.Block {
+.block {
     composes: layoutGrid from "../../scss/layoutGrid.module.scss";
     composes: blockFull from "../../scss/layoutGrid.module.scss";
     padding: var(--s-5, 100px) 0;

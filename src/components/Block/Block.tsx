@@ -17,7 +17,7 @@ export const Block: React.SFC<Props> = ({
     <section
         className={classNames([
             { [styles.alternate]: alternate },
-            styles.Block,
+            styles.block,
             className
         ])}
         style={style}

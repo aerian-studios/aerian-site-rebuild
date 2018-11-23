@@ -29,7 +29,10 @@ export const ContactDetails: React.SFC<Props> = ({
     >
         {phoneNumber && (
             <p className={styles.phoneNumber}>
-                Call <span itemProp="telephone">{phoneNumber}</span>
+                Call{" "}
+                <a href={"tel:" + phoneNumber} itemProp="telephone">
+                    {phoneNumber}
+                </a>
             </p>
         )}
         {(street || locality || region || postcode) && (

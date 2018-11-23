@@ -4876,12 +4876,14 @@ exports[`Storyshots ContactDetails Default 1`] = `
       itemType="http://schema.org/Organization"
     >
       <p>
-        Call 
-        <span
+        Call
+         
+        <a
+          href="tel:0345 408 6009"
           itemProp="telephone"
         >
           0345 408 6009
-        </span>
+        </a>
       </p>
       <p
         itemProp="address"
@@ -5248,12 +5250,14 @@ exports[`Storyshots ContactDetails No Address 1`] = `
       itemType="http://schema.org/Organization"
     >
       <p>
-        Call 
-        <span
+        Call
+         
+        <a
+          href="tel:0345 408 6009"
           itemProp="telephone"
         >
           0345 408 6009
-        </span>
+        </a>
       </p>
     </div>
   </div>

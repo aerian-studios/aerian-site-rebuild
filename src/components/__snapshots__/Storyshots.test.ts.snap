@@ -2858,7 +2858,7 @@ exports[`Storyshots Card Default 1`] = `
     style={Object {}}
   >
     <div
-      className="  "
+      className="   fade"
     >
       <div>
         <div
@@ -13110,7 +13110,7 @@ exports[`Storyshots OurWorkPage Default 1`] = `
         className="  false"
       >
         <div
-          className="  "
+          className="   fade"
         >
           <div>
             <a
@@ -21513,7 +21513,7 @@ exports[`Storyshots ShowcaseCarousel Default 1`] = `
       className="  "
     >
       <div
-        className="  "
+        className="   fade"
       >
         <div>
           <div

@@ -1,15 +1,12 @@
 import { graphql, Link } from "gatsby";
 import * as React from "react";
+import { Button } from "../components/Button";
+import { Card } from "../components/Card";
 import { Image } from "../components/Image";
 import Layout from "../components/Layout";
 import { ShowcaseCarousel } from "../components/ShowcaseCarousel";
 import { extractNodes } from "../lib/helpers";
-import {
-    Client,
-    NodeList,
-    ProjectBox,
-    ReactRouterLocation
-} from "../types/data";
+import { NodeList, ProjectBox, ReactRouterLocation } from "../types/data";
 import * as styles from "./index.module.scss";
 interface Props {
     data: GraphData;
@@ -35,6 +32,7 @@ const IndexPage: React.SFC<Props> = props => {
                             <Link
                                 key={project.slug}
                                 to={`/our-work/project/${project.slug}`}
+                                className={styles.revealCard}
                             >
                                 <Image
                                     key={project.titleLineOne}
@@ -46,7 +44,26 @@ const IndexPage: React.SFC<Props> = props => {
                                             ? project.heroImage
                                             : project.thumbnail
                                     }
+                                    className={styles.cardAlignment}
                                 />
+                                <Image
+                                    source={project.client.promoLogo}
+                                    alt={`${project.client.name}'s logo`}
+                                    className={styles.clientPromoLogo}
+                                />
+                                <div className={styles.revealCardContent}>
+                                    <h3 className={styles.cardTitle}>
+                                        {project.client.name}
+                                    </h3>
+                                    {index === 0 ? (
+                                        <p className={styles.cardContent}>
+                                            Some content
+                                        </p>
+                                    ) : null}
+                                    <Button arrow={true} alternate={true}>
+                                        View project
+                                    </Button>
+                                </div>
                             </Link>
                         )
                     )}

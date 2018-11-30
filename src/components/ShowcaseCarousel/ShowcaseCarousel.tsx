@@ -32,6 +32,7 @@ export class ShowcaseCarousel extends React.PureComponent<Props> {
                     <Observer
                         key={index}
                         onChange={ev => this.handleChange(ev, index)}
+                        threshold={0.4}
                     >
                         <Card ref={ref => this.elements.set(index, ref)}>
                             {el}

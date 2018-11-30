@@ -5,7 +5,7 @@ exports[`ShowcaseCarousel renders correctly 1`] = `
   className="  "
 >
   <div
-    className="  "
+    className="   fade"
   >
     <div>
       <div

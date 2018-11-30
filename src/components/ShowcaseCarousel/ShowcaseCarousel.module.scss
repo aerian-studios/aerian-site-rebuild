@@ -1,46 +1,17 @@
 @import "../../scss/variables";
 .feature.component > :first-child {
-    grid-area: feature;
+    grid-row: span 2;
+    grid-column: span 2;
 }
 .component {
     display: grid;
-
-    grid-template-columns: 1fr;
-    grid-template-areas: "feature", "a";
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc((100vh - 200px) / 2), 1fr)
+    );
+    grid-auto-rows: calc((100vh - 200px) / 2);
     height: calc(100vh - 200px);
     overflow-y: auto;
     overflow-x: hidden;
-    @media (min-width: $bp-s) {
-        grid-template-columns: repeat(2, 1fr);
-
-        grid-template-areas:
-            "feature    a"
-            "b          c";
-    }
-    @media (min-width: $bp-m) {
-        grid-template-columns: repeat(3, 1fr);
-
-        grid-template-areas:
-            "feature feature a"
-            "feature feature b"
-            "e f g";
-    }
-
-    @media (min-width: $bp-l) {
-        grid-template-columns: repeat(4, 1fr);
-
-        grid-template-areas:
-            "feature feature a b"
-            "feature feature c d"
-            "e f g h";
-    }
-
-    @media (min-width: $bp-xl) {
-        grid-template-columns: repeat(5, 1fr);
-
-        grid-template-areas:
-            "feature feature a b c"
-            "feature feature d e f"
-            "g h i j k";
-    }
 }

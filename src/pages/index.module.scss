@@ -1,4 +1,83 @@
+@import "../scss/variables";
 .marquee {
     display: flex;
     flex-direction: row;
+}
+
+.reveal-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover,
+    &:focus {
+        .revealCardContent {
+            opacity: 1;
+        }
+
+        .clientPromoLogo {
+            transform: translateY(-110%);
+        }
+    }
+}
+
+.cardAlignment {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.clientPromoLogo {
+    composes: cardAlignment;
+    max-width: 79%;
+    max-height: 25%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    transition: transform 0.5s ease 0.2s;
+
+    // override responsive image styles!!
+    picture,
+    img {
+        height: initial !important;
+        max-height: 100% !important;
+        max-width: 100% !important;
+        width: initial !important;
+        transform: translate(-50%, -50%);
+        left: 50% !important;
+        top: 50% !important;
+    }
+}
+
+.revealCardContent {
+    composes: cardAlignment;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 8, 4, 0.45);
+    opacity: 0;
+    transition: opacity 0.8s ease 0.2s;
+    z-index: 2;
+    padding: 12.5%;
+}
+
+.cardContent {
+    color: $whiteish;
+}
+
+.cardTitle {
+    composes: cardContent;
 }

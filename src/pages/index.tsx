@@ -57,7 +57,7 @@ const IndexPage: React.SFC<Props> = props => {
                                     </h3>
                                     {index === 0 ? (
                                         <p className={styles.cardContent}>
-                                            Some content
+                                            {project.titleLineOne}
                                         </p>
                                     ) : null}
                                     <Button arrow={true} alternate={true}>

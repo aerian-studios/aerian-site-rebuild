@@ -9,14 +9,20 @@ interface Props {
 
 interface State {
     visible: boolean;
+    seen: boolean;
 }
 
 export class Card extends React.PureComponent<Props> {
     public state = {
-        visible: false
+        visible: false,
+        seen: false
     };
 
-    public setVisible = (visible: boolean) => this.setState({visible})
+    public setVisible = (visible: boolean) =>
+        this.setState({
+            visible,
+            seen: visible ? visible : this.state.seen
+        });
 
     public render() {
         return (
@@ -24,7 +30,8 @@ export class Card extends React.PureComponent<Props> {
                 className={[
                     styles.card,
                     this.props.className,
-                    this.state.visible ? styles.visible : ""
+                    this.state.visible ? styles.visible : "",
+                    this.state.seen ? styles.seen : "fade"
                 ].join(" ")}
                 style={this.props.style}
             >

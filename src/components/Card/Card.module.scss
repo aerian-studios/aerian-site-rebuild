@@ -7,16 +7,19 @@
         max-height: 100%;
     }
 
-    // .flip {
-    //     transition: transform 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    //     transform-origin: center center;
-    //     transform: translate3d(100%, 0, 0) rotateY(90deg) rotate(-10deg);
-    //     transition-delay: 0.3s;
-    //     opacity: 0.1;
-    // }
-    // &.visible .flip,
-    // &:first-child .flip {
-    //     transform: rotateX(0deg);
-    //     opacity: 1;
-    // }
+    .flip {
+        transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transform-origin: top center;
+        transform: translate3d(0, 0, 0) rotateX(90deg) rotateZ(-10deg);
+        transition-delay: 0.2s;
+        opacity: 0.1;
+        will-change: transform;
+    }
+    &.visible .flip,
+    &:first-child .flip,
+    &.seen .flip {
+        transform: rotateX(0deg) rotateZ(0deg);
+        opacity: 1;
+        will-change: auto;
+    }
 }

@@ -1,10 +1,11 @@
 @import "../../scss/variables";
 
 .component {
-    background-color: $c-bg;
-    position: relative;
     composes: layoutGrid from "../../scss/layoutGrid.module.scss";
-    composes: blockFull from "../../scss/layoutGrid.module.scss";
+    background-color: $c-bg;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
 }
 
 .footerContainer {
@@ -17,7 +18,6 @@
     place-content: center;
     > * {
         border-bottom: 1px solid $c-black-80;
-        padding-bottom: var(--s-4);
         &:last-child {
             border-bottom: 0;
         }

@@ -29,6 +29,7 @@ export const projectBox: ProjectBox = {
     slug: project.slug,
     titleLineOne: project.titleLineOne,
     heroImage: project.heroImage,
+    thumbnail: project.heroImage,
     client
 };
 export const whatWeDo = absolutifyURLs<Required<WhatWeDo>>(whatWeDoData);

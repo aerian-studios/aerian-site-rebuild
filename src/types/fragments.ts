@@ -61,8 +61,8 @@ export const projectBoxFragment = graphql`
                 fluid(
                     maxWidth: 786
                     maxHeight: 786
-                    quality: 65
-                    srcSetBreakpoints: [960, 640, 480, 390, 240]
+                    quality: 85
+                    srcSetBreakpoints: [480, 768, 992, 1984]
                     toFormat: JPG
                 ) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -75,8 +75,8 @@ export const projectBoxFragment = graphql`
                 fluid(
                     maxWidth: 390
                     maxHeight: 390
-                    quality: 65
-                    srcSetBreakpoints: [640, 480, 240]
+                    quality: 85
+                    srcSetBreakpoints: [480, 768, 992, 1984]
                     toFormat: JPG
                 ) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64

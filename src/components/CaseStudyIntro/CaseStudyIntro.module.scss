@@ -1,12 +1,21 @@
 @import "../../scss/variables";
 .component {
     grid-area: intro;
+    position: relative;
+    padding: 40px 48px;
+    text-align: center;
+    @media (min-width: $bp-m) {
+        text-align: left;
+        padding: 75px 48px 75px 58px;
+    }
     &::before {
         display: inline-block;
         position: absolute;
         content: "";
         width: 100%;
         height: 10px;
+        margin: -48px 0 0 0;
+        left: 0;
         background-image: radial-gradient(
             50% 10px at 50% 100%,
             rgba(0, 0, 0, 0.1) 0,
@@ -16,11 +25,41 @@
             width: 10px;
             height: 100%;
             max-height: 500px;
+            margin: 0;
+            top: 50%;
+            transform: translateY(-50%);
             background-image: radial-gradient(
                 10px 50% at 100% 50%,
                 rgba(0, 0, 0, 0.1) 0,
                 transparent 100%
             );
         }
+    }
+    span {
+        background-color: $c-text;
+        color: $whiteish;
+        font-family: $t-font-basic;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        line-height: normal;
+        padding: 3px 10px;
+        margin-bottom: 20px;
+        @media (min-width: $bp-m) {
+            font-size: 14px;
+        }
+    }
+
+    h2 {
+        margin: 20px 0 30px;
+        font-weight: 400;
+
+        &:after {
+            opacity: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
     }
 }

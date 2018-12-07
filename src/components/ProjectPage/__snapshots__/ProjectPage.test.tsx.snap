@@ -95,9 +95,9 @@ Array [
       <div
         className=" "
       >
-        <h3>
+        <span>
           Case study
-        </h3>
+        </span>
         <h2>
           Two interactive 'foodie' quizzes for BBC iWonder
         </h2>

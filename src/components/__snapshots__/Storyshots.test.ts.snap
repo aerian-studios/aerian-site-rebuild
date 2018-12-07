@@ -3373,9 +3373,9 @@ exports[`Storyshots CaseStudyIntro Default 1`] = `
     <div
       className=" myClass"
     >
-      <h3>
+      <span>
         Case study
-      </h3>
+      </span>
       <h2>
         Two interactive 'foodie' quizzes for BBC iWonder
       </h2>
@@ -19213,9 +19213,9 @@ exports[`Storyshots ProjectPage Default 1`] = `
         <div
           className=" "
         >
-          <h3>
+          <span>
             Case study
-          </h3>
+          </span>
           <h2>
             Two interactive 'foodie' quizzes for BBC iWonder
           </h2>

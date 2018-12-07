@@ -1,9 +1,9 @@
 /// <reference types="@types/jest" />
 import * as React from "react";
 import * as renderer from "react-test-renderer";
-import { project } from "../../types/fixtures";
-import { Card } from "../Card";
-import { Image } from "../Image";
+import { Edge, NodeList, ProjectBox } from "../../types/data";
+import { projectBox } from "../../types/fixtures";
+import { RevealCard } from "../RevealCard";
 import { ShowcaseCarousel } from "./index";
 
 (global as any).IntersectionObserver = jest.fn(() => ({
@@ -12,14 +12,12 @@ import { ShowcaseCarousel } from "./index";
     disconnect: jest.fn()
 }));
 
+const projects: ProjectBox[] = [projectBox];
+
 describe("ShowcaseCarousel", () => {
     it("renders correctly", () => {
         const tree = renderer
-            .create(
-                <ShowcaseCarousel>
-                    {[<Image key={1} source={project.heroImage} />]}
-                </ShowcaseCarousel>
-            )
+            .create(<ShowcaseCarousel data={projects} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     });
@@ -28,14 +26,10 @@ describe("ShowcaseCarousel", () => {
             isIntersecting: true
         };
 
-        const tree = renderer.create(
-            <ShowcaseCarousel>
-                {[<Image key={1} source={project.heroImage} />]}
-            </ShowcaseCarousel>
-        );
+        const tree = renderer.create(<ShowcaseCarousel data={projects} />);
 
         const spy = jest.fn();
-        tree.root.findByType(Card).instance.setVisible = spy;
+        tree.root.findByType(RevealCard).instance.setVisible = spy;
         const instance = tree.getInstance() as any;
         instance.handleChange(entry, 0);
 

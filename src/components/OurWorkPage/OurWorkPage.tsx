@@ -18,19 +18,11 @@ export const OurWorkPage: React.SFC<Props> = ({ projects, page }) => (
                 <h1>{page.title}</h1>
                 <p>{page.subheading}</p>
             </div>
-            <ShowcaseCarousel feature={false} className={styles.carousel}>
-                {projects.map(project => (
-                    <Link
-                        to={`/our-work/project/${project.slug}`}
-                        key={project.slug}
-                    >
-                        <Image
-                            key={project.titleLineOne}
-                            source={project.heroImage}
-                        />
-                    </Link>
-                ))}
-            </ShowcaseCarousel>
+            <ShowcaseCarousel
+                feature={false}
+                className={styles.carousel}
+                data={projects}
+            />
         </section>
     </>
 );

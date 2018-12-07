@@ -32,8 +32,35 @@ Array [
               className=""
             >
               <img
+                alt="BBC"
+                backgroundColor="#d01944"
+                fadeIn={false}
                 src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
               />
+            </div>
+            <div
+              className=""
+            >
+              <img
+                alt="CNN's logo"
+                src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/474/cnn-white-logo.png"
+              />
+            </div>
+            <div>
+              <h3>
+                CNN
+              </h3>
+              <p>
+                What sort of 'eater' are you?
+              </p>
+              <button
+                className="undefined"
+              >
+                View project
+                <i
+                  className="fa"
+                />
+              </button>
             </div>
           </a>
         </div>

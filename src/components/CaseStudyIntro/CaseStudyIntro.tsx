@@ -16,7 +16,7 @@ export const CaseStudyIntro: React.SFC<Props> = ({
     className
 }) => (
     <div className={[styles.component, className].join(" ")} style={style}>
-        <h3>Case study</h3>
+        <span>Case study</span>
         <h2>{project.caseStudyTitle}</h2>
         <Markdown source={project.caseStudyText} />
         <Button arrow={true}>

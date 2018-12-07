@@ -11,15 +11,3 @@ exports[`Card renders correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`Card renders visible cards 1`] = `
-<div
-  className="   "
->
-  <div>
-    <p>
-      Hi
-    </p>
-  </div>
-</div>
-`;

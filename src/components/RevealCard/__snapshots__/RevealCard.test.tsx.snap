@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Revealcard renders correctly 1`] = `
+<div
+  className=" myClass  fade"
+>
+  <div />
+</div>
+`;
+
+exports[`Revealcard renders visible cards 1`] = `
+<div
+  className="   "
+>
+  <div>
+    <p>
+      Hi
+    </p>
+  </div>
+</div>
+`;

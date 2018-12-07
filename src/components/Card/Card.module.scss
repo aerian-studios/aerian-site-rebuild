@@ -6,17 +6,4 @@
     img {
         max-height: 100%;
     }
-
-    // .flip {
-    //     transition: transform 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    //     transform-origin: center center;
-    //     transform: translate3d(100%, 0, 0) rotateY(90deg) rotate(-10deg);
-    //     transition-delay: 0.3s;
-    //     opacity: 0.1;
-    // }
-    // &.visible .flip,
-    // &:first-child .flip {
-    //     transform: rotateX(0deg);
-    //     opacity: 1;
-    // }
 }

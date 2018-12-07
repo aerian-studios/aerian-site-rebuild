@@ -1,9 +1,7 @@
 import * as React from "react";
 
-
 import { storiesOf } from "@storybook/react";
-import { project } from "../../types/fixtures";
-import { Image } from "../Image";
+import { projectBox } from "../../types/fixtures";
 import { ShowcaseCarousel } from "./index";
 
 if (!("IntersectionObserver" in global)) {
@@ -14,11 +12,6 @@ if (!("IntersectionObserver" in global)) {
     }));
 }
 
-storiesOf("ShowcaseCarousel", module).add(
-    "Default",
-    (() => (
-        <ShowcaseCarousel>
-            {[<Image key={1} source={project.heroImage} />]}
-        </ShowcaseCarousel>
-    ))
-);
+storiesOf("ShowcaseCarousel", module).add("Default", () => (
+    <ShowcaseCarousel data={[projectBox]} />
+));

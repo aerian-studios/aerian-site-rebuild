@@ -95,6 +95,11 @@ body {
     position: relative;
 }
 
+#___gatsby {
+    min-height: 100%;
+    overflow: hidden;
+}
+
 html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -108,7 +113,7 @@ body {
     line-height: calculateRem(21);
     font-weight: 400;
     text-rendering: auto;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 p {

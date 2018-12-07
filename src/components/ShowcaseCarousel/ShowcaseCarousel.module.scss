@@ -2,6 +2,9 @@
 .feature.component > :first-child {
     grid-area: feature;
 }
+
+$headerFooter: 195px;
+$carouselCell: calc((100vh - #{$headerFooter}) / 2);
 .component {
     display: grid;
 
@@ -35,7 +38,7 @@
             "e f g h";
     }
 
-    @media (min-width: $bp-xxl) {
+    @media (min-width: $bp-xl) {
         grid-template-columns: repeat(5, 1fr);
 
         grid-template-areas:

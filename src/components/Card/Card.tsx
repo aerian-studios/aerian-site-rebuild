@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import * as React from "react";
 
 import * as styles from "./Card.module.scss";
@@ -7,30 +8,14 @@ interface Props {
     className?: string;
 }
 
-interface State {
-    visible: boolean;
-}
-
-export class Card extends React.PureComponent<Props> {
-    public state = {
-        visible: false
-    };
-
-    public setVisible = (visible: boolean) => this.setState({visible})
-
-    public render() {
-        return (
-            <div
-                className={[
-                    styles.card,
-                    this.props.className,
-                    this.state.visible ? styles.visible : ""
-                ].join(" ")}
-                style={this.props.style}
-            >
-                <div className={styles.flip}>{this.props.children}</div>
-            </div>
-        );
-    }
-}
+export const Card: React.SFC<Props> = props => {
+    return (
+        <div
+            className={classnames(styles.card, props.className)}
+            style={props.style}
+        >
+            <div>{props.children}</div>
+        </div>
+    );
+};
 export default Card;

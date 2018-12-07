@@ -23,7 +23,10 @@ export const clientFragment = graphql`
         name
         logo {
             childImageSharp {
-                fluid(maxWidth: 600, srcSetBreakpoints: [420, 210]) {
+                fluid(
+                    maxWidth: 390
+                    srcSetBreakpoints: [1200, 1024, 768, 480, 340]
+                ) {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
             }
@@ -31,7 +34,10 @@ export const clientFragment = graphql`
         }
         promoLogo {
             childImageSharp {
-                fluid(maxWidth: 600, srcSetBreakpoints: [420, 210]) {
+                fluid(
+                    maxWidth: 390
+                    srcSetBreakpoints: [1200, 1024, 768, 480, 340]
+                ) {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
             }
@@ -53,9 +59,24 @@ export const projectBoxFragment = graphql`
         heroImage {
             childImageSharp {
                 fluid(
-                    maxWidth: 1066
-                    maxHeight: 1066
-                    srcSetBreakpoints: [1066, 720, 360, 250]
+                    maxWidth: 786
+                    maxHeight: 786
+                    quality: 85
+                    srcSetBreakpoints: [480, 768, 992, 1984]
+                    toFormat: JPG
+                ) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+            }
+            publicURL
+        }
+        thumbnail: heroImage {
+            childImageSharp {
+                fluid(
+                    maxWidth: 390
+                    maxHeight: 390
+                    quality: 85
+                    srcSetBreakpoints: [480, 768, 992, 1984]
                     toFormat: JPG
                 ) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64

@@ -7,6 +7,9 @@
     @media (min-width: $bp-m) {
         text-align: left;
         padding: 75px 48px 75px 58px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &::before {
         display: inline-block;

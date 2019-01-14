@@ -1,4 +1,5 @@
 import { Stats } from "fs";
+import { FixedObject, FluidObject } from "gatsby-image";
 import { ParsedPath } from "path";
 
 export type ImageField = string | ImageSharp;
@@ -37,8 +38,8 @@ export interface FileNode extends ParsedPath, Stats {
 
 export interface ImageSharp extends Partial<FileNode> {
     childImageSharp: {
-        fluid?: ImageSharpFluid;
-        fixed?: ImageSharpFixed;
+        fluid?: FluidObject;
+        fixed?: FixedObject;
     };
 }
 export interface ImageSharpFluid {

@@ -14,14 +14,13 @@ describe("Helpers", () => {
         const fixed: ImageSharp = {
             childImageSharp: {
                 ...imageSharp.childImageSharp,
-                fixed: imageSharp.childImageSharp.fluid,
-                fluid: null
+                fluid: imageSharp.childImageSharp.fluid
             }
         };
-        expect(getSrc(null)).toBe("");
+        expect(getSrc()).toBe("");
         expect(getSrc(image)).toBe(image);
-        expect(getSrc(imageSharp)).toBe(imageSharp.childImageSharp.fluid.src);
-        expect(getSrc(fixed)).toBe(imageSharp.childImageSharp.fluid.src);
+        expect(getSrc(imageSharp)).toBe(imageSharp!.childImageSharp!.fluid!.src);
+        expect(getSrc(fixed)).toBe(imageSharp!.childImageSharp!.fluid!.src);
     });
     it("absolutifies a path", () => {
         expect(absolutifyURL("/assets/foo.txt")).toBe(
@@ -30,7 +29,7 @@ describe("Helpers", () => {
     });
     it("doesn't absolutify a non-path", () => {
         expect(absolutifyURL("/foo.txt")).toBe("/foo.txt");
-        expect(absolutifyURL(1)).toBe(1);
+        expect(absolutifyURL(1 as any as string)).toBe(1);
     });
     it("extracts nodes from a nodelist", () => {
         const nl = {

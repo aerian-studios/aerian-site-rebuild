@@ -63,7 +63,7 @@ export const ProjectPage: React.SFC<Props> = ({ project }) => (
                 <figure>
                     <Image source={project.client.logo} />
                 </figure>
-                <CaseStudyIntro className={styles.intro} project={project} />
+                <CaseStudyIntro project={project} />
             </Block>
             <Block>
                 <Gallery gallery={project.gallery} />

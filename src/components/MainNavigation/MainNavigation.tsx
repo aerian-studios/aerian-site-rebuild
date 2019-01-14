@@ -7,6 +7,7 @@ import * as styles from "./MainNavigation.module.scss";
 interface Props {
     activeLinkClassName?: string;
     className?: string;
+    activePath?: string;
     linkClassName?: string;
     pages: PageListNode[];
     style?: React.CSSProperties;

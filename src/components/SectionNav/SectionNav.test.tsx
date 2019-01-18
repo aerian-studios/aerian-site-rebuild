@@ -36,6 +36,8 @@ describe("SectionNav", () => {
             )
             .toJSON();
 
-        expect(tree.children[0].children.length).toEqual(5);
+        expect(tree!.children![0].children!.length).toEqual(
+            Object.keys(keys).length
+        );
     });
 });

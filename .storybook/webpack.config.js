@@ -1,5 +1,9 @@
 const path = require("path");
 module.exports = (baseConfig, env, config) => {
+    // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint
+    config.resolve.mainFields = ["browser", "module", "main"];
+
+    // setup to us typings for css modules
     config.module.rules.push({
         test: /\.scss$/,
         loaders: [
@@ -21,8 +25,10 @@ module.exports = (baseConfig, env, config) => {
         ],
         include: path.resolve(__dirname, "../")
     });
+
+    // setup to use ts-loader
     config.module.rules.push({
-        test: /\.(ts|tsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         use: [
             {
                 loader: require.resolve("ts-loader"),
@@ -35,9 +41,10 @@ module.exports = (baseConfig, env, config) => {
     });
     config.module.rules[0] = {
         ...config.module.rules[0],
-        exclude: [],
+        // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
+        exclude: [/node_modules\/(?!(gatsby)\/)/],
         include: [
-            path.resolve(__dirname, "../node_modules/gatsby"),
+            // path.resolve(__dirname, "../node_modules/gatsby"),
             path.resolve(__dirname, "../src")
         ]
     };

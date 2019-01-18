@@ -52,7 +52,7 @@ export const hideShow = async (
 };
 
 export const setHeightStyles = (
-    el: HTMLElement,
+    el: HTMLElement | null | undefined,
     height: number
 ): Promise<HTMLElement> => {
     return new Promise((resolve, reject) => {

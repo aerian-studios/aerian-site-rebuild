@@ -4,6 +4,8 @@ exports[`ContactInfo renders correctly 1`] = `
 <div
   className=" myClass"
 >
-  <h2 />
+  <h2>
+    Test title
+  </h2>
 </div>
 `;

@@ -9,7 +9,13 @@ import { StaffGridItem } from "./index";
 describe("StaffGridItem", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<StaffGridItem className="myClass" person={person} />)
+            .create(
+                <StaffGridItem
+                    className="myClass"
+                    person={person}
+                    onExpand={jest.fn()}
+                />
+            )
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

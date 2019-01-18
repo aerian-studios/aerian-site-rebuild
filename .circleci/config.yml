@@ -1,0 +1,20 @@
+version: 2
+jobs:
+    build:
+        docker:
+            - image: circleci/node:10
+        working_directory: ~/circleci-deployment
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ~/circleci-deployment
+            - restore_cache:
+                  keys:
+                      - yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
+                      - yarn-cache-{{ .Branch }}
+                      - yarn-cache-
+            - run: yarn install
+            - save_cache:
+                  key: yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
+                  paths: node_modules
+            - run: yarn test:circle

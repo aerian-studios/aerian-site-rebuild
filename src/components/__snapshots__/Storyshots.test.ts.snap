@@ -5055,7 +5055,7 @@ exports[`Storyshots ContactDetails Default 1`] = `
     id="story-root"
     style={Object {}}
   >
-    <div
+    <address
       className="myClass"
       itemScope={true}
       itemType="http://schema.org/Organization"
@@ -5091,7 +5091,7 @@ exports[`Storyshots ContactDetails Default 1`] = `
           SN13 8PN
         </span>
       </p>
-    </div>
+    </address>
   </div>
   <div>
     <div
@@ -5443,7 +5443,7 @@ exports[`Storyshots ContactDetails No Address 1`] = `
     id="story-root"
     style={Object {}}
   >
-    <div
+    <address
       className="myClass"
       itemScope={true}
       itemType="http://schema.org/Organization"
@@ -5458,7 +5458,7 @@ exports[`Storyshots ContactDetails No Address 1`] = `
           0345 408 6009
         </a>
       </p>
-    </div>
+    </address>
   </div>
   <div>
     <div
@@ -5714,7 +5714,7 @@ exports[`Storyshots ContactDetails No Phone Number 1`] = `
     id="story-root"
     style={Object {}}
   >
-    <div
+    <address
       className="myClass"
       itemScope={true}
       itemType="http://schema.org/Organization"
@@ -5740,7 +5740,7 @@ exports[`Storyshots ContactDetails No Phone Number 1`] = `
           SN13 8PN
         </span>
       </p>
-    </div>
+    </address>
   </div>
   <div>
     <div
@@ -6298,11 +6298,16 @@ exports[`Storyshots ContactInfo Default 1`] = `
     style={Object {}}
   >
     <div
-      className=" myClass"
+      className="myClass"
     >
       <h2>
         test title
       </h2>
+      <address
+        className="myClass"
+        itemScope={true}
+        itemType="http://schema.org/Organization"
+      />
     </div>
   </div>
   <div>
@@ -6582,6 +6587,40 @@ exports[`Storyshots ContactUsPage Default 1`] = `
             }
           }
         />
+      </div>
+      <div
+        className=""
+      >
+        <h2>
+          Drop in and say hi
+        </h2>
+        <address
+          itemScope={true}
+          itemType="http://schema.org/Organization"
+        >
+          <p
+            className=""
+            itemProp="address"
+            itemScope={true}
+            itemType="http://schema.org/PostalAddress"
+          >
+            <span
+              itemProp="streetAddress"
+            >
+              The Old Malthouse, Mill Lane
+            </span>
+            <span
+              itemProp="addressLocality"
+            >
+              Box
+            </span>
+            <span
+              itemProp="postalCode"
+            >
+              SN13 8PN
+            </span>
+          </p>
+        </address>
       </div>
       <div
         className=" "

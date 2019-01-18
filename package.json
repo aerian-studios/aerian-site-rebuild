@@ -51,6 +51,7 @@
         "storybook-build": "build-storybook -c .storybook -o docs",
         "precommit": "lint-staged",
         "prepush": "jest --ci",
+        "test:circle": "jest --ci --runInBand --verbose --silent",
         "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 > coverage.lcov && codecov"
     },
     "devDependencies": {

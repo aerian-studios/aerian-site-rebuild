@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactDetails renders correctly 1`] = `
-<div
+<address
   className="myClass"
   itemScope={true}
   itemType="http://schema.org/Organization"
@@ -42,5 +42,5 @@ exports[`ContactDetails renders correctly 1`] = `
       SN13 8PN
     </span>
   </p>
-</div>
+</address>
 `;

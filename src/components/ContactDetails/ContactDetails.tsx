@@ -21,7 +21,7 @@ export const ContactDetails: React.SFC<Props> = ({
     region,
     postcode
 }) => (
-    <div
+    <address
         className={className}
         style={style}
         itemScope={true}
@@ -64,7 +64,7 @@ export const ContactDetails: React.SFC<Props> = ({
                 )}
             </p>
         )}
-    </div>
+    </address>
 );
 
 export default ContactDetails;

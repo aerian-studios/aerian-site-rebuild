@@ -2,10 +2,15 @@
 
 exports[`ContactInfo renders correctly 1`] = `
 <div
-  className=" myClass"
+  className="myClass"
 >
   <h2>
     Test title
   </h2>
+  <address
+    className="myClass"
+    itemScope={true}
+    itemType="http://schema.org/Organization"
+  />
 </div>
 `;

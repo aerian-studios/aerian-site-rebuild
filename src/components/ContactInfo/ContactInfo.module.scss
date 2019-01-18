@@ -1,3 +1,33 @@
-.component {
-    foo: bar;
+@import "../../scss/variables";
+
+.contactInfo {
+    color: $whiteish;
+    background-color: $c-menu-bg;
+
+    @media (min-width: $bp-m) {
+        position: absolute;
+        right: 0;
+        top: 110px;
+        padding: calc(4 * var(--vertical-rythym));
+        width: 397px;
+        border-radius: 4px 0 0 4px;
+    }
+}
+
+.address {
+    display: block;
+}
+
+.part {
+    margin-right: 5px;
+}
+
+.orgName {
+    margin-bottom: 0;
+}
+
+.phoneNumber,
+.email,
+.addressSection {
+    text-decoration: none;
 }

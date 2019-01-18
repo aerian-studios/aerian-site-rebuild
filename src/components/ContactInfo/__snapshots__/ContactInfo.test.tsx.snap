@@ -4,9 +4,9 @@ exports[`ContactInfo renders correctly 1`] = `
 <div
   className="myClass"
 >
-  <h2>
+  <h1>
     Test title
-  </h2>
+  </h1>
   <address
     className="myClass"
     itemScope={true}

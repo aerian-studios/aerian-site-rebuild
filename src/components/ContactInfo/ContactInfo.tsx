@@ -42,7 +42,7 @@ export const ContactInfo: React.SFC<Props> = ({
     className
 }) => (
     <div className={classNames(styles.contactInfo, className)} style={style}>
-        <h2>{title}</h2>
+        <h1 className={styles.white}>{title}</h1>
 
         <address
             className={className}
@@ -51,7 +51,7 @@ export const ContactInfo: React.SFC<Props> = ({
             itemType="http://schema.org/Organization"
         >
             {organisationName && (
-                <p className={classNames(styles.orgName)} itemProp="name">
+                <p className={styles.orgSectionName} itemProp="name">
                     <strong>{organisationName}</strong>
                 </p>
             )}
@@ -98,10 +98,13 @@ export const ContactInfo: React.SFC<Props> = ({
                         styles.addressSection
                     )}
                 >
-                    <strong>{phoneTitle}</strong>{" "}
+                    <strong className={styles.orgSectionName}>
+                        {phoneTitle}
+                    </strong>{" "}
                     <a
                         href={`tel:${internationalisePhone(phoneNumber)}`}
                         itemProp="telephone"
+                        className={styles.white}
                     >
                         {phoneNumber}
                     </a>
@@ -109,8 +112,14 @@ export const ContactInfo: React.SFC<Props> = ({
             )}
             {email && emailTitle && (
                 <p className={classNames(styles.email, styles.addressSection)}>
-                    <strong>{emailTitle}</strong>{" "}
-                    <a href={"mailto:" + email} itemProp="email">
+                    <strong className={styles.orgSectionName}>
+                        {emailTitle}
+                    </strong>{" "}
+                    <a
+                        href={"mailto:" + email}
+                        itemProp="email"
+                        className={styles.white}
+                    >
                         {email}
                     </a>
                 </p>

@@ -1,17 +1,22 @@
 @import "../../scss/variables";
 
 .contactInfo {
-    color: $whiteish;
+    color: $c-text-alt;
     background-color: $c-menu-bg;
+    grid-column: 1/-1;
+    padding: calc(4 * var(--vertical-rythym));
 
     @media (min-width: $bp-m) {
         position: absolute;
         right: 0;
         top: 110px;
-        padding: calc(4 * var(--vertical-rythym));
         width: 397px;
         border-radius: 4px 0 0 4px;
     }
+}
+
+.white {
+    color: $c-text-alt;
 }
 
 .address {
@@ -22,12 +27,16 @@
     margin-right: 5px;
 }
 
-.orgName {
+.orgSectionName {
     margin-bottom: 0;
+    display: block;
+}
+
+.addressSection {
+    margin-top: 0;
 }
 
 .phoneNumber,
-.email,
-.addressSection {
+.email {
     text-decoration: none;
 }

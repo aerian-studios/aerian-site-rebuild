@@ -24,6 +24,10 @@ module.exports = {
                 name: "pages"
             }
         },
+        // This plugin exposes helper functions for processing
+        // images with the NPM package “sharp”. It's used by
+        // several plugins and should preceed them.
+        `gatsby-plugin-sharp`,
         // This plugin identifies file nodes that are images and
         // transforms these to create new “ImageSharp” nodes.
         // With them you can resize images and
@@ -31,10 +35,6 @@ module.exports = {
         `gatsby-transformer-sharp`,
         // transform JSON file nodes
         `gatsby-transformer-json`,
-        // This plugin exposes helper functions for processing
-        // images with the NPM package “sharp”. It's used by
-        // several plugins.
-        `gatsby-plugin-sharp`,
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-netlify-cms`,

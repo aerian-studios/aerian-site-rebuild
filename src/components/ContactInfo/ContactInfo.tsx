@@ -1,3 +1,7 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons/faMapMarkerAlt";
+import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import * as React from "react";
 
@@ -65,6 +69,7 @@ export const ContactInfo: React.SFC<Props> = ({
                     itemScope={true}
                     itemType="http://schema.org/PostalAddress"
                 >
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
                     {street && (
                         <span className={styles.part} itemProp="streetAddress">
                             {street},
@@ -98,6 +103,7 @@ export const ContactInfo: React.SFC<Props> = ({
                         styles.addressSection
                     )}
                 >
+                    <FontAwesomeIcon icon={faPhone} />
                     <strong className={styles.orgSectionName}>
                         {phoneTitle}
                     </strong>{" "}
@@ -112,6 +118,7 @@ export const ContactInfo: React.SFC<Props> = ({
             )}
             {email && emailTitle && (
                 <p className={classNames(styles.email, styles.addressSection)}>
+                    <FontAwesomeIcon icon={faEnvelope} />
                     <strong className={styles.orgSectionName}>
                         {emailTitle}
                     </strong>{" "}

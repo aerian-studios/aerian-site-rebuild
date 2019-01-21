@@ -67,7 +67,7 @@ export const ContactInfo: React.SFC<Props> = ({
                 >
                     {street && (
                         <span className={styles.part} itemProp="streetAddress">
-                            {street}
+                            {street},
                         </span>
                     )}
                     {locality && (
@@ -75,12 +75,12 @@ export const ContactInfo: React.SFC<Props> = ({
                             className={styles.part}
                             itemProp="addressLocality"
                         >
-                            {locality}
+                            {locality},
                         </span>
                     )}
                     {region && (
                         <span className={styles.part} itemProp="addressRegion">
-                            {region}
+                            {region},
                         </span>
                     )}
                     {postcode && (

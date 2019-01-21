@@ -6325,16 +6325,19 @@ exports[`Storyshots ContactInfo Default 1`] = `
             itemProp="streetAddress"
           >
             The Old Malthouse, Mill Lane
+            ,
           </span>
           <span
             itemProp="addressLocality"
           >
             Box
+            ,
           </span>
           <span
             itemProp="addressRegion"
           >
             Wiltshire
+            ,
           </span>
           <span
             itemProp="postalCode"
@@ -6954,16 +6957,19 @@ exports[`Storyshots ContactUsPage Default 1`] = `
               itemProp="streetAddress"
             >
               The Old Malthouse, Mill Lane
+              ,
             </span>
             <span
               itemProp="addressLocality"
             >
               Box
+              ,
             </span>
             <span
               itemProp="addressRegion"
             >
               Wiltshire
+              ,
             </span>
             <span
               itemProp="postalCode"

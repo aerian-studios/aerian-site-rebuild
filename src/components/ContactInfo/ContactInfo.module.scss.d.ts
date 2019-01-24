@@ -7,5 +7,6 @@ export const address: string;
 export const part: string;
 export const orgSectionName: string;
 export const addressSection: string;
+export const addressSectionIcon: string;
 export const phoneNumber: string;
 export const email: string;

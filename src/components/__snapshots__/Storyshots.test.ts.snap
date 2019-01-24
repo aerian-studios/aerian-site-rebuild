@@ -6309,6 +6309,7 @@ exports[`Storyshots ContactInfo Default 1`] = `
         itemType="http://schema.org/Organization"
       >
         <p
+          className=""
           itemProp="name"
         >
           <strong>
@@ -6950,6 +6951,7 @@ exports[`Storyshots ContactUsPage Default 1`] = `
           itemType="http://schema.org/Organization"
         >
           <p
+            className=""
             itemProp="name"
           >
             <strong>
@@ -7024,13 +7026,6 @@ exports[`Storyshots ContactUsPage Default 1`] = `
             </a>
           </p>
         </address>
-      </div>
-      <div
-        className=" "
-      >
-        <h2>
-          ContactForm
-        </h2>
       </div>
       <div>
         Facebook

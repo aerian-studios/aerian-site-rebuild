@@ -1,12 +1,23 @@
+@import "../../scss/variables";
+
 .component {
     composes: contentWrapper from "../Layout.module.scss";
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-auto-rows: minmax(500px, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
     grid-template-areas:
-        "map map map"
-        "contact social1 social2"
-        "contact social3 social4";
+        "map map"
+        "contact contact"
+        "social1 social2"
+        "social3 social4";
+
+    @media (min-width: $bp-m) {
+        grid-template-areas:
+            "map map"
+            "social1 social2"
+            "social3 social4";
+        grid-auto-rows: minmax(500px, auto);
+    }
 }
 
 .map {

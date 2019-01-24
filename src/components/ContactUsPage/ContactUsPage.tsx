@@ -28,7 +28,7 @@ export const ContactUsPage: React.SFC<Props> = ({ page }) => (
                 emailTitle="Send us a message"
                 email="info@aerian.com"
             />
-            <ContactForm className={styles.contactForm} />
+            {/* <ContactForm className={styles.contactForm} /> */}
             <SocialGrid className={styles.socialGrid} />
         </section>
     </>

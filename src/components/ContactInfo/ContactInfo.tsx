@@ -55,7 +55,13 @@ export const ContactInfo: React.SFC<Props> = ({
             itemType="http://schema.org/Organization"
         >
             {organisationName && (
-                <p className={styles.orgSectionName} itemProp="name">
+                <p
+                    className={classNames(
+                        styles.orgSectionName,
+                        styles.addressSection
+                    )}
+                    itemProp="name"
+                >
                     <strong>{organisationName}</strong>
                 </p>
             )}
@@ -71,7 +77,11 @@ export const ContactInfo: React.SFC<Props> = ({
                 >
                     <FontAwesomeIcon
                         icon={faMapMarkerAlt}
-                        className={styles.contactIcon}
+                        className={classNames(
+                            styles.addressSectionIcon,
+                            styles.contactIcon
+                        )}
+                        size="3x"
                     />
                     {street && (
                         <span className={styles.part} itemProp="streetAddress">
@@ -109,6 +119,8 @@ export const ContactInfo: React.SFC<Props> = ({
                     <FontAwesomeIcon
                         icon={faPhone}
                         className={styles.contactIcon}
+                        size="3x"
+                        flip="horizontal"
                     />
                     <strong className={styles.orgSectionName}>
                         {phoneTitle}
@@ -127,6 +139,7 @@ export const ContactInfo: React.SFC<Props> = ({
                     <FontAwesomeIcon
                         icon={faEnvelope}
                         className={styles.contactIcon}
+                        size="3x"
                     />
                     <strong className={styles.orgSectionName}>
                         {emailTitle}

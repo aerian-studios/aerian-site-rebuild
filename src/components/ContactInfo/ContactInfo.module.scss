@@ -19,6 +19,13 @@
     color: $c-text-alt;
 }
 
+.contactIcon {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-width: 48px;
+    max-height: 57px;
+}
+
 .address {
     display: block;
 }
@@ -34,6 +41,11 @@
 
 .addressSection {
     margin-top: 0;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    grid-auto-rows: 1fr;
+    width: 100% !important;
+    height: 100%;
 }
 
 .phoneNumber,

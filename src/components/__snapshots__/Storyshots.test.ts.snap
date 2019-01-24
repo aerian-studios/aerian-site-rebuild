@@ -6321,6 +6321,9 @@ exports[`Storyshots ContactInfo Default 1`] = `
           itemScope={true}
           itemType="http://schema.org/PostalAddress"
         >
+          <i
+            className="fa"
+          />
           <span
             itemProp="streetAddress"
           >
@@ -6348,6 +6351,9 @@ exports[`Storyshots ContactInfo Default 1`] = `
         <p
           className=""
         >
+          <i
+            className="fa"
+          />
           <strong>
             Give us a call
           </strong>
@@ -6362,6 +6368,9 @@ exports[`Storyshots ContactInfo Default 1`] = `
         <p
           className=""
         >
+          <i
+            className="fa"
+          />
           <strong>
             Send us a message
           </strong>
@@ -6953,6 +6962,9 @@ exports[`Storyshots ContactUsPage Default 1`] = `
             itemScope={true}
             itemType="http://schema.org/PostalAddress"
           >
+            <i
+              className="fa"
+            />
             <span
               itemProp="streetAddress"
             >
@@ -6980,6 +6992,9 @@ exports[`Storyshots ContactUsPage Default 1`] = `
           <p
             className=""
           >
+            <i
+              className="fa"
+            />
             <strong>
               Give us a call
             </strong>
@@ -6994,6 +7009,9 @@ exports[`Storyshots ContactUsPage Default 1`] = `
           <p
             className=""
           >
+            <i
+              className="fa"
+            />
             <strong>
               Send us a message
             </strong>

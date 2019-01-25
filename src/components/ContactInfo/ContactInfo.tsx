@@ -45,11 +45,14 @@ export const ContactInfo: React.SFC<Props> = ({
     style,
     className
 }) => (
-    <div className={classNames(styles.contactInfo, className)} style={style}>
+    <div
+        className={classNames(className, styles.contactInfo, className)}
+        style={style}
+    >
         <h1 className={styles.white}>{title}</h1>
 
         <address
-            className={className}
+            className={styles.addressWrapper}
             style={style}
             itemScope={true}
             itemType="http://schema.org/Organization"
@@ -58,7 +61,8 @@ export const ContactInfo: React.SFC<Props> = ({
                 <p
                     className={classNames(
                         styles.orgSectionName,
-                        styles.addressSection
+                        styles.addressSection,
+                        styles.orgName
                     )}
                     itemProp="name"
                 >

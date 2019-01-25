@@ -6298,13 +6298,12 @@ exports[`Storyshots ContactInfo Default 1`] = `
     style={Object {}}
   >
     <div
-      className="myClass"
+      className="myClass myClass"
     >
       <h1>
         Drop in and say hi
       </h1>
       <address
-        className="myClass"
         itemScope={true}
         itemType="http://schema.org/Organization"
       >

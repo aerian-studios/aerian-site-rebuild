@@ -12,11 +12,11 @@
         "social3 social4";
 
     @media (min-width: $bp-m) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-            "map map"
-            "social1 social2"
-            "social3 social4";
-        grid-auto-rows: minmax(500px, auto);
+            "map map map map"
+            "social1 social2 social3 social4";
+        grid-auto-rows: minmax(1fr, auto);
     }
 }
 

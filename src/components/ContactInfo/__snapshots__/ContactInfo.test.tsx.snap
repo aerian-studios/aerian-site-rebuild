@@ -2,10 +2,90 @@
 
 exports[`ContactInfo renders correctly 1`] = `
 <div
-  className=" myClass"
+  className="myClass myClass"
 >
-  <h2>
+  <h1>
     Test title
-  </h2>
+  </h1>
+  <address
+    itemScope={true}
+    itemType="http://schema.org/Organization"
+  >
+    <p
+      className=""
+      itemProp="name"
+    >
+      <strong>
+        test
+      </strong>
+    </p>
+    <p
+      className=""
+      itemProp="address"
+      itemScope={true}
+      itemType="http://schema.org/PostalAddress"
+    >
+      <i
+        className="fa"
+      />
+      <span
+        itemProp="streetAddress"
+      >
+        test
+        ,
+      </span>
+      <span
+        itemProp="addressLocality"
+      >
+        test
+        ,
+      </span>
+      <span
+        itemProp="addressRegion"
+      >
+        test
+        ,
+      </span>
+      <span
+        itemProp="postalCode"
+      >
+        test
+      </span>
+    </p>
+    <p
+      className=""
+    >
+      <i
+        className="fa"
+      />
+      <strong>
+        test
+      </strong>
+       
+      <a
+        href="tel:test"
+        itemProp="telephone"
+      >
+        test
+      </a>
+    </p>
+    <p
+      className=""
+    >
+      <i
+        className="fa"
+      />
+      <strong>
+        test
+      </strong>
+       
+      <a
+        href="mailto:test"
+        itemProp="email"
+      >
+        test
+      </a>
+    </p>
+  </address>
 </div>
 `;

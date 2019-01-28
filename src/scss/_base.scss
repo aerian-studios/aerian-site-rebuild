@@ -11,7 +11,7 @@
     --side-gutter: 15px;
     --h-grid-spacing: 2.5%;
     --v-grid-spacing: var(--s-1);
-    --vertical-rythym: 8px;
+    --vertical-rhythm: 8px;
     --grid-gap: 2.74%;
     --grid-column: 5.82%; // SPACING - --s- + name  !! needs cleaning up
     --s-1: 12px;
@@ -21,14 +21,14 @@
     --s-5: 80px;
     --s-h2: 25px;
     --s-h3: 20px;
-    --s-p: 58px;
-    --pad-0: calc(8 * var(--vertical-rythym));
-    --pad-1: calc(12 * var(--vertical-rythym));
-    --pad-2: calc(14 * var(--vertical-rythym));
-    --feature-pad-0: calc(5 * var(--vertical-rythym));
-    --feature-pad-1: calc(8 * var(--vertical-rythym));
+    --s-p: 45px;
+    --pad-0: calc(8 * var(--vertical-rhythm));
+    --pad-1: calc(12 * var(--vertical-rhythm));
+    --pad-2: calc(14 * var(--vertical-rhythm));
+    --feature-pad-0: calc(5 * var(--vertical-rhythm));
+    --feature-pad-1: calc(8 * var(--vertical-rhythm));
     --feature-pad-2: calc(
-        10 * var(--vertical-rythym)
+        10 * var(--vertical-rhythm)
     ); // needs to be here for the text calculations
 
     --navBarSize: 54px;
@@ -117,12 +117,13 @@ body {
 }
 
 p {
+    margin-top: 0;
     margin-bottom: var(--s-p);
     &:last-child {
         margin-bottom: 0;
     }
     @media (min-width: $bp-s) {
-        margin-bottom: calc(var(--vertical-rythym) * 4);
+        margin-bottom: calc(var(--vertical-rhythm) * 4);
     }
 }
 
@@ -130,12 +131,13 @@ h1,
 h2,
 h3 {
     font-family: $t-font-accent;
-    font-weight: 700;
+    font-weight: 400;
+    margin-top: 0;
 }
 
 h1 {
     @include font-size(var(--t-h1));
-    line-height: calculateRem(53);
+    line-height: calculateRem(57.6);
     &:after {
         content: "";
         width: 4px;
@@ -186,13 +188,13 @@ h6 {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 li {
     margin-bottom: 0;
     line-height: 1em;
-    margin-bottom: var(--vertical-rythym);
+    margin-bottom: var(--vertical-rhythm);
 }
 
 ul {

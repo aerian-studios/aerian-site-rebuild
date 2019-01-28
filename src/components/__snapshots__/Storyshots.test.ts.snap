@@ -5055,7 +5055,7 @@ exports[`Storyshots ContactDetails Default 1`] = `
     id="story-root"
     style={Object {}}
   >
-    <div
+    <address
       className="myClass"
       itemScope={true}
       itemType="http://schema.org/Organization"
@@ -5091,7 +5091,7 @@ exports[`Storyshots ContactDetails Default 1`] = `
           SN13 8PN
         </span>
       </p>
-    </div>
+    </address>
   </div>
   <div>
     <div
@@ -5443,7 +5443,7 @@ exports[`Storyshots ContactDetails No Address 1`] = `
     id="story-root"
     style={Object {}}
   >
-    <div
+    <address
       className="myClass"
       itemScope={true}
       itemType="http://schema.org/Organization"
@@ -5458,7 +5458,7 @@ exports[`Storyshots ContactDetails No Address 1`] = `
           0345 408 6009
         </a>
       </p>
-    </div>
+    </address>
   </div>
   <div>
     <div
@@ -5714,7 +5714,7 @@ exports[`Storyshots ContactDetails No Phone Number 1`] = `
     id="story-root"
     style={Object {}}
   >
-    <div
+    <address
       className="myClass"
       itemScope={true}
       itemType="http://schema.org/Organization"
@@ -5740,7 +5740,7 @@ exports[`Storyshots ContactDetails No Phone Number 1`] = `
           SN13 8PN
         </span>
       </p>
-    </div>
+    </address>
   </div>
   <div>
     <div
@@ -6298,11 +6298,91 @@ exports[`Storyshots ContactInfo Default 1`] = `
     style={Object {}}
   >
     <div
-      className=" myClass"
+      className="myClass myClass"
     >
-      <h2>
-        test title
-      </h2>
+      <h1>
+        Drop in and say hi
+      </h1>
+      <address
+        itemScope={true}
+        itemType="http://schema.org/Organization"
+      >
+        <p
+          className=""
+          itemProp="name"
+        >
+          <strong>
+            Aerian
+          </strong>
+        </p>
+        <p
+          className=""
+          itemProp="address"
+          itemScope={true}
+          itemType="http://schema.org/PostalAddress"
+        >
+          <i
+            className="fa"
+          />
+          <span
+            itemProp="streetAddress"
+          >
+            The Old Malthouse, Mill Lane
+            ,
+          </span>
+          <span
+            itemProp="addressLocality"
+          >
+            Box
+            ,
+          </span>
+          <span
+            itemProp="addressRegion"
+          >
+            Wiltshire
+            ,
+          </span>
+          <span
+            itemProp="postalCode"
+          >
+            SN13 8PN
+          </span>
+        </p>
+        <p
+          className=""
+        >
+          <i
+            className="fa"
+          />
+          <strong>
+            Give us a call
+          </strong>
+           
+          <a
+            href="tel:+44345 408 6009"
+            itemProp="telephone"
+          >
+            0345 408 6009
+          </a>
+        </p>
+        <p
+          className=""
+        >
+          <i
+            className="fa"
+          />
+          <strong>
+            Send us a message
+          </strong>
+           
+          <a
+            href="mailto:info@aerian.com"
+            itemProp="email"
+          >
+            info@aerian.com
+          </a>
+        </p>
+      </address>
     </div>
   </div>
   <div>
@@ -6374,7 +6454,10 @@ exports[`Storyshots ContactInfo Default 1`] = `
               </span>
               <span>
                 <span>
-                   
+                  <span>
+                    <br />
+                      
+                  </span>
                   <span
                     style={Object {}}
                   >
@@ -6401,7 +6484,10 @@ exports[`Storyshots ContactInfo Default 1`] = `
                   </span>
                 </span>
                 <span>
-                   
+                  <span>
+                    <br />
+                      
+                  </span>
                   <span
                     style={Object {}}
                   >
@@ -6421,12 +6507,282 @@ exports[`Storyshots ContactInfo Default 1`] = `
                           }
                         }
                       >
-                        test title
+                        Drop in and say hi
                       </span>
                       "
                     </span>
                   </span>
-                   
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    phoneTitle
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Give us a call
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    phoneNumber
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        0345 408 6009
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    organisationName
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Aerian
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    street
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        The Old Malthouse, Mill Lane
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    locality
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Box
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    region
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Wiltshire
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    postcode
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        SN13 8PN
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    emailTitle
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Send us a message
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    email
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        info@aerian.com
+                      </span>
+                      "
+                    </span>
+                  </span>
+                  <br />
                 </span>
               </span>
               <span
@@ -6584,11 +6940,91 @@ exports[`Storyshots ContactUsPage Default 1`] = `
         />
       </div>
       <div
-        className=" "
+        className=""
       >
-        <h2>
-          ContactForm
-        </h2>
+        <h1>
+          Drop in and say hi
+        </h1>
+        <address
+          itemScope={true}
+          itemType="http://schema.org/Organization"
+        >
+          <p
+            className=""
+            itemProp="name"
+          >
+            <strong>
+              Aerian
+            </strong>
+          </p>
+          <p
+            className=""
+            itemProp="address"
+            itemScope={true}
+            itemType="http://schema.org/PostalAddress"
+          >
+            <i
+              className="fa"
+            />
+            <span
+              itemProp="streetAddress"
+            >
+              The Old Malthouse, Mill Lane
+              ,
+            </span>
+            <span
+              itemProp="addressLocality"
+            >
+              Box
+              ,
+            </span>
+            <span
+              itemProp="addressRegion"
+            >
+              Wiltshire
+              ,
+            </span>
+            <span
+              itemProp="postalCode"
+            >
+              SN13 8PN
+            </span>
+          </p>
+          <p
+            className=""
+          >
+            <i
+              className="fa"
+            />
+            <strong>
+              Give us a call
+            </strong>
+             
+            <a
+              href="tel:+44345 408 6009"
+              itemProp="telephone"
+            >
+              0345 408 6009
+            </a>
+          </p>
+          <p
+            className=""
+          >
+            <i
+              className="fa"
+            />
+            <strong>
+              Send us a message
+            </strong>
+             
+            <a
+              href="mailto:info@aerian.com"
+              itemProp="email"
+            >
+              info@aerian.com
+            </a>
+          </p>
+        </address>
       </div>
       <div>
         Facebook

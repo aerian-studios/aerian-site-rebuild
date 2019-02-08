@@ -5,12 +5,12 @@ exports[`SocialLinks renders correctly 1`] = `
   className=" "
 >
   <span
-    className=" item"
+    className="item"
   >
     <a
+      aria-label="Visit Aerian studios on facebook"
       href="https://www.facebook.com/aerianstudios/"
       rel="nofollow noreferer"
-      title="facebook"
     >
       <i
         className="fa"
@@ -18,12 +18,12 @@ exports[`SocialLinks renders correctly 1`] = `
     </a>
   </span>
   <span
-    className=" item"
+    className="item"
   >
     <a
+      aria-label="Visit Aerian studios on twitter"
       href="https://twitter.com/aerianstudios"
       rel="nofollow noreferer"
-      title="twitter"
     >
       <i
         className="fa"
@@ -31,12 +31,12 @@ exports[`SocialLinks renders correctly 1`] = `
     </a>
   </span>
   <span
-    className=" item"
+    className="item"
   >
     <a
+      aria-label="Visit Aerian studios on linkedin"
       href="https://www.linkedin.com/company/aerian-studios"
       rel="nofollow noreferer"
-      title="linkedin"
     >
       <i
         className="fa"
@@ -44,12 +44,12 @@ exports[`SocialLinks renders correctly 1`] = `
     </a>
   </span>
   <span
-    className=" item"
+    className="item"
   >
     <a
+      aria-label="Visit Aerian studios on vimeo-v"
       href="https://vimeo.com/aerianstudios"
       rel="nofollow noreferer"
-      title="vimeo-v"
     >
       <i
         className="fa"

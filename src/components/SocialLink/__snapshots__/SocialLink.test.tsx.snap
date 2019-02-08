@@ -2,12 +2,12 @@
 
 exports[`SocialLink renders correctly 1`] = `
 <span
-  className=" item"
+  className="item"
 >
   <a
+    aria-label="Visit Aerian studios on facebook"
     href="https://www.facebook.com/aerianstudios/"
     rel="nofollow noreferer"
-    title="facebook"
   >
     <i
       className="fa"

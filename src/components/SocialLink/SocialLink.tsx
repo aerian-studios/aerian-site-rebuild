@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import * as React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,18 +10,27 @@ interface Props {
     style?: React.CSSProperties;
     className?: string;
     icon: IconDefinition;
+    iconsStyle: any;
     url: string;
+    children?: React.ReactFragment;
 }
 
 export const SocialLink: React.SFC<Props> = ({
     style,
     className,
     icon,
-    url
+    url,
+    iconsStyle,
+    children
 }) => (
-    <span className={[styles.item, className].join(" ")} style={style}>
-        <a href={url} rel="nofollow noreferer" title={icon.iconName}>
-            <FontAwesomeIcon icon={icon} />
+    <span className={classNames(styles.item, className)} style={style}>
+        <a
+            href={url}
+            rel="nofollow noreferer"
+            aria-label={`Visit Aerian studios on ${icon.iconName}`}
+        >
+            <FontAwesomeIcon icon={icon} className={iconsStyle} />
+            {children}
         </a>
     </span>
 );

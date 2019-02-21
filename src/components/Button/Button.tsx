@@ -17,7 +17,12 @@ interface Props {
     className?: string;
     arrow?: boolean;
     alternate?: boolean;
-    [name: string]: React.CSSProperties | string | boolean | undefined;
+    [name: string]:
+        | React.CSSProperties
+        | React.ReactChildren
+        | string
+        | boolean
+        | undefined;
 }
 
 export const Button: React.SFC<Props> = ({

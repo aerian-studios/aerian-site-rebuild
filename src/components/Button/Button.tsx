@@ -5,11 +5,19 @@ import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as styles from "./Button.module.scss";
 
+interface ElProps {
+    style?: React.CSSProperties;
+    className?: string;
+    arrow?: boolean;
+    alternate?: boolean;
+}
+
 interface Props {
     style?: React.CSSProperties;
     className?: string;
     arrow?: boolean;
     alternate?: boolean;
+    [name: string]: React.CSSProperties | string | boolean | undefined;
 }
 
 export const Button: React.SFC<Props> = ({
@@ -17,7 +25,8 @@ export const Button: React.SFC<Props> = ({
     style,
     className,
     arrow,
-    alternate
+    alternate,
+    ...rest
 }) => (
     <button
         className={classNames(
@@ -26,6 +35,7 @@ export const Button: React.SFC<Props> = ({
             className
         )}
         style={style}
+        {...rest}
     >
         {children}
         {arrow && (

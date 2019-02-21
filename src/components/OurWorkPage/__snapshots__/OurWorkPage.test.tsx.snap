@@ -55,6 +55,7 @@ Array [
               </p>
               <button
                 className="undefined"
+                tabIndex="-1"
               >
                 View project
                 <i

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SiteLogo renders correctly 1`] = `
+<nav
+  className="myClass"
+>
+  <a
+    aria-current="page"
+    className=""
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={Object {}}
+  >
+    <img
+      alt="a logo"
+      src="../../../static/assets/furniture/logo.svg"
+    />
+  </a>
+</nav>
+`;

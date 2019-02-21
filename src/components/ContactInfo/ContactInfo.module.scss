@@ -2,26 +2,27 @@
 
 @keyframes slide-in-right {
     0% {
-        transform: translate3d(100%, 0, 0);
+        transform: translateX(100%, 0, 0);
     }
     100% {
-        transform: translate3d(0%, 0, 0);
+        transform: translateX(0%, 0, 0);
     }
 }
 
 .contactInfo {
     color: $c-text-alt;
+    grid-area: contact;
     background-color: $c-menu-bg;
     padding: calc(3.25 * var(--vertical-rhythm))
         calc(3.25 * var(--vertical-rhythm)) calc(4.2 * var(--vertical-rhythm));
-    grid-column: contact;
 
     @media (min-width: $bp-m) {
         position: absolute;
         right: 0;
-        top: 110px;
+        top: calc(50% - 12.5vw);
+        transform: translateY(-50%);
         width: 397px;
-        border-radius: 4px 0 0 4px;
+        border-radius: 5px 0 0 5px;
         animation: slide-in-right 0.5s ease-out 0s forwards;
     }
 }
@@ -78,7 +79,7 @@
 .addressSection {
     margin-top: 0;
     position: relative;
-    padding-left: var(--s-4);
+    padding-left: calc(5 * var(--vertical-rhythm));
 
     @media (min-width: $bp-s) and (max-width: $bp-m) {
         margin-bottom: 0;

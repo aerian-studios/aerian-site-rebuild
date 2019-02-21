@@ -3,9 +3,7 @@
 .component {
     composes: layoutGrid from "../../scss/layoutGrid.module.scss";
     background-color: $c-bg;
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
+    position: relative;
 }
 
 .footerContainer {

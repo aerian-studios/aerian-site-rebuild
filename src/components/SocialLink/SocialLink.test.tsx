@@ -14,6 +14,7 @@ describe("SocialLink", () =>
                     className="item"
                     icon={faFacebook}
                     url="https://www.facebook.com/aerianstudios/"
+                    iconSize="1x"
                 />
             )
             .toJSON();

@@ -5,12 +5,13 @@
     margin-right: calc(var(--s-1) * 4);
     height: 26px;
     font-size: 26px;
+    color: #d8d8d8;
 
     &:last-child {
         margin-right: 0;
     }
+}
 
-    svg {
-        fill: #d8d8d8;
-    }
+.link {
+    display: block;
 }

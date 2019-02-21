@@ -4,12 +4,12 @@ import * as React from "react";
 import * as renderer from "react-test-renderer";
 
 import { project } from "../../types/fixtures";
-import { OnwardJournies } from "./index";
+import { OnwardJourneys } from "./index";
 
-describe("OnwardJournies", () =>
+describe("OnwardJourneys", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<OnwardJournies projectURL={project.externalUrl} />)
+            .create(<OnwardJourneys projectURL={project.externalUrl} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

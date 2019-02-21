@@ -13740,7 +13740,7 @@ exports[`Storyshots MeetTheTeamPage Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots OnwardJournies Default 1`] = `
+exports[`Storyshots OnwardJourneys Default 1`] = `
 <div>
   <div>
     <div
@@ -13779,7 +13779,7 @@ exports[`Storyshots OnwardJournies Default 1`] = `
             }
           }
         >
-          OnwardJournies
+          OnwardJourneys
         </h1>
         <h2
           style={
@@ -22804,54 +22804,54 @@ exports[`Storyshots RevealCard Default 1`] = `
             }
           >
             "
-            
-            " Component
-          </h2>
-          <small>
-            No propTypes defined!
-          </small>
-        </div>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            
-            " Component
-          </h2>
-          <small>
-            No propTypes defined!
-          </small>
-        </div>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            " Component
-          </h2>
-          <small>
-            No propTypes defined!
-          </small>
-        </div>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
             RevealCard
+            " Component
+          </h2>
+          <small>
+            No propTypes defined!
+          </small>
+        </div>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            " Component
+          </h2>
+          <small>
+            No propTypes defined!
+          </small>
+        </div>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            
+            " Component
+          </h2>
+          <small>
+            No propTypes defined!
+          </small>
+        </div>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            
             " Component
           </h2>
           <small>

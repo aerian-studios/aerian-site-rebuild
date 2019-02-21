@@ -6,7 +6,7 @@ import { CaseStudyIntro } from "../CaseStudyIntro";
 import { Gallery } from "../Gallery";
 import { HeroBlock } from "../HeroBlock";
 import { Image } from "../Image";
-import { OnwardJournies } from "../OnwardJournies";
+import { OnwardJourneys } from "../OnwardJourneys";
 import { PageHeader } from "../PageHeader";
 import { PerformanceBlock } from "../PerformanceBlock";
 import { ProjectStageBlock } from "../ProjectStageBlock";
@@ -97,7 +97,7 @@ export const ProjectPage: React.SFC<Props> = ({ project }) => (
                 </Block>
             )}
             <Block>
-                <OnwardJournies projectURL={project.externalUrl} />
+                <OnwardJourneys projectURL={project.externalUrl} />
             </Block>
         </section>
     </>

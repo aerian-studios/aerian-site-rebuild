@@ -14178,7 +14178,7 @@ exports[`Storyshots OurWorkPage Default 1`] = `
         className="  false"
       >
         <div
-          className="   fade"
+          className="fade"
         >
           <div>
             <a
@@ -21839,7 +21839,7 @@ exports[`Storyshots RevealCard Default 1`] = `
       }
     >
       <div
-        className=" myClass  fade"
+        className="myClass fade"
       >
         <div>
           <a
@@ -23953,7 +23953,7 @@ exports[`Storyshots ShowcaseCarousel Default 1`] = `
       className="  "
     >
       <div
-        className="   fade"
+        className="fade"
       >
         <div>
           <a

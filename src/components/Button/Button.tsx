@@ -20,6 +20,7 @@ interface Props {
     [name: string]:
         | React.CSSProperties
         | React.ReactChildren
+        | Element
         | string
         | boolean
         | undefined;

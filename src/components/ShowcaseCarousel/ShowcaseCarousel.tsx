@@ -51,7 +51,7 @@ export class ShowcaseCarousel extends React.PureComponent<Props> {
                                     key={project.titleLineOne}
                                     fadeIn={index >= 7}
                                     alt={project.name}
-                                    backgroundColor={`#d01944`}
+                                    style={{ backgroundColor: `#d01944` }}
                                     source={
                                         index === 0
                                             ? project.heroImage

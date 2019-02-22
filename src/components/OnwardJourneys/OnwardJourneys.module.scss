@@ -1,4 +1,55 @@
+@import "../../scss/variables";
+
 .component {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @media (min-width: $bp-m) {
+        display: grid;
+
+        > * {
+            width: 100%;
+            text-align: left;
+        }
+        composes: groupPair from "../../scss/objects/_group.scss";
+        grid-row-gap: 0;
+        column-gap: 0;
+    }
+    background-color: $c-black-70;
+}
+
+.section {
+    padding: var(--s-4, 50px);
+    text-align: center;
+
+    @media (min-width: $bp-m) {
+        text-align: left;
+    }
+}
+
+.firstSection {
+    @media (min-width: $bp-m) {
+        text-align: right;
+        padding-right: 102px;
+    }
+}
+
+.secondSection {
+    background-color: $c-black-40;
+    @media (min-width: $bp-m) {
+        padding-right: 42px;
+    }
+}
+
+.largeTitle {
+    color: $c-brand-c;
+}
+
+.sectionContent {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (min-width: $bp-m) {
+        text-align: left;
+        margin: 0;
+    }
 }

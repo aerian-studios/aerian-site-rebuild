@@ -1,0 +1,23 @@
+@import "../../scss/variables";
+
+.component {
+    composes: component from "../Button/Button.module.scss";
+}
+.alternate {
+    color: $c-brand-c;
+    composes: alternate from "../Button/Button.module.scss";
+
+    &:visited {
+        color: $c-brand-c;
+
+        &:hover {
+            color: $c-brand-a;
+        }
+    }
+}
+.arrow {
+    composes: arrow from "../Button/Button.module.scss";
+}
+.icon {
+    composes: icon from "../Button/Button.module.scss";
+}

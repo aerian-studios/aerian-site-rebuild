@@ -40,7 +40,7 @@ exports[`ShowcaseCarousel renders correctly 1`] = `
           </p>
           <button
             className="undefined"
-            tabIndex="-1"
+            tabIndex={-1}
           >
             View project
             <i

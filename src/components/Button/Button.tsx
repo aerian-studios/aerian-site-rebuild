@@ -5,25 +5,11 @@ import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as styles from "./Button.module.scss";
 
-interface ElProps {
+interface Props extends React.HTMLAttributes<HTMLButtonElement> {
     style?: React.CSSProperties;
     className?: string;
     arrow?: boolean;
     alternate?: boolean;
-}
-
-interface Props {
-    style?: React.CSSProperties;
-    className?: string;
-    arrow?: boolean;
-    alternate?: boolean;
-    [name: string]:
-        | React.CSSProperties
-        | React.ReactChildren
-        | Element
-        | string
-        | boolean
-        | undefined;
 }
 
 export const Button: React.SFC<Props> = ({

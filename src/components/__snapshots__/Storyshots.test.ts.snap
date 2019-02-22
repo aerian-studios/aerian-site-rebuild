@@ -14107,7 +14107,7 @@ exports[`Storyshots OurWorkPage Default 1`] = `
                 </p>
                 <button
                   className="undefined"
-                  tabIndex="-1"
+                  tabIndex={-1}
                 >
                   View project
                   <i
@@ -23883,7 +23883,7 @@ exports[`Storyshots ShowcaseCarousel Default 1`] = `
               </p>
               <button
                 className="undefined"
-                tabIndex="-1"
+                tabIndex={-1}
               >
                 View project
                 <i

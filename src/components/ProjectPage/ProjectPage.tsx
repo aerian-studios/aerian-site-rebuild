@@ -96,9 +96,7 @@ export const ProjectPage: React.SFC<Props> = ({ project }) => (
                     <PerformanceBlock performance={project.performance} />
                 </Block>
             )}
-            <Block>
-                <OnwardJourneys projectURL={project.externalUrl} />
-            </Block>
+            <OnwardJourneys projectURL={project.externalUrl} />
         </section>
     </>
 );

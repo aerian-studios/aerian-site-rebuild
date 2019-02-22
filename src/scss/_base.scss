@@ -1,3 +1,5 @@
+@import "./variables";
+@import "./tools/tools";
 /**
  * This file will contain generic styles applied to unclassed HTML elements.
  */
@@ -17,7 +19,7 @@
     --s-1: 12px;
     --s-2: 28px;
     --s-3: 30px;
-    --s-4: 32px;
+    --s-4: 50px;
     --s-5: 80px;
     --s-h2: 25px;
     --s-h3: 20px;
@@ -59,9 +61,10 @@
 
 @media (min-width: $bp-m) {
     :root {
-        --s-h2: 30px;
+        --s-h2: 38px;
         --s-h3: 23px;
         --s-p: 32px;
+        --s-4: 90px;
         --s-5: 100px;
         --side-gutter: 68px;
         --t-h1: 48;
@@ -129,6 +132,7 @@ p {
 
 h1,
 h2,
+.large-title,
 h3 {
     font-family: $t-font-accent;
     font-weight: 400;
@@ -148,13 +152,17 @@ h1 {
     }
 }
 
-h2 {
+h2,
+.large-title {
     @include font-size(var(--t-h2));
     color: $c-brand-a;
     line-height: calculateRem(42);
     margin-bottom: calc(var(--s-h2) - 8px); // -8 is for the descenders
     // this is for top 'extra' line height
     margin-top: -6px;
+}
+
+h2 {
     &:after {
         content: "";
         width: 4px;

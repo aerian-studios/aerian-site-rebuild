@@ -1,40 +1,33 @@
+@import "../variables";
 .group {
-    @supports (display: grid) {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-gap: calc(var(--s-2) * 2);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: calc(var(--s-2) * 2);
 
-        > * {
-            width: 100%;
-            text-align: left;
-        }
+    > * {
+        width: 100%;
+        text-align: left;
     }
     // uses tools/atoms to pull in on small screen
     @media (min-width: $bp-s) {
-        @supports (display: grid) {
-            grid-column-gap: var(--s-2);
-            grid-template-columns: repeat(
-                auto-fill,
-                minmax(calc(50% - var(--s-2)), 1fr)
-            );
-        }
+        grid-column-gap: var(--s-2);
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(calc(50% - var(--s-2)), 1fr)
+        );
     }
     @media (min-width: $bp-m) {
-        @supports (display: grid) {
-            grid-template-columns: repeat(
-                auto-fill,
-                minmax(calc(33% - var(--s-2)), 1fr)
-            );
-        }
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(calc(33% - var(--s-2)), 1fr)
+        );
     }
 }
 
-.group--pair {
-    @supports (display: grid) {
-        grid-column-gap: calc(var(--s-2) * 3);
-        grid-template-columns: repeat(
-            auto-fill,
-            minmax(calc(50% - var(--s-2) * 1.5), 1fr)
-        );
-    }
+.groupPair {
+    grid-column-gap: calc(var(--s-2) * 3);
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(calc(50% - var(--s-2) * 1.5), 1fr)
+    );
 }

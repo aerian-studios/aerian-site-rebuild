@@ -7,9 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GatsbyLinkProps } from "gatsby-link";
 import * as styles from "./LinkButton.module.scss";
 
-interface Props {
-    style?: React.CSSProperties;
-    className?: string;
+interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     arrow?: boolean;
     alternate?: boolean;
     to: string;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialGridItem renders correctly 1`] = `
+<span
+  className="myClass"
+>
+  <a
+    aria-label="Visit Aerian studios on vimeo-v"
+    href="https://vimeo.com/aerianstudios"
+    rel="nofollow noreferer"
+  >
+    <i
+      className="fa"
+    />
+    <p
+      aria-hidden="true"
+    >
+      aerian-studios
+    </p>
+    <span
+      aria-hidden="true"
+    >
+      View page
+      <i
+        className="fa"
+      />
+    </span>
+  </a>
+</span>
+`;

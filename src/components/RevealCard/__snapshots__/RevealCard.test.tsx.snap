@@ -2,7 +2,7 @@
 
 exports[`Revealcard renders correctly 1`] = `
 <div
-  className=" myClass  fade"
+  className="myClass fade"
 >
   <div />
 </div>
@@ -10,7 +10,7 @@ exports[`Revealcard renders correctly 1`] = `
 
 exports[`Revealcard renders visible cards 1`] = `
 <div
-  className="   "
+  className=""
 >
   <div>
     <p>

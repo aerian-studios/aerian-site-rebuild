@@ -2973,20 +2973,18 @@ exports[`Storyshots Card Default 1`] = `
     <div
       className=""
     >
-      <div>
-        <div
-          className="content"
-        >
-          <h3>
-            Title
-          </h3>
-          <p>
-            Some content
-          </p>
-          <button>
-            This is a button
-          </button>
-        </div>
+      <div
+        className="content"
+      >
+        <h3>
+          Title
+        </h3>
+        <p>
+          Some content
+        </p>
+        <button>
+          This is a button
+        </button>
       </div>
     </div>
   </div>
@@ -7026,17 +7024,125 @@ exports[`Storyshots ContactUsPage Default 1`] = `
           </p>
         </address>
       </div>
-      <div>
-        Facebook
+      <div
+        className=""
+      >
+        <span
+          className=""
+        >
+          <a
+            aria-label="Visit Aerian studios on facebook"
+            href="https://www.facebook.com/aerianstudios/"
+            rel="nofollow noreferer"
+          >
+            <i
+              className="fa"
+            />
+            <p
+              aria-hidden="true"
+            >
+              aerianstudios
+            </p>
+            <span
+              aria-hidden="true"
+            >
+              View page
+              <i
+                className="fa"
+              />
+            </span>
+          </a>
+        </span>
       </div>
-      <div>
-        Twitter
+      <div
+        className=""
+      >
+        <span
+          className=""
+        >
+          <a
+            aria-label="Visit Aerian studios on twitter"
+            href="https://twitter.com/aerianstudios"
+            rel="nofollow noreferer"
+          >
+            <i
+              className="fa"
+            />
+            <p
+              aria-hidden="true"
+            >
+              @aerianstudios
+            </p>
+            <span
+              aria-hidden="true"
+            >
+              View page
+              <i
+                className="fa"
+              />
+            </span>
+          </a>
+        </span>
       </div>
-      <div>
-        G+
+      <div
+        className=""
+      >
+        <span
+          className=""
+        >
+          <a
+            aria-label="Visit Aerian studios on vimeo-v"
+            href="https://vimeo.com/aerianstudios"
+            rel="nofollow noreferer"
+          >
+            <i
+              className="fa"
+            />
+            <p
+              aria-hidden="true"
+            >
+              aerian-studios
+            </p>
+            <span
+              aria-hidden="true"
+            >
+              View page
+              <i
+                className="fa"
+              />
+            </span>
+          </a>
+        </span>
       </div>
-      <div>
-        LinkedIn
+      <div
+        className=""
+      >
+        <span
+          className=""
+        >
+          <a
+            aria-label="Visit Aerian studios on linkedin"
+            href="https://www.linkedin.com/company/aerian-studios"
+            rel="nofollow noreferer"
+          >
+            <i
+              className="fa"
+            />
+            <p
+              aria-hidden="true"
+            >
+              aerian-studios
+            </p>
+            <span
+              aria-hidden="true"
+            >
+              View page
+              <i
+                className="fa"
+              />
+            </span>
+          </a>
+        </span>
       </div>
     </section>
   </div>
@@ -15510,7 +15616,7 @@ exports[`Storyshots OurWorkPage Default 1`] = `
         className="  false"
       >
         <div
-          className="   fade"
+          className="fade"
         >
           <div>
             <a
@@ -15549,6 +15655,7 @@ exports[`Storyshots OurWorkPage Default 1`] = `
                 </p>
                 <button
                   className="undefined"
+                  tabIndex={-1}
                 >
                   View project
                   <i
@@ -23193,7 +23300,7 @@ exports[`Storyshots RevealCard Default 1`] = `
       }
     >
       <div
-        className=" myClass  fade"
+        className="myClass fade"
       >
         <div>
           <a
@@ -25333,7 +25440,7 @@ exports[`Storyshots ShowcaseCarousel Default 1`] = `
       className="  "
     >
       <div
-        className="   fade"
+        className="fade"
       >
         <div>
           <a
@@ -25372,6 +25479,7 @@ exports[`Storyshots ShowcaseCarousel Default 1`] = `
               </p>
               <button
                 className="undefined"
+                tabIndex={-1}
               >
                 View project
                 <i
@@ -25659,6 +25767,278 @@ exports[`Storyshots ShowcaseCarousel Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots SiteLogo Default 1`] = `
+<div>
+  <div>
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "borderBottom": "1px solid #eee",
+            "marginBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "fontSize": "35px",
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          SiteLogo
+        </h1>
+        <h2
+          style={
+            Object {
+              "fontSize": "22px",
+              "fontWeight": 400,
+              "margin": "0 0 10px 0",
+              "padding": 0,
+            }
+          }
+        >
+          Default
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    id="story-root"
+    style={Object {}}
+  >
+    <nav
+      className="myClass"
+    >
+      <a
+        aria-current="page"
+        className=""
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        style={Object {}}
+      >
+        <img
+          alt="A description for the logo"
+          src="../../../static/assets/furniture/logo.svg"
+        />
+      </a>
+    </nav>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Story Source
+        </h1>
+        <pre
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fafafa",
+              "display": "flex",
+              "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+              "fontSize": ".88em",
+              "justifyContent": "space-between",
+              "lineHeight": 1.5,
+              "overflowX": "scroll",
+              "padding": ".5rem",
+            }
+          }
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#444",
+                  }
+                }
+              >
+                &lt;
+                Unknown
+              </span>
+              <span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    className
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        myClass
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    alt
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        A description for the logo
+                      </span>
+                      "
+                    </span>
+                  </span>
+                   
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#444",
+                  }
+                }
+              >
+                /&gt;
+              </span>
+            </div>
+          </div>
+          <button
+            onClick={[Function]}
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "backgroundColor": "rgb(255, 255, 255)",
+                "borderColor": "rgb(238, 238, 238)",
+                "borderImage": "initial",
+                "borderRadius": "3px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "cursor": "pointer",
+                "flexShrink": "0",
+                "fontSize": "13px",
+                "overflow": "hidden",
+                "padding": "3px 10px",
+              }
+            }
+            type="button"
+          >
+            Copy
+          </button>
+        </pre>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Prop Types
+        </h1>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            
+            " Component
+          </h2>
+          <small>
+            No propTypes defined!
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots SocialGrid Default 1`] = `
 <div>
   <div>
@@ -25719,17 +26099,125 @@ exports[`Storyshots SocialGrid Default 1`] = `
     id="story-root"
     style={Object {}}
   >
-    <div>
-      Facebook
+    <div
+      className=""
+    >
+      <span
+        className=""
+      >
+        <a
+          aria-label="Visit Aerian studios on facebook"
+          href="https://www.facebook.com/aerianstudios/"
+          rel="nofollow noreferer"
+        >
+          <i
+            className="fa"
+          />
+          <p
+            aria-hidden="true"
+          >
+            aerianstudios
+          </p>
+          <span
+            aria-hidden="true"
+          >
+            View page
+            <i
+              className="fa"
+            />
+          </span>
+        </a>
+      </span>
     </div>
-    <div>
-      Twitter
+    <div
+      className=""
+    >
+      <span
+        className=""
+      >
+        <a
+          aria-label="Visit Aerian studios on twitter"
+          href="https://twitter.com/aerianstudios"
+          rel="nofollow noreferer"
+        >
+          <i
+            className="fa"
+          />
+          <p
+            aria-hidden="true"
+          >
+            @aerianstudios
+          </p>
+          <span
+            aria-hidden="true"
+          >
+            View page
+            <i
+              className="fa"
+            />
+          </span>
+        </a>
+      </span>
     </div>
-    <div>
-      G+
+    <div
+      className=""
+    >
+      <span
+        className=""
+      >
+        <a
+          aria-label="Visit Aerian studios on vimeo-v"
+          href="https://vimeo.com/aerianstudios"
+          rel="nofollow noreferer"
+        >
+          <i
+            className="fa"
+          />
+          <p
+            aria-hidden="true"
+          >
+            aerian-studios
+          </p>
+          <span
+            aria-hidden="true"
+          >
+            View page
+            <i
+              className="fa"
+            />
+          </span>
+        </a>
+      </span>
     </div>
-    <div>
-      LinkedIn
+    <div
+      className=""
+    >
+      <span
+        className=""
+      >
+        <a
+          aria-label="Visit Aerian studios on linkedin"
+          href="https://www.linkedin.com/company/aerian-studios"
+          rel="nofollow noreferer"
+        >
+          <i
+            className="fa"
+          />
+          <p
+            aria-hidden="true"
+          >
+            aerian-studios
+          </p>
+          <span
+            aria-hidden="true"
+          >
+            View page
+            <i
+              className="fa"
+            />
+          </span>
+        </a>
+      </span>
     </div>
   </div>
   <div>
@@ -25899,6 +26387,485 @@ exports[`Storyshots SocialGrid Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots SocialGridItem Default 1`] = `
+<div>
+  <div>
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "borderBottom": "1px solid #eee",
+            "marginBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "fontSize": "35px",
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          SocialGridItem
+        </h1>
+        <h2
+          style={
+            Object {
+              "fontSize": "22px",
+              "fontWeight": 400,
+              "margin": "0 0 10px 0",
+              "padding": 0,
+            }
+          }
+        >
+          Default
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    id="story-root"
+    style={Object {}}
+  >
+    <span
+      className="myClass"
+    >
+      <a
+        aria-label="Visit Aerian studios on vimeo-v"
+        href="https://vimeo.com/aerianstudios"
+        rel="nofollow noreferer"
+      >
+        <i
+          className="fa"
+        />
+        <p
+          aria-hidden="true"
+        >
+          aerian-studios
+        </p>
+        <span
+          aria-hidden="true"
+        >
+          View page
+          <i
+            className="fa"
+          />
+        </span>
+      </a>
+    </span>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "color": "#444",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginBottom": "20px",
+          "marginTop": "20px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Story Source
+        </h1>
+        <pre
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fafafa",
+              "display": "flex",
+              "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+              "fontSize": ".88em",
+              "justifyContent": "space-between",
+              "lineHeight": 1.5,
+              "overflowX": "scroll",
+              "padding": ".5rem",
+            }
+          }
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#444",
+                  }
+                }
+              >
+                &lt;
+                Unknown
+              </span>
+              <span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    className
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        myClass
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    icon
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        {
+                        <span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            prefix
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'fab'
+                        </span>
+                        ,
+                        <span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            iconName
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          'vimeo-v'
+                        </span>
+                        ,
+                        <span>
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            icon
+                          </span>
+                        </span>
+                        : 
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          [
+                          <span>
+                            <span>
+                              <br />
+                                  
+                                
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#a11",
+                                }
+                              }
+                            >
+                              448
+                            </span>
+                          </span>
+                          ,
+                          <span>
+                            <span>
+                              <br />
+                                  
+                                
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#a11",
+                                }
+                              }
+                            >
+                              512
+                            </span>
+                          </span>
+                          ,
+                          <span>
+                            <span>
+                              <br />
+                                  
+                                
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              [
+                              ]
+                            </span>
+                          </span>
+                          ,
+                          <span>
+                            <span>
+                              <br />
+                                  
+                                
+                            </span>
+                            …
+                          </span>
+                          <span>
+                            <br />
+                                
+                          </span>
+                          ]
+                        </span>
+                        }
+                      </span>
+                      }
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    url
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        https://vimeo.com/aerianstudios
+                      </span>
+                      "
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    text
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      "
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        aerian-studios
+                      </span>
+                      "
+                    </span>
+                  </span>
+                  <br />
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#444",
+                  }
+                }
+              >
+                /&gt;
+              </span>
+            </div>
+          </div>
+          <button
+            onClick={[Function]}
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "backgroundColor": "rgb(255, 255, 255)",
+                "borderColor": "rgb(238, 238, 238)",
+                "borderImage": "initial",
+                "borderRadius": "3px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "cursor": "pointer",
+                "flexShrink": "0",
+                "fontSize": "13px",
+                "overflow": "hidden",
+                "padding": "3px 10px",
+              }
+            }
+            type="button"
+          >
+            Copy
+          </button>
+        </pre>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Prop Types
+        </h1>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            
+            " Component
+          </h2>
+          <small>
+            No propTypes defined!
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots SocialLink Default 1`] = `
 <div>
   <div>
@@ -25960,12 +26927,12 @@ exports[`Storyshots SocialLink Default 1`] = `
     style={Object {}}
   >
     <span
-      className=" item"
+      className="item"
     >
       <a
+        aria-label="Visit Aerian studios on facebook"
         href="https://www.facebook.com"
         rel="nofollow noreferer"
-        title="facebook"
       >
         <i
           className="fa"
@@ -26394,12 +27361,12 @@ exports[`Storyshots SocialLinks Default 1`] = `
           className=" "
         >
           <span
-            className=" item"
+            className="item"
           >
             <a
+              aria-label="Visit Aerian studios on facebook"
               href="https://www.facebook.com/aerianstudios/"
               rel="nofollow noreferer"
-              title="facebook"
             >
               <i
                 className="fa"
@@ -26407,12 +27374,12 @@ exports[`Storyshots SocialLinks Default 1`] = `
             </a>
           </span>
           <span
-            className=" item"
+            className="item"
           >
             <a
+              aria-label="Visit Aerian studios on twitter"
               href="https://twitter.com/aerianstudios"
               rel="nofollow noreferer"
-              title="twitter"
             >
               <i
                 className="fa"
@@ -26420,12 +27387,12 @@ exports[`Storyshots SocialLinks Default 1`] = `
             </a>
           </span>
           <span
-            className=" item"
+            className="item"
           >
             <a
+              aria-label="Visit Aerian studios on linkedin"
               href="https://www.linkedin.com/company/aerian-studios"
               rel="nofollow noreferer"
-              title="linkedin"
             >
               <i
                 className="fa"
@@ -26433,12 +27400,12 @@ exports[`Storyshots SocialLinks Default 1`] = `
             </a>
           </span>
           <span
-            className=" item"
+            className="item"
           >
             <a
+              aria-label="Visit Aerian studios on vimeo-v"
               href="https://vimeo.com/aerianstudios"
               rel="nofollow noreferer"
-              title="vimeo-v"
             >
               <i
                 className="fa"

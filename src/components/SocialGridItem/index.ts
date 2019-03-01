@@ -1,0 +1,1 @@
+export { SocialGridItem } from "./SocialGridItem";

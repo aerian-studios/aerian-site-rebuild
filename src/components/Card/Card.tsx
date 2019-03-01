@@ -14,7 +14,7 @@ export const Card: React.SFC<Props> = props => {
             className={classnames(styles.card, props.className)}
             style={props.style}
         >
-            <div>{props.children}</div>
+            {props.children}
         </div>
     );
 };

@@ -27,6 +27,13 @@ $c-alt-bg: rgb(88, 88, 88);
 $c-menu-bg: #cf254d;
 $c-alt-block-bg: rgb(238, 238, 238);
 $social-link-colour: #808080;
+$c-facebook: #36589b;
+$c-twitter: #31aae1;
+$c-linkedin: #0e689b;
+$c-vimeo: #cf254d;
+@mixin linkedin-bg {
+    background-image: linear-gradient(#0e689b 70%, #0b4f75);
+}
 // Generic variable names for use in the code (so that the colours only need changing on one place)
 $c-brand-a: $aerian;
 $c-brand-b: $lime;

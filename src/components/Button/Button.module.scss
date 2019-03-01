@@ -24,10 +24,11 @@
     border-color: $c-brand-c;
     color: $c-brand-c;
 
-    &:hover {
-        color: $c-menu-bg;
-        border-color: $c-brand-c;
-        background: $c-brand-c;
+        &:hover {
+            color: $c-menu-bg;
+            border-color: $c-brand-c;
+            background: $c-brand-c;
+        }
     }
 }
 

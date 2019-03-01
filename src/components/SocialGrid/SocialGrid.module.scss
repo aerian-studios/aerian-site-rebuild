@@ -1,23 +1,25 @@
-.component {
-    foo: bar;
-}
+@import "../../scss/variables";
 
+.gridItem {
+    height: 100%;
+}
 .grid1 {
     grid-area: social1;
-    background-color: blue;
+    background-color: $c-facebook;
 }
 
 .grid2 {
     grid-area: social2;
-    background-color: cyan;
+    background-color: $c-twitter;
 }
 
 .grid3 {
     grid-area: social3;
-    background-color: red;
+    background-color: $c-vimeo;
 }
 
 .grid4 {
     grid-area: social4;
-    background-color: darkblue;
+    background-color: $c-linkedin;
+    @include linkedin-bg();
 }

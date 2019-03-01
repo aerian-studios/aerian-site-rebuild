@@ -1,0 +1,47 @@
+@import "../../scss/variables";
+
+.socialLink {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease 0s;
+    color: $c-text-alt;
+    font-size: 1rem;
+
+    &:hover,
+    &:focus {
+        transform: translate3d(0, -1.5em, 1px);
+
+        .btn {
+            opacity: 1;
+        }
+    }
+
+    a {
+        height: 100%;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        flex-flow: column;
+        position: relative;
+    }
+
+    a,
+    a:hover,
+    a:visited {
+        color: $c-text-alt;
+    }
+}
+
+.btn {
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+    border: 1px solid $c-text-alt;
+    padding: 4px var(--s1, 13px);
+    position: absolute;
+    transform: translateY(250%);
+}
+
+.icon {
+    height: 4rem;
+}

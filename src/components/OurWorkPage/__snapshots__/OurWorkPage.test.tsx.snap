@@ -20,7 +20,7 @@ Array [
       className="  false"
     >
       <div
-        className="   fade"
+        className="fade"
       >
         <div>
           <a
@@ -59,6 +59,7 @@ Array [
               </p>
               <button
                 className="undefined"
+                tabIndex={-1}
               >
                 View project
                 <i

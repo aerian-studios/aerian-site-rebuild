@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import * as React from "react";
 import * as styles from "./RevealCard.module.scss";
 
@@ -26,17 +27,15 @@ export class RevealCard extends React.PureComponent<Props> {
     public render() {
         return (
             <div
-                className={[
+                className={classNames(
                     styles.revealCard,
                     this.props.className,
                     this.state.visible ? styles.visible : "",
                     this.state.seen ? styles.seen : "fade"
-                ].join(" ")}
+                )}
                 style={this.props.style}
             >
-                <div className={styles.flip}>
-                    {this.props.children}
-                </div>
+                <div className={styles.flip}>{this.props.children}</div>
             </div>
         );
     }

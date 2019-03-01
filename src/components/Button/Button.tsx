@@ -15,7 +15,8 @@ export const Button: React.SFC<Props> = ({
     style,
     className,
     arrow,
-    alternate
+    alternate,
+    ...rest
 }) => (
     <button
         className={classNames(
@@ -24,6 +25,7 @@ export const Button: React.SFC<Props> = ({
             className
         )}
         style={style}
+        {...rest}
     >
         {children}
         {arrow && (

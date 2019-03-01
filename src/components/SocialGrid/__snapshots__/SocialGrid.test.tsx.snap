@@ -2,17 +2,125 @@
 
 exports[`SocialGrid renders correctly 1`] = `
 Array [
-  <div>
-    Facebook
+  <div
+    className=""
+  >
+    <span
+      className=""
+    >
+      <a
+        aria-label="Visit Aerian studios on facebook"
+        href="https://www.facebook.com/aerianstudios/"
+        rel="nofollow noreferer"
+      >
+        <i
+          className="fa"
+        />
+        <p
+          aria-hidden="true"
+        >
+          aerianstudios
+        </p>
+        <span
+          aria-hidden="true"
+        >
+          View page
+          <i
+            className="fa"
+          />
+        </span>
+      </a>
+    </span>
   </div>,
-  <div>
-    Twitter
+  <div
+    className=""
+  >
+    <span
+      className=""
+    >
+      <a
+        aria-label="Visit Aerian studios on twitter"
+        href="https://twitter.com/aerianstudios"
+        rel="nofollow noreferer"
+      >
+        <i
+          className="fa"
+        />
+        <p
+          aria-hidden="true"
+        >
+          @aerianstudios
+        </p>
+        <span
+          aria-hidden="true"
+        >
+          View page
+          <i
+            className="fa"
+          />
+        </span>
+      </a>
+    </span>
   </div>,
-  <div>
-    G+
+  <div
+    className=""
+  >
+    <span
+      className=""
+    >
+      <a
+        aria-label="Visit Aerian studios on vimeo-v"
+        href="https://vimeo.com/aerianstudios"
+        rel="nofollow noreferer"
+      >
+        <i
+          className="fa"
+        />
+        <p
+          aria-hidden="true"
+        >
+          aerian-studios
+        </p>
+        <span
+          aria-hidden="true"
+        >
+          View page
+          <i
+            className="fa"
+          />
+        </span>
+      </a>
+    </span>
   </div>,
-  <div>
-    LinkedIn
+  <div
+    className=""
+  >
+    <span
+      className=""
+    >
+      <a
+        aria-label="Visit Aerian studios on linkedin"
+        href="https://www.linkedin.com/company/aerian-studios"
+        rel="nofollow noreferer"
+      >
+        <i
+          className="fa"
+        />
+        <p
+          aria-hidden="true"
+        >
+          aerian-studios
+        </p>
+        <span
+          aria-hidden="true"
+        >
+          View page
+          <i
+            className="fa"
+          />
+        </span>
+      </a>
+    </span>
   </div>,
 ]
 `;

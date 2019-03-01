@@ -3,14 +3,12 @@
 .component {
     composes: layoutGrid from "../../scss/layoutGrid.module.scss";
     background-color: $c-bg;
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
+    position: relative;
 }
 
 .footerContainer {
     padding: var(--s-4) 0;
-    color: white;
+    color: $c-brand-c;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -24,5 +22,9 @@
         @media (min-width: $bp-m) {
             border: none;
         }
+    }
+
+    a {
+        color: currentColor;
     }
 }

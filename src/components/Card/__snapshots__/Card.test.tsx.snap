@@ -4,10 +4,8 @@ exports[`Card renders correctly 1`] = `
 <div
   className=""
 >
-  <div>
-    <p>
-      Hi
-    </p>
-  </div>
+  <p>
+    Hi
+  </p>
 </div>
 `;

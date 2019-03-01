@@ -1,11 +1,11 @@
 import classNames from "classnames";
-import { Link } from "gatsby";
 import * as React from "react";
 
 import { PageListNode } from "../../types/data";
 import { MainNavigation } from "../MainNavigation";
 
 import logo from "../../../static/assets/furniture/aerian-logo.svg";
+import { SiteLogo } from "../SiteLogo";
 import * as styles from "./PageNavBar.module.scss";
 
 interface Props {
@@ -38,11 +38,11 @@ export class PageNavBar extends React.PureComponent<Props, State> {
                 className={classNames(styles.component, this.props.className)}
                 style={this.props.style}
             >
-                <div className={styles.logo}>
-                    <Link to="/">
-                        <img src={logo} alt="Aerian" />
-                    </Link>
-                </div>
+                <SiteLogo
+                    className={styles.logo}
+                    logo={logo}
+                    alt="Aerian Studios' logo"
+                />
                 {this.props.children}
                 <MainNavigation
                     pages={this.props.pages}

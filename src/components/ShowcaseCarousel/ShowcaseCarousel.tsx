@@ -73,7 +73,11 @@ export class ShowcaseCarousel extends React.PureComponent<Props> {
                                     {index === 0 ? (
                                         <p>{project.titleLineOne}</p>
                                     ) : null}
-                                    <Button arrow={true} alternate={true}>
+                                    <Button
+                                        arrow={true}
+                                        alternate={true}
+                                        tabIndex={-1}
+                                    >
                                         View project
                                     </Button>
                                 </div>

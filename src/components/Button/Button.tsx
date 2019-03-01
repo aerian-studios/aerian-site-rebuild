@@ -5,7 +5,7 @@ import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as styles from "./Button.module.scss";
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLButtonElement> {
     style?: React.CSSProperties;
     className?: string;
     arrow?: boolean;
@@ -17,7 +17,8 @@ export const Button: React.SFC<Props> = ({
     style,
     className,
     arrow,
-    alternate
+    alternate,
+    ...rest
 }) => (
     <button
         className={classNames(
@@ -26,6 +27,7 @@ export const Button: React.SFC<Props> = ({
             className
         )}
         style={style}
+        {...rest}
     >
         {children}
         {arrow && (

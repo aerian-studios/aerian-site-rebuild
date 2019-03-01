@@ -18,10 +18,11 @@
     cursor: pointer;
     white-space: nowrap;
     transition: padding-right 0.3s;
+}
 
-    &.alternate {
-        border-color: $c-brand-c;
-        color: $c-brand-c;
+.alternate {
+    border-color: $c-brand-c;
+    color: $c-brand-c;
 
         &:hover {
             color: $c-menu-bg;
@@ -29,27 +30,28 @@
             background: $c-brand-c;
         }
     }
-    &.arrow {
-        &:hover {
-            padding-right: 60px;
+}
 
-            .icon {
-                opacity: 1;
-                transform: translate(100%, -50%);
-            }
+.arrow {
+    &:hover {
+        padding-right: 60px;
+
+        .icon {
+            opacity: 1;
+            transform: translate(100%, -50%);
         }
-
-        padding: 15px 40px;
     }
 
-    .icon {
-        fill: $c-brand-a;
-        opacity: 0;
-        height: 18px;
-        transition: transform 0.3s, opacity 0.3s;
-        vertical-align: middle;
-        top: 50%;
-        transform: translate(0, -50%);
-        position: absolute;
-    }
+    padding: 15px 40px;
+}
+
+.icon {
+    fill: $c-brand-a;
+    opacity: 0;
+    height: 18px;
+    transition: transform 0.3s, opacity 0.3s;
+    vertical-align: middle;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
 }

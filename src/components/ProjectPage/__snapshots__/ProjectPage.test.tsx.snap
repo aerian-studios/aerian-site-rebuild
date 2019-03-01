@@ -536,36 +536,54 @@ Array [
         </div>
       </div>
     </section>
-    <section
+    <div
       className=""
     >
       <div
-        className=" "
+        className=""
       >
         <div>
-          <h2>
-            Like what you see?
-          </h2>
-          <a
-            href="http://www.bbc.co.uk/guides/z2csfg8"
+          <h3
+            className="large-title"
           >
-            Launch project
+            Like what you see?
+          </h3>
+          <a
+            className="undefined"
+            href="/our-work"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            View more work
+            <i
+              className="fa"
+            />
           </a>
         </div>
+      </div>
+      <div
+        className=""
+      >
         <div>
-          <h2>
+          <h3
+            className="large-title"
+          >
             Got a project in mind?
-          </h2>
+          </h3>
           <a
+            className="undefined"
             href="/contact-us"
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
             Contact us
+            <i
+              className="fa"
+            />
           </a>
         </div>
       </div>
-    </section>
+    </div>
   </section>,
 ]
 `;

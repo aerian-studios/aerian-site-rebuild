@@ -21,7 +21,7 @@ storiesOf("RevealCard", module).add("Default", () => (
                     key={projectBox.titleLineOne}
                     fadeIn={false}
                     alt={projectBox.name}
-                    backgroundColor={`#d01944`}
+                    style={{ backgroundColor: `#d01944` }}
                     source={projectBox.thumbnail}
                     className={revealCardStyles.cardAlignment}
                 />

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OnwardJourneys renders correctly 1`] = `
+<div
+  className=""
+>
+  <div
+    className=""
+  >
+    <div>
+      <h3
+        className="large-title"
+      >
+        Like what you see?
+      </h3>
+      <a
+        className="undefined"
+        href="/our-work"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        View more work
+        <i
+          className="fa"
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className=""
+  >
+    <div>
+      <h3
+        className="large-title"
+      >
+        Got a project in mind?
+      </h3>
+      <a
+        className="undefined"
+        href="/contact-us"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Contact us
+        <i
+          className="fa"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;

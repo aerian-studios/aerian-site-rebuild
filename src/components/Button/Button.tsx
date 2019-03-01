@@ -5,9 +5,7 @@ import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as styles from "./Button.module.scss";
 
-interface Props extends React.HTMLAttributes<HTMLButtonElement> {
-    style?: React.CSSProperties;
-    className?: string;
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     arrow?: boolean;
     alternate?: boolean;
 }

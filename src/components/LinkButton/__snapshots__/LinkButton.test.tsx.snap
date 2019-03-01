@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkButton renders correctly 1`] = `
+<a
+  aria-current="page"
+  className="myClass"
+  href="/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  style={Object {}}
+/>
+`;

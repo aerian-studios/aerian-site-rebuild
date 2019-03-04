@@ -40,6 +40,12 @@
     padding: 4px var(--s1, 13px);
     position: absolute;
     transform: translateY(250%);
+    // deal with non-retina disappearing border
+    backface-visibility: hidden;
+}
+
+.arrow {
+    margin-left: 1em;
 }
 
 .icon {

@@ -32,7 +32,11 @@ export const SocialGridItem: React.SFC<Props> = ({
         <p aria-hidden="true">{text}</p>
         <span aria-hidden="true" className={styles.btn}>
             View page
-            <FontAwesomeIcon icon={faArrowRight} size="xs" />
+            <FontAwesomeIcon
+                icon={faArrowRight}
+                size="sm"
+                className={styles.arrow}
+            />
         </span>
     </SocialLink>
 );

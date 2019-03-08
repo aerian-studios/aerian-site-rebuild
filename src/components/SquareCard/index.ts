@@ -1,0 +1,1 @@
+export { SquareCard } from "./SquareCard";

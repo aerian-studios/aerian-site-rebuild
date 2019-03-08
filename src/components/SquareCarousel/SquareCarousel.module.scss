@@ -1,0 +1,13 @@
+@import "../../scss/variables";
+
+.component {
+    position: relative;
+    height: 308px;
+    margin-top: 2px;
+    display: grid;
+    grid-template-rows: 306px;
+    grid-auto-columns: 306px;
+    grid-gap: 2px;
+    grid-auto-flow: column;
+    background-color: $whiteish;
+}

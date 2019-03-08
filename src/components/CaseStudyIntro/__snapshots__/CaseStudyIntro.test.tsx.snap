@@ -11,11 +11,9 @@ exports[`CaseStudyIntro renders correctly 1`] = `
     <h2>
       Two interactive 'foodie' quizzes for BBC iWonder
     </h2>
-    <div>
-      <p>
-        With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
-      </p>
-    </div>
+    <p>
+      With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
+    </p>
     <button
       className="undefined"
     >

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Project } from "../../types/data";
+import { Project, ProjectBox, Edge } from "../../types/data";
 import { Block } from "../Block";
 import { CaseStudyIntro } from "../CaseStudyIntro";
 import { Gallery } from "../Gallery";
@@ -15,9 +15,11 @@ import { TestimonialBlock } from "../TestimonialBlock";
 
 import * as sharedStyles from "../Layout.module.scss";
 import * as styles from "./ProjectPage.module.scss";
+import { SquareCarousel } from "../SquareCarousel";
 
 interface Props {
     project: Project;
+    allProjects: Array<Edge<ProjectBox>>;
 }
 
 const keys = {
@@ -32,7 +34,7 @@ const onNavigation = (id: string) => {
     alert(id);
 };
 
-export const ProjectPage: React.SFC<Props> = ({ project }) => (
+export const ProjectPage: React.SFC<Props> = ({ project, allProjects }) => (
     <>
         <PageHeader className={sharedStyles.withSectionNav}>
             <HeroBlock
@@ -97,6 +99,7 @@ export const ProjectPage: React.SFC<Props> = ({ project }) => (
                 </Block>
             )}
             <OnwardJourneys projectURL={project.externalUrl} />
+            <SquareCarousel data={allProjects} />
         </section>
     </>
 );

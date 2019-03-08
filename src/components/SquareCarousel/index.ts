@@ -1,0 +1,1 @@
+export { SquareCarousel } from "./SquareCarousel";

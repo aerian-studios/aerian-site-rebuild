@@ -102,11 +102,9 @@ Array [
           <h2>
             Two interactive 'foodie' quizzes for BBC iWonder
           </h2>
-          <div>
-            <p>
-              With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
-            </p>
-          </div>
+          <p>
+            With the launch of a new BBC1 series, we created two fun interactive quizzes that shine a light on all our weird and awkward eating habits.
+          </p>
           <button
             className="undefined"
           >
@@ -195,16 +193,14 @@ Array [
             <h3>
               Responsive guidelines 
             </h3>
-            <div>
-              <ul>
-                <li>
-                  Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
-                </li>
-                <li>
-                  Work with iWonder responsive guidelines.
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
+              </li>
+              <li>
+                Work with iWonder responsive guidelines.
+              </li>
+            </ul>
           </div>
           <div
             className=" "
@@ -220,19 +216,17 @@ Array [
             <h3>
               Audience sharing 
             </h3>
-            <div>
-              <ul>
-                <li>
-                  Work with iWonder games guidelines.
-                </li>
-                <li>
-                  Creating an app framework that will work with a variety of question types.
-                </li>
-                <li>
-                  High audience and sharing figures were a requirement.
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                Work with iWonder games guidelines.
+              </li>
+              <li>
+                Creating an app framework that will work with a variety of question types.
+              </li>
+              <li>
+                High audience and sharing figures were a requirement.
+              </li>
+            </ul>
           </div>
           <div
             className=" "
@@ -248,19 +242,17 @@ Array [
             <h3>
               Tight turn around
             </h3>
-            <div>
-              <ul>
-                <li>
-                  As always, a tight turn around time.
-                </li>
-                <li>
-                  The total download size of the initial activity load MUST be less than 250kb.
-                </li>
-                <li>
-                  Any individual asset within an activity SHOULD NOT exceed 100KB.
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                As always, a tight turn around time.
+              </li>
+              <li>
+                The total download size of the initial activity load MUST be less than 250kb.
+              </li>
+              <li>
+                Any individual asset within an activity SHOULD NOT exceed 100KB.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -298,11 +290,9 @@ Array [
             <h3>
               Maximising sharing 
             </h3>
-            <div>
-              <p>
-                To increase the appeal of the app, animated features and interactions were added. Share buttons situated at key stages of the journey maximised exposure of sharing.
-              </p>
-            </div>
+            <p>
+              To increase the appeal of the app, animated features and interactions were added. Share buttons situated at key stages of the journey maximised exposure of sharing.
+            </p>
           </div>
           <div
             className=" "
@@ -318,16 +308,14 @@ Array [
             <h3>
               Agile approach
             </h3>
-            <div>
-              <ul>
-                <li>
-                  Agile project approach to ensure all progress and blockers are expedited.
-                </li>
-                <li>
-                  Close working relationship with BBC to ensure guidelines were adhered.
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                Agile project approach to ensure all progress and blockers are expedited.
+              </li>
+              <li>
+                Close working relationship with BBC to ensure guidelines were adhered.
+              </li>
+            </ul>
           </div>
           <div
             className=" "
@@ -343,11 +331,9 @@ Array [
             <h3>
               CMS implementation
             </h3>
-            <div>
-              <p>
-                Content management was implemented so that content and javascript elements were editable.
-              </p>
-            </div>
+            <p>
+              Content management was implemented so that content and javascript elements were editable.
+            </p>
           </div>
         </div>
       </div>
@@ -385,11 +371,9 @@ Array [
             <h3>
               Furthest reaching guide
             </h3>
-            <div>
-              <p>
-                "The team at Aerian were a pleasure to work with from start to finish, and helped BBC iWonder deliver its furthest-reaching iWonder guide and interactive build to date, the 'What's the right diet for you?' quiz."
-              </p>
-            </div>
+            <p>
+              "The team at Aerian were a pleasure to work with from start to finish, and helped BBC iWonder deliver its furthest-reaching iWonder guide and interactive build to date, the 'What's the right diet for you?' quiz."
+            </p>
           </div>
           <div
             className=" "
@@ -405,11 +389,9 @@ Array [
             <h3>
               Seen by 1.5m
             </h3>
-            <div>
-              <p>
-                It was seen by 1.5m unique browsers and was really well received by audience members.
-              </p>
-            </div>
+            <p>
+              It was seen by 1.5m unique browsers and was really well received by audience members.
+            </p>
           </div>
           <div
             className=" "
@@ -425,11 +407,9 @@ Array [
             <h3>
               Successful weightloss 
             </h3>
-            <div>
-              <p>
-                "Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn't have done it without Aerian." Anna-Louise Taylor, BBC Senior Content Producer
-              </p>
-            </div>
+            <p>
+              "Users wrote in to notify us of their success losing weight having taken the test, and then the onward journey to BBC Food recipes. We couldn't have done it without Aerian." Anna-Louise Taylor, BBC Senior Content Producer
+            </p>
           </div>
         </div>
       </div>

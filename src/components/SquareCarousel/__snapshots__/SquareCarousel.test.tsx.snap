@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SquareCarousel renders correctly 1`] = `
+<div
+  className="myClass"
+>
+  <div
+    className=""
+  >
+    <a
+      href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <div
+        className=""
+      >
+        <img
+          alt="BBC"
+          aria-hidden={true}
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+        />
+      </div>
+      <div>
+        <h3>
+          CNN
+        </h3>
+        <button
+          className="undefined"
+          tabIndex={-1}
+        >
+          View project
+          <i
+            className="fa"
+          />
+        </button>
+      </div>
+    </a>
+  </div>
+</div>
+`;

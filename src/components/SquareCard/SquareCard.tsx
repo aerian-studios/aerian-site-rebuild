@@ -1,4 +1,4 @@
-import classNames from "classnames";
+// import classNames from "classnames";
 import { Link } from "gatsby";
 import * as React from "react";
 
@@ -8,7 +8,7 @@ import { Image } from "../Image";
 
 import { ProjectBox } from "../../types/data";
 
-import * as revealCardStyles from "../RevealCard/RevealCard.module.scss";
+// import * as revealCardStyles from "../RevealCard/RevealCard.module.scss";
 import * as styles from "./SquareCard.module.scss";
 
 interface Props {

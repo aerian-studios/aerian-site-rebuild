@@ -115,8 +115,8 @@
     },
     "husky": {
         "hooks": {
-            "precommit": "lint-staged",
-            "prepush": "jest --ci"
+            "pre-commit": "lint-staged",
+            "pre-push": "jest --ci"
         }
     },
     "repository": {

@@ -1,0 +1,1 @@
+export { SlidingCarousel } from "./SlidingCarousel";

@@ -11,3 +11,11 @@
     grid-auto-flow: column;
     background-color: $whiteish;
 }
+
+.card {
+    height: 308px;
+    width: 306px;
+    border: 2px soild $whiteish;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}

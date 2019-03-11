@@ -9,7 +9,7 @@ import { Image } from "../Image";
 import { ProjectBox } from "../../types/data";
 
 // import * as revealCardStyles from "../RevealCard/RevealCard.module.scss";
-import * as styles from "./SquareCard.module.scss";
+import * as styles from "./SimpleHoverCard.module.scss";
 
 interface Props {
     style?: React.CSSProperties;
@@ -17,7 +17,7 @@ interface Props {
     project: ProjectBox;
 }
 
-export const SquareCard: React.SFC<Props> = ({
+export const SimpleHoverCard: React.SFC<Props> = ({
     children,
     style,
     className,
@@ -43,4 +43,4 @@ export const SquareCard: React.SFC<Props> = ({
         </Link>
     </Card>
 );
-export default SquareCard;
+export default SimpleHoverCard;

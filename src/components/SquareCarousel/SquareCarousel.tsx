@@ -2,7 +2,7 @@ import classNames from "classnames";
 import * as React from "react";
 import { Edge, ProjectBox } from "../../types/data";
 
-import { SquareCard } from "../SquareCard";
+import { SimpleHoverCard } from "../SimpleHoverCard";
 
 import * as styles from "./SquareCarousel.module.scss";
 
@@ -20,7 +20,13 @@ export const SquareCarousel: React.SFC<Props> = props => (
         {props.data.map((projectNode, index) => {
             const project = projectNode.node;
 
-            return <SquareCard key={project.slug} project={project} />;
+            return (
+                <SimpleHoverCard
+                    key={project.slug}
+                    project={project}
+                    className={styles.card}
+                />
+            );
         })}
     </div>
 );

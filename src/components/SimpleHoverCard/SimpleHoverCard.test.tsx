@@ -3,13 +3,15 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
-import { SquareCard } from "./index";
+import { SimpleHoverCard } from "./index";
 import { projectBox } from "../../types/fixtures";
 
-describe("SquareCard", () =>
+describe("SimpleHoverCard", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<SquareCard className="myClass" project={projectBox} />)
+            .create(
+                <SimpleHoverCard className="myClass" project={projectBox} />
+            )
             .toJSON();
         expect(tree).toMatchSnapshot();
     }));

@@ -18,6 +18,7 @@ export const MapView: React.SFC<Props> = ({ className, style, position }) => (
         <Map
             center={position}
             zoom={13}
+            metaWheelZoom={true}
             attributionPrefix={
                 <a href="https://github.com/mariusandra/pigeon-maps">🐦</a>
             }

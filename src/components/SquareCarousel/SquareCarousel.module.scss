@@ -1,21 +1,52 @@
 @import "../../scss/variables";
 
+:root {
+    --widthIn306s: 100vw;
+    --squareCardSize: 306px;
+}
+
+.carouselWrapper {
+    position: relative;
+    height: var(--squareCardSize);
+}
+
 .component {
     position: relative;
-    height: 308px;
+    height: var(--squareCardSize);
     margin-top: 2px;
     display: grid;
-    grid-template-rows: 306px;
-    grid-auto-columns: 306px;
+    grid-template-rows: var(--squareCardSize);
+    grid-auto-columns: var(--squareCardSize);
     grid-gap: 2px;
     grid-auto-flow: column;
     background-color: $whiteish;
+    overflow: scroll;
 }
 
 .card {
-    height: 308px;
-    width: 306px;
+    height: var(--squareCardSize);
+    width: var(--squareCardSize);
     border: 2px soild $whiteish;
     border-left-width: 1px;
     border-right-width: 1px;
+}
+
+.carouselControl {
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    appearance: none;
+    border: 0 none;
+    display: block;
+    height: var(--squareCardSize);
+    width: var(--squareCardSize);
+    z-index: 2;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
 }

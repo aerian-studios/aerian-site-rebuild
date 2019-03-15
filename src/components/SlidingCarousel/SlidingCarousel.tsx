@@ -3,12 +3,14 @@ import * as React from "react";
 
 import * as styles from "./SlidingCarousel.module.scss";
 
-interface Props {
+export interface SliderProps extends React.ComponentProps<React.FC> {
     style?: React.CSSProperties;
     wrapperClassName?: string;
     sliderClassName?: string;
     // Centre the slider on the central slide. Defaults to true
     center?: boolean;
+    // Gap between items expects to have units as well
+    itemGap?: string;
     // Infinite scrolling. Defaults to false
     infinite?: boolean;
 }
@@ -58,16 +60,17 @@ const createDuplicateChildren = (
 
 /**
  * Sliding carousel Proper
- * @param {Props} props - The FunctionalComponent props
+ * @param {SliderProps} props - The FunctionalComponent props
  * @returns {React.FC} - SlidingCarousel Component
  */
-export const SlidingCarousel: React.FC<Props> = ({
+export const SlidingCarousel: React.FC<SliderProps> = ({
     children,
     style,
     wrapperClassName,
     sliderClassName,
     center = true,
-    infinite = false
+    infinite = false,
+    itemGap = "0px"
 }) => {
     let ticking = false; // used for some render optimisations
     let originalWidth = 1; // used largely in infinite scroll
@@ -153,6 +156,7 @@ export const SlidingCarousel: React.FC<Props> = ({
      */
     React.useEffect(() => {
         setCSSVariable("--SCSnapAlign", center ? "center" : "start");
+        setCSSVariable("--SCGridGap", itemGap);
     });
 
     return (

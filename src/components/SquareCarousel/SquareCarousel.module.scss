@@ -6,27 +6,13 @@
 }
 
 .carouselWrapper {
-    position: relative;
-    height: var(--squareCardSize);
-}
-
-.component {
-    position: relative;
-    height: var(--squareCardSize);
-    margin-top: 2px;
-    display: grid;
-    grid-template-rows: var(--squareCardSize);
-    grid-auto-columns: var(--squareCardSize);
-    grid-gap: 2px;
-    grid-auto-flow: column;
-    background-color: $whiteish;
-    overflow: scroll;
+    border-top: 1px solid $whiteish;
+    border-bottom: 1px solid $whiteish;
 }
 
 .card {
     height: var(--squareCardSize);
     width: var(--squareCardSize);
-    border: 2px soild $whiteish;
     border-left-width: 1px;
     border-right-width: 1px;
 }

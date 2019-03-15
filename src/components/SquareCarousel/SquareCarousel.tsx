@@ -6,7 +6,7 @@ import * as React from "react";
 import { Edge, ProjectBox } from "../../types/data";
 
 import { SimpleHoverCard } from "../SimpleHoverCard";
-import { SlidingCarousel } from "../SlidingCarousel";
+import { SlidingCarousel, SlidingCarouselProvider } from "../SlidingCarousel";
 
 import * as styles from "./SquareCarousel.module.scss";
 
@@ -17,29 +17,19 @@ interface Props {
     children?: Array<React.ReactElement<any>>;
 }
 
-export const SquareCarousel: React.SFC<Props> = props => {
-    // The next few lines are all about setting the carousel so that it displays the slides at slideSize
-    const slideSize = 306;
-    const calculateSlidesVisible = () => {
-        const bodyWidth = document.body.clientWidth;
-        return bodyWidth / slideSize;
-    };
-    const [visibleSlides, setSlides] = React.useState(calculateSlidesVisible());
-
-    React.useEffect(() => {
-        // Do we need a throttle here?
-        window.addEventListener("resize", () => {
-            setSlides(calculateSlidesVisible());
-        });
-        return () => {
-            window.removeEventListener("resize", calculateSlidesVisible);
-        };
-    });
-
+export const SquareCarousel: React.FC<Props> = props => {
     return (
-        <SlidingCarousel
+        <SlidingCarouselProvider
+            className={styles.carouselWrapper}
             wrapperClassName={styles.carouselWrapper}
             infinite={true}
+            itemGap="2px"
+            buttonBackContent={
+                <FontAwesomeIcon icon={faChevronRight} size="4x" />
+            }
+            buttonFwdContent={
+                <FontAwesomeIcon icon={faChevronRight} size="4x" />
+            }
         >
             {props.data.map((projectNode, index) => {
                 const project = projectNode.node;
@@ -52,24 +42,6 @@ export const SquareCarousel: React.SFC<Props> = props => {
                     />
                 );
             })}
-            {/* <ButtonBack
-                className={classNames(styles.carouselControl, styles.left)}
-            >
-                <FontAwesomeIcon
-                    icon={faChevronRight}
-                    size="4x"
-                    className={styles.arrowLeft}
-                />
-            </ButtonBack>
-            <ButtonNext
-                className={classNames(styles.carouselControl, styles.right)}
-            >
-                <FontAwesomeIcon
-                    icon={faChevronRight}
-                    size="4x"
-                    className={styles.arrow}
-                />
-            </ButtonNext> */}
-        </SlidingCarousel>
+        </SlidingCarouselProvider>
     );
 };

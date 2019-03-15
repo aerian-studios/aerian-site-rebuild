@@ -7,6 +7,10 @@
     --SCSnapAlign: "center";
 }
 
+.sliderProvider {
+    position: relative;
+}
+
 // This wraps the sliding part and hides the scrollbars
 .sliderWrapper {
     position: relative;
@@ -29,7 +33,7 @@
     grid-template-rows: var(--SCCardHeight);
     grid-auto-columns: var(--SCCardWidth);
     grid-auto-flow: column;
-    grid-gap: var(--SCGridGap);
+    grid-column-gap: var(--SCGridGap);
     overflow: scroll;
     padding-bottom: 30px;
     // for FF

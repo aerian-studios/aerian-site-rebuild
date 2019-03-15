@@ -3,6 +3,8 @@
     --SCWidthInFrs: 100vw;
     --SCCardHeight: 306px;
     --SCCardWidth: 306px;
+    --SCGridGap: 0;
+    --SCSnapAlign: "center";
 }
 
 // This wraps the sliding part and hides the scrollbars
@@ -22,12 +24,20 @@
     left: 50%;
     transform: translateX(-50%);
 
+    box-sizing: initial;
     display: grid;
     grid-template-rows: var(--SCCardHeight);
     grid-auto-columns: var(--SCCardWidth);
     grid-auto-flow: column;
+    grid-gap: var(--SCGridGap);
     overflow: scroll;
-    scroll-snap-type: proximity;
+    padding-bottom: 30px;
+    // for FF
+    scroll-snap-type: mandatory;
+    // for compliant browsers
+    scroll-snap-type: both mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: var(--SCSnapAlign);
 
     > * {
         scroll-snap-align: center;

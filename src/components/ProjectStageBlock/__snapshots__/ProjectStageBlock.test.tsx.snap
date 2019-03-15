@@ -31,14 +31,16 @@ exports[`ProjectStageBlock renders correctly 1`] = `
       <h3>
         Responsive guidelines 
       </h3>
-      <ul>
-        <li>
-          Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
-        </li>
-        <li>
-          Work with iWonder responsive guidelines.
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            Extensive UX and design reviews would require special attention to detail so that the final product would meet BBC needs.
+          </li>
+          <li>
+            Work with iWonder responsive guidelines.
+          </li>
+        </ul>
+      </div>
     </div>
     <div
       className=" "
@@ -54,17 +56,19 @@ exports[`ProjectStageBlock renders correctly 1`] = `
       <h3>
         Audience sharing 
       </h3>
-      <ul>
-        <li>
-          Work with iWonder games guidelines.
-        </li>
-        <li>
-          Creating an app framework that will work with a variety of question types.
-        </li>
-        <li>
-          High audience and sharing figures were a requirement.
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            Work with iWonder games guidelines.
+          </li>
+          <li>
+            Creating an app framework that will work with a variety of question types.
+          </li>
+          <li>
+            High audience and sharing figures were a requirement.
+          </li>
+        </ul>
+      </div>
     </div>
     <div
       className=" "
@@ -80,17 +84,19 @@ exports[`ProjectStageBlock renders correctly 1`] = `
       <h3>
         Tight turn around
       </h3>
-      <ul>
-        <li>
-          As always, a tight turn around time.
-        </li>
-        <li>
-          The total download size of the initial activity load MUST be less than 250kb.
-        </li>
-        <li>
-          Any individual asset within an activity SHOULD NOT exceed 100KB.
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            As always, a tight turn around time.
+          </li>
+          <li>
+            The total download size of the initial activity load MUST be less than 250kb.
+          </li>
+          <li>
+            Any individual asset within an activity SHOULD NOT exceed 100KB.
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

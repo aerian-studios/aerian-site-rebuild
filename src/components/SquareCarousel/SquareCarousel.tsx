@@ -1,18 +1,12 @@
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
-import {
-    ButtonBack,
-    ButtonNext,
-    CarouselProvider,
-    Slide,
-    Slider
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
+
 import * as React from "react";
 import { Edge, ProjectBox } from "../../types/data";
 
 import { SimpleHoverCard } from "../SimpleHoverCard";
+import { SlidingCarousel } from "../SlidingCarousel";
 
 import * as styles from "./SquareCarousel.module.scss";
 
@@ -43,28 +37,22 @@ export const SquareCarousel: React.SFC<Props> = props => {
     });
 
     return (
-        <CarouselProvider
-            naturalSlideWidth={slideSize}
-            naturalSlideHeight={slideSize}
-            totalSlides={props.data.length}
-            visibleSlides={visibleSlides}
-            className={styles.carouselWrapper}
+        <SlidingCarousel
+            wrapperClassName={styles.carouselWrapper}
+            infinite={true}
         >
-            <Slider>
-                {props.data.map((projectNode, index) => {
-                    const project = projectNode.node;
+            {props.data.map((projectNode, index) => {
+                const project = projectNode.node;
 
-                    return (
-                        <Slide index={index} key={project.slug}>
-                            <SimpleHoverCard
-                                project={project}
-                                className={styles.card}
-                            />
-                        </Slide>
-                    );
-                })}
-            </Slider>
-            <ButtonBack
+                return (
+                    <SimpleHoverCard
+                        key={project.slug}
+                        project={project}
+                        className={styles.card}
+                    />
+                );
+            })}
+            {/* <ButtonBack
                 className={classNames(styles.carouselControl, styles.left)}
             >
                 <FontAwesomeIcon
@@ -81,7 +69,7 @@ export const SquareCarousel: React.SFC<Props> = props => {
                     size="4x"
                     className={styles.arrow}
                 />
-            </ButtonNext>
-        </CarouselProvider>
+            </ButtonNext> */}
+        </SlidingCarousel>
     );
 };

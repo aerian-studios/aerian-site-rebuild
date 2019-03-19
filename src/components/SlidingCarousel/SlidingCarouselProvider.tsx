@@ -197,7 +197,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
     // HOOKS
     /**
-     * Set some init code to workout original width
+     * Set some init code to workout original width and do any centring that needs to happen
      */
     let childSizes: Size[] = [];
     const [current, setCurrent] = React.useState(0);
@@ -210,11 +210,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
         childSizes = workOutSizes(sliderRef.current.children);
 
-        window.setTimeout(() => {
-            centerTheThingsToIndex(
-                center ? Math.floor(childSizes.length / 2) : 0
-            );
-        }, 100);
+        centerTheThingsToIndex(center ? Math.floor(childSizes.length / 2) : 0);
     });
 
     /**

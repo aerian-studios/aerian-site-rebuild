@@ -113,15 +113,17 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         }
 
         const index = indexToCentre ? indexToCentre : current;
-        let scrollAmount = center ? pageWidth * 0.5 : 0;
+        let scrollAmount = 0;
+        const gap = parseInt(itemGap, 10);
 
         for (let i = 0; i < index; i++) {
-            const elW = childSizes[i].width;
+            const elW = childSizes[i].width + gap;
 
             scrollAmount += elW;
 
             if (center && i === index - 1) {
-                scrollAmount -= elW;
+                scrollAmount -= elW * 0.5 + gap / 2;
+                scrollAmount -= pageWidth * 0.5;
             }
         }
 
@@ -133,6 +135,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     };
 
     const centerTheThings = () => {
+        pageWidth = window.innerWidth;
         centerTheThingsToIndex(current);
     };
 
@@ -206,17 +209,10 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         pageWidth = window.innerWidth;
 
         childSizes = workOutSizes(sliderRef.current.children);
-        const originalLength = childSizes.length / 3;
-
-        console.log("now");
-
-        // centerTheThingsToIndex(
-        //     center ? Math.floor(originalLength + originalLength / 2) : 0
-        // );
 
         window.setTimeout(() => {
             centerTheThingsToIndex(
-                center ? Math.floor(originalLength + originalLength / 2) : 0
+                center ? Math.floor(childSizes.length / 2) : 0
             );
         }, 100);
     });

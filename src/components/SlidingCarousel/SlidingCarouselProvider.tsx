@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import debounce from "debounce";
 import * as React from "react";
 
 import { SliderProps, SlidingCarousel } from "./SlidingCarousel";
@@ -69,9 +70,16 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     let stillInFrame = false; // used for some render optimisations
     let originalWidth = 1; // used largely in infinite scroll
     let pageWidth = 200;
+    let childSizes: Size[] = []; // a utitlity array for more speedy checking of child sizes
+    let current = 0; // the current index
+
+    const setCurrent = (newCurrent: number): number => {
+        current = newCurrent !== current ? newCurrent : current;
+        return current;
+    };
 
     const centerThingsNearestToPosition = (positionToCentre?: number) => {
-        if (!sliderRef || !sliderRef.current) {
+        if (!childSizes.length || !sliderRef || !sliderRef.current) {
             return;
         }
 
@@ -79,33 +87,37 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             typeof positionToCentre !== "undefined"
                 ? positionToCentre
                 : sliderRef.current.scrollLeft;
-        let tempPosition = 0;
+        let scrollAmount = center ? -pageWidth * 0.5 : 0;
         let i = 0;
-        let index = 0;
+        let elW = 0;
+        const gap = parseInt(itemGap, 10);
 
         // assume that the children have non-uniform widths
-        while (tempPosition <= position) {
-            const elW = childSizes[i].width;
+        while (scrollAmount < position) {
+            elW = childSizes[i].width + gap;
             i++;
-
-            // @TODO: need to sort out page centring
-            if (
-                (center && tempPosition + elW / 2 >= position) ||
-                tempPosition + elW >= position
-            ) {
-                tempPosition += center ? elW / 2 : elW;
-                index = i - 1;
-            } else {
-                tempPosition += childSizes[i].width;
+            if (i >= childSizes.length) {
+                i = childSizes.length - 1;
+                break;
             }
+
+            scrollAmount += elW;
         }
 
-        sliderRef.current.scroll(tempPosition, 0);
+        if (center) {
+            scrollAmount -= elW * 0.5 + gap / 2;
+        }
 
-        if (index !== current) {
-            setCurrent(index);
+        if (i !== current) {
+            setCurrent(i);
+            sliderRef.current.scroll(scrollAmount, 0);
         }
     };
+
+    const debouncedCentreThingsNearestToPosition = debounce(
+        centerThingsNearestToPosition,
+        800
+    );
 
     const centerTheThingsToIndex = (indexToCentre?: number) => {
         if (!childSizes.length || !sliderRef || !sliderRef.current) {
@@ -183,26 +195,24 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         const lastScrollX = sliderRef.current.scrollLeft;
 
         // tslint:disable-next-line
-        if (!stillInFrame) {
+        if (!stillInFrame && infinite) {
             window.requestAnimationFrame(() => {
-                if (infinite) {
-                    checkForLoop(lastScrollX);
-                }
+                checkForLoop(lastScrollX);
                 stillInFrame = false;
             });
 
             stillInFrame = true;
         }
+
+        debouncedCentreThingsNearestToPosition(lastScrollX);
     };
 
     // HOOKS
     /**
      * Set some init code to workout original width and do any centring that needs to happen
      */
-    let childSizes: Size[] = [];
-    const [current, setCurrent] = React.useState(0);
     React.useLayoutEffect(() => {
-        if (!infinite || !sliderRef || !sliderRef.current) {
+        if (!sliderRef || !sliderRef.current) {
             return;
         }
         originalWidth = sliderRef.current.scrollWidth / 3;
@@ -229,6 +239,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             // tslint:disable-next-line
             sliderRef.current &&
                 sliderRef.current.removeEventListener("scroll", scrollHandler);
+            debouncedCentreThingsNearestToPosition.clear();
         };
     }, [sliderRef.current]);
 

@@ -19,18 +19,20 @@ interface Props {
 
 const workOutWindowOffset = (offsetUnit: number): number => {
     const winW = window.innerWidth;
-    if (winW <= 1050) {
+    // @todo: get this from the stylesheet
+
+    if (winW <= 996) {
         return 60;
     }
 
-    return offsetUnit - (Math.ceil(winW / offsetUnit) * offsetUnit - winW) / 2;
+    return (winW % offsetUnit) / 2;
 };
 
 export const SquareCarousel: React.FC<Props> = props => {
     const [buttonOffset, setButtonOffset] = React.useState(0);
 
     const getButtonOffsets = () => {
-        setButtonOffset(workOutWindowOffset(307));
+        setButtonOffset(workOutWindowOffset(308));
     };
 
     React.useLayoutEffect(() => {

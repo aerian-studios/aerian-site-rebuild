@@ -8,16 +8,14 @@ import { SlidingCarousel } from "./index";
 
 describe("SlidingCarousel", () => {
     it("renders correctly", () => {
-        const tree = renderer
-            .create(<SlidingCarousel wrapperClassName="myClass" />)
-            .toJSON();
+        const tree = renderer.create(<SlidingCarousel />).toJSON();
         expect(tree).toMatchSnapshot();
     });
 
     it("renders correctly with infinite set", () => {
         const tree = renderer
             .create(
-                <SlidingCarousel wrapperClassName="myClass" infinite={true}>
+                <SlidingCarousel infinite={true}>
                     <div>{projectBox.titleLineOne}</div>
                 </SlidingCarousel>
             )

@@ -705,7 +705,7 @@ Array [
         onClick={[Function]}
         style={
           Object {
-            "width": "60px",
+            "width": "50px",
           }
         }
         tabIndex={-1}
@@ -720,7 +720,7 @@ Array [
         onClick={[Function]}
         style={
           Object {
-            "width": "60px",
+            "width": "50px",
           }
         }
         tabIndex={-1}

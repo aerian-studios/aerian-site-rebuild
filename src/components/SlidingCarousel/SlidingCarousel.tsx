@@ -58,13 +58,13 @@ export const SlidingCarousel: React.RefForwardingComponent<
                     ? createDuplicateChildren(children, {
                           "aria-hidden": "true"
                       })
-                    : children}
+                    : null}
                 {children}
                 {infinite
                     ? createDuplicateChildren(children, {
                           "aria-hidden": "true"
                       })
-                    : children}
+                    : null}
             </div>
         </section>
     );

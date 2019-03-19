@@ -25,12 +25,19 @@
     border: 0 none;
     display: block;
     height: var(--squareCardSize);
-    width: var(--squareCardSize);
+    width: 60px;
     z-index: 2;
+    color: $c-menu-bg;
+    cursor: pointer;
+
+    &:active {
+        outline-color: transparent;
+    }
 }
 
 .left {
     left: 0;
+    transform: rotate(180deg);
 }
 
 .right {

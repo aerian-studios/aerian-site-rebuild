@@ -597,6 +597,8 @@ Array [
             className=""
           >
             <a
+              aria-hidden="true"
+              className=""
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -630,6 +632,7 @@ Array [
             className=""
           >
             <a
+              className=""
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -663,6 +666,8 @@ Array [
             className=""
           >
             <a
+              aria-hidden="true"
+              className=""
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -694,12 +699,32 @@ Array [
           </div>
         </div>
       </section>
-      <button>
+      <button
+        aria-hidden="true"
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "60px",
+          }
+        }
+        tabIndex={-1}
+      >
         <i
           className="fa"
         />
       </button>
-      <button>
+      <button
+        aria-hidden="true"
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "60px",
+          }
+        }
+        tabIndex={-1}
+      >
         <i
           className="fa"
         />

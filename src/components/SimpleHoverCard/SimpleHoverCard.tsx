@@ -9,9 +9,10 @@ import { Image } from "../Image";
 import { ProjectBox } from "../../types/data";
 
 // import * as revealCardStyles from "../RevealCard/RevealCard.module.scss";
+import classNames from "classnames";
 import * as styles from "./SimpleHoverCard.module.scss";
 
-interface Props {
+interface Props extends React.AllHTMLAttributes<HTMLAnchorElement> {
     style?: React.CSSProperties;
     className?: string;
     project: ProjectBox;
@@ -21,12 +22,15 @@ export const SimpleHoverCard: React.SFC<Props> = ({
     children,
     style,
     className,
-    project
+    project,
+    ...rest
 }) => (
     <Card>
         <Link
             to={`/our-work/project/${project.slug}`}
-            className={styles.cardWrapper}
+            className={classNames(className, styles.cardWrapper)}
+            {...rest}
+            style={style}
         >
             <Image
                 key={project.titleLineOne}

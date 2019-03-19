@@ -5,6 +5,7 @@ exports[`SimpleHoverCard renders correctly 1`] = `
   className=""
 >
   <a
+    className="myClass"
     href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
     onClick={[Function]}
     onMouseEnter={[Function]}

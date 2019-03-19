@@ -35,9 +35,8 @@
     overflow: scroll;
     padding-bottom: 30px;
     // for compliant browsers
-    // scroll-snap-type: both mandatory;
-    // scroll-behavior: smooth;
-    // scroll-snap-align: var(--SCSnapAlign);
+    scroll-behavior: smooth;
+    scroll-snap-align: var(--SCSnapAlign);
 
     > * {
         scroll-snap-align: center;

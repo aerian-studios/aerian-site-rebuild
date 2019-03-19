@@ -22,26 +22,22 @@
 .SCSlider {
     position: absolute;
     height: var(--SCCardHeight);
-    width: var(--SCWidthInFrs, 100%);
+    width: 100%;
     top: 0;
-    // centre horizontally
-    left: 50%;
-    transform: translateX(-50%);
-
+    left: 0;
     box-sizing: initial;
     display: grid;
     grid-template-rows: var(--SCCardHeight);
     grid-auto-columns: var(--SCCardWidth);
     grid-auto-flow: column;
     grid-column-gap: var(--SCGridGap);
+    // create and hide scroll bar
     overflow: scroll;
     padding-bottom: 30px;
-    // for FF
-    scroll-snap-type: mandatory;
     // for compliant browsers
-    scroll-snap-type: both mandatory;
-    scroll-behavior: smooth;
-    scroll-snap-align: var(--SCSnapAlign);
+    // scroll-snap-type: both mandatory;
+    // scroll-behavior: smooth;
+    // scroll-snap-align: var(--SCSnapAlign);
 
     > * {
         scroll-snap-align: center;

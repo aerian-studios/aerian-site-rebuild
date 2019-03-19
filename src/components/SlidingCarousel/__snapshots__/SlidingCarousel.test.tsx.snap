@@ -2,7 +2,7 @@
 
 exports[`SlidingCarousel renders correctly 1`] = `
 <section
-  className="myClass"
+  className=""
 >
   <div
     className=""
@@ -12,18 +12,22 @@ exports[`SlidingCarousel renders correctly 1`] = `
 
 exports[`SlidingCarousel renders correctly with infinite set 1`] = `
 <section
-  className="myClass"
+  className=""
 >
   <div
     className=""
   >
-    <div>
+    <div
+      aria-hidden="true"
+    >
       What sort of 'eater' are you?
     </div>
     <div>
       What sort of 'eater' are you?
     </div>
-    <div>
+    <div
+      aria-hidden="true"
+    >
       What sort of 'eater' are you?
     </div>
   </div>

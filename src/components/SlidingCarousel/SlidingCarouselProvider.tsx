@@ -157,9 +157,26 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         }
 
         const currentPosition = sliderRef.current.scrollLeft;
+        const visibleItems = childSizes.slice(current - 1, current + 1);
+        let amountToScroll = 0;
+        let w = pageWidth / 2 - visibleItems[1].width / 2;
+
+        while (amountToScroll < w && visibleItems.length) {
+            const itemIndex =
+                visibleItems.length > 1
+                    ? Math.ceil(visibleItems.length / 2)
+                    : 0;
+
+            const item = visibleItems.splice(itemIndex, 1);
+            w = pageWidth / 2 - item[0].width / 2;
+            amountToScroll += item[0].width;
+        }
 
         // TODO: need to do a loop check here
-        sliderRef.current.scroll(currentPosition + pageWidth * direction, 0);
+        sliderRef.current.scroll(
+            currentPosition + amountToScroll * direction,
+            0
+        );
     };
 
     /**

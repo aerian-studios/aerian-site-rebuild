@@ -19,13 +19,13 @@ interface Props {
 
 const workOutWindowOffset = (offsetUnit: number): number => {
     const winW = window.innerWidth;
-    // @todo: get this from the stylesheet
+    const minWinWidth = 3 * offsetUnit + 2 * 60;
 
-    if (winW <= 996) {
+    if (winW <= minWinWidth) {
         return 60;
     }
 
-    return (winW % offsetUnit) / 2;
+    return (winW / 2 - offsetUnit / 2) % offsetUnit;
 };
 
 export const SquareCarousel: React.FC<Props> = props => {

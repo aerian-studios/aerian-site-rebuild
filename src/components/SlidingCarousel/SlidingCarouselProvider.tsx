@@ -72,10 +72,31 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     let pageWidth = 200;
     let childSizes: Size[] = []; // a utitlity array for more speedy checking of child sizes
     let current = 0; // the current index
+    let destination = 0; // destination in async functions
 
     const setCurrent = (newCurrent: number): number => {
         current = newCurrent !== current ? newCurrent : current;
         return current;
+    };
+
+    interface LoopCheck {
+        position: number | null;
+    }
+    /**
+     * Method to check if the infinite scroll needs to loop
+     * @param {number} position - the current scroll position
+     * @return {LoopCheck} - A position of either `null` for no loop need or an adjusted position number that doesn't need to loop
+     */
+    const checkForLoop = (position: number): LoopCheck => {
+        const loopCheck: LoopCheck = { position: null };
+
+        if (position < originalWidth) {
+            loopCheck.position = position + originalWidth;
+        } else if (position > originalWidth * 2) {
+            loopCheck.position = position - originalWidth;
+        }
+
+        return loopCheck;
     };
 
     const centerThingsNearestToPosition = (positionToCentre?: number) => {
@@ -83,7 +104,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             return;
         }
 
-        const position =
+        destination =
             typeof positionToCentre !== "undefined"
                 ? positionToCentre
                 : sliderRef.current.scrollLeft;
@@ -93,7 +114,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         const gap = parseInt(itemGap, 10);
 
         // assume that the children have non-uniform widths
-        while (scrollAmount < position) {
+        while (scrollAmount < destination) {
             elW = childSizes[i].width + gap;
             i++;
             if (i >= childSizes.length) {
@@ -108,18 +129,20 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             scrollAmount -= elW * 0.5 + gap / 2;
         }
 
-        if (i !== current) {
-            setCurrent(i);
-            sliderRef.current.scroll(scrollAmount, 0);
+        if (i === current) {
+            return;
         }
+        destination = scrollAmount;
+        setCurrent(i);
+        sliderRef.current.scroll(scrollAmount, 0);
     };
 
     const debouncedCentreThingsNearestToPosition = debounce(
         centerThingsNearestToPosition,
-        800
+        250
     );
 
-    const centerTheThingsToIndex = (indexToCentre?: number) => {
+    const centerTheThingsToIndex = (indexToCentre?: number): void => {
         if (!childSizes.length || !sliderRef || !sliderRef.current) {
             return;
         }
@@ -139,10 +162,28 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             }
         }
 
-        sliderRef.current.scroll(scrollAmount, 0);
-
+        // tslint:disable-next-line
         if (index !== current) {
+            destination = scrollAmount;
+            sliderRef.current.scroll(destination, 0);
             setCurrent(index);
+        }
+    };
+
+    const scrollToPosition = (
+        position: number,
+        immediate: boolean = false
+    ): void => {
+        if (!sliderRef || !sliderRef.current) {
+            return;
+        }
+
+        if (immediate) {
+            sliderRef.current.style.scrollBehavior = "auto";
+        }
+        sliderRef.current.scroll(position, 0);
+        if (immediate) {
+            sliderRef.current.style.scrollBehavior = "smooth";
         }
     };
 
@@ -151,77 +192,80 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         centerTheThingsToIndex(current);
     };
 
+    let deferDelay: any;
+    let scrollDelay: any;
     const moveCarouselPage = (direction: number) => {
-        if (!sliderRef || !sliderRef.current) {
-            return;
-        }
+        // tslint:disable-next-line
+        deferDelay && window.clearTimeout(deferDelay);
+        // tslint:disable-next-line
+        scrollDelay && window.clearTimeout(scrollDelay);
 
-        const currentPosition = sliderRef.current.scrollLeft;
         const visibleItems = childSizes.slice(current - 1, current + 1);
+        const gap = parseInt(itemGap, 10);
         let amountToScroll = 0;
-        let w = pageWidth / 2 - visibleItems[1].width / 2;
+        let w = (pageWidth - visibleItems[1].width) / 2;
 
-        while (amountToScroll < w && visibleItems.length) {
+        while (visibleItems.length && amountToScroll <= w) {
             const itemIndex =
                 visibleItems.length > 1
                     ? Math.ceil(visibleItems.length / 2)
                     : 0;
 
             const item = visibleItems.splice(itemIndex, 1);
-            w = pageWidth / 2 - item[0].width / 2;
-            amountToScroll += item[0].width;
+
+            // update page centre to item centre based on item width
+            w = (pageWidth - item[0].width) / 2;
+            amountToScroll += item[0].width / 2 + gap / 2;
         }
 
-        // TODO: need to do a loop check here
-        sliderRef.current.scroll(
-            currentPosition + amountToScroll * direction,
-            0
-        );
-    };
+        // Check for loop before scrolling
+        destination = destination + amountToScroll * direction;
+        const destCheck = checkForLoop(destination);
 
-    /**
-     * Method to check if the infinite scroll needs to loop
-     * @param {number} position - the current scroll position
-     * @return {void}
-     */
-    const checkForLoop = (position: number) => {
-        if (!sliderRef || !sliderRef.current) {
-            return;
+        // disable the scroll centerer
+        stillInFrame = true;
+
+        if (destCheck.position) {
+            destination = destCheck.position;
+            const preDest = destination - amountToScroll * direction;
+            scrollToPosition(preDest, true);
         }
 
-        if (position < originalWidth) {
-            sliderRef.current.style.scrollBehavior = "auto";
-            sliderRef.current.scroll(position + originalWidth, 0);
-            sliderRef.current.style.scrollBehavior = "smooth";
-        } else if (position > originalWidth * 2) {
-            sliderRef.current.style.scrollBehavior = "auto";
-            sliderRef.current.scroll(position - originalWidth, 0);
-            sliderRef.current.style.scrollBehavior = "smooth";
-        }
+        // Needs to defer this second scroll request
+        deferDelay = window.setTimeout(() => {
+            scrollToPosition(destination);
+        }, 60);
+
+        // wait until scroll complete before re-enabling scroll checking
+        scrollDelay = window.setTimeout(() => {
+            stillInFrame = false;
+        }, 2000);
     };
 
     /**
      * Handle scroll events by calling necessary checks
-     * @param {Event} e Scroll event
      * @return {void}
      */
-    const scrollHandler = (e: Event) => {
+    const scrollHandler = (): void => {
         if (!sliderRef || !sliderRef.current) {
             return;
         }
-        const lastScrollX = sliderRef.current.scrollLeft;
+        const lastX = sliderRef.current.scrollLeft;
 
-        // tslint:disable-next-line
         if (!stillInFrame && infinite) {
             window.requestAnimationFrame(() => {
-                checkForLoop(lastScrollX);
+                const check = checkForLoop(lastX);
+
+                if (check.position) {
+                    scrollToPosition(check.position, true);
+                }
                 stillInFrame = false;
             });
 
             stillInFrame = true;
         }
 
-        debouncedCentreThingsNearestToPosition(lastScrollX);
+        debouncedCentreThingsNearestToPosition(lastX);
     };
 
     // HOOKS

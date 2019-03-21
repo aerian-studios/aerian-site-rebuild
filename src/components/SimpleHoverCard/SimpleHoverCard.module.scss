@@ -11,10 +11,14 @@
     height: 100%;
     overflow: hidden;
 
-    &:hover,
-    &:focus {
+    &:hover {
         .cardContent {
             opacity: 1;
+        }
+    }
+    &:focus {
+        .cardContent {
+            opacity: 0.7;
         }
     }
 }

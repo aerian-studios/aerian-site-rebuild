@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import debounce from "debounce";
 import * as React from "react";
+import uuid from "uuid";
 
 import { SliderProps, SlidingCarousel } from "./SlidingCarousel";
 
@@ -12,13 +13,14 @@ export type ButtonRenderProp<P extends ButtonProps = ButtonProps> = (
 ) => React.ReactElement;
 
 interface Props extends SliderProps {
-    className?: string;
-    style?: React.CSSProperties;
+    carouselLabel: string | React.ReactElement;
     buttonBackContentRender?: ButtonRenderProp;
     buttonFwdContentRender?: ButtonRenderProp;
     center?: boolean;
     infinite?: boolean;
     itemGap?: string;
+    className?: string;
+    style?: React.CSSProperties;
 }
 
 interface Size {
@@ -57,6 +59,7 @@ const workOutSizes = (nodes: HTMLCollection): Size[] => {
 };
 
 export const SlidingCarouselProvider: React.FC<Props> = ({
+    carouselLabel,
     children,
     className,
     style,
@@ -68,7 +71,8 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 }) => {
     const sliderRef = React.useRef<HTMLDivElement>();
     let stillInFrame = false; // used for some render optimisations
-    let originalWidth = 1; // used largely in infinite scroll
+    let originalWidth = 0; // used largely in infinite scroll
+    let originalChildLength = 0; // used largely in infinite scroll
     let pageWidth = 200;
     let childSizes: Size[] = []; // a utitlity array for more speedy checking of child sizes
     let current = 0; // the current index
@@ -76,7 +80,20 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
     const setCurrent = (newCurrent: number): number => {
         current = newCurrent !== current ? newCurrent : current;
+        setCurrentFocus(current);
+
         return current;
+    };
+
+    const setCurrentFocus = (index: number): void => {
+        if (!sliderRef || !sliderRef.current) {
+            return;
+        }
+        const childs = sliderRef.current.children;
+
+        const focussable = childs[current].querySelector("a");
+        // tslint:disable-next-line
+        focussable && focussable.focus();
     };
 
     interface LoopCheck {
@@ -99,7 +116,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         return loopCheck;
     };
 
-    const centerThingsNearestToPosition = (positionToCentre?: number) => {
+    const alignThingsNearestToPosition = (positionToCentre?: number) => {
         if (!childSizes.length || !sliderRef || !sliderRef.current) {
             return;
         }
@@ -138,11 +155,11 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     };
 
     const debouncedCentreThingsNearestToPosition = debounce(
-        centerThingsNearestToPosition,
+        alignThingsNearestToPosition,
         250
     );
 
-    const centerTheThingsToIndex = (indexToCentre?: number): void => {
+    const alignTheThingsToIndex = (indexToCentre?: number): void => {
         if (!childSizes.length || !sliderRef || !sliderRef.current) {
             return;
         }
@@ -151,8 +168,8 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         let scrollAmount = 0;
         const gap = parseInt(itemGap, 10);
 
-        for (let i = 0; i < index; i++) {
-            const elW = childSizes[i].width + gap;
+        for (let i = 1; i < index; i++) {
+            const elW = childSizes[i - 1].width + gap;
 
             scrollAmount += elW;
 
@@ -187,9 +204,9 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         }
     };
 
-    const centerTheThings = () => {
+    const alignTheThings = () => {
         pageWidth = window.innerWidth;
-        centerTheThingsToIndex(current);
+        alignTheThingsToIndex(current);
     };
 
     let deferDelay: any;
@@ -280,8 +297,13 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         pageWidth = window.innerWidth;
 
         childSizes = workOutSizes(sliderRef.current.children);
+        originalChildLength = infinite
+            ? childSizes.length / 3
+            : childSizes.length;
 
-        centerTheThingsToIndex(center ? Math.floor(childSizes.length / 2) : 0);
+        alignTheThingsToIndex(
+            center ? Math.floor((childSizes.length - 1) / 2) : 0
+        );
     });
 
     /**
@@ -305,10 +327,10 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     }, [sliderRef.current]);
 
     React.useEffect(() => {
-        window.addEventListener("resize", centerTheThings);
+        window.addEventListener("resize", alignTheThings);
 
         return () => {
-            window.removeEventListener("resize", centerTheThings);
+            window.removeEventListener("resize", alignTheThings);
         };
     });
 
@@ -348,23 +370,92 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             }}
         />
     );
+
+    interface SliderProgressTrackerProps
+        extends React.AllHTMLAttributes<HTMLElement> {
+        index: number;
+        total: number;
+        itemTitles?: string[];
+        PagerElement?: React.JSXElementConstructor<{
+            current: boolean;
+            children: JSX.Element;
+        }>;
+        pagerElementClick: (index: number) => void;
+    }
+    const SliderProgressTracker: React.SFC<SliderProgressTrackerProps> = ({
+        index,
+        total,
+        itemTitles,
+        PagerElement,
+        pagerElementClick
+    }) => {
+        return (
+            <div>
+                <p
+                    className={styles.SCProgressFraction}
+                    aria-live="polite"
+                    aria-atomic="true"
+                >{`Item ${index} of ${total}`}</p>
+                {PagerElement && itemTitles ? (
+                    <ol>
+                        {itemTitles.map((item, i) => (
+                            <li
+                                className={classNames(styles.SCPagerElement)}
+                                key={item}
+                            >
+                                <PagerElement current={i === current}>
+                                    <button
+                                        onClick={() => {
+                                            pagerElementClick(i);
+                                        }}
+                                    >
+                                        <span className="visuallyhidden">
+                                            {item}
+                                        </span>{" "}
+                                        {i !== current ? null : (
+                                            <span className="visuallyhidden">
+                                                (Current item)
+                                            </span>
+                                        )}
+                                    </button>
+                                </PagerElement>
+                            </li>
+                        ))}
+                    </ol>
+                ) : null}
+            </div>
+        );
+    };
+
     const fwdButton = buttonFwdContentRender
         ? buttonFwdContentRender(FwdButton)
         : null;
     const backButton = buttonBackContentRender
         ? buttonBackContentRender(BackButton)
         : null;
+    const uniqueId = uuid();
+    const regionLabel =
+        typeof carouselLabel === "string"
+            ? { "aria-label": carouselLabel }
+            : { "aria-labelledby": uniqueId };
 
     return (
-        <div
+        <section
             className={classNames(className, styles.sliderProvider)}
             style={style}
+            {...regionLabel}
         >
+            {typeof carouselLabel === "string" ? null : carouselLabel}
             <SlidingCarousel infinite={infinite} ref={sliderRef}>
                 {children}
             </SlidingCarousel>
             {backButton}
             {fwdButton}
-        </div>
+            <SliderProgressTracker
+                index={current}
+                total={originalChildLength}
+                pagerElementClick={alignTheThingsToIndex}
+            />
+        </section>
     );
 };

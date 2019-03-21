@@ -11,6 +11,7 @@
         "@researchgate/react-intersection-observer": "^0.7.4",
         "@types/debounce": "^1.2.0",
         "@types/react-transition-group": "^2.0.15",
+        "@types/uuid": "^3.4.4",
         "classnames": "^2.2.6",
         "debounce": "^1.2.0",
         "deep-map": "^1.5.0",
@@ -37,7 +38,8 @@
         "react-dom": "^16.7.0",
         "react-helmet": "^5.2.0",
         "react-markdown": "^3.6.0",
-        "react-transition-group": "^2.5.2"
+        "react-transition-group": "^2.5.2",
+        "uuid": "^3.3.2"
     },
     "keywords": [
         "gatsby"

@@ -68,6 +68,14 @@
     width: var(--SCCardWidth);
 }
 
+.SCProgressFraction {
+    margin: 0 auto;
+}
+
+.SCPagerElement {
+    list-style-type: none;
+}
+
 .left {
     left: 0;
 }

@@ -49,8 +49,10 @@ export const SquareCarousel: React.FC<Props> = props => {
 
     return (
         <SlidingCarouselProvider
+            carouselLabel="More of our work"
             className={styles.carouselWrapper}
             infinite={true}
+            center={true}
             itemGap="2px"
             buttonBackContentRender={BackButton => (
                 <BackButton

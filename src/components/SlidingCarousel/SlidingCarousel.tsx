@@ -52,21 +52,23 @@ export const SlidingCarousel: React.RefForwardingComponent<
     const { children, style, infinite = false } = props;
 
     return (
-        <section className={classNames(styles.sliderWrapper)} style={style}>
+        <div className={classNames(styles.sliderWrapper)} style={style}>
             <div className={classNames(styles.SCSlider)} ref={ref}>
                 {infinite
                     ? createDuplicateChildren(children, {
-                          "aria-hidden": "true"
+                          "aria-hidden": "true",
+                          tabIndex: 0
                       })
                     : null}
                 {children}
                 {infinite
                     ? createDuplicateChildren(children, {
-                          "aria-hidden": "true"
+                          "aria-hidden": "true",
+                          tabIndex: 0
                       })
                     : null}
             </div>
-        </section>
+        </div>
     );
 });
 export default SlidingCarousel;

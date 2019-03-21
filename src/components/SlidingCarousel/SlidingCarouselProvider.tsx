@@ -152,7 +152,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
     const debouncedCentreThingsNearestToPosition = debounce(
         alignThingsNearestToPosition,
-        400
+        500
     );
 
     const alignTheThingsToIndex = (indexToCentre?: number): void => {
@@ -298,11 +298,11 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             : childSizes.length;
 
         // This also needs to be deferred :(|)
-        window.setTimeout(() => {
+        debounce(() => {
             alignTheThingsToIndex(
                 center ? Math.floor((childSizes.length - 1) / 2) : 0
             );
-        }, 500);
+        }, 500)();
     });
 
     /**
@@ -322,6 +322,10 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             sliderRef.current &&
                 sliderRef.current.removeEventListener("scroll", scrollHandler);
             debouncedCentreThingsNearestToPosition.clear();
+            // tslint:disable-next-line
+            deferDelay && window.clearTimeout(deferDelay);
+            // tslint:disable-next-line
+            scrollDelay && window.clearTimeout(scrollDelay);
         };
     }, [sliderRef.current]);
 
@@ -396,7 +400,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
                     aria-atomic="true"
                 >{`Item ${index} of ${total}`}</p>
                 {PagerElement && itemTitles ? (
-                    <ol>
+                    <ol className={styles.SCPagerWrapper}>
                         {itemTitles.map((item, i) => (
                             <li
                                 className={classNames(styles.SCPagerElement)}
@@ -408,11 +412,11 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
                                             pagerElementClick(i);
                                         }}
                                     >
-                                        <span className="visuallyhidden">
+                                        <span className="visually-hidden">
                                             {item}
                                         </span>{" "}
                                         {i !== current ? null : (
-                                            <span className="visuallyhidden">
+                                            <span className="visually-hidden">
                                                 (Current item)
                                             </span>
                                         )}
@@ -440,7 +444,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
     return (
         <section
-            className={classNames(className, styles.sliderProvider)}
+            className={classNames(className, styles.SCSliderProvider)}
             style={style}
             {...regionLabel}
         >

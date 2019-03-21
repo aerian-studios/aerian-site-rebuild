@@ -52,7 +52,7 @@ export const SlidingCarousel: React.RefForwardingComponent<
     const { children, style, infinite = false } = props;
 
     return (
-        <div className={classNames(styles.sliderWrapper)} style={style}>
+        <div className={classNames(styles.SCSliderWrapper)} style={style}>
             <div className={classNames(styles.SCSlider)} ref={ref}>
                 {infinite
                     ? createDuplicateChildren(children, {

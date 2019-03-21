@@ -7,12 +7,12 @@
     --SCSnapAlign: "center";
 }
 
-.sliderProvider {
+.SCSliderProvider {
     position: relative;
 }
 
 // This wraps the sliding part and hides the scrollbars
-.sliderWrapper {
+.SCSliderWrapper {
     position: relative;
     height: var(--squareCardSize);
     width: 100%;
@@ -43,11 +43,6 @@
     }
 }
 
-.card {
-    height: var(--SCCardHeight);
-    width: var(--SCCardWidth);
-}
-
 .SCControlWrapper {
     position: absolute;
     top: 0;
@@ -72,14 +67,16 @@
     margin: 0 auto;
 }
 
+.SCPagerWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+
 .SCPagerElement {
     list-style-type: none;
-}
-
-.left {
-    left: 0;
-}
-
-.right {
-    right: 0;
+    margin: 0 1px;
 }

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlidingCarouselProvider renders correctly 1`] = `
+<section
+  aria-label="SUT"
+  className=""
+>
+  <div
+    className=""
+  >
+    <div
+      className=""
+    />
+  </div>
+  <div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+    >
+      Item 0 of 0
+    </p>
+  </div>
+</section>
+`;
+
+exports[`SlidingCarouselProvider renders correctly with infinite set 1`] = `
+<section
+  aria-label="SUT"
+  className=""
+>
+  <div
+    className=""
+  >
+    <div
+      className=""
+    />
+  </div>
+  <div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+    >
+      Item 0 of 0
+    </p>
+  </div>
+</section>
+`;

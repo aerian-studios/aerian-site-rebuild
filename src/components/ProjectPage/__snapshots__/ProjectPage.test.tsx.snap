@@ -584,10 +584,11 @@ Array [
         </div>
       </div>
     </div>
-    <div
+    <section
+      aria-label="More of our work"
       className=""
     >
-      <section
+      <div
         className=""
       >
         <div
@@ -602,6 +603,7 @@ Array [
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              tabIndex={0}
             >
               <div
                 className=""
@@ -671,6 +673,7 @@ Array [
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              tabIndex={0}
             >
               <div
                 className=""
@@ -698,7 +701,7 @@ Array [
             </a>
           </div>
         </div>
-      </section>
+      </div>
       <button
         aria-hidden="true"
         className=""
@@ -729,7 +732,15 @@ Array [
           className="fa"
         />
       </button>
-    </div>
+      <div>
+        <p
+          aria-atomic="true"
+          aria-live="polite"
+        >
+          Item 0 of 0
+        </p>
+      </div>
+    </section>
   </section>,
 ]
 `;

@@ -1,2 +1,2 @@
 export { SlidingCarousel } from "./SlidingCarousel";
-export { SlidingCarouselProvider } from "./SlidingCarouselProvider";
+export { SlidingCarouselProvider, calculateNearestSnapPoint, calculateScrollOffsetForIndex } from "./SlidingCarouselProvider";

@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SlidingCarousel renders correctly 1`] = `
-<section
+<div
   className=""
 >
   <div
     className=""
   />
-</section>
+</div>
 `;
 
 exports[`SlidingCarousel renders correctly with infinite set 1`] = `
-<section
+<div
   className=""
 >
   <div
@@ -19,6 +19,7 @@ exports[`SlidingCarousel renders correctly with infinite set 1`] = `
   >
     <div
       aria-hidden="true"
+      tabIndex={0}
     >
       What sort of 'eater' are you?
     </div>
@@ -27,9 +28,10 @@ exports[`SlidingCarousel renders correctly with infinite set 1`] = `
     </div>
     <div
       aria-hidden="true"
+      tabIndex={0}
     >
       What sort of 'eater' are you?
     </div>
   </div>
-</section>
+</div>
 `;

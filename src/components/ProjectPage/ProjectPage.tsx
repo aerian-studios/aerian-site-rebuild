@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Project, ProjectBox, Edge } from "../../types/data";
+import { Edge, Project, ProjectBox } from "../../types/data";
 import { Block } from "../Block";
 import { CaseStudyIntro } from "../CaseStudyIntro";
 import { Gallery } from "../Gallery";
@@ -14,8 +14,8 @@ import { SectionNav } from "../SectionNav";
 import { TestimonialBlock } from "../TestimonialBlock";
 
 import * as sharedStyles from "../Layout.module.scss";
-import * as styles from "./ProjectPage.module.scss";
 import { SquareCarousel } from "../SquareCarousel";
+import * as styles from "./ProjectPage.module.scss";
 
 interface Props {
     project: Project;

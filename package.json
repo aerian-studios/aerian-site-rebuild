@@ -50,11 +50,15 @@
         "storybook": "start-storybook -p 9001 -c .storybook",
         "storybook-build": "build-storybook -c .storybook -o docs",
         "precommit": "lint-staged",
+        "lint": "eslint --ext=ts,tsx  .",
         "prepush": "jest --ci",
         "test:circle": "jest --ci --runInBand --verbose --silent",
         "test-ci": "jest --coverage --coverageReporters=text-lcov --maxWorkers=2 > coverage.lcov && codecov"
     },
     "devDependencies": {
+        "@aerian/eslint-config": "^2.0.1",
+        "@aerian/eslint-config-react": "^2.0.1",
+        "@aerian/eslint-config-typescript": "2.0.2",
         "@babel/core": "^7.2.2",
         "@babel/plugin-proposal-class-properties": "^7.2.3",
         "@babel/plugin-proposal-optional-chaining": "^7.2.0",
@@ -82,6 +86,9 @@
         "babel-plugin-require-context-hook": "^1.0.0",
         "codecov": "^3.1.0",
         "css-loader": "^0.28.11",
+        "eslint": "^6.0.1",
+        "eslint-plugin-import": "^2.18.0",
+        "eslint-plugin-prettier": "^3.1.0",
         "extract-text-webpack-plugin": "^3.0.2",
         "gh-pages": "^1.2.0",
         "husky": "^0.14.3",
@@ -100,19 +107,23 @@
         "regenerator-runtime": "^0.12.1",
         "ts-jest": "^23.10.5",
         "ts-loader": "4",
-        "tslint": "^5.12.1",
-        "tslint-config-aerian": "^1.0.3",
         "typescript": "^3.2.2",
         "typings-for-css-modules-loader": "^1.7.0"
     },
+    "eslintConfig": {
+        "extends": [
+            "@aerian/eslint-config-react",
+            "@aerian/eslint-config-typescript"
+        ]
+    },
     "lint-staged": {
-        "*.{js,jsx,css,md,scss}": [
+        "*.{css,md,scss}": [
             "prettier --write",
             "git add",
             "jest --ci --findRelatedTests"
         ],
-        "*.{ts,tsx}": [
-            "tslint --fix",
+        "*.{ts,tsx,js,jsx}": [
+            "eslint --fix",
             "git add",
             "jest --ci --findRelatedTests"
         ]

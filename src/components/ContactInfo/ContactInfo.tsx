@@ -149,7 +149,7 @@ export const ContactInfo: React.SFC<Props> = ({
                         {emailTitle}
                     </strong>{" "}
                     <a
-                        href={"mailto:" + email}
+                        href={`mailto:${email}`}
                         itemProp="email"
                         className={styles.white}
                     >

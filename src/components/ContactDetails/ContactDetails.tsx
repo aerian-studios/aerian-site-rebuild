@@ -30,7 +30,7 @@ export const ContactDetails: React.SFC<Props> = ({
         {phoneNumber && (
             <p className={styles.phoneNumber}>
                 Call{" "}
-                <a href={"tel:" + phoneNumber} itemProp="telephone">
+                <a href={`tel:${phoneNumber}`} itemProp="telephone">
                     {phoneNumber}
                 </a>
             </p>

@@ -1,7 +1,5 @@
-/* eslint-disable react/no-find-dom-node */
 import classNames from "classnames";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -73,7 +71,7 @@ export const setHeightStyles = (
     });
 };
 
-export const getAppropriteHeights = (heights: number[]): number => {
+export const getAppropriateHeights = (heights: number[]): number => {
     const isVertical = window.innerWidth <= 768;
 
     return isVertical
@@ -91,7 +89,7 @@ export const setHeight = async (asideEl: HTMLElement): Promise<HTMLElement> => {
     await hideShow(asideEl, true);
 
     const heights: number[] = await getHeights(asideChildren);
-    const desiredHeight = 160 + getAppropriteHeights(heights);
+    const desiredHeight = 160 + getAppropriateHeights(heights);
 
     await hideShow(asideEl, false);
 
@@ -99,50 +97,42 @@ export const setHeight = async (asideEl: HTMLElement): Promise<HTMLElement> => {
 };
 
 export class StaffDetail extends React.Component<Props> {
-    public asideRef: React.RefObject<HTMLElement>;
     public aside?: HTMLElement;
-    public constructor(props: Props) {
-        super(props);
 
-        this.asideRef = React.createRef();
-    }
-    public componentDidMount() {
-        const asideEl: HTMLElement = ReactDOM.findDOMNode(
-            this.asideRef.current!
-        ) as HTMLElement;
-        if (!asideEl) {
+    public setAsideRef = (ref: HTMLElement | null) => {
+        if (!ref) {
             return;
         }
-        setHeight(asideEl);
+        this.aside = ref;
+        setHeight(ref);
         memoizeCurrentScrollPos();
         setTopMargin(80);
         window.setTimeout(() => {
-            scrollToElement(asideEl);
+            scrollToElement(ref);
         }, 300);
-    }
+    };
+
+    public closeAside = () => {
+        if (this.aside) {
+            hideShow(this.aside, false);
+            scrollToElement(undefined, 150);
+        }
+        if (this.props.onClose) {
+            this.props.onClose();
+        }
+    };
+
     public render() {
-        const { staff, className, style, onClose } = this.props;
+        const { staff, className, style } = this.props;
         return (
             <aside
                 className={classNames(styles.component, className)}
                 style={style}
-                ref={this.asideRef}
+                ref={this.setAsideRef}
             >
                 <button
                     className={styles.closeButton}
-                    onClick={() => {
-                        const asideEl: HTMLElement = ReactDOM.findDOMNode(
-                            this.asideRef.current!
-                        ) as HTMLElement;
-
-                        if (asideEl) {
-                            hideShow(asideEl, false);
-                            scrollToElement(undefined, 150);
-                        }
-                        if (onClose) {
-                            onClose();
-                        }
-                    }}
+                    onClick={this.closeAside}
                 >
                     <FontAwesomeIcon icon={faTimes} />
                 </button>

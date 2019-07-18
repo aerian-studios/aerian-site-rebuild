@@ -1,8 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Link } from "gatsby";
-
 interface Props {
     keyConsts: { [key: string]: string };
     style?: React.CSSProperties;
@@ -18,16 +16,16 @@ const wrapNavItem = (
     onNavigation: (itemKey: string) => void,
     navItemClassName?: string
 ) => (
-    <Link
-        className={classNames(navItemClassName)}
-        to={`#${itemKey}`}
+    <a
+        className={navItemClassName}
+        href={`#${itemKey}`}
         key={`sectionnav-${itemKey}`}
         onClick={() => {
             onNavigation(itemKey);
         }}
     >
         {content}
-    </Link>
+    </a>
 );
 
 const getKeyWrapper = (

@@ -27,10 +27,12 @@ const onNavigation = (id: string) => {
 export const WhatWeDoPage: React.SFC<Props> = ({ page }) => (
     <>
         <PageHeader>
-            <HeroBlock heroImage={page.heroImage} aria-labelled-by="page-title">
+            <HeroBlock heroImage={page.heroImage} aria-labelledby="page-title">
                 <div>
                     <h1>
-                        We work hard<br />so users don't have to
+                        We work hard
+                        <br />
+                        so users don't have to
                     </h1>
                     <Button arrow={true} alternate={true}>
                         <Link to={"/our-work/"}>Our work</Link>

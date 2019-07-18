@@ -1,3 +1,4 @@
+/* eslint-disable react/no-find-dom-node */
 import classNames from "classnames";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
@@ -99,7 +100,8 @@ export const setHeight = async (asideEl: HTMLElement): Promise<HTMLElement> => {
 
 export class StaffDetail extends React.Component<Props> {
     public asideRef: React.RefObject<HTMLElement>;
-    constructor(props: Props) {
+    public aside?: HTMLElement;
+    public constructor(props: Props) {
         super(props);
 
         this.asideRef = React.createRef();
@@ -147,7 +149,7 @@ export class StaffDetail extends React.Component<Props> {
                 <figure className={styles.funny}>
                     <Image
                         source={staff.imageFunny}
-                        alt={staff.name + " photo"}
+                        alt={`${staff.name} photo`}
                     />
                 </figure>
 

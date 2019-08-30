@@ -1,4 +1,3 @@
-/// <reference types="@types/jest" />
 import { faVimeoV } from "@fortawesome/free-brands-svg-icons/faVimeoV";
 import * as React from "react";
 

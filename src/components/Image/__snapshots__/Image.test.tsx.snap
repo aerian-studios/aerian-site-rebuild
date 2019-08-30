@@ -31,8 +31,7 @@ exports[`Image renders fixed image correctly 1`] = `
         "opacity": 1,
         "position": "absolute",
         "top": 0,
-        "transition": "opacity 0.5s",
-        "transitionDelay": "0.25s",
+        "transitionDelay": "500ms",
         "width": "100%",
       }
     }
@@ -44,8 +43,10 @@ exports[`Image renders fixed image correctly 1`] = `
     <img
       alt=""
       height={290}
+      loading="lazy"
       onLoad={[Function]}
       src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+      srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
       style={
         Object {
           "height": "100%",
@@ -55,7 +56,7 @@ exports[`Image renders fixed image correctly 1`] = `
           "opacity": 0,
           "position": "absolute",
           "top": 0,
-          "transition": "opacity 0.5s",
+          "transition": "opacity 500ms",
           "width": "100%",
         }
       }
@@ -65,7 +66,7 @@ exports[`Image renders fixed image correctly 1`] = `
   <noscript
     dangerouslySetInnerHTML={
       Object {
-        "__html": "<picture><source srcSet=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" /><img width=\\"290\\" height=\\"290\\" src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+        "__html": "<picture><source srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" /><img loading=\\"lazy\\" width=\\"290\\" height=\\"290\\" srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
       }
     }
   />
@@ -102,8 +103,7 @@ exports[`Image renders fluid image correctly 1`] = `
         "opacity": 1,
         "position": "absolute",
         "top": 0,
-        "transition": "opacity 0.5s",
-        "transitionDelay": "0.25s",
+        "transitionDelay": "500ms",
         "width": "100%",
       }
     }
@@ -115,8 +115,11 @@ exports[`Image renders fluid image correctly 1`] = `
     />
     <img
       alt=""
+      loading="lazy"
       onLoad={[Function]}
+      sizes="(max-width: 290px) 100vw, 290px"
       src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+      srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
       style={
         Object {
           "height": "100%",
@@ -126,7 +129,7 @@ exports[`Image renders fluid image correctly 1`] = `
           "opacity": 0,
           "position": "absolute",
           "top": 0,
-          "transition": "opacity 0.5s",
+          "transition": "opacity 500ms",
           "width": "100%",
         }
       }
@@ -135,7 +138,7 @@ exports[`Image renders fluid image correctly 1`] = `
   <noscript
     dangerouslySetInnerHTML={
       Object {
-        "__html": "<picture><source srcSet=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" /><img src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+        "__html": "<picture><source srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
       }
     }
   />

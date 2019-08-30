@@ -51,6 +51,7 @@ export const WhatWeDoPage: React.SFC<Props> = ({ page }) => (
             {page.sections &&
                 page.sections.map((section, i) => (
                     <PageSectionBlock
+                        key={section.title}
                         section={section}
                         alternate={i % 2 === 0}
                     />

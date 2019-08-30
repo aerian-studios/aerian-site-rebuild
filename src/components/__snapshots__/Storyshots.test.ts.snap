@@ -10759,16 +10759,42 @@ exports[`Storyshots Image With sharp 1`] = `
             "opacity": 1,
             "position": "absolute",
             "top": 0,
-            "transition": "opacity 0.5s",
-            "transitionDelay": "0.25s",
+            "transitionDelay": "500ms",
             "width": "100%",
           }
         }
       />
+      <picture>
+        <source
+          sizes="(max-width: 290px) 100vw, 290px"
+          srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+        />
+        <img
+          alt=""
+          loading="lazy"
+          onLoad={[Function]}
+          sizes="(max-width: 290px) 100vw, 290px"
+          src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+          srcSet="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png"
+          style={
+            Object {
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "opacity 500ms",
+              "width": "100%",
+            }
+          }
+        />
+      </picture>
       <noscript
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<picture><source srcSet=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" /><img src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            "__html": "<picture><source srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 290px) 100vw, 290px\\" srcset=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" src=\\"https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/483/paolo-funny.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
         }
       />
@@ -21776,42 +21802,32 @@ exports[`Storyshots ProjectPage Default 1`] = `
         className=""
       >
         <a
-          className=""
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
-          className=""
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
-          className=""
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
-          className=""
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
-          className=""
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -24524,42 +24540,32 @@ exports[`Storyshots SectionNav Default 1`] = `
         className=""
       >
         <a
-          className=""
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
-          className=""
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
-          className=""
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
-          className=""
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
-          className=""
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -24950,41 +24956,36 @@ exports[`Storyshots SectionNav With contextual styles 1`] = `
       >
         <a
           className="sectionNavItem"
-          href="/#caseStudy"
+          href="#caseStudy"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Introduction
         </a>
         <a
           className="sectionNavItem"
-          href="/#gallery"
+          href="#gallery"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Gallery
         </a>
         <a
           className="sectionNavItem"
-          href="/#challenge"
+          href="#challenge"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Challenge
         </a>
         <a
           className="sectionNavItem"
-          href="/#solution"
+          href="#solution"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Solution
         </a>
         <a
           className="sectionNavItem"
-          href="/#results"
+          href="#results"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           The Result
         </a>
@@ -32364,42 +32365,32 @@ exports[`Storyshots WhatWeDoPage Default 1`] = `
         className=""
       >
         <a
-          className=""
-          href="/#wePlan"
+          href="#wePlan"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We plan
         </a>
         <a
-          className=""
-          href="/#weDesign"
+          href="#weDesign"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We design
         </a>
         <a
-          className=""
-          href="/#weDevelop"
+          href="#weDevelop"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We develop
         </a>
         <a
-          className=""
-          href="/#weDeliver"
+          href="#weDeliver"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We deliver
         </a>
         <a
-          className=""
-          href="/#weCelebrate"
+          href="#weCelebrate"
           onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           We celebrate
         </a>

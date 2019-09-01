@@ -99,6 +99,21 @@ export interface PageSection {
     testimonial?: Testimonial;
 }
 
+export interface Tweet {
+    full_text: string;
+    entities: {
+        urls?: Array<{
+            display_url: string;
+            expanded_url: string;
+            indices: [number, number];
+            url: string;
+        }>;
+    };
+    user: {
+        image: string;
+    };
+}
+
 export interface Page {
     title: string;
     path: string;

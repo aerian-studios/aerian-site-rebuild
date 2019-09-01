@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import * as renderer from "react-test-renderer";
-import { Edge, NodeList, ProjectBox } from "../../types/data";
+import { ProjectBox } from "../../types/data";
 import { projectBox } from "../../types/fixtures";
 import { RevealCard } from "../RevealCard";
 import { ShowcaseCarousel } from "./index";

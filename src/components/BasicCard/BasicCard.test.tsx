@@ -4,7 +4,7 @@ import * as renderer from "react-test-renderer";
 
 import { BasicCard } from ".";
 
-describe("BasicCard", () =>
+describe("BasicCard", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -14,4 +14,5 @@ describe("BasicCard", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

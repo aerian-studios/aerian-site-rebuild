@@ -8,8 +8,8 @@ import { mockTweet } from "../../lib/twitter.test";
 import { useStaticQuery } from "gatsby";
 
 describe("TweetView", () => {
-    beforeEach(async () => {
-        useStaticQuery.mockImplementationOnce(() => mockTweet);
+    beforeEach(() => {
+        useStaticQuery.mockReturnValueOnce({ tweet: mockTweet });
     });
     it("renders correctly", () => {
         const tree = renderer

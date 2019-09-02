@@ -5,7 +5,7 @@ exports[`TweetView renders correctly 1`] = `
   className="myClass"
 >
   <div>
-    Really proud that our partners over at @CRbuildpeace are being featured by our friends at @BBCRadio4 this Sunday. What's more, we've recently just launched their new site - 
+    MOCK!: proud that our partners over at @CRbuildpeace are being featured by our friends at @BBCRadio4 this Sunday. What's more, we've recently just launched their new site - 
     <a
       href="http://www.c-r.org"
       rel="noreferrer noopener nofollow"

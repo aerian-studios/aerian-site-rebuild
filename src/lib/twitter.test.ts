@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 
 export const mockTweet: Tweet = {
     full_text:
-        "Really proud that our partners over at @CRbuildpeace are being featured by our friends at @BBCRadio4 this Sunday. What's more, we've recently just launched their new site - https://t.co/Os80j45F1N. Check it out! https://t.co/ewD0FdQT49",
+        "MOCK!: proud that our partners over at @CRbuildpeace are being featured by our friends at @BBCRadio4 this Sunday. What's more, we've recently just launched their new site - https://t.co/Os80j45F1N. Check it out! https://t.co/ewD0FdQT49",
     user: {
         image:
             "https://pbs.twimg.com/profile_images/378800000156917292/cba17ed82c5a99f3b91e805534b2d10f_normal.png"

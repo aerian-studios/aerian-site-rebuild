@@ -4,10 +4,11 @@ import * as renderer from "react-test-renderer";
 
 import { SiteLogo } from "./index";
 
-describe("SiteLogo", () =>
+describe("SiteLogo", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(<SiteLogo className="myClass" alt="a logo" />)
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

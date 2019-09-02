@@ -5,7 +5,7 @@ import * as renderer from "react-test-renderer";
 import { projectStage } from "../../types/fixtures";
 import { ProjectStageBlock } from "./index";
 
-describe("ProjectStageBlock", () =>
+describe("ProjectStageBlock", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -13,4 +13,5 @@ describe("ProjectStageBlock", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

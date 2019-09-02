@@ -4,7 +4,7 @@ import * as renderer from "react-test-renderer";
 
 import { MapView } from "./index";
 
-describe("HalfBlock", () =>
+describe("HalfBlock", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -14,4 +14,5 @@ describe("HalfBlock", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

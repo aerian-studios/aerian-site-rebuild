@@ -9,7 +9,7 @@ import { useStaticQuery } from "gatsby";
 
 describe("TweetView", () => {
     beforeEach(() => {
-        useStaticQuery.mockReturnValueOnce({ tweet: mockTweet });
+        (useStaticQuery as jest.Mock).mockReturnValueOnce({ tweet: mockTweet });
     });
     it("renders correctly", () => {
         const tree = renderer

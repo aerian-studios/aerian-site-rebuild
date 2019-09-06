@@ -154,7 +154,7 @@ exports[`SquareCarousel renders correctly 1`] = `
       aria-atomic="true"
       aria-live="polite"
     >
-      Item 0 of 0
+      Item 1 of 1
     </p>
   </div>
 </section>

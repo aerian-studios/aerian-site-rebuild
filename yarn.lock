@@ -12,7 +12,7 @@
     eslint-plugin-react "^7.13.0"
     eslint-plugin-react-hooks "^1.6.0"
 
-"@aerian/eslint-config-typescript@^2.0.1":
+"@aerian/eslint-config-typescript@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@aerian/eslint-config-typescript/-/eslint-config-typescript-2.0.2.tgz#e11d21e058b2bf59e25f8309affd00798f515fb2"
   integrity sha512-1yi4mUUSSeo6cU8INOUcjMA11S5XeBElPU0PbG/Qgu/W23VFMwCwIQFUNKsX50zK9CZ3nC7K3RMaAlML9cptpg==

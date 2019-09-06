@@ -24,20 +24,4 @@ describe("SectionNav", () => {
             .toJSON();
         expect(tree).toMatchSnapshot();
     });
-
-    it("renders with the correct nav items", () => {
-        const tree = renderer
-            .create(
-                <SectionNav
-                    className="myClass"
-                    onNavigation={() => false}
-                    keyConsts={keys}
-                />
-            )
-            .toJSON();
-
-        expect(tree!.children![0].children!.length).toEqual(
-            Object.keys(keys).length
-        );
-    });
 });

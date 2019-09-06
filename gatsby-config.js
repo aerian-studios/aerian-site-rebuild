@@ -13,7 +13,12 @@ module.exports = {
         "ProjectsJson.client": "ClientsJson"
     },
     plugins: [
-        `gatsby-plugin-netlify-cache`,
+        {
+            resolve: "gatsby-plugin-netlify-cache",
+            options: {
+                cachePublic: true
+            }
+        },
         `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
         {

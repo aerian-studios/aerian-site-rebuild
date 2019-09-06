@@ -23,7 +23,7 @@
         "gatsby-plugin-offline": "^2.2.4",
         "gatsby-plugin-react-helmet": "^3.1.2",
         "gatsby-plugin-sass": "^2.1.3",
-        "gatsby-plugin-sharp": "2.2.19-dev-1567425826094",
+        "gatsby-plugin-sharp": "2.2.19",
         "gatsby-plugin-typescript": "^2.1.2",
         "gatsby-source-filesystem": "^2.1.5",
         "gatsby-source-twitter": "^3.0.0",

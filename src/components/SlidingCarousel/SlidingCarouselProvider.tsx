@@ -220,16 +220,24 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     const checkForIndexLoop = React.useCallback(
         (destIndex: number): number => {
             const max = infinite
-                ? originalChildLength.current * 2 - 1
-                : originalChildLength.current - 1;
-            const min = infinite ? originalChildLength.current : 0;
+                ? originalChildLength.current * 2 + 1
+                : originalChildLength.current;
+            const min = infinite ? originalChildLength.current - 1 : 0;
+            console.log("indexloop", destIndex, max, min);
 
-            if (destIndex >= max) {
-                return destIndex - min;
+            if (destIndex > max) {
+                console.log("too big", destIndex - originalChildLength.current);
+
+                return destIndex - originalChildLength.current;
             }
 
             if (destIndex < min) {
-                return destIndex + min;
+                console.log(
+                    "too little",
+                    destIndex + originalChildLength.current
+                );
+
+                return destIndex + originalChildLength.current;
             }
 
             return destIndex;
@@ -272,7 +280,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
         if (
             position > max &&
-            checkNumberGreaterThanTolerance(position, max, 3)
+            checkNumberGreaterThanTolerance(position, max, 300)
         ) {
             newPosition = position - min;
             return { position: newPosition };
@@ -280,7 +288,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
         if (
             position < min &&
-            checkNumberGreaterThanTolerance(position, min, 3)
+            checkNumberGreaterThanTolerance(position, min, 300)
         ) {
             newPosition = position + min;
             return { position: newPosition };
@@ -290,7 +298,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     };
 
     // let deferDelay: any;
-    // let scrollDelay: any;
+    let scrollDelay: number | undefined;
     // const moveCarouselPage = (direction: number) => {
     //     // tslint:disable:no-unused-expression
     //     // deferDelay && window.clearTimeout(deferDelay);
@@ -359,9 +367,10 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             ) {
                 return;
             }
-            const childs = sliderRef.current.children;
 
-            const focussable = childs[currentIndex].querySelector("a");
+            const childs = sliderRef.current.children;
+            const focussable = childs[index].querySelector("a");
+
             // tslint:disable:no-unused-expression
             focussable && focussable.focus();
         },
@@ -370,12 +379,14 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
     const setCurrent = React.useCallback(
         (newCurrent: number, setFocus: boolean = false): void => {
-            console.log({ newCurrent, setFocus, currentIndex });
+            console.log(
+                { newCurrent, setFocus, currentIndex },
+                "..............................."
+            );
 
             if (newCurrent === currentIndex) {
                 return;
             }
-            console.log({ newCurrent, setFocus });
 
             if (setFocus) {
                 setCurrentFocus(newCurrent);
@@ -477,17 +488,8 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         );
     }, [itemGap]);
 
-    const moveCarouselPage = React.useCallback(
-        (direction: 1 | -1) => {
-            console.log(currentIndex + direction);
-
-            setCurrent(currentIndex + direction, true);
-        },
-        [currentIndex, setCurrent]
-    );
-
     const alignTheThingsToIndex = React.useCallback(
-        (indexToAlign?: number): void => {
+        (indexToAlign?: number, immediate: boolean = false): void => {
             const index = indexToAlign || currentIndex;
             if (!childSizes.current.length || index === currentIndex) {
                 return;
@@ -499,10 +501,27 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             );
 
             destination.current = scrollAmount;
-            scrollToPosition(destination.current);
+            scrollToPosition(destination.current, immediate);
             setCurrent(index);
         },
         [currentIndex, destination, center, scrollToPosition, setCurrent]
+    );
+
+    const moveCarouselPage = React.useCallback(
+        (direction: 1 | -1) => {
+            const newCurrent = currentIndex + direction;
+            const validCurrent = checkForIndexLoop(newCurrent);
+
+            console.log("moveCarouselPage", newCurrent, validCurrent);
+
+            // pre-loop so that the re-render doesn't have to
+            if (validCurrent !== newCurrent) {
+                alignTheThingsToIndex(validCurrent + direction * -1, true);
+            }
+
+            setCurrent(validCurrent, true);
+        },
+        [alignTheThingsToIndex, checkForIndexLoop, currentIndex, setCurrent]
     );
 
     const alignTheThings = React.useCallback(() => {
@@ -535,7 +554,15 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         );
 
         destination.current = scrollAmount;
-        scrollToPosition(destination.current, true);
+        scrollDelay = window.setTimeout(() => {
+            console.log("about to screooll", currentIndex);
+            scrollToPosition(destination.current, false);
+        }, 100);
+
+        return () => {
+            // tslint:disable:no-unused-expression
+            scrollDelay && window.clearTimeout(scrollDelay);
+        };
     }, [
         center,
         setCurrent,
@@ -553,23 +580,17 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         if (!sliderRef || !sliderRef.current) {
             return;
         }
-        console.log("!!!!!!!!!!!!!!!!!!!!!!!", { currentIndex });
 
-        // // set scroll position to the middle
+        // set scroll position to the middle
         // sliderRef.current.scroll(originalWidth.current, 0);
         sliderRef.current.addEventListener("scroll", scrollHandler);
 
         // Remove the event listener on destroy
         return () => {
-            console.log("vvvvvvvvvvvvvv");
             // tslint:disable:no-unused-expression
             sliderRef.current &&
                 sliderRef.current.removeEventListener("scroll", scrollHandler);
             debouncedCentreThingsNearestToPosition.clear();
-            // tslint:disable:no-unused-expression
-            // deferDelay && window.clearTimeout(deferDelay);
-            // tslint:disable:no-unused-expression
-            // scrollDelay && window.clearTimeout(scrollDelay);
         };
     }, [currentIndex, debouncedCentreThingsNearestToPosition, scrollHandler]);
 
@@ -674,6 +695,10 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             ? { "aria-label": carouselLabel }
             : { "aria-labelledby": uniqueId };
 
+    const normalisedIndex =
+        currentIndex > originalChildLength.current
+            ? currentIndex - originalChildLength.current
+            : currentIndex;
     return (
         <section
             className={classNames(className, styles.SCSliderProvider)}
@@ -687,7 +712,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             {backButton}
             {fwdButton}
             <SliderProgressTracker
-                index={originalChildLength.current > 0 ? currentIndex + 1 : 0}
+                index={normalisedIndex}
                 total={originalChildLength.current}
                 pagerElementClick={setCurrent}
             />

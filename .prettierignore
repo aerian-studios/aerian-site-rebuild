@@ -1,2 +1,5 @@
 node_modules
 buildspec*
+package.json
+yarn.lock
+_templates

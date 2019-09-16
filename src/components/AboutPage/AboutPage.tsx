@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import * as React from "react";
 
 import { Link } from "gatsby";
@@ -19,7 +18,7 @@ interface Props {
 export const AboutPage: React.SFC<Props> = ({ page, clients }) => (
     <>
         <PageHeader>
-            <HeroBlock heroImage={page.heroImage} aria-labelled-by="page-title">
+            <HeroBlock heroImage={page.heroImage} aria-labelledby="page-title">
                 <div>
                     <h1>If you rely on the web you can rely on us</h1>
                     <Button arrow={true} alternate={true}>

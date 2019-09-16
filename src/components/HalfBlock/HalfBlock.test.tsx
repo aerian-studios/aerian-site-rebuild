@@ -1,17 +1,13 @@
-/// <reference types="@types/jest" />
 import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
 import { HalfBlock } from "./index";
 
-
-describe("HalfBlock", () => (
+describe("HalfBlock", () =>
     it("renders correctly", () => {
         const tree = renderer
-            .create(<HalfBlock className="myClass" />
-            )
+            .create(<HalfBlock className="myClass" />)
             .toJSON();
         expect(tree).toMatchSnapshot();
-    })
-));
+    }));

@@ -7,7 +7,11 @@ interface Props {
     className?: string;
 }
 
-export const GroupThree: React.SFC<Props> = ({ children, style, className }) => (
+export const GroupThree: React.SFC<Props> = ({
+    children,
+    style,
+    className
+}) => (
     <div className={[styles.component, className].join(" ")} style={style}>
         {children}
     </div>

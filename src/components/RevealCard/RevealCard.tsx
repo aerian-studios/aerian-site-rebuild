@@ -21,7 +21,7 @@ export class RevealCard extends React.PureComponent<Props> {
     public setVisible = (visible: boolean) =>
         this.setState({
             visible,
-            seen: visible ? visible : this.state.seen
+            seen: visible || this.state.seen
         });
 
     public render() {

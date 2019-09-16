@@ -7,6 +7,7 @@ exports[`SquareCarousel renders correctly 1`] = `
 >
   <div
     className=""
+    onWheel={[Function]}
   >
     <div
       className=""
@@ -154,7 +155,7 @@ exports[`SquareCarousel renders correctly 1`] = `
       aria-atomic="true"
       aria-live="polite"
     >
-      Item 1 of 1
+      Item 0 of 1
     </p>
   </div>
 </section>

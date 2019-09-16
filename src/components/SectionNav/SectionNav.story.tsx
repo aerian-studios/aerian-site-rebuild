@@ -1,6 +1,5 @@
 import * as React from "react";
 
-
 import { storiesOf } from "@storybook/react";
 import { SectionNav } from "./SectionNav";
 
@@ -15,25 +14,19 @@ const keys = {
 };
 
 storiesOf("SectionNav", module)
-    .add(
-        "Default",
-        (() => (
-            <SectionNav
-                keyConsts={keys}
-                onNavigation={itemKey => console.log(`clicked ${itemKey}`)}
-                className="myClass"
-            />
-        ))
-    )
-    .add(
-        "With contextual styles",
-        (() => (
-            <SectionNav
-                keyConsts={keys}
-                onNavigation={itemKey => console.log(`clicked ${itemKey}`)}
-                className={sharedStyles.sectionNav}
-                navItemClassName={sharedStyles.sectionNavItem}
-                navWrapperClassName={sharedStyles.sectionNavWrapper}
-            />
-        ))
-    );
+    .add("Default", () => (
+        <SectionNav
+            keyConsts={keys}
+            onNavigation={itemKey => console.log(`clicked ${itemKey}`)}
+            className="myClass"
+        />
+    ))
+    .add("With contextual styles", () => (
+        <SectionNav
+            keyConsts={keys}
+            onNavigation={itemKey => console.log(`clicked ${itemKey}`)}
+            className={sharedStyles.sectionNav}
+            navItemClassName={sharedStyles.sectionNavItem}
+            navWrapperClassName={sharedStyles.sectionNavWrapper}
+        />
+    ));

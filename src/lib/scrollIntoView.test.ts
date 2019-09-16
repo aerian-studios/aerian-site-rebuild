@@ -1,4 +1,3 @@
-/// <reference types="@types/jest" />
 import * as scrollIntoView from "./scrollIntoView";
 
 describe("scrollIntoView", () => {

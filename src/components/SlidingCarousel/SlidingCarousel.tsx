@@ -4,10 +4,11 @@ import * as React from "react";
 import * as styles from "./SlidingCarousel.module.scss";
 
 export interface SliderProps extends React.ComponentPropsWithRef<React.FC> {
+    interactionPreparation?: (event: React.WheelEvent) => void;
     style?: React.CSSProperties;
     // Infinite scrolling. Defaults to false
     infinite?: boolean;
-    ref?: any;
+    ref?: React.MutableRefObject<HTMLDivElement | null>;
 }
 
 /**
@@ -48,11 +49,16 @@ const createDuplicateChildren = (
 export const SlidingCarousel: React.RefForwardingComponent<
     React.Ref<HTMLDivElement>,
     SliderProps
+    // eslint-disable-next-line react/display-name
 > = React.forwardRef((props: SliderProps, ref?: React.Ref<HTMLDivElement>) => {
-    const { children, style, infinite = false } = props;
+    const { children, style, infinite = false, interactionPreparation } = props;
 
     return (
-        <div className={classNames(styles.SCSliderWrapper)} style={style}>
+        <div
+            className={classNames(styles.SCSliderWrapper)}
+            style={style}
+            onWheel={interactionPreparation}
+        >
             <div className={classNames(styles.SCSlider)} ref={ref}>
                 {infinite
                     ? createDuplicateChildren(children, {

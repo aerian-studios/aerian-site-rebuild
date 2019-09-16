@@ -52,7 +52,7 @@ export const setCSSVariable = (
     body.style.setProperty(propertyName, propertyValue);
 };
 
-export const checkNumberGreaterThanTolerance = (
+export const checkNumberExceedsTolerance = (
     numberToCheck: number,
     checkWithNumber: number,
     tolerance: number = 2
@@ -120,7 +120,7 @@ export const calculateNearestSnapPoint = (
 
     let scrollAmount = 0;
     let i = 0;
-    let elW: number;
+    let elW = 0;
     let prevW = 0;
     let prevAmount: number = scrollAmount;
 
@@ -146,6 +146,11 @@ export const calculateNearestSnapPoint = (
     if (Math.abs(prevAmount - position) < Math.abs(scrollAmount - position)) {
         scrollAmount = prevAmount;
     }
+
+    // scrollAmount -= center;
+    // if (center) {
+    //     scrollAmount += elW * 0.5;
+    // }
 
     // @todo: add for optimisation add to the above loop and/or split out into function
     if (center) {
@@ -219,24 +224,18 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     );
     const checkForIndexLoop = React.useCallback(
         (destIndex: number): number => {
-            const max = infinite
-                ? originalChildLength.current * 2 + 1
-                : originalChildLength.current;
-            const min = infinite ? originalChildLength.current - 1 : 0;
-            console.log("indexloop", destIndex, max, min);
+            const max =
+                -1 +
+                (infinite
+                    ? originalChildLength.current * 2
+                    : originalChildLength.current);
+            const min = infinite ? originalChildLength.current : 0;
 
             if (destIndex > max) {
-                console.log("too big", destIndex - originalChildLength.current);
-
                 return destIndex - originalChildLength.current;
             }
 
             if (destIndex < min) {
-                console.log(
-                    "too little",
-                    destIndex + originalChildLength.current
-                );
-
                 return destIndex + originalChildLength.current;
             }
 
@@ -244,127 +243,51 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         },
         [infinite]
     );
-    // const currentIndex = React.useRef<number>(0); // the current index
-    const [currentIndex, setCurrentIndex] = React.useState<number>(
-        checkForIndexLoop(
-            infinite
-                ? center
-                    ? Math.floor(originalChildLength.current * 1.5)
-                    : originalChildLength.current
-                : center
-                ? Math.floor(originalChildLength.current * 0.5)
-                : 0
-        )
-    );
-
-    const sliderRef = React.useRef<HTMLDivElement>();
+    const [currentIndex, setCurrentIndex] = React.useState<number>(0);
+    const sliderRef = React.useRef<HTMLDivElement | null>(null);
     // destination in async functions
     const destination = React.useRef<number>(0);
-
     // Used in calculating scroll etc
     const originalWidth = React.useRef<number>(0);
     const pageWidth = React.useRef<number>(240);
-
     // a utitlity array for more speedy checking of child sizes
     const childSizes = React.useRef([] as Size[]);
+    // switch to prevent scroll loop checking
+    const disableScrollLoopChecking = React.useRef<boolean>(false);
 
     /**
      * Method to check if the infinite scroll needs to loop
      * @param {number} position - the current scroll position
      * @return {LoopCheck} - A position of either `null` for no loop need or an adjusted position number that doesn't need to loop
      */
-    const checkForLoop = (position: number): LoopCheck => {
-        const max = originalWidth.current * 2;
-        const min = originalWidth.current;
-        let newPosition;
+    const checkForLoop = React.useCallback((position: number): LoopCheck => {
+        if (disableScrollLoopChecking.current) {
+            return { position: null };
+        }
+        const lastChildWidth =
+            childSizes.current[originalChildLength.current - 1].width;
+        const firstChildWidth = childSizes.current[0].width;
 
-        if (
-            position > max &&
-            checkNumberGreaterThanTolerance(position, max, 300)
-        ) {
-            newPosition = position - min;
+        const max = originalWidth.current * 2 + firstChildWidth;
+        const min = originalWidth.current - lastChildWidth;
+
+        if (position > max && checkNumberExceedsTolerance(position, max, 30)) {
+            const newPosition = position - originalWidth.current;
+
             return { position: newPosition };
         }
 
-        if (
-            position < min &&
-            checkNumberGreaterThanTolerance(position, min, 300)
-        ) {
-            newPosition = position + min;
+        if (position < min && checkNumberExceedsTolerance(position, min, 30)) {
+            const newPosition = position + originalWidth.current;
             return { position: newPosition };
         }
 
         return { position: null };
-    };
-
-    // let deferDelay: any;
-    let scrollDelay: number | undefined;
-    // const moveCarouselPage = (direction: number) => {
-    //     // tslint:disable:no-unused-expression
-    //     // deferDelay && window.clearTimeout(deferDelay);
-    //     // tslint:disable:no-unused-expression
-    //     // scrollDelay && window.clearTimeout(scrollDelay);
-
-    //     const start = currentIndex ? currentIndex - 1 : 0;
-    //     const end = currentIndex ? start + 1 : start + 2;
-    //     const visibleItems = childSizes.current.slice(start, end);
-    //     const w = pageWidth.current / 2;
-    //     let itemWidths = 0;
-    //     let indices = 0;
-    //     // @todo: extract this into getVisibleItemsPerPage or somethign
-    //     while (visibleItems.length && itemWidths <= w) {
-    //         const itemIndex =
-    //             visibleItems.length > 1
-    //                 ? Math.ceil(visibleItems.length / 2)
-    //                 : 0;
-
-    //         const item = visibleItems.splice(itemIndex, 1);
-
-    //         // update page centre to item centre based on item width
-    //         itemWidths += item[0].width;
-    //         indices++;
-    //     }
-    //     const destIndex = indices * direction + currentIndex;
-    //     const newIndex = checkForIndexLoop(destIndex);
-
-    //     setFocus = true;
-    //     alignTheThingsToIndex(newIndex);
-
-    //     if (destIndex !== newIndex) {
-    //         setFocus = true;
-    //     }
-
-    //     // Check for loop before scrolling
-    //     destination.current = destination.current + amountToScroll * direction;
-    //     const destCheck = checkForLoop(destination.current);
-
-    //     // disable the scroll centerer
-    //     stillInFrame = true;
-
-    //     if (destCheck.position) {
-    //         destination.current = destCheck.position;
-    //         const preDest = destination.current - amountToScroll * direction;
-    //         scrollToPosition(preDest, true);
-    //     }
-
-    //     // Needs to defer this second scroll request
-    //     deferDelay = window.setTimeout(() => {
-    //         scrollToPosition(destination.current);
-    //     }, 60);
-
-    //     // wait until scroll complete before re-enabling scroll checking
-    //     scrollDelay = window.setTimeout(() => {
-    //         stillInFrame = false;
-    //     }, 2000);
-    // };
+    }, []);
 
     const setCurrentFocus = React.useCallback(
-        (index: number = currentIndex): void => {
-            if (
-                !sliderRef ||
-                !sliderRef.current ||
-                !sliderRef.current.children
-            ) {
+        (index: number = currentIndex || 0): void => {
+            if (!sliderRef.current || !sliderRef.current.children) {
                 return;
             }
 
@@ -379,11 +302,6 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
     const setCurrent = React.useCallback(
         (newCurrent: number, setFocus: boolean = false): void => {
-            console.log(
-                { newCurrent, setFocus, currentIndex },
-                "..............................."
-            );
-
             if (newCurrent === currentIndex) {
                 return;
             }
@@ -391,11 +309,13 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             if (setFocus) {
                 setCurrentFocus(newCurrent);
             }
+
             setCurrentIndex(newCurrent);
         },
         [currentIndex, setCurrentFocus]
     );
 
+    const RAF = React.useRef<number>();
     const scrollToPosition = React.useCallback(
         (position: number, immediate: boolean = false): void => {
             if (!sliderRef || !sliderRef.current) {
@@ -405,45 +325,52 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             if (immediate) {
                 sliderRef.current.style.scrollBehavior = "auto";
             }
-            sliderRef.current.scroll(position, 0);
+            RAF.current = window.requestAnimationFrame(() => {});
+
+            sliderRef.current && sliderRef.current.scroll(position, 0);
 
             if (immediate) {
                 sliderRef.current.style.scrollBehavior = "smooth";
             }
         },
-        [sliderRef]
+        []
     );
 
-    const alignThingsNearestToPosition = (position?: number) => {
-        const newDestination =
-            typeof position !== "undefined" ? position : destination.current;
-        if (
-            !childSizes.current.length ||
-            newDestination === destination.current
-        ) {
-            return;
-        }
+    const alignThingsNearestToPosition = React.useCallback(
+        (position?: number) => {
+            const newDestination =
+                typeof position !== "undefined"
+                    ? position
+                    : destination.current;
+            if (
+                !childSizes.current.length ||
+                newDestination === destination.current
+            ) {
+                return;
+            }
 
-        destination.current = newDestination;
-        const nearestSnap = calculateNearestSnapPoint(
-            newDestination,
-            childSizes.current,
-            center ? pageWidth.current * 0.5 : 0
-        );
-
-        if (
-            !checkNumberGreaterThanTolerance(
+            destination.current = newDestination;
+            const nearestSnap = calculateNearestSnapPoint(
                 newDestination,
-                nearestSnap.scrollAmount
-            )
-        ) {
-            return;
-        }
+                childSizes.current,
+                center ? pageWidth.current * 0.5 : 0
+            );
 
-        destination.current = nearestSnap.scrollAmount;
-        setCurrent(nearestSnap.index);
-        scrollToPosition(nearestSnap.scrollAmount);
-    };
+            if (
+                !checkNumberExceedsTolerance(
+                    newDestination,
+                    nearestSnap.scrollAmount
+                )
+            ) {
+                return;
+            }
+
+            destination.current = nearestSnap.scrollAmount;
+            setCurrent(nearestSnap.index);
+            scrollToPosition(nearestSnap.scrollAmount);
+        },
+        [center, setCurrent, scrollToPosition]
+    );
 
     const debouncedCentreThingsNearestToPosition = debounce(
         alignThingsNearestToPosition,
@@ -460,7 +387,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         }
         const lastX = sliderRef.current.scrollLeft;
 
-        if (!stillInFrame && infinite) {
+        if (!disableScrollLoopChecking.current && !stillInFrame && infinite) {
             window.requestAnimationFrame(() => {
                 const check = checkForLoop(lastX);
 
@@ -470,6 +397,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
                 stillInFrame = false;
             });
 
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             stillInFrame = true;
         }
 
@@ -486,11 +414,18 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             sliderRef.current.children,
             parseInt(itemGap, 10)
         );
+
+        originalWidth.current =
+            childSizes.current.reduce(
+                (prev, current) => prev + current.width,
+                0
+            ) / 3;
     }, [itemGap]);
 
     const alignTheThingsToIndex = React.useCallback(
         (indexToAlign?: number, immediate: boolean = false): void => {
             const index = indexToAlign || currentIndex;
+
             if (!childSizes.current.length || index === currentIndex) {
                 return;
             }
@@ -502,23 +437,28 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
 
             destination.current = scrollAmount;
             scrollToPosition(destination.current, immediate);
-            setCurrent(index);
         },
-        [currentIndex, destination, center, scrollToPosition, setCurrent]
+        [currentIndex, destination, center, scrollToPosition]
     );
 
-    const moveCarouselPage = React.useCallback(
+    const toggleScrollChecking = React.useCallback(
+        (event: React.MouseEvent) => {
+            event.stopPropagation();
+            disableScrollLoopChecking.current = false;
+        },
+        []
+    );
+
+    const triggerCarouselPage = React.useCallback(
         (direction: 1 | -1) => {
+            disableScrollLoopChecking.current = true;
             const newCurrent = currentIndex + direction;
             const validCurrent = checkForIndexLoop(newCurrent);
-
-            console.log("moveCarouselPage", newCurrent, validCurrent);
 
             // pre-loop so that the re-render doesn't have to
             if (validCurrent !== newCurrent) {
                 alignTheThingsToIndex(validCurrent + direction * -1, true);
             }
-
             setCurrent(validCurrent, true);
         },
         [alignTheThingsToIndex, checkForIndexLoop, currentIndex, setCurrent]
@@ -533,10 +473,10 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
      * Set some init code to workout original width and do any centring that needs to happen
      */
     React.useLayoutEffect(() => {
-        if (!sliderRef || !sliderRef.current) {
+        if (!sliderRef.current) {
             return;
         }
-        originalWidth.current = sliderRef.current.scrollWidth / 3;
+
         pageWidth.current = window.outerWidth;
         calculateChildSizes();
         setCSSVariable("--SCSnapAlign", center ? "center" : "start");
@@ -547,6 +487,18 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
      * Scroll to initial position
      */
     React.useEffect(() => {
+        if (typeof currentIndex === "undefined") {
+            setCurrent(
+                infinite
+                    ? center
+                        ? Math.floor(originalChildLength.current * 1.5)
+                        : originalChildLength.current
+                    : center
+                    ? Math.floor(originalChildLength.current * 0.5)
+                    : 0
+            );
+        }
+
         const scrollAmount = calculateScrollOffsetForIndex(
             currentIndex,
             childSizes.current,
@@ -554,15 +506,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         );
 
         destination.current = scrollAmount;
-        scrollDelay = window.setTimeout(() => {
-            console.log("about to screooll", currentIndex);
-            scrollToPosition(destination.current, false);
-        }, 100);
-
-        return () => {
-            // tslint:disable:no-unused-expression
-            scrollDelay && window.clearTimeout(scrollDelay);
-        };
+        scrollToPosition(destination.current, false);
     }, [
         center,
         setCurrent,
@@ -577,20 +521,20 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
      * Add scroll checking on slider
      */
     React.useEffect(() => {
-        if (!sliderRef || !sliderRef.current) {
+        if (!sliderRef.current) {
             return;
         }
 
-        // set scroll position to the middle
-        // sliderRef.current.scroll(originalWidth.current, 0);
-        sliderRef.current.addEventListener("scroll", scrollHandler);
+        const slider = sliderRef.current;
+
+        slider.addEventListener("scroll", scrollHandler);
 
         // Remove the event listener on destroy
         return () => {
-            // tslint:disable:no-unused-expression
-            sliderRef.current &&
-                sliderRef.current.removeEventListener("scroll", scrollHandler);
+            // tslint:disable-next-line no-unused-expression
+            slider.removeEventListener("scroll", scrollHandler);
             debouncedCentreThingsNearestToPosition.clear();
+            RAF.current && cancelAnimationFrame(RAF.current);
         };
     }, [currentIndex, debouncedCentreThingsNearestToPosition, scrollHandler]);
 
@@ -602,30 +546,42 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         };
     }, [alignTheThings]);
 
-    const FwdButton: React.SFC<
+    const FwdButton: React.FC<
         React.HTMLAttributes<HTMLButtonElement>
-    > = props => (
-        <button
-            aria-hidden="true"
-            tabIndex={-1}
-            {...props}
-            onClick={() => {
-                moveCarouselPage(1);
-            }}
-        />
-    );
-    const BackButton: React.SFC<
+    > = props => {
+        const paginationClick = React.useCallback(event => {
+            event.stopPropagation();
+
+            triggerCarouselPage(1);
+        }, []);
+
+        return (
+            <button
+                aria-hidden="true"
+                tabIndex={-1}
+                {...props}
+                onClick={paginationClick}
+            />
+        );
+    };
+    const BackButton: React.FC<
         React.HTMLAttributes<HTMLButtonElement>
-    > = props => (
-        <button
-            aria-hidden="true"
-            tabIndex={-1}
-            {...props}
-            onClick={() => {
-                moveCarouselPage(-1);
-            }}
-        />
-    );
+    > = props => {
+        const paginationClick = React.useCallback(event => {
+            event.stopPropagation();
+
+            triggerCarouselPage(-1);
+        }, []);
+
+        return (
+            <button
+                aria-hidden="true"
+                tabIndex={-1}
+                {...props}
+                onClick={paginationClick}
+            />
+        );
+    };
 
     interface SliderProgressTrackerProps
         extends React.AllHTMLAttributes<HTMLElement> {
@@ -706,7 +662,11 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             {...regionLabel}
         >
             {typeof carouselLabel === "string" ? null : carouselLabel}
-            <SlidingCarousel infinite={infinite} ref={sliderRef}>
+            <SlidingCarousel
+                infinite={infinite}
+                ref={sliderRef}
+                interactionPreparation={toggleScrollChecking}
+            >
                 {children}
             </SlidingCarousel>
             {backButton}

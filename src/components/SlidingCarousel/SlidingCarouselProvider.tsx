@@ -120,44 +120,29 @@ export const calculateNearestSnapPoint = (
 
     let scrollAmount = 0;
     let i = 0;
-    let elW = 0;
     let prevW = 0;
-    let prevAmount: number = scrollAmount;
-
     // loop through and add up all the widths
-    while (scrollAmount < position && i < childSizes.length) {
-        elW = childSizes[i].width;
-        prevAmount = scrollAmount;
+    while (scrollAmount <= position && i < childSizes.length) {
+        const elW = childSizes[i].width;
+        const nextFullSlide = scrollAmount + elW / 2;
 
-        if (i > 0) {
+        if (position <= nextFullSlide) {
+            break;
+        } else {
             scrollAmount += prevW;
-        }
-        const diff: number = scrollAmount - position;
-        const nextSnap: boolean = position < scrollAmount + elW / 2;
-
-        if (diff <= 0 && !nextSnap) {
+            prevW = elW;
             i++;
         }
-        prevW = elW;
     }
 
     i = Math.min(i, childSizes.length);
 
-    if (Math.abs(prevAmount - position) < Math.abs(scrollAmount - position)) {
-        scrollAmount = prevAmount;
-    }
-
-    // scrollAmount -= center;
-    // if (center) {
-    //     scrollAmount += elW * 0.5;
-    // }
-
-    // @todo: add for optimisation add to the above loop and/or split out into function
+    // scrollposition is for the left of the screen and left of the slide
+    // so calculate how many full slides fit in and add the current half slide
     if (center) {
         let centerDiff = 0;
         let currW = 0;
         let ii = Math.max(i - 1, 0);
-
         while (centerDiff < center) {
             currW = childSizes[ii].width;
             centerDiff += currW;
@@ -166,11 +151,12 @@ export const calculateNearestSnapPoint = (
                 ii = 0;
             }
         }
-
         const offsetDiff = centerDiff - center;
         const diff = currW * 0.5 - offsetDiff;
-
         scrollAmount -= diff;
+
+        // Need to increment the index for centred
+        i++;
     }
 
     return { scrollAmount, index: i };
@@ -243,10 +229,16 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         },
         [infinite]
     );
-    const [currentIndex, setCurrentIndex] = React.useState<number>(0);
+    const [currentIndex, setCurrentIndex] = React.useState<number>(
+        infinite
+            ? center
+                ? Math.floor(originalChildLength.current * 1.5)
+                : originalChildLength.current
+            : center
+            ? Math.floor(originalChildLength.current * 0.5)
+            : 0
+    );
     const sliderRef = React.useRef<HTMLDivElement | null>(null);
-    // destination in async functions
-    const destination = React.useRef<number>(0);
     // Used in calculating scroll etc
     const originalWidth = React.useRef<number>(0);
     const pageWidth = React.useRef<number>(240);
@@ -301,18 +293,15 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     );
 
     const setCurrent = React.useCallback(
-        (newCurrent: number, setFocus: boolean = false): void => {
-            if (newCurrent === currentIndex) {
-                return;
-            }
-
+        (newCurrent: number, setFocus: boolean = false): number => {
             if (setFocus) {
                 setCurrentFocus(newCurrent);
             }
 
             setCurrentIndex(newCurrent);
+            return newCurrent;
         },
-        [currentIndex, setCurrentFocus]
+        [setCurrentFocus]
     );
 
     const RAF = React.useRef<number>();
@@ -339,37 +328,24 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     const alignThingsNearestToPosition = React.useCallback(
         (position?: number) => {
             const newDestination =
-                typeof position !== "undefined"
-                    ? position
-                    : destination.current;
-            if (
-                !childSizes.current.length ||
-                newDestination === destination.current
-            ) {
+                typeof position !== "undefined" ? position : 0;
+            if (!childSizes.current.length) {
                 return;
             }
 
-            destination.current = newDestination;
             const nearestSnap = calculateNearestSnapPoint(
                 newDestination,
                 childSizes.current,
                 center ? pageWidth.current * 0.5 : 0
             );
 
-            if (
-                !checkNumberExceedsTolerance(
-                    newDestination,
-                    nearestSnap.scrollAmount
-                )
-            ) {
-                return;
+            if (currentIndex === nearestSnap.index) {
+                scrollToPosition(nearestSnap.scrollAmount);
+            } else {
+                setCurrent(nearestSnap.index);
             }
-
-            destination.current = nearestSnap.scrollAmount;
-            setCurrent(nearestSnap.index);
-            scrollToPosition(nearestSnap.scrollAmount);
         },
-        [center, setCurrent, scrollToPosition]
+        [center, currentIndex, scrollToPosition, setCurrent]
     );
 
     const debouncedCentreThingsNearestToPosition = debounce(
@@ -426,7 +402,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         (indexToAlign?: number, immediate: boolean = false): void => {
             const index = indexToAlign || currentIndex;
 
-            if (!childSizes.current.length || index === currentIndex) {
+            if (!childSizes.current.length) {
                 return;
             }
             const scrollAmount = calculateScrollOffsetForIndex(
@@ -435,10 +411,9 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
                 center ? pageWidth.current * 0.5 : 0
             );
 
-            destination.current = scrollAmount;
-            scrollToPosition(destination.current, immediate);
+            scrollToPosition(scrollAmount, immediate);
         },
-        [currentIndex, destination, center, scrollToPosition]
+        [currentIndex, center, scrollToPosition]
     );
 
     const toggleScrollChecking = React.useCallback(
@@ -464,7 +439,7 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
         [alignTheThingsToIndex, checkForIndexLoop, currentIndex, setCurrent]
     );
 
-    const alignTheThings = React.useCallback(() => {
+    const alignTheThingsToPageWidth = React.useCallback(() => {
         pageWidth.current = window.outerWidth;
         alignTheThingsToIndex(currentIndex);
     }, [currentIndex, alignTheThingsToIndex]);
@@ -487,35 +462,8 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
      * Scroll to initial position
      */
     React.useEffect(() => {
-        if (typeof currentIndex === "undefined") {
-            setCurrent(
-                infinite
-                    ? center
-                        ? Math.floor(originalChildLength.current * 1.5)
-                        : originalChildLength.current
-                    : center
-                    ? Math.floor(originalChildLength.current * 0.5)
-                    : 0
-            );
-        }
-
-        const scrollAmount = calculateScrollOffsetForIndex(
-            currentIndex,
-            childSizes.current,
-            center ? pageWidth.current * 0.5 : 0
-        );
-
-        destination.current = scrollAmount;
-        scrollToPosition(destination.current, false);
-    }, [
-        center,
-        setCurrent,
-        scrollToPosition,
-        checkForIndexLoop,
-        infinite,
-        pageWidth,
-        currentIndex
-    ]);
+        alignTheThingsToIndex(currentIndex);
+    }, [currentIndex, alignTheThingsToIndex]);
 
     /**
      * Add scroll checking on slider
@@ -539,12 +487,12 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
     }, [currentIndex, debouncedCentreThingsNearestToPosition, scrollHandler]);
 
     React.useEffect(() => {
-        window.addEventListener("resize", alignTheThings);
+        window.addEventListener("resize", alignTheThingsToPageWidth);
 
         return () => {
-            window.removeEventListener("resize", alignTheThings);
+            window.removeEventListener("resize", alignTheThingsToPageWidth);
         };
-    }, [alignTheThings]);
+    }, [alignTheThingsToPageWidth]);
 
     const FwdButton: React.FC<
         React.HTMLAttributes<HTMLButtonElement>

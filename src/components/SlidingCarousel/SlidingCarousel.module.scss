@@ -32,7 +32,8 @@
     grid-auto-flow: column;
     grid-column-gap: var(--SCGridGap);
     // create and hide scroll bar
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     padding-bottom: 30px;
     // for compliant browsers
     scroll-behavior: smooth;

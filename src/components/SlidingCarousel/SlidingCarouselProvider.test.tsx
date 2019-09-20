@@ -3,7 +3,6 @@ import * as React from "react";
 
 import * as renderer from "react-test-renderer";
 
-import { projectBox } from "../../types/fixtures";
 import {
     calculateNearestSnapPoint,
     calculateScrollOffsetForIndex,

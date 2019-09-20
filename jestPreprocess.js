@@ -1,8 +1,7 @@
+/* eslint-disable */
 const babelOptions = {
-    presets: ["@babel/react", "@babel/env"],
+    presets: ["babel-preset-gatsby", "@babel/preset-typescript"],
     plugins: [
-        "@babel/plugin-proposal-optional-chaining",
-        "@babel/plugin-proposal-class-properties",
         "require-context-hook"
     ]
 };

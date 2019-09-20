@@ -14,11 +14,11 @@ import {
     WhatWeDo
 } from "./data";
 
-import * as aboutData from "../pages/about.json";
-import * as clientData from "../pages/clients/cnn.json";
-import * as meetTheTeamData from "../pages/meet-the-team.json";
-import * as projectData from "../pages/projects/bbc-iwonder-perfect-diet-for-you.json";
-import * as whatWeDoData from "../pages/what-we-do.json";
+import aboutData from "../pages/about.json";
+import clientData from "../pages/clients/cnn.json";
+import meetTheTeamData from "../pages/meet-the-team.json";
+import projectData from "../pages/projects/bbc-iwonder-perfect-diet-for-you.json";
+import whatWeDoData from "../pages/what-we-do.json";
 
 import { absolutifyURLs } from "../lib/helpers";
 export const client = absolutifyURLs<Client>(clientData);

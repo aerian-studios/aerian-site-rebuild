@@ -4,7 +4,7 @@ import * as renderer from "react-test-renderer";
 
 import { ContactDetails } from "./index";
 
-describe("ContactDetails", () =>
+describe("ContactDetails", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -19,4 +19,5 @@ describe("ContactDetails", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

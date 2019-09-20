@@ -9,7 +9,7 @@ import { faVimeoV } from "@fortawesome/free-brands-svg-icons/faVimeoV";
 import { SocialLink } from "../SocialLink";
 import { SocialLinks } from "./index";
 
-describe("SocialLinks", () =>
+describe("SocialLinks", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -38,4 +38,5 @@ describe("SocialLinks", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

@@ -4,7 +4,7 @@ import * as renderer from "react-test-renderer";
 
 import { GroupThree } from "./index";
 
-describe("GroupThree", () =>
+describe("GroupThree", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -16,4 +16,5 @@ describe("GroupThree", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

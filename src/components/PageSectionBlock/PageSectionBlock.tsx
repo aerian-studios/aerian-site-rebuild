@@ -14,7 +14,7 @@ interface Props {
 
 export const PageSectionBlock: React.SFC<Props> = ({ section, alternate }) => (
     <>
-        <Block key={`${section.title}_main`}>
+        <Block key={`main`}>
             <div
                 className={classNames([
                     styles.block,
@@ -51,12 +51,12 @@ export const PageSectionBlock: React.SFC<Props> = ({ section, alternate }) => (
             </div>
         </Block>
         {section.testimonial && (
-            <Block alternate={true}>
+            <Block key={`testimonial`} alternate={true}>
                 <TestimonialBlock testimonial={section.testimonial} />
             </Block>
         )}
         {section.successStory && (
-            <Block key={`${section.title}_success`} alternate={true}>
+            <Block key={`success`} alternate={true}>
                 <SuccessStoryBlock successStory={section.successStory} />
             </Block>
         )}

@@ -5,7 +5,7 @@ import * as renderer from "react-test-renderer";
 import { client } from "../../types/fixtures";
 import { ClientLogo } from "./index";
 
-describe("ClientLogo", () =>
+describe("ClientLogo", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -17,4 +17,5 @@ describe("ClientLogo", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

@@ -5,7 +5,7 @@ import * as renderer from "react-test-renderer";
 import { person } from "../../types/fixtures";
 import { StaffGridItem } from "./index";
 
-describe("StaffGridItem", () =>
+describe("StaffGridItem", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -17,4 +17,5 @@ describe("StaffGridItem", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

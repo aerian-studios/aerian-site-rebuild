@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TweetView renders correctly 1`] = `
+<div
+  className="myClass"
+>
+  <div>
+    MOCK!: proud that our partners over at @CRbuildpeace are being featured by our friends at @BBCRadio4 this Sunday. What's more, we've recently just launched their new site - 
+    <a
+      href="http://www.c-r.org"
+      rel="noreferrer noopener nofollow"
+      target="_blank"
+    >
+      c-r.org
+    </a>
+    . Check it out! 
+    <a
+      href="https://twitter.com/CRbuildpeace/status/1164462963790667776"
+      rel="noreferrer noopener nofollow"
+      target="_blank"
+    >
+      twitter.com/CRbuildpeace/s…
+    </a>
+    
+  </div>
+  <a
+    href="https://twitter.com/aerianstudios"
+  >
+    <img
+      alt="Aerian"
+      src="https://pbs.twimg.com/profile_images/378800000156917292/cba17ed82c5a99f3b91e805534b2d10f_normal.png"
+    />
+    <p>
+      <strong>
+        Tweeted by
+      </strong>
+      Aerian
+    </p>
+  </a>
+</div>
+`;

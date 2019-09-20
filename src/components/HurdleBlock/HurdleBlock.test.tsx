@@ -5,8 +5,9 @@ import * as renderer from "react-test-renderer";
 import { hurdle } from "../../types/fixtures";
 import { HurdleBlock } from "./index";
 
-describe("HurdleBlock", () =>
+describe("HurdleBlock", () => {
     it("renders correctly", () => {
         const tree = renderer.create(<HurdleBlock hurdle={hurdle} />).toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

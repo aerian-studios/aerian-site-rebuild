@@ -1,5 +1,11 @@
+/* eslint-disable */
 const siteConfig = require("./site-config");
-
+const activeEnv =
+    process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development";
+console.log(`Using environment config: '${activeEnv}'`);
+require("dotenv").config({
+    path: `.env.${activeEnv}`
+});
 module.exports = {
     pathPrefix: siteConfig.pathPrefix,
     siteMetadata: siteConfig.siteMetadata,
@@ -7,7 +13,12 @@ module.exports = {
         "ProjectsJson.client": "ClientsJson"
     },
     plugins: [
-        `gatsby-plugin-netlify-cache`,
+        {
+            resolve: "gatsby-plugin-netlify-cache",
+            options: {
+                cachePublic: true
+            }
+        },
         `gatsby-plugin-typescript`,
         `gatsby-plugin-react-helmet`,
         {
@@ -22,6 +33,26 @@ module.exports = {
             options: {
                 path: `${__dirname}/src/pages`,
                 name: "pages"
+            }
+        },
+        {
+            resolve: `gatsby-source-twitter`,
+            options: {
+                credentials: {
+                    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+                    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+                    bearer_token: process.env.TWITTER_CONSUMER_BEARER_TOKEN
+                },
+                queries: {
+                    aerian: {
+                        endpoint: "statuses/user_timeline",
+                        params: {
+                            screen_name: `aerianstudios`,
+                            tweet_mode: "extended"
+                        },
+                        count: 1
+                    }
+                }
             }
         },
         // This plugin exposes helper functions for processing

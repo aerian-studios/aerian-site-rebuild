@@ -162,11 +162,11 @@ describe("SlidingCarouselProvider", () => {
         expect(first.scrollAmount).toEqual(0);
         expect(first.index).toEqual(0);
         expect(second.scrollAmount).toEqual(306);
-        expect(second.index).toEqual(1);
+        expect(second.index).toEqual(2);
         expect(third.scrollAmount).toEqual(306);
-        expect(third.index).toEqual(1);
+        expect(third.index).toEqual(2);
         expect(fourth.scrollAmount).toEqual(612);
-        expect(fourth.index).toEqual(2);
+        expect(fourth.index).toEqual(3);
     });
 
     it("correctly calculates snap offset, left aligned (irregular)", () => {
@@ -177,12 +177,12 @@ describe("SlidingCarouselProvider", () => {
 
         expect(first.scrollAmount).toEqual(0);
         expect(first.index).toEqual(0);
-        expect(second.scrollAmount).toEqual(106);
+        expect(second.scrollAmount).toEqual(0);
         expect(second.index).toEqual(1);
         expect(third.scrollAmount).toEqual(312);
-        expect(third.index).toEqual(2);
+        expect(third.index).toEqual(3);
         expect(fourth.scrollAmount).toEqual(618);
-        expect(fourth.index).toEqual(3);
+        expect(fourth.index).toEqual(4);
     });
 
     it("correctly calculates snap offset, centre aligned", () => {
@@ -222,16 +222,16 @@ describe("SlidingCarouselProvider", () => {
         expect(snap1.index).toEqual(0);
         expect(snap1.scrollAmount).toEqual(combineWidths(childSizes, 0, false));
         expect(snap2.scrollAmount).toEqual(index2);
-        expect(snap2.index).toEqual(1);
+        expect(snap2.index).toEqual(2);
         expect(snap2.scrollAmount).toEqual(combineWidths(childSizes, 1, false));
         expect(snap3.scrollAmount).toEqual(index2);
-        expect(snap3.index).toEqual(1);
+        expect(snap3.index).toEqual(2);
         expect(snap3.scrollAmount).toEqual(combineWidths(childSizes, 1, false));
         expect(snap4.scrollAmount).toEqual(index3);
-        expect(snap4.index).toEqual(2);
+        expect(snap4.index).toEqual(3);
         expect(snap4.scrollAmount).toEqual(combineWidths(childSizes, 2, false));
         expect(snap5.scrollAmount).toEqual(index4);
-        expect(snap5.index).toEqual(3);
+        expect(snap5.index).toEqual(4);
         expect(snap5.scrollAmount).toEqual(combineWidths(childSizes, 3, false));
     });
 
@@ -251,37 +251,37 @@ describe("SlidingCarouselProvider", () => {
         expect(snap1.scrollAmount).toEqual(
             -300 + combineWidths(childSizes, 0, true)
         );
-        expect(snap1.index).toEqual(0);
+        expect(snap1.index).toEqual(1);
 
         expect(snap2.scrollAmount).toEqual(index2);
         expect(snap2.scrollAmount).toEqual(
             -300 + combineWidths(childSizes, 1, true)
         );
-        expect(snap2.index).toEqual(1);
+        expect(snap2.index).toEqual(3);
 
         expect(snap3.scrollAmount).toEqual(index2);
         expect(snap3.scrollAmount).toEqual(
             -300 + combineWidths(childSizes, 1, true)
         );
-        expect(snap3.index).toEqual(1);
+        expect(snap3.index).toEqual(3);
 
         expect(snap4.scrollAmount).toEqual(index3);
         expect(snap4.scrollAmount).toEqual(
             -300 + combineWidths(childSizes, 2, true)
         );
-        expect(snap4.index).toEqual(2);
+        expect(snap4.index).toEqual(4);
 
         expect(snap5.scrollAmount).toEqual(index4);
         expect(snap5.scrollAmount).toEqual(
             -300 + combineWidths(childSizes, 3, true)
         );
-        expect(snap5.index).toEqual(3);
+        expect(snap5.index).toEqual(5);
 
         expect(snap6.scrollAmount).toEqual(index2);
         expect(snap6.scrollAmount).toEqual(
             -300 + combineWidths(childSizes, 1, true)
         );
-        expect(snap6.index).toEqual(1);
+        expect(snap6.index).toEqual(3);
     });
 
     xit("returns the same result for index and position, centre aligned (irregular)", () => {
@@ -311,7 +311,7 @@ describe("SlidingCarouselProvider", () => {
             300
         );
 
-        expect(snap1.scrollAmount).toEqual(index1);
+        expect(snap1.scrollAmount).toEqual(index4);
         expect(snap1.index).toEqual(0);
         expect(snap1.scrollAmount).toEqual(
             -300 + childSizesIrregular[0].width / 2

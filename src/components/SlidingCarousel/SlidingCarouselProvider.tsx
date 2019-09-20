@@ -599,10 +599,8 @@ export const SlidingCarouselProvider: React.FC<Props> = ({
             ? { "aria-label": carouselLabel }
             : { "aria-labelledby": uniqueId };
 
-    const normalisedIndex =
-        currentIndex > originalChildLength.current
-            ? currentIndex - originalChildLength.current
-            : currentIndex;
+    const normalisedIndex = (currentIndex % originalChildLength.current) + 1;
+
     return (
         <section
             className={classNames(className, styles.SCSliderProvider)}

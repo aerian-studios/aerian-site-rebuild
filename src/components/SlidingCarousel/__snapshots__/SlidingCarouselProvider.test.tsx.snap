@@ -18,7 +18,7 @@ exports[`SlidingCarouselProvider renders correctly 1`] = `
       aria-atomic="true"
       aria-live="polite"
     >
-      Item 0 of 0
+      Item NaN of 0
     </p>
   </div>
 </section>
@@ -42,7 +42,7 @@ exports[`SlidingCarouselProvider renders correctly with infinite set 1`] = `
       aria-atomic="true"
       aria-live="polite"
     >
-      Item 0 of 0
+      Item NaN of 0
     </p>
   </div>
 </section>

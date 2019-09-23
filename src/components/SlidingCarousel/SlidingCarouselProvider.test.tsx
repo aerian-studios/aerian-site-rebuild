@@ -14,6 +14,10 @@ describe("SlidingCarouselProvider", () => {
                 </SlidingCarouselProvider>
             )
             .toJSON();
+
+        expect(tree!.children[0]!.children[0]!.children.length).toEqual(
+            els.length
+        );
         expect(tree).toMatchSnapshot();
     });
 
@@ -25,6 +29,10 @@ describe("SlidingCarouselProvider", () => {
                 </SlidingCarouselProvider>
             )
             .toJSON();
+
+        expect(tree!.children[0]!.children[0]!.children.length).toEqual(
+            els.length * 3
+        );
         expect(tree).toMatchSnapshot();
     });
 
@@ -36,6 +44,10 @@ describe("SlidingCarouselProvider", () => {
                 </SlidingCarouselProvider>
             )
             .toJSON();
+
+        expect(tree!.children[0]!.children[0]!.children.length).toEqual(
+            els.length
+        );
         expect(tree).toMatchSnapshot();
     });
     it("renders correctly with center and infinite set", () => {
@@ -50,6 +62,10 @@ describe("SlidingCarouselProvider", () => {
                 </SlidingCarouselProvider>
             )
             .toJSON();
+
+        expect(tree!.children[0]!.children[0]!.children.length).toEqual(
+            els.length * 3
+        );
         expect(tree).toMatchSnapshot();
     });
 });

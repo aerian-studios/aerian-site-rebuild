@@ -7,10 +7,11 @@ import { projectBox } from "../../types/fixtures";
 import { SquareCarousel } from "./index";
 
 const data = [{ node: projectBox }];
-describe("SquareCarousel", () =>
+describe("SquareCarousel", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(<SquareCarousel className="myClass" data={data} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

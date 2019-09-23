@@ -6,7 +6,7 @@ import * as renderer from "react-test-renderer";
 import { SimpleHoverCard } from "./index";
 import { projectBox } from "../../types/fixtures";
 
-describe("SimpleHoverCard", () =>
+describe("SimpleHoverCard", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -14,4 +14,5 @@ describe("SimpleHoverCard", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

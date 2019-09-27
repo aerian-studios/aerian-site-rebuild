@@ -2,34 +2,34 @@
 # yarn lockfile v1
 
 
-"@aerian/eslint-config-react@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@aerian/eslint-config-react/-/eslint-config-react-2.0.1.tgz#fe8817dd7e10e81bbece8b8cdf4176afed868dc4"
-  integrity sha512-lP+t7pC3VhYnbIjMSUx8yB6A5A8NJ2fUF7yUZQnqvZ6GR5wcl/zrHYaWO8IzEFaoBVgBb5Tb97FMKgz9+wMK8w==
+"@aerian/eslint-config-react@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@aerian/eslint-config-react/-/eslint-config-react-5.0.1.tgz#07b3aa28d4b4b27633a5c9b82df8410cca8d2d4e"
+  integrity sha512-CAT6VoxPz8yLOVxyJ8jey2z3BsCXrJ2X0WWLPc+gg907agYROA2AejJvuOBVWOKq0Dxkhzg6pgUuKpQ8Cggalw==
   dependencies:
-    "@aerian/eslint-config" "^2.0.1"
+    "@aerian/eslint-config" "^5.0.1"
     eslint-plugin-jsx-a11y "^6.2.1"
     eslint-plugin-react "^7.13.0"
     eslint-plugin-react-hooks "^1.6.0"
 
-"@aerian/eslint-config-typescript@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@aerian/eslint-config-typescript/-/eslint-config-typescript-2.0.2.tgz#e11d21e058b2bf59e25f8309affd00798f515fb2"
-  integrity sha512-1yi4mUUSSeo6cU8INOUcjMA11S5XeBElPU0PbG/Qgu/W23VFMwCwIQFUNKsX50zK9CZ3nC7K3RMaAlML9cptpg==
+"@aerian/eslint-config-typescript@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@aerian/eslint-config-typescript/-/eslint-config-typescript-5.0.1.tgz#b91ae1490c8dab11f4b4f01af5937843d3d07614"
+  integrity sha512-5TA6RL8A2esAddo9X7sMKBI+Pl+tPUqpQkLDIuddmeah1WEVjC2dYJZ1nfq5+ybEixcl0HvS1MMAbUy8Tivowg==
   dependencies:
-    "@aerian/eslint-config" "^2.0.1"
+    "@aerian/eslint-config" "^5.0.1"
     "@typescript-eslint/eslint-plugin" "^1.10.2"
     "@typescript-eslint/parser" "^1.10.2"
     eslint-plugin-import "^2.18.0"
 
-"@aerian/eslint-config@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@aerian/eslint-config/-/eslint-config-2.0.1.tgz#5b67a4f271c50f4287c4671e60f49fd691f09f50"
-  integrity sha512-3FR8rYYFASSphRdig5aqrYWB4XmB1lSBVeDrTOUYYCYhDzPubCoT2KZ0VQSiXd3sxT6acvaFFSQQJ/9UDj8+vA==
+"@aerian/eslint-config@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@aerian/eslint-config/-/eslint-config-5.0.1.tgz#5dcf21cb7377c36dc7849fcd0ba8d540b22db9f7"
+  integrity sha512-S0FSCxYCd0n0sy0p6AK7PZwi1Q1VxVWM6Nck5k8F8Z/w5JflXHSD+r5oPUiWhKmhevL82b6fMMJ7dtXM1piwdQ==
   dependencies:
     babel-eslint "^10.0.2"
     confusing-browser-globals "^1.0.7"
-    eslint-config-prettier "^5.0.0"
+    eslint-config-prettier "^6.3.0"
     eslint-plugin-import "^2.17.3"
     eslint-plugin-jest "^22.6.4"
     eslint-plugin-prettier "^3.1.0"
@@ -6610,10 +6610,10 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-5.1.0.tgz#bf29442e7c818236a77acfe2241ec991299f9bf1"
-  integrity sha512-+tpiaLm3wl6fPW5nq0dDyVowQM0FT61lAdWZ+sDWgk6kKzgbOnCDwlcbwI38cyCBhq+Z3ret5Iofp6/gZpO0zw==
+eslint-config-prettier@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.3.0.tgz#e73b48e59dc49d950843f3eb96d519e2248286a3"
+  integrity sha512-EWaGjlDAZRzVFveh2Jsglcere2KK5CJBhkNSa1xs3KfMUGdRiT7lG089eqPdvlzWHpAqaekubOsOMu8W8Yk71A==
   dependencies:
     get-stdin "^6.0.0"
 

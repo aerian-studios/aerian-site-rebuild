@@ -26,4 +26,8 @@ $c-action-active-border: $c-black-60;
         background: $c-action-active-bg;
         color: $c-action-hover;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 }

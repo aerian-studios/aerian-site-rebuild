@@ -249,6 +249,10 @@ a {
         text-decoration: none;
         border-bottom-color: transparent;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 }
 
 //=====================

@@ -42,6 +42,10 @@
     > * {
         scroll-snap-align: center;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
 }
 
 .SCControlWrapper {

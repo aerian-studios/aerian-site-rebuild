@@ -181,6 +181,8 @@ export const calculateIndexFromPosition = (
     return i;
 };
 
+const reducedMotion = matchMedia(`(prefers-reduced-motion: reduce)`).matches;
+
 export const useSlidingBehaviour = (
     children: React.ReactNode,
     itemGap: string,
@@ -310,7 +312,7 @@ export const useSlidingBehaviour = (
 
             sliderRef.current && sliderRef.current.scroll(position, 0);
 
-            if (immediate) {
+            if (immediate && !reducedMotion) {
                 sliderRef.current.style.scrollBehavior = "smooth";
             }
         },

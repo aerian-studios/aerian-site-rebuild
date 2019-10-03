@@ -33,6 +33,10 @@
     opacity: 1;
     height: calc(100vh - 50px);
     transition: all 300ms ease-in;
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 }
 
 .staff--detail-leave {
@@ -43,4 +47,8 @@
     opacity: 0.01;
     height: 0;
     transition: all 300ms ease-in;
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 }

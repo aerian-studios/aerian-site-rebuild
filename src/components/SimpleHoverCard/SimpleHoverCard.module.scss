@@ -35,4 +35,7 @@
     color: $c-text-alt;
     text-align: center;
     padding: 32% 10%;
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 }

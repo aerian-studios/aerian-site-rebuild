@@ -12,6 +12,9 @@
         opacity: 0.1;
         will-change: transform;
         backface-visibility: hidden;
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
     }
     &.visible .flip,
     &:first-child .flip,
@@ -63,6 +66,9 @@
     justify-self: center;
     text-align: center;
     transition: transform 0.5s ease 0.2s;
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 
     // override responsive image styles!!
     picture,
@@ -89,4 +95,7 @@
     z-index: 2;
     padding: 12.5%;
     color: $whiteish;
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 }

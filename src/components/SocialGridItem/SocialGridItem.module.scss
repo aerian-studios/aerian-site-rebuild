@@ -8,6 +8,10 @@
     color: $c-text-alt;
     font-size: 1rem;
 
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+
     &:hover,
     &:focus {
         transform: translate3d(0, -1.5em, 1px);
@@ -42,6 +46,10 @@
     transform: translateY(250%);
     // deal with non-retina disappearing border
     backface-visibility: hidden;
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
 }
 
 .arrow {

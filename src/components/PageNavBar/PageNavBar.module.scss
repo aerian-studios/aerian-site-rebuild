@@ -35,6 +35,10 @@
     right: 0%;
     cursor: pointer;
 
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+
     &::before {
         content: "Browse";
         background-color: #bb163c;

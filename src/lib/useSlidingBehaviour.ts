@@ -426,7 +426,7 @@ export const useSlidingBehaviour = (
             if (validCurrent !== newCurrent) {
                 alignTheThingsToIndex(validCurrent + direction * -1, true);
             }
-            setCurrent(validCurrent, true);
+            setCurrent(validCurrent, false);
         },
         [alignTheThingsToIndex, checkForIndexLoop, currentIndex, setCurrent]
     );

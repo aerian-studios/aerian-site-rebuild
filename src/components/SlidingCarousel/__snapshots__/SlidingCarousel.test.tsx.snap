@@ -5,7 +5,11 @@ exports[`SlidingCarousel renders correctly 1`] = `
   className=""
 >
   <div
+    aria-atomic="false"
+    aria-live="polite"
+    aria-roledescription="carousel"
     className=""
+    role="group"
   />
 </div>
 `;
@@ -15,7 +19,11 @@ exports[`SlidingCarousel renders correctly with infinite set 1`] = `
   className=""
 >
   <div
+    aria-atomic="false"
+    aria-live="polite"
+    aria-roledescription="carousel"
     className=""
+    role="group"
   >
     <div
       aria-hidden="true"

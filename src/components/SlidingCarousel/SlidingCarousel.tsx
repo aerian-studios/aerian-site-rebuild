@@ -9,6 +9,7 @@ export interface SliderProps extends React.ComponentPropsWithRef<React.FC> {
     // Infinite scrolling. Defaults to false
     infinite?: boolean;
     ref?: React.MutableRefObject<HTMLDivElement | null>;
+    auto?: boolean;
 }
 
 /**
@@ -59,7 +60,14 @@ export const SlidingCarousel: React.RefForwardingComponent<
             style={style}
             onWheel={interactionPreparation}
         >
-            <div className={classNames(styles.SCSlider)} ref={ref}>
+            <div
+                className={classNames(styles.SCSlider)}
+                ref={ref}
+                role="group"
+                aria-roledescription="carousel"
+                aria-atomic="false"
+                aria-live={props.auto ? "off" : "polite"}
+            >
                 {infinite
                     ? createDuplicateChildren(children, {
                           "aria-hidden": "true",

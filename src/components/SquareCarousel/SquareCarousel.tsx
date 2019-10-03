@@ -87,6 +87,8 @@ export const SquareCarousel: React.FC<Props> = props => {
                         key={project.slug}
                         project={project}
                         className={styles.card}
+                        role="group"
+                        aria-roledescription="slide"
                     />
                 );
             })}

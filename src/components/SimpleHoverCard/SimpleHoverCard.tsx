@@ -31,6 +31,7 @@ export const SimpleHoverCard: React.SFC<Props> = ({
             className={classNames(className, styles.cardWrapper)}
             {...rest}
             style={style}
+            aria-label={`Visit the ${project.client.name} project`}
         >
             <Image
                 key={project.titleLineOne}
@@ -38,7 +39,7 @@ export const SimpleHoverCard: React.SFC<Props> = ({
                 source={project.thumbnail}
                 aria-hidden={true}
             />
-            <div className={styles.cardContent}>
+            <div className={styles.cardContent} aria-hidden={true}>
                 <h3>{project.client.name}</h3>
                 <Button arrow={true} alternate={true} tabIndex={-1}>
                     View project

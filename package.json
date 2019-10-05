@@ -170,7 +170,8 @@
             "node_modules/(?!(gatsby)/)"
         ],
         "setupFiles": [
-            "<rootDir>/loadershim.js"
+            "<rootDir>/loadershim.js",
+            "<rootDir>/matchMediaShim.js"
         ],
         "setupFilesAfterEnv": [
             "<rootDir>/jest.setup.js"

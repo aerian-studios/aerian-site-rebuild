@@ -57,6 +57,79 @@ export const workOutSizes = (
     return ret;
 };
 
+export const calculateCenterSnapDiff = (
+    position: number = 0,
+    index: number = 0,
+    childSizes: Size[],
+    center: number = 0
+): { position: number; index: number } => {
+    if (!center) {
+        return { position, index };
+    }
+    // scrollposition is for the left of the screen and left of the slide
+    // so calculate how many full slides fit in and add the current half slide
+    let centerDiff = 0;
+    let currW = 0;
+    let i = Math.min(Math.max(index, 0), childSizes.length - 1);
+    while (centerDiff < center) {
+        currW = childSizes[i].width;
+        const nextFullSlide = centerDiff + currW / 2;
+        i++;
+
+        if (center <= nextFullSlide) {
+            break;
+        } else {
+            centerDiff += currW;
+        }
+
+        if (i > childSizes.length - 1) {
+            i = 0;
+        }
+    }
+    const offsetDiff = centerDiff - center;
+    const diff = currW * 0.5 - offsetDiff;
+    console.log({ centerDiff, i, offsetDiff, diff });
+
+    return { position: position - diff, index };
+};
+
+/**
+ * Calculate a complete slide (or centre of slide) from an arbitrary number
+ */
+export const calculateNearestSnapPoint = (
+    position: number = 0,
+    childSizes: Size[],
+    center: number = 0
+): { position: number; index: number } => {
+    if (!childSizes.length) {
+        return { position: 0, index: 0 };
+    }
+
+    let scrollAmount = 0;
+    let i = 0;
+    let prevW = 0;
+
+    // loop through and add up all the widths
+    while (scrollAmount < position && i < childSizes.length) {
+        const elW = childSizes[i].width;
+        const nextFullSlide = scrollAmount + elW / 2;
+
+        if (position <= nextFullSlide) {
+            break;
+        } else {
+            scrollAmount += prevW;
+            prevW = elW;
+            i++;
+        }
+    }
+
+    i = Math.min(i, childSizes.length);
+
+    console.log("calculateNearestSnapPoint i", i);
+
+    return calculateCenterSnapDiff(scrollAmount, i, childSizes, center);
+};
+
 /**
  * Calculate the width of the elements to align an index
  * It is dependant on whether the carousel is centered
@@ -76,11 +149,7 @@ export const calculateScrollOffsetForIndex = (
 
     for (let i = 0; i <= index; i++) {
         elW = childSizes[i].width;
-
-        if (i > 0) {
-            scrollAmount += prevW;
-        }
-
+        scrollAmount += prevW;
         prevW = elW;
     }
 
@@ -89,67 +158,17 @@ export const calculateScrollOffsetForIndex = (
         scrollAmount += elW * 0.5;
     }
 
+    console.log("calculateScrollOffsetForIndex", { scrollAmount, index });
+    console.log(
+        "calculateNearestSnapPoint",
+        calculateNearestSnapPoint(scrollAmount, childSizes, center)
+    );
+
     return scrollAmount;
 };
 
 /**
- * Calculate a complete slide (or centre of slide) from an arbitrary number
- */
-export const calculateNearestSnapPoint = (
-    position: number = 0,
-    childSizes: Size[],
-    center: number = 0
-): { scrollAmount: number; index: number } => {
-    if (!childSizes.length) {
-        return { scrollAmount: 0, index: 0 };
-    }
-
-    let scrollAmount = 0;
-    let i = 0;
-    let prevW = 0;
-    // loop through and add up all the widths
-    while (scrollAmount <= position && i < childSizes.length) {
-        const elW = childSizes[i].width;
-        const nextFullSlide = scrollAmount + elW / 2;
-
-        if (position <= nextFullSlide) {
-            break;
-        } else {
-            scrollAmount += prevW;
-            prevW = elW;
-            i++;
-        }
-    }
-
-    i = Math.min(i, childSizes.length);
-
-    // scrollposition is for the left of the screen and left of the slide
-    // so calculate how many full slides fit in and add the current half slide
-    if (center) {
-        let centerDiff = 0;
-        let currW = 0;
-        let ii = Math.max(i - 1, 0);
-        while (centerDiff < center) {
-            currW = childSizes[ii].width;
-            centerDiff += currW;
-            ii++;
-            if (ii > childSizes.length - 1) {
-                ii = 0;
-            }
-        }
-        const offsetDiff = centerDiff - center;
-        const diff = currW * 0.5 - offsetDiff;
-        scrollAmount -= diff;
-
-        // Need to increment the index for centred
-        i++;
-    }
-
-    return { scrollAmount, index: i };
-};
-
-/**
- * Calculate the index of the slide that intersects with a position
+ * Calculate the index of the slide that intersects with a position, consistently 1 less
  */
 export const calculateIndexFromPosition = (
     position: number = 0,
@@ -300,17 +319,20 @@ export const useSlidingBehaviour = (
 
     const RAF = React.useRef<number>();
     const scrollToPosition = React.useCallback(
-        (position: number, immediate: boolean = false): void => {
-            if (!sliderRef || !sliderRef.current) {
+        // eslint-disable-next-line complexity
+        (position: number | null, immediate: boolean = false): void => {
+            if (!sliderRef.current || position === null) {
                 return;
             }
 
             if (immediate) {
                 sliderRef.current.style.scrollBehavior = "auto";
             }
-            RAF.current = window.requestAnimationFrame(() => {});
+            RAF.current = window.requestAnimationFrame(() => {
+                console.log("scrolling", { position });
 
-            sliderRef.current && sliderRef.current.scroll(position, 0);
+                sliderRef.current && sliderRef.current.scroll(position, 0);
+            });
 
             if (immediate && !reducedMotion) {
                 sliderRef.current.style.scrollBehavior = "smooth";
@@ -326,6 +348,7 @@ export const useSlidingBehaviour = (
             if (!childSizes.current.length) {
                 return;
             }
+            console.log("alignThingsNearestToPosition", position);
 
             const nearestSnap = calculateNearestSnapPoint(
                 newDestination,
@@ -333,8 +356,10 @@ export const useSlidingBehaviour = (
                 center ? pageWidth.current * 0.5 : 0
             );
 
+            console.log(nearestSnap);
+
             if (currentIndex === nearestSnap.index) {
-                scrollToPosition(nearestSnap.scrollAmount);
+                scrollToPosition(nearestSnap.position);
             } else {
                 setCurrent(nearestSnap.index);
             }
@@ -344,7 +369,7 @@ export const useSlidingBehaviour = (
 
     const debouncedCentreThingsNearestToPosition = debounce(
         alignThingsNearestToPosition,
-        500
+        300
     );
 
     /**
@@ -352,26 +377,25 @@ export const useSlidingBehaviour = (
      * @return {void}
      */
     const scrollHandler = React.useCallback((): void => {
-        if (!sliderRef || !sliderRef.current) {
+        if (!sliderRef.current || !infinite) {
             return;
         }
         const lastX = sliderRef.current.scrollLeft;
 
-        if (!disableScrollLoopChecking.current && !stillInFrame && infinite) {
+        if (!disableScrollLoopChecking.current && !stillInFrame) {
             window.requestAnimationFrame(() => {
                 const check = checkForLoop(lastX);
 
-                if (check.position) {
-                    scrollToPosition(check.position, true);
-                }
+                scrollToPosition(check.position, true);
                 stillInFrame = false;
             });
 
-            // eslint-disable-next-line react-hooks/exhaustive-deps
             stillInFrame = true;
         }
 
         // this is the left of the slider
+        console.log("want to align to", lastX);
+
         debouncedCentreThingsNearestToPosition(lastX);
     }, [scrollToPosition, debouncedCentreThingsNearestToPosition]);
 
@@ -404,6 +428,8 @@ export const useSlidingBehaviour = (
                 childSizes.current,
                 center ? pageWidth.current * 0.5 : 0
             );
+
+            console.log("aligning..", scrollAmount);
 
             scrollToPosition(scrollAmount, immediate);
         },
@@ -456,15 +482,21 @@ export const useSlidingBehaviour = (
      * Scroll to initial position
      */
     React.useEffect(() => {
+        console.log(
+            "!!!!!!!!!!!!!!!!!!!!!!!!",
+            { currentIndex },
+            sliderRef.current.scrollLeft
+        );
+
         alignTheThingsToIndex(currentIndex);
     }, [currentIndex, alignTheThingsToIndex]);
 
     /**
      * Add scroll checking on slider
      */
-    React.useEffect(() => {
+    React.useEffect((): (() => void) => {
         if (!sliderRef.current) {
-            return;
+            return () => {};
         }
 
         const slider = sliderRef.current;
@@ -472,8 +504,7 @@ export const useSlidingBehaviour = (
         slider.addEventListener("scroll", scrollHandler);
 
         // Remove the event listener on destroy
-        return () => {
-            // tslint:disable-next-line no-unused-expression
+        return (): void => {
             slider.removeEventListener("scroll", scrollHandler);
             debouncedCentreThingsNearestToPosition.clear();
             RAF.current && cancelAnimationFrame(RAF.current);

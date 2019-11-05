@@ -124,15 +124,6 @@
         "typescript": "^3.2.2",
         "typings-for-css-modules-loader": "^1.7.0"
     },
-    "eslintConfig": {
-        "extends": [
-            "@aerian/eslint-config-react",
-            "@aerian/eslint-config-typescript"
-        ],
-        "rules": {
-            "jsx-a11y/heading-has-content": 0
-        }
-    },
     "lint-staged": {
         "*.{css,md,scss}": [
             "prettier --write",

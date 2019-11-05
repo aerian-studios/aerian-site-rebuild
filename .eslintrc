@@ -2,5 +2,9 @@
     "extends": [
         "@aerian/eslint-config-react",
         "@aerian/eslint-config-typescript"
-    ]
+    ],
+    "rules": {
+        "jsx-a11y/heading-has-content": 0,
+        "complexity": ["warn", 6]
+    }
 }

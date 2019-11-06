@@ -109,7 +109,7 @@ export const calculateNearestSnapPoint = (
     childSizes: Size[],
     center: number = 0
 ): { position: number; index: number } => {
-    if (!childSizes.length || position <= childSizes[0].width - 1) {
+    if (!childSizes.length) {
         return calculateScreenAndSlideCenterToScreenLeft(
             0,
             0,
@@ -120,29 +120,31 @@ export const calculateNearestSnapPoint = (
 
     const normalisedPosition = position + center;
     const len = childSizes.length;
-    let scrollAmount = childSizes[0].width;
-    let i = 1;
+    let newPosition = 0;
+    let i = 0;
 
     for (; i < len; i++) {
         const elW = childSizes[i].width;
-        const nextFullSlide = scrollAmount + elW - 1;
+        const nextFullSlide = newPosition + elW - 1;
 
         if (
             normalisedPosition <= nextFullSlide &&
-            normalisedPosition >= scrollAmount
+            normalisedPosition >= newPosition
         ) {
             break;
         } else {
-            scrollAmount = nextFullSlide + 1;
+            newPosition = nextFullSlide + 1;
         }
     }
 
-    return calculateScreenAndSlideCenterToScreenLeft(
-        scrollAmount,
+    const res = calculateScreenAndSlideCenterToScreenLeft(
+        newPosition,
         i,
         childSizes,
         center
     );
+
+    return res;
 };
 
 /**

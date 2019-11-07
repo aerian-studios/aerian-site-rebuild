@@ -7,7 +7,7 @@ import { SlidingCarouselProvider } from "./index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 import { SimpleHoverCard } from "../SimpleHoverCard";
-import { project } from "../../types/fixtures";
+import { projectBox } from "../../types/fixtures";
 
 import styles from "../SquareCarousel/SquareCarousel.module.scss";
 import { workOutWindowOffset } from "../SquareCarousel/SquareCarousel";
@@ -41,18 +41,20 @@ storiesOf("SlidingCarousel", module)
                 </FwdButton>
             )}
         >
-            {[project].map(projectNode => {
-                const project = projectNode.node;
+            {[projectBox, projectBox, projectBox, projectBox, projectBox].map(
+                projectNode => {
+                    const project = projectNode;
 
-                return (
-                    <SimpleHoverCard
-                        key={project.slug}
-                        project={project}
-                        role="group"
-                        aria-roledescription="slide"
-                    />
-                );
-            })}
+                    return (
+                        <SimpleHoverCard
+                            key={project.slug}
+                            project={project}
+                            role="group"
+                            aria-roledescription="slide"
+                        />
+                    );
+                }
+            )}
         </SlidingCarouselProvider>
     ))
     .add("Centered and Infinite", () => (
@@ -87,18 +89,20 @@ storiesOf("SlidingCarousel", module)
                 </FwdButton>
             )}
         >
-            {[project].map(projectNode => {
-                const project = projectNode.node;
+            {[projectBox, projectBox, projectBox, projectBox, projectBox].map(
+                projectNode => {
+                    const project = projectNode;
 
-                return (
-                    <SimpleHoverCard
-                        key={project.slug}
-                        project={project}
-                        className={styles.card}
-                        role="group"
-                        aria-roledescription="slide"
-                    />
-                );
-            })}
+                    return (
+                        <SimpleHoverCard
+                            key={project.slug}
+                            project={project}
+                            className={styles.card}
+                            role="group"
+                            aria-roledescription="slide"
+                        />
+                    );
+                }
+            )}
         </SlidingCarouselProvider>
     ));

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-commonjs */
 const siteTitle = "Aerian Studios";
 const siteDescription =
     "Building industry leading campaigns, websites, products and mobile apps for 20 years, and we've never lost a client, because we always deliver on our promises.";
@@ -10,10 +11,11 @@ const frontPageURL = "/";
 const backgroundColor = "#ffffff"; // Used for setting manifest background color.
 const themeColor = "#c62828"; // Used for setting manifest and progress theme colors.
 
+// eslint-disable-next-line no-undef
 module.exports = {
     pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/my-site/.
     // meta-data for <head>, used by https://github.com/nfl/react-helmet
-    siteMetaDate: {
+    siteMetaData: {
         siteTitle,
         siteDescription,
         siteUrl,

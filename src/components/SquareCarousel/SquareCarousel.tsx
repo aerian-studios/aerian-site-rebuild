@@ -17,7 +17,7 @@ interface Props {
     children?: Array<React.ReactElement<any>>;
 }
 
-const workOutWindowOffset = (offsetUnit: number): number => {
+export const workOutWindowOffset = (offsetUnit: number): number => {
     const winW = window.innerWidth;
     const minWinWidth = 3 * offsetUnit + 2 * 60;
 

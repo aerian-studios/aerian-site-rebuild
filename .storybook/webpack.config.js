@@ -23,7 +23,7 @@ module.exports = ({ config }) => {
         ],
         include: path.resolve(__dirname, "../")
     });
-
+    
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/];
     // use installed babel-loader which is v8.0-beta (which is meant to work with @babel/core@7)
     config.module.rules[0].use[0].loader = require.resolve("babel-loader");
@@ -48,7 +48,7 @@ module.exports = ({ config }) => {
             plugins: [
                 require.resolve("@babel/plugin-proposal-class-properties"),
                 // use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
-                require.resolve("babel-plugin-remove-graphql-queries")
+                // require.resolve("babel-plugin-remove-graphql-queries")
             ]
         }
     });

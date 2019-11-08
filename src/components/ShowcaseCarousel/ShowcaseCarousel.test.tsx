@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import * as renderer from "react-test-renderer";
-import { Edge, NodeList, ProjectBox } from "../../types/data";
+import { ProjectBox } from "../../types/data";
 import { projectBox } from "../../types/fixtures";
 import { RevealCard } from "../RevealCard";
 import { ShowcaseCarousel } from "./index";
+import { useStaticQuery } from "gatsby";
+import { mockTweet } from "../../lib/twitter.test";
 
 (global as any).IntersectionObserver = jest.fn(() => ({
     observe: jest.fn(),
@@ -14,6 +17,9 @@ import { ShowcaseCarousel } from "./index";
 const projects: ProjectBox[] = [projectBox];
 
 describe("ShowcaseCarousel", () => {
+    beforeEach(() => {
+        (useStaticQuery as jest.Mock).mockReturnValue({ tweet: mockTweet });
+    });
     it("renders correctly", () => {
         const tree = renderer
             .create(<ShowcaseCarousel data={projects} />)

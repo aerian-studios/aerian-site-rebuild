@@ -1,0 +1,44 @@
+@import "../../scss/variables";
+
+.component {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tweet {
+    font-size: 16px;
+    flex: 1;
+    overflow: hidden;
+    a:link,
+    a:visited {
+        color: white;
+        font-weight: bold;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.user {
+    display: flex;
+    flex-basis: 48px;
+    font-size: 14px;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    img {
+        border-radius: 50%;
+        flex-basis: 48px;
+    }
+    .name {
+        flex: 1;
+        padding-left: 1em;
+        strong {
+            font-weight: 700;
+            display: block;
+        }
+    }
+}

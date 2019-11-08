@@ -5,7 +5,7 @@ import * as renderer from "react-test-renderer";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons/faFacebook";
 import { SocialLink } from "./index";
 
-describe("SocialLink", () =>
+describe("SocialLink", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -18,4 +18,5 @@ describe("SocialLink", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

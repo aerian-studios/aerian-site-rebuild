@@ -5,7 +5,7 @@ import * as renderer from "react-test-renderer";
 
 import { SocialGridItem } from "./index";
 
-describe("SocialGridItem", () =>
+describe("SocialGridItem", () => {
     it("renders correctly", () => {
         const tree = renderer
             .create(
@@ -18,4 +18,5 @@ describe("SocialGridItem", () =>
             )
             .toJSON();
         expect(tree).toMatchSnapshot();
-    }));
+    });
+});

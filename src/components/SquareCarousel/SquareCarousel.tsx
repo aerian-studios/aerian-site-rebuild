@@ -14,7 +14,9 @@ interface Props {
     style?: React.CSSProperties;
     className?: string;
     data: Array<Edge<ProjectBox>>;
-    children?: Array<React.ReactElement<any>>;
+    children?: Array<
+        React.ReactElement<HTMLElement | React.ReactElement<HTMLElement>>
+    >;
 }
 
 export const workOutWindowOffset = (offsetUnit: number): number => {

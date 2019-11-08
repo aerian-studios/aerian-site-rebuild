@@ -574,6 +574,164 @@ Array [
         </div>
       </div>
     </div>
+    <section
+      aria-label="More of our work"
+      className=""
+    >
+      <div
+        className=""
+        onWheel={[Function]}
+      >
+        <div
+          className=""
+        >
+          <div
+            className=""
+          >
+            <a
+              aria-hidden="true"
+              className=""
+              href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              tabIndex={0}
+            >
+              <div
+                className=""
+              >
+                <img
+                  alt="BBC"
+                  aria-hidden={true}
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+                />
+              </div>
+              <div>
+                <h3>
+                  CNN
+                </h3>
+                <button
+                  className="undefined"
+                  tabIndex={-1}
+                >
+                  View project
+                  <i
+                    className="fa"
+                  />
+                </button>
+              </div>
+            </a>
+          </div>
+          <div
+            className=""
+          >
+            <a
+              className=""
+              href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              <div
+                className=""
+              >
+                <img
+                  alt="BBC"
+                  aria-hidden={true}
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+                />
+              </div>
+              <div>
+                <h3>
+                  CNN
+                </h3>
+                <button
+                  className="undefined"
+                  tabIndex={-1}
+                >
+                  View project
+                  <i
+                    className="fa"
+                  />
+                </button>
+              </div>
+            </a>
+          </div>
+          <div
+            className=""
+          >
+            <a
+              aria-hidden="true"
+              className=""
+              href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              tabIndex={0}
+            >
+              <div
+                className=""
+              >
+                <img
+                  alt="BBC"
+                  aria-hidden={true}
+                  src="https://raw.githubusercontent.com/aerian-studios/aerian-site-rebuild/master/static/assets/imported/280/bbc-perfect-diet-for-you-hero-imagejpg.jpg"
+                />
+              </div>
+              <div>
+                <h3>
+                  CNN
+                </h3>
+                <button
+                  className="undefined"
+                  tabIndex={-1}
+                >
+                  View project
+                  <i
+                    className="fa"
+                  />
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button
+        aria-hidden="true"
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "60px",
+          }
+        }
+        tabIndex={-1}
+      >
+        <i
+          className="fa"
+        />
+      </button>
+      <button
+        aria-hidden="true"
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "60px",
+          }
+        }
+        tabIndex={-1}
+      >
+        <i
+          className="fa"
+        />
+      </button>
+      <div>
+        <p
+          aria-atomic="true"
+          aria-live="polite"
+        >
+          Item 1 of 1
+        </p>
+      </div>
+    </section>
   </section>,
 ]
 `;

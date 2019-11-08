@@ -1,0 +1,87 @@
+// use css variables to delegate as much as possible to CSS
+:root {
+    --SCWidthInFrs: 100vw;
+    --SCCardHeight: 306px;
+    --SCCardWidth: 306px;
+    --SCGridGap: 0;
+    --SCSnapAlign: "center";
+}
+
+.SCSliderProvider {
+    position: relative;
+}
+
+// This wraps the sliding part and hides the scrollbars
+.SCSliderWrapper {
+    position: relative;
+    height: var(--squareCardSize);
+    width: 100%;
+    overflow: hidden;
+}
+
+.SCSlider {
+    position: absolute;
+    height: var(--SCCardHeight);
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: initial;
+    display: grid;
+    grid-template-rows: var(--SCCardHeight);
+    grid-auto-columns: var(--SCCardWidth);
+    grid-auto-flow: column;
+    grid-column-gap: var(--SCGridGap);
+    // create and hide scroll bar
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+    // for compliant browsers
+    scroll-behavior: smooth;
+    scroll-snap-align: var(--SCSnapAlign);
+
+    > * {
+        scroll-snap-align: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+.SCControlWrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    height: var(--SCCardHeight);
+    width: var(--SCWidthInFrs, 100%);
+}
+
+.SCControl {
+    position: absolute;
+    top: 0;
+    appearance: none;
+    border: 0 none;
+    display: block;
+    height: var(--SCCardHeight);
+    width: var(--SCCardWidth);
+}
+
+.SCProgressFraction {
+    margin: 0 auto;
+}
+
+.SCPagerWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+
+.SCPagerElement {
+    list-style-type: none;
+    margin: 0 1px;
+}

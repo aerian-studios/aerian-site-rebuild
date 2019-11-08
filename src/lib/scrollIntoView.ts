@@ -18,9 +18,11 @@ export const isSmoothScrollSupported = () => {
         "scrollBehavior" in document.documentElement.style
     );
 };
+const reducedMotion =
+    window && window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
 
 export const doScrolling = (destY: number, duration: number) => {
-    if (isSmoothScrollSupported()) {
+    if (isSmoothScrollSupported() && !reducedMotion) {
         window.scrollTo({
             behavior: "smooth",
             left: 0,

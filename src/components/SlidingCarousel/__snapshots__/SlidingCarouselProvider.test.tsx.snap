@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlidingCarouselProvider renders correctly 1`] = `
+<section
+  aria-label="SUT"
+  className=""
+>
+  <div
+    className=""
+    onWheel={[Function]}
+  >
+    <div
+      aria-atomic="false"
+      aria-live="polite"
+      aria-roledescription="carousel"
+      className=""
+      role="group"
+    >
+      <p>
+        Test 1
+      </p>
+      <p>
+        Test 2
+      </p>
+      <p>
+        Test 3
+      </p>
+    </div>
+  </div>
+  <div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+    >
+      Item 2 of 3
+    </p>
+  </div>
+</section>
+`;
+
+exports[`SlidingCarouselProvider renders correctly with center and infinite set 1`] = `
+<section
+  aria-label="SUT"
+  className=""
+>
+  <div
+    className=""
+    onWheel={[Function]}
+  >
+    <div
+      aria-atomic="false"
+      aria-live="polite"
+      aria-roledescription="carousel"
+      className=""
+      role="group"
+    >
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 1
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 2
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 3
+      </p>
+      <p>
+        Test 1
+      </p>
+      <p>
+        Test 2
+      </p>
+      <p>
+        Test 3
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 1
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 2
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 3
+      </p>
+    </div>
+  </div>
+  <div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+    >
+      Item 2 of 3
+    </p>
+  </div>
+</section>
+`;
+
+exports[`SlidingCarouselProvider renders correctly with center set 1`] = `
+<section
+  aria-label="SUT"
+  className=""
+>
+  <div
+    className=""
+    onWheel={[Function]}
+  >
+    <div
+      aria-atomic="false"
+      aria-live="polite"
+      aria-roledescription="carousel"
+      className=""
+      role="group"
+    >
+      <p>
+        Test 1
+      </p>
+      <p>
+        Test 2
+      </p>
+      <p>
+        Test 3
+      </p>
+    </div>
+  </div>
+  <div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+    >
+      Item 2 of 3
+    </p>
+  </div>
+</section>
+`;
+
+exports[`SlidingCarouselProvider renders correctly with infinite set 1`] = `
+<section
+  aria-label="SUT"
+  className=""
+>
+  <div
+    className=""
+    onWheel={[Function]}
+  >
+    <div
+      aria-atomic="false"
+      aria-live="polite"
+      aria-roledescription="carousel"
+      className=""
+      role="group"
+    >
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 1
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 2
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 3
+      </p>
+      <p>
+        Test 1
+      </p>
+      <p>
+        Test 2
+      </p>
+      <p>
+        Test 3
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 1
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 2
+      </p>
+      <p
+        aria-hidden="true"
+        tabIndex={0}
+      >
+        Test 3
+      </p>
+    </div>
+  </div>
+  <div>
+    <p
+      aria-atomic="true"
+      aria-live="polite"
+    >
+      Item 2 of 3
+    </p>
+  </div>
+</section>
+`;

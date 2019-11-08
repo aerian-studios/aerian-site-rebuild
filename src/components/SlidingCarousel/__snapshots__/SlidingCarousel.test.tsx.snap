@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlidingCarousel renders correctly 1`] = `
+<div
+  className=""
+>
+  <div
+    aria-atomic="false"
+    aria-live="polite"
+    aria-roledescription="carousel"
+    className=""
+    role="group"
+  />
+</div>
+`;
+
+exports[`SlidingCarousel renders correctly with infinite set 1`] = `
+<div
+  className=""
+>
+  <div
+    aria-atomic="false"
+    aria-live="polite"
+    aria-roledescription="carousel"
+    className=""
+    role="group"
+  >
+    <div
+      aria-hidden="true"
+      tabIndex={0}
+    >
+      What sort of 'eater' are you?
+    </div>
+    <div>
+      What sort of 'eater' are you?
+    </div>
+    <div
+      aria-hidden="true"
+      tabIndex={0}
+    >
+      What sort of 'eater' are you?
+    </div>
+  </div>
+</div>
+`;

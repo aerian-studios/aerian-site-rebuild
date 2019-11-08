@@ -1,0 +1,50 @@
+@import "../../scss/variables";
+
+:root {
+    --widthIn306s: 100vw;
+    --squareCardSize: 306px;
+}
+
+.carouselWrapper {
+    border-top: 1px solid $whiteish;
+    border-bottom: 1px solid $whiteish;
+}
+
+.card {
+    height: var(--squareCardSize);
+    width: var(--squareCardSize);
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.carouselControl {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    appearance: none;
+    border: 0 none;
+    display: block;
+    height: var(--squareCardSize);
+    width: 60px;
+    text-align: right;
+    color: $c-menu-bg;
+    cursor: pointer;
+
+    &:active {
+        outline-color: transparent;
+    }
+
+    @media (min-width: $bp-l) {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.left {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.right {
+    right: 0;
+}

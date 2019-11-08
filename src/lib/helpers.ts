@@ -1,11 +1,5 @@
 import deepMap from "deep-map";
-import {
-    FileField,
-    FileNode,
-    ImageField,
-    ImageSharp,
-    NodeList
-} from "../types/data";
+import { FileField, FileNode, ImageSharp, NodeList } from "../types/data";
 export const isImageSharp = (image: FileField): image is ImageSharp => {
     return (
         image.hasOwnProperty("childImageSharp") &&

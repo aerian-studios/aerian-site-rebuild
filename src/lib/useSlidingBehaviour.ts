@@ -177,7 +177,7 @@ export const calculateScrollOffsetForIndex = (
 };
 
 const reducedMotion =
-    !!window &&
+    typeof window !== "undefined" &&
     "matchMedia" in window &&
     matchMedia(`(prefers-reduced-motion: reduce)`).matches;
 

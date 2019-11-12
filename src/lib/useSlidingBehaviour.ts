@@ -176,7 +176,10 @@ export const calculateScrollOffsetForIndex = (
     );
 };
 
-const reducedMotion = matchMedia(`(prefers-reduced-motion: reduce)`).matches;
+const reducedMotion =
+    !!window &&
+    "matchMedia" in window &&
+    matchMedia(`(prefers-reduced-motion: reduce)`).matches;
 
 export const useSlidingBehaviour = (
     children: React.ReactNode,

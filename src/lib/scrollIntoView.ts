@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 export const documentVerticalScrollPosition = () => {
     if (self.pageYOffset) {
         return self.pageYOffset;
@@ -19,7 +20,9 @@ export const isSmoothScrollSupported = () => {
     );
 };
 const reducedMotion =
-    window && window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
+    !!window &&
+    "matchMedia" in window &&
+    matchMedia(`(prefers-reduced-motion: reduce)`).matches;
 
 export const doScrolling = (destY: number, duration: number) => {
     if (isSmoothScrollSupported() && !reducedMotion) {

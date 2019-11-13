@@ -1,5 +1,10 @@
 {
     "ci": {
-        "staticDistDir": "public"
+        "collect": {
+            "staticDistDir": "public"
+        },
+        "upload": {
+            "target": "temporary-public-storage"
+        }
     }
 }

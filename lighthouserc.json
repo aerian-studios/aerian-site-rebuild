@@ -5,6 +5,10 @@
         },
         "upload": {
             "target": "temporary-public-storage"
+        },
+        "assertions": {
+            "redirects-http": "off",
+            "uses-http2": "off"
         }
     }
 }

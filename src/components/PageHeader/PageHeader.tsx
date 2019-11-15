@@ -8,16 +8,14 @@ interface Props {
     className?: string;
 }
 
-export const PageHeader: React.SFC<Props> = ({
-    children,
-    style,
-    className
-}) => (
-    <header
-        id="page-header"
-        style={style || {}}
-        className={classNames(styles.pageHeader, className)}
-    >
-        {children}
-    </header>
-);
+export const PageHeader: React.FC<Props> = ({ children, style, className }) => {
+    return (
+        <header
+            id="page-header"
+            style={style || {}}
+            className={classNames(styles.pageHeader, className)}
+        >
+            {children}
+        </header>
+    );
+};

@@ -7,7 +7,7 @@
 }
 
 .footerContainer {
-    padding: var(--s-4) 0;
+    padding: calc(var(--s-3) + 5px) 0;
     color: $c-brand-c;
     display: grid;
     grid-auto-rows: 1fr;

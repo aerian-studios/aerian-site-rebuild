@@ -5,6 +5,8 @@
     position: relative;
 
     .flip {
+        width: 100%;
+        height: 100%;
         transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         transform-origin: top center;
         transform: translate3d(0, 0, 0) rotateX(90deg) rotateZ(-10deg);
@@ -26,6 +28,8 @@
 }
 
 .revealCardWrapper {
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

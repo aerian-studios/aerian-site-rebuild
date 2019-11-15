@@ -30419,6 +30419,7 @@ Array [
         >
           <div>
             <a
+              aria-label="Visit the BBC case study"
               href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -45250,6 +45251,7 @@ Array [
       >
         <div>
           <a
+            aria-label="Visit the BBC case study"
             href="/our-work/project/bbc-iwonder-perfect-diet-for-you"
             onClick={[Function]}
             onMouseEnter={[Function]}

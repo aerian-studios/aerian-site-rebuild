@@ -58,7 +58,7 @@ module.exports = {
         // This plugin exposes helper functions for processing
         // images with the NPM package “sharp”. It's used by
         // several plugins and should preceed them.
-        `gatsby-plugin-sharp`,
+        {resolve:`gatsby-plugin-sharp`, useMozJpeg: true},
         // This plugin identifies file nodes that are images and
         // transforms these to create new “ImageSharp” nodes.
         // With them you can resize images and

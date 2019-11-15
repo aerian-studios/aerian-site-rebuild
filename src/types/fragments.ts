@@ -5,7 +5,12 @@ export const pageFieldsFragment = graphql`
         title
         heroImage {
             childImageSharp {
-                fluid(srcSetBreakpoints: [1024, 720, 360], toFormat: JPG) {
+                fluid(
+                    maxWidth: 1800
+                    srcSetBreakpoints: [400, 550, 800, 1600, 1800]
+                    quality: 75
+                    toFormat: JPG
+                ) {
                     ...GatsbyImageSharpFluid_withWebp
                 }
             }
@@ -23,10 +28,7 @@ export const clientFragment = graphql`
         name
         logo {
             childImageSharp {
-                fluid(
-                    maxWidth: 390
-                    srcSetBreakpoints: [1200, 1024, 768, 480, 340]
-                ) {
+                fluid(maxWidth: 345) {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
             }
@@ -34,10 +36,7 @@ export const clientFragment = graphql`
         }
         promoLogo {
             childImageSharp {
-                fluid(
-                    maxWidth: 390
-                    srcSetBreakpoints: [1200, 1024, 768, 480, 340]
-                ) {
+                fluid(maxWidth: 345) {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
             }
@@ -59,10 +58,9 @@ export const projectBoxFragment = graphql`
         heroImage {
             childImageSharp {
                 fluid(
-                    maxWidth: 786
-                    maxHeight: 786
-                    quality: 85
-                    srcSetBreakpoints: [480, 768, 992, 1984]
+                    maxWidth: 1400
+                    srcSetBreakpoints: [720, 1024, 1400]
+                    quality: 75
                     toFormat: JPG
                 ) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -73,10 +71,10 @@ export const projectBoxFragment = graphql`
         thumbnail: heroImage {
             childImageSharp {
                 fluid(
-                    maxWidth: 390
-                    maxHeight: 390
-                    quality: 85
-                    srcSetBreakpoints: [480, 768, 992, 1984]
+                    maxWidth: 720
+                    maxHeight: 720
+                    srcSetBreakpoints: [400, 720]
+                    quality: 75
                     toFormat: JPG
                 ) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -102,7 +100,12 @@ export const projectFragment = graphql`
         externalUrl
         heroImage {
             childImageSharp {
-                fluid(srcSetBreakpoints: [1024, 720, 360], toFormat: JPG) {
+                fluid(
+                    maxWidth: 2000
+                    srcSetBreakpoints: [400, 720, 1024, 2000]
+                    quality: 75
+                    toFormat: JPG
+                ) {
                     ...GatsbyImageSharpFluid_withWebp
                 }
             }
@@ -114,7 +117,12 @@ export const projectFragment = graphql`
         gallery {
             image {
                 childImageSharp {
-                    fluid(srcSetBreakpoints: [720, 360], toFormat: JPG) {
+                    fluid(
+                        maxWidth: 1024
+                        srcSetBreakpoints: [1024, 720, 360]
+                        quality: 75
+                        toFormat: JPG
+                    ) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
@@ -128,7 +136,7 @@ export const projectFragment = graphql`
                 title
                 image {
                     childImageSharp {
-                        fixed(width: 290) {
+                        fixed(width: 282) {
                             ...GatsbyImageSharpFixed_withWebp_tracedSVG
                         }
                     }
@@ -142,7 +150,7 @@ export const projectFragment = graphql`
                 title
                 image {
                     childImageSharp {
-                        fixed(width: 290) {
+                        fixed(width: 282) {
                             ...GatsbyImageSharpFixed_withWebp_tracedSVG
                         }
                     }
@@ -158,7 +166,7 @@ export const projectFragment = graphql`
                 title
                 image {
                     childImageSharp {
-                        fixed(width: 290) {
+                        fixed(width: 282) {
                             ...GatsbyImageSharpFixed_withWebp_tracedSVG
                         }
                     }

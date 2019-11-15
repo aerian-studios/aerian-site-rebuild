@@ -39,7 +39,7 @@ export const ProjectPage: React.SFC<Props> = ({ project, allProjects }) => (
         <PageHeader className={sharedStyles.withSectionNav}>
             <HeroBlock
                 heroImage={project.heroImage}
-                aria-labelled-by="page-title"
+                aria-labelledby="page-title"
                 heroVideo={project.heroVideo}
             >
                 <h1>

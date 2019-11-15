@@ -45,6 +45,7 @@ export class ShowcaseCarousel extends React.PureComponent<Props> {
                         key={project.slug}
                         to={`/our-work/project/${project.slug}`}
                         className={revealCardStyles.revealCardWrapper}
+                        aria-label={`Visit the ${project.name} case study`}
                     >
                         <Image
                             key={project.titleLineOne}
@@ -52,7 +53,7 @@ export class ShowcaseCarousel extends React.PureComponent<Props> {
                             alt={project.name}
                             style={{ backgroundColor: `#d01944` }}
                             source={
-                                index === 0
+                                index === 0 && this.props.feature
                                     ? project.heroImage
                                     : project.thumbnail
                             }

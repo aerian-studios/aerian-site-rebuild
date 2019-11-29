@@ -96,7 +96,7 @@ export interface PageSection {
     blurb: string;
     activities?: Activity[];
     successStory?: SuccessStory;
-    testimonial?: Testimonial;
+    testimonial: Testimonial;
 }
 
 export interface Tweet {
@@ -118,8 +118,8 @@ export interface Page {
     title: string;
     path: string;
     heroImage?: ImageField;
-    subheading: string;
-    description: string;
+    subheading?: string;
+    description?: string;
     seoTitle: string;
     seoDescription: string;
     seoKeywords: string;
@@ -146,12 +146,12 @@ export type InfographicType =
     | "Horizontal"
     | "Surround";
 export interface Infographic {
-    primaryText?: string;
+    primaryText?: string | null;
     type: InfographicType;
-    secondaryText?: string;
-    image?: ImageField;
+    secondaryText?: string | null;
+    image?: ImageField | null;
     imageCount: number;
-    secondaryImage?: ImageField;
+    secondaryImage?: ImageField | null;
 }
 
 export interface Staff {
@@ -161,7 +161,7 @@ export interface Staff {
     imageNormal: ImageField;
     imageFunny: ImageField;
     description: string;
-    fact: string;
+    fact: string | null;
     skills: string[];
 }
 
@@ -224,14 +224,14 @@ export interface Project {
     name: string;
     slug: string;
     heroImage: ImageField;
-    heroVideo?: string;
+    heroVideo?: string | null;
     titleLineOne: string;
     titleLineTwo?: string;
-    client: Client;
+    client: string;
     goLiveDate?: string;
     caseStudyTitle: string;
     caseStudyText: string;
-    caseStudyImage: ImageField;
+    caseStudyImage?: ImageField;
     externalUrl: string;
     rolloverDetails: string;
     homepage: boolean;

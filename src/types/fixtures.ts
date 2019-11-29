@@ -11,7 +11,8 @@ import {
     ProjectBox,
     SuccessStory,
     Testimonial,
-    WhatWeDo
+    WhatWeDo,
+    Tweet
 } from "./data";
 
 import aboutData from "../pages/about.json";
@@ -44,10 +45,10 @@ export const testimonial: Testimonial = project.testimonial as Testimonial;
 export const testimonialSection: PageSection = whatWeDo.sections[0];
 export const successStorySection: PageSection = whatWeDo.sections[1];
 export const successStory: SuccessStory = successStorySection.successStory as SuccessStory;
-export const pageSection = {
-    ...successStorySection,
+export const pageSection: Required<PageSection> = {
+    ...(successStorySection as Required<PageSection>),
     testimonial: testimonialSection.testimonial
-} as Required<PageSection>;
+};
 export const activity = pageSection.activities[0];
 export const stat = successStory.stats![0];
 export const staff = meetTheTeam.staff;
@@ -83,3 +84,29 @@ export const imageSharpFixed: ImageSharp = {
 };
 export const imageSharp = imageSharpFluid;
 export const imageField: ImageField = imageSharp;
+
+export const tweet: Tweet = {
+    full_text:
+        "MOCK!: proud that our partners over at @CRbuildpeace are being featured by our friends at @BBCRadio4 this Sunday. What's more, we've recently just launched their new site - https://t.co/Os80j45F1N. Check it out! https://t.co/ewD0FdQT49",
+    user: {
+        image:
+            "https://pbs.twimg.com/profile_images/378800000156917292/cba17ed82c5a99f3b91e805534b2d10f_normal.png"
+    },
+    entities: {
+        urls: [
+            {
+                display_url: "c-r.org",
+                expanded_url: "http://www.c-r.org",
+                indices: [173, 196],
+                url: "https://t.co/Os80j45F1N"
+            },
+            {
+                display_url: "twitter.com/CRbuildpeace/s…",
+                expanded_url:
+                    "https://twitter.com/CRbuildpeace/status/1164462963790667776",
+                indices: [212, 235],
+                url: "https://t.co/ewD0FdQT49"
+            }
+        ]
+    }
+};

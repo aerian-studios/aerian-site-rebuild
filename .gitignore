@@ -10,3 +10,4 @@ static/admin/*.bundle.*
 docs
 coverage
 .env.*
+.lighthouseci/

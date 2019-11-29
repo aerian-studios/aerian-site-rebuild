@@ -18,7 +18,7 @@ export const TweetView: React.SFC<Props> = ({ children, style, className }) => {
         //  This is purely for the purposes of Storybooks, where static queries don't work
         // eslint-disable-next-line react-hooks/rules-of-hooks
         data = useStaticQuery(graphql`
-            query MyQuery {
+            query TweetQuery {
                 tweet: twitterStatusesUserTimelineAerian {
                     full_text
                     entities {

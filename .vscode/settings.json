@@ -20,8 +20,9 @@
     "[typescriptreact]": {
         "editor.formatOnSave": false
     },
-    "eslint.provideLintTask": true,
+    "eslint.lintTask.enable": true,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
 }

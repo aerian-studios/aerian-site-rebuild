@@ -1,10 +1,17 @@
 language: node_js
 node_js:
     - "lts/*"
-cache: yarn
+cache:
+    directories:
+        - public
+        - .cache
+        - node_modules
 
-jobs:
-    include:
-        - stage: Produce Coverage
-          node_js: "lts/*"
-          script: yarn test-ci
+addons:
+    chrome: stable # make sure to have Chrome available
+before_install:
+    - yarn global add @lhci/cli@0.3.x # install LHCI
+script:
+    - yarn test-ci
+    - yarn build
+    - lhci autorun

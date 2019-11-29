@@ -32,7 +32,7 @@
         "gatsby-source-twitter": "^3.0.0",
         "gatsby-transformer-json": "^2.2.2",
         "gatsby-transformer-sharp": "^2.2.4",
-        "netlify-cms": "^2.9.6",
+        "netlify-cms-app": "^2.9.7",
         "pigeon-maps": "^0.10.4",
         "pigeon-overlay": "^0.2.2",
         "pure-react-carousel": "^1.19.0",

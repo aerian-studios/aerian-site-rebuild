@@ -1,4 +1,4 @@
-import CMS from "netlify-cms";
+import CMS from "netlify-cms-app";
 import * as React from "react";
 import "../lib/theme";
 

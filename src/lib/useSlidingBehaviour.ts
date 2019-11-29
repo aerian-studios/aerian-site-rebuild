@@ -31,16 +31,13 @@ export const setCSSVariable = (
 export const checkNumberExceedsTolerance = (
     numberToCheck: number,
     checkWithNumber: number,
-    tolerance: number = 2
+    tolerance = 2
 ): boolean => Math.abs(numberToCheck - checkWithNumber) > tolerance;
 
 /**
  * Takes a HTMLCollection and returns an array of Sizes for the children
  */
-export const workOutSizes = (
-    nodes: HTMLCollection,
-    gapSize: number = 0
-): Size[] => {
+export const workOutSizes = (nodes: HTMLCollection, gapSize = 0): Size[] => {
     const len = nodes.length;
     const ret: Size[] = [];
 
@@ -70,10 +67,10 @@ export const checkSmoothScrollSupport = (): boolean => {
 };
 
 export const calculateScreenAndSlideCenterToScreenLeft = (
-    position: number = 0,
-    index: number = 0,
+    position = 0,
+    index = 0,
     childSizes: Size[],
-    center: number = 0
+    center = 0
 ): { position: number; index: number } => {
     if (!center) {
         return { position, index };
@@ -92,7 +89,7 @@ export const calculateScreenAndSlideCenterToScreenLeft = (
  * @param {array<Size>} childSizes - The array of element sizes
  */
 export const calculateCenterOffsetFromScreenLeft = (
-    center: number = 0,
+    center = 0,
     currentIndex: number,
     childSizes: Size[]
 ): number => {
@@ -105,9 +102,9 @@ export const calculateCenterOffsetFromScreenLeft = (
  * Calculate a complete slide (or centre of slide) from an arbitrary number (left of scrolled element from left of screen)
  */
 export const calculateNearestSnapPoint = (
-    position: number = 0,
+    position = 0,
     childSizes: Size[],
-    center: number = 0
+    center = 0
 ): { position: number; index: number } => {
     if (!childSizes.length) {
         return calculateScreenAndSlideCenterToScreenLeft(
@@ -152,9 +149,9 @@ export const calculateNearestSnapPoint = (
  * It is dependant on whether the carousel is centered
  */
 export const calculateScrollOffsetForIndex = (
-    index: number = 0,
+    index = 0,
     childSizes: Size[],
-    center: number = 0
+    center = 0
 ): number => {
     if (!childSizes || !childSizes.length) {
         return 0;
@@ -286,7 +283,7 @@ export const useSlidingBehaviour = (
     );
 
     const setCurrent = React.useCallback(
-        (newCurrent: number, setFocus: boolean = false): number => {
+        (newCurrent: number, setFocus = false): number => {
             if (setFocus) {
                 setCurrentFocus(newCurrent);
             }
@@ -299,7 +296,7 @@ export const useSlidingBehaviour = (
 
     const RAF = React.useRef<number>();
     const scrollToPosition = React.useCallback(
-        (position: number | null, immediate: boolean = false): void => {
+        (position: number | null, immediate = false): void => {
             if (!sliderRef.current || position === null) {
                 return;
             }
@@ -384,7 +381,7 @@ export const useSlidingBehaviour = (
     }, [itemGap]);
 
     const alignTheThingsToIndex = React.useCallback(
-        (indexToAlign?: number, immediate: boolean = false): void => {
+        (indexToAlign?: number, immediate = false): void => {
             const index = indexToAlign || currentIndex;
 
             if (!childSizes.current.length) {

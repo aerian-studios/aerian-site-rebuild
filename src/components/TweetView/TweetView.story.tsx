@@ -1,13 +1,11 @@
-import * as React from "react";
+import React from "react";
 
 import { storiesOf } from "@storybook/react";
 
 import { TweetView } from "./index";
-import { fakeGQLResponseOnce } from "../../lib/gatsbyShim";
+import { fakeGQLResponseByName } from "../../lib/gatsbyShim";
 import { tweet } from "../../types/fixtures";
 
-
-
-fakeGQLResponseOnce({tweet})
+fakeGQLResponseByName("TweetQuery", { tweet });
 
 storiesOf("TweetView", module).add("Default", () => <TweetView />);
